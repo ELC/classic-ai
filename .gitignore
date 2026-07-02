@@ -1,0 +1,5 @@
+.venv/
+book/_build/
+__pycache__/
+*.py[cod]
+.ruff_cache/

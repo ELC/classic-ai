@@ -1,0 +1,162 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  title: Inteligencia Artificial Clásica
+  copyright: "2026, Ezequiel Leonardo Castaño"
+  license:
+    content: CC-BY-NC-SA-4.0
+
+  authors:
+    - name: Ezequiel Leonardo Castaño
+      github: "@ELC"
+      linkedin: https://www.linkedin.com/in/ezequielcastano/
+
+  github: https://github.com/ELC/classic-ai
+
+  bibliography:
+    - bibliography.bib
+
+  numbering:
+    headings: true
+
+  jupyter: true
+
+  plugins:
+    - plugins/ethicalads.mjs
+
+  toc:
+    - file: chapters/welcome.md
+    - title: "Unidad 1: Introducción a la inteligencia artificial"
+      children:
+        - file: chapters/unit-01-introduccion/01-espacio-de-busqueda-y-descripcion-formal-de-problemas.md
+          title: Espacio de búsqueda y descripción formal de problemas
+        - file: chapters/unit-01-introduccion/02-analisis-del-problema.md
+          title: Análisis del problema
+        - file: chapters/unit-01-introduccion/03-problemas-ignorables-recuperables-y-no-recuperables.md
+          title: Problemas ignorables, recuperables y no recuperables
+        - file: chapters/unit-01-introduccion/04-problemas-con-consecuencia-cierta-e-incierta.md
+          title: Problemas con consecuencia cierta e incierta
+        - file: chapters/unit-01-introduccion/05-solucion-absoluta-o-relativa.md
+          title: Solución absoluta o relativa
+        - file: chapters/unit-01-introduccion/06-solucion-como-estado-o-como-ruta.md
+          title: Solución como estado o como ruta
+        - file: chapters/unit-01-introduccion/07-papel-del-conocimiento-en-la-busqueda.md
+          title: Papel del conocimiento en la búsqueda
+        - file: chapters/unit-01-introduccion/08-problemas-solitarios-y-conversacionales.md
+          title: Problemas solitarios y conversacionales
+        - file: chapters/unit-01-introduccion/09-busqueda-y.md
+          title: Búsqueda y
+        - file: chapters/unit-01-introduccion/exam-preparation.md
+          title: Guía de preparación para examen
+    - title: "Unidad 2: Búsqueda y planificación"
+      children:
+        - file: chapters/unit-02-busqueda-y-planificacion/01-explosion-combinatoria-y-ramificacion-y-acotacion.md
+          title: Explosión combinatoria y ramificación y acotación
+        - file: chapters/unit-02-busqueda-y-planificacion/02-busqueda-primero-en-anchura.md
+          title: Búsqueda primero en anchura
+        - file: chapters/unit-02-busqueda-y-planificacion/03-busqueda-primero-en-profundidad.md
+          title: Búsqueda primero en profundidad
+        - file: chapters/unit-02-busqueda-y-planificacion/04-tecnicas-de-busqueda-heuristica.md
+          title: Técnicas de búsqueda heurística
+        - file: chapters/unit-02-busqueda-y-planificacion/05-generacion-y-prueba.md
+          title: Generación y prueba
+        - file: chapters/unit-02-busqueda-y-planificacion/06-escalada-o-remonte-de-colinas.md
+          title: Escalada o remonte de colinas
+        - file: chapters/unit-02-busqueda-y-planificacion/07-problemas-tipicos-de-escalada.md
+          title: Problemas típicos de escalada
+        - file: chapters/unit-02-busqueda-y-planificacion/08-busqueda-el-primero-mejor.md
+          title: Búsqueda el primero mejor
+        - file: chapters/unit-02-busqueda-y-planificacion/09-reduccion-de-problemas.md
+          title: Reducción de problemas
+        - file: chapters/unit-02-busqueda-y-planificacion/10-verificacion-de-restricciones.md
+          title: Verificación de restricciones
+        - file: chapters/unit-02-busqueda-y-planificacion/11-analisis-de-medios-y-fines.md
+          title: Análisis de medios y fines
+        - file: chapters/unit-02-busqueda-y-planificacion/12-busqueda-en-problemas-de-juegos.md
+          title: Búsqueda en problemas de juegos
+        - file: chapters/unit-02-busqueda-y-planificacion/13-juegos-de-dos-jugadores.md
+          title: Juegos de dos jugadores
+        - file: chapters/unit-02-busqueda-y-planificacion/14-minimax.md
+          title: Minimax
+        - file: chapters/unit-02-busqueda-y-planificacion/15-alfa-beta.md
+          title: Alfa beta
+        - file: chapters/unit-02-busqueda-y-planificacion/16-representacion-del-conocimiento.md
+          title: Representación del Conocimiento
+        - file: chapters/unit-02-busqueda-y-planificacion/exam-preparation.md
+          title: Guía de preparación para examen
+    - title: "Unidad 3: Representación del conocimiento y razonamiento"
+      children:
+        - file: chapters/unit-03-representacion-conocimiento/01-naturaleza-del-argumento.md
+          title: Naturaleza del argumento
+        - file: chapters/unit-03-representacion-conocimiento/02-verdad-y-validez-de-argumentos.md
+          title: Verdad y validez de argumentos
+        - file: chapters/unit-03-representacion-conocimiento/03-logica-simbolica-y-enunciados.md
+          title: Lógica simbólica y enunciados
+        - file: chapters/unit-03-representacion-conocimiento/04-formas-de-argumentos-y-tablas-de-verdad.md
+          title: Formas de argumentos y tablas de verdad
+        - file: chapters/unit-03-representacion-conocimiento/05-prueba-formal-de-validez.md
+          title: Prueba formal de validez
+        - file: chapters/unit-03-representacion-conocimiento/06-reglas-de-inferencia-y-reemplazo.md
+          title: Reglas de inferencia y reemplazo
+        - file: chapters/unit-03-representacion-conocimiento/07-demostracion-de-invalidez.md
+          title: Demostración de invalidez
+        - file: chapters/unit-03-representacion-conocimiento/08-logica-de-predicados.md
+          title: Lógica de predicados
+        - file: chapters/unit-03-representacion-conocimiento/09-razonamiento-bajo-incertidumbre.md
+          title: Razonamiento bajo incertidumbre
+        - file: chapters/unit-03-representacion-conocimiento/10-factores-de-certeza.md
+          title: Factores de certeza
+        - file: chapters/unit-03-representacion-conocimiento/11-estructuras-de-ranura-y-relleno-debiles.md
+          title: Estructuras de ranura y relleno débiles
+        - file: chapters/unit-03-representacion-conocimiento/12-estructuras-de-ranura-y-relleno-fuertes.md
+          title: Estructuras de ranura y relleno fuertes
+        - file: chapters/unit-03-representacion-conocimiento/exam-preparation.md
+          title: Guía de preparación para examen
+    - title: "Unidad 4: Ingeniería del conocimiento"
+      children:
+        - file: chapters/unit-04-ingenieria-conocimiento/unit-04.md
+          title: "Unidad 4: Ingeniería del conocimiento"
+        - file: chapters/unit-04-ingenieria-conocimiento/exam-preparation.md
+          title: Guía de preparación para examen
+    - title: "Unidad 5: Redes neuronales"
+      children:
+        - file: chapters/unit-05-redes-neuronales/unit-05.md
+          title: "Unidad 5: Redes neuronales"
+        - file: chapters/unit-05-redes-neuronales/exam-preparation.md
+          title: Guía de preparación para examen
+    - title: "Unidad 6: Prolog"
+      children:
+        - file: chapters/unit-06-prolog/unit-06.md
+          title: "Unidad 6: Prolog"
+        - file: chapters/unit-06-prolog/practica-01.md
+          title: Práctica 1
+        - file: chapters/unit-06-prolog/practica-02.md
+          title: Práctica 2
+        - file: chapters/unit-06-prolog/practica-03.md
+          title: Práctica 3
+        - file: chapters/unit-06-prolog/practica-04.md
+          title: Práctica 4
+        - file: chapters/unit-06-prolog/exam-bank.md
+          title: Banco de exámenes Prolog
+
+site:
+  template: book-theme
+  parts:
+    banner: |
+      :::{ethicalads}
+      :::
+
+  nav:
+    - title: Inicio
+      url: /chapters/welcome
+    - title: Prolog
+      url: /chapters/unit-06-prolog/unit-06
+
+  options:
+    folders: true
+    numbered_references: true
+    logo: assets/logo.svg
+    logo-dark: assets/logo-dark.svg
+
+    # https://mystmd.org/guide/analytics#google-analytics
+    analytics_google: G-Y3GBPLEV2K

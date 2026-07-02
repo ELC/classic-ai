@@ -1,0 +1,72 @@
+[project]
+name = "classic-ai"
+version = "0.1.0"
+description = "Inteligencia Artificial Clásica"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "anywidget>=0.9",
+  "calysto-prolog>=0.8.4",
+  "jupyter-book>=2,<3",
+  "jupyterlab>=4.5",
+  "metakernel>=0.30",
+]
+
+[dependency-groups]
+dev = [
+  "mdformat>=0.7",
+  "mdformat-frontmatter>=2.0",
+  "poethepoet>=0.37",
+  "ruff>=0.15.15",
+  "wheel>=0.46.3",
+]
+
+[tool.uv]
+package = false
+
+[tool.poe.tasks.install-kernels]
+cmd = "python -m calysto_prolog install --user"
+
+[tool.poe.tasks._build-book]
+cwd = "book"
+cmd = "jupyter book build --html --execute --ci"
+
+[tool.poe.tasks.build-book]
+sequence = ["install-kernels", "_build-book"]
+
+[tool.poe.tasks.serve-book-preview]
+cwd = "book"
+cmd = "jupyter book start --port 8000"
+
+[tool.poe.tasks.serve-book]
+sequence = ["build-book", "serve-book-preview"]
+
+[tool.poe.tasks.format-md]
+cmd = "mdformat --wrap 80 book/chapters README.md LICENSE.md"
+
+[tool.poe.tasks.check-md]
+cmd = "mdformat --check --wrap 80 book/chapters README.md LICENSE.md"
+
+[tool.poe.tasks.format-py]
+cmd = "ruff format ."
+
+[tool.poe.tasks.lint]
+cmd = "ruff check ."
+
+[tool.poe.tasks.format]
+sequence = ["format-md", "format-py"]
+
+[tool.poe.tasks.check]
+sequence = ["check-md", "lint"]
+
+[tool.poe.tasks.build-docker]
+help = "Build the Binder Docker image."
+cmd = "docker build --no-cache --file .binder/Dockerfile --tag classic-ai:binder ."
+
+[tool.poe.tasks.ci]
+sequence = ["check", "build-book"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["book/_build", ".venv"]
