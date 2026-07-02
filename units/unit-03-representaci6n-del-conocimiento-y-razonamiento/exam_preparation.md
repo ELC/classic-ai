@@ -35,18 +35,18 @@
 ### Demostracion condicional e indirecta
 - Fecha: 2015-12-17
 - Frecuencia: 2 apariciones. Fechas: 2015-12-17, 2015-08-06
-- Fuente principal: [Demostracion de invalidez](unit-03.md#demostracion-de-invalidez)
+- Fuente principal: [Demostración de invalidez](unit-03.md#demostración-de-invalidez)
 
 ### Conocimiento declarativo y procedimental
 - Fecha: 2015-12-17
 - Frecuencia: 2 apariciones. Fechas: 2015-12-17, 2014-04-21
-- Fuente principal: [Logica simbolica y enunciados](unit-03.md#logica-simbolica-y-enunciados)
+- Fuente principal: [Lógica simbólica y enunciados](unit-03.md#lógica-simbólica-y-enunciados)
 - Revisar fuente
 
 ### Operadores de relacion entre enunciados
 - Fecha: 2015-12-17
 - Frecuencia: 1 apariciones. Fechas: 2015-12-17
-- Fuente principal: [Logica simbolica y enunciados](unit-03.md#logica-simbolica-y-enunciados)
+- Fuente principal: [Lógica simbólica y enunciados](unit-03.md#lógica-simbólica-y-enunciados)
 
 ### Herramientas para probar validez
 - Fecha: 2014-07-31
@@ -57,7 +57,7 @@
 ### Logica proposicional y logica de predicados
 - Fecha: 2013-12-05
 - Frecuencia: 2 apariciones. Fechas: 2013-12-05, 2013-08-29
-- Fuente principal: [Logica de predicados](unit-03.md#logica-de-predicados)
+- Fuente principal: [Lógica de predicados](unit-03.md#lógica-de-predicados)
 
 ### Representacion del conocimiento bajo incertidumbre
 - Fecha: 2013-12-05
@@ -74,10 +74,10 @@
 - Frecuencia: 1 apariciones. Fechas: 2013-12-05
 - Fuente principal: [Factores de certeza](unit-03.md#factores-de-certeza)
 
-### Estructuras de ranura y relleno debiles y fuertes
+### Estructuras de ranura y relleno débiles y fuertes
 - Fecha: 2013-12-05
 - Frecuencia: 1 apariciones. Fechas: 2013-12-05
-- Fuente principal: [Estructuras de ranura y relleno debiles](unit-03.md#estructuras-de-ranura-y-relleno-debiles)
+- Fuente principal: [Estructuras de ranura y relleno débiles](unit-03.md#estructuras-de-ranura-y-relleno-débiles)
 - Ver tambien: [Estructuras de ranura y relleno fuertes](unit-03.md#estructuras-de-ranura-y-relleno-fuertes)
 
 ## Undated Frequent Questions

@@ -5,8 +5,8 @@
 ### Diferencia entre problemas de algun camino y el mejor camino
 - Fecha: 2016-02-25
 - Frecuencia: 3 apariciones. Fechas: 2016-02-25, 2016-02-11, 2015-12-17
-- Fuente principal: [Solucion absoluta o relativa](unit-01.md#solucion-absoluta-o-relativa)
-- Ver tambien: [Espacio de busqueda y descripcion formal de problemas](unit-01.md#espacio-de-busqueda-y-descripcion-formal-de-problemas)
+- Fuente principal: [Solución absoluta o relativa](unit-01.md#solución-absoluta-o-relativa)
+- Ver tambien: [Espacio de búsqueda y descripción formal de problemas](unit-01.md#espacio-de-búsqueda-y-descripción-formal-de-problemas)
 
 ### Diferencia entre problemas ignorables, recuperables y no recuperables
 - Fecha: 2016-02-25
@@ -27,7 +27,7 @@
 ### Preguntas para el analisis de problemas
 - Fecha: 2015-12-03
 - Frecuencia: 1 apariciones. Fechas: 2015-12-03
-- Fuente principal: [Analisis del problema](unit-01.md#analisis-del-problema)
+- Fuente principal: [Análisis del problema](unit-01.md#análisis-del-problema)
 
 ### Diferencia entre problemas con consecuencia cierta e incierta
 - Fecha: 2015-08-06
@@ -37,14 +37,14 @@
 ### Que es el espacio de busqueda
 - Fecha: 2014-04-21
 - Frecuencia: 1 apariciones. Fechas: 2014-04-21
-- Fuente principal: [Espacio de busqueda y descripcion formal de problemas](unit-01.md#espacio-de-busqueda-y-descripcion-formal-de-problemas)
+- Fuente principal: [Espacio de búsqueda y descripción formal de problemas](unit-01.md#espacio-de-búsqueda-y-descripción-formal-de-problemas)
 
 ## Undated Frequent Questions
 
 ### Diferencia entre solucion como estado y solucion como ruta
 - Fecha: desconocida
-- Fuente principal: [Solucion como estado o como ruta](unit-01.md#solucion-como-estado-o-como-ruta)
+- Fuente principal: [Solución como estado o como ruta](unit-01.md#solución-como-estado-o-como-ruta)
 
-### Papel del conocimiento en la busqueda
+### Papel del conocimiento en la búsqueda
 - Fecha: desconocida
-- Fuente principal: [Papel del conocimiento en la busqueda](unit-01.md#papel-del-conocimiento-en-la-busqueda)
+- Fuente principal: [Papel del conocimiento en la búsqueda](unit-01.md#papel-del-conocimiento-en-la-búsqueda)

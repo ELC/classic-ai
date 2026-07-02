@@ -1,6 +1,6 @@
-# Unidad Didactica 6 - Eje Conceptual
+# Unidad Didáctica 6 - Eje Conceptual
 
-Programacion practica en Prolog
+Programación practica en Prolog
 
 Universidad Tecnológica Nacional
 
@@ -57,7 +57,7 @@ de trabajo al empleado por los lenguajes más familiares, tales como Basic, Cobo
 
 ### 1.1 Una breve historia del Prolog
 
-Prolog significa “PROgramming LOGic”, es decir programación basada en la lógica y es un lenguaje de
+Prolog significa “PRProgramming LOGic”, es decir programación basada en la lógica y es un lenguaje de
 programación de computadoras que fue inventado alrededor de 1970 por Alain Colmenauer y sus colegas
 de la Universidad de Marsella, Francia. Rápidamente el Prolog se convirtió en el lenguaje principal para IA
 en Europa, mientras que Lisp (otro lenguaje de programación para IA) se usaba principalmente por los
@@ -198,8 +198,8 @@ Los siguientes puntos son importantes:
 - Los nombres de todos los objetos y relaciones deben comenzar con letra minúscula.
 - Primero se escribe la relación y luego los objetos separándolos mediante comas y encerrados entre
 paréntesis.
-- Al final del hecho debe ir un punto (el caracter “.”).
-- El caracter “_” en el nombre del predicado indica que todo es una única palabra para una relación.
+- Al final del hecho debe ir un punto (el carácter “.”).
+- El carácter “_” en el nombre del predicado indica que todo es una única palabra para una relación.
 - Dos hechos coinciden si sus predicados son lo mismo (se escriben de igual forma) y si cada uno de los
 correspondientes argumentos son iguales entre sí.
 
@@ -229,7 +229,7 @@ le_gusta_a(eduardo, Algo que le gusta a eduardo).
 podemos utilizar
 le_gusta_a(eduardo, X).
 
-Observación: Las variables pueden tener nombres más largos. Por ejemplo: Algoquelegustaaeduardo.
+Observación: Las variables pueden tener nombres más largos. Por ejemplo: Algo que le gusta a eduardo.
 
 A veces es necesario utilizar una variable aunque su nombre no se utilice nunca, supongamos que
 queremos averiguar si a alguien le gusta Eduardo, pero no estamos interesados en saber quien, entonces
@@ -248,7 +248,7 @@ hechos por separado, así:
 
 le_gusta_a(eduardo, ibm).
 le_gusta_a(eduardo, compaq).
-le_gusta_a(eduardo, acer).
+le_gusta_a(eduardo, hacer).
 le_gusta_a(eduardo, falcon).
 ....
 
@@ -282,7 +282,7 @@ Ejemplo de reglas:
 Una regla es una afirmación general sobre objetos y sus relaciones. Así podemos permitir que una variable
 represente un objeto diferente en casa uso distinto de la regla. Por ejemplo:
 
-a Marco le gusta cualquiera a la que le guste el vino, o en otras palabas,
+a Marco le gusta cualquiera a la que le guste el vino, o en otras palabras,
 a Marco le gusta algo si a esto le gusta el vino, con variable,
 a Marco le gusta X si a X le gusta el vino.
 
@@ -518,7 +518,7 @@ contrario no se evaluarán la/s siguiente/s conjunción/es.
 
 La jerarquía de los términos en Prolog es:
 
-![Jerarquia de los terminos en Prolog](images/jerarquia-terminos-prolog.png)
+![Jerarquía de los términos en Prolog](images/jerarquía-términos-prolog.png)
 
 Átomos
 
@@ -561,8 +561,8 @@ los términos atómicos (es decir, a las variables, átomos, cadenas y números)
 ?- var(_). => Yes
 ?- var(_X1). => Yes
 ?- X1=a, var(X1). => No
-?- atom(atomo). => Yes
-?- atom('atomo'). => Yes
+?- atom(átomo). => Yes
+?- atom('átomo'). => Yes
 ?- atom([]). => Yes
 ?- atom(3). => No
 ?- atom(1+2). => No
@@ -574,7 +574,7 @@ los términos atómicos (es decir, a las variables, átomos, cadenas y números)
 ?- compound(f(X, a)). => Yes
 ?- compound([1,2]). => Yes
 ?- compound([]). => No
-?- atomic(atomo). => Yes
+?- atomic(átomo). => Yes
 ?- atomic(123). => Yes
 ?- atomic(X). => No
 ?- atomic(f(1,2)). => No
@@ -625,7 +625,7 @@ igualdad pueden hacerse coincidir, es decir, el operador hace una comprobación 
 Otros predicados predefinidos muy útiles son los de comparación aritmética. Naturalmente, estos no
 funcionan con cualquier término como argumento. Solamente sirven para números (enteros y decimales).
 
-![Operadores de comparacion aritmetica en Prolog](images/operadores-comparacion-aritmetica-prolog.png)
+![Operadores de comparación aritmética en Prolog](images/operadores-comparación-aritmética-prolog.png)
 
 Operadores Significado
 relacionales
@@ -638,7 +638,7 @@ relacionales
 
 ### 3.4 Evaluación de expresiones aritméticas
 
-En Prolog es fácil construir expresiones aritméticas y se hace med iante el predicado is/2. Por ejemplo,
+En Prolog es fácil construir expresiones aritméticas y se hace med mediante el predicado is/2. Por ejemplo,
 vamos a sumar dos números cualquiera:
 1 ?- X is 2 + 5.
 X = 7
@@ -655,7 +655,7 @@ Expresiones válidas
 Las expresiones que podemos utilizar en el segundo argumento pueden variar de un entorno de desarrollo
 a otro, pero vamos a citar las más comunes:
 
-![Expresiones aritmeticas validas en Prolog](images/expresiones-aritmeticas-validas-prolog.png)
+![Expresiones aritméticas validas en Prolog](images/expresiones-aritméticas-validas-prolog.png)
 
 Operadores aritméticos Significado Ejemplo
 +/2 Suma X is A + B.
@@ -920,10 +920,10 @@ carga_estudiantes:-consult('C:/Facultad/Inteligencia Artificial/Prolog/ Ejemplos
 lista_estudiantes:-listing(estudiantes).
 % lista todo el conocimiento del predicado estudiantes.
 
-agregar(Codigo, Nombre, Apellido):-assert(estudiantes(Codigo, Nombre, Apellido)), write(' Agregado! ').
+agregar(Código, Nombre, Apellido):-assert(estudiantes(Código, Nombre, Apellido)), write(' Agregado! ').
 % agrega un estudiante
 
-eliminar(Codigo):-retract(estudiantes(Codigo, _,_)), write(' Eliminado!').
+eliminar(Código):-retract(estudiantes(Código, _,_)), write(' Eliminado!').
 % elimina un estudiante identificado por Código.
 
 El predicado Fail
@@ -940,9 +940,9 @@ queden más soluciones que mostrar.
 Ejemplo:
 Supongamos que contamos con la siguiente Base de conocimiento:
 gastos(mario,super).
-gastos(mario,telefono).
+gastos(mario,teléfono).
 gastos(mario,alquiler).
-gastos(ariel,telefono).
+gastos(ariel,teléfono).
 gastos(ariel,alquiler).
 gastos(juan,alquiler).
 
@@ -951,7 +951,7 @@ De esta manera, si ingresamos por ejemplo el nombre ‘mario’, nos informaría
 
 Inicio:-write(‘Ingrese nombre de la persona’),read(Nom),gastos(Nom,Gasto), write(Gasto),fail.
 De esta otra manera, e ingresando el mismo nombre de persona, nos informaría de todos los gastos
-correspondientes a ‘mario’, es decir, ‘super’, ‘telefono’ y ‘alquiler’.
+correspondientes a ‘mario’, es decir, ‘super’, ‘teléfono’ y ‘alquiler’.
 
 Ejemplo:
 Contamos con esta otra Base de conocimientos:
@@ -981,7 +981,7 @@ Los objetos compuestos le permiten añadir mas detalles a las cláusulas.
 Por ejemplo, una lista de facturas a pagar podría escribirse como la siguiente serie de hechos.
 
 paga(marco, super).
-paga(marco,telefono).
+paga(marco,teléfono).
 
 Con la utilización de objetos compuestos, las mismas presentarían mayor información.
 

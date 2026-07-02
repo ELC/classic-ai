@@ -144,7 +144,7 @@ entonces es que las máquinas pueden pensar!
 es· que *no conocemos aun coma funciona la máquina humana,* Sin embargo, aunque
 estuviésemos de acuerdo acerca de lo que es una máquina, este último I argumento
 es rebatible. Aunque una máquina hecha de proteínas puede pensar, quizá una
-hecha de silicio no seria capaz de hacerlo. Un conocido filósofo, John Searle,
+hecha de silicio no sería capaz de hacerlo. Un conocido filósofo, John Searle,
 cree que la materia de la que estamos hechos es fundamental para la inteligencia
 (Searle, 1980;Searle, 1992). Para el, el pensamiento solo puede ocurrir en
 máquinas muy especiales - *las máquinas vivientes hechas de proteínas.* La
@@ -369,7 +369,7 @@ dinámicos. (* A medio camino entre las **aproximaciones** descendentes y
 ascendentes esta la **basada en** **autómatas situados** (Kaelbling y
 Rosenschein, 1990). Kaelbling y Rosenschein proponen un lenguaje de programación
 para especificar, en un alto nivel de abstracción, el comportamiento deseado en
-un agente, asf como un compilador para crear la circuitería necesaria a partir
+un agente, así como un compilador para crear la circuitería necesaria a partir
 de los programas escritos en este lenguaje.
 
 * 1. Breve historia de la IA t
@@ -388,7 +388,7 @@ que **McCarthy,** decepcionado, **decidió acuñar el término Inteligencia
 Artificial** y usarlo como titulo de una conferencia celebrada en Dartmouth en
 1956. En esta conferencia se presentaron algunos trabajos muy relevantes,
 incluyendo uno de Allen Newell, Cliff Shaw y Herbert Simon sobre un programa
-llamado *Teorizador Lógico* (Newell, Shaw y Simon, 1957), que podia demostrar
+llamado *Teorizador Lógico* (Newell, Shaw y Simon, 1957), que podía demostrar
 teoremas en lógica proposicional. Aunque se propusieron muchos otros términos
 para el campo, tales como procesamiento de información compleja, inteligencia de
 máquinas, programación heurística o cognología, solo el nombre de Inteligencia
@@ -399,11 +399,11 @@ El primer paso hacia la inteligencia artificial fue dado mucho tiempo atrás por
 Aristóteles (384-322 a. C.), cuando comenzó a explicar y a codificar ciertos
 estilos de razonamiento deductivo que el llamó *silogismos.* Algunos de los
 esfuerzos tempranos para automatizar la inteligencia nos parecerían quijotescos
-hoy en dia. Ramon LLull (1235-1316), un místico y poeta catalán, construyó una
+hoy en dia. Ramón LLull (1235-1316), un místico y poeta catalán, construyó una
 *máquina de engranajes,* llamada *Ars Magna,* que supuestamente era capaz de
 responder a todas las preguntas. Pero hubieron también científicos y matemáticos
 que perseguían la automatización del razonamiento. Martin Gardner (Gardner,
-1982) atribuye a Gottfried Leibniz (1646-1716) el sueño de un "algebra
+1982) atribuye a Gottfried Leibniz (1646-1716) el sueño de un "álgebra
 universal mediante la cuál todo el conocimiento, incluyendo las verdades morales
 y metafísicas, pueda ser algún dia representado en un único sistema deductivo".
 Leibniz llamó a su sistema *cálculo filosófico o raciocinador,* fue, claro esta,
@@ -426,7 +426,7 @@ Green en su sistema QA3 (Green, 1969). Como resultado de muchas controversias
 entre los investigadores de la IA, el cálculo de predicados y sus variantes han
 sobrevivido como el fundamento básico para la representación del conocimiento.
 
-Los lógicos del siglo XX, incluyendo a Kart Godel, Stephen Kleene, Emil Post,
+Los lógicos del siglo XX, incluyendo a Kart Gödel, Stephen Kleene, Emil Post,
 Alonzo Church y Alan Turing, formalizaron y clarificaron lo que puede ser hecho
 y lo que no puede ser hecho mediante sistemas lógicos y computacionales.
 Posteriormente, informáticos como Stephen Cook y Richard Kart identificaron las
@@ -460,35 +460,35 @@ la psicología cognitiva, la lingüística computacional (Chomsky, 1965) y la
 teoría del control adaptativo Widrow y Hoff, 1960), han contribuido también a
 esta matriz intelectual dentro de la cuál se ha desarrollado la IA.
 
-Una gran parte del trabajo inicial en la IA (durante la decada de los afios 60 y
-la primera parte de la decada de los 70) se dedicaba a explorar diversas
-representaciones de problemas, técnicas de búsqueda y heuristicas generales que
+Una gran parte del trabajo inicial en la IA (durante la década de los años 60 y
+la primera parte de la década de los 70) se dedicaba a explorar diversas
+representaciones de problemas, técnicas de búsqueda y heurísticas generales que
 se aplicaban en programas de ordenador capaces de resolver puzzles sencillos, de
 jugar contra el usuario o de recuperar información.
 
-Uno de los programas más influyentes fue el *Solucionador General de Prob/emas*
+Uno de los programas más influyentes fue el *Solucionador General de Problemas*
 (GPS, o General Problem Solver) de Allen Newell, Cliff Shaw y Herbert Simon.
-Entre los problemas de muestra resuelto por estos sistemas pioneros se inclufan
-la *integración simbó/ica* (Slagle, 1963), los problemas de algebra (Bobrow,
-1968), los puzzles analogicos (Evans, 1968) y el control de robots moviles
+Entre los problemas de muestra resuelto por estos sistemas pioneros se incluían
+la *integración simbólica* (Slagle, 1963), los problemas de álgebra (Bobrow,
+1968), los puzzles analógicos (Evans, 1968) y el control de robots móviles
 (Nilsson, 1984). Muchos de estos sistemas constituyen el tema central de los
-artfculos reunidos en el historico volumen Computer and Thought (Feigenbaum y
+artículos reunidos en el histórico volumen Computer and Thought (Feigenbaum y
 Feldman, 1963).
 
 Los intentos de "escalar" estos programas **y** sus técnicas para enfrentarlos a
-aplicaciones de importancia practica revelaron que solo valfan para resolver
-"problemas de juguete". La construcción de sistemas más potentes requeria la
-inclusion de mucho más conocimiento sobre el dominio de aplicación. Los ultimos
-afios de la decada de los 70 y los primeros de la decada de los 80 vieron el
-desarrollo de programas más realistas, que contenian el conocimiento necesario
+aplicaciones de importancia practica revelaron que solo valían para resolver
+"problemas de juguete". La construcción de sistemas más potentes requería la
+inclusión de mucho más conocimiento sobre el dominio de aplicación. Los últimos
+años de la década de los 70 y los primeros de la década de los 80 vieron el
+desarrollo de programas más realistas, que contenían el conocimiento necesario
 para mimetizar el comportamiento de los expertos humanos en tareas tales como el
-C diagnostico, el disefio y el analisis. Fueron explorados y desarrollados
+C diagnostico, el diseño y el análisis. Fueron explorados y desarrollados
 varios métodos para la representación de conocimiento específico del problema. El
-programa al que se atribuye el merito de ser el primero que demostro la
+programa al que se atribuye el merito de ser el primero que demostró la
 importancia de recoger grandes cantidades de conocimiento específico del dominio
-fue *DENDRAL, un sistema para predecir la estructura de* *moleculas organicas a
-partir de su formula quimica y de su espectrograma de masas.* (Feigenbaum,
-Buchanan y Lederberg, 1971) (Lindsay, 1980). Despues se desarrollaron otros
+fue *DENDRAL, un sistema para predecir la estructura de* *moléculas orgánicas a
+partir de su formula química y de su espectrograma de masas.* (Feigenbaum,
+Buchanan y Lederberg, 1971) (Lindsay, 1980). Después se desarrollaron otros
 "sistemas expertos", incluyendo sistemas para diagnostico médico (Shortliffe,
 1976 y Millar, Pople y Myers, 1982), sistemas para configurar ordenadores
 (McDermott, 1982) y sistemas para valorar posibles yacimientos de minerales
@@ -496,7 +496,7 @@ Buchanan y Lederberg, 1971) (Lindsay, 1980). Despues se desarrollaron otros
 de la IA a lo largo de este periodo fue escrito por McCorduck, 1979).
 
 Una de las áreas en la que se han realizado progresos sustanciales al escalar el
-tamafio del problema es el área de los juegos. El 11 de mayo de 1997, un
+tamaño del problema es el área de los juegos. El 11 de mayo de 1997, un
 programa de ordenador de IBM, denominado *DEEP BLUE, consiguió veneer al
 entonces campeón def mundo de ajedrez, Garry* *Kasparov,* por 3.5 a 2.5 en un
 encuentro a seis partidas. Este alto nivel de juego se ha conseguido gracias a
@@ -506,29 +506,29 @@ velocidad y hardware específico para el juego del ajedrez.
 La inteligencia humana abarca muchas habilidades, incluyendo la habilidad para
 percibir y analizar escenas visuales y la habilidad para entender o generar el
 lenguaje. Estos son temas específicos que han recibido mucha atención. Larry
-Roberts desarrollo uno de los primeros programas de analisis de escenas
+Roberts desarrollo uno de los primeros programas de análisis de escenas
 (Roberts, 1963). Este trabajo preliminar fue seguido de una extensa cantidad de
-investigacion en vision artificial (Nalga, 1993) es un buen libro de texto
-general, guiada mediante estudios cientfficos de los sistemas de vision animal
+investigación en visión artificial (Nalga, 1993) es un buen libro de texto
+general, guiada mediante estudios científicos de los sistemas de visión animal
 (Letvin, 1959; Hubel, 1988 y Marr, 1982).
 
-Uno de los sistemas pioneros en comprension del lenguaje natural fue el
-desarrollado por Ferry Winograd (Winograd, 1972). Durante la decada de los afios
+Uno de los sistemas pioneros en comprensión del lenguaje natural fue el
+desarrollado por Ferry Winograd (Winograd, 1972). Durante la década de los años
 70 se llevo a cabo un proyecto coordinado multicentro que desarrollo prototipos
-de sistemas para la comprension fluida del habla; el sistema LUNAR (Woods,
+de sistemas para la comprensión fluida del habla; el sistema LUNAR (Woods,
 1973), desarrollado por William Woods, era capaz de responder a preguntas orales
 en ingles sobre las muestras de rocas recogidas por las misiones lunares de la
-**NASA.** Aunque actualmente existen diversos sistemas de comprension del
-lenguaje natural, su competencia se restringe a áreas tematicas especificas y a
+**NASA.** Aunque actualmente existen diversos sistemas de comprensión del
+lenguaje natural, su competencia se restringe a áreas temáticas especificas y a
 vocabularios especializados. El desarrollo de sistemas con un alcance más amplio
-requerira de nuevos avances en la representación de grandes cantidades de
+requerirá de nuevos avances en la representación de grandes cantidades de
 conocimiento general de sentido com(m. El proyecto CYC (Guha y Lenat, 1990; Guha
 y Lenat, 1995) tiene como uno de sus objetivos la recogida y representación de
 conocimiento de este tipo.
 
-Aunque el interes en las redes neuronales decayó un poco tras el trabajo pionero
-realizado en los ultimos afios de la decada de los 50 por Frank Rosenblatt,
-resurgió con energia en los afios
+Aunque el interés en las redes neuronales decayó un poco tras el trabajo pionero
+realizado en los últimos años de la década de los 50 por Frank Rosenblatt,
+resurgió con energía en los años
 
 80. Las redes de elementos no lineales con interconexiones de pesos variables se
  consideran actualmente como una clase muy importante de herramientas para el
@@ -536,61 +536,61 @@ resurgió con energia en los afios
  las redes neuronales. El trabajo sobre redes neuronales, junto con el
  trabajo en temas de vida artificial, ha ayudado a focalizar la investigación
  actual en IA sobre los problemas relacionados con la conexión entre procesos
- simbóIicos y los sensores y efectores de los robots inmersos en un entorno
+ simbólicos y los sensores y efectores de los robots inmersos en un entorno
  físico.
 
 Si proyectamos las tendencias actuales hacia el futuro, es razonable esperar un
 nuevo énfasis en el desarrollo de sistemas autónomos integrados, robots y
 "softbots". Los softbots (Etzioni y Weld, 1994) son agentes software que
 recorren Internet buscando la información que ellos creen que puede ser de
-interes para sus usuarios. La Constante presión ejercida para mejorar las
+interés para sus usuarios. La Constante presión ejercida para mejorar las
 capacidades de los robots y de los agentes software motivara y guiara la
-investigación en inteligencia artificial durante muchos afios.
+investigación en inteligencia artificial durante muchos años.
 
 * 1. Mundo especial para agentes con IA
 
 La investigación en IA ha conducido al desarrollo de numerosas ideas y técnicas
-relevantes dirigidas al objetivo de automatizar la inteligencia. Estas ideps y
-técnicas seran descriptas en el contexto de una serie de **"agentes"** cada vez
+relevantes dirigidas al objetivo de automatizar la inteligencia. Estas ideas y
+técnicas serán descriptas en el contexto de una serie de **"agentes"** cada vez
 más capaces y complejos. Hay muchos tipos de i ) agentes y entornos que
 podríamos considerar.
 
 Por ejemplo, podemos imaginar robots que trabajen en las condiciones de gravedad
-cero del • espacio exterior, en las aguas oscuras de los fondos oceanicos, en
-edificios de oficinas o en factorias, o en el mundo simbóIico de Internet. Pero
+cero del • espacio exterior, en las aguas oscuras de los fondos oceánicos, en
+edificios de oficinas o en factorías, o en el mundo simbólico de Internet. Pero
 estos agentes prácticos del *"mundo real"* son a veces demasiados complejos para
 ilustrar de forma transparente los conceptos de la IA en los que se basa su
 inteligencia.
 
 En lugar, lo que haremos sera introducir una serie de *agentes "de juguete"* en
 un entorno ficticio al que llamaremos *"mundo espacial cuadriculado".* Aunque
-este mundo simple es fácil de describir, podemos afiadirle cierta complejidad
+este mundo simple es fácil de describir, podemos añadirle cierta complejidad
 para hacerlo suficientemente rico como para que requiera "inteligencia" en sus
 agentes.
 
 El *mundo espacia/ cuadriculado* es un espacio tridimensional demarcado por una
 matriz bidimensional de celdas a la que llamaremos *"sue/o".* Cada celda puede
 contener objetos que tienen diversas propiedades, y pueden existir *"paredes"*
-delimitando conjuntos de celdas. Los agentes estan confinados en el suelo y
+delimitando conjuntos de celdas. Los agentes están confinados en el suelo y
 pueden moverse de celda a celda. Los objetos pueden estar en el suelo o
 colocados sobre una pila de otros objetos apilados sobre el suelo. A veces,
 usaremos solo el subespacio bidimensional definido por el suelo. En la Figura
 1.2 se muestra un ejemplo típico de mundo espacial cuadriculado, en el que hay
 dos robots. Uno de ellos es un robot bidimensional sencillo, con sensores para
-percibir si las celdas adyacentes estan o no fibres para moverse a ellas; el
+percibir si las celdas adyacentes están o no libres para moverse a ellas; el
 otro, más complejo, dispone de un brazo con el que puede manipular objetos.
 
 Figura 1.2
 
-Los lectores ya familiarizados con la bibliografia sobre IA reconoceran
-facilmente que el mundo espacial cuadriculado puede ser particularizado a
+Los lectores ya familiarizados con la bibliografía sobre IA reconocerán
+fácilmente que el mundo espacial cuadriculado puede ser particularizado a
 algunos de los muchos *"mundos"* utilizados en la investigación sobre IA,
 incluyendo el mundo de bloques, el mundo del mosaico (Pollack y Ringuette,
 1990), el mundo de los wumpus (Russell y Norvig, 1955) y el mundo de las
 hormigas (Koza, 1992). Todos ellos son mundos discretos, en el sentido de que
 existe un número finito de posiciones, de agentes, de objetos y de instantes de
 tiempo. Muchas de las técnicas de la IA que describiremos se aplican a mundos
-discretos y requeririan un cierto procesamiento subsimbólico para operar en
+discretos y requerirían un cierto procesamiento subsimbólico para operar en
 mundos continuos.
 
 1.5. Sistemas que resuelven problemas de la IA
@@ -598,20 +598,20 @@ mundos continuos.
 **,Que es la Inteligencia Artificial?**
 
 La Inteligencia Artificial (IA) estudia como lograr que las máquinas realicen
-tareas que, por el momenta, son realizadas mejor por los seres humanos. Esta
-definición es, por supuesto, bastante efimera ya que hace referencia al estado
-actual de la informatica. Ademas falla al no incluir algunas áreas que
+tareas que, por el momento, son realizadas mejor por los seres humanos. Esta
+definición es, por supuesto, bastante efímera ya que hace referencia al estado
+actual de la informática. Ademas falla al no incluir algunas áreas que
 potencialmente tienen un gran impacto, tales como aquellos problemas que no
 pueden ser resueltos adecuadamente ni por las máquinas ni por los hombres.
 
 **Los problemas de la Inteligencia Artificial**
 
-¿Cuáles son entonces los problemas de los que se ocupa la IA? La mayoria de los
-primeros trabajos en este campo hicieron gran hincapie en las tareas formates,
+¿Cuáles son entonces los problemas de los que se ocupa la IA? La mayoría de los
+primeros trabajos en este campo hicieron gran hincapié en las tareas formatos,
 como juegos y demostración de teoremas. Samuel escribió un programa de juego de
 damas que no solo jugaba partidas contra un oponente, sino que además utilizaba
 la experiencia adquirida en las partidas para mejorar su rendimiento. El ajedrez
-también suscitó un gran interes. La lógica ! teórica fue el primer intento de
+también suscitó un gran interés. La lógica ! teórica fue el primer intento de
 demostrar los teoremas matemáticos; con ella se pudo demostrar algunos teoremas
 que aparecen en el primer capítulo de los Principia Mathematica de Whitehead y
 Russell. El demostrador de teoremas de Gelernter exploró otra área de las
@@ -619,54 +619,53 @@ matemáticas: la geometría. Los juegos y la demostración de teoremas comparten
 propiedad I de que son tareas en las que se considera que es necesaria la
 inteligencia para desarrollarlas.
 
-Otra primera incursion dentro de la IA se centró en la clase de problemas que
-aparecen a diario - como cuando decidimos como llegar al trabajo por la manana -
+Otra primera incursión dentro de la IA se centró en la clase de problemas que
+aparecen a diario - como cuando decidimos como llegar al trabajo por la mañana -
 con frecuencia denominados de sentido común. Estos problemas incluyen el
 razonamiento sobre objetos físicos y sus relaciones (por ejemplo, un objeto solo
 puede estar en un lugar a la vez), como también razonamiento sobre acciones y
 sus consecuencias (por ejemplo, si se deja caer algo, chocara contra el suelo y
-posiblemente se rompera). Para estudiar este tipo de razonamientos, Newell, Shaw
+posiblemente se romperá). Para estudiar este tipo de razonamientos, Newell, Shaw
 y Simon construyeron el Resolutor General de Problemas, el cuál se aplicó tanto
 ! a variadas tareas de sentido común como al problema de realizar manipulaciones
 simbólicas en expresiones lógicas.
 
-*(i* Conforme las investigaciones en IA progresaron y fueron desarrollandose
+*(i* Conforme las investigaciones en IA progresaron y fueron desarrollándose
 técnicas de manipulación de grandes cantidades de conocimiento sobre el mundo,
 se realizaron algunos avances en las tareas descriptas y aparecieron nuevas
-áreas de investigación. Estas áreas I incluyen la percepción (vision y habla),
+áreas de investigación. Estas áreas I incluyen la percepción (visión y habla),
 comprensión del lenguaje natural y resolución de problemas en campos
-especializados como diagnósticos medicos y analisis quimico.
+especializados como diagnósticos médicos y análisis químico.
 
-Las tareas de percepción son dificiles ya que incluyen señales analógicas
+Las tareas de percepción son difíciles ya que incluyen señales analógicas
 (previas a las digitales); estas señales suelen contener bastante ruido aunque
 normalmente se percibe a la I vez una gran cantidad de objetos (algunos de los
 cuales pueden estar parcialmente tapados por otros).
 
-La habilidad de utilizar un lenguaje para comúnicar gran variedad de ideas es
+La habilidad de utilizar un lenguaje para comunicar gran variedad de ideas es
 quizá el aspecto más importante que separa a los humanos del resto de los
-animates. La comprensión del lenguaje hablado es un problema de percepción
+animales. La comprensión del lenguaje hablado es un problema de percepción
 difícil de resolver por las razones ya explicadas. Es posible, sin embargo,
 restringir el problema al lenguaje escrito. Este problema, normalmente
 denominado comprensión del lenguaje natural, es aun extremadamente difícil. Para
 poder comprender frases sobre un cierto tema, es necesario no solo poseer un \
-conocimiento amplio sobre el propio lenguaje (vocabulario y gramatica), sino
+conocimiento amplio sobre el propio lenguaje (vocabulario y gramática), sino
 también manejar el suficiente conocimiento sobre dicho tema para reconocer las
 suposiciones no expresadas en el texto.
 
 Ademas de estas tareas de la vida diaria, mucha gente puede también realizar
 tareas más especializadas en las cuales es necesaria una cuidada adquisición de
-experiencia. Ejemplos de lo anterior son tareas como el diseno en ingenieria,
-los descubrimientos cientificos, los diagnósticos medicos y la planificación
+experiencia. Ejemplos de lo anterior son tareas como el diseño en ingeniería,
+los descubrimientos científicos, los diagnósticos médicos y la planificación
 financiera. Los programas que pueden resolver problemas sobre estos dominios
-también estan bajo la tutela de la inteligencia artificial.
+también están bajo la tutela de la inteligencia artificial.
 
-Si bien las habilidades de un experto necesitan un conocimiento que la mayoria
+Si bien las habilidades de un experto necesitan un conocimiento que la mayoría
 no poseemos, con frecuencia es mucho menor que el conocimiento necesario en las
-tareas más comúnes, y con frecuencia más fácil de representar y tratar en los
+tareas más comunes, y con frecuencia más fácil de representar y tratar en los
 programas.
 
-Como consecuencia, las áreas donde la IA esta prosperando como una disciplin
-'pf'i:tica (en oposición a una puramente de investigación) es precisamente en
+Como consecuencia, las áreas donde la IA esta prosperando como una disciplina práctica (en oposición a una puramente de investigación) es precisamente en
 los dominios donde es necesario unicamente un conocimiento experto sin la ayuda
 de sentido común. Existen en la actualidad miles de programas llamados sistemas
 expertos utilizados diariamente en cualquier área de la industria y la
@@ -688,9 +687,9 @@ Juegos
 
 * Damas
 
-* Go Matematica
+* Go Matemática
 
-* Geometria
+* Geometría
 
 * Lógica
 
@@ -700,7 +699,7 @@ Juegos
 
 Percepción
 
-* Vision
+* Visión
 
 * Habla Lenguaje natural
 
@@ -712,19 +711,19 @@ Percepción
 
 **Tareas de los expertos**
 
-Ingenieria
+Ingeniería
 
-* Diseno
+* Diseño
 
 * Detección de fallos
 
 * Planificación de manufacturación
 
-Analisis cientifico
+Análisis científico
 
 Diagnosis medica
 
-Analisis financiero
+Análisis financiero
 
 ¿Cuáles son nuestras suposiciones fundamentales sobre la inteligencia?
 
@@ -733,7 +732,7 @@ Analisis financiero
 .:A que nivel de detalle, si es que no es por completo, se puede intentar
 modelar la inteligencia humana?
 
-.:Como se puede saber cuando se ha tenido exito en la construcción de un
+.:Como se puede saber cuando se ha tenido éxito en la construcción de un
 programa inteligente?
 
 **Las suposiciones subyacentes**
@@ -747,7 +746,7 @@ símbolos, que son patrones físicos que pueden funcionar como componentes de ot
 tipo de entidad llamada expresión (o estructura de símbolos). De esta forma, una
 estructura de símbolos está compuesta por un número de instancias (señales o
 tokens) de símbolos relacionados de alguna forma física (como que una serial
-debe seguir a otra). En algun instante, el sistema contendra una colección de
+debe seguir a otra). En algún instante, el sistema contendrá una colección de
 estas estructuras de símbolos. Ademas de estas estructuras, el sistema contiene
 también una colección de procesos que operan sobre expresiones para producir
 otras expresiones: procesos de creación, modificación, reproducción y
@@ -760,9 +759,9 @@ Ellos entonces enunciaron la hipótesis asi:
 
 La hipótesis del sistema de símbolos físicos. **Un sistema de símbolos físicos
 posee los medios necesarios y suficientes para realizar una acción inteligente
-generica.** Esta hipótesis es solo una hipótesis. Esto significa que no hay
+genérica.** Esta hipótesis es solo una hipótesis. Esto significa que no hay
 manera de probarla o refutarla hablando en términos lógicos. De esta forma, debe
-estar sujeta a una validación empirica. Puede encontrarse que es falsa. Puede
+estar sujeta a una validación empírica. Puede encontrarse que es falsa. Puede
 encontrarse que el peso de la evidencia dice que es cierta. Pero el único camino
 para determinar su certeza es mediante la experimentación.
 
@@ -771,22 +770,22 @@ pueden ser programadas para simular cualquier sistema de símbolos físicos.
 
 Como la facilidad de construcción de máquinas para computar se ha ido
 incrementando, también se ha incrementado la posibilidad de dirigir las
-investigaciones empiricas hacia la hipótesis def sistema de símbolos físicos. En
+investigaciones empíricas hacia la hipótesis def sistema de símbolos físicos. En
 cada investigación, se selecciona una tarea concreta en la que pueda
 considerarse que es necesario el uso de la inteligencia. Se propone un programa
 que realice esa tarea y a continuación se comprueba.
 
 Sin embargo, modelos subsimbólicos (como. por ejemplo, las redes neuronales)
-estan comenzando a cuestionar los simbólicos como tareas de bajo nivel. Aun hoy
+están comenzando a cuestionar los simbólicos como tareas de bajo nivel. Aun hoy
 se debaten ciertos conflictos entre modelos simbólicos y la hipótesis del
-sistema de símbolos físicos. Y es importante hacer notar que el exito de los
+sistema de símbolos físicos. Y es importante hacer notar que el éxito de los
 sistemas subsimbólicos no es necesariamente una ** evidencia en contra de la
 hipótesis. Con frecuencia es posible llevar a cabo una tarea de más de una
 forma.
 
 La importancia de la hipótesis del sistema de símbolos físicos es doble. Es una
-teoria significativa de la naturaleza de la inteligencia humana y también es de
-gran interes para los psic61ogos. Esto también forma la base de. la creencia de
+teoría significativa de la naturaleza de la inteligencia humana y también es de
+gran interés para los psicólogos. Esto también forma la base de. la creencia de
 que es posible construir programas J que lleven a cabo las tareas inteligentes
 que son ahora realizadas por la gente.
 
@@ -799,7 +798,7 @@ problemas? La respuesta es afirmativa, los hay. *¿Qué* puede decirse de estas
 técnicas, si es que se puede, aparte def hecho de que manipulan símbolos?
 
 I *!* Uno de los más rápidos y s61idos resultados que surgieron en las primeras
-tres decadas de las investigaciones en IA fue que la inteligencia necesita
+tres décadas de las investigaciones en IA fue que la inteligencia necesita
 conocimiento. Para compensar este I arrollador logro, imprescindiblemente, el
 conocimiento posee algunas propiedades poco deseables, tales como:
 
@@ -832,12 +831,12 @@ se cumple esta propiedad es mejor hablar de "datos" que de conocimiento.
 
 lectura de instrumentos), en muchos dominios de la IA, la mayor parte del
 conocimiento que se suministra a los programas lo proporcionan personas,
-haciendolo siempre en términos que ellos comprenden.
+haciéndolo siempre en términos que ellos comprenden.
 
-* Puede modificarse facilmente para corregir errores y reflejar los cambios en
+* Puede modificarse fácilmente para corregir errores y reflejar los cambios en
  el mundo y
 
-en nuestra vision del mundo.
+en nuestra visión del mundo.
 
 * Puede usarse en gran cantidad de situaciones aun cuando no sea totalmente
  preciso o
@@ -847,24 +846,24 @@ completo.
 * Puede usarse para ayudar a superar su propio volumen, ayudando a acotar el
  rango de posibilidades que normalmente deben ser consideradas.
 
-Como conclusion se ponen de manifiesto tres importantes técnicas de IA:
+Como conclusión se ponen de manifiesto tres importantes técnicas de IA:
 
-Busqueda: proporciona una forma de resolver los problemas en los que no se
+Búsqueda: proporciona una forma de resolver los problemas en los que no se
 dispone de un método más directo tan bueno como una estructura en la que
 empotrar algunas técnicas directas existentes.
 
 Uso del conocimiento: proporciona una forma de resolver problemas complejos
 explotando las estructuras de los objetos involucrados.
 
-Abstraccion: proporciona una forma de separar aspectos y variaciones importantes
-de aquellos otros sin importancia y que en caso contrario podrfan colapsar un
+Abstracción: proporciona una forma de separar aspectos y variaciones importantes
+de aquellos otros sin importancia y que en caso contrario podrían colapsar un
 proceso.
 
 Para solucionar problemas complicados los programas que utilizan estas técnicas
 presentan numerosas ventajas frente a los que no lo hacen.. Los primeros son
-mucho menos fragiles, no se despistaran totalmente· debido a una pequena
-perturbadon en la entrada. El tonocimiento del programa es comprendido
-facilmente por la gente. Y estas técnicas pueden trabajar con facilidad en
+mucho menos frágiles, no se despistaran totalmente· debido a una pequeña
+perturbación en la entrada. El conocimiento del programa es comprendido
+fácilmente por la gente. Y estas técnicas pueden trabajar con facilidad en
 grandes problemas en.donde los métodos directos fallan.
 
 **El nivel del modelo**
@@ -883,15 +882,15 @@ misma forma que el hombre, se dividen en dos clases.
 
 * Los programas de la primera clase se encargan de problemas que no se adecuan
  mucho con nuestra definición de tarea perteneciente a la IA; son aquellos
- problemas que una computadora puede resolver facilmente, pero cuya resolución
+ problemas que una computadora puede resolver fácilmente, pero cuya resolución
  implica el uso de mecanismos de los que no dispone el hombre. Un ejemplo
- clasico de esta clase de
+ clásico de esta clase de
 
 programas lo constituye el Observador y Memorizador Elemental (EPAM) (Elementary
 Perceiver and Memorizar) (Feigenbaum, 1963), el cuál memoriza parejas asociadas
-de sflabas sin sentido. Memorizar parejas de sflabas sin sentido es fácil para
+de sílabas sin sentido. Memorizar parejas de sílabas sin sentido es fácil para
 una computadora: simplemente se almacenan. Para recuperar una silaba
-correspondiente dado su estimulo, la computadora examina la sflaba estimulada y
+correspondiente dado su estimulo, la computadora examina la sílaba estimulada y
 responde con la que esta almacenada a continuación.
 
 * La segunda clase de programas que intentan modelar lo humano, son aquellas que
@@ -901,11 +900,11 @@ responde con la que esta almacenada a continuación.
 Hay varias razones para querer modelar la forma de trabajar humana para llevar a
 cabo estas tareas:
 
-* Verificar las teorias psicológicas de la actuación humana. PARRY (Colby, 1975)
+* Verificar las teorías psicológicas de la actuación humana. PARRY (Colby, 1975)
  es un ejemplo de programa escrito por esta razón; utiliza un modelo de
  comportamiento paranoico humano para simular el comportamiento conversacional
  de una persona paranoica. El programa resultó lo suficientemente bueno como
- para que algunos psic61ogos que tuvieron la oportunidad de conversar con el
+ para que algunos psicólogos que tuvieron la oportunidad de conversar con el
  programa mediante un terminal, diagnosticaran que su comportamiento era
  paranoico.
 
@@ -917,9 +916,9 @@ cabo estas tareas:
 
 * Capacitar a la gente para comprender a las computadoras. En muchas
  circunstancias, la gente no esta dispuesta a fiarse del resultado de una
- computadora a no ser que entienda como ha llegado la máquina a esa conclusion.
+ computadora a no ser que entienda como ha llegado la máquina a esa conclusión.
  Si el proceso de razonamiento de una computadora es similar al humano,
- producir una explicación adecuada resultarfa mucho más fácil.
+ producir una explicación adecuada resultaría mucho más fácil.
 
 * Explotar el conocimiento que se puede buscar en el hombre. Debido a que el
  hombre es el sistema del que mejor se conoce cómo lleva a cabo las tareas con
@@ -933,76 +932,76 @@ individuales. Ejemplos de esto son los primeros trabajos teóricos de McCulloch 
 Pitts (1943), el trabajo sobre perceptrones, desarrollado en principio por Frank
 Rosenblatt, pero descrito mejor en Perceptrons (Minsky y papera, 1969) y Design
 for a Brain (Sabih, 1952). Se demostró, sin embargo, que era imposible producir
-un comportamiento mfnimamente inteligente con estos sencillos dispositivos. Una
-de las razones era que habfa severas limitaciones teóricas en la arquitectura de
+un comportamiento mínimamente inteligente con estos sencillos dispositivos. Una
+de las razones era que había severas limitaciones teóricas en la arquitectura de
 la red neuronal que se estaba utilizando. Mas recientemente han surgido nuevas
 arquitecturas de redes neuronales. Estas estructuras no se hallan sujetas a las
 mismas limitaciones teóricas que los perceptrones. Estas nuevas arquitecturas se
-denominan imprecisamente *"conexionadas"* (conectionist), y se usan como base
+denominan imprecisamente *"conexionadas"* (connectionist), y se usan como base
 para programas de resolución de problemas y aprendizaje.
 
-**Criterios de determinación del exito**
+**Criterios de determinación del éxito**
 
 Una de las preguntas más importantes a responder en toda investigación
-cientffica o de ingenieria es *¿Cómo* sabremos si hemos tenido exito?. La
+científica o de ingeniería es *¿Cómo* sabremos si hemos tenido éxito?. La
 Inteligencia Artificial no es una excepción. *¿Cómo* podemos saber si hemos
 construido una máquina inteligente?
 
 En 1950, Alan Turing propuso el siguiente método para determinar si una máquina
 es capaz de pensar. Este método es conocido como el test de Turing. Para
 realizarlo se necesitan dos personas y la máquina que se desea evaluar. Una de
-las personas actua de entrevistador y se encuentra en una habitaclón, separado
+las personas actúa de entrevistador y se encuentra en una habitación, separado
 de la computadora y de la otra persona. El entrevistador hace preguntas tanto a
 la persona como a la computadora mecanografiando las ' cuestiones y recibe las
 respuestas de igual forma. El entrevistador solo los conoce por A y B, y debe
 intentar determinar quien es la persona y quien la máquina. El objetivo de la
 máquina es hacer creer al entrevistador que es una persona, si lo consigue, se
 concluye que la máquina piensa. Se permite que esta haga cualquier cosa para
-engafiar al entrevistador. Asf, por ejemplo, si la pregunta es ¿Cuanto es 123324
-por 73981? La máquina podrfa esperar unos minutos y responder erróneamente
+engañar al entrevistador. Asf, por ejemplo, si la pregunta es ¿Cuanto es 123324
+por 73981? La máquina podría esperar unos minutos y responder erróneamente
 (Turing, 1963).
 
 El aspecto más serio, sin embargo, es la cantidad de conocimiento que
-necesitarfa la máquina para pasar el test de Turing.
+necesitaría la máquina para pasar el test de Turing.
 
-Aun tendra que pasar mucho tiempo para que una máquina supere el test de Turing.
+Aun tendrá que pasar mucho tiempo para que una máquina supere el test de Turing.
 Algunos piensan que nunca lo harán. Pero supongamos que estamos dispuestos a
 aceptar menos que una imitación completa de la persona. ¿Podemos calibrar el
-exito de la IA en dominios más restringidos?
+éxito de la IA en dominios más restringidos?
 
 Con frecuencia la respuesta es afirmativa. Algunas veces se puede dar una medida
 bastante buena del logro obtenido por un programa. Por ejemplo, un programa
-puede jugar al ajedrez al mismo nivel que los jugadores humanos; su nivel vendra
+puede jugar al ajedrez al mismo nivel que los jugadores humanos; su nivel vendrá
 dado por el de los jugadores a los que pueda derrotar. Actualmente, los
-programas logran clasificaciones más altas que la inmensa mayorfa de los
+programas logran clasificaciones más altas que la inmensa mayoría de los
 jugadores de ajedrez. Para otros dominios, es posible dar una medida menos
-precisa del exito de un programa. Por ejemplo, DENDRAL, es un programa que
-analiza componentes organicos para determinar su estructura. Es cruel dar una
-medida precisa del nivel de exito de DENDRAL, comparandolo con el de los
-qufmicos; sin embargo, se han logrado analisis que han sido publicados como
+precisa del éxito de un programa. Por ejemplo, DENDRAL, es un programa que
+analiza componentes orgánicos para determinar su estructura. Es cruel dar una
+medida precisa del nivel de éxito de DENDRAL, comparándolo con el de los
+químicos; sin embargo, se han logrado análisis que han sido publicados como
 resultados de investigación original. Desde luego es al menos una ayuda
 competente.
 
 En otros dominios técnicos, es posible hacer una comparación del tiempo que
 tarda un programa en llevar a cabo una determinada tarea con el que tarda una
 persona en hacer lo mismo. Por ejemplo, existen bastantes programas usados por
-empresas de informatica para configurar sistemas particulares a las necesidades
+empresas de informática para configurar sistemas particulares a las necesidades
 del cliente (en donde el programa Rl es pionero). Estos programas normalmente
 necesitan minutos para realizar tareas que antes requerían horas para un
-habilidoso ingeniero. Estos programas se evaluan normalmente atendiendo a si se
+habilidoso ingeniero. Estos programas se evalúan normalmente atendiendo a si se
 ahorra o se gana dinero.
 
 Si lo que se quiere es escribir programas que simulen el comportamiento humano
-ante una tarea, la forma de medir el exito está en que el comportamiento del
-programa se corresponda con el humano, asf como mediante distintas clases de
-experimentos y analisis de protocolos.
+ante una tarea, la forma de medir el éxito está en que el comportamiento del
+programa se corresponda con el humano, así como mediante distintas clases de
+experimentos y análisis de protocolos.
 
 En este sentido no se busca un programa que simplemente sea tan bueno como sea
 posible, se busca un programa que falle donde la gente lo hace.
 
 Ejercicio
 
-Desarrollar un programa que ensefie a un nino a restar.
+Desarrollar un programa que enseñe a un niño a restar.
 
 1.5.1. Acciones'que debe llevar'a cabo el sistema
 
@@ -1011,7 +1010,7 @@ realizar estas cuatro acciones:
 
 * Definir el problema con precisión. La definición debe incluir especificaciones
  precisas tanto sobre la o las situaciones iniciales como sobre las situaciones
- finales que se aceptarfan como soluciones al problema.
+ finales que se aceptarían como soluciones al problema.
 
 * Analizar el problema. Algunas características de gran importancia pueden tener
  un gran efecto sobre la conveniencia o no de utilizar las diversas técnicas
@@ -1024,12 +1023,12 @@ realizar estas cuatro acciones:
 
 1.5.2. Definición del problema mediante una búsqueda en espacio de estados
 Suponga que comenzamos por el problema de "Jugar al ajedrez". A pesar de que es
-previsible que la mayorfa de la gente unicamente con esta sentencia actue
+previsible que la mayoría de la gente unicamente con esta sentencia actúe
 correctamente, la definición def problema tal y como esta, es incompleta. Para
 construir un programa que "juegue al ajedrez", primero se debe especificar la
 posición inicial del tablero, las reglas que definen los movimientos legales y
 las posiciones del tablero que representan una victoria tanto para un lado como
-para el otro. Ademas, se debe explicitar previamente el objetivo implfcito de no
+para el otro. Ademas, se debe explicitar previamente el objetivo implícito de no
 solo realizar un movimiento legal de ajedrez, sino también ganar la partida, si
 es posible.
 
@@ -1040,10 +1039,10 @@ las piezas situadas en posición de comienzo, de una partida oficial de ajedrez.
 El objetivo se define como cualquier posición def tablero en la *C!* que el
 contrario no pueda realizar ningún movimiento legal y su rey este amenazado.
 
-Los movimientos legales representan la forma de llegar a algun estado objetivo
-partiendo del , *J* estado inicial. Se pueden describir faci,lmente como un
+Los movimientos legales representan la forma de llegar a algún estado objetivo
+partiendo del , *J* estado inicial. Se pueden describir fácilmente como un
 conjunto de reglas compuestas por dos partes: una parte izquierda que se usa a
-modo de patron para ser contrastado con la situación actual def tablero, y una
+modo de patrón para ser contrastado con la situación actual def tablero, y una
 parte derecha que describe el cambio que debe producirse en el tablero para que
 refleje el movimiento.
 
@@ -1055,7 +1054,7 @@ Figura 1.3
 ![Figura 1.3: regla de movimiento en tablero de ajedrez](images/figura-1-3-regla-ajedrez-tablero.png)
 
 Sin embargo, si se utilizan reglas como la anterior, es necesario escribir un
-número muy grande de ellas, ya que existirfa una regla para cada una de las
+número muy grande de ellas, ya que existiría una regla para cada una de las
 10120 posibles posiciones del \ *1* tablero. Al usar tal cantidad de reglas
 aparecen dos serias dificultades practicas:
 
@@ -1064,9 +1063,9 @@ aparecen dos serias dificultades practicas:
 
 se podría evitar la aparición de errores.
 
-* Ning(m programa puede manipular todas estas reglas. Podrfa usarse un sistema
+* Ning(m programa puede manipular todas estas reglas. Podría usarse un sistema
  de hashing para poder encontrar más rápidamente las reglas más relevantes pero
- aun asf, almacenar tantas reglas crea muchas dificultades.
+ aun así, almacenar tantas reglas crea muchas dificultades.
 
 Con el fin de minimizar estos problemas, se debe buscar la forma de escribir las
 reglas que describen los movimientos legales de la forma más general posible.
@@ -1077,19 +1076,19 @@ Figura 1.4. En general, cuanto más sucintamente se describan las reglas, menos
 trabajo se empleara para introducirlas y el programa las usara con más
 eficiencia.
 
-Peon blanco en
+Peón blanco en
 
 Cuadrado (columna e, fila 2)
 
 Cuadrado (columna e, fila 3)
 
-esta *vacio* ---➔ Cuadrado (columna e, fila 4)
+esta *vacío* ---➔ Cuadrado (columna e, fila 4)
 
-esta *vacio*
+esta *vacío*
 
 Figura 1.4
 
-![Figura 1.4: regla de movimiento del peon blanco](images/figura-1-4-regla-movimiento-peon-blanco.png)
+![Figura 1.4: regla de movimiento del peón blanco](images/figura-1-4-regla-movimiento-peón-blanco.png)
 
 *mueve* el peón blanco desde el Cuadrado (columna e, fila 2) hasta el Cuadrado
 (columna e, fila 4) Se ha definido el problema de jugar al ajedrez como un
@@ -1105,7 +1104,7 @@ del tablero, es artificial y bien estructurado. El mismo tipo de representación
 es también adecuada para problemas menos estructurados, aunque sea necesario
 utilizar estructuras más complejas que una matriz para describir un estado
 individual. La representación como espacio de estados forma la base de la
-mayorfa de los métodos de IA que se discuten aquf. Su estructura se corresponde
+mayoría de los métodos de IA que se discuten aquí. Su estructura se corresponde
 con la estructura de la resolución de problemas por dos importantes razones:
 
 * Permite definir formalmente el problema, mediante la necesidad de convertir
@@ -1120,7 +1119,7 @@ permitidas.
  intenta encontrar alguna ruta desde el estado actual hasta un estado objetivo.
  La búsqueda es un proceso
 
-de gran importancia en la resolución de problemas dificiles para los que no se
+de gran importancia en la resolución de problemas difíciles para los que no se
 dispone de técnicas más directas.
 
 Con el fin de percibir la generalidad de la representación en espacio de
@@ -1141,7 +1140,7 @@ estado inicial es (0,0). El estado objetivo es (2,n) siendo n cualquier valor
 litros).
 
 Los operadores usados para resolver el problema se describen en la Figura 1.5.
-Al igual que en el problema del ajedrez, estan representados en forma de reglas
+Al igual que en el problema del ajedrez, están representados en forma de reglas
 en las que la parte izquierda se compara con el estado actual, y en las que la
 parte derecha describe el nuevo estado al que se llega mediante la aplicación de
 la regla.
@@ -1221,9 +1220,9 @@ Figura 1.5
 
 Una solución al problema de las jarras de agua
 
-![Solucion al problema de las jarras de agua](images/solucion-problema-jarras-agua.png)
+![Solución al problema de las jarras de agua](images/solución-problema-jarras-agua.png)
 
-## Espacio de busqueda y descripcion formal de problemas
+## Espacio de búsqueda y descripción formal de problemas
 
 Resumiendo lo dicho anteriormente, para poder producir una descripción formal de
 un problema debe hacerse lo siguiente:
@@ -1253,7 +1252,7 @@ combinación con una estrategia apropiada de control para trasladarse a través
 del espacio problema hasta encontrar una ruta desde un estado inicial hasta un
 estado objetivo.
 
-1.!5.3. Sistemas de producci611
+1.!5.3. Sistemas de producción611
 
 Debido a que la búsqueda es el núcleo de muchos procesos inteligentes, es
 adecuado estructurar los programas de IA de forma que se facilite describir y
@@ -1264,7 +1263,7 @@ tales como lo que se produce en una fabrica.
 
 Un sistema de producción consiste en:
 
-Un conjunto de reglas compuestas por una parte izquierda (un patron) que
+Un conjunto de reglas compuestas por una parte izquierda (un patrón) que
 determina la aplicabilidad de la regla y una parte derecha, que describe la
 operación que se lleva a cabo si se aplica la regla.
 
@@ -1286,13 +1285,13 @@ Prog. GRANJERO.PRO)
 
 Hasta aquí, la definición de un sistema de producción es muy general. Abarca una
 gran cantidad de sistemas, incluyendo nuestras descripciones del jugador de
-ajedrez y de la solución al problema de las jarras de agua. Tambien abarca una
+ajedrez y de la solución al problema de las jarras de agua. También abarca una
 familia de intérpretes generales de sistemas de producción que incluye:
 
 Lenguajes básicos de sistemas de producción, tales como OPSS (Brownston, 1985) y
 ACT\* (Anderson, 1983).
 
-Sistemas más complejos, con frecuencia hibridos, denominados armazones de
+Sistemas más complejos, con frecuencia híbridos, denominados armazones de
 sistemas expertos (expert systems shell), los cuales poseen entornos completos
 (hablando relativamente) para la construcción de sistemas expertos basados en
 conocimiento.
@@ -1307,19 +1306,19 @@ Todos estos sistemas mantienen la arquitectura de un sistema de producción en s
 totalidad y permiten que el programador escriba reglas para definir los
 problemas particulares que tienen que resolverse.
 
-## Analisis del problema
+## Análisis del problema
 
-1. Analisis del problema
+1. Análisis del problema
 
-La búsqueda heuristica es un método muy general que se puede aplicar a una gran
+La búsqueda heurística es un método muy general que se puede aplicar a una gran
 clase de problemas. Incluye gran variedad de técnicas específicas, cada una de
-las cuales es particularmente efectiva para una pequefia clase de problemas. A
+las cuales es particularmente efectiva para una pequeña clase de problemas. A
 fin de poder elegir el método más apropiado (o una combinación de métodos) para
 un problema en particular, es necesario analizarlo con arreglo a varias
 dimensiones clave:
 
 - * ¿Puede el problema descomponerse en un conjunto de subproblemas
- independientes (o casi) más pequefios o sencillos?
+ independientes (o casi) más pequeños o sencillos?
 
 * ¿Pueden ignorarse pasos dados o al menos deshacerse si se comprueba que no
  eran adecuados?
@@ -1327,9 +1326,9 @@ dimensiones clave:
 * ¿Es predecible el universo del problema?
 
 * ¿Una solución es buena de manera evidente, sin necesidad de compararla con
- todas las demas posibles soluciones?
+ todas las demás posibles soluciones?
 
-* La solución deseada, *¿es* un estado del mundo o una ruta hacia algun estado?
+* La solución deseada, *¿es* un estado del mundo o una ruta hacia algún estado?
 
 * ¿Es necesaria una gran cantidad de conocimiento para resolver el problema o
  solo es
@@ -1339,40 +1338,40 @@ dimensiones clave:
 - * La computadora a la que simplemente se le da el problema ¿Puede emitir una
  solución,
 
-o es necesario que esta interactue con una persona?
+o es necesario que esta interactúe con una persona?
 
 ¿Puede descomponerse el problema?
 
 Suponga que se desea resolver el problema de calcular la expresión:
 
-*(x2 +3x+sen2x-cos2 x)dx* Se puede resolver este problema descomponiendolo en
-tres problemas más pequefios, cada uno de los cuales puede resolverse usando una
-pequefia colección de reglas específicas. La Figura 1.6 muestra el arbol del
-problema que se genera mediante el proceso de descomposición. El arbol puede
+*(x2 +3x+sen2x-cos2 x)dx* Se puede resolver este problema descomponiéndolo en
+tres problemas más pequeños, cada uno de los cuales puede resolverse usando una
+pequeña colección de reglas específicas. La Figura 1.6 muestra el árbol del
+problema que se genera mediante el proceso de descomposición. El árbol puede
 generarse con un sencillo programa recursivo de integración de esta forma: en
 cada paso, se verifica si el problema en el que se trabaja se puede resolver
 directamente. Si lo es, se devuelve inmediatamente la respuesta. Si el problema
-no se puede resolver facilmente, el integrador verifica si puede descomponer el
+no se puede resolver fácilmente, el integrador verifica si puede descomponer el
 problema en otros más simples. Si puede, crea estos problemas *y* se llama
 recursivamente a sí mismo con ellos. Mediante el uso de esta técnica de
-descomposición del problema, se pueden resolver facilmente problemas muy
+descomposición del problema, se pueden resolver fácilmente problemas muy
 grandes.
 
-*J X'+3Y.+sen'xadxdx*
+*J X'+3Y.+sen x dx*
 
 Figura 1.6
 
-![Figura 1.6: arbol de descomposicion de una integral](images/figura-1-6-arbol-descomposicion-integral.png)
+![Figura 1.6: árbol de descomposición de una integral](images/figura-1-6-árbol-descomposición-integral.png)
 
 Considere ahora el problema ilustrado en la Figura 1. 7. Este problema esta
-extrafdo de un dominio que con frecuencia esta referenciado en la literatura de
+extraído de un dominio que con frecuencia esta referenciado en la literatura de
 IA como el mundo de los bloques. Se permiten los siguientes operadores:
 
 DESPEJADO (x) [el bloque x no tiene nada sobre el] ➔ SOBRE (X, Mesa) [coge **x
 y** ponlo sobre la mesa] DESPEJADO (x) y DESPEJADO (y) ➔ SOBRE (X, y) [poner x
 sobre y] \
 
-P-rindplo:
+Principio:
 
 .l·i.r-151
 
@@ -1385,35 +1384,35 @@ Figura 1. 7
 ![Figura 1.7: mundo de bloques, principio y objetivo](images/figura-1-7-mundo-bloques-inicio-objetivo.png)
 
 La aplicación de la técnica de descomposición del problema a este sencillo
-ejemplo de mundo de bloques se lleva al arbol solución mostrado en la Figura
-1.8. En la figura, los objetivos estan subrayados; los estados alcanzados no lo
-estan. La idea de esta solución es la de reducir el problema de conseguir B
+ejemplo de mundo de bloques se lleva al árbol solución mostrado en la Figura
+1.8. En la figura, los objetivos están subrayados; los estados alcanzados no lo
+están. La idea de esta solución es la de reducir el problema de conseguir B
 sobre C y A sobre B a dos problemas separados. El primero de estos / nuevos
 problemas, conseguir B sobre C, es sencillo, dado el estado inicial. Simplemente
 se \.
 
 coloca B sobre C. El segundo subobjetivo no es tan sencillo, puesto que los
-unicos operadores permitidos toman un solo bloque a la vez, se tiene que
+únicos operadores permitidos toman un solo bloque a la vez, se tiene que
 eliminar A quitando C antes de coger A **y** situarlo sobre B. Esto puede
-hacerse facilmente. Sin embargo, al intentar combinar las dos subsoluciones en
-una sola, se falla. Independientemente de cuál se haga primero, no se podra
+hacerse fácilmente. Sin embargo, al intentar combinar las dos subsoluciones en
+una sola, se falla. Independientemente de cuál se haga primero, no se podrá
 realizar el segundo tal **y** como se ha planeado. En este problema los dos
-subproblemas no son independientes. Interactuan, y tales interacciones deben ser
+subproblemas no son independientes. Interactúan, y tales interacciones deben ser
 consideradas a fin de llegar a una solución para la totalidad del problema.
 
 Figura 1.8
 
-![Figura 1.8: arbol solucion del mundo de bloques](images/figura-1-8-arbol-solucion-mundo-bloques.png)
+![Figura 1.8: árbol solución del mundo de bloques](images/figura-1-8-árbol-solución-mundo-bloques.png)
 
 ## Problemas ignorables, recuperables y no recuperables
 
-tl"ueden deshacerse o ignorarse pasos hacia una sol11.1ción?
+tl"pueden deshacerse o ignorarse pasos hacia una solución?
 
 Suponga que se intenta probar un teorema matemático. En primer lugar se prueba
 un lema que se piensa que sera útil. En cierto instante, se comprueba que el
 lema no supone una ayuda para nada. *¿Se* está en un apuro?
 
-No. Todo lo que se necesita saber para probar el teorema es todavfa cierto y
+No. Todo lo que se necesita saber para probar el teorema es todavía cierto y
 esta memorizado.
 
 Algunas reglas que pudieron aplicarse al principio aun pueden hacerlo. Basta con
@@ -1428,10 +1427,10 @@ especificada come objetivo. El objetivo es transformar la posición inicial en l
 posición objetivo mediante el deslizamiento de los bloques.
 
 En la Figura 1.9 se ve un juego de muestra con el 8-puzzle. Al intentar resolver
-el 8-puzzle, se pueden realizar movimientos estupidos. Por ejemplo, en el juego
-que se muestra arriba, se podrfa empezar deslizando el bloque 5 al espacio vado.
-Al hacer esto, no se podra deslizar el bloque 6 al hueco porque este se ha
-movido, pero podemos volver atras y deshacer el primer movimiento, deslizando el
+el 8-puzzle, se pueden realizar movimientos estúpidos. Por ejemplo, en el juego
+que se muestra arriba, se podría empezar deslizando el bloque 5 al espacio vado.
+Al hacer esto, no se podrá deslizar el bloque 6 al hueco porque este se ha
+movido, pero podemos volver atrás y deshacer el primer movimiento, deslizando el
 bloque 5 adonde estaba. Entonces ya podemos mover el bloque 6. Los errores
 pueden recuperarse también, pero no de una forma tan sencilla come en el
 problema de la demostración del teorema. Se debe realizar un paso adicional para
@@ -1444,7 +1443,7 @@ información.
 
 | --- | --- | --- |
 
-| PrfncipiO | | Objetlvo |
+| Principio | | Objetivo |
 
 | 2 8 | 3 | |
 
@@ -1455,19 +1454,19 @@ Figura 1.9
 ![Figura 1.9: estado inicial y objetivo del 8-puzzle](images/figura-1-9-estado-inicial-objetivo-8-puzzle.png)
 
 Considere otra vez el problema del juego del ajedrez. Suponga que un programa
-que juegue al ajedrez realiza un movimiento estupido y cae en la cuenta un par
-de movimientos despues; el programa no puede jugar come si nunca hubiera hecho
-el movimiento estupido ni puede volver atras y empezar el juego desde ese punto.
+que juegue al ajedrez realiza un movimiento estúpido y cae en la cuenta un par
+de movimientos después; el programa no puede jugar come si nunca hubiera hecho
+el movimiento estúpido ni puede volver atrás y empezar el juego desde ese punto.
 Todo lo que puede hacer es intentar hacerlo mejor en la situación actual y
 partir desde esta.
 
-Estas tres definiciónes hacen referencia a los pases de la solución de un
+Estas tres definiciones hacen referencia a los pases de la solución de un
 problema y, por lo tanto, pueden surgir para caracterizar sistemas de producción
-especificos para resolver problemas más que el problema en sí mismo. Quizá una
+específicos para resolver problemas más que el problema en sí mismo. Quizá una
 formulación diferente de un mismo problema har[a que el problema fuera
-caracte.rizado de form.a diferente. EStrictamente hablandb, esto es cierto. Sin
-embargo, debido a muches grandes problemas, existe solo una formulación (o un
-pequeno número de ellas esencialmente equivalentes) que de forma natural
+caracterizado de forma diferente. Estrictamente hablando, esto es cierto. Sin
+embargo, debido a muchos grandes problemas, existe solo una formulación (o un
+pequeño número de ellas esencialmente equivalentes) que de forma natural
 describe el problema. Esto es así para cada uno de los problemas expuestos
 anteriormente. Cuando este sea el case, tiene sentido considerar la
 recuperabilidad de un problema de forma equivalente a la recuperabilidad de una
@@ -1477,16 +1476,16 @@ La recuperabilidad de un problema juega un papel importante en la determinación
 de la complejidad de la estructura de control necesaria para resolver el
 problema. Los problemas. ignorables se resuelven utilizando una sencilla
 estructura de control que nunca vuelve hacia atrás. Estas estructuras de control
-son faciles de implementar. Los problemas recuperables se resuelven con
+son fáciles de implementar. Los problemas recuperables se resuelven con
 estrategias un poco más complicadas que a veces cometen errores. Para
-recuperarse de tales errores sera necesaria una vuelta atras, de forma que la
+recuperarse de tales errores sera necesaria una vuelta atrás, de forma que la
 estructura de control debe implementarse con una pila "push-down", en la que las
 decisiones se conservan en caso de que necesiten ser deshechas más tarde. Los
 problemas no recuperables, por otro lado, se resuelven mediante un sistema que
-debe aplicar muchfsimo esfuerzo en la toma de decisiones ya que estas son
+debe aplicar muchísimo esfuerzo en la toma de decisiones ya que estas son
 irrevocables. Algunos problemas irrecuperables se resuelven con métodos de
 estilo recuperable usando un proceso de planificación, en el que se analiza por
-adelantado una secuencia entera de pasos para descubrir adonde conducira antes
+adelantado una secuencia entera de pasos para descubrir adonde conducirá antes
 de dar el primer paso. Mas adelante se explican las clases de problemas en los
 que es posible hacer esto.
 
@@ -1495,25 +1494,25 @@ que es posible hacer esto.
 ,Es predecible el universo?
 
 Suponga nuevamente que estamos jugando al 8-puzzle. Cada vez que se hace un
-movimiento, se sabe exactamente que ocurrira. Esto significa que es posible
+movimiento, se sabe exactamente que ocurrirá. Esto significa que es posible
 planificar una secuencia entera de movimientos y estar seguros de que se conoce
 cuál sera el resultado. Es posible utilizar una planificación para evitar tener
-que deshacer movimientos, si bien todavfa se deben hacer comprobaciones de
+que deshacer movimientos, si bien todavía se deben hacer comprobaciones de
 movimientos en tiempo de planificación. De esta forma, es necesaria una
 estructura de control que permita la comprobación.
 
 Sin embargo, en otros juegos diferentes al 8-puzzle, no es posible un proceso de
 planificación. Suponga que queremos jugar al bridge. Una de las decisiones que
-hay que tomar es que carta jugar en la primera baza. Serfa deseable planificar
+hay que tomar es que carta jugar en la primera baza. Sería deseable planificar
 la mano completa antes de realizar esta primera jugada. Pero ahora no es posible
 hacer tal planificación con certeza debido a que no se sabe con exactitud donde
-estan las cartas y que harán los otros jugadores en sus turnos. Lo mejor que se
+están las cartas y que harán los otros jugadores en sus turnos. Lo mejor que se
 puede hacer es investigar distintos planes y utilizar las probabilidades de las
 consecuencias que se derivan de su elección para resaltar el que tenga la más
 alta probabilidad estimada de llegar a una buena puntuación en el juego.
 
 Las dos últimas características explicadas, ignorable versus recuperable y consecuencia-cierta
-versus consecuencia-incierta, interactuan de una forma interesante. Tai y como
+versus consecuencia-incierta, interactúan de una forma interesante. Tai y como
 se ha mencionado siempre, una forma de resolver los problemas irrecuperables es
 planificando una solución completa antes de embarcarse. en la implementación del
 plan. Sin embargo, este proceso de planificación solo es útil en los problemas
@@ -1525,17 +1524,17 @@ Bridge. Sin embargo, puede mejorarse un poco ya que existen estimaciones exactas
 de las probabilidades de cada una de las posibles consecuencias.
 
 Control de un brazo de robot. La consecuencia es incierta debido a varias
-razones. Alguien podrfa poner algo en la ruta del brazo; los mecanismos del
-brazo podrfan atascarse; un *leve C* error podrfa causar que el brazo choque con
+razones. Alguien podría poner algo en la ruta del brazo; los mecanismos del
+brazo podrían atascarse; un *leve C* error podría causar que el brazo choque con
 una pila de objetos.
 
 Ayudar a un abogado a decidir cómo defender a su cliente contra un cargo de
 asesinato. En este caso no se puede dar probablemente una lista de posibles
 consecuencias, y mucho menos dar sus probabilidades.
 
-## Solucion absoluta o relativa
+## Solución absoluta o relativa
 
-**Una solucion adecuada *¿es* absoluta o relativa?**
+**Una solución adecuada *¿es* absoluta o relativa?**
 
 Considere el problema de responder a preguntas basadas en una base de datos de
 hechos simples, tal como esta:
@@ -1546,28 +1545,28 @@ Marco era pompeyano.
 
 Marco nació en el ano 40 d.c. Todos los hombres son mortales.
 
-Todos los pompeyanos murieron con la erupción def volcan en el ano 79 d.c.
-Ningun mortal vive más de 150 afios.
+Todos los pompeyanos murieron con la erupción def volcán en el ano 79 d.c.
+Ningún mortal vive más de 150 años.
 
 Estamos en el ano 1994 d.c.
 
 Suponga que se hace la siguiente pregunta ''<'-Esta Marco vivo?". Al representar
 cada uno de estos hechos en un lenguaje formal, tal como la lógica de
 predicados, y al utilizar métodos formales de inferencia, puede derivarse
-facilmente una respuesta a la pregunta. De hecho, cualquiera de las dos formas
-de razonamiento conducira a la respuesta, tal y como se muestra en la Figura
-1.10. Nuestro interes se centra en responder a esta pregunta sin importar que
+fácilmente una respuesta a la pregunta. De hecho, cualquiera de las dos formas
+de razonamiento conducirá a la respuesta, tal y como se muestra en la Figura
+1.10. Nuestro interés se centra en responder a esta pregunta sin importar que
 camino se ha seguido para hacerlo. Si se sigue un camino que lleva a la.
-respuesta con exito, no hay razón para volver atras y ver si existen otros
+respuesta con éxito, no hay razón para volver atrás y ver si existen otros
 caminos que también lleguen a la solución.
 
-7. Estamos en el afio 1994 d.c.
+7. Estamos en el año 1994 d.c.
 
 5. Todos los pompeyanos murieron
 
-con la erupción del volcan en el ano 79 d.c.
+con la erupción del volcán en el ano 79 d.c.
 
-11. Todos las pompeyanos estan muertos.
+11. Todos las pompeyanos están muertos.
 
 2. Marco era pompeyano.
 
@@ -1587,11 +1586,11 @@ axioma 7 axioma 5 axioma 2
 
 | 3. | Marco nació en el 40 d.c. | axioma 3 |
 
-| 7. | Estamos en el afio 1994 d.c. | axioma 7 |
+| 7. | Estamos en el año 1994 d.c. | axioma 7 |
 
 | 9. | Marco tiene 1954 af\os. | 3,7 |
 
-| 6. | Ningtln mortal vive más de 150 afios. | axioma 6 |
+| 6. | Ningún mortal vive más de 150 años. | axioma 6 |
 
 | 10. | Marco está muerto. | 8,6,9 |
 
@@ -1600,7 +1599,7 @@ Figura 1.10
 ![Figura 1.10: inferencias sobre Marco muerto](images/figura-1-10-inferencias-marco-muerto.png)
 
 Pero ahora considere de nuevo el problema def viajante de comercio. El objetivo
-es encontrar la ruta más corta que llev.e a cada ciudad exactamente una vez.
+es encontrar la ruta más corta que lleva.e a cada ciudad exactamente una vez.
 Suponga que las ciudades a visitar y las distancias entre ellas son las que
 aparecen en la Figura 1.1 L
 
@@ -1627,7 +1626,7 @@ Figura 1.11
 El vendedor podría comenzar desde Boston. En ese caso, una ruta que podría
 seguir es la que tiene 8850 millas de longitud. Pero, ¿es esta la solución al
 problema? La respuesta es que no se puede asegurar hasta que no se intenten
-todas las demas rutas y se este seguro de que ninguna de ellas es más corta. En
+todas las demás rutas y se este seguro de que ninguna de ellas es más corta. En
 este caso, como se ve en la Figura 1.12, la primera ruta no es definitivamente
 la solución al problema del viajante.
 
@@ -1653,17 +1652,17 @@ Figura 1.12
 
 ![Figura 1.12: rutas del problema del viajante de comercio](images/figura-1-12-rutas-viajante-comercio.png)
 
-## Solucion como estado o como ruta
+## Solución como estado o como ruta
 
-¿La solucion es un estado o una rnta?
+¿La solución es un estado o una ruta?
 
 Considere el problema de encontrar una interpretación consistente a la frase:
 
 El presidente del banco comió un plato de ensalada de pasta con el tenedor.
-Existen varios componentes de esta frase que, si se aislan, pueden tener más de
+Existen varios componentes de esta frase que, si se aíslan, pueden tener más de
 una interpretación. Sin embargo, los componentes tienen que formar un todo, y de
 esta forma se restringen las otras posibles interpretaciones. Algunas causas de
-ambigOedad en la. frase son las siguientes:
+ambigüedad en la. frase son las siguientes:
 
 La palabra "banco" puede referirse a una institución financiera o a un objeto
 para sentarse. Sin embargo, solo uno de ellos puede tener un presidente.
@@ -1677,8 +1676,8 @@ normalmente no contiene perros.
 
 La frase "con el tenedor" puede modificar distintas partes de la oración. En
 este caso, modifica al verbo "comer". Pero, si la frase hubiera sido "con
-vegetales", la estructura de la modificación seria diferente. Y si la frase
-hubiera sido "con sus amigos", la estructura seria también diferente.
+vegetales", la estructura de la modificación sería diferente. Y si la frase
+hubiera sido "con sus amigos", la estructura sería también diferente.
 
 Debido a las interacciones existentes entre los distintos constituyentes de esta
 oración, puede ser necesaria una búsqueda para encontrar una interpretación
@@ -1693,27 +1692,27 @@ camino que se ha seguido para encontrar ese estado. Asf, la solución a este
 problema debe ser una secuencia de operaciones (a veces denominada "plan") que
 produce el estado final.
 
-## Papel del conocimiento en la busqueda
+## Papel del conocimiento en la búsqueda
 
 ¿Cuál es el papel del conocimiento?
 
 Considere de nuevo el problema del ajedrez. Suponga que se dispone de una
-potencia de computación ilimitada. ¿Cuanto conocimiento serfa necesario para
+potencia de computación ilimitada. ¿Cuanto conocimiento sería necesario para
 realizar un programa perfecto? La respuesta es muy poco -unicamente las reglas
-que determinen los movimientos legales y algun sencillo mecanismo de control que
-implemente el procedimiento de búsqueda apropiado. Algun conocimiento adicional
-sobre cosas tales como buenas estrategias y tacticas ayudaria, por supuesto,
+que determinen los movimientos legales y algún sencillo mecanismo de control que
+implemente el procedimiento de búsqueda apropiado. Algún conocimiento adicional
+sobre cosas tales como buenas estrategias y tácticas ayudaría, por supuesto,
 considerablemente a restringir la búsqueda para aumentar ·la velocidad de
 ejecución del programa.
 
 Considere ahora, sin embargo, el problema de leer los periódicos del dia para
 decidir cuáles de ellos apoyan a los republicanos y cuáles a los demócratas en
 unas elecciones. Asuma de nuevo una potencia de computación ilimitada, ¿cuanto
-conocimiento serfa necesario para que la computadora intente resolver este
-problema? Esta vez la respuesta es que se necesita una gran cantidad. Serfa
+conocimiento sería necesario para que la computadora intente resolver este
+problema? Esta vez la respuesta es que se necesita una gran cantidad. Sería
 necesario conocer cosas como estas:
 
-El nombre de los candidates de cada partido.
+El nombre de los candidatos de cada partido.
 
 El hecho de que si la mayor exigencia que se tiene es bajar los impuestos,
 probablemente se esta apoyando a los republicanos.
@@ -1731,12 +1730,12 @@ Y muchos más
 ¿Necesita la tarea interaccionar con una persona?
 
 Algunas veces resulta provechoso programar las computadoras para resolver
-problemas de una manera que la mayoria de la gente no seria capaz de entender.
+problemas de una manera que la mayoría de la gente no sería capaz de entender.
 Esto es así si. el nivel de interacción entre el hombre y la computadora es del
-tipo. Entrada-problema Salida-solu.ción. Sin embargo, se estan desarrollando
+tipo. Entrada-problema Salida-solución. Sin embargo, se están desarrollando
 cada vez más programas que necesitan interacción intermedia con el hombre, tanto
 para proporcionar información adicional de entrada al programa como para
-proporcionar noticias adicionales al usuario. Considerese, por ejemplo, el
+proporcionar noticias adicionales al usuario. Considérese, por ejemplo, el
 problema de la demostración de teoremas matemáticos. Si:
 
 Todo lo que se quiere saber es si existe una demostración. El programa es capaz
@@ -1746,7 +1745,7 @@ Entonces no importa la estrategia que use el programa para hallar la
 demostración. Puede utilizar, por ejemplo, el procedimiento de resolución, el
 cuál puede ser muy eficiente, aunque no sea muy natural para el hombre. Pero si
 alguna de estas condiciones no se cumple, la forma de hallar la demostración
-tiene mucha importancia. Suponga que se intenta probar algun nuevo y difícil
+tiene mucha importancia. Suponga que se intenta probar algún nuevo y difícil
 teorema. Se puede pedir una demostración que siguiera los patrones tradicionales
 de forma que un matemático este seguro de que la demostración es correcta solo
 con leerla. Por otra parte, dar con una prueba del teorema puede llegar a ser
@@ -1754,11 +1753,11 @@ tan complejo que el programa no sepa por donde empezar. Hasta ahora, las
 personas son superiores al realizar las estrategias de alto nivel que se
 necesitan para demostrar un teorema, de forma que una computadora necesita pedir
 ciertos consejos. Por ejemplo, normalmente en geometría resulta más fácil
-encontrar una prueba si alguien indica como representarla graficamente. Para
+encontrar una prueba si alguien indica como representarla gráficamente. Para
 poder utilizar estos consejos, el razonamiento seguido por una computadora debe
-ser analogo al realizado por el consejero humano, al menos en ciertos aspectos.
+ser análogo al realizado por el consejero humano, al menos en ciertos aspectos.
 Debido a que las computadoras trabajan en áreas muy significativas de nuestras
-vidas tales como diagnósticos medicos, la gente no podra aceptar el veredicto
+vidas tales como diagnósticos médicos, la gente no podrá aceptar el veredicto
 que genere un programa si no puede comprender el razonamiento que ha seguido
 para darlo.
 
@@ -1772,20 +1771,20 @@ problema.
 1.5.5. Características de los Sistemas de producción
 
 Se ha examinado una serie de características que distinguen varios tipos de
-problemas. Tambien se ha argumentado que los sistemas de producción representan
+problemas. También se ha argumentado que los sistemas de producción representan
 la forma más adecuada de describir las operaciones que se llevan a cabo en la
 búsqueda de una solución a un problema. En este punto pueden surgir dos
 razonables preguntas:
 
 LPueden los sistemas de producción, al igual que los problemas, ser descriptos
 por un conjunto de características que arrojen alguna luz sobre como
-implementarlos facilmente? Si es así, Lque relaciones existen entre los tipos de
+implementarlos fácilmente? Si es así, Qué relaciones existen entre los tipos de
 problemas y los tipos de sistemas de producción que son adecuados para resolver
 estos problemas?
 
 La respuesta a la primera pregunta es afirmativa. Considere las siguientes
-definiciónes de sistemas de producción. Un sistema de producción monótono es
-aquel en el que la aplicación de una regla nunca preve la posterior aplicación
+definiciones de sistemas de producción. Un sistema de producción monótono es
+aquel en el que la aplicación de una regla nunca prevé la posterior aplicación
 de otra regla que podría haberse aplicado cuando se seleccionó la primera. Un
 sistema de producción no monótono es aquel en el que lo anterior no es cierto.
 Un sistema de producción parcialmente conmutativo es aquel que tiene la
@@ -1797,19 +1796,19 @@ sistema de producción conmutativo es aquel que es a la vez monótono y
 parcialmente conmutativo..
 
 La relevancia de esta clasificación de los sistemas de producción estriba en la
-relación que existe entre las categorfas de los mismos y las estrategias
+relación que existe entre las categorías de los mismos y las estrategias
 apropiadas de implementación. Sin embargo antes de explicar estas relaciones,
-puede resultar provechoso clarificar las definiciónes viendo como se relacionan
+puede resultar provechoso clarificar las definiciones viendo como se relacionan
 con problemas específicos.
 
 De esta forma, se llega a la segunda de las cuestiones expresadas anteriormente
 la cuál indaga sobre si existe una relación interesante entre las clases de
 sistemas de producción y las clases de problemas. Dado un problema resoluble,
 existe un número infinito de sistemas de producción que proporcionan formas de
-encontrar soluciones. Algunos de ellos seran más eficientes y naturales que
+encontrar soluciones. Algunos de ellos serán más eficientes y naturales que
 otros. Un problema que puede ser resuelto con un sistema de producción, puede
 ser resuelto con uno conmutativo (la clase más restrictiva), sin embargo, el
-Sistema conmutativo puede ser tan inmanejable que sea practicamente inútil.
+Sistema conmutativo puede ser tan inmanejable que sea prácticamente inútil.
 Puede utilizar estados individuales para describir secuencias enteras de reglas
 aplicadas por 1.m sistema no conmutativo más simple. Asf, desde un punto de
 vista formal, no existe relación alguna entre tipos de problemas y tipos de
@@ -1818,28 +1817,28 @@ utilizando todos los tipos de sistemas de producción. Pero desde. un pun'to de
 vista practico, definitivamente existe relación entre tipos. de problemas y los
 tipos de sistemas de producción que se prestan de forma natural a representar
 estos problemas. Para ver esto, veamos algunos ejemplos. La Figura 1.13 muestra
-las.cuatro categorfas en que se dividen los sistemas de producción de acuerdo
-con las dos dicotomfas, sistemas monótonos. versus no monótonos y sistemas
+las.cuatro categorías en que se dividen los sistemas de producción de acuerdo
+con las dos dicotomías, sistemas monótonos. versus no monótonos y sistemas
 parcialmente conmutativos versus no parcialmente conmutativos, de forma que
 algunos problemas pueden resolverse más naturalmente por un tipo de sistema. La
 esquina superior izquierda la forman los sistemas conmutativos.
 
 Los sistemas parcialmente conmutativos y los monótonos son adecuados para
 resolver problemas ignorables. Esto no es sorprendente desde el momento en que
-las definiciónes de ambos son esencialmente las mismas. Sin embargo, se advierte
+las definiciones de ambos son esencialmente las mismas. Sin embargo, se advierte
 que los problemas ignorables son aquellos en los que una formulación natural
 sera un sistema parcialmente conmutativo y monótono. Los problemas que implican
 la creación de nuevos objetos más que el cambio de los viejos suelen ser
 ignorables. La demostración de teoremas, tal y como se ha descrito, es un
 ejemplo de proceso creativo. Realizar deducciones a partir de hechos conocidos
-es también un proceso creativo. Ambos procesos se pueden implementar facilmente
+es también un proceso creativo. Ambos procesos se pueden implementar fácilmente
 con un sistema parcialmente conmutativo y monótono.
 
 Los sistemas parcialmente conmutativos y monótonos son importantes desde el
-punto de vista de la implementación porque no contemplan la caracterfstica de
+punto de vista de la implementación porque no contemplan la característica de
 volver hacia estados pasados cuando se descubre que se ha seguido un camino
 incorrecto. Si bien con frecuencia es adecuado implementar estos sistemas con
-vuelta atras (backtracking) para garantizar una búsqueda sistematica, la base de
+vuelta atrás (backtracking) para garantizar una búsqueda sistemática, la base de
 datos actual que representa el problema, no necesita regenerarse. El resultado
 de esto es, con frecuencia, un notable incremento de la eficiencia debido a que
 la base de datos no tiene que ser regenerada y no es necesario estar al tanto de
@@ -1850,8 +1849,8 @@ monótonos y parcialmente conmutativos. Estos sistemas son adecuados para
 problemas en los que las cosas no cambian; se *crean.* Por otro lado, los
 sistemas no monótonos y parcialmente conmutativos, se adecuan a aquellos
 problemas en los que se realizan cambios pero estos son reversibles y en los que
-el orden de las operaciones no es crftico. Este es normalmente el caso de los
-problemas de manipulación ffsica, como la navegación de robots en una superficie
+el orden de las operaciones no es crítico. Este es normalmente el caso de los
+problemas de manipulación física, como la navegación de robots en una superficie
 plana. Suponga que el robot dispone de los siguientes operadores: ir hacia el
 norte (N), ir hacia el este (E), ir hacia el sur (S) e ir hacia el oeste (0).
 Para llevar a cabo su objetivo, no importa si el robot ejecuta N-N-E o N-E-N.
@@ -1866,21 +1865,21 @@ individuales duplicados durante el proceso de búsqueda.
 
 | Demostración de teoremas | Navegación de robots |
 
-| Sintesis quimica | Bridge |
+| Síntesis química | Bridge |
 
 Figura 1.13
 
-![Figura 1.13: clasificacion de sistemas de produccion](images/figura-1-13-clasificacion-sistemas-produccion.png)
+![Figura 1.13: clasificación de sistemas de producción](images/figura-1-13-clasificación-sistemas-producción.png)
 
 Los sistemas de producción que no son parcialmente conmutativos son adecuados
-para muches problemas en los que se producen cambios irreversibles. Por ejemplo,
-considere el problema de realizar un proceso que produzca un compuesto quimico.
-Los operadores disponibles incluyen cosas come "Anadir el agente quimico x al
-recipiente" o "Cambiar la temperatura hasta t grades". Estes operadores pueden
+para muchos problemas en los que se producen cambios irreversibles. Por ejemplo,
+considere el problema de realizar un proceso que produzca un compuesto químico.
+Los operadores disponibles incluyen cosas come "Añadir el agente químico x al
+recipiente" o "Cambiar la temperatura hasta t grades". Estos operadores pueden
 causar cambios irreversibles en el compuesto. El orden en que se realizan las
 operaciones es importante para determinar el resultado final. Es posible que six
-se anade a y, se forme un compuesto estable, de forma que la posterior adición
-de z no produzca ningún efecto; sin embargo, si z se anade a y, puede formarse
+se añade a y, se forme un compuesto estable, de forma que la posterior adición
+de z no produzca ningún efecto; sin embargo, si z se añade a y, puede formarse
 un compuesto estable diferente, de forma que no tenga efecto alguno la posterior
 adición de x. En los sistemas de producción que no son parcialmente conmutativos
 es menos probable que se llegue al mismo nodo varias *veces* durante el proceso
@@ -1892,15 +1891,15 @@ menos determinantes.
 Ejercicio
 
 Encontrar una buena representación del espacio de estados para el problema del
-misionero y los canibales.
+misionero y los caníbales.
 
-Tres misioneros y tres canfbales se encuentran en una orilla de un rfo. A todos
-ellos ¿es gustarfa pasar a la otra orilla. Los misioneros no se ffan de los
-canibales. Por eso, los misioneros han planificado el viaje de forma que el
+Tres misioneros y tres caníbales se encuentran en una orilla de un rfo. A todos
+ellos ¿es gustaría pasar a la otra orilla. Los misioneros no se irían de los
+caníbales. Por eso, los misioneros han planificado el viaje de forma que el
 número de misioneros en cada orilla del rfo nunca sea menor que el número de
-canibales en esa misma orilla. Solo disponen de una lancha de dos plazas. LCómo
-podrían atravésar el rio sin que los misioneros corran peligro de ser devorados
-por los canibales?
+caníbales en esa misma orilla. Solo disponen de una lancha de dos plazas. LCómo
+podrían atravesar el rio sin que los misioneros corran peligro de ser devorados
+por los caníbales?
 
 UNIDAD DIDÁCTICA 2
 

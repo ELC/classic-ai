@@ -26,12 +26,12 @@
 ### Caracteristicas de las redes neuronales artificiales
 - Fecha: 2014-04-21
 - Frecuencia: 1 apariciones. Fechas: 2014-04-21
-- Fuente principal: [Caracteristicas de las RNA](unit-05.md#caracteristicas-de-las-rna)
+- Fuente principal: [Características de las RNA](unit-05.md#características-de-las-rna)
 
 ### Que son redes neuronales
 - Fecha: 2014-02-13
 - Frecuencia: 1 apariciones. Fechas: 2014-02-13
-- Fuente principal: [Definicion de red neuronal](unit-05.md#definicion-de-red-neuronal)
+- Fuente principal: [Definición de red neuronal](unit-05.md#definición-de-red-neuronal)
 
 ### Redes de Hopfield, recurrentes y de Jordan
 - Fecha: 2013-12-20
@@ -48,7 +48,7 @@
 
 ### Diferencia entre redes biologicas y artificiales
 - Fecha: desconocida
-- Fuente principal: [Comparacion entre redes biologicas y artificiales](unit-05.md#comparacion-entre-redes-biologicas-y-artificiales)
+- Fuente principal: [Comparación entre redes biológicas y artificiales](unit-05.md#comparación-entre-redes-biológicas-y-artificiales)
 
 ### Aprendizaje del perceptron
 - Fecha: desconocida

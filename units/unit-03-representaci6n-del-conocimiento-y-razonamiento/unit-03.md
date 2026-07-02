@@ -1,4 +1,4 @@
-# Unidad Didactica 3 - Eje Conceptual
+# Unidad Didáctica 3 - Eje Conceptual
 
 Representación del Conocimiento y Razonamiento
 
@@ -47,7 +47,7 @@ Representación del Conocimiento y Razonamiento
 
 2. Formas Sentenciales 30
 
-1. El Metodo de Deducción 34
+1. El Método de Deducción 34
 
 
 1. Prueba Formal de Validez 34
@@ -69,7 +69,7 @@ Representación del Conocimiento y Razonamiento
 
 3.3.4. Representación de Funciones calculables y Predicados computables 47
 
-1. Metodo de Resolución 50
+1. Método de Resolución 50
 
 2. Conversión a forma clausal. 50
 
@@ -102,13 +102,13 @@ y conocimiento declarativo. 59
 
 1. Razonamiento No Monótono 65
 
-1. Razonamiento por delecto 65
+1. Razonamiento por defecto 65
 
 1. Lógica no monótona 66
 
-2. Lógica por delecto 66
+2. Lógica por defecto 66
 
-2. Razonamiento mínimalista 67
+2. Razonamiento minimalista 67
 
 1. La suposición de un mundo cerrado 67
 
@@ -172,10 +172,10 @@ Esta frase representa un hecho que en lógica se puede escribir como:
 Supongamos que también disponemos de un formalismo lógico para representar el
 hecho de que todos los perros tienen rabo:
 
-vx: **perro(x)** ➔ **tienerabo(x)** Y entonces, mediante el mecanismo deductivo
+vx: **perro(x)** ➔ **tiene rabo(x)** Y entonces, mediante el mecanismo deductivo
 de la lógica, se puede generar una nueva representación para el objeto:
 
-**tienerabo(Spot)**
+**tiene rabo(Spot)**
 
 Utilizando una apropiada función de correspondencia hacia atrás, se puede
 generar la correspondiente frase en castellano:
@@ -265,7 +265,7 @@ sintácticas. Sus reglas de inferencia son procedimientos estrictamente
 sintácticos que operan sobre fórmulas bien formadas (fbf) a pesar de lo que
 estas representan. Los sistemas de ***reglas de producción*** son también,
 **principalmente sintácticos.** Los intérpretes para estos sistemas normalmente
-usan únicamente información sintactica para decidir que reglas desestiman. De
+usan únicamente información sintáctica para decidir que reglas desestiman. De
 nuevo se ve la similitud entre lógica y reglas de producción como formas de
 representación y utilización del conocimiento. Pero es posible construir
 sistemas del tipo regla-producción, que tienen más semántica englobada en ellos.
@@ -275,19 +275,19 @@ el intérprete de reglas para guiar este comportamiento.
 
 Las ***estructuras de ranura y relleno*** están normalmente orientadas más a la
 semántica, aunque se extienden bastante profundamente dentro de este espectro.
-Las redes semánticas, como su propio nombre indica, están disef\adas para
+Las redes semánticas, como su propio nombre indica, están diseño\adas para
 capturar las relaciones semánticas entre entidades, y normalmente se utilizan
-con un conjunto de reglas de inferencia que han sido especialmente disef\adas
+con un conjunto de reglas de inferencia que han sido especialmente diseño\adas
 para manejar correctamente los tipos específicos de arcos presentes en la red.
 (Por ejemplo, las uniones del tipo es-un se tratan de un modo diferente que la
 mayoría del resto de enlaces). Los ***sistemas de marcos*** están normalmente
 más estructurados que las redes semánticas y contienen un conjunto incluso mayor
 de reglas de inferencia especializadas, incluyendo aquellas que llevan a cabo un
-array completo de reglas de inferencia por delecto, además de otros
+array completo de reglas de inferencia por defecto, además de otros
 procedimientos como la verificación de la consistencia.
 
 La ***dependencia conceptual*** va incluso más allá en cuanto a una
-representación semántica en lugar de una sintactica. No solo proporciona la
+representación semántica en lugar de una sintáctica. No solo proporciona la
 estructura abstracta de una representación, sino que además proporciona una
 indicación específica sobre los componentes que debe contener la representación
 (como las primitivas ACTs y las relaciones de dependencia). As[ aunque las
@@ -297,7 +297,7 @@ potentes, que utilicen el conocimiento específico que contienen.
 
 Y aunque los ***guiones*** se presentan muy similares a los marcos, en realidad
 se trata de marcos en los que las ranuras se han elegido cuidadosamente para
-representar la información que es útil cuando se razona acerca de situaciónes.
+representar la información que es útil cuando se razona acerca de situaciones.
 Esto hace posible que los procedimientos de manipulación de los guiones puedan
 aprovechar el conocimiento con el que están trabajando y así, poder resolver
 problemas más eficazmente. ***CYC*** utiliza tanto los marcos como la lógica
@@ -318,7 +318,7 @@ esta forma puede servir como entrada a otros mecanismos de inferencia más
 potentes.
 
 Por ejemplo, dado los hechos de la Figura 3.1 no es posible responder a una
-pregunta tan sencilla como *"iquién es el felino más rápido?".* Pero dado un
+pregunta tan sencilla como *"quién es el felino más rápido?".* Pero dado un
 procedimiento para encontrar el felino más rápido, estos hechos permitirían que
 dicho procedimiento calcule una respuesta.
 
@@ -328,7 +328,7 @@ Claudio
 
 Tulia
 
-Leon Gue ardo
+León Gue ardo
 
 Ti re
 
@@ -350,13 +350,13 @@ ya han sido resueltos en diferentes productos comerciales.
 
 3.1.3.2, Conocimiento heredable
 
-El coni:Jcimiento relacional de la Figura 3.1 se i:ompone de un conjunto de
+El conocimiento:conocimiento relacional de la Figura 3.1 se i:compone de un conjunto de
 atributos que junto con unos valores asociados permite describir los objetos de
 la base de conocimiento. El (' conocimiento acerca de los objetos, de sus
 atributos y de sus valores no tiene que ser tan simple como el que se muestra en
 el ejemplo. En particular, es posible *extender la* *representación básica con
 unos mecanismos de inferencia que operen sobre la estructura de la*
-*representación.* Para que esto sea efectivo, la estructura se debe disefiar de
+*representación.* Para que esto sea efectivo, la estructura se debe diseñar de
 acuerdo con el mecanismo de inferencia que se desee. ***Una de las fórmulas más
 útiles. de inferencia* es *la***
 
@@ -369,9 +369,9 @@ Felino
 
 es-un
 
-.---- L---prom-vel
+.---- L---promedio-vel
 
-es-un Felino Salvaie
+es-un Felino Salvaje
 
 es-un 80 km/h
 
@@ -379,9 +379,9 @@ es-un 80 km/h
 
 rom-vel
 
-.--->--prom-vel
+.--->--promedio-vel
 
-Leon
+León
 
 instancia instancia 70 km/h
 
@@ -389,7 +389,7 @@ BsAs
 
 99 km/h
 
-prom-vel Piedra
+promedio-vel Piedra
 
 jaula
 
@@ -401,21 +401,21 @@ zoo Claudio Julio
 
 zoo Luján
 
-prom-vel 72 km/h
+promedio-vel 72 km/h
 
 jaula Natural
 
 Para dar soporte a la ***herencia de propiedades,*** los objetos se deben
-organizar en ***clases,*** y las clases se deben disponer como una ***jerarquia
+organizar en ***clases,*** y las clases se deben disponer como una ***jerarquía
 de generalizaciones.*** En la Figura 3.2 aparece una estructura organizada de
 esta forma, en ella se ha introducido conocimiento acerca de felines salvajes.
 Las ***líneas*** representan *atributos;* los ***nodos recuadrados***
-representan *objetos y valores de los atributos de los objetos.* Estes valores,
+representan *objetos y valores de los atributos de los objetos.* Estos valores,
 a su vez, también se pueden ver coma objetos con atributos y valores, y así
 sucesivamente. Las ***flechas*** *conectan los objetos con sus valores a través
 de los correspondientes atributos.* La estructura que aparece en la figura es lo
 que se denomina una ***estructura de ranura y relleno*** *(slot-* *and-filler).*
-Tambien se puede denominar red semántica o colección de estructuras (frames).
+También se puede denominar red semántica o colección de estructuras (frames).
 
 En este último caso, cada estructura representa la colección de atributos y
 valores asociados con un nodo en particular.
@@ -423,7 +423,7 @@ valores asociados con un nodo en particular.
 La Figura 3.3 muestra el nodo correspondiente a un león representado como una
 estructura.
 
-No hay que dejarse desanimar por la confusion términológica. Es tan flexible el
+No hay que dejarse desanimar por la confusion terminológica. Es tan flexible el
 modo en que se puede utilizar esta (y el resto de las estructuras que se
 describen en este apartado) para resolver cada uno de los problemas concretes de
 representación, que es difícil reservar palabras precisas para cada
@@ -434,15 +434,15 @@ semántica.
 
 Julio
 
-instancia: prom-vel: zoo: • jaula:
+instancia: promedio-vel: zoo: • jaula:
 
-Leon
+León
 
 72 km/h Luján Natural
 
 Figura 3.3
 
-![Figura 3.3: marco de Julio como leon](images/figura-3-3-marco-julio-leon.png)
+![Figura 3.3: marco de Julio como león](images/figura-3-3-marco-julio-león.png)
 
 Lo que haremos aquí será dar una idea acerca de la manera en que sirven de
 soporte a la deducción mediante el conocimiento que contienen. Todos los objetos
@@ -450,7 +450,7 @@ y la mayoría de los atributos que se utilizan en este ejemplo pertenecen al
 dominio de los felinos y no son significativos en general. Las dos. excepciones
 son el atributo ***es-un*** (is a), que se utiliza para indicar *que una clase
 está contenida en otra,* y el atributo ***instancia,*** que se utiliza para
-indicar *pertenencia a una clase.* *Estos dos atributos especificos (de utilidad
+indicar *pertenencia a una clase.* *Estos dos atributos específicos (de utilidad
 general) son la base de la herencia de propiedades como una técnica de
 inferencia. Mediante esta técnica se puede acceder a la base de conocimiento y
 recuperar los hechos que han sido explícitamente almacenados en ella, así coma
@@ -464,16 +464,16 @@ Para acceder al valor V de un atributo A en una instancia I:
 
 1. Encontrar I en la base de conocimiento.
 
-2. Si el atributo **A** tiene algún valor asígnado, devolver ese valor.
+2. Si el atributo **A** tiene algún valor asignado, devolver ese valor.
 
 3. En caso contrario, comprobar si el atributo *instancia* tiene algún valor
- asígnado. Si no lo tiene entonces fallar.
+ asignado. Si no lo tiene entonces fallar.
 
 4. En caso contrario, ir al nodo identificado por ese valor y comprobar si alH
  existe algún valor para el atributo **A.** Si lo hay, devolverlo.
 
 5. En caso contrario, repetir hasta que el atributo *es-un* no tenga valor
- asígnado o hasta encontrar una respuesta:
+ asignado o hasta encontrar una respuesta:
 
 1. Obtener el atributo *es-un* e ir a ese nodo.
 
@@ -492,8 +492,8 @@ la Figura 3.4 se muestra un ejemplo de la ***lógica de predicados de primer
 orden*** aplicada a la representación de conocimiento adicional acerca de los
 felinos salvajes.
 
-\Ix: felino\_salvaje (x) A hambriento (x) " prom\_vel(x,72) A presa (y) "
-prom\_vel (y,20) ➔ **come (x,y)**
+\Ix: felino\_salvaje (x) A hambriento (x) " promedio\_vel(x,72) A presa (y) "
+promedio\_vel (y,20) ➔ **come (x,y)**
 
 Figura 3.4
 
@@ -512,19 +512,19 @@ las conclusiones buscadas hasta los hechos de partida. Entre los más utilizados
 de estos procedimientos se encuentra el de ***resolución*** que utiliza una
 estrategia de prueba por contradicción.
 
-3.1.3.4. Com::icimiento procedimental
+3.1.3.4. Com::conocimiento procedimental
 
 Hasta ahora los ejemplos sobre la base de conocimiento acerca de los felinos
-salvajes se han centrado en hechos declarativos relativamente estaticos. Pero
+salvajes se han centrado en hechos declarativos relativamente estáticos. Pero
 existe otro tipo de conocimiento, ***operacional o procedimental,*** igualmente
 útil, que especifica que hacer cuando se da una determinada situación. El
 conocimiento procedimental se puede representar en los programas de muchas
 maneras distintas. La manera más habitual consiste en especificarlo como *un*
 ***código*** *(en algún lenguaje de programación* como *PROLOG)* ***que hace
-algo.*** La maquína utiliza el conocimiento cuando ejecuta el código para llevar
+algo.*** La máquina utiliza el conocimiento cuando ejecuta el código para llevar
 a cabo una determinada tarea. Un ejemplo de esto se ve en la Figura 3.5 **come
-(X,Y)**:- felino\_salvaje (X), hambriento (X), prom\_vel(X,72), presa (Y),
-prom\_vel (Y,20)
+(X,Y)**:- felino\_salvaje (X), hambriento (X), promedio\_vel(X,72), presa (Y),
+promedio\_vel (Y,20)
 
 Figura 3.5
 
@@ -537,7 +537,7 @@ Figura 3.5
 
 1. **Atributos importantes**
 
-**iExisten atributos tan genericos que aparezcan en practicamente todos los
+**iExisten atributos tan genéricos que aparezcan en prácticamente todos los
 dominios**
 
 **de aplicación? ¿Si es así, es necesario asegurarse de que sean tratados**
@@ -547,8 +547,8 @@ significación, cuyo uso nos han sido presentados anteriormente: ***instancia* y
 *es-un.*** Estos atributos son importantes debido a que en ellos se apoya la
 herencia de propiedades. Reciben diferentes nombres en los sistemas de IA, pero
 el nombre es lo de menos, lo importante es que dichos atributos representan la
-*pertenencia a* *una clase* y la *inclusion de una clase en otra,* y que *la
-inclusion de clases es transitiva.*
+*pertenencia a* *una clase* y la *inclusión de una clase en otra,* y que *la
+inclusión de clases es transitiva.*
 
 1. **Relaciones entre atributos**
 
@@ -561,7 +561,7 @@ codifiquen? Hay cuatro propiedades que merece la pena mencionar aquí:
 
 Inversos
 
-+ Existencia en una jerarquia es-un
++ Existencia en una jerarquía es-un
 
 + Técnicas para el razonamiento acerca de los valores
 
@@ -594,15 +594,15 @@ sistemas basados en marcos. Cuando se utiliza, suele ir acompañada de una
 herramienta para la adquisición de conocimiento que obliga a la *declaración
 conjunta de los atributos inversos.*
 
-**Existencia en una jerarquia es-un**
+**Existencia en una jerarquía es-un**
 
 De la misma forma que existen clases de objetos y subconjuntos más específicos de
 esas clases, también se puede hablar de *atributos y especializaciones de* los
-*atributos.* Considerese, por ejemplo, el atributo felinos\_salvajes. Este
+*atributos.* Considérese, por ejemplo, el atributo felinos\_salvajes. Este
 atrib.uto es en realidad una especialización del atributo felinos, que a su vez,
 es una especialización del atributo mamíferos. Este tipo de relaciones de
 ***generalización-especialización*** referidas a los atributos tienen la misma
-misión que cuando se aplican a los demas conceptos - *servir de soporte a la
+misión que cuando se aplican a los demás conceptos - *servir de soporte a la
 herencia.* En el caso de los atributos, la información que se hereda consiste en
 cosas tales como restricciones sobre los valores que un atributo puede tomar o
 
@@ -624,25 +624,25 @@ medido en una unidad de longitud.
 
 + Reglas para el cómputo de un valor cuando sea necesario. Reglas hacia atrás.
 
-+ Reglas que describen las acciones que se deberfan llevar a cabo en el caso de
++ Reglas que describen las acciones que se deberían llevar a cabo en el caso de
  gue se llegase a conocer un determinado valor. Reglas hacia adelante.
 
 **Atributos univaluados**
 
 Un tipo de atributo, no por específico menos útil, es aquel que ***solo puede
 tomar un (mica valor.*** Por ejemplo, un león determinado solo puede pertenecer
-a un único zoo, y tiene una única velocidad promedio. Cuando se pretenda delinir
-un nuevo valor para uno de estos atributos que ya tuviera otro valor asígnado
+a un único zoo, y tiene una única velocidad promedio. Cuando se pretenda definir
+un nuevo valor para uno de estos atributos que ya tuviera otro valor asignado
 previamente, solo puede ser por dos razones. O bien se ha producido un cambio en
 el mundo o bien existe una contradicción en la base de conocimiento que es
 necesario resolver.
 
-c. Seleccion de la granularidad de la representación i.A que nivel se debe
+c. Selección de la granularidad de la representación i.A que nivel se debe
 representar el conocimiento?
 
 Independientemente del mecanismo de representación que se elija, es necesario
 responder a (' la siguiente cuestión: *"¿A qué niVel de detalle* se *debería
-representar el mundo?"* Un buen ejemplo servira de ilustración al problema.
+representar el mundo?"* Un buen ejemplo servirá de ilustración al problema.
 Supongamos que estamos interesados en representar el hecho:
 
 **Juan vislumbró a Susana**
@@ -661,8 +661,8 @@ La respuesta, obviamente, es que *"si",* pero no es una respuesta que podamos
 obtener a partir del único hecho conocido hasta ahora. Por supuesto se podrían
 añadir otros hechos como:
 
-vislumbró(x,y) ➔ vio(x,y) Otra posible solución consistiria en representar
-explicitamente el hecho de que vislumbrar es en realidad una forma particular de
+vislumbró(x,y) ➔ vio(x,y) Otra posible solución consistiría en representar
+explícitamente el hecho de que vislumbrar es en realidad una forma particular de
 ver. Se podría escribir algo así como:
 
 vio(agente(Juan), objeto(Susana), duración(breve)) El problema de *elegir la
@@ -687,30 +687,30 @@ La otra razón por la que es importante disponer de algún medio de representaci
 de conjuntos es que *cuando existe una propiedad que verifican todos los
 elementos de un* *conjunto,* es *más eficiente asociar esa propiedad al conjunto
 que asociarla (* *individualmente a cada uno de sus componentes.* Hay dos formas
-de delinir un conjunto y sus elementos.
+de definir un conjunto y sus elementos.
 
 La primera consiste en ***enumerar* todos *los elementos.*** Es lo que se
 denomina una *definición por extensión.* • La segunda consiste en ***dar una
-determinada regla,*** de forrna que cuando se evalua ' un determinado objeto, da
+determinada regla,*** de forma que cuando se evalúa ' un determinado objeto, da
 como resultado verdadero o falso según que el objeto C pertenezca o no al
-conjunto. Tales reglas son denominadas *definiciónes par* *comprensión.* Por
+conjunto. Tales reglas son denominadas *definiciones par* *comprensión.* Por
 ejemplo, una definición por extensión del conjunto de los planetas habitados por
-personas de nuestro sistema solar es {Tierra}. La definición por comprension
+personas de nuestro sistema solar es {Tierra}. La definición por comprensión
 sería:
 
 De esta forma, es muy fácil determinar cuando son iguales dos conjuntos
 definidos por extensión, pero no así cuando los conjuntos se definen por
-comprension.
+comprensión.
 
-Sin embargo, las representaciones por comprension permiten la definición de
+Sin embargo, las representaciones por comprensión permiten la definición de
 conjuntos infinitos y de conjuntos en los que no se conocen explícitamente todos
 sus elementos.
 
-La segunda propiedad es que los conjuntos descritos por comprension se pueden
-delinir dependientes de parametros modificables, como el tiempo o la
-localizacion espacial.
+La segunda propiedad es que los conjuntos descritos por comprensión se pueden
+definir dependientes de parámetros modificables, como el tiempo o la
+localización espacial.
 
-**E. Busqueda de la estructura adecuada a cada circunstancia**
+**E. Búsqueda de la estructura adecuada a cada circunstancia**
 
 **Dada una base de conocimiento muy extensa ¿Cómo acceder a los fragmentos**
 
@@ -722,8 +722,8 @@ detallada entre ambos. Los detalles del proceso de correspondencia dependerán d
 la representación que se utilice. Puede consistir en establecer las ligaduras
 adecuadas entre los objetos y las variables, o puede que sea necesario hacer
 comparaciones entre atributos. En cualquier caso, a medida que se localicen los
-valores que satisíagan las restricciones impuestas por la estructura de
-conocimiento, aquellos iran ocupando sus correspondientes lugares dentro de la
+valores que satisfagan las restricciones impuestas por la estructura de
+conocimiento, aquellos irán ocupando sus correspondientes lugares dentro de la
 estructura.
 
 Al intentar acceder a los fragmentos relevantes de la base de conocimiento, en
@@ -733,23 +733,23 @@ Tomar aquellas partes de la estructura seleccionada que se hayan conseguido ·,,
 identificar en la presente situación y utilizarlas en la búsqueda de las
 posibles alternativas.
 
-Obviar el fall<i de la estructura actual y seguir utilizandola. Por. ejemplo,
+Obviar el fall<i de la estructura actual y seguir utilizándola. Por. ejemplo,
 una silla con solo tres patas puede que simplemente este rota, o que haya otro
 objeto delante que impida ver la cuarta pata.
 
 + Utilice enlaces que conecten las estructuras y que sugieran posibles
  direcciones de búsqueda.
 
-+ Si las estructuras de i;onocimiento están almacenadas como una jerarquia
++ Si las estructuras de i;conocimiento están almacenadas como una jerarquía
  es-un,
 
-ascender por la jerarqufa hasta encontrar una estructura lo bastante general.
+ascender por la jerarquía hasta encontrar una estructura lo bastante general.
 como para no entrar en contradicción con la situación en curso.
 
 1. **El problema del Marco**
 
 En este capítulo se han descrito diversos métodos de representación del
-conocimiento que permiten la construcción de descripciónes de estados complejos
+conocimiento que permiten la construcción de descripciones de estados complejos
 en un programa de búsqueda.
 
 *Existe una cuestión adicional relacionada con la representación eficiente de
@@ -757,13 +757,13 @@ las secuencias de estados que se generan en un proceso de búsqueda.* Esta puede
 ser una tarea difícil cuando se trate de problemas complejos o que presenten
 estructuras extrañas.
 
-**Considerese el mundo de los robots domésticos.**
+**Considérese el mundo de los robots domésticos.**
 
 Existe un gran número de objetos y relaciones a representar, de modo que en las
-descripciónes de los estados se deben incluir hechos tales como
+descripciones de los estados se deben incluir hechos tales como
 ***encima(Planta12,Mesa34),*** consiste en almacenar la descripción de cada
 estado como una lista de tales hechos.¿Pero qué ocurre durante el proceso de
-resolución de problemas si cada una de dichas descripciónes es muy larga?
+resolución de problemas si cada una de dichas descripciones es muy larga?
 
 ***La mayoría de los hechos no cambiará de un estado a otro,*** a pesar de lo
 cuál *se* ***representarán en cada uno de los nodos y la memoria se llenará
@@ -801,7 +801,7 @@ en el estado s1 para llegar al estado s2, entonces el color de x en* s2 *sigue*
 enorme número de axiomas como estos. Otra aproximación consiste en suponer que
 solo cambia aquello que debe.
 
-Donde por *"debe"* se entiende que los cambios vendrán dados explicitamente por
+Donde por *"debe"* se entiende que los cambios vendrán dados explícitamente por
 los axiomas qu describen al operador o que se deducen de manera lógica de algún
 cambio explícito. Esta idea de circunscribir el conjunto de cosas inusuales es
 muy potente; se puede utilizar como una solución parcial al problema estructural
@@ -816,7 +816,7 @@ y como un modo de razonamiento con conocimiento incompleto.
 **¿Qué es la Lógica?**
 
 Es fácil hallar respuestas a la pregunta *"¿Qué* es la Lógica?" Según Charles
-Peirce, "Se han dado casí un centenar de definiciónes de ella". Pero Peirce
+Peirce, "Se han dado casi un centenar de definiciones de ella". Pero Peirce
 continúa diciendo:
 
 *"Sin embargo, se concederá generalmente que su problema central es la
@@ -846,11 +846,11 @@ Esta definición, aunque da una *clave* a la naturaleza de la lógica, no es muy
 exacta. El razonamiento es la clase especial de pensamiento llamada
 ***inferencia,*** en la que. **se *sacan conclusiones partiendo de premisas.***
 Como pensamiento, sin embargo, no es campo exclusivo de.la lógica, ' sino parte
-también de la materia de estudio del psicologo. Los psicologos que examinan el •
+también de la materia de estudio del psicólogo. Los psicólogos que examinan el •
 proceso del razonamiento lo encuentran en extremo complejo y altamente
 emocional, consistente en torpes procedimientos de prueba y error iluminados por
-subitas - y a *veces* en apariencia inconsecuentes - visiones internas. Todos
-son de importancia para la psicologfa.
+súbitas - y a *veces* en apariencia inconsecuentes - visiones internas. Todos
+son de importancia para la psicología.
 
 ***Pero el lógico no* se *interesa en el proceso real del razonamiento. A el le
 importa la corrección del proceso completado.*** Su pregunta siempre es: *lse*
@@ -870,10 +870,10 @@ atender al contenido mismo, sino solo desde este punto de vista especial.
 La *inferencia* es una actividad en la que se afirma una proposición sobre la
 base de otra u otras proposiciones aceptadas como el punto de partida del
 proceso. *Al lógico no le concierne el proceso de inferencia, sino las
-proposiciones iniciales y finales de ese proceso de las refaciones* entre
+proposiciones iniciales y finales de ese proceso de las relaciones* entre
 ellas.* ***Las proposiciones son o verdaderas o falsas,*** y en esto difieren de
-las preguntas, ordenes y exclamaciones. Los gramaticos clasífican las
-fórmulaciones lingufsticas de las proposiciones, preguntas, ordenes, y
+las preguntas, ordenes y exclamaciones. Los gramáticos clasifican las
+formulaciones lingüísticas de las proposiciones, preguntas, ordenes, y
 exclamaciones, en oraciones declarativas, interrogativas, imperativas y
 exclamatorias, respectivamente. Estas nociones son familiares.
 
@@ -893,12 +893,12 @@ se afirman al pronunciar aquellas.
 La misma clase de distinción puede establecerse entre las oraciones y los
 enunciados. Puede hacerse el mismo enunciado utilizando palabras diferentes, y
 la misma oración puede ser dicha en contextos diferentes para hacer enunciados
-diferentes. Los términos *"enunciados"* y *"proposición"* no son sinonimos
+diferentes. Los términos *"enunciados"* y *"proposición"* no son sinónimos
 exactos, pero en los escritos de los lógicos se usa más o menos en el mismo
 sentido.
 
 Aquí se • usaran los dos términos. En los capítulos siguientes usaremos también
-el término "enunciado" y el término "proposición" refiriendonos a las oraciones
+el término "enunciado" y el término "proposición" refiriéndonos a las oraciones
 en las que se expresan los enunciados (y las proposiciones). En cada caso, el
 significado quedará claro por el contexto.
 
@@ -907,21 +907,21 @@ lógica primordialmente.
 
 *Un* ***argumento*** *puede definirse como* ***un grupo cualquiera de
 proposiciones o*** ***enunciados*** *de los cuales se afirma que hay uno que se
-sigue de los demas, considerando estos coma fundamento de la verdad de aquel.*
+sigue de los demás, considerando estos coma fundamento de la verdad de aquel.*
 La palabra argumento también tiene otros significados en su uso cotidiano, pero
-en la lógica tiene el sentidb técnico explicado. En los capítulos que siguen
+en la lógica tiene el sentido técnico explicado. En los capítulos que siguen
 usaremos también la palabra argumento en un sentido derivado para referirnos a
-una oración cualquiera o colección de oraciones en que esta fórmulado o
+una oración cualquiera o colección de oraciones en que esta formulado o
 expresado un argumento. Cuando así lo hagamos, presupondremos que la claridad
 del contexto permite asegurar que al pronunciar esas oraciones se hacen
 enunciados únicos o se afirman proposiciones únicas.
 
-Todo argumento tiene una estructura, en cuyo analisis usualmente se emplean los
+Todo argumento tiene una estructura, en cuyo análisis usualmente se emplean los
 términos
 
 ***"premisa"* y *conclusión".***
 
-*La* ***conclusión*** *de un argumento es la proposición afirmada basandose en
+*La* ***conclusión*** *de un argumento es la proposición afirmada basándose en
 las otras proposiciones del argumento y estas otras proposiciones que se afirman
 coma (* *fundamento o razones para la aceptación de la conclusión son las*
 ***premisas*** *de ese* *argumento.* Notemos que "premisa "y "conclusión" son
@@ -931,9 +931,9 @@ premisa en el argumento
 
 **Todos los hombres son mortales.**
 
-Socrates es un hombre.
+Sócrates es un hombre.
 
-Por lo tanto, Socrates es mortal.
+Por lo tanto, Sócrates es mortal.
 
 y conclusión en el argumento Todos las animales son mortales..
 
@@ -945,7 +945,7 @@ Todos las hombres son animales.
 
 Es una premisa cuando se presenta en un argumento en el que se le supone para
 demostrar alguna otra proposición y es una conclusión cuando se presenta en un
-argumento que se pretende la demuestra basandose en las otras proposiciones que
+argumento que se pretende la demuestra basándose en las otras proposiciones que
 se suponen.
 
 Es costumbre distinguir entre ***argumentos deductivos* e *inductivos.*** En
@@ -954,11 +954,11 @@ para la verdad de sus conclusiones, pero solo en un *argumento deductivo* se
 pretende que sus premisas proveen un fundamento *absolutamente concluyente.* Los
 términos técnicos ***"válido"* e *"inválido"*** se usan en lugar de "correcto" e
 "incorrecto" al caracterizar los *argumentos deductivos.* *Un* ***argumento
-deductivo es válido*** *cuahdo sus premisas y conclusiones están relacionadas de
+deductivo es válido*** *cuando sus premisas y conclusiones están relacionadas de
 modo tal 'que es absolutamente imposible que las premisas sean verdaderas, a
 menos que la conclusión lo sea también.* La tarea de la lógica deductiva es la
 que aclara la naturaleza de la relación que existe entre premisas y conclusión
-en un argumento válido, y proporcionar las técnicas de discriminacion entre los
+en un argumento válido, y proporcionar las técnicas de discriminación entre los
 válidos y los inválidos.
 
 En los argumentos inductivos solo se pretende que sus premisas proporcionen
@@ -984,10 +984,10 @@ la verdad o falsedad de sus premisas y conclusión, pero esta conexión no es de
 ningún. modo una conexión simple.
 
 Algunos argumentos válidos solamente contienen proposiciones verdaderas, como,
-por ejemplo, Todos los murcielagos son mamíferos. Todos los mamíferos tienen
+por ejemplo, Todos los murciélagos son mamíferos. Todos los mamíferos tienen
 pulmones.
 
-Luego, todos los murcielagos tienen pulmones.
+Luego, todos los murciélagos tienen pulmones.
 
 Pero un argumento puede contener proposiciones falsas exclusivamente y ser
 válido a pesar de todo, como, por ejemplo, Todas las truchas son mamíferos.
@@ -1033,98 +1033,98 @@ de su conclusión.
 
 ***Debe ser válido y todas sus premisas deben ser verdaderas.***
 
-Al lógico solo atafie una de estas condiciones. Determinar la verdad o falsedad
-de las premisas es tarea de la investigacion cientffica en general, pues las
+Al lógico solo atañe una de estas condiciones. Determinar la verdad o falsedad
+de las premisas es tarea de la investigación científica en general, pues las
 premisas pueden tratar de cualquier asunto. Pero determinar la validez o
 invalidez de los argumentos es el campo especial de la lógica deductiva. Al
 lógico le interesa la cuestión de la validez aún para argumentos cuyas premisas
 puedan ser falsas.
 
-Podrfa cuestionarse la legitimidad de ese interes. Podrfa sugerirse que se
+Podría cuestionarse la legitimidad de ese interés. Podría sugerirse que se
 confinara nuestra atención solo o los argumentos de premisas verdaderas. Pero es
 frecuentemente necesario depender de la validez de argumentos cuyas premisas son
-de verdad desconocida. Los cientificos modernos investigan sus teorías
+de verdad desconocida. Los científicos modernos investigan sus teorías
 deduciendo conclusiones de las mismas que predicen el comportamiento de
-fenomenos observables en el laboratorio o el observatorio.
+fenómenos observables en el laboratorio o el observatorio.
 
 La conclusión se pone a prueba directamente por observación y, si es verdadera
-esto tiende a confirmar la teorfa de donde se dedujo, pero si es falsa queda
-refutada la teoria. En uno **y** otro caso el cientffico tiene un interes vital
+esto tiende a confirmar la teoría de donde se dedujo, pero si es falsa queda
+refutada la teoría. En uno **y** otro caso el científico tiene un interés vital
 en la validez del argumento por el que la conclusión puesta a prueba se deduce
-de la teorfa investigada porque si el argumento es inválido, su procedimiento es
+de la teoría investigada porque si el argumento es inválido, su procedimiento es
 inútil. Lo que precede es una descripción sobresimplificada del método
-cientffico, pero sirve para mostrar que las cuestiones de validez son
+científico, pero sirve para mostrar que las cuestiones de validez son
 importantes aún en argumentos de premisas falsas.
 
-## Logica simbolica y enunciados
+## Lógica simbólica y enunciados
 
 - 1. Lógica Simbólica
 
 Se ha explicado que a la lógica le conciernen los argumentos y que estos
 contienen proposiciones o enunciados como sus premisas **y** conclusiones. Estas
-últimas no son entidades lingOfsticas, como las oraciones declarativas, sino más
-bien son lo que las oraciones declarativas tfpicamente afirman al ser
+últimas no son entidades lingüísticas, como las oraciones declarativas, sino más
+bien son lo que las oraciones declarativas típicamente afirman al ser
 articuladas.
 
-Sin embargo, la comúnicacion de proposiciones y argumentos requiere el uso del
-lenguaje, **y** esto complica nuestro problema. Los argumentos fórmulados en
+Sin embargo, la comunicación de proposiciones y argumentos requiere el uso del
+lenguaje, **y** esto complica nuestro problema. Los argumentos formulados en
 ingles o cualquier otro lenguaje natural son de difícil evaluación debido a la
-vaga y equfvoca naturaleza de las palabras en que se expresan, la ambigOedad de
-su construcción, sus expresiónes idiomaticas, que pueden interpretarse mal, y su
-estilo metaforico agradable por un lado, pero engafioso por otro. Sin embargo la
+vaga y equfvoca naturaleza de las palabras en que se expresan, la ambigüedad de
+su construcción, sus expresiones idiomáticas, que pueden interpretarse mal, y su
+estilo metafórico agradable por un lado, pero engañoso por otro. Sin embargo la
 resolución de estas dificultades no es el problema central para el lógico,
-porque aún ya resueltas queda todavfa el problema de decidir la validez o la
+porque aún ya resueltas queda todavía el problema de decidir la validez o la
 invalidez del argumento.
 
-Para evitar las dificultades perifericas ligadas al lenguaje ordinario, los
+Para evitar las dificultades periféricas ligadas al lenguaje ordinario, los
 trabajadores de las ciencias han desarrollado *vocabularios técnicos
-especializados.* El cientffico economiza el espacio y el tiempo requeridos para
+especializados.* El científico economiza el espacio y el tiempo requeridos para
 la escritura de sus reportes y teorías adoptando símbolos especiales para
-expresar ideas que de otra manera requerirfan una larga sucesion de palabras
-familiares para su fórmulación. Esto tiene la ventaja adicional de reducir la
-cantidad de atención requerida, puesto que cuando una oración o ecuacion se
-alarga demasíado se hace más difícil captar su significado. La introducción del
-símbolo exponente en las matemáticas permite expresar la ecuacion más breve e
+expresar ideas que de otra manera requerirían una larga sucesión de palabras
+familiares para su formulación. Esto tiene la ventaja adicional de reducir la
+cantidad de atención requerida, puesto que cuando una oración o ecuación se
+alarga demasiado se hace más difícil captar su significado. La introducción del
+símbolo exponente en las matemáticas permite expresar la ecuación más breve e
 inteligiblemente como
 
 **A12** = 87
 
-Una ventaja semejante se ha logrado usando las fórmulas graficas en la qufmica
-organica; y el lenguaje de cualquier ciencia avanzada se ha visto enriquecido
+Una ventaja semejante se ha logrado usando las fórmulas gráficas en la química
+orgánica; y el lenguaje de cualquier ciencia avanzada se ha visto enriquecido
 por innovaciones simbólicas similares.
 
 ***La lógica también ha desarrollado un sistema de notación técnica especial.***
 
-Aristóteles hada uso de ciertas abreviaciones para fácilitar sus
+Aristóteles hada uso de ciertas abreviaciones para facilitar sus
 investigaciones, y la lógica simbólica moderna ha crecido con la introducción de
 otros muchos símbolos especiales. La diferencia entre la lógica nueva y la
 antigua es más una cuestión de grado que de naturaleza, pero la diferencia de
 grado es tremenda.
 
 La lógica simbólica moderna es incomparablemente más poderosa como herramienta
-de analisis y deducción a través del desarrollo de un lenguaje técnico propio.
+de análisis y deducción a través del desarrollo de un lenguaje técnico propio.
 
 *Los símbolos especiales de la lógica moderna nos permiten exhibir con mayor
-claridad las estructuras lógicas de argumentos cuya fórmulación puede quedar
+claridad las estructuras lógicas de argumentos cuya formulación puede quedar
 oscura en el lenguaje ordinario.* '1 Es una tarea más fácil la de dividir los
 argumentos en válidos e inválidos cuando es ¿es expresa con el lenguaje
-simbólico especial, pues en este no se dan los problemas perifericos de
-vaguedad, ambigOedad, peculiaridades idiomaticas y metaforas. La introducción y
-utilización de símbolos especiales sirve no solo para fácilitar la evaluación de
+simbólico especial, pues en este no se dan los problemas periféricos de
+vaguedad, ambigüedad, peculiaridades idiomáticas y metáforas. La introducción y
+utilización de símbolos especiales sirve no solo para facilitar la evaluación de
 los argumentos, sino también para aclarar la naturaleza de la inferencia
 deductiva.
 
 Los símbolos especiales de la lógica se adaptan mucho mejor que el lenguaje
 ordinario a la obtención de las inferencias. Su superioridad en este respecto es
-comparable a aquella de que gozan los numerales arabigos sobre los más antiguos
-numerales romanos, tratandose de la computación. Es fácil multiplicar 148 por
+comparable a aquella de que gozan los numerales arábigos sobre los más antiguos
+numerales romanos, tratándose de la computación. Es fácil multiplicar 148 por
 47, pero muy difícil computar el producto de CXLVIII y XLVII. De manera
 semejante, la obtención de inferencias y la evaluación de los argumentos se ve
-grandemente fácilitada con la adopción de una notación lógica especial.
+grandemente facilitada con la adopción de una notación lógica especial.
 
-1. Argumentos que contienen Enunciados Compi.lestos
+1. Argumentos que contienen Enunciados Compuestos.compuestos
 
-1. Em.mciados Simples y Compuestos
+1. Em.enunciados Simples y Compuestos
 
 Todos los ***enunciados*** pueden dividirse en dos clases: ***simples*** y
 ***compuestos.***
@@ -1134,10 +1134,10 @@ Todos los ***enunciados*** pueden dividirse en dos clases: ***simples*** y
 
 + Todo enunciado ***compuesto*** contiene oti-o enunciado como componente.
 
-Por ejemplo, *"Las pruebas de armas nucleares en la atmósíera serán
+Por ejemplo, *"Las pruebas de armas nucleares en la atmósfera serán
 interrumpidas* o *este* *planeta* se *hará inhabitable"* es un enunciado
 compuesto cuyos componentes son los dos enunciados simples *"Las pruebas de
-armas nucleares en la atmósíera serán interrumpidas"* y *"este planeta será
+armas nucleares en la atmósfera serán interrumpidas"* y *"este planeta será
 inhabitable".* Las partes componentes de un enunciado compuesto pueden a su
 *vez* ser enunciados compuestos, desde luego.
 
@@ -1145,21 +1145,21 @@ Ahora veremos algunas de las maneras diferentes de combinar los enunciados en
 enunciados compuestos:
 
 1. El enunciado *"Las rosas son rojas y las violetas son azules"* es una
- ***conjuncion,*** un
+ ***conjunción,*** un
 
 enunciado compuesto que se forma insertando la palabra ***"y"*** entre los dos
-enunciados. Dos enunciados así combinados se llaman enunciados ***conyuntos.***
+enunciados. Dos enunciados así combinados se llaman enunciados ***conjuntos.***
 Sin embargo, la palabra "y" tiene otros usos, como en el enunciado *"Castor y
 Pólux eran gemelos"* que no es compuesto, sino un enunciado simple que afirma
 cierta relación. Introducimos el punto "." como un símbolo especial para
-combinar enunciados conjuntivamente. Usandolo, la conjunción precedente se
+combinar enunciados conjuntivamente. Usándolo, la conjunción precedente se
 escribe "Las rosas son rojas. Las violetas son azules".
 
 Si *p* y *q* son dos enunciados cualesquiera su conjunción se escribe ***p.q.***
 Cada enunciado es o verdadero o fatso, de modo que se puede hablar del *valor de
 la verdad* de un enunciado, siendo el valor de verdad de un enunciado verdadero,
 *verdadero* y el valor de verdad de un enunciado fatso, *fatso.* Hay dos amplias
-categorfas en las que pueden dividirse los enunciados compuestos de acuerdo con
+categorías en las que pueden dividirse los enunciados compuestos de acuerdo con
 que exista o no una conexión necesaria entre el valor de verdad del enunciado
 compuesto y los valores de verdad de sus enunciados componentes.
 
@@ -1169,9 +1169,9 @@ enunciado componente simple *"el plomo es más pesado que el zinc",* pues las
 personas tienen creencias correctas tanto como creencias equivocadas.
 
 Por otro lado, hay una conexión necesaria entre el valor de verdad de una
-conjunción y los valores de verdad de sus enunciados conyuntos.
+conjunción y los valores de verdad de sus enunciados conjuntos.
 
-***Una conjuncion* es *verdadera si sus conyuntos son ambos verdaderos, pero*
+***Una conjunción* es *verdadera si sus conjuntos son ambos verdaderos, pero*
 es**
 
 ***falsa en cualquier otra circunstancia.***
@@ -1186,7 +1186,7 @@ compuestos función de verdad. Por lo tanto, en el resto de este libro usaremos
 el término "enunciado simple" para referirnos a cualquier enunciado que no sea
 compuesto función de verdad.
 
-Como las corijunciones son enunciados compuestos función de verdad nuestro
+Como las conjunciones son enunciados compuestos función de verdad nuestro
 símbolo es un conectivo de función de verdad (o veritativo funcional, como
 también se dice).
 
@@ -1206,8 +1206,8 @@ como a continuación:
 Al representar los valores de verdad verdadero y falso. con las letras **"T" y
 "F",** respectivamente, la manera en que el valor de verdad de una conjunción
 
-![Tabla de verdad de la conjuncion](images/tabla-verdad-conjuncion.png)
-queda determinado por los valores de verdad de sus conyuntos se muestra de
+![Tabla de verdad de la conjunción](images/tabla-verdad-conjunción.png)
+queda determinado por los valores de verdad de sus conjuntos se muestra de
 manera más concisa por medio de una *tabla de verdad,* como sigue:
 
 | --- | --- | --- |
@@ -1231,7 +1231,7 @@ los valores de verdad.
  también es compuesto siendo la ***negación*** (o el *contradictorio)* de su
  enunciado compuesto único *"el plomo es más pesado que el oro".* Introducimos
  el símbolo "~", llamado una *tilde,* para simbolizar la negación. Hay
- frecuentemente otras fórmulaciones en lenguaje ordinario, de una negación.
+ frecuentemente otras formulaciones en lenguaje ordinario, de una negación.
  Así, si *L* simboliza el enunciado *"el plomo es más pesado que el oro",* los
  enunciados diferentes "no es el caso que el plomo sea más pesado que el oro",
  "es falso que el plomo sea más pesado que el oro", "el plomo no es más pesado
@@ -1241,10 +1241,10 @@ los valores de verdad.
 
 *Mas generalmente,* ***sip*** es *cualquier enunciado su negación se escribe* ~
 ***p.*** Como la negación de un enunciado verdadero es un enunciado falso y la
-negación de un enunciadci falso es uno verdadero, podemos tomar la siguiente
+negación de un enunciado falso es uno verdadero, podemos tomar la siguiente
 tabla de verdad como definición del símbolo tilde:
 
-![Tabla de verdad de la negacion](images/tabla-verdad-negacion.png)
+![Tabla de verdad de la negación](images/tabla-verdad-negación.png)
 
 | --- | --- |
 
@@ -1254,7 +1254,7 @@ tabla de verdad como definición del símbolo tilde:
 
 1. Cuando dos enunciados se combinan disyuntivamente insertando la palabra
  **"o"** entre ellos, el enunciado compuesto que resulta es una
- ***disyunción*** *(o alternación)* y los dos enundados así combinados se
+ ***disyunción*** *(o alternación)* y los dos enunciados así combinados se
  llaman ***disyuntos*** *(o alternativos).*
 
 La palabra "o" tiene dos sentidos diferentes, uno de los cuales es la clara
@@ -1283,14 +1283,14 @@ El *significado común parcial* que al menos un disyunto es verdadero, es el
 significado todo de una disyunción inclusiva y parte del significado de una
 disyunción exclusiva.
 
-*En latfn la palabra* ***"vel"*** *expresa el* ***sentido inclusivo*** *de la
+*En latín la palabra* ***"vel"*** *expresa el* ***sentido inclusivo*** *de la
 palabra* "o" *y la palabra* Es costumbre usar la primera letra de "vel" para
 simbolizar "o" en su sentido inclusivo. Si p y q son dos enunciados
-cualesquiera, su ***disyunción debil o inclusiva*** se escribe ***p v q.*** El
+cualesquiera, su ***disyunción débil o inclusiva*** se escribe ***p v q.*** El
 
-![Tabla de verdad de la disyuncion inclusiva](images/tabla-verdad-disyuncion-inclusiva.png)
+![Tabla de verdad de la disyunción inclusiva](images/tabla-verdad-disyunción-inclusiva.png)
 símbolo de ***"v",*** denominado una cuña (o una ve), es un conectivo de
-función de verdad y se deline por la tabla de verdad siguiente:
+función de verdad y se define por la tabla de verdad siguiente:
 
 | --- | --- | --- |
 
@@ -1312,7 +1312,7 @@ Las Naciones Unidas no serán reforzadas.
 Luego habrá una tercera guerra mundial.
 
 Es evidente que un Silogismo Disyuntivo es válido en cualquiera de las
-interpretaciónes de la palabra "o", esto es, sin atención a que su primera
+interpretaciones de la palabra "o", esto es, sin atención a que su primera
 premisa afirma una disyunción inclusiva o exclusiva. Es usualmente difícil, y a
 veces imposible, descubrir cuál es el sentido de la palabra "o" que se intenta
 dar en una disyunción. Pero el argumento válido típico que tiene una disyunción
@@ -1322,38 +1322,38 @@ interpretación de la palabra "o".
 *Por lo tanto,* ***efectuamos una simplificación al traducir cualquier
 ocurrencia de la palabra* "o" *en el símbolo lógico "v"*** *-: sin atención al
 sentido que* se *quiera dar a* Desde luego, en donde se establezca
-explicitamente que la disyunción es exclusiva, usando la frase adicional "pero
+explícitamente que la disyunción es exclusiva, usando la frase adicional "pero
 no ambos", por ejemplo tenemos el aparato simbólico para simbolizar este
 sentido, como se explica más adelante.
 
-El· uso de los parentesis, corchetes y llaves para la puntuación de las
-expresiónes matemáticas es familiar. La expresión "6 + 9 / 3", no determina un
+El· uso de los paréntesis, corchetes y llaves para la puntuación de las
+expresiones matemáticas es familiar. La expresión "6 + 9 / 3", no determina un
 número único, aunque si la puntuación aclara cómo agrupar. los números que la
-constituyen, denota 5 o 9. La puntuación es nec.esaria también para resolver la
-ambigOedad en el lenguaje de la lógica simbólica, porque los enunciados
+constituyen, denota 5 o 9. La puntuación es nec.necesaria también para resolver la
+ambigüedad en el lenguaje de la lógica simbólica, porque los enunciados
 compuestos son susceptibles de combinaciones para formar enunciados más
 complicados.
 
-Hay ambiguedad en ***p* • *q v r,*** que podrían ser o la conjunción de p con q
+Hay ambigüedad en ***p* • *q v r,*** que podrían ser o la conjunción de p con q
 v r, o por otro lado la disyunción de p. q con r. Estos dos sentidos diferentes
-los dan sin ambiguedad las puntuaciones diferentes: ***p.(q v r)* y *(p. q) v
+los dan sin ambigüedad las puntuaciones diferentes: ***p.(q v r)* y *(p. q) v
 r.*** En el caso en que p y q sean falsos ambos y r verdadero, la primera
 expresión puntuada es falsa (pues su primer enunciado conjunto es falso), pero
 la segunda expresión puntuada es verdadera (pues su segundo enunciado disyunto
 es verdadero). Aquí, la diferencia de puntuación hace toda la diferencia entre
 verdad y falsedad. En la lógica simbólica, como en las matemáticas, usamos
-patentesis, corchetes y llaves. para la puntuación. Sin embargo, para reducir el
+paréntesis, corchetes y llaves. para la puntuación. Sin embargo, para reducir el
 número de signos.de puntuación requerido estableceremos el convenio simbólico de
-que en cualquier expresión la tilde se aplicará a la componente más pequefia
-permitida por la puntación: De este modo, la ambiguedad de ~ ***p v q,*** que
+que en cualquier expresión la tilde se aplicará a la componente más pequeña
+permitida por la puntuación: De este modo, la ambigüedad de ~ ***p v q,*** que
 podría significar o *(~* ***p) v q*** o ~ ***p v q),*** queda resuelta por
 nuestro convenio para significar la primera de estas, pues la tilde puede (y en
 consecuencia por nuestro convenio lo hace) aplicarse a la primera componente p y
 no a la expresión más larga p v q.
 
-No todas las ***conjunciones*** se fórmulan explicitamente colocando la palabra
+No todas las ***conjunciones*** se formulan explícitamente colocando la palabra
 "y" entre oraciones completas, como en *"Carlitos es limpio y Carlitos es
-encantador".* De hecho, esta se expresaria más naturalmente como *"Carlitos es
+encantador".* De hecho, esta se expresaría más naturalmente como *"Carlitos es
 limpio y encantador",* y *"Juan y Carolina subieron a la colina"* es la manera
 más natural de expresar la conjunción *"Juan subió a la* 1 *colina y Carolina
 subió a la colina* ".
@@ -1365,14 +1365,14 @@ tesorera."* expresa de manera un tanto más breve la misma proposición que *"o
 Carlota será secretaria o Carlota será tesorera".* La ***negación*** de una
 disyunción se expresa a menudo usando la frase *"ni-ni".* Así, la disyunción
 *"Alicia o Beatriz serán elegidas"* queda negada por el enunciado *"ni Alicia ni
-Beatriz serán elegidas".* La disyunción se simbolizaria como A v B, y su
+Beatriz serán elegidas".* La disyunción se simbolizaría como A v B, y su
 negación como ~(A v B) o como (~A). ~B), que son fórmulas equivalentes. Negar
 que al menos uno de los enunciados es verdadero es asegurar que ambos enunciados
 son falsos.
 
 La palabra *"ambos"* tiene varias funciones. Una de ellas es solo cuestión de
-enfasís. Decir *"Ambos Juan y Carolina subieron a la colina"* es solo para
-recalcar que los dos hicieron lo que se dice que hici.eron al decir *''Juan y
+énfasis. Decir *"Ambos Juan y Carolina subieron a la colina"* es solo para
+recalcar que los dos hicieron lo que se dice que hicieron al decir *''Juan y
 Carolina subieron a la colina".* Una función más útil de la palabra "ambos" es
 de puntuación. "Ambos... y \_. \_ no son " se usa para expresar lo mismo que
 "Ni... ni \_. \_ es ". En oraciones tales el orden que guardan las palabras
@@ -1388,7 +1388,7 @@ Finalmente, hay que observar que la frase *"a menos que"* puede también usarse
 en la expresión de la disyunción de dos enunciados.
 
 Así, *"Nuestros recursos pronto se agotaran, a menos que se procesen más
-materiales de desecho"* puede expresarse también cbmo *"O se procesan tnas
+materiales de desecho"* puede expresarse también como *"O se procesan más
 materiales de desecho o se agotaran pronto nuestros recursos"* y se simboliza
 como M v E.
 
@@ -1401,7 +1401,7 @@ enunciados simples por aplicación repetida de conectivos de función de
 verdad,.tendrá valores de verdad completamente determinados por los valores de
 verdad.de esos enunciado simple.s. • Por ejemplo, si A y B son enunciados
 verdaderos y X y Y son falsos, el Valor de verdad del enunciado compuesto ~[(~Av
-X) v ~(B. Y)l puede encontrarse de la rilanera siguiente. Como A es verdadero,
+X) v ~(B. Y)l puede encontrarse de la manera siguiente. Como A es verdadero,
 ~A es falso, y como X es falso, también la disyunción (~A v X) es falsa.• Dado
 que Yes falso, la conjunción (B. Y) es falsa y su negación ~(B.Y) es verdadera.
 De este modo, la disyunción (~Av X) v ~(B. Y) es verdadera, y su negación que es
@@ -1413,9 +1413,9 @@ verdad de sus enunciados simples componentes.
 - 1. Em.enunciados Condicionales
 
 El enunciado compuesto *"Si el tren se retrasa entonces perderemos nuestro
-transbordo"* es un ***condicional*** *(o un hipotetico, una implicación* o *un
+transbordo"* es un ***condicional*** *(o un hipotético, una implicación* o *un
 enunciado implicativo).* El enunciado componente situado entre el *"si"* y el
-*"entonces"* es llamado el ***antecedente*** *(o el implicante* o *prótasís),* y
+*"entonces"* es llamado el ***antecedente*** *(o el implicante* o *prótasis),* y
 el componente que sigue al *"entonces"* es el ***consecuente*** *(o el
 implicado* o *apódosis).* Un ***condicional*** no afirma que su antecedente sea
 verdadero o que su consecuente lo sea; solo afirman que ***si su antecedente* es
@@ -1427,10 +1427,10 @@ antecedente y su consecuente, en ese orden.
 Si examinamos un cierto número de condicionales diferentes veremos que pueden
 afirmar diferentes implicaciones.
 
-* En el condicional *"Si a todos los gatos* les *gusta el higado y Dina es un
+* En el condicional *"Si a todos los gatos* les *gusta el hígado y Dina es un
  gato, entonces a*
 
-*DINA le gusta el higado",* el consecuente se sigue ***lógicamente*** del
+*DINA le gusta el hígado",* el consecuente se sigue ***lógicamente*** del
 antecedente.
 
 * Por otro lado, en el condicional *"Si la figura es un triangulo, entonces
@@ -1441,18 +1441,18 @@ antecedente.
  el oro se*
 
 *disuelve"* no es cuestión de lógica ni de definición. Aquí la conexión afirmada
-es causal y debe descubrirse ***empiricamente.*** Este ejemplo muestra que hay
+es causal y debe descubrirse ***empíricamente.*** Este ejemplo muestra que hay
 diferentes clases de implicaciones que constituyen diferentes tipos de sentidos
 de la frase *"si-entonces".* Observadas estas diferencias, ahora buscamos un
 significado común identificable, algún ***significado parcial común*** a estos
 que, como hemos aceptado, son diferentes tipos de condicionales.
 
-Nuestra discusión de *"si-entonces"* correra paralela a nuestra previa discusión
+Nuestra discusión de *"si-entonces"* correrá paralela a nuestra previa discusión
 de la palabra "o".
 
 Primero, señalamos dos sentidos diferentes de esa palabra.
 
-Segundo, notamos que habfa un *significado parcial común:* el hecho de que al
+Segundo, notamos que había un *significado parcial común:* el hecho de que al
 menos un disyunto sea verdadero, se vio que estaba involucrado tanto en el "o"
 inclusivo como en el exclusivo.
 
@@ -1462,7 +1462,7 @@ parcial común (que era todo el significado de "o" en su sentido inclusivo).
 Cuarto, observamos que, dado que argumentos como el Silogismo.Disyuntivo son
 válidos en cualquier interpretación de la palabra "o", simbolizar cualquier
 ocurrencia de la palabra "o" por el símbolo curia preserva la validez de tales
-argumentos. Y como nos inte.resan los argumentos desde el punto de vista de la
+argumentos. Y como nos interesan los argumentos desde el punto de vista de la
 determinación de su validez, esta traducción de la palabra "o" en "v" que puede
 abstraer o •ignorar parte de su significado en algunos casos, es enteramente
 adecuada para nuestros propósitos actuales.
@@ -1470,7 +1470,7 @@ adecuada para nuestros propósitos actuales.
 Un *significado parcial común* de estas diferentes clases de enunciados
 condicionales surge cuando preguntamos cuáles serían circunstancias suficientes
 para establecer la falsedad de un condicional. ¿En que circunstancias
-acordarfamos que el condicional "Si el oro se sumerge en agua regia entonces el
+acordaríamos que el condicional "Si el oro se sumerge en agua regia entonces el
 oro se disuelve" es falso?. Claramente, el enunciado es falso en el caso de que
 se sumerja el.oro en esta solución y no se disuelva.
 
@@ -1492,7 +1492,7 @@ podemos considerar esta última como parte del significado del condicional.
 
 Introducimos un nuevo símbolo *"c:f',* llamado herradura, para representar el
 ***significado parcial común en todos* los *enunciados condicionales,***
-deliniendo **"p:::, q"** como una abreviación de **~(p. ~q).** La herradura es
+definiendo **"p:::, q"** como una abreviación de **~(p. ~q).** La herradura es
 un conectivo de función de verdad, cuya significación exacta queda indicada por
 
 ![Tabla de verdad del condicional material](images/tabla-verdad-condicional-material.png)
@@ -1510,10 +1510,10 @@ la tabla de verdad siguiente:
 
 **T F T**
 
-En esta, la primera y segunda columnas representan todos los valores de ve.rdad
+En esta, la primera y segunda columnas representan todos los valores de ve.verdad
 posibles para los enunciados componentes *p y q,* y las columnas tercera, cuarta
 y quinta representan etapas sucesivas al determinar el valor de verdad del
-enunciado compuesto *«{p. ~q)* en cada caso. La sexta columna es identicamente
+enunciado compuesto *«{p. ~q)* en cada caso. La sexta columna es idénticamente
 la misma que la quinta, puesto que las fórmulas que las encabezan por definición
 expresan la misma proposición. El símbolo de herradura no debe pensarse que
 representa el significado del "si-entonces", o la relación de implicación, sino
@@ -1522,18 +1522,18 @@ implicaciones*** significadas por la frase *"si-entonces".* Podemos considerar
 esta *herradura* como *símbolo de una clase especial, extremadamente débil, de
 implicación,* y nos resulta conveniente hacerlo así, pues algunas maneras de
 leer "p:::, q" son *"si p entonces q' "p implica q" o "p solo si q".* La
-implicación debil simbolizada ":::," se llama ***implicación material,*** y su
+implicación débil simbolizada ":::," se llama ***implicación material,*** y su
 nombre especial indica que es una noción especial, que no debe confundirse con
 las otras clases de implicación más usuales.
 
 \ Algunos enunciados condicionales en el lenguaje ordinario afirman meramente
 implicaciones materiales como, por ejemplo, *"Si Rusia es una democracia
-entonces yo soy Napoleon.".* Es claro que la implicación afirmada aquf no es
-lógica, ni delinitoria, ni causal. No se pretende ninguna "conexión real" entre
+entonces yo soy Napoleón.".* Es claro que la implicación afirmada aquí no es
+lógica, ni definitoria, ni causal. No se pretende ninguna "conexión real" entre
 lo que afirma el antecedente y lo que se afirma en el consecuente. Esta clase de
-condicional se usa ordinariamente como un método enfatico o humorfstico de negar
+condicional se usa ordinariamente como un método enfático o humorístico de negar
 la verdad de su antecedente, pues típicamente contiene un enunciado notoria o
-ridfculamente falso como consecuente. Cualquier afirmación tal respecto a los
+ridículamente falso como consecuente. Cualquier afirmación tal respecto a los
 valores de verdad se simboliza adecuadamente usando el conectivo función de
 verdad ":::,".
 
@@ -1541,34 +1541,34 @@ Aunque la mayor parte de los enunciados condicionales afirman más que una
 implicación meramente material entre el antecedente y el consecuente, ahora
 proponemos simbolizar cualquier ocurrencia de ***"si-entonces"*** mediante el
 conectivo de función de verdad ":::,". Debe admitirse que esta simbolización
-abstrae e ignora parte del significado de casí todos los enunciados
-ci>ndicionales. Pero la proposición puede justificarse sobre la base de que la
+abstrae e ignora parte del significado de casi todos los enunciados
+ci>condicionales. Pero la proposición puede justificarse sobre la base de que la
 validez de los argumentos válidos que involucran condicionales se preserva
 cuando los condicionales se consideran como implicaciones materiales solamente,
-como se establecera en las siguientes secciónes.
+como se establecerá en las siguientes secciones.
 
 Los enunciados condicionales pueden expresarse en toda una variedad de formas.
 Un enunciado de la forma *"sip entonces q"* podría igualmente bien expresarse
 como *"sip, q' "q sip", "que p implica que q' "que p trae consigo que q' "p solo
 si q' "que p es una condición* *suficiente que q", o*, *coma "que q* es *una
-condic:ión necesaria que p",* y cualquiera de estas fórmulaciones se simbolizara
+condición:ión necesaria que p",* y cualquiera de estas formulaciones se simbolizara
 mediante p:::, **q.**
 
 ## Formas de argumentos y tablas de verdad
 
 - 1. Formas de Argumentos y Tablas de Verdad
 
-En esta sección desarrollamos un ***método puramente mecanico*** para probar la
+En esta sección desarrollamos un ***método puramente mecánico*** para probar la
 ***validez de*** ***argumentos que contienen enunciados compuestos de función de
-verdad.*** Ese método esta intimamente relacionado con la técnica familiar de
-*refutación par analogia lógica* que se uso en el primer capítulo para demostrar
+verdad.*** Ese método esta íntimamente relacionado con la técnica familiar de
+*refutación par analogía lógica* que se uso en el primer capítulo para demostrar
 la invalidez del argumento Si yo soy presidente entonces soy famoso.
 
 Yo no soy presidente.
 
 Luego yo no soy famoso.
 
-Este argumento se mostro que era inválido construyendo otro argumento de la
+Este argumento se mostró que era inválido construyendo otro argumento de la
 misma forma:
 
 Si Rockefeller es presidente entonces el es famoso.
@@ -1583,17 +1583,17 @@ falsa.
 Cualquier argumento se prueba que es inválido si es posible construir otro
 argumento de exactamente la misma forma con premisas verdaderas y una conclusión
 falsa. Esto refleja el hecho de que *la validez y la invalidez* son
-*características puramente formates de* los *argumentos:* dos *argumentos
+*características puramente formatos de* los *argumentos:* dos *argumentos
 cualesquiera que tienen la misma forma o* son *válidos ambos o* *ambos* son
-*inválidos, independientemente de las diferencias de* su *contenido.* La nocion
-de dos argumentos que tienen exactamente la misma forma es una nocion que merece
+*inválidos, independientemente de las diferencias de* su *contenido.* La noción
+de dos argumentos que tienen exactamente la misma forma es una noción que merece
 mayor examen.
 
 Es conveniente, al discutir las *formas de* los *argumentos,* usar letras
-minusculas de la parte media del alfabeto, ***"p', ''q'', "r'',* "s'',**...
-*coma* ***variables sentenciales,*** que se delirien símplemente como ***letras
+minúsculas de la parte media del alfabeto, ***"p', ''q'', "r'',* "s'',**...
+*coma* ***variables sentenciales,*** que se definen simplemente como ***letras
 por las cuales,* o *en lugar de las cuales,* se** ***pueden sustituir
-enunciados.*** Ahora delinimos una ***forma argumental*** como ·cualquier
+enunciados.*** Ahora definimos una ***forma argumental*** como ·cualquier
 ***arreglo de símbolos que contiene ·variables sentenciales,*** de modo que al
 sustituir enunciados por las variables sentenciales - siendo siempre el mismo
 enunciado el que reemplaza a la misma variable - el resultado es un argumento.
@@ -1606,10 +1606,10 @@ segunda, "r" la tercera y así sucesivamente.
 lugar de* *variables sentenciales de una forma argumental,* se *dice que tiene*
 esa *forma o que* es *una* ***instancia de sustitución de* esa *forma
 argumental.*** Si simbolizamos el enunciado simple *"Las Naciones Unidas serán
-reforzadas"* con U, y el enunciado simple *"Habra una tercera guerra mundiaf"*
+reforzadas"* con U, y el enunciado simple *"Habrá una tercera guerra mundial"*
 con W, entonces el Silogismo Disyuntivo antes presentado puede simbolizarse como
 
-![Simbolizacion del silogismo disyuntivo](images/silogismo-disyuntivo-simbolizacion.png)
+![Simbolización del silogismo disyuntivo](images/silogismo-disyuntivo-simbolización.png)
 
 1. UvW
 
@@ -1631,14 +1631,14 @@ sentencial por un enunciado simple diferente.*** Así, la forma específica del
 argumento (1) es la forma argumental (2). Aunque la forma argumental (3) es una
 forma del argumento (1), no es la forma específica del mismo.
 
-***La técnica de refutación por analogia lógica puede ahora describirse más
+***La técnica de refutación por analogía lógica puede ahora describirse más
 precisamente. Si la forma especifica de un argumento dado puede mostrarse que
 tiene una instancia de sustitución con premisas verdaderas y conclusión falsa,
 entonces el argumento dado es inválido.*** Los términos *''válido"* e
 *"inválido"* pueden extenderse para aplicarse a *formas argumentales* tanto como
 a argumentos. *Una forma argumental inválida* es *una que tiene cuando menos una
 instancia de sustitución con premisas verdaderas y una conclusión falsa.* La
-técnica de refutación por analogfa lógica presupone que todo argumento del cuál
+técnica de refutación por analogía lógica presupone que todo argumento del cuál
 la forma específica es una forma argumental inválida es un argumento inválido.
 Toda forma argumental que no sea inválida es válida; *una forma argumental
 válida* es *una que no tiene instancia de sustitución con premisas verdaderas y
@@ -1649,13 +1649,13 @@ válida.
 ***Para determinar.la validez* o *invalidez de una forma.argumental debemos
 examinar todas las instancias de sustitución posibles de ella para ver si
 algunas tienen premisas verdaderas y conclusiones falsas.*** Los argumentos de
-los que aquf nos ocupamos solamente contienen enunciados simples y enunciados
+los que aquí nos ocupamos solamente contienen enunciados simples y enunciados
 función de verdad compuestos con aquellos, y solo nos interesan los valores de
 verdad, de sus premisas y conclusiones. Podemos obtener todas las \_instancias
 de sustitución posibles cuyas premisas y conclusiones tienen diferentes
 variables sentenciales en la forma argumental que se prueba. Estas pueden
 disponerse de la manera más conveniente en una tabla de verdad, con una columna
-inicial o gufa para cada variable sentencia que aparece en la forma argumental.
+inicial o guía para cada variable sentencia que aparece en la forma argumental.
 Así, para probar la validez de la forma del Silogismo Disyuntivo pvq construimos
 
 ![Tabla de verdad del silogismo disyuntivo](images/tabla-verdad-silogismo-disyuntivo.png)
@@ -1672,7 +1672,7 @@ la siguiente tabla de verdad:
 | **F** | **F** | **F** | **T** |
 
 Cada renglón de esta tabla representa una clase completa de instancias de
-sustituc.ioil..LasT y.
+sustitución..LasT y.
 
 las F en las dos columnas iniciales representan los valores de verdad de
 enunciados que pueden sustituirse por las variables p y q en la forma
@@ -1682,17 +1682,17 @@ la forma argumental y la cuarta por la *segunda "premisa".* El encabezado de la
 segunda columna es la *conclusión* de la forma argumental. Un examen de esta
 tabla de verdad revela que cualesquiera que sean los enunciados sustituidos por
 las variables p y q, el argumento resultante no puede tener premisas verdaderas
-y una conclusión falsa, pues el tercer renglón representa el t'.inico caso
+y una conclusión falsa, pues el tercer renglón representa el t'.único caso
 posible en que ambas premisas son verdaderas y ah[ la conclusión también es
 verdadera.
 
-Como las ***tablas de verdad*** proporcionan un ***método puramente mecanico o
+Como las ***tablas de verdad*** proporcionan un ***método puramente mecánico o
 efectivo de*** ***decisión de la validez o invalidez de cualquier argumento***
 del tipo general aquí! considerado, ahora podemos justificar nuestra propuesta
 de simbolizar todos los enunciados condicionales por medio del conectivo de
-función de verdad ":o". La justificacion para tratar todas las implicaciones
+función de verdad ":o". La justificación para tratar todas las implicaciones
 como si fueran meramente implicaciones materiales es que los argumentos válidos
-que contienen enunciados condicionales siguen síendo válidos cuando estos
+que contienen enunciados condicionales siguen siendo válidos cuando estos
 condicionales se interpretan como afirmando implicaciones materiales solamente.
 Las tres más simples y más intuitivamente válidas formas de argumento que
 involucran enunciados condicionales son
@@ -1707,7 +1707,7 @@ Si p entonces q
 
 Si p entonces q
 
-y el **Silogismo Hipotetico** Si p entonces q Si q entonces r
+y el **Silogismo Hipotético** Si p entonces q Si q entonces r
 
 *:.* Si p entonces r El que sigan siendo válidos cuando sus condicionales se
 interpretan como aseveraciones de implicaciones materiales, es un hecho que
@@ -1745,16 +1745,16 @@ La validez de ***Modus Tollens*** se muestra por medio de la.siguiente tabla:
 
 **F F T**
 
-Aquí solamente el cuarto renglón representa instancias de sustitucion en las que
+Aquí solamente el cuarto renglón representa instancias de sustitución en las que
 ambas premisas (las columnas tercera y cuarta) son verdaderas, y ah[ la
 conclusión (quinta columna) también es verdadera.
 
-Como el ***Silogismo Hipotetico*** contiene tres enunciados distintos para
+Como el ***Silogismo Hipotético*** contiene tres enunciados distintos para
 
-![Tabla de verdad del silogismo hipotetico](images/tabla-verdad-silogismo-hipotetico.png)
+![Tabla de verdad del silogismo hipotético](images/tabla-verdad-silogismo-hipotético.png)
 variables sentenciales distintas, su tabla de verdad debe tener tres columnas
-iniciales y requerira ocho renglónes para alistar todas las posibles instancias
-de sustitucion:
+iniciales y requerirá ocho renglones para alistar todas las posibles instancias
+de sustitución:
 
 | | | | | | |
 
@@ -1781,32 +1781,32 @@ posibles de valores de verdad para los enunciados sustituidos en lugar de las
 variables sentenciales p, q y r, la cuarta columna se llena con referencia a la
 primera y la segunda, la quinta con referencia a la segunda y la tercera, y la
 sexta con referencia a la primera y la tercera. Las premisas son ambas
-verdaderas solo en los renglónes primero, quinto, septimo y octavo, y en estos
-renglónes la conclusión también es verdadera. Esto basta para mostrar que el
-Silogismo Hipotetico es válido cuando sus condicionales se simbolizan mediante
-el símbolo herradura. Todas las dudas que queden respecto a la afirmacion de que
-los argumentos válidos que contienen condicionales siguen síendo válidos cuando
-sus condicionales se intérpreten como afirmando meramente implicaciones
+verdaderas solo en los renglones primero, quinto, séptimo y octavo, y en estos
+renglones la conclusión también es verdadera. Esto basta para mostrar que el
+Silogismo Hipotético es válido cuando sus condicionales se simbolizan mediante
+el símbolo herradura. Todas las dudas que queden respecto a la afirmación de que
+los argumentos válidos que contienen condicionales siguen siendo válidos cuando
+sus condicionales se interpreten como afirmando meramente implicaciones
 materiales puede aclararlas el lector al construir, simbolizar y probar sus
 propios ejemplos mediante tablas de verdad.
 
 Para probar la validez de una forma argumental mediante una tabla de verdad, es
 necesaria una tabla con una columna inicial o gu[a separada para cada variable
-sentencial diferente y un renglón separado para cada posible asígnacion de
+sentencial diferente y un renglón separado para cada posible asignación de
 valores de verdad a las variables sentenciales involucradas. As[ pues, probar
 una forma argumental que contiene **n** variables sentenciales distintas
-requiere una tabla de verdad con **2"** renglónes. Al construir tablas de verdad
-es conveniente fijar un patron uniforme de inscripcion de las **Ty** las **F**
+requiere una tabla de verdad con **2"** renglones. Al construir tablas de verdad
+es conveniente fijar un patrón uniforme de inscripción de las **Ty** las **F**
 en sus columnas iniciales o gu[a. En este libro nos apegaremos a la practica de
 ir simplemente alternando las **T** y las **F** hacia abajo en la columna
 inicial extrema derecha, alternando pares de **T** con pares de **F** hacia
-abajo en la columna directamente a su izquierda, despues alternando grupos de
+abajo en la columna directamente a su izquierda, después alternando grupos de
 cuatro **T** con grupos de cuatro **F,**..., y al llegar a la columna extrema
 izquierda ponemos **T** en todas su mitad superior y Fen toda su mitad inferior.
 
 Hay dos formas de argumento inválidas que tienen un parecido superficial con las
 
-![Falacias de afirmacion del consecuente y negacion del antecedente](images/falacias-afirmacion-consecuente-negacion-antecedente.png)
+![Falacias de afirmación del consecuente y negación del antecedente](images/falacias-afirmación-consecuente-negación-antecedente.png)
 formas válidas Modus Ponens y Modus Tollens.
 
 Estas son:
@@ -1817,31 +1817,31 @@ Negación del*** La invalidez de ambas puede mostrarse en una misma tabla de
 ![Tabla de verdad de falacias condicionales](images/tabla-verdad-falacias-condicionales.png)
 verdad:
 
-Las dos premisas en la Falacia de Afirmacion del Consecuente encabezan las
+Las dos premisas en la Falacia de Afirmación del Consecuente encabezan las
 columnas segunda y tercera, y son verdaderas en el primer y en el tercer
 renglón. Pero la conclusión, que encabeza la primera columna, es falsa en el
 tercer renglón, lo que muestra que la forma de argumentar tiene una instancia de
-sustitucion con premisas verdaderas y conclusión falsa y, por lo tanto, es
+sustitución con premisas verdaderas y conclusión falsa y, por lo tanto, es
 inválida. Las columnas tres y cuatro son las encabezadas por las premisas en la
-Falacia de Negacion del Antecedente, que son verdaderas en los renglónes tercero
+Falacia de Negación del Antecedente, que son verdaderas en los renglones tercero
 y cuarto.
 
 Su conclusión encabeza la columna cinco y es falsa en el tercer renglón, lo que
 muestra que la segunda forma argumental también es inválida.
 
 Hay que recalcar que aunque una forma de argumento válida tiene solo argumentos
-válidos come instancias de sustitucion, una forma de argumento inválida puede
-tener instancias de sustitucion válidas tanto come inválidas. Así que para
+válidos come instancias de sustitución, una forma de argumento inválida puede
+tener instancias de sustitución válidas tanto come inválidas. Así que para
 demostrar que un argumento dado es inválido hay que demostrar que la forma
 específica de ese argumento es inválida.
 
 1. 2. 2.4. Formas Sentenciales
 
-La introducción de variables sentenciales en la sección precedente nos permitio
-delinir las formas argumentales en general y la forma específica de un argumento
+La introducción de variables sentenciales en la sección precedente nos permitió
+definir las formas argumentales en general y la forma específica de un argumento
 dado.
 
-Ahora delinimos una ***forma sentencial*** como ***cualquier sucesión de
+Ahora definimos una ***forma sentencial*** como ***cualquier sucesión de
 símbolos*** ***conteniendo variables sentenciales,*** de modo que al sustituir
 enunciados por las variables sentenciales • - reemplazando la misma variable
 sentencial por el mismo enunciado en toda la secuencia - el resultado es un
@@ -1849,15 +1849,15 @@ enunciado.
 
 Otra vez, para precisar, convendremos en que en cualquier forma sentencial "p"
 será la primera variable sentencial que aparece, "q" será la segunda en ocurrir,
-"r" la tercera y así sucesivamente. Todo enunciado que resulta de la sustitucion
-de las variables sentenciales por entlnciados en uria forma sentencial, se dira
-que tiene esa forma o que es una instancia de sustitucion de ella. • *Así como
+"r" la tercera y así sucesivamente. Todo enunciado que resulta de la sustitución
+de las variables sentenciales por enunciados en una forma sentencial, se dirá
+que tiene esa forma o que es una instancia de sustitución de ella. • *Así como
 distinguimos la form<! especifica de un argumento dado, así también
 distinguiremos* *la forma especifica de un enunciado dado como la forma
-sentencial de la que resulta el* *eriunciado poniendo en el lugar de cada
+sentencial de la que resulta el* *enunciado poniendo en el lugar de cada
 variable sentencial un enunciado simple diferente.* Así, por ejemplo, si A, B y
 C son enunciados simples diferentes, **el enunciado compuesto A** ::i **(BvC)**
-es una instancia de sustitucion de la ***forma sentencial* p**::i **q** y
+es una instancia de sustitución de la ***forma sentencial* p**::i **q** y
 también de. la ***forma*** ***sentencial* p**::i **(qvr),** pero solo esta
 última es la ***forma especifica del.enunciado*** dado. (\ Aunque los enunciados
 *"Balboa.descubrió el Océano Pacífico" (B)* y *"Balboa descubrió el* *Océano
@@ -1865,10 +1865,10 @@ Pacífico* o *no lo descubrió" (B v ~B)* ambos son verdaderos, descubrimos su
 
 ![Tabla de verdad del tercero excluido](images/tabla-verdad-tercero-excluido.png)
 verdad de maneras enteramente diferentes. La verdad de B es cuestión histórica y
-se aprende,por medio de la investigación empirica. Aun más, podrían haber
+se aprende,por medio de la investigación empírica. Aun más, podrían haber
 ocurrido cosas que hicieran a B falso; nada necesario hay respecto a la verdad
 de B. Pero la verdad del enunciado B v ~B puede saberse independientemente de
-toda investigación empirica y ningún suceso puede hacerlo falso porque es una
+toda investigación empírica y ningún suceso puede hacerlo falso porque es una
 verdad necesaria.
 
 El enunciado ***B v ~B*** es una ***verdad formal,*** una instancia de
@@ -1880,7 +1880,7 @@ se**
 
 ***dice tautológica, o que* es *una tautología.***
 
-La forma especffica de ***B v ~B* es *p v*** ~,, y se prueba que es tautológica
+La forma específica de ***B v ~B* es *p v*** ~,, y se prueba que es tautológica
 mediante la siguiente tabla de verdad:
 
 | --- | --- | --- |
@@ -1893,9 +1893,9 @@ En la columna que encabeza la forma sentencial de que se trata solo hay valores
 **T,** luego ***todas sus instancias de sustitución son verdaderas.*** Cualquier
 enunciado que es una 1 instancia de sustitución de una forma sentencial
 tautológica es formalmente verdadero y también se le llama tautológico, o una
-tautologfa.
+tautología.
 
-Similarmente, aunqut'! los enunciados *"Cortes descubrió el Pacífico" (CJ y
+Similarmente, aunque'! los enunciados *"Cortes descubrió el Pacífico" (CJ y
 "Cortes descubrió el* *Pacífico y Cortes no descubrió el Pacífico" (C*. *.CJ*
 ambos son falsos, descubrimos su falsedad de dos maneras enteramente diferentes.
 
@@ -1907,7 +1907,7 @@ sentido, relacionado del mismo término.
 Cuando es lógicamente imposible que un enunciado particular sea verdadero, ese
 enunciado mismo es llamado autocontradictorio o una autocontradicción. Mas
 simplemente, se dice que tales enunciados son contradictorios o contradicciones,
-y esta es la términologfa que aquí usaremos.
+y esta es la terminología que aquí usaremos.
 
 ***Una forma sentencial que solo tiene instancias de sustitución falsas* se
 *dice que* es *una contradicción o que* es *contradictoria, y los mismos
@@ -1923,16 +1923,16 @@ contradictorias***
 Por ejemplo, p, ~P, p v q, p.q, p::o q son formas sentenciales contingentes; y
 B, C, ~B, B.C, BvC, son enunciados contingentes. El término es apropiado, pues
 sus valores de verdad no están formalmente determinados, sino que *son
-dependientes* o *contingentes de la situaCión.* Facilmente se demuestra que p::o
-q::o p) y ~P::o (p::o q) son tautologías. Al expresarlas en leriguaje ordinario
+dependientes* o *contingentes de la situaCión.* Fácilmente se demuestra que p::o
+q::o p) y ~P::o (p::o q) son tautologías. Al expresarlas en lenguaje ordinario
 como "Un enunciado verdadero es implicado por: cualquier enunciado'' y como "Un
-enunciado falso implica cualquier enunciado" parecen bastante •extranas.
-Algllncis escritores las han llamado las paradojas de la implicación material.
+enunciado falso implica cualquier enunciado" parecen bastante •extrañas.
+Algunos escritores las han llamado las paradojas de la implicación material.
 Pero si se tiene presente que el símbolo herradura es un conectivo función de
 verdad que representa la implicación material y no la "implicación en general" o
 clases más usuales como son la implicación lógica o la implicación causal,
 entonces dichas formas sentenciales tautológicas no son sorprendentes en lo
-absoluto. Y al corregir esas engafiosas fórmulaciones del castellano insertando
+absoluto. Y al corregir esas engañosas formulaciones del castellano insertando
 la palabra ' "materialmente" antes de "implicado" *e* "implica", entonces
 desaparece el aire paradójico. La implicación material es una noción técnica y
 la motivación del lógico al introducirla y usarla es la enorme simplificación
@@ -1940,7 +1940,7 @@ que resulta en su tarea de discriminar entre los argumentos válidos y los
 inválidos. • ***Dos enunciados* se *dicen materialmente equivalentes cuando
 tienen el mismo*** ***valor de verdad, y simbolizamos el enunciado de que son
 materialmente*** ***equivalentes insertando el símbolo*** "=''***entre ellos.***
-• Tratandose de un conectivo función de verdad, el símbolo tres barras se deline
+• Tratándose de un conectivo función de verdad, el símbolo tres barras se define
 
 ![Tabla de verdad de la equivalencia material](images/tabla-verdad-equivalencia-material.png)
 con la siguiente tabla de verdad:
@@ -1966,12 +1966,12 @@ verdad se demuestra que es tautológico.
 
 Hay dos equivalencias lógicas que expresan importantes interrelaciones de las
 conjunciones, disyunciones y negaciones. Como una conjunción afirma que sus dos
-conyuntos son verdaderos, su negación solo necesita afirmar que uno de los dos
-conyuntos es falso. Luego, negar la conjunción p.q equivale a afirmar la
+conjuntos son verdaderos, su negación solo necesita afirmar que uno de los dos
+conjuntos es falso. Luego, negar la conjunción p.q equivale a afirmar la
 disyunción de las negaciones de p y q. Este enunciado de equivalencia se
 simboliza como **~(p.q)** = **(~p v ~Q)** y se demuestra que es una
 
-![Tabla de verdad de De Morgan para conjuncion](images/tabla-verdad-de-morgan-conjuncion.png)
+![Tabla de verdad de De Morgan para conjunción](images/tabla-verdad-de-morgan-conjunción.png)
 ***tautología*** mediante la tabla de verdad:
 
 | | | | | | | | |
@@ -1995,8 +1995,8 @@ conocen como ***Teoremas de De Morgan,*** por el lógico matemático ingles
 Augustus De Morgan (1809-1871), y en lenguaje ordinario pueden enunciarse de
 manera conjunción}.
 
-compendiada como: La negación de la { disyunción de dos enunciados. disyuncion
-es lógicamente equivalente a la { conjuncion} de sus riegaciones.
+compendiada como: La negación de la { disyunción de dos enunciados. disyunción
+es lógicamente equivalente a la { conjunción} de sus negaciones.
 
 *Dos formas sentenciales se dicen lógicamente equivalentes si, no importando
 qui§ enunciados se sustituyan par sus variables sentenciales* - *poniendo el
@@ -2004,8 +2004,8 @@ mismo enunciado en lugar de la misma variable sentencial en ambas formas
 sentenciales* -, *las pares resultantes de enunciados son equivalentes.* As[, el
 Teorema de De Morgan afirma que ~(p v q) y ~P. ~Q son formas sentenciales
 lógicamente equivalentes. Por el Teorema de De Morgan y el principio de la Doble
-Negacion *:*, ~(p. q) y ~P v ~q son lógicamente equivalentes, luego cualquiera
-puede tomarse como definición de p:o q; la segunda es la eleccion más usual.
+Negación *:*, ~(p. q) y ~P v ~q son lógicamente equivalentes, luego cualquiera
+puede tomarse como definición de p:o q; la segunda es la elección más usual.
 
 ***A todo argumento corresponde un enunciado condicional cuyo antecedente* es
 *la conjunción de las premisas del argumento y cuyo consecuente* es *la
@@ -2025,8 +2025,8 @@ sus premisas. Como. puede aparecer una **F** en la columna encabezada por el
 condicional correspondiente solo donde haya **T** bajo todas las premisas y
 **F** bajo la conclusión, es claro que solo puede haber el valor **T** bajo un
 condicional que corresponde a una forma argumental válida. Si un argumento es
-válido, el enunciado de que la conjuncion de sus premisas implica su conclusión
-es una tautolog[a.
+válido, el enunciado de que la conjunción de sus premisas implica su conclusión
+es una tautología[a.
 
 Una versión alternativa de la prueba de la tabla de verdad de una forma
 
@@ -2075,33 +2075,33 @@ establece que ***la forma sentencial probada* es *una tautología.***
 
 | ***34*** | | |
 
-| 3.2.3. El Metodo de Deducdon | | |
+| 3.2.3. El Método de Deducción | | |
 
 ## Prueba formal de validez
 
 | 3.2.3.1. Prueba Formal de Validez Cuando los argumentos contienen *más de dos a tres enunciados simples diferentes* como componentes, se hace *difícil y tedioso utilizar tablas de verdad para probar su validez.* | E | |
 
-| Un método más conveniente de establecer la validez de algunos argumentos es deducir las conclusiones de sus premisas por una secuencia de argumentos más cortos y más elementales que ya se conoce que son válidos. Considerese, por ejemplo, el siguiente argumento en el que aparecen enunciados simples diferentes: | C: | |
+| Un método más conveniente de establecer la validez de algunos argumentos es deducir las conclusiones de sus premisas por una secuencia de argumentos más cortos y más elementales que ya se conoce que son válidos. Considérese, por ejemplo, el siguiente argumento en el que aparecen enunciados simples diferentes: | C: | |
 
-| * el procurador general ha impuesto una censura estricta o· si Black envio la carta que escribio, entonces Davis recibio un aviso. | | |
+| * el procurador general ha impuesto una censura estricta o· si Black envío la carta que escribió, entonces Davis recibió un aviso. | | |
 
-| * Si nuestras Hneas de comúnicacion no se han interrumpido por completo, entonces si Davis recibio un aviso, entonces Emory fue informado del asunto. * Si el procurador general ha impuesto una censura estricta, entonces nuestras Hneas de comúnicacion se han interrumpido por completo. | | |
+| * Si nuestras líneas de comunicación no se han interrumpido por completo, entonces si Davis recibió un aviso, entonces Emory fue informado del asunto. * Si el procurador general ha impuesto una censura estricta, entonces nuestras líneas de comunicación se han interrumpido por completo. | | |
 
-| * Nuestras líneas de comúnicacion no se han interrumpido par complete. | | |
+| * Nuestras líneas de comunicación no se han interrumpido par complete. | | |
 
-| * Por tanto, si Black envio la carta que escribio, entonces Emory fue informado del asunto. | | |
+| * Por tanto, si Black envío la carta que escribió, entonces Emory fue informado del asunto. | | |
 
 | Se puede traducir en nuestro simbolismo coma | | |
 
-![Simbolizacion del argumento B implica E](images/simbolizacion-argumento-b-implica-e.png)
+![Simbolización del argumento B implica E](images/simbolización-argumento-b-implica-e.png)
 
 | Av (B::, D) ~C::o (D::o E) | | |
 
 | A::, C ~C:.B::oE | | |
 
-| Establecer la validez de este argumento por medio de una tabla de verdad requeriria una tabla | *(:.* | |
+| Establecer la validez de este argumento por medio de una tabla de verdad requeriría una tabla | *(:.* | |
 
-| de treinta y dos renglónes. Pero podemos probar el argumento dado como válido deduciendo su conclusión de sus premisas por una secuencia de solamente cuatro argumentos cuya validez se ha señalado ya. * De la tercera y cuarta premisas, A::o C y ~C, válidamente inferimos ~A por Modus Tollens. | ( | |
+| de treinta y dos renglones. Pero podemos probar el argumento dado como válido deduciendo su conclusión de sus premisas por una secuencia de solamente cuatro argumentos cuya validez se ha señalado ya. * De la tercera y cuarta premisas, A::o C y ~C, válidamente inferimos ~A por Modus Tollens. | ( | |
 
 | * De ~A y la primera premisa Av (B::o D), válidamente inferimos B::o D, por un Silogismo | | |
 
@@ -2111,11 +2111,11 @@ establece que ***la forma sentencial probada* es *una tautología.***
 
 | Modus Ponens. | | |
 
-| * **Y** finalmente, de estas dos últimas conclusiones (o subconclusiones), B::o D y D::o E, válidamente inferimos B::o E por un Silogismo Hipotetico. ***Que su conclusión* se *deduce de sus premisas usando argumentos válidos exclusivamente, prueba que el argumento original* es *válido.*** Aquí las formas argumentales viilidas elementales Modus Ponens (M.P.), Modus Tollens (M.T.), el Silogismo Disyuntivo (D.S.), y el Silogismo Hipotetico (H.S.) se usan como Reglas de | ( | |
+| * **Y** finalmente, de estas dos últimas conclusiones (o subconclusiones), B::o D y D::o E, válidamente inferimos B::o E por un Silogismo Hipotético. ***Que su conclusión* se *deduce de sus premisas usando argumentos válidos exclusivamente, prueba que el argumento original* es *válido.*** Aquí las formas argumentales válidas elementales Modus Ponens (M.P.), Modus Tollens (M.T.), el Silogismo Disyuntivo (D.S.), y el Silogismo Hipotético (H.S.) se usan como Reglas de | ( | |
 
-| Inferencia par media de las cuales se deducen viilidamente las conclusiones a partir de las premisas. Una manera más formal y más concisa de escribir esta prueba de validez es hacer una lista de las premisas y de los enunciados deducidos de ellas en una columna, con las *"justificaciones"* para estos últimas escritas a un lado de los mismos. En cada caso, la *"justificación"* para un enunciado especifica los enunciados precedentes a partir de los cuales, y la regla de inferencia por medio de la cuál, el enunciado en cuestión fue deducido. Es conveniente poner la conclusión a la derecha de la última premisa, separada de la misma por una linea diagonal que | C | |
+| Inferencia par media de las cuales se deducen válidamente las conclusiones a partir de las premisas. Una manera más formal y más concisa de escribir esta prueba de validez es hacer una lista de las premisas y de los enunciados deducidos de ellas en una columna, con las *"justificaciones"* para estos últimas escritas a un lado de los mismos. En cada caso, la *"justificación"* para un enunciado especifica los enunciados precedentes a partir de los cuales, y la regla de inferencia por medio de la cuál, el enunciado en cuestión fue deducido. Es conveniente poner la conclusión a la derecha de la última premisa, separada de la misma por una linea diagonal que | C | |
 
-| automiiticamente señala que todos los enunciados que están por arriba de la misma son premisas. | | |
+| automáticamente señala que todos los enunciados que están por arriba de la misma son premisas. | | |
 
 La prueba formal de validez para el argumento dado puede escribirse como
 
@@ -2129,15 +2129,15 @@ La prueba formal de validez para el argumento dado puede escribirse como
 
 :.B:::, E 3, 4, M.T.
 
-*Una* ***prueba formal de validez para un argumento*** *dado* se *deline coma
+*Una* ***prueba formal de validez para un argumento*** *dado* se *define coma
 una sucesión de enunciados, cada uno de las cuales* es *una premisa de ese
 argumento o* se *sigue de los precedentes por un argumento válido elemental, y
 tal que el último enunciado de la secuencia* es *la conclusión del argumento
 cuya validez* se *está demostrando.* Esta definición debe completarse y hacerse
 más precisa especificando que es lo que va a contar como *"argumento válido
-elemental".* Primera delinimos un argumento válido elemental como cualquier
+elemental".* Primera definimos un argumento válido elemental como cualquier
 argumento que es una instancia de sustitución de una forma de argumento válida,
-y despues presentamos una lista de solo nueve formas de argumento
+y después presentamos una lista de solo nueve formas de argumento
 suficientemente obvias para ser vistas como ***formas de argumento válidas
 elementales*** y aceptadas como
 
@@ -2164,7 +2164,7 @@ construir pruebas formales de validez:
 
 **REGLAS DE INFERENCIA**
 
-![Reglas de inferencia: Modus, dilemas y simplificacion](images/reglas-inferencia-modus-dilema-simplificacion.png)
+![Reglas de inferencia: Modus, dilemas y simplificación](images/reglas-inferencia-modus-dilema-simplificación.png)
 
 1. Modus Ponens (M.P.) p:::,q
 
@@ -2182,9 +2182,9 @@ construir pruebas formales de validez:
 
 | | | ***36*** |
 
-| 3. Silogismo Hipotetico (H.S.) | 8. Conjunción (Conj.) | |
+| 3. Silogismo Hipotético (H.S.) | 8. Conjunción (Conj.) | |
 
-![Reglas de inferencia: silogismos, conjuncion y adicion](images/reglas-inferencia-silogismos-conjuncion-adicion.png)
+![Reglas de inferencia: silogismos, conjunción y adición](images/reglas-inferencia-silogismos-conjunción-adición.png)
 
 | p::::, q | p | (- |
 
@@ -2210,13 +2210,13 @@ un mínimo de escritura.
 3.2.3.2. La Regla de Reemplazo
 
 Hay muchos argumentos válidos de función de verdad cuya validez no se puede
-probar usando solamente las nueve Reglas de Inferencia dadas hasta aquf. Por
+probar usando solamente las nueve Reglas de Inferencia dadas hasta aquí. Por
 ejemplo, una prueba formal de validez del argumento obviamente válido requiere
 
-![Introduccion a la regla de reemplazo](images/introduccion-regla-reemplazo.png)
+![Introducción a la regla de reemplazo](images/introduccion-regla-reemplazo.png)
 Reglas de Inferencia adicionales.
 
-Ahora bien, los únicos enunciados compuestos que nos interesan aquf son los
+Ahora bien, los únicos enunciados compuestos que nos interesan aquí son los
 enunciados compuestos función de verdad. Luego, si se reemplaza una parte
 cualquiera de un enunciado compuesto por una expresión que es lógicamente
 equivalente a la parte reemplazada, el valor de verdad del enunciado que resulta
@@ -2232,13 +2232,13 @@ de A::::i ~~ B cualquiera de los enunciados, por la Regla de Reemplazo.
 
 Para hacer más definida esta regla, damos ahora una lista de equivalencias
 
-![Lista de reglas de reemplazo logico](images/lista-reglas-reemplazo-logico.png)
+![Lista de reglas de reemplazo lógico](images/lista-reglas-reemplazo-lógico.png)
 lógicas con las que puede usarse. Estas equivalencias constituyen ***nuevas
 Reglas de Inferencia*** que es posible usar para probar la validez de
-argumentos. Las numeramos consecutivamente despues de las nueve reglas ya
+argumentos. Las numeramos consecutivamente después de las nueve reglas ya
 enunciadas.
 
-***Regla de Reemplazo:*** Cualquiera de las siguientes expresiónes lógicamente
+***Regla de Reemplazo:*** Cualquiera de las siguientes expresiones lógicamente
 equivalentes puede reemplazar a la otra en donde ocurran:
 
 1. Teoremas de De Morgan (De M.):
@@ -2259,7 +2259,7 @@ equivalentes puede reemplazar a la otra en donde ocurran:
 
 9. Exportación (Exp.):
 
-19. Tautologfa (Taut.):
+19. Tautología (Taut.):
 
 ~(p, q) = (~P V ~Q)
 
@@ -2281,26 +2281,26 @@ p = q) = [(p:::, q). (q:::, p)J
 
 p = (p V p) p = (p. p) Ahora puede escribirse una prueba formal de validez para
 
-![Prueba con reemplazo, conmutacion y simplificacion](images/prueba-reemplazo-conmutacion-simplificacion.png)
+![Prueba con reemplazo, conmutación y simplificación](images/prueba-reemplazo-conmutación-simplificación.png)
 el argumento dado al principio del párrafo 3.2:
 
 1, Conm.
 
 2, Simp.
 
-Algunas formas de argumento, aunque muy elementales y perfectamente viilidas, no
+Algunas formas de argumento, aunque muy elementales y perfectamente válidas, no
 se incluyen en nuestra lista de diecinueve Reglas de Inferencia. Aunque el
-argumento es obviamente viilido, su forma no estii incluida en nuestra lista.
+argumento es obviamente válido, su forma no está incluida en nuestra lista.
 Por tanto, B no se sigue de A.B por ningún argumento válido elemental según los
-deline nuestra lista. Puede, sin embargo, deducirse usando dos argumentos
-válidos elementales como mostramos antes. Podrfamos agregar la forma de
+define nuestra lista. Puede, sin embargo, deducirse usando dos argumentos
+válidos elementales como mostramos antes. Podríamos agregar la forma de
 argumento intuitivamente válida a nuestra lista, claro esta; pero si
-agrandarámos nuestra lista de esta manera llegar[amos a tener una lista
-demasíado larga y, por tanto, n\_o manejable.
+agrandáramos nuestra lista de esta manera llegar[amos a tener una lista
+demasiado larga y, por tanto, n\_o manejable.
 
-La lista de las Reglas de Inferencia contiene númerosas redundancias.. Por
-ejemplo, Modus Tollens podría salir de la lista sin realinente debilitar la
-maquínaria, pues todo paso deducido usandola puede serlo usando otras Reglas de
+La lista de las Reglas de Inferencia contiene numerosas redundancias.. Por
+ejemplo, Modus Tollens podría salir de la lista sin realmente debilitar la
+maquinaria, pues todo paso deducido usándola puede serlo usando otras Reglas de
 la lista. Pero Modus Tollens es un principio de inferencia tan común e intuitivo
 que se le ha incluido, y otros han sido incluidos por conveniencia también, a
 pesar de su redundancia lógica.
@@ -2308,17 +2308,17 @@ pesar de su redundancia lógica.
 ***La prueba de que una sucesión dada de enunciados es una demostración formal,
 es***
 
-***efectiva.*** - Es decir, por observación directa se podra deducir si cada
-renglón siguiente a las premisas se sigue o no de los renglónes que le preceden
+***efectiva.*** - Es decir, por observación directa se podrá deducir si cada
+renglón siguiente a las premisas se sigue o no de los renglones que le preceden
 mediante alguna de las Reglas de Inferencia dadas. No es necesario "pensar": ni
 pensar sobre la validez de la deducción de cada renglón.
 
 Aun en donde falte la "justificación" de un enunciado, a un lado del mismo, hay
-un \, procedimiento finito, mecanico, para decidir si la deducción es legftima.
-Cada renglón viene precedido por solamente un número finito de renglónes y solo
+un \, procedimiento finito, mecánico, para decidir si la deducción es legítima.
+Cada renglón viene precedido por solamente un número finito de renglones y solo
 se han adoptado un número finito de Reglas de Inferencia. Aunque toma tiempo,
 puede verificarse por inspección si el renglón en cuestión se sigue de algún
-renglón, o par de renglónes precedentes mediante alguna Regla de Inferencia de
+renglón, o par de renglones precedentes mediante alguna Regla de Inferencia de
 nuestra lista.
 
 ***Hay una diferencia importante entre las primeras nueve y las últimas diez
@@ -2326,7 +2326,7 @@ Reglas de***
 
 ***Inferencia.***
 
-* *Las primeras nueve pueden aplicarse a renglónes enteros de una demostración.*
+* *Las primeras nueve pueden aplicarse a renglones enteros de una demostración.*
 
 De modo A puede inferirse de A.B por simplificación solo si A.B constituye un
 renglón completo. Pero ni A ni A::::o C se siguen de (A.B)::::, C por
@@ -2338,15 +2338,15 @@ A::::, C es falso.
 * *Por otro lado, cualquiera de las diez últimas Reglas de Inferencia puede
  aplicarse a*
 
-*renglónes enteros o partes de renglónes.* No solo puede inferirse el enunciado
+*renglones enteros o partes de renglones.* No solo puede inferirse el enunciado
 A::::o (B::::o C) del renglón entero (A.B)::::o C por Exportación, sino del
 renglón [(A.B)::::o CJ v D podemos inferir [(A::::o B)::::o CJ v D por
-Exportación. La Regla!]e Reemplazo autoriza que expresiónes lógicamente
+Exportación. La Regla!]e Reemplazo autoriza que expresiones lógicamente
 equivalentes especificadas se reemplacen entre sí donde ocurran aún en donde no
-constituyan renglónes enteros de una demostración.
+constituyan renglones enteros de una demostración.
 
 Pero las nueve primeras Reglas de Inferencia solo pueden usarse tomando como
-premisas renglónes enteros de una demostración.
+premisas renglones enteros de una demostración.
 
 En ausencia de reglas mecánicas para la construcción de demostraciones formales
 de validez, pueden darse algunas sugerencias y métodos prácticos.
@@ -2355,7 +2355,7 @@ de validez, pueden darse algunas sugerencias y métodos prácticos.
  mediante*
 
 *las Reglas de Inferencia dadas.* Al tener más y más subconclusiones de estas
-como premisas para nuevas deducciónes, mayor es la probabilidad de que se vea
+como premisas para nuevas deducciones, mayor es la probabilidad de que se vea
 como deducir la conclusión del argumento que se quiere demostrar que es válido.
 
 * Otra sugerencia es *tratar de eliminar enunciados qué ocurren en las premisas,
@@ -2363,13 +2363,13 @@ como deducir la conclusión del argumento que se quiere demostrar que es válido
 
 *en la conclusión.* Esta eliminación puede llevarse a cabo solamente de acuerdo
 con las Reglas de Inferencia. Pero las Reglas contienen muchas técnicas para
-eliminar enunciados. La simplificación es una de ellas: con esta, el conyunto
+eliminar enunciados. La simplificación es una de ellas: con esta, el conjunto
 derecho de una conjunción puede simplemente quitarse, a condición de que la
 conjunción sea un renglón entero en la demostración. Y por Conmutación puede
-hacerse derecho al enunciado conyunto izquierdo de una conjunción para
+hacerse derecho al enunciado conjunto izquierdo de una conjunción para
 eliminarlo por Simplificación. El término "medio" q puede eliminarse por un
-Silogismo Hipotetico dadas dos premisas o subconclusiones de los patrones
-p::::oq y q::::o r. La distribución es una regla útil para transíormar una
+Silogismo Hipotético dadas dos premisas o subconclusiones de los patrones
+p::::oq y q::::o r. La distribución es una regla útil para transformar una
 disyunción de la forma p v (q.r) en la conjunción (p v q).(p v r) cuyo conjunto
 de la derecha p v r puede entonces eliminarse por Simplificación.
 
@@ -2386,9 +2386,9 @@ las Reglas de Inferencia, y entonces tratar de deducir esos enunciados
 intermedios, y así sucesivamente, hasta llegar a algunos que sean deducibles de
 las premisas.
 
-## Demostracion de invalidez
+## Demostración de invalidez
 
-3.2.3.3. Demostracion de la Invaiidez
+3.2.3.3. Demostración de la Invalidez
 
 **No Completud de las Diecinueve Reglas**
 
@@ -2396,26 +2396,26 @@ Las diecinueve Reglas de Inferencia presentadas hasta el momento son
 incompletas, lo que quiere decir que hay argumentos válidos función de verdad
 cuya validez no es demostrable usando tan solo esas diecinueve Reglas.
 
-**La Regla de Demostracion Condicional**
+**La Regla de Demostración Condicional**
 
 *A continuación* ***introducimos una nueva regla para usarla en el método de
 deducción:*** *la regla de Demostración Condicional.* En esta sección la nueva
 
-![Regla de demostracion condicional](images/regla-demostracion-condicional.png)
+![Regla de demostración condicional](images/regla-demostración-condicional.png)
 regla se aplicará tan solo a argumentos cuyas conclusiones son enunciados
 condicionales.
 
-![Demostracion condicional de A implica F](images/demostracion-condicional-a-implica-f.png)
+![Demostración condicional de A implica F](images/demostración-condicional-a-implica-f.png)
 
 * *A todo argumento le corresponde un enunciado condicional cuyo antecedente es
  la conjunción de las premisas del argumento y cuyo consecuente es
  la.conclusión del argumento.*
 
-* *Como se ha senalado, un argumento es válido si y solo si su correspondiente
- condicional es una tautologfa.*
+* *Como se ha señalado, un argumento es válido si y solo si su correspondiente
+ condicional es una tautología.*
 
 Si un argumento tiene un enunciado condicional como conclusión, que podemos
-simbolizar A:::, C, entonces si simbolizamos la conjuncion de sus premisas como
+simbolizar A:::, C, entonces si simbolizamos la conjunción de sus premisas como
 P, el argumento es válido si y solo si el condicional
 
 1. P:::, (A:::, C)
@@ -2425,7 +2425,7 @@ es una tautología.
 Si podemos deducir la conclusión A:::, C de las premisas conjuntas en P por una
 secuencia de argumentos válidos elementales, habremos así demostrado la validez
 del argumento y que el condicional asociado (1) es una tautología. Por el
-principio de Exportacion, (1) es lógicamente equivalente a Pero (2) es el
+principio de Exportación, (1) es lógicamente equivalente a Pero (2) es el
 condicional asociado con un argumento un tanto diferente. Este segundo argumento
 tiene como premisas todas las premisas del primer argumento, además de una
 premisa adicional que es el antecedente de la conclusión del primer argumento. Y
@@ -2433,12 +2433,12 @@ la conclusión del segundo argumento es el consecuente de la conclusión del
 primer argumento.
 
 Ahora bien, si deducimos la conclusión del segundo argumento, C, de las premisas
-conjuntas en P.A por una sucesion de argumentos válidos elementales, habremos
+conjuntas en P.A por una sucesión de argumentos válidos elementales, habremos
 demostrado que su enunciado condicional asociado (2) es una tautología. Pero
 como (1) y (2) son lógicamente equivalentes esto demuestra que (1) es una
 tautología también, de donde se sigue que el argumento original con una premisa
 menos y la conclusión condicional A:::, C también es válido. Ahora la regla de
-Demostracion Condicional nos permite inferir la validez de cualquier argumento
+Demostración Condicional nos permite inferir la validez de cualquier argumento
 de una demostración formal de validez para el argumento Así, una demostración
 condicional de validez para el argumento
 
@@ -2462,15 +2462,15 @@ condicional de validez para el argumento
 
 | 7.D 8. D v E 9. F | 6, Simpl. 7, Ad. 2, 8, M.P. | | |. | |
 
-Aquí la diagonal de separacion, así como el símbolo *"por lo tanto"* de los tres
-puntos, y el **"C.P."**, indican que se esta usando la regla de la Demostracion
+Aquí la diagonal de separación, así como el símbolo *"por lo tanto"* de los tres
+puntos, y el **"C.P."**, indican que se esta usando la regla de la Demostración
 Condicional.
 
 **La Regla de Demostración Indirecta**
 
 El método de ***Demostración Indirecta,*** a menudo llamado método de
 
-![Demostracion indirecta por reduccion al absurdo](images/demostracion-indirecta-reduccion-absurdo.png)
+![Demostración indirecta por reducción al absurdo](images/demostración-indirecta-reducción-absurdo.png)
 ***Demostración por*** ***Reducción al absurdo,*** es familiar para todos los
 que hayan estudiado la geometría elemental. Al deducir sus teoremas, Euclides
 suele empezar suponiendo lo opuesto de lo que se propone demostrar.
@@ -2478,7 +2478,7 @@ suele empezar suponiendo lo opuesto de lo que se propone demostrar.
 *Si este supuesto conduce a una contradicción o "se reduce a un absurdo"
 entonces el supuesto* *debe ser falso, y su negación* - *el teorema que se desea
 demostrar* - *debe ser verdadero.* Una demostración indirecta de validez para un
-argumento dado se construye suponiendo, *c:* como premisa adicional, la negacion
+argumento dado se construye suponiendo, *c:* como premisa adicional, la negación
 de su conclusión y deduciendo entonces una contradicción explicita del conjunto
 aumentado de las premisas. Así, una demostración indirecta de validez para el
 argumento
@@ -2515,9 +2515,9 @@ puede escribirse como a continuación
 
 El. renglón 13 es una ***contradicción*** explicita, luego, ***/a demostración
 es completa,*** pues la validez del argumento original se sigue por la regla de
-Demostracion Indirecta.
+Demostración Indirecta.
 
-## Logica de predicados
+## Lógica de predicados
 
 * 1. Lógica de Predicados
 
@@ -2526,7 +2526,7 @@ Demostracion Indirecta.
 *El aspecto más atractivo del formalismo lógico es que proporciona de manera
 inmediata un método muy potente para la obtención de nuevo conocimiento a partir
 del antiguo:* ***la deducción matemática.*** *En este formalismo se puede
-concfuir la verdad de un aserto sin otra cosa que demostrar que es consecuencia
+concluir la verdad de un aserto sin otra cosa que demostrar que es consecuencia
 de lo ya conocido.* De esta manera la idea de prueba, según se entiende en
 matemáticas como un método riguroso de demostración de una proposición que se
 cree cierta, se puede extender a la *deducción* como un medio de obtener
@@ -2535,10 +2535,10 @@ respuestas a preguntas y soluciones a problemas.
 Uno de los primeros dominios donde se aplico la IA fue la demostración
 automática de teoremas, que tenia como objetivo la demostración de proposiciones
 en distintas áreas de la matemática. Por ejemplo, el Logic Theorist (Newell et
-al., 1963) demostraba teoremas del primer capítulo de los Principia Matematica
+al., 1963) demostraba teoremas del primer capítulo de los Principia Matemática
 de Whitehead **y** Russell (1950). Otro demostrador de teoremas (Gelernter et
 al., 1963) trabaja sobre teoremas de geometría. La demostración de teoremas
-matemáticos sigue siendo un área de investigacion activa en IA. Pero, la
+matemáticos sigue siendo un área de investigación activa en IA. Pero, la
 utilidad de las técnicas matemáticas se ha extendido más allá del ámbito
 tradicional de las matemáticas. La matemática no resulta muy diferente de
 cualquier otra labor intelectual compleja en lo que se refiere a la necesidad de
@@ -2614,28 +2614,28 @@ LLUEVE ➔ SOLEADO
 
 Figura 3.6
 
-![Figura 3.6: proposiciones en logica proposicional](images/figura-3-6-proposiciones-logica-proposicional.png)
+![Figura 3.6: proposiciones en lógica proposicional](images/figura-3-6-proposiciones-lógica-proposicional.png)
 
 Mediante estas proposiciones se podría deducir, por ejemplo, que no hace sol a
-partir del hecho de que está lloviendo. Supongase que se desea representar el
+partir del hecho de que está lloviendo. Supóngase que se desea representar el
 hecho obvio que se enuncia en la conocida frase:
 
-Socrates es un hombre.
+Sócrates es un hombre.
 
 Se podría escribir:
 
 SOCRATESHOMBRE
 
-Pero si además se quisiera representar el hecho: Platon es un hombre.
+Pero si además se quisiera representar el hecho: Platón es un hombre.
 
-habrfa que escribir algo así como: PLATONHOMBRE que no tiene nada en común con
+habría que escribir algo así como: PLATONHOMBRE que no tiene nada en común con
 la anterior, de manera que no es posible llegar a ninguna conclusión acerca de
-las similitudes entre Socrates y Platon. Seria mucho mejor si estos hechos se
+las similitudes entre Sócrates y Platón. Seria mucho mejor si estos hechos se
 representasen como:
 
 puesto que *ahora la estructura del.conocimiento está reflejada en la propia
-estructura de la* *representación.* Pero para ello es riecesario utilizar
-predicados que se aplican sobre argumentos. Serfa aún más difícil representar la
+estructura de la* *representación.* Pero para ello es necesario utilizar
+predicados que se aplican sobre argumentos. Sería aún más difícil representar la
 también conocida frase:
 
 Todos los hombres son mortales.
@@ -2652,7 +2652,7 @@ forma razonable utilizando la lógica proposicional.*** *Mediante la lógica de
 predicados* se *pueden representar hechos del mundo real coma sentencias
 escritas en forma de fbf.*,, A continuación se presenta un ejemplo específico
 donde se utiliza la lógica de predicados como medio de representación del
-conocimiento. Considerese las siguientes sentencias:
+conocimiento. Considérese las siguientes sentencias:
 
 - 1. Marco era un hombre.
 
@@ -2703,7 +2703,7 @@ En ocasiones, para decidir a quién se refiere una frase en particular de entre
 un grupo de personas con el mismo nombre, puede ser necesaria una gran cantidad
 de conocimiento y de razonamiento.
 
-1. Todos los romanos o eran leales a Cesaro le odiaban.
+1. Todos los romanos o eran leales a Césaro le odiaban.
 
 , *) \ix:* romano(x) ➔ leal(x,Cesar) v odia(x,Cesar) En lenguaje natural, la
 palabra "o" se puede referir a la o-conjuntiva de la lógica o a la o-disyuntiva
@@ -2720,16 +2720,16 @@ escribiría:
 \ix::ly: **leal(x,y)**
 
 U problema importante que se plantea cuando se intenta convertir frases en
-lertguaje natural a sentencias lógicas, es el ámbito de los cuantificadores. Con
+lenguaje natural a sentencias lógicas, es el ámbito de los cuantificadores. Con
 esta frase se quiere decir, como se ha supuesto al escribir la anterior fórmula
 lógica, que cada persona tiene alguien a quién el o ella es leal, probablemente
 alguien diferente para ' cada cuál. 0 quiere decir que hay alguien a quién todo
 el mundo es leal (que se escribiría como:ly: \ix: leal(x,y). Normalmente solo
-una de las interpretaciónes parece plausible, y es esa la que se suele tomar.
+una de las interpretaciones parece plausible, y es esa la que se suele tomar.
 
 1. La gente solo intenta asesinar a los gobernantes a los que no es leal.
 
-\ix: Vy:**persona(x) A gobernante(y) A intentaasesinar(x,y)** ➔ **leal(x,y)**
+\ix: Vy:**persona(x) A gobernante(y) A intenta asesinar(x,y)** ➔ **leal(x,y)**
 Esta frase también es ambigua. Significa que a los únicos gobernantes a los que
 la gente intenta asesinar son aquellos a los que no son leales (la
 interpretación que se ha utilizado), o significa que lo único que la gente
@@ -2766,20 +2766,20 @@ ahora obtener una prueba formal razonando a la inversa desde el objetivo a
 alcanzar:
 
 leal(Marco, Cesar) Para probar dicho objetivo es necesario utilizar las reglas
-de inferencia que permiten transíormarlo en otro objetivo (o posiblemente
-conjunto de objetivos) que a su vez puedan ser transíormados, y así
+de inferencia que permiten transformarlo en otro objetivo (o posiblemente
+conjunto de objetivos) que a su vez puedan ser transformados, y así
 sucesivamente, hasta que no quede ningún objetivo por satisfacer.
 
 Para realizar este proceso es posible que sea necesario utilizar, un grafo Y-O
 cuando haya caminos alternativos para satisfacer un objetivo dado. Por
 simplicidad solo se muestra uno de los posibles caminos. *La Figura 3.* 7
 *muestra un intento de prueba del objetivo mediante la reducción del conjunto de
-objetivos necesarios aún sin satisfacer, a un conjunto vacfo.* El intento falla,
+objetivos necesarios aún sin satisfacer, a un conjunto vacío.* El intento falla,
 ya que no se puede satisfacer el objetivo persona(Marco) con los asertos
 disponibles.
 
 *El problema es que, a pesar de que se sabe que Marco era un hombre, no* se
-*puede deducir que era una persona.* Se debe afiadir la representación de otro.
+*puede deducir que era una persona.* Se debe añadir la representación de otro.
 hecho al sistema:
 
 1. Todos los hombres son personas.
@@ -2790,8 +2790,8 @@ ejemplo se hallan presentes tres importantes cuestiones involucradas en el
 proceso de conversión de frases en lenguaje natural a sentencias lógicas y el
 posterior uso de estas sentencias en la deducción de otras nuevas:
 
-*Muchas frases en lenguaie natural son ambiguas* (por ejemplo, 5, 6 y 7 del
-ejemplo anterior). La seleccion de la interpretación correcta puede ser difícil.
+*Muchas frases en lenguaje natural son ambiguas* (por ejemplo, 5, 6 y 7 del
+ejemplo anterior). La selección de la interpretación correcta puede ser difícil.
 
 + *Normalmente hay más de una forma de representar el conocimiento* (como ya se
  vio en las frases 1 y 7). La simplicidad de la representación es una cualidad
@@ -2807,7 +2807,7 @@ dado, este contenida toda la información necesaria para razonar sobre el tema e
 cuestión.* Para poder razonar de manera efectiva a partir de un conjunto de
 sentencias, normalmente es necesario utilizar un conjunto de sentencias
 adicionales que representan aquellos hechos que, por lo general no se suelen
-especificar, por demasíado obvios.
+especificar, por demasiado obvios.
 
 *Se puede presentar un problema adicional cuando no se conocen de antemano las
 sentencias que se va a intentar deducir.* En el ejemplo anterior el objetivo era
@@ -2820,24 +2820,24 @@ leal(Marco, Cesar) teal(Marco, Cesar)
  que respuesta se obtiene, en lugar de utilizar la estrategia empleada en el
  ejemplo anterior de razonar hacia atrás a partir del objetivo propuesto. El
  problema de razonar hacia delante a partir de los axiomas es que es probable
- que el factor de ramificacion provoque que no se obtenga ninguna respuesta en
+ que el factor de ramificación provoque que no se obtenga ninguna respuesta en
  un tiempo razonable.
 
-2. Una segunda posibilidad consistiria en utilizar algún tipo de reglas
- heuristicas que permitiesen decidir cuál es la respuesta más probable y
- entonces intentar demostrarla. Si despues de un tiempo razonable no se
- encontrase una demostración, se intentaria con la otra respuesta. Es
- importante esta idea de limitar el esíuerzo, puesto que cualquier
+2. Una segunda posibilidad consistiría en utilizar algún tipo de reglas
+ heurísticas que permitiesen decidir cuál es la respuesta más probable y
+ entonces intentar demostrarla. Si después de un tiempo razonable no se
+ encontrase una demostración, se intentaría con la otra respuesta. Es
+ importante esta idea de limitar el esfuerzo, puesto que cualquier
  procedimiento de prueba que se utilice puede no parar cuando se enfrenta con
  algo que no es un teorema.
 
-3. Otra posibilidad sería tratar de demostrar ambas respuestas simultaneamente y
- parar cuando una de las dos demostraciones tuviese exito. Sin embargo, aun
+3. Otra posibilidad sería tratar de demostrar ambas respuestas simultáneamente y
+ parar cuando una de las dos demostraciones tuviese éxito. Sin embargo, aun
  así, si no se dispone de suficiente información para responder a la pregunta,
  es posible que el programa no pare nunca.
 
 1. Una cuarta estrategia consiste en intentar demostrar la verdad de una•
- resptiesta y la
+ respuesta y la
 
 falsedad de la contraria y utilizar la información obtenida en cada proceso como
 ayuda en el otro. \
@@ -2849,9 +2849,9 @@ modelo de razonamiento guiado por la herencia de propiedades. Si se revisa la
 manera en que se ha representado el conocimiento acerca de Marco y Cesar en el
 ejemplo anterior, se observara que no se han utilizado estos atributos.
 Ciertamente no se han utilizado predicados con esos nombres. LPor **que no? La
-respuesta es que, a pesar de que no se han utilizado explicitamente los
+respuesta es que, a pesar de que no se han utilizado explícitamente los
 predicados C. instancia y es-un, *sí se han empleado las relaciones que
-representan, la pertenencia a una* *clase y la inclusion de una clase en otra.*
+representan, la pertenencia a una* *clase y la inclusión de una clase en otra.*
 La Figura 3.8 muestra la representación lógica, escrita de tres formas
 distintas, de las primeras cinco frases del apartado anterior.
 
@@ -2875,14 +2875,14 @@ distintas, de las primeras cinco frases del apartado anterior.
 
 Figura 3.8
 
-![Figura 3.8: representacion de instancia y es-un](images/figura-3-8-representacion-instancia-es-un.png)
+![Figura 3.8: representación de instancia y es-un](images/figura-3-8-representación-instancia-es-un.png)
 
 En la **primera parte** de la figura aparece una representación de la que ya
 hemos hablado. En esta representación, *la pertenencia a una clase se representa
 con predicados monarios* (como romano) que se refieren a cada una de las clases.
 *Asertar* *P(x) como cierto es equivalente a afirmar que x es una instancia (o
 un elemento) de P.* En la **segunda parte** de la figura aparece una
-representación donde se utiliza explicitamente el predicado instancia. *Este es
+representación donde se utiliza explícitamente el predicado instancia. *Este es
 un predicado binario, cuyo primer argumento es un objeto y cuyo segundo
 argumento es la clase a la que ese objeto* *pertenece. Sin embargo, en esta
 representación no se utiliza explícitamente el* *predicado es-un.* En la tercera
@@ -2892,7 +2892,7 @@ incluida en la otra, coma por ejemplo la clase de los pompeyanos en la clase de
 los romanos. La regla de implicación que ahf aparece se lee como que si un
 objeto es una instancia de la subclase pompeyano entonces también será una
 instancia de la superclase romano. Nótese que esta regla es equivalente a la
-definición de la relación de inclusion en la teorfa de conjuntos.
+definición de la relación de inclusión en la teoría de conjuntos.
 
 Por último, en la figura se muestra una **tercera representación** donde *se
 utilizan explícitamente los predicados instancia y es-un.* Con el uso del •
@@ -2900,21 +2900,21 @@ predicado es-un se simplifica la representación de la tercera sentencia, pero
 hace necesaria la definición de un nuevo axioma (definido con el número 6). Este
 axioma adicional describe coma se ' puede combinar una relación de instancia con
 una relación es-un para dar lugar a una nueva relación de instancia. Sin
-embargo, este axioma es de caracter general y no es necesario delinirlo para
+embargo, este axioma es de carácter general y no es necesario definirlo para
 cada nueva relación es-un.
 
 Estos ejemplos pretenden ilustrar dos ideas diferentes.
 
 * La primera, bastante específica, nos permite afirmar que *no es necesario
- representar explicitamente las relaciones de pertenencia a una clase e
- inclusion de una clase en otra por media de Jos predicados instancia v es-un.*
+ representar explícitamente las relaciones de pertenencia a una clase e
+ inclusión de una clase en otra por media de Jos predicados instancia v es-un.*
  De hecho, normalmente resulta engorroso hacerlo de esta forma y se suele optar
  por la utilización de predicados monarios que representan a las clases.
 
 * La segunda idea es más general y viene a decir que *normalmente es posible
  obtener varias representaciones de un determinado hecho en un sistema* •*de*.
- *representación dado, va sea este la Jóqica* o *cualquier otro. La elección
- dependería, en parte del tipo de deducciónes que se pretenda aqilizar, v en
+ *representación dado, va sea este la lógica* o *cualquier otro. La elección
+ dependería, en parte del tipo de deducciones que se pretenda agilizar, v en
  parte del gusto de cada cuál.* La norma que siempre se debe respetar es el uso
  consistente de una determinada representación en toda la base de conocimiento.
  Dado que las reglas de inferencia se construyen para ser aplicadas sobre una
@@ -2927,8 +2927,8 @@ Estos ejemplos pretenden ilustrar dos ideas diferentes.
 3,3.4. Representación de Funciones calculables y Predicados computables En el
 ejemplo del apartado anterior, todos los hechos simples se representaban como
 combinaciones de predicados aislados, tales como:• Esta es una buena solución
-cuando el número de hechos es pequefio o cuando los propios hechos carecen de
-una estructura definida de forma que no existen demasíadas alternativas.
+cuando el número de hechos es pequeño o cuando los propios hechos carecen de
+una estructura definida de forma que no existen demasiadas alternativas.
 
 Pero supongamos que se desea expresar hechos simples tales como las siguientes
 relaciones mayor-que y menor-que:
@@ -2938,9 +2938,9 @@ relaciones mayor-que y menor-que:
 **mayor(l,O) menor(0,1) mayor(2,1) menor(l,2) mayor(3,2) menor(2,3)**
 
 Está claro que ***sería tedioso representar todos estos hechos, uno a uno,
-explicitamente.*** Entre otras cosas porque los hay infinitos. Pero aún en el
-caso de que solo considerasemos el subcorijunto finito que es posible
-representar en, digamos, una palabra maquína por número, sería muy ineficiente
+explícitamente.*** Entre otras cosas porque los hay infinitos. Pero aún en el
+caso de que solo considerásemos el subconjunto finito que es posible
+representar en, digamos, una palabra máquina por número, sería muy ineficiente
 representarlos todos explícitamente cuando, en lugar de ello, es posible
 ***calcularlos en el momento necesario.*** Por tanto, resulta muy conveniente
 ***extender la representación*** para poder expresar estos ***predicados
@@ -2948,9 +2948,9 @@ computables.*** Independientemente del procedimiento de demostración que se
 utilice, cuando se encuentre con un predicado de este tipo, en lugar de buscarlo
 explícitamente en la base de datos o intentar deducirlo mediante algún tipo de
 razonamiento, bastara con ***invocar un procedimiento, especificado
-previamente,*** que devolvera un valor de verdadero o falso.
+previamente,*** que devolverá un valor de verdadero o falso.
 
-Ta.mbien suel.e ser útil disponer de ***funciones computables*** además. de
+Ta.también suele.e ser útil disponer de ***funciones computables*** además. de
 predicados computables. De esta forma sería posible evaluar el predicado:
 
 **mayor(2+3,1)**
@@ -2960,9 +2960,9 @@ los argumentos 2 y 3, para luego evaluar el predicado mayor con los argumentos 5
 y 1.
 
 En. el siguiente ejemplo se• muestra la utilidad de esta idea de funciones. y
-predicados computables. Tambien se hace uso del concepfo de ***igualdad,*** de
+predicados computables. También se hace uso del concepto de ***igualdad,*** de
 modo que sea posible sustituir un objeto por otro que sea igual a el, cuando
-este cambio resulte de alguna utilidad en el proceso de prueba. • Considerese el
+este cambio resulte de alguna utilidad en el proceso de prueba. • Considérese el
 siguiente conjunto de hechos que, otra vez, se refieren a Marco:
 
 - 1. Marco era un hombre.
@@ -2979,9 +2979,9 @@ De nuevo no tenemos en consideración el tiempo verbal.
 
 **nace(Marco,40)** I.
 
-Por simplicidad no representaremos D.C. explicitamente, de la misma forma que se
+Por simplicidad no representaremos D.C. explícitamente, de la misma forma que se
 suele omitir en las conversaciones de la vida diaria. Si en algún momento fuese
-necesario representar fechas A.C., entonces habrfa que decidir la manera de
+necesario representar fechas A.C., entonces habría que decidir la manera de
 hacerlo, por ejemplo, utilizando números negativos. Nótese que la representación
 de una frase no tiene que ser una copia de la frase en sí, siempre que sea
 posible pasar de la fase a su representación y viceversa. Esto permite elegir
@@ -2992,25 +2992,25 @@ programa puede trabajar fácilmente.
 
 \ix: **hombre(x)** ➔ **mortal(x)**
 
-- 1. Todos los pompeyanos murieron cuando el volcan entró en erupción en el 79
- D.C. **erupción(volcan,79) A** \ix: **[pompeyano(x)** ➔ **murio(x,79)]**
+- 1. Todos los pompeyanos murieron cuando el volcán entró en erupción en el 79
+ D.C. **erupción(volcán,79) A** \ix: **[pompeyano(x)** ➔ **murió(x,79)]**
  Claramente en esta sentencia se representan los dos hechos enunciados en la
  frase
 
-anterior. Tambien se podría asertar otro hecho que no aparece en la
-representación, a saber, que la erupción del volcan causó la muerte de los
+anterior. También se podría asertar otro hecho que no aparece en la
+representación, a saber, que la erupción del volcán causó la muerte de los
 pompeyanos. Normalmente se suele suponer una relación de causalidad entre
 efectos que se producen al mismo tiempo siempre que esa suposición sea
 plausible.
 
 La interpretación de esta frase presenta un problema adicional que consiste en
-determinar el referente de la expresión *"el volcan".* Hay más de un volcan en
-el mundo. Claramente aquf nos referimos al Vesuvio, que está cerca de Pompeya y
+determinar el referente de la expresión *"el volcán".* Hay más de un volcán en
+el mundo. Claramente aquí nos referimos al Vesuvio, que está cerca de Pompeya y
 que entró en erupción en el 79 D.C. En general para resolver estas referencias
 se necesita tanto una gran cantidad de razonamiento como una gran cantidad de
 conocimiento adicional.
 
-- 1. Ningun mortal vive más de 150 afios.
+- 1. Ningún mortal vive más de 150 años.
 
 \ix: \it: \it: **mortal(x) A nace(x, t ) A mayor (t - t,150)** ➔**muerto(x,
 t2)**
@@ -3018,8 +3018,8 @@ t2)**
 1 2 **1 2 1**
 
 Esta frase se podría expresar de diversas maneras. Por ejemplo, se podría
-delinir una función edad y asertar que su valor nunca puede ser mayor de 150.
-Sin embargo, la representación escogida aquf es más sencilla y suficiente para
+definir una función edad y asertar que su valor nunca puede ser mayor de 150.
+Sin embargo, la representación escogida aquí es más sencilla y suficiente para
 este ejemplo.
 
 - 1. Estamos en 2004.
@@ -3033,21 +3033,21 @@ Supongamos ahora que se.desea responder a la pregunta ***"i.Esta Marco
 vivo?".*** Echando un *<* rápido vistazo a los asertos es fácil llegar a la
 conclusión de que hay más de un modo posible de deducir una respuesta. Bien
 podemos demostrar que ***Marco está muerto porque lo mató*** ***la erupción del
-volcan,*** o bien podemos demostrar que ***está muerto porque si no lo***
+volcán,*** o bien podemos demostrar que ***está muerto porque si no lo***
 ***estuviera tendría más de 1.50 anos,*** lo cuál sabemos que es imposible.
 
 Pero en cuanto intentemos seguir rigurosamente alguna de estas dos líneas de
 razonamiento descubriremos, como en el ejemplo anterior, la ***necesidad de
 utilizar conocimiento*** ***adicional.*** Por ejemplo, en las sentencias se
 habla de la muerte, pero no se dice nada que la relacione con la vida, que es el
-concepto que aparece en la pregunta. Por tanto, es necesario afiadir los
+concepto que aparece en la pregunta. Por tanto, es necesario añadir los
 siguientes hechos:
 
 - 1. Estar vivo significa no estar muerto.
 
 Esto no es estrictamente correcto, pues el hecho de no estar muerto solo implica
 estar vivo si se refiere a objetos animados. (Las sillas no están ni.vivas ni
-muertas). De nuevo, obviaremos este detalle por ahora. Es mlly extrano que dos
+muertas). De nuevo, obviaremos este detalle por ahora. Es mlly extraño que dos
 representaciones signifiquen exactamente lo mismo desde todos los puntos de
 vista.
 
@@ -3068,7 +3068,7 @@ se murió.
 
 5. vx: [pompeyano(x) ➔ murió(x,79)]
 
-6. erupción(volcan,79)
+6. erupción(volcán,79)
 
 7. vx: Vt1: Vt2: mortal(x)" nace(x, t1)" mayor (t2- t1,150)
 
@@ -3091,8 +3091,8 @@ ahora responder a la pregunta "<'.Esta Marco vivo?" buscando una demostración
 de:
 
 vivo(Marco,ahora) El término vado que aparece al final de. la Figura 3.10 indica
-que la lista de conditiones que queda por probar esta vada con lo cuál la
-demostración ha terminado con exito.
+que la lista de condiciones que queda por probar esta vacía con lo cuál la
+demostración ha terminado con éxito.
 
 vivo(Marco,ahora) 9, sustitución) muerto(Marco, ahora)
 
@@ -3105,17 +3105,17 @@ mayor(2004, 79)
 
 Figura 3.10
 
-![Figura 3.10: demostracion de que Marco esta muerto](images/figura-3-10-demostracion-marco-muerto.png)
+![Figura 3.10: demostración de que Marco esta muerto](images/figura-3-10-demostración-marco-muerto.png)
 
 Una forma de demostrar que Marco está muerto
 
-* 1.¿Si, M:etodo de Resolm::ion
+* 1.¿Si, M:método de Resolm::ion
 
 Desde el punto de vista computacional sería muy útil disponer de un
-*procedimiento de* *demostración* que en una sola operacion llevase a cabo los
+*procedimiento de* *demostración* que en una sola operación llevase a cabo los
 distintos. procesos involucrados en el razonamiento con sentencias de la lógica
 de predicados. La ***Resolución*** cumple este requisito y debe su eficiencia al
-hecho de que trabaja sobre *sentencias que han sido* *transíormadas a una forma
+hecho de que trabaja sobre *sentencias que han sido* *transformadas a una forma
 canónica,* descrita más abajo, muy conveniente.
 
 ***El procedimiento de resolución obtiene demostraciones por refutación. Es
@@ -3124,7 +3124,7 @@ decir,***
 ***para probar una proposición (demostrar su validez)* se *intenta demostrar que
 su negación lleva a una contradicción con las proposiciones conocidas (es***
 
-***decir, es insatisíactible).***
+***decir, es insatisfactible).***
 
 Esta aproximación difiere de la técnica utilizada hasta ahora, donde se
 intentaba generar la demostración de un teorema aplicando las reglas conocidas
@@ -3141,41 +3141,41 @@ Cesar o bien piensan que cualquiera que odie a otro está loco. Esta sentencia s
 puede representar con la siguiente fbf:
 
 'ifx: **[romano(x) "conoce(x,Marco)]** ➔ El uso de esta fórmula en una
-demostración requeriria establecer unas correspondencias muy complicadas. Una
+demostración requeriría establecer unas correspondencias muy complicadas. Una
 vez que se haya establecido la correspondencia con una parte de ella, coma por
 ejemplo cree\_loco(x,y), será necesario realizar las operaciones adecuadas con
 el resto de la fórmula, tanto en la parte donde se incluye ese fragmento coma en
 aquellas donde no. Si la fórmula fuese más simple este proceso sería mucho más
 sencillo. Seria más sencillo trabajar con esta fórmula si:
 
-* Fuera más plana, es decir, si hubiese menos anidamiento entre (as expresiónes.
+* Fuera más plana, es decir, si hubiese menos anidamiento entre (as expresiones.
 
 * Los cuantificadores estuvieran separados de·· la fórmula, de modo que no fuera
 
-necesario tenerlos en consideracion. • La ***forma normalizada conjuntiva***
+necesario tenerlos en consideración. • La ***forma normalizada conjuntiva***
 
 ![Forma normalizada conjuntiva para romanos y Marco](images/forma-normalizada-conjuntiva-romanos-marco.png)
 (Davis y Putnam, 1960) ***tiene ambas propiedades.*** Por ejemplo, la fórmula
 dada anteriormente acerca. de las sentimientos de las romanos que conocen a
-Marco se representaria en forma normalizada conjuntiva como:
+Marco se representaría en forma normalizada conjuntiva como:
 
 **romano(x) v conoce(x,Marco) v**
 
 **odia(x, Cesar) v odia(y,z) v cree\_loco(x,z)** Puesto que *existe un algoritmo
-para* ***convertir*** *cualquier* ***fbf*** *a la* ***forma normafizada***
+para* ***convertir*** *cualquier* ***fbf*** *a la* ***forma normalizada***
 ***conjuntiva,*** no perdemos la generalidad si empleamos un procedimiento de
 demostración (coma la resolución) que opere solamente con fórmulas expresadas de
 esta forma. De hecho, *para que la resolución funcione,* es necesario ir un poco
 más allá. *Es necesario* *convertir el conjunto de fórmulas bien formadas a un*
-***conjunto de cláusulas,*** donde una **cláusula** se deline coma ***una fbf en
-forma normali:iada conjuntiva que no contiene***
+***conjunto de cláusulas,*** donde una **cláusula** se define coma ***una fbf en
+forma normalizada conjuntiva que no contiene***
 
 ***ninguna conectiva* A,**
 
 Para ello se convierte cada fbf a forma normalizada conjuntiva y, a
-continuación, se divide esa expresión en cláusulas, una par cada conjuncion.
+continuación, se divide esa expresión en cláusulas, una par cada conjunción.
 Cuando se aplique el procedimiento.de prueba, las conjunciones se consideraran
-agrupadas. Para transíormar una fbf a forma clausal es necesario seguir los
+agrupadas. Para transformar una fbf a forma clausal es necesario seguir los
 siguientes pasos:
 
 **Algoritmo: Conversión a forma clausal**
@@ -3185,16 +3185,16 @@ siguientes pasos:
 1. *Eliminar las implicaciones;* ➔, usando el hecho de que a ➔ b es equivalente
  a.a v b.
 
-ReaUzando esa transíormacion en las fbf dadas anteriormente obtenemos:
+ReaUsando esa transformación en las fbf dadas anteriormente obtenemos:
 
 **Vx:,[romano(x) "conoce(x,Marco)] v** •
 
-1. *Reducir el ámbito de las neqaciones,*,, a un único término, usando el hecho
+1. *Reducir el ámbito de las negaciones,*,, a un único término, usando el hecho
  de que
 
 .p) = p, las leyes de Morgan [según las cuales (a" b) =av,by.(av b) =.a",b], y
 las correspondencias normales entre cuantificadores [vx: P(x) =:ix:.P(x) y,3x:
-P(x) = Vx:,P(x)]. Realizando esta transíormacion en las fbf del paso 1 se
+P(x) = Vx:,P(x)]. Realizando esta transformación en las fbf del paso 1 se
 obtiene:
 
 Vx: [ **.romano(x) v.conoce(x,Marco)] v**
@@ -3206,21 +3206,21 @@ Vx: [ **.romano(x) v.conoce(x,Marco)] v**
 
 Vx: P(x) v Vx: Q(x)
 
-I se convertirfa en
+I se convertiría en
 
 Vx: **P(x) V** Vy: **Q(y)**
 
-Este paso es una preparacion para el siguiente.
+Este paso es una preparación para el siguiente.
 
 4. *Mover todos los cuantificadores a la izquierda de la fórmula sin cambiar su
  orden*
 
 *relativo.* Esto es posible gracias a que no existe ningún conflicto entre los
-nombres de las variables. Realizando esta operacion sobre la fórmula del paso 2,
+nombres de las variables. Realizando esta operación sobre la fórmula del paso 2,
 se obtiene:
 
 En este momento la fórmula es lo que se conoce como **fórmula normal prenex.**
-*Consiste en un prefijo de cuantificadores seguido par una matriz que esta fibre
+*Consiste en un prefijo de cuantificadores seguido par una matriz que esta libre
 de cuantificadores.*
 
 1. *Eliminar las cuantificadores existenciales.* En una fórmula donde se incluye
@@ -3230,13 +3230,13 @@ de cuantificadores.*
 variable, y que hace verdadera la fórmula. Es posible eliminar el cuantificador
 sustituyendo la variable por una referencia a una función que produzca el valor
 deseado. Puesto que no se conoce necesariamente la forma de producir ese valor,
-se debe crear un nuevo nombre de función para cada sustitucion. No se hace
-ninguna afirmacion sobre esas funciones excepto que deben existir. Así, por
+se debe crear un nuevo nombre de función para cada sustitución. No se hace
+ninguna afirmación sobre esas funciones excepto que deben existir. Así, por
 ejemplo, la fórmula:
 
 3y: Presidente(y)
 
-puede transíormarse en la fórmula
+puede transformarse en la fórmula
 
 **Presidente(S1)**
 
@@ -3244,7 +3244,7 @@ Donde S1 es una función sin argumentos que produce de algún modo un valor que
 satisface el predicado Presidente.
 
 Si surgen cuantificadores existenciales dentro del ámbito de cuantificadores
-universales, los valores que satisíagan el predicado pueden depender de los
+universales, los valores que satisfagan el predicado pueden depender de los
 valores de las variables cuantificadas universalmente. Por ejemplo, en la
 fórmula:
 
@@ -3252,13 +3252,13 @@ Vx: 3y: padre\_de(y,x)
 
 el valor de y que satisface padre\_de depende del valor concreto de x. Por lo
 tanto, se deben generar funciones con el mismo número de argumentos que el
-número de cuantificadores universales que afecteri a la expresión que se este
-tratando. Así, este ejemplo se transíormarfa en:
+número de cuantificadores universales que afecten a la expresión que se este
+tratando. Así, este ejemplo se transformaría en:
 
 Estas funciones que generamos se llaman **funciones de Skolem,** Aquellas que no
 tienen argumentos se llaman a veces **constantes de Skolem.**
 
-1. *Eliminar el prefiio.* En este punto, *todas las variables.que quedan están
+1. *Eliminar el prefijo.* En este punto, *todas las variables.que quedan están
  cuantificadas* *universalmente,* por lo que el prefijo puede ser simplemente
  ignorado, y cualquier procedimiento de demostración que usemos puede suponer
  simplemente que cualquier
@@ -3268,12 +3268,12 @@ fórmula producida en el paso 4 aparece como:
 
 [**romano(x) v conoce(x,Marco}] v**
 
-1. *Convertir la matriz en una conjunción de disvunciones.* Como en este ejemplo
+1. *Convertir la matriz en una conjunción de disyunciones.* Como en este ejemplo
  no
 
 aparece ninguna conectiva Y, basta con utilizar la propiedad asociativa de la
 conectiva lógica O [es decir, av (b v c) = (a v b) v c] y quitar simplemente los
-parentesis, para obtener:
+paréntesis, para obtener:
 
 **romano(x) v conoce(x,Marco) v**
 
@@ -3282,13 +3282,13 @@ parentesis, para obtener:
 Sin embargo, con frecuencia es también necesario utilizar la propiedad
 distributiva [(a A b) v c = (av c) A (b v c)]. Por ejemplo, la fórmula:
 
-invierno A llevarbotas) v (verano A llevarsandalias) se convierte despues de una
+invierno A llevarbotas) v (verano A llevarsandalias) se convierte después de una
 aplicación de la regla en: [invierno v (verano A llevarsandalias)] A
 [llevarbotas v (verano A llevarsandalias)J
 
-y, despues de una segunda aplicación, que es necesaria, porque aún quedan
-conjunciones unidas por la conectiva O, en i nvierno v verano) A invierno v
-llevarsandalias) A lelvarbotas v verano) A llevarbotas v llevarsandalias)
+y, después de una segunda aplicación, que es necesaria, porque aún quedan
+conjunciones unidas por la conectiva O, en i invierno v verano) A invierno v
+llevarsandalias) A llevarbotas v verano) A llevarbotas v llevarsandalias)
 
 1. *Crear una cláusula por cada conjunción.* Para que una fbf sea cierta, todas
  las cláusulas que se han generado a partir de ella deben ser ciertas. Cuando
@@ -3303,7 +3303,7 @@ fórmulas originales.
 
 8. Con esto se pretende que no haya dos cláusulas que hagan referencia a la
  misma variable, para lo cuál es necesario renombrar a las variables
- adecuadamente. Esta transíormación se apoya en el hecho:
+ adecuadamente. Esta transformación se apoya en el hecho:
 
 \ix: P(x) A Q(x)) = \ix: P(x) A *\ix:* Q(x)
 
@@ -3313,10 +3313,10 @@ cuantificada universalmente (es decir, sustituirla por un valor concreto). Pero,
 en general, queremos mantener las cláusulas en su forma más general durante
 tanto tiempo como sea posible.
 
-Al instanciar una variable, queremos conocer el mínimo nurnero de sustituciones
-que deben realizarse para preservar el valor de verdad del sisterna.
+Al instanciar una variable, queremos conocer el mínimo número de sustituciones
+que deben realizarse para preservar el valor de verdad del sistema.
 
-***Despues de aplicar todo este procedimiento a un conjunto de fórmulas bien***
+***Después de aplicar todo este procedimiento a un conjunto de fórmulas bien***
 ***formadas tendremos un conjunto de cláusulas, cada una de las cuales será una
 disyunción de literales. Estas cláusulas serán las que utilice el
 procedimiento***
@@ -3331,8 +3331,8 @@ produciendo una nueva cláusula que* se *ha inferido de ellas.*** La nueva
 cláusula representa la forma en que las dos cláusulas padres interaccionan entre
 sL Supongamos que hay dos cláusulas en el Sistema:
 
-invierno v verano .invierno v frfo Recordemos que esto significa que ambas
-clausu.las deben ser ciertas (es decir, aunque las cláusulas parecen
+invierno v verano .invierno v frío Recordemos que esto significa que ambas
+cláusula.las deben ser ciertas (es decir, aunque las cláusulas parecen
 independientes, en realidad están agrupadas).
 
 Ahora vemos que siempre deberá ser cierta una de las aserciones invierno
@@ -3356,12 +3356,12 @@ cláusula***
 * El resolvente se obtiene combinando todos los literales de las dos cláusulas
  padres excepto aquellos que se cancelan.
 
-• Si la cláusula producida es la cláusula vada, es que se ha encontrado una
+• Si la cláusula producida es la cláusula vacía, es que se ha encontrado una
 contradicción.
 
 Por ejemplo, las dos cláusulas:
 
-invierno '.invierno produciran la cláusula vada. Si existe una contradicción, se
+invierno '.invierno producirán la cláusula vacía. Si existe una contradicción, se
 encontrara en algún momento.
 
 Naturalmente, si no existe ninguna contradicción, es posible que el
@@ -3382,10 +3382,10 @@ siguiente:
 
 1. Convertir todas las proposiciones de Fa forma clausal.
 
-1. Negar P y convertir el resultado a forma clausal. Afiadir la cláusula
+1. Negar P y convertir el resultado a forma clausal. Añadir la cláusula
  resultante al conjunto de cláusulas obtenidas en el paso 1.
 
-2. Hasta que se encuentre una contradicción o no se pueda seguir avcjnzando
+2. Hasta que se encuentre una contradicción o no se pueda seguir avanzando
  repetir:
 
 1. Seleccionar dos cláusulas. Llamarlas cláusulas padres.
@@ -3394,12 +3394,12 @@ siguiente:
  disyunción
 
 <Je todos' los literales de las cláusulas padres con la siguiente excepción: si
-existen pares de n·terales L y.L de forma que una de las cláusulas 'padre
-coiitenga L y la otra contenga.L, entonces se eliminarah tanto L como.\_L del
+existen pares de n·literales L y.L de forma que una de las cláusulas 'padre
+contenga L y la otra contenga.L, entonces se eliminarán tanto L como.\_L del
 resolvente.
 
-* 1. Si el resolvente es la cláusula vacia, es que se ha encontrado una
- contraifrcción. Si
+* 1. Si el resolvente es la cláusula vacía, es que se ha encontrado una
+ contradicción. Si
 
 no lo es, añadirla al conjunto de cláusulas disponibles.
 
@@ -3425,8 +3425,8 @@ Figura 3.11
 ![Figura 3.11: axiomas convertidos a forma clausal](images/figura-3-11-axiomas-forma-clausal.png)
 
 Aunque puede resolverse cualquier par de cláusulas, solamente aquellos pares que
-contengan literates complementarios, produciran un resolvente que tenga alguna
-probabilidad de conducir al objetivo de obtener la cláusula vada (que se
+contengan literales complementarios, producirán un resolvente que tenga alguna
+probabilidad de conducir al objetivo de obtener la cláusula vacía (que se
 representa como una caja). Es posible, por ejemplo, generar la secuencia de
 resolventes que se muestra en la Figura 3.12. Se empieza resolviendo con la
 cláusula,R, puesto que es una de las cláusulas que deben estar involucradas en
@@ -3434,14 +3434,14 @@ la contradicción que estamos intentando hallar.
 
 Figura 3.12
 
-![Figura 3.12: resolventes en logica proposicional](images/figura-3-12-resolventes-logica-proposicional.png)
+![Figura 3.12: resolventes en lógica proposicional](images/figura-3-12-resolventes-lógica-proposicional.png)
 
 La resolución se puede ver como un proceso que toma un conjunto de cláusulas que
-se suponen ciertas y, basandose en- la información que las otras proporcionan,
-genera nuevas cláusulas que representan restricciones a la satisíacibilidad de
+se suponen ciertas y, basándose en- la información que las otras proporcionan,
+genera nuevas cláusulas que representan restricciones a la satisfacibilidad de
 las cláusulas originates. Surge una contradicción cuando una cláusula se vuelve
 tan restringida que no hay forma de hacerla verdadera. Esto se indica con la
-generación de la cláusula vacia.
+generación de la cláusula vacía.
 
 3.3.9. El algoritmo de unificación
 
@@ -3454,7 +3454,7 @@ ejemplo, hombre(John) y,hombre(John) es una contradicción, mientras que
 hombre(John) y,hombre(Spot) no lo es. Así pues, para detectar las
 contradicciones, se necesita un procedimiento de emparejamiento que compare dos
 literales y descubra si existe un conjunto de sustituciones que los haga
-identicos.
+idénticos.
 
 *Existe un procedimiento recursivo directo, denominado* ***algoritmo de
 unificación*** *que realiza exactamente esto.* La idea básica de la unificación
@@ -3473,7 +3473,7 @@ intenta\_asesinar(Marco, Cesar) odia(Marco,Cesar) no son unificables.
  emparejamiento son
 
 sencillas. Aquellos predicados o constantes que sean diferentes no se pueden
-emparejar; aquellos que sean identicos pueden hacerlo.
+emparejar; aquellos que sean idénticos pueden hacerlo.
 
 Una *variable* se puede emparejar *con otra variable, con cualquier constante o
 con un predicado,* con la restricción de que el predicado no debe contener
@@ -3485,7 +3485,7 @@ cada parte del mismo. Para hacerlo, se debe tomar cada sustitución que
 encontremos y aplicarla al resto de literales antes de continuar intentando
 unificarlos.
 
-Por ejemplo, supongamos que queremos unificar las expresiónes: P(x,x)
+Por ejemplo, supongamos que queremos unificar las expresiones: P(x,x)
 
 P(y,z)
 
@@ -3529,7 +3529,7 @@ Marco/x, Cesar/y, Cesar/z)
 
 Marco/x, Polonio/y, Polonio/z)
 
-Las dos primeras son equivalentes, excepto por la diferencia lexica. Pero las
+Las dos primeras son equivalentes, excepto por la diferencia léxica. Pero las
 dos segundas, aunque producen un emparejamiento, producen también una
 sustitución que es más restrictiva de lo que sería estrictamente necesario para
 el emparejamiento.
@@ -3549,11 +3549,11 @@ Así por ejemplo, hombre(x) y --,hombre(Spot) son contradictorios, puesto que
 hombre(x) y hombre(Spot) son unificables. Esto corresponde a la idea intuitiva
 que dice que hombre(x) no es cierto para cualquier valor de x si se conoce la
 existencia de algún x, por ejemplo Spot, para el cuál es falso hombre(x). Así,
-para usar la resolución sobre expresiónes de la lógica de predicados, se utiliza
+para usar la resolución sobre expresiones de la lógica de predicados, se utiliza
 el algoritmo de unificación para localizar partes de literales que se cancelen
 mutuamente.
 
-Tambien es necesario utilizar el unificador obtenido mediante el algoritmo de
+También es necesario utilizar el unificador obtenido mediante el algoritmo de
 unificación para generar la cláusula resolvente. Por ejemplo, supongamos que
 queremos resolver las dos cláusulas:
 
@@ -3580,7 +3580,7 @@ determinar si mortal(Marco) conduce a una contradicción con otras cláusulas
 disponibles.
 
 Este ejemplo ilustra la importancia de normalizar separadamente las variables
-durante el proceso de conversión de las expresiónes a forma clausal. Suponiendo
+durante el proceso de conversión de las expresiones a forma clausal. Suponiendo
 que se haya hecho la normalización, es fácil determinar como debe usarse el.
 unificador para realizar las sustituciones que den lugar al resolvente. Si hay
 dos ocurrencias de la misma variable, se ¿es debe aplicar la misma sustitución.
@@ -3592,11 +3592,11 @@ suponiendo un conjunto de sentencias F y una sentencia P que debemos demostrar:
 
 1. Convertir todas las sentencias de F a forma clausal.
 
-2. Negar P y convertir el resultado a forma clausal. Ai'iadirlo al conjunto de
+2. Negar P y convertir el resultado a forma clausal. Añadirlo al conjunto de
  cláusulas obtenidas en 1.
 
 3. Hasta que se encuentre una contradicción o no pueda realizarse ningún
- progreso o se haya realizado una cantidad de esíuerzo predeterminada,
+ progreso o se haya realizado una cantidad de esfuerzo predeterminada,
  repetir:
 
 1. Seleccionar dos cláusulas. Llamarlas cláusulas padres.
@@ -3611,47 +3611,47 @@ suponiendo un conjunto de sentencias F y una sentencia P que debemos demostrar:
  pareja de literales complementarios, en el resolvente solo se eliminara uno
  de ellos.
 
-3. Si el resolvente es la cláusula vacia, se ha encontrado una contradicción. Si
- no lo es, ai'iadirla al conjunto de cláusulas sobre las que se esta aplicando
+3. Si el resolvente es la cláusula vacía, se ha encontrado una contradicción. Si
+ no lo es, añadirla al conjunto de cláusulas sobre las que se esta aplicando
  el procedimiento.
 
 Si la elección de cláusulas a resolver en cada paso se hace siguiendo unas
-ciertas formas sistematicas, el procedimiento de resolución encontrara una
+ciertas formas sistemáticas, el procedimiento de resolución encontrara una
 contradicción, si esta existe.
 
-Volvamos a nuestra discusión sobre Marco y vearnos coma se puede utilizar la
-resolución para demostrar nuevas cosas acerca de el. Considerernos en primer
-lugar el conjunto de sentencias del ejernplo anterior convertidas a forma
+Volvamos a nuestra discusión sobre Marco y veamos coma se puede utilizar la
+resolución para demostrar nuevas cosas acerca de el. Consideremos en primer
+lugar el conjunto de sentencias del ejemplo anterior convertidas a forma
 clausal.
 
-1. hornbre(Marco)
+1. hombre(Marco)
 
-2. pornpeyano(Marco)
+2. pompeyano(Marco)
 
-3..pornpeyano(x1) v romano(x1)
+3..pompeyano(x1) v romano(x1)
 
 1. gobernante(Cesar)
 
-2..rornano(x2) v leal(x2,Cesar) v odia(x2,Cesar)
+2..romano(x2) v leal(x2,Cesar) v odia(x2,Cesar)
 
 3. leal(X3,fl(X3))
 
-En la Figura 3.13 se muestra una dernostración por resolución de la sentencia:
+En la Figura 3.13 se muestra una demostración por resolución de la sentencia:
 
 **odia(Marco,Cesar)**
 
 Naturalmente, podrían haberse generado muchos más resolventes de los que
-'aparecen en la figura, pero se han utilizado las técnicas heurfsticas descritas
-anteriormente para guiar la búsqueda. Nótese que lo que aquf se ha hecho es, en
+'aparecen en la figura, pero se han utilizado las técnicas heurísticas descritas
+anteriormente para guiar la búsqueda. Nótese que lo que aquí se ha hecho es, en
 esencia, razonar hacia atrás desde la sentencia que queremos demostrar que es
 una contradicción, a través de un conjunto de conclusiones intermedias hasta la
 conclusión final de inconsistencia.
 
 Supongamos que el verdadero objetivo al demostrar el aserto: odia(Marco,Cesar)
-era responder a la pregunta ***"U)diaba Marco a Cesar?".*** En este caso,
+era responder a la pregunta ***"U)daba Marco a Cesar?".*** En este caso,
 podríamos haber intentado igualmente demostrar la sentencia:
 
-odia(Marco, Cesar) Para lo cuál, se deberfa añadir:
+odia(Marco, Cesar) Para lo cuál, se debería añadir:
 
 odia(Marco, Cesar) al conjunto de cláusulas disponibles antes de iniciar el
 proceso de resolución. Pero notamos inmediatamente que no existe ninguna
@@ -3660,8 +3660,8 @@ cláusula que contenga un literal de la forma odia.
 Puesto que el proceso de resolución solo puede generar nuevas cláusulas formadas
 por combinaciones de los literales de cláusulas ya existentes, sabemos que no
 puede generarse tal cláusula, por lo que concluimos que odia(Marco, Cesar) no
-producira una contradicción con los asertos conocidos. Este es un ejemplo del
-tipo de situaciónes en las que el procedimiento de resolución puede detectar que
+producirá una contradicción con los asertos conocidos. Este es un ejemplo del
+tipo de situaciones en las que el procedimiento de resolución puede detectar que
 no existe contradicción.
 
 odia(Marco, Cesar) /-arco/x2 romano(Marco) v leal(Marco,Cesar) /Marco/x,
@@ -3674,7 +3674,7 @@ v.intenta\_asesinar(Marco,Cesar)
 
 Figura 3.13
 
-![Figura 3.13: demostracion por resolucion de odia(Marco,Cesar)](images/figura-3-13-demostracion-resolucion-odia-marco-cesar.png)
+![Figura 3.13: demostración por resolución de odia(Marco,Cesar)](images/figura-3-13-demostración-resolución-odia-marco-cesar.png)
 
 Demostración por Resolución
 
@@ -3682,15 +3682,15 @@ Demostración por Resolución
 
 Hablaremos del uso de reglas para codificar el conocimiento. Esto representa un
 campo de estudio verdaderamente importante, ya que los sistemas de razonamiento
-basados en reglas desempenan un importante papel en la evolución de la
+basados en reglas desempeñan un importante papel en la evolución de la
 Inteligencia Artificial, *transformándola de una ciencia de laboratorio en una
 significativa ciencia comercial.* Hasta ahora se ha hablado de las reglas como
-la base de los programas de búsqueda. Pero ya se hizo hincapie en el modo en que
+la base de los programas de búsqueda. Pero ya se hizo hincapié en el modo en que
 el conocimiento acerca del mundo estaba representado en las reglas. En
 particular se ha estado considerando que el conocimiento de control de la
 búsqueda se encontraba completamente separado de las propias reglas.
 
-Esto no se seguira considerando así, ya que a partir de ahora se *considerara un
+Esto no se seguirá considerando así, ya que a partir de ahora se *considerara un
 conjunto de reglas para representar* ***tanto el conocimiento acerca de las
 relaciones en el mundo, como el conocimiento para resolver problemas utilizando
 el contenido de las reglas.***
@@ -3710,24 +3710,24 @@ puede combinar con un demostrador de teoremas por resolución, para dar lugar a
 un programa completo de resolución de problemas.* Existe un modo diferente de
 considerar las aserciones lógicas, *considerarlas como un programa,* en lugar de
 cómo datos para un programa. Desde este punto de vista, *las sentencias de
-implicación definen los caminos de razonamiento Jegitimado,* así como las
+implicación definen los caminos de razonamiento legitimado,* así como las
 aserciones atómicas proporcionan los puntos de partida (o, si el razonamiento se
 realiza hacia atrás, los puntos de finalización) de dichos caminos. Estos
-caminos de razonamiento definen construcciónes tradicionales de control, como
+caminos de razonamiento definen construcciones tradicionales de control, como
 if-then-else, definen los caminos de ejecución de los programas tradicionales.
 
 En otras palabras, se pueden *considerar las aserciones lógicas como
 representaciones procedimentales del conocimiento.* Una **representación
 procedimental,** *es aquella en la que la información de control necesaria para
 utilizar el conocimiento se encuentra embebida en el propio conocimiento.* *Para
-utilizar una representación procedimental se necesita aurnentarla con un
+utilizar una representación procedimental se necesita aumentarla con un
 intérprete que siga las instrucciones dadas por el conocimiento.* ***La
 verdadera diferencia entre el punto de vista declarativo del conocimiento y el
 procedimental*** radica en ***donde* se *encuentra la información de control.***
-Por ejemplo, considerese la siguiente base de conocimiento:
+Por ejemplo, considérese la siguiente base de conocimiento:
 
 hombre(Marco Antonio) hombre(Cesar) persona(Cleopatra) \ix: hombre(x) ➔
-persona(x) Ahora imagfnese que se intenta extraer de esta base de conocimiento
+persona(x) Ahora imagínese que se intenta extraer de esta base de conocimiento
 la respuesta a la siguiente cuestión:
 
 3y: persona(y)
@@ -3740,12 +3740,12 @@ satisface el predicado, y que solo se necesita un valor, la respuesta a dicha
 pregunta dependerá del orden en que se examinen las diferentes aserciones
 durante la búsqueda de una respuesta.
 
-***Si* se *consideran las aserciones*** como ***declarativas,*** estas no diran,
+***Si* se *consideran las aserciones*** como ***declarativas,*** estas no dirán,
 por sí mismas, nada acerca de cómo van a ser examinadas. Si por el contrario se
 ¿es considera como ***procedimentales,*** sí lo harán.
 
 Por supuesto, los programas no deterministas son posibles (por ejemplo las
-construcciónes de programación concurrente y paralela). Por tanto, se pueden
+construcciones de programación concurrente y paralela). Por tanto, se pueden
 considerar estas aserciones como un programa no determinista cuya salida
 simplemente no esta definida. En caso de hacer esto se consigue una
 representación "procedimental", que realmente no contiene más información que la
@@ -3753,21 +3753,21 @@ que contiene la forma "declarativa".
 
 Pero la mayoría de los ***sistemas que consideran el conocimiento como
 procedimental,*** no hacen esto en realidad. La razón es que si al menos el
-procedimiento se va a ejecutar o en una maquína secuencial o bien sobre alguna
+procedimiento se va a ejecutar o en una máquina secuencial o bien sobre alguna
 de las máquinas paralelas más conocidas, deben tomarse algunas decisiones en
 relación con el ***orden en que* se *examinaran las aserciones.*** No existe
 hardware disponible que trate la aleatoriedad. Por tanto, si el intérprete debe
 disponer de un modo para decidir, no existe una razón real para no especificarlo
-como parte de la definición del lenguaje y así poder delinir el significado de
+como parte de la definición del lenguaje y así poder definir el significado de
 un programa cualquiera en dicho lenguaje.
 
 y = Cleopatra Para ver claramente las diferencias entre las representaciones
-declarativas y las procedimentales, considerese las siguientes aserciones:
+declarativas y las procedimentales, considérese las siguientes aserciones:
 
 hombre(Marco Antonio) hombre(Cesar) \Ix: hombre(x) ➔ persona(x)
-persona(Cleopatra) Observandolas desde un *punto de vista declarativo,* forman
+persona(Cleopatra) Observándolas desde un *punto de vista declarativo,* forman
 la misma base de conocimiento que se tenia anteriormente. El sistema da las
-mismas respuestas y ninguna de ellas se selecciona explicitamente.
+mismas respuestas y ninguna de ellas se selecciona explícitamente.
 
 Pero considerándolo ***procedimentalmente,*** y utilizando el modelo de control
 que se utilizó para obtener Cleopatra como respuesta, se observa que ***esta* es
@@ -3798,7 +3798,7 @@ menudo muy confusa. En lugar de intentar responder cuál de los dos enfoques es
 mejor, lo que se intentará es describir. el modo en que los formalismos de
 reglas y los intérpretes se pueden combinar para solucionar problemas.
 
-1. Programacion Lógica
+1. Programación Lógica
 
 *La* ***programación lógica*** es *un* ***paradigma de* los *lenguajes de
 programación,*** en el cuál ***las aserciones lógicas* se *consideran como
@@ -3823,7 +3823,7 @@ con, como mucho, un literal a la derecha del signo de implicación), que a la
 cláusula que realmente se ha producido.
 
 La cuestión es que los programas PROLOG están compuestos solo por cláusulas de
-Horn, y no por expresiónes lógicas arbitrarias, lo que da lugar a dos
+Horn, y no por expresiones lógicas arbitrarias, lo que da lugar a dos
 importantes consecuencias.
 
 1. La primera es que, debido a la representación uniforme, se puede escribir un
@@ -3842,48 +3842,48 @@ La entrada de un programa es un objetivo que debe ser probado. Se aplica un
 aserciones del programa.
 
 El programa se lee de arriba hacia abajo y de izquierda a derecha, y la búsqueda
-será primero en profundidad con vuelta atras.
+será primero en profundidad con vuelta atrás.
 
-*\fx:* gato(x) v perro(x) ➔ mascota(x) *\fx:* caniche(x) ➔ perro(x) A pequeno(x)
+*\fx:* gato(x) v perro(x) ➔ mascota(x) *\fx:* caniche(x) ➔ perro(x) A pequeño(x)
 caniche(peluso)
 
 **Representación lógica**
 
-animal\_de\_compania(X):- mascota(X), pequeno(X). mascota(X):- gato(X).
+animal\_de\_compañía(X):- mascota(X), pequeño(X). mascota(X):- gato(X).
 
 mascota(X):- perro(X).
 
 perro(X):- caniche(X).
 
-pequeno(X):- caniche(X). caniche(peluso).
+pequeño(X):- caniche(X). caniche(peluso).
 
 **Representación en PROLOG**
 
 Figura 3.14
 
-![Figura 3.14: representacion logica y PROLOG de mascotas](images/figura-3-14-representacion-logica-prolog-mascota.png)
+![Figura 3.14: representación lógica y PROLOG de mascotas](images/figura-3-14-representación-lógica-prolog-mascota.png)
 
 La Figura 3.14 muestra un ejemplo de una sencilla base de conocimiento
-representada en una *notación lógica estimdar,* y despues en *PROLOG.* Ambas
+representada en una *notación lógica estimar,* y después en *PROLOG.* Ambas
 representaciones contienen dos tipos de afirmaciones denominadas ***hechos,***
 que únicamente contienen constantes (es decir sin variables) y ***reglas*** que
 contienen variables.
 
-* Los hechos representan sentencias acerca de objetos especificos.
+* Los hechos representan sentencias acerca de objetos específicos.
 
 * Las reglas representan sentencias acerca de las diferentes clases de objetos.
 
-Observese que existen algunas diferencias sintácticas superficiales entre las
+Obsérvese que existen algunas diferencias sintácticas superficiales entre las
 representaciones (.
 
 lógicas y las representaciones PROLOG, como por ejemplo:
 
-1. En la lógica, las variables están especificamente cuantificadas. En PROLOG,
- la cuantificación se realiza de un modo implicito por la forma en que las
+1. En la lógica, las variables están específicamente cuantificadas. En PROLOG,
+ la cuantificación se realiza de un modo implícito por la forma en que las
  variables son interpretadas. En PROLOG se hace que to.das las variables
  comiencen con letras
 
-mayusculas, y que todas las constantes comiencen con letras minusculas o
+mayúsculas, y que todas las constantes comiencen con letras minúsculas o
 números.
 
 1. En la lógica existen símbolos explícitos para "y" (A) y "o" (v). En PROLOG
@@ -3896,7 +3896,7 @@ ellas puede proporcionar una base para una conclusión.
 1. En la lógica, las implicaciones de la forma "p implica q" se escriben como p
  ➔ q. En PROLOG, la misma implicación se escribe "hacia atrás", como: q:- p.
  Esta forma es natural en PROLOG, ya que el intérprete siempre trabaja hacia
- atras sobre un objetivo,
+ atrás sobre un objetivo,
 
 lo que da lugar a que cada regla comience con el componente que debe emparejarse
 en primer caso. Este primer componente se llama cabeza de la regla.
@@ -3920,7 +3920,7 @@ Para decidir cuando puede aplicar una regla o un hecho al problema que le ocupa
 utiliza el ***procedimiento de unificación estándar.*** Razonara hacia atrás
 desde ese objetivo, hasta que encuentre el modo de terminar con las aserciones
 en el programa. Considera los caminos utilizando la ***estrategia de la búsqueda
-primero en profundidad,*** así. como utilizando la ***vuelta atras.*** En cada
+primero en profundidad,*** así. como utilizando la ***vuelta atrás.*** En cada
 punto en el que debe elegir, considera las opciones siguiendo el orden en que
 estas aparecen en el programa. Si el objetivo tiene más de una parte de
 conjuntiva, comprueba las partes en el orden en que estas aparecen, propagando
@@ -3930,39 +3930,39 @@ los enlaces de las variables que determinó la unificación.
 
 El objeto de un procedimiento de búsqueda es descubrir un camino a través de un
 espacio problema partiendo de un estado inicial y finalizando en un estado
-objetivo. Mientras que PROLOG únicamente efectua la búsqueda a partir de un
+objetivo. Mientras que PROLOG únicamente efectúa la búsqueda a partir de un
 estado objetivo en realidad existen dos direcciones hacia las que se puede
 dirigir dicha búsqueda:
 
 * Hacia delante, a partir de los estados iniciales.
 
-* Hacia atras, partiendo de los estados objetivos.
+* Hacia atrás, partiendo de los estados objetivos.
 
 *Razonamiento hacia delante a partir de los estados iniciales.* Se comienza por
-construir un arbol de secuencias de movimientos que se pueden presentar como
-soluciones, empezando por la configuración inicial en la rafz del arbol. Se
-generara el siguiente nivel del arbol encontrando todas las reglas cuyos lados
-izquierdos se relacionen con el nodo raiz, y que utilicen sus lados derechos
+construir un árbol de secuencias de movimientos que se pueden presentar como
+soluciones, empezando por la configuración inicial en la raíz del árbol. Se
+generara el siguiente nivel del árbol encontrando todas las reglas cuyos lados
+izquierdos se relacionen con el nodo raíz, y que utilicen sus lados derechos
 para crear nuevas configuraciones. Se creara el siguiente nivel tomando cada
-nodo que se haya generado en el nivel anterior, y aplicandolo a todas las reglas
+nodo que se haya generado en el nivel anterior, y aplicándolo a todas las reglas
 cuyos lados izquierdos se relacionen con este. Se continuara así hasta que se
 consiga una configuración que se empareje con el estado objetivo.
 
-*Razonamiento hacia atrás a partir de los estados obietivo.* Se comienza
-construyendo un arbol de secuencias de movimientos que ofrezcan soluciones
-empezando con la configuración objetivo en la raiz del arbol. Se generara el
-siguiente nivel del arbol encontrando todas.las reglas cuyos lados derechos esten
-ligadas con el nodo raiz. Estas serán todas las reglas.que, si son las únicas
+*Razonamiento hacia atrás a partir de los estados objetivo.* Se comienza
+construyendo un árbol de secuencias de movimientos que ofrezcan soluciones
+empezando con la configuración objetivo en la raíz del árbol. Se generara el
+siguiente nivel del árbol encontrando todas.las reglas cuyos lados derechos estén
+ligadas con el nodo raíz. Estas serán todas las reglas.que, si son las únicas
 que se aplican, generaran el estado que se desea. Se utilizara el lado izquierdo
-de las reglas para generar los nodos en este segundo nivel del arbol. Se
-gerierara el siguiente nivel del arbol tomando cada nodo del nivel previo, y
+de las reglas para generar los nodos en este segundo nivel del árbol. Se
+generará el siguiente nivel del árbol tomando cada nodo del nivel previo, y
 encontrando todas las reglas cuyo lado derecho este ligado con este. Entonces se
 utilizaran los correspondientes lados izquierdos para generar los nuevos nodos.
 Se continuara hasta que se genere un nodo que se empareja con el estado inicial.
 Este método de razonamiento hacia atrás, a partir del estado final deseado, se
 denomina algunas veces ***razonamiento dirigido al objetivo.***
 
-- 1. Sistemas de reglas encaclenadas hacia atriis
+- 1. Sistemas de reglas encadenadas hacia atrás
 
 Los sistemas de reglas encadenadas hacia atrás, de los cuales el PROLOG es un
 ejemplo, resultan muy eficaces para la ***resolución de problemas dirigidos al
@@ -3980,10 +3980,10 @@ se emparejan en el orden en el que aparecen.
 
 Otros sistemas de encadenamiento hacia atrás permiten reglas más complejas. En
 MYCIN, por ejemplo, las reglas pueden ser aumentadas con factores de certeza
-probabilfsticos para reflejar el hecho de que unas reglas son más fiables que
+probabilísticos para reflejar el hecho de que unas reglas son más fiables que
 otras.
 
-- 1. Sistemas de regias encadenadas hacia cleRante
+- 1. Sistemas de regias encadenadas hacia cleDurante
 
 En lugar de dirigirse por objetivos, algunas veces se desea ser ***dirigido por
 la información*** ***que se va incorporando.*** Por ejemplo, supóngase que
@@ -4003,18 +4003,18 @@ A veces, determinados aspectos de un problema se manejan más fácilmente
 utilizando el encadenamiento hacia adelante, mientras que otros se solucionan de
 un modo más sencillo utilizando el encadenamiento hacia atrás.
 
-Considerese por ejemplo un programa de diagnósticos medicos basado en el
+Considérese por ejemplo un programa de diagnósticos médicos basado en el
 encadenamiento hacia adelante. Este puede aceptar, aproximadamente, una veintena
 de hechos acerca de la condición del paciente, entonces trabajara hacia adelante
 con dichos hechos para intentar deducir la naturaleza y la causa de la
 enfermedad.
 
 Ahora supóngase que en un momento dado el lado izquierdo de una de las reglas
-este "casí satisíecho", por ejemplo si nueve de las diez precondiciones que
-tuviera fuesen ya conocidas, en este caso resultaria mejor aplicar un
-razonamiento hacia atrás para satisfacer la decima precondición de un modo
+este "casi satisfecho", por ejemplo si nueve de las diez precondiciones que
+tuviera fuesen ya conocidas, en este caso resultaría mejor aplicar un
+razonamiento hacia atrás para satisfacer la décima precondición de un modo
 directo, en lugar de esperar a que el encadenamiento hacia adelante sustituya al
-hecho por accidente. Tambien puede ocurrir que la decima condición requiera más
+hecho por accidente. También puede ocurrir que la décima condición requiera más
 pruebas medicas. En ese caso el encadenamiento hacia atrás se puede utilizar
 para interrogar al usuario.
 
@@ -4038,7 +4038,7 @@ permiten reglas reversibles, mientras que otros no.
 Cuando se utilizan reglas irreversibles se debe establecer un compromiso de
 búsqueda, al mismo tiempo que se escriben las reglas. Pero como ya se sugirió
 antes, resulta útil pensar en hacerlo de todos modos, ya que permite al que
-escribe las reglas af\adir algi'.m conocimiento de control a estas propias
+escribe las reglas af\adir algo'.m conocimiento de control a estas propias
 reglas.
 
 ## Razonamiento bajo incertidumbre
@@ -4062,25 +4062,25 @@ que es falsa, o puede pensarse que no es ninguna de las dos.
 * ***Razonamiento estadístico,*** en el que *se extiende la representación para
  permitir*
 
-*( algún tipo de medida numerica sobre la certeza* (en lugar de simplemente
+*( algún tipo de medida numérica sobre la certeza* (en lugar de simplemente
 CIERTO o FALSO) para asociar a cada sentencia.
 
 *r* I Los sistemas convencionales de razonamiento, como la lógica de predicados
-de primer orden, están disenados para trabajar con información que cumple tres
+de primer orden, están diseñados para trabajar con información que cumple tres
 importantes propiedades:
 
-*I* ) • *La información es completa con respecto al dominio de interes.* En
+*I* ) • *La información es completa con respecto al dominio de interés.* En
 otras palabras, todos los hechos necesarios para resolver el problema o están
 presentes• en el sistema o pueden derivarse de ellos mediante reglas
 convencionales de la lógica de primer orden.
 
 * *La información es consistente.*
 
-* *La (mica forma en que puede cambiar la información es que se afiadan nuevos
- hechos conforme esten disponibles.* Si estos nuevos hechos son consistentes
+* *La (mica forma en que puede cambiar la información es que se añadan nuevos
+ hechos conforme estén disponibles.* Si estos nuevos hechos son consistentes
  con todos los
 
-*: 1* demas hechos que ya se han afirmado, entonces ***ninguno de los hechos
+*: 1* demás hechos que ya se han afirmado, entonces ***ninguno de los hechos
 pertenecientes al conjunto que eran ciertos pueden refutarse.*** *Esta propiedad
 se denomina* ***monotonía.*** Desafortunadamente, si no se verifica alguna de
 estas propiedades, los sistemas de razonamiento basados en la lógica
@@ -4090,18 +4090,18 @@ convencional son inadecuados.
 puedan resolver problemas en las que quizá no aparezca alguna de estas
 propiedades.*
 
-- 1. **Razonamiento por delecto**
+- 1. **Razonamiento por defecto**
 
 Se quiere usar el *razonamiento no monótono* para llevar a cabo lo que
-comúnmente se denomina ***razonamiento por delecto.*** **Se *pretende llegar a
+comúnmente se denomina ***razonamiento por defecto.*** **Se *pretende llegar a
 unas conclusiones basadas en lo que es más probable que sea cierto.*** En este
 apartado se explican dos enfoques para lograrlo.
 
 * Lógica no monótona.
 
-* Lógica por delecto.
+* Lógica por defecto.
 
-A continuación se describen dos clases comúnes de razonamiento no monótono que
+A continuación se describen dos clases comunes de razonamiento no monótono que
 pueden definirse en estas lógicas:
 
 * Abducción
@@ -4119,12 +4119,12 @@ orden* se**
 ***aumenta con un operador modal M,*** que se lee como *"es consistente".* Por
 ejemplo, la fórmula:
 
-*'dx,* y: Parientes(x,y) A M esta\_de\_acuerdo(x,y) ➔ delendera(x,y) se lee
+*'dx,* y: Parientes(x,y) A M esta\_de\_acuerdo(x,y) ➔ dependerá(x,y) se lee
 *"Para todo x e y, si x* e *y son parientes y si el hecho de que x se haya
 puesto de* *acuerdo con y es consistente con el resto de las suposiciones,
-entonces se concluye que* *x delendera a y".* 3.5.1.1.2. lógica por delecto
+entonces se concluye que* *x dependerá a y".* 3.5.1.1.2. lógica por defecto
 
-La ***lógica por delecto*** es una ***lógica alternativa para llevar a cabo
+La ***lógica por defecto*** es una ***lógica alternativa para llevar a cabo
 un*** ***razonamiento basado en omisiones*** en la que **se *introduce un nuevo
 tipo de reglas de inferencia.*** Este enfoque permite reglas de inferencia de la
 forma:
@@ -4132,55 +4132,55 @@ forma:
 esta regla debe leerse así: *"si A es probable y es consistente asumir B,
 entonces se concluye que* C".
 
-Como se puede ver, el propósito es muy similar al de las expresiónes no
+Como se puede ver, el propósito es muy similar al de las expresiones no
 monótonas que se usaban en la Lógica no monótona. Sin embargo, existen algunas
 ***diferencias importantes*** C ***entre las dos teorías.***
 
-* La primera de ellas es que *en la Lógica por delecto, las nuevas reglas de
- inferencia se usan* •*coma base para· calcular un con;unto de extensiónes.
+* La primera de ellas es que *en la Lógica por defecto, las nuevas reglas de
+ inferencia se usan* •*coma base para· calcular un con;unto de extensiones.
  plausibles de la base de conocimiento.* Cada extensión se corresponde con una
- extensión consistente maxima de
+ extensión consistente máxima de
 
 la base de conocimiento. La lógica entonces admite como teorema cualquier
 expresión válida en alguna extensión. Si es necesario decidirse entre las
-extensiónes para poder resolver el problema, debe proporcionarse algún otro
+extensiones para poder resolver el problema, debe proporcionarse algún otro
 mecanismo.
 
-* Una segunda diferencia importante entre estas dos teorias es que *en la Lógica
- por* *delecto, las expresiónes no monótonas son reglas de inferencia en luqar
- de expresiónes* *del lenquaie. Es decir, no pueden manipularse mediante otras
+* Una segunda diferencia importante entre estas dos teorías es que *en la Lógica
+ por* *defecto, las expresiones no monótonas son reglas de inferencia en lugar
+ de expresiones* *del lenguaje. Es decir, no pueden manipularse mediante otras
  reglas de inferencia.* Esto conduce a algunos resultados no esperados. Por
  ejemplo, dadas las dos reglas:
 
 **A:B.A:B**
 
-sin ninguna asercion sobre A, no se puede llegar a ninguna conclusión sobre B,
+sin ninguna aserción sobre A, no se puede llegar a ninguna conclusión sobre B,
 ya que no se aplica ninguna regla de inferencia.
 
 **Abducción**
 
-La lógica estándar lleva a cabo deducciónes. Dados dos axiomas:
+La lógica estándar lleva a cabo deducciones. Dados dos axiomas:
 
 'dx: A(x) ➔ B(x)
 
-Puede concluirs que B(C) por deducción.
+Puede concluir que B(C) por deducción.
 
-Pero Lqué ocurre si se toma la implicacion al reves? Por ejemplo, suponga que el
+Pero Qué ocurre si se toma la implicación al revés? Por ejemplo, suponga que el
 axioma dado es:
 
 'dx: Sarampión(x) ➔ Manchas(x) El axioma dice que si se tiene sarampión esto
 implica que aparecen manchas rojas.
 
-Pero suponga que lo que se observa son las manchas rojas. Podrfa ser bueno
+Pero suponga que lo que se observa son las manchas rojas. Podría ser bueno
 concluir que se tiene un sarampión. Pero esta conclusión no esta permitida por
 las reglas de la lógica estándar y aunque puede ser incorrecto, es posible que
 sea la mejor suposición que pueda hacerse. • *La derivación de conclusiones de
-esta forma es otra manera de razonamiento par delecto.* Denominamos a este
+esta forma es otra manera de razonamiento par defecto.* Denominamos a este
 método ***razonamiento par abducción.*** El proceso de razonamiento por
-abduccion puede describirse con más precisión de la siguiente forma, *"Dadas dos
+abducción puede describirse con más precisión de la siguiente forma, *"Dadas dos
 fbf (A* ➔ *BJ y (BJ, para cualquier expresión A y B, si es consistente asumir A,
 hacerlo".* El razonamiento abductivo no es un tipo de lógica del estilo de la
-Lógica por delecto y la Lógica no monótona. En realidad, puede describirse sobre
+Lógica por defecto y la Lógica no monótona. En realidad, puede describirse sobre
 cualquiera de ellas.
 
 **Herencia**
@@ -4189,16 +4189,16 @@ El razonamiento no monótono se utiliza con mucha frecuencia en·la herencia de
 los valores de los atributos desde la descripción prototipo de una clase hacia
 las entidades individuales que pertenecen a la clase.
 
-- 1. Razonamiento mínimalista
+- 1. Razonamiento minimalista
 
 Hasta ahora se ha hablado sobre métodos generales que proporcionan formas de
 describir cosas que son ciertas en general. Ahora se muestran métodos para
 referirse a un tipo muy específico y útil de cosas que son ciertas en general.
 
-Estos métodos se basan en *alguna variante de la idea de modolo mínima.* Aunque
-existen algunas definiciónes diferentes sobre que constituye un modelo mínimo,
-para nuestro propósito se dira que ***un modelo* es *mínima si no existen otros
-modelos en las que sean***. ***ciertas menos cosas.*** La idea que hay detras
+Estos métodos se basan en *alguna variante de la idea de modelo mínima.* Aunque
+existen algunas definiciones diferentes sobre que constituye un modelo mínimo,
+para nuestro propósito se dirá que ***un modelo* es *mínima si no existen otros
+modelos en las que sean***. ***ciertas menos cosas.*** La idea que hay detrás
 del uso de *modelos mínimos* como base para el *razonamiento no monótono sobre
 el mundo* es la siguiente:
 
@@ -4211,16 +4211,16 @@ de conocimiento".
 - * 1. **La suposición de un mundo cerrado**
 
 *La suposición de un mundo cerrado sugiere una sencilla forma de razonamiento
-mínimalista.* La suposición de un mundo cerrado dice que *las (micas obietos que
+minimalista.* La suposición de un mundo cerrado dice que *las (micas objetos que
 satisfacen un predicado P son aquellos que deben hacerlo.* La suposición de un
 mundo cerrado es particularmente poderosa como base para razonar con bases de
-diltos, Jas CUilles se asume que son completas con respecto a las propiedades
+datos, Jas CUilles se asume que son completas con respecto a las propiedades
 que describen.
 
 Por ejemplo, se puede asumir sin peligro alguno que una base de datos sobre
 personal puede listar todos los empleados de una empresa. Si alguien pregunta si
 Gomez trabaja para la empresa, se puede responder *"no"* a no ser que aparezca
-explicitamente en la lista como un empleado.
+explícitamente en la lista como un empleado.
 
 Aunque *la suposición de un mundo cerrado* es a la vez sencilla y poderosa,
 *puede dar* errores en la generación de respuestas apropiadas,* ya que esta
@@ -4228,7 +4228,7 @@ suposición no es siempre cierta en el mundo; algunas partes del mundo no son
 realmente *''posibles de* *cerrar".* Esto *se* observa cuando se sacan
 conclusiones sobre ciertos hechos y luego se introducen nuevos hechos, que no
 estaban presentes con anterioridad en la base de conocimiento. La suposición de
-un mundo cerrado producira resultados apropiados exactamente en la misma medida
+un mundo cerrado producirá resultados apropiados exactamente en la misma medida
 en que sea cierta la suposición de que todos los hechos positivos relevantes
 están presentes en la base de conocimiento.
 
@@ -4244,20 +4244,20 @@ predicados definidos en la base de conocimiento.
 
 * Asume que todos los predicados tienen listadas todas sus instancias. Para
  manipular estos problemas, se han propuesto distintas teorías sobre la
- ***circunscripción.*** En todas estas teorias, **se *anaden nuevos axiomas a
+ ***circunscripción.*** En todas estas teorías, **se *añaden nuevos axiomas a
  la base de conocimiento existente.*** El efecto de estos axiomas consiste en
  *forzar una interpretación mínima sobre una*
 
 *parte seleccionada de la base de conocimiento.* En particular, cada axioma
 específico describe una forma de delimitar (es decir, de circunscribir) el
-conjunto de valores para los que un axioma particular de la teorfa original sea
+conjunto de valores para los que un axioma particular de la teoría original sea
 cierto. Suponga, como ejemplo, que se tiene la sencilla aserción:
 
-'ix: Adulto(x) A AB(x, aspectol) ➔ Sabe\_leer(x) Nos gustaria circunscribir AB,
-puesto que nos gustaria aplicarlo únicamente a aquellos individuos a los que se
+'ix: Adulto(x) A AB(x, aspecto) ➔ Sabe\_leer(x) Nos gustaría circunscribir AB,
+puesto que nos gustaría aplicarlo únicamente a aquellos individuos a los que se
 ¿es aplica.
 
-En delinitiva, lo que queremos hacer es decir algo, lo que debe ser el predicado
+En definitiva, lo que queremos hacer es decir algo, lo que debe ser el predicado
 AB.
 
 Para saber de que se trata, es necesario conocer para que valores se hace
@@ -4282,13 +4282,13 @@ e intentar otro..
  eliminando algunas de ellas conforme se dispone de nuevos hechos. A veces
  puede ocurrir que solo uno de
 
-ellos o un número muy pequeflo) resulte ser consistente con todo lo demas que se
+ellos o un número muy pequeño) resulte ser consistente con todo lo demás que se
 conoce.
 
 La resolución de un problema puede hacerse mediante un razonamiento hacia
 delante o mediante un razonamiento hacia atrás. La resolución de un problema que
 utiliza conocimiento incierto no es una excepción. Como consecuencia de todo
-esto se pueden delinir dos enfoques:
+esto se pueden definir dos enfoques:
 
 * ***Razonar hacia delante a partir de lo que* se *conoce.*** Las conclusiones
  que se derivan de forma no monótona se manipulan de la misma forma que las que
@@ -4297,72 +4297,72 @@ esto se pueden delinir dos enfoques:
 de forma monótona. Los sistemas de razonamiento no monótono que soportan este
 tipo de razonamiento permiten que las reglas estándar de encadenamiento hacia
 delante se extiendan con cláusulas ***a-no-ser-que,*** que proporcionan la base
-del razonamiento por delecto. El control (incluyendo la elección de la
-interpretación por delecto) se trata de la misma forma que todas las demas
+del razonamiento por defecto. El control (incluyendo la elección de la
+interpretación por defecto) se trata de la misma forma que todas las demás
 decisiones de control que realiza el Sistema.
 
 * ***Razonar hacia atrás para determinar si alguna expresión P* es *cierta*** (o
  quizá
 
-para encontrar un conjunto de vfnculos entre las variables que hacen que sea
+para encontrar un conjunto de vínculos entre las variables que hacen que sea
 cierto).
 
 Los sistemas de razonamiento no monótono que soportan este tipo de razonamiento
 pueden proporcionar alguna o todas de las siguientes características:
 
-* Que permita cláusulas por delecto (a-no-ser-que) en las reglas hacia atrás.
+* Que permita cláusulas por defecto (a-no-ser-que) en las reglas hacia atrás.
 
 * Que soporte algún tipo de debate en el que se intente producir argumentos
 
 tanto a favor de P como en su contra.
 
-- * 1. Implementación bilsqueda primero en profundidad
+- * 1. Implementación búsqueda primero en profundidad
 
-**Vuelta atras dirigida por dependencias**
+**Vuelta atrás dirigida por dependencias**
 
 Si se usa un enfoque primero en profundidad para el razonamiento no monótono,
-probablemente ocurrira lo siguiente: necesitamos conocer un hecho, F, el cuál no
+probablemente ocurrirá lo siguiente: necesitamos conocer un hecho, F, el cuál no
 puede derivarse monótonamente a partir de lo que ya se conoce, pero sí puede
 derivarse haciendo alguna suposición A que parezca plausible. Así, una vez hecha
 la suposición A, se deriva F y entonces a partir de F se derivan los hechos
 adicionales G y H. Mas tarde derivamos otros hechos M y N, aunque completamente
-independientes de A y F. Un poco más tarde, aparecen nuevos hechos que inválidan
+independientes de A y F. Un poco más tarde, aparecen nuevos hechos que invalidan
 A.
 
 Es necesario anular nuestra prueba de F, además de las de G y H ya que dependen
-de F. Pero lque pasa con M y N? No dependen de F, por lo que no es lógico que
-deban inválidarse. Pero si se usa una vuelta atras convencional, debe volverse
-hacia atrás en las conclusiones conforme estas han sido deriiradas. Por lo
-tanto, en la vuelta atras se llega a M y N, por lo que se deshacen, con el fin
+de F. Pero qué pasa con M y N? No dependen de F, por lo que no es lógico que
+deban invalidarse. Pero si se usa una vuelta atrás convencional, debe volverse
+hacia atrás en las conclusiones conforme estas han sido derivadas. Por lo
+tanto, en la vuelta atrás se llega a M y N, por lo que se deshacen, con el fin
 de llegar a F, G, H y A.
 
 Para empezar a tratar este problema, es necesaria una noción completamente
-diferente de la vuelta atras, que debe basarse en las ***dependencias lógicas***
+diferente de la vuelta atrás, que debe basarse en las ***dependencias lógicas***
 en lugar de en el orden cronológico en que se produjeron las decisiones. A este
-nuevo método lo denominamos ***vuelta atras dirigida por dependencias,*** en
-contraste con el de *vuelta atras cronológica* que se ha usado hasta ahora.
+nuevo método lo denominamos ***vuelta atrás dirigida por dependencias,*** en
+contraste con el de *vuelta atrás cronológica* que se ha usado hasta ahora.
 
-Antes de entrar en detalle en el funcionamiento de la vuelta atras dirigida por
+Antes de entrar en detalle en el funcionamiento de la vuelta atrás dirigida por
 dependencias, merece la pena indicar que aunque una de sus grandes motivaciones
 es el tratamiento del razonamiento no monótono, resulta útil también en los
-programas de búsqueda convencionales. Esto no es demasíado sorprendente si se
+programas de búsqueda convencionales. Esto no es demasiado sorprendente si se
 considera que un programa de búsqueda primero en profundidad crea una nueva rama
 en el espacio de búsqueda una vez hecha alguna estimación "no muy precisa" sobre
-algo..Si eventualmente la rarna es inadecuada, entonces se sabe que al menos una
+algo..Si eventualmente la rama es inadecuada, entonces se sabe que al menos una
 de.las estimaciones que se han hecho era incorrecta. Esta estimación podría
-estar a lo largo de la rama. • En la vuelta atras cronológica se asume que se
+estar a lo largo de la rama. • En la vuelta atrás cronológica se asume que se
 trata de la suposición que se ha hecho más recientemente, por lo que se vuelve a
 ese punto para intentar alguna otra alternativa. Sin embargo, en ocasiones se
 dispone de información adicional que ayuda a encontrar la estimación incorrecta.
 Entonces, sería adecuado retractarse únicamente de esa estimación y dejar
-intacto todo lo demas que hubiera sucedido hasta entonces. Esto es exactamente
-lo que hace la vuelta atras dirigida por dependencias.
+intacto todo lo demás que hubiera sucedido hasta entonces. Esto es exactamente
+lo que hace la vuelta atrás dirigida por dependencias.
 
-Si se quiere usar una vuelta atras dirigida por dependencias, es necesario
+Si se quiere usar una vuelta atrás dirigida por dependencias, es necesario
 realizar las siguientes acciones:
 
-* Asociar a cada nodo una o más iustificaciones. Cada justificación se
- corresponde con un proceso de derivación que con.duce al nodo. (Como es
+* Asociar a cada nodo una o más justificaciones. Cada justificación se
+ corresponde con un proceso de derivación que con.produce al nodo. (Como es
  posible que un nodo se derive de distintas formas, debe permitirse la
  posibilidad de que existan múltiples justificaciones). Cada justificación debe
  contener una lista con· todos los nodos (hechos, reglas, suposiciones) de los
@@ -4370,10 +4370,10 @@ realizar las siguientes acciones:
 
 * Proporcionar un mecanismo que cuando se produzca una contradicción entre el
  nodo y su justificación genere el conjunto "malas" de suposiciones gue están
- debajo de la justificación. El conjunto "malas" se deline como el mínimo
+ debajo de la justificación. El conjunto "malas" se define como el mínimo
  conjunto de suposiciones tales que si se elimina algún elemento de este
  conjunto, la justificación no será más válida y el nodo inconsistente deja de
- ser crefble.
+ ser creíble.
 
 * Proporcionar un mecanismo gue considere el conjunto "malas" y elija una
  suposición para retirar. • •
@@ -4387,7 +4387,7 @@ realizar las siguientes acciones:
 
 La idea de un sistema de mantenimiento de la verdad (truth maintenance system) o
 TMS surge como una forma de proporcionar la habilidad de trabajar con una vuelta
-atras dirigida por dependencias para poder soportar el razonamiento no monótono.
+atrás dirigida por dependencias para poder soportar el razonamiento no monótono.
 
 Un TMS *permite conectar las aserciones mediante una red de dependencias del
 tipo* *hoja de cálculo.* Un JTMS o Sistema de mantenimiento de la verdad basado
@@ -4401,48 +4401,48 @@ aserciones coma las* *dependencias entre las aserciones.*
 Un LTMS, Sistema de mantenimiento de la verdad basado en la Lógica es muy
 similar a un JTMS. Pero se diferencia en un aspecto importante.
 
-En un JTMS, el TMS trata los nodos de la red como atomos, lo cuál significa que
-*no hay* *relaciones entre ellas* excepto aquellas que se situan explicitamente
+En un JTMS, el TMS trata los nodos de la red como átomos, lo cuál significa que
+*no hay* *relaciones entre ellas* excepto aquellas que se sitúan explícitamente
 en las justificaciones. En particular, un JTMS no tiene problemas en etiquetar
-simultaneamente a Py,P. *Nose detectara una contradicción de forma automática.*
+simultáneamente a Py,P. *No se detectara una contradicción de forma automática.*
 En un LTMS, por otro lado, *se pueden detectar contradicciones de este tipo*
 *automáticamente.*
 
-- * 1.. lmplementación búsqueda primero en anchura
+- * 1.. Implementación búsqueda primero en anchura
 
 **Sistemas de mantenimiento de la verdad basados en Suposiciones (ATMS)**
 
 Una forma alternativa de implementar el razonamiento no monótono lo constituyen
 los Sistemas de mantenimiento de la verdad basados en Suposiciones (ATMS)
 (Assumption-based truth maintenance systems). Tanto en un JTMS como en un LTMS
-se sigue una única lfnea de razonamiento en cada momento, y cuando es necesario
-cambiar las suposiciones del sistema, surge una vuelta atras dirigida por
+se sigue una única línea de razonamiento en cada momento, y cuando es necesario
+cambiar las suposiciones del sistema, surge una vuelta atrás dirigida por
 dependencias.
 
 ***En un ATMS,* se *mantienen en paralelo varies caminos alternativos. La
 vuelta***
 
-***atras* se *evita a expensas del mantenimiento de múltiples contextos, cada
+***atrás* se *evita a expensas del mantenimiento de múltiples contextos, cada
 uno***
 
 ***de los cuales* se *corresponde con un conjunto de suposiciones
 consistentes.***
 
 En los sistemas basados en ATMS, al evolucionar el razonamiento, *el universo de
-contextos consistentes va podandose conforme se detectan contradicciones.* Los
+contextos consistentes va podándose conforme se detectan contradicciones.* Los
 contextos consistentes que quedan se usan para etiquetar las suposiciones, de
 forma que indiquen el contexto en el que cada aserción tiene una justificación
 válida. Las aserciones que no tienen una justificación válida en algún contexto
 consistente se pueden podar por consideración del resolutor del problema.
 Conforme el conjunto de contextos consistentes se va haciendo cada vez más
-pequefio, el conjunto de aserciones que el resolutor de problemas puede creer de
+pequeño, el conjunto de aserciones que el resolutor de problemas puede creer de
 forma consistente, se reduce.
 
 Esencialmente, mientras que un sistema ATMS funciona en anchura, considerando
 todos los posibles contextos a la vez, los sistemas JTMS y LTMS funcionan en
 profundidad.
 
-1., Razonamiento Estadistico
+1., Razonamiento Estadístico
 
 Hasta ahora, se han descrito varias técnicas de representación que pueden
 utilizarse para modelar los sistemas de creencias en los que, en un momento
@@ -4465,14 +4465,14 @@ problemas divididos en dos grupos:
  técnicas descritas en el capítulo anterior. *En estos problemas, el mundo no*
  es *aleatorio, sino que* se *comporta "normalmente" hasta que surge algún tipo
  de excepción.* La dificultad estriba en el hecho de que son muchas las
- posibles excepciones que se pueden producir, y deben enumerarse explicitamente
+ posibles excepciones que se pueden producir, y deben enumerarse explícitamente
  (usando técnicas como AB y A-NO-SER-QUE). La mayoría de las tareas catalogadas
  como de sentido *com(m* pertenecen a este tipo de problemas, por ejemplo el
- razonamiento experto involucrado en los diagnósticos medicos. Para este tipo
- de problemas, puede ser muy útil algún tipo de medida estadistica tal como las
+ razonamiento experto involucrado en los diagnósticos médicos. Para este tipo
+ de problemas, puede ser muy útil algún tipo de medida estadística tal como las
  funciones que logran hacer un resumen del mundo. En lugar de tener que
  enumerar todas las posibles excepciones que se pueden producir, es mejor
- utilizar un resumen numerico que indique la frecuencia con la que es de
+ utilizar un resumen numérico que indique la frecuencia con la que es de
  esperar que aparezca una excepción de un cierto tipo.
 
 **La probabilidad y el Teorema de Bayes**
@@ -4480,8 +4480,8 @@ problemas divididos en dos grupos:
 En muchos sistemas de resolución de problemas un objetivo importante consiste en
 reunir evidencias sobre la evolución del sistema y modificar su comportamiento
 sobre la base de las mismas. *Para modelar este comportamiento* se *necesita una
-teorfa estadfstica de la evidencia.* *Las estadfsticas bayesianas constituyen
-esta teorfa.* El concepto fundamental de las estadísticas bayesianas es el de la
+teoría estadística de la evidencia.* *Las estadísticas bayesianas constituyen
+esta teoría.* El concepto fundamental de las estadísticas bayesianas es el de la
 probabilidad condicionada:
 
 **P(HIE)**
@@ -4490,9 +4490,9 @@ probabilidad condicionada:
 
 La expresión anterior se lee como sigue: *la probabilidad de la hipótesis H dado
 que se observe la evidencia E.* Para calcularla, es necesario tener en cuenta la
-*probabilidad previa de H* (la probabilidad que se le asígnaria a H si no existe
+*probabilidad previa de H* (la probabilidad que se le asignaría a H si no existe
 evidencia) y la parte en la que *E proporciona evidencia de H.* Para lograrlo,
-es necesario delinir un universo que contenga un conjunto exhaustivo y
+es necesario definir un universo que contenga un conjunto exhaustivo y
 mutuamente excluyente de **H**;, entre los que se intenta discriminar.
 
 Sea,
@@ -4519,18 +4519,18 @@ excavación y encontrar un cierto mineral.
 
 Si se conocen las probabilidades previas de aparición de cada uno de los
 minerales y también se conocen las probabilidades de que si un mineral aparece,
-entonces se observen ciertas características ffsicas, entonces puede utilizarse
-la fórmula de Bayes para calcular, a partir de las evidencias que se reunan, la
+entonces se observen ciertas características físicas, entonces puede utilizarse
+la fórmula de Bayes para calcular, a partir de las evidencias que se reúnan, la
 probabilidad de que aparezcan los distintos minerales.
 
 En realidad esto es lo que se hace en el programa **PROSPECTOR,** el cuál se ha
-usado con exito como ayuda a la localización de depósitos de distintos
+usado con éxito como ayuda a la localización de depósitos de distintos
 minerales, incluyendo cobre y uranio.
 
 La clave para poder utilizar el teorema de Bayes como base para razonar bajo
 incertidumbre consiste en ***saber exactamente que* es *lo que dice.***
-Espedficamente, cuando se dice P(AI B) se esta describiendo *la probabilidad de
-A condicionada a que la {mica evidl'mcia que* se *tiene es 8.* Si existe otra
+Específicamente, cuando se dice P(AI B) se esta describiendo *la probabilidad de
+A condicionada a que la {mica evidencia que* se *tiene es 8.* Si existe otra
 evidencia relevante, debe considerarse también. Suponga, por ejemplo, que se
 esta resolviendo un problema de diagnóstico médico.
 
@@ -4547,7 +4547,7 @@ de sarampión. La evidencia de la fiebre también sirve, ya que el sarampión su
 provocar fiebre. Pero suponga que ya se sabe que el paciente tiene sarampión. En
 este caso, la evidencia adicional de que tiene manchas rojas en la piel no nos
 dice nada sobre la probabilidad de que tenga fiebre. Alternativamente, tanto las
-manchas rojas como la fiebre, por separado, constituirian una evidencia a favor
+manchas rojas como la fiebre, por separado, constituirían una evidencia a favor
 del sarampión.
 
 ***Si* se *presentan las dos cosas,* es *necesario tenerlas ambas en cuenta
@@ -4555,11 +4555,11 @@ para***
 
 ***calibrar el peso total de la evidencia.***
 
-***Sin embargo, como las manchas y la fiebre no son sintomas independientes,***
+***Sin embargo, como las manchas y la fiebre no son síntomas independientes,***
 
 ***no pueden sumarse sus efectos.***
 
-En lugar de esto, es necesario representar explicitamente la probabilidad
+En lugar de esto, es necesario representar explícitamente la probabilidad
 condicionada que surja de su conjunción. En general dado un cuerpo de evidencia
 previo y alguna nueva observación E, es necesario hacer el siguiente cálculo:
 
@@ -4567,7 +4567,7 @@ previo y alguna nueva observación E, es necesario hacer el siguiente cálculo:
 
 . ' *P(el E)*
 
-Desafortunadamente, en un mundo arbitrariamente complejo, el tamano del conjunto
+Desafortunadamente, en un mundo arbitrariamente complejo, el tamaño del conjunto
 de probabilidades combinadas que se necesitan para calcular esta función, crece
 como una función de la forma 2°, donde n es el número de proposiciones
 diferentes que es necesario considerar.
@@ -4575,15 +4575,15 @@ diferentes que es necesario considerar.
 Esto hace que el teorema de Bayes sea inaplicable por diversos motivos:
 
 * El problema de la adquisición de conocimiento es inabarcable. Son necesarias
- demasíadas probabilidades. Ademas de esto, existe la evidencia empfrica
+ demasiadas probabilidades. Ademas de esto, existe la evidencia empírica
  sustancial de que las personas son malas estimadoras de probabilidades.
 
-* El espacio que se necesitarfa para almacenar todas las probabilidades es
- demasíado grande.
+* El espacio que se necesitaría para almacenar todas las probabilidades es
+ demasiado grande.
 
-* El tiempo empleado en calcular las probabilidades es demasíado grande.
+* El tiempo empleado en calcular las probabilidades es demasiado grande.
 
-A pesar de todos estos problemas, las estadfsticas bayesianas proporcionan una
+A pesar de todos estos problemas, las estadísticas bayesianas proporcionan una
 base atractiva para los sistemas que razonan bajo incertidumbre. Como resultado
 de todo esto, se han desarrollado distintos mecanismos que hacen uso de su
 potencialidad, pero que al mismo tiempo hacen que sea tratable. En el resto de
@@ -4593,7 +4593,7 @@ este capítulo, se explican tres de estos mecanismos:
 
 * Redes bayesianas.
 
-* Teorfa de Dempster-Shafer
+* Teoría de Dempster-Shafer
 
 ## Factores de certeza
 
@@ -4604,22 +4604,22 @@ bayesiano puro.
 
 El enfoque.que se va a explicar surgió en el sistema **MYCIN,** en el cuál se
 intenta recomendar las terapias apropiadas para pacientes con infecciones
-bacterianas. El sistema interactua con el. médico en la adquisición de los datos
-clfnicos necesarios. MYCIN es un ejemplo de un ***sistema experto,*** debido a
+bacterianas. El sistema interactúa con el. médico en la adquisición de los datos
+clínicos necesarios. MYCIN es un ejemplo de un ***sistema experto,*** debido a
 que realiza tareas que normalmente se encomiendan a un experto humano.
 
-Este sistema se basa en el ***uso de razonamiento probabilistico.*** MYCIN
+Este sistema se basa en el ***uso de razonamiento probabilístico.*** MYCIN
 representa la mayor parte de su conocimiento sobre diagnósticos en forma de un
 ***conjunto de reglas.*** ***A cada regla* se *le asocia un factor de certeza,
 que representa una medida sobre la evidencia que existe de que la conclusión*
 sea *el consecuente de la regla en el caso de que* se *describa el antecedente
-de la misma.*** Una regla de MYCIN tfpica se parecerfa a esta:
+de la misma.*** Una regla de MYCIN típica se parecería a esta:
 
-![Regla tipica de MYCIN para staphylococcus](images/regla-mycin-staphylococcus.png)
+![Regla típica de MYCIN para staphylococcus](images/regla-mycin-staphylococcus.png)
 
 **Si: (1) la cepa del organismo es gram-positivo, y**
 
-1. **la morfologia del organismo es coco, y**
+1. **la morfología del organismo es coco, y**
 
 2. **los organismos crecen de forma arracimada, entonces hay una buena
  probabilidad (0.7) de que**
@@ -4627,7 +4627,7 @@ de la misma.*** Una regla de MYCIN tfpica se parecerfa a esta:
 **el organismo sea un staphylococcus.**
 
 MYCIN utiliza las reglas para hacer un ***razonamiento hacia atrás*** de los
-datos clfnicos disponibles ***a partir del objetivo*** de encontrar organismos
+datos clínicos disponibles ***a partir del objetivo*** de encontrar organismos
 significativos causantes de enfermedades. Una vez que encuentra la identidad de
 tales organismos intenta seleccionar una terapia para tratar la enfermedad. Para
 poder comprender la forma en la que MYCIN utiliza información incierta, debe
@@ -4640,9 +4640,9 @@ se realizan en la técnica MYCIN y que riesgos llevan asociados?".* En el resto
 de esta sección se responde a todos estos interrogantes.
 
 Comencemos con una sencilla respuesta a la primera de las preguntas (a la que se
-volvera más tarde para dar una respuesta más detallada).
+volverá más tarde para dar una respuesta más detallada).
 
-Un factor de c:erteza (FC[h,e]) se deline en términos de dos componentes:
+Un factor de c:certeza (FC[h,e]) se define en términos de dos componentes:
 
 * MB[h,e], Una medida Centre O y 1) de la *creencia* de que la hipótesis h
  proporciona la
@@ -4658,11 +4658,11 @@ Es cero si la evidencia no soporta la hipótesis.
 
 la negación de la hipótesis. Es cero si la evidencia soporta la hipótesis.
 
-A partir de estas dos medidas, se puede delinir el factor de certeza como sigue:
+A partir de estas dos medidas, se puede definir el factor de certeza como sigue:
 
 **FC[h,e] = MB[h,e] - MD[h,e]**
 
-En cada regla basta un único número para delinir tanto el valor de MB como el de
+En cada regla basta un único número para definir tanto el valor de MB como el de
 MD, y por lo tanto, también el de FC, ya que *cada regla de MYCIN se corresponde
 como una parte de la* *evidencia y cada parte de la evidencia o bien soporta o
 bien niega una hipótesis (pero nunca* *ambas cosas).* ***Los factores* de
@@ -4676,22 +4676,22 @@ factores de certeza* *tienen que combinarse para reflejar el* uso *de las
 múltiples partes de la evidencia y las* *múltiples reglas que* se *aplican para
 resolver el problema.* La Figura 3.15 ilustra tres formas de combinación que es
 necesario considerar. En la Figura 3.15Ca), todas las reglas proporcionan la
-evidencia que relaciona una umca hipótesis. En la Figura 3.15Cb), es necesario
+evidencia que relaciona una única hipótesis. En la Figura 3.15Cb), es necesario
 considerar nuestra creencia como una colección *f"* de distintas proposiciones
 tomadas juntas. En la Figura 3.15Cc), la salida de una regla proporciona la
 entrada de la siguiente.
 
-1. *Que fórmulas deberfan utilizarse para plasmar estas combinaciones?* Antes de
+1. *Que fórmulas deberían utilizarse para plasmar estas combinaciones?* Antes de
  responder a
 
 esta cuestión, es necesario primero describir algunas propiedades que sería
 adecuado que cumplieran las funciones de combinación:
 
-Las funciones de combinación deberfan ser conmutativas y asociativas, ya que el
-orden en el que se reunen las evidencias es arbitrario.
+Las funciones de combinación deberían ser conmutativas y asociativas, ya que el
+orden en el que se reúnen las evidencias es arbitrario.
 
 Hasta que no se alcance la certeza, las evidencias adicionales que confirman
-deben incrementar MB CY de forma similar, con las evidencias que restán
+deben incrementar MB CY de forma similar, con las evidencias que restan
 confirmación y MD).
 
 Si las inferencias inciertas se encadenan juntas, el resultado debe ser de menor
@@ -4701,12 +4701,12 @@ Ca) Cb) Cc)
 
 Figura 3.15
 
-![Figura 3.15: combinacion de factores de certeza](images/figura-3-15-combinacion-factores-certeza.png)
+![Figura 3.15: combinación de factores de certeza](images/figura-3-15-combinación-factores-certeza.png)
 
 1. Si se supone que todas estas propiedades son deseables, considere en primer
  lugar la Figura 3.¿S(a), en la que ***varias partes de evidencia se combinan
  para determinar el factor de certeza de una hipótesis.*** Las medidas sobre
- la creencia o no creencia de una hipótesis dadas dos observaciónes s1 y s2 se
+ la creencia o no creencia de una hipótesis dadas dos observaciones s1 y s2 se
  calculan de la siguiente forma:
 
 **si MD[h, s1** " **s2] = 1 en caso contrario**
@@ -4718,18 +4718,18 @@ Figura 3.15
 Una forma de plasmar estas fórmulas en castellano consiste en que la medida
 sobre la creencia en h es 0 si no se cree en h con certeza.
 
-En caso contrario, la medida sobre la creencia en h, dadas dos observaciónes, es
+En caso contrario, la medida sobre la creencia en h, dadas dos observaciones, es
 la medida sobre la creencia dada solo por una observación más algún incremento
 debido a la segunda observación. Este incremento se calcula tomando primero la
 diferencia entre 1 (certeza) y la creencia dada por la primera observación. Esta
-diferencia es la mayor que puede afiadir la segunda observación. La diferencia
+diferencia es la mayor que puede añadir la segunda observación. La diferencia
 se escala mediante la creencia sobre h dada solo la segunda observación.
 
 De forma similar puede darse una explicación parecida para la fórmula que
 calcula la incredulidad.
 
 A partir de MB y MD, puede calcularse FC. Notese que si se unen varias fuentes
-de corroboracion de la evidencia, el valor absoluto de FC se incrementa. Si se
+de corroboración de la evidencia, el valor absoluto de FC se incrementa. Si se
 introduce una evidencia conflictiva, el *valor* absoluto de FC disminuye.
 
 *Un sencillo ejemplo muestra como operan estas funciones.* Suponga que se tiene
@@ -4756,30 +4756,30 @@ en los factores de certeza.
  la regla del estafilococo). El cálculo de la combinación de factores de
  certeza puede hacerse a partir de MB y MD.
 
-Las fórmulas que usa MYCIN para la conjuncion y disyuncion de dos hipótesis son:
+Las fórmulas que usa MYCIN para la conjunción y disyunción de dos hipótesis son:
 
-![Formulas MYCIN para conjuncion y disyuncion de hipotesis](images/formulas-mycin-conjuncion-disyuncion-hipotesis.png)
+![Formulas MYCIN para conjunción y disyunción de hipótesis](images/formulas-mycin-conjunción-disyunción-hipótesis.png)
 
-**MB[h1 v h2,e] = max{MB[h1, e], MB[h2, e]) MD se calcula de forma analoga.**
+**MB[h1 v h2,e] = max{MB[h1, e], MB[h2, e]) MD se calcula de forma análoga.**
 
 1. Finalmente considere la Figura 3.¿S(c), en donde ***las reglas* se *encadenan
  de forma que*** ***el resultado de la incertidumbre que sale de una regla* es
 
 ![Formula MYCIN para encadenamiento de reglas](images/formula-mycin-encadenamiento-reglas.png)
  *la entrada de la otra.*** La solución para este problema también tendrá en
- cuenta el caso en el que tenga que asígnarse a
+ cuenta el caso en el que tenga que asignarse a
 
 las entradas iniciales una medida sobre su incertidumbre.
 
-Este caso podría darse fácilmente en aquellas situaciónes en donde la evidencia
+Este caso podría darse fácilmente en aquellas situaciones en donde la evidencia
 es el resultado de algún experimento o algún test de laboratorio, de forma que
 los resultados no son C completamente exactos. En estos casos, el factor de
 certeza de la hipótesis debe tener en cuenta tanto la intensidad con la que la
 evidencia parece indicar la hipótesis como el nivel de confianza en la
 evidencia.
 
-MYCIN deline el encadenamiento de reglas como sigue. Sea MB' [h,s] la medida de
-la creencia sobre h estándo completamente segura la validez de s. Sea e la
+MYCIN define el encadenamiento de reglas como sigue. Sea MB' [h,s] la medida de
+la creencia sobre h estando completamente segura la validez de s. Sea e la
 evidencia que nos lleva a creer en s (por ejemplo, las lecturas de los
 instrumentos del laboratorio o los resultados de aplicar otras reglas).
 
@@ -4797,38 +4797,38 @@ aproximaciones del formalismo.
 
 *Las* ***Redes Bayesianas*** *constituyen un enfoque alternativo al de factores
 de certeza, C* *en el que el formalismo de razonamiento bayesiano se preserva y*
-se *conffa en la* *modularidad del mundo que se intenta modelor.* La idea
+se *confía en la* *modularidad del mundo que se intenta modelo.* La idea
 principal consiste en que para describir el mundo real no es necesario utilizar
 una tabla de probabilidades enorme en la que se listen las probabilidades de
 todas las combinaciones concebibles de sucesos.
 
 La mayoría de los sucesos son condicionalmente independientes de la mayoría de
-los demas, por lo que no deben considerarse sus interacciones (y por lo tanto no
+los demás, por lo que no deben considerarse sus interacciones (y por lo tanto no
 se necesitan calcular todas las probabilidades).
 
 **En lugar de esto, se *puede usar una representación más local en donde* se**
 
-***describen grupos de sucesos que interactuen.***
+***describen grupos de sucesos que interactúen.***
 
-- 1. Teoria de Dempster-Shafer
+- 1. Teoría de Dempster-Shafer
 
 Hasta ahora se han descrito diversas técnicas de forma que en todas ellas se
-consideraban proposiciones individuales y se asígnaba a cada una de ellas una
+consideraban proposiciones individuales y se asignaba a cada una de ellas una
 estimación (es decir, un único número) del grado de creencia que se garantizaba
 dada la evidencia.
 
-En este apartado, se considera una técnica alternativa denominada ***Teoria de
+En este apartado, se considera una técnica alternativa denominada ***Teoría de
 Dempster-***
 
 ***Shafer.*** *(.*
 
-*Este nuevo enfoque considera conjuntos de proposiciones y les asígna a cada uno
+*Este nuevo enfoque considera conjuntos de proposiciones y les asigna a cada uno
 de ellos un (* *intervalo:* con el que debe indicarse el grado de creencia.
 ***La creencia*** (que normalmente se denota por Bel, belief) mide ***la fuerza
 de la evidencia a favor de un conjunto de proposiciones.*** El rango va de O
 (que indica evidencia nula) a 1 (que denota certeza).
 
-La verosimilitud (Pl, plausibility) se deline como:
+La verosimilitud (Pl, plausibility) se define como:
 
 **Pl(s) = 1 - Bel(-.s)**
 
@@ -4845,21 +4845,21 @@ información que se tiene.* Suponga que se consideran tres hipótesis rivales: A
 B y C. Si no se tiene información, para cada una de ellas se dice que la
 probabilidad de que sean ciertas está en el rango [0,1].
 
-Conforme se acumula evidencia, el intervalo va estrechandose, representando el
+Conforme se acumula evidencia, el intervalo va estrechándose, representando el
 incremento de confianza con que se sabe la probabilidad de cada hipótesis. Esto
-contrasta con el enfoque bayesiano puro, en donde probablemente se empezarfa por
-asígnar las probabilidades a priori equitativamente entre las hipótesis, de
+contrasta con el enfoque bayesiano puro, en donde probablemente se empezaría por
+asignar las probabilidades a priori equitativamente entre las hipótesis, de
 forma que para cada una de ellas P(h) = 0,33.
 
 Con los intervalos se clarifica el hecho de que no se posee información al
 comenzar. En el enfoque bayesiano esto no es así, ya que se podría terminar con
-los mismos valores en la probabilidad si se reunen volumenes de evidencia de
+los mismos valores en la probabilidad si se reúnen volúmenes de evidencia de
 forma que tomados juntos sugieran que los tres valores aparecen con la misma
 frecuencia. Esta diferencia puede resultar importante si una de las decisiones
-que necesita hacer el programa consiste en ver si se reune más evidencia o se
-actua sobre la base de la que ya existe.
+que necesita hacer el programa consiste en ver si se reúne más evidencia o se
+actúa sobre la base de la que ya existe.
 
-Sistemas Semimticos para Representación del Conocimiento
+Sistemas Semánticos para Representación del Conocimiento
 
 Las buenas representaciones son la clave de una buena resolución de problemas
 
@@ -4872,26 +4872,26 @@ Una descripción aprovecha las convenciones de una representación para describi
 alguna cosa en particular.
 
 El hallar la representación apropiada es una parte fundamental de la resolución
-de un problema. Considere, por ejemplo, el siguiente problema para nifios:
+de un problema. Considere, por ejemplo, el siguiente problema para niños:
 
 **El granjero, la zorra, el polio y el grano**
 
 Un granjero quiere cruzar un rio llevando consigo una zorra silvestre, un polio
-gordo y un saco de granos de trigo. Por desgracia, su bote es tan pequefio que
+gordo y un saco de granos de trigo. Por desgracia, su bote es tan pequeño que
 solo puede transportar una de sus pertenencias en cada viaje. Peor aun, la
 zorra, si no se le vigila, se come al polio, y el polio, si no se lo cuida, se
 come el trigo; de modo que el granjero no debe dejar a la zorra sola con el
-polio o al polio solo con el trigo. LQue se puede hacer? C Descrito en espafiol,
-la resolución del problema se lieva unos cuantos minutos porque es preciso
-separar las restricciones relevantes de los detalies irrelevantes. El espafiol
+polio o al polio solo con el trigo. LQue se puede hacer? C Descrito en español,
+la resolución del problema se lleva unos cuantos minutos porque es preciso
+separar las restricciones relevantes de los detalles irrelevantes. El español
 no es una buena representación.
 
 Sin embargo, descrito de manera más apropiada, el problema no toma tiempo alguno
-porque se puede trazar una lfnea del principio al final en la Figura 3.16 de
-manera instantanea. El trazado de dicha lfnea resuelve el problema porque cada
+porque se puede trazar una línea del principio al final en la Figura 3.16 de
+manera instantánea. El trazado de dicha línea resuelve el problema porque cada
 dibujo representa un arreglo seguro para el granjero y sus pertenencias en las
-orilias del rio, y cada conexión entre los dibujos representa un cruce válido.
-El dibujo es una buena descripción ya que las situaciónes permitidas y los
+orillas del rio, y cada conexión entre los dibujos representa un cruce válido.
+El dibujo es una buena descripción ya que las situaciones permitidas y los
 cruces legales quedan claramente definidos y no existen detalles irrelevantes.
 
 Para hacer un diagrama así, primero se construye un nodo por cada forma en que
@@ -4907,15 +4907,15 @@ cada par ordenado de arreglos existe un enlace que los conecta si y solo si los
 dos arreglos cumplen con dos condiciones: primera, el granjero cambia de lado; y
 segunda, a lo sumo una de las pertenencias del granjero cambia de lado. Debido a
 que existen diez arreglos permitidos, hay 10x9 = 90 pares ordenados, pero solo
-20 de elios satisfacen las condiciones requeridas por los enlaces.
+20 de ellos satisfacen las condiciones requeridas por los enlaces.
 
 *Es evidente que la descripción nodo y enlace* es *una buena descripción con
 respecto al* *problema planteado, ya que resulta fácil de hacer y, una vez que*
 se *tiene, el problema resulta* *simple de resolver.* La idea importante que
-ilustra este problema es que una buena descripción, desarroliada de acuerdo con
+ilustra este problema es que una buena descripción, desarrollada de acuerdo con
 las convenciones de una buena representación, es una puerta abierta para la
 resolución del problema; una mala descripción, que utiliza una mala
-representación, es un obstaculo que impide la resolución del problema.
+representación, es un obstáculo que impide la resolución del problema.
 
 Figura 3.16
 
@@ -4965,11 +4965,11 @@ Trigo
 
 | Pollo |
 
-## Estructuras de ranura y relleno debiles
+## Estructuras de ranura y relleno débiles
 
-* 1. Estrncturas de Ranum y Relieno Debiles
+* 1. Estructuras de Ranum y Relleno Debiles
 
-Recuerdese que estas estructuras se introdujeron en un principio como un
+Recuérdese que estas estructuras se introdujeron en un principio como un
 dispositivo para soportar adecuadamente la herencia a lo largo de los enlaces
 es-un e instancia. Este es un importante aspecto de estas estructuras.
 
@@ -4979,7 +4979,7 @@ estructuras***
 ***que con la lógica pura, y la herencia no monótona puede soportarse muy
 fácilmente.***
 
-***La razon por la que la herencia se ejecuta de un modo sencillo, es que en
+***La razón por la que la herencia se ejecuta de un modo sencillo, es que en
 los***
 
 ***sistemas de ranura y relleno el conocimiento esta estructurado como un
@@ -4991,14 +4991,14 @@ Se describirán dos enfoques de este tipo de estructuras: las redes semánticas
 (semantic nets) y los marcos (frames).
 
 Se hablara sobre las propias representaciones, así como sobre las técnicas para
-razonar con ellas. De todos modos, no se hablara demasíado acerca del
+razonar con ellas. De todos modos, no se hablara demasiado acerca del
 conocimiento específico que deben contener estas estructuras.!
 
-A estas estructuras de "conocimiento pobre" se ¿es denominaran *"debiles".* En
+A estas estructuras de "conocimiento pobre" se ¿es denominaran *"débiles".* En
 las estructuras de ranura y relleno *"fuertes"* se establecen mayores
 compromisos en relación con el contenido de las representaciones.
 
-3,6.1. Redes Semanticas
+3,6.1. Redes Semánticas
 
 La idea principal que hay debajo de las redes semánticas es que la
 ***información contenida***
@@ -5011,15 +5011,15 @@ entre los***
 ***nodos.*** t"
 
 En la Figura 3.17 se muestra un fragmento de una red semántica típica. • Felino
-Salvaie
+Salvaje
 
-es-un tiene Leon Garras
+es-un tiene León Garras
 
 instancia
 
 Figura 3.17
 
-![Figura 3.17: red semantica de Julio y Leon](images/figura-3-17-red-semantica-julio-leon.png)
+![Figura 3.17: red semántica de Julio y León](images/figura-3-17-red-semántica-julio-león.png)
 
 Natural
 
@@ -5034,7 +5034,7 @@ relación adicional:
 
 **tiene(Julio, Garras)**
 
-**Busqueda de intersección**
+**Búsqueda de intersección**
 
 Una de las primeras formas de usar las redes semánticas antiguas fue para
 *encontrar* *relaciones entre objetos,* dividiendo la activación a partir de
@@ -5060,7 +5060,7 @@ las relaciones que podrían aparecer como instancias de los *predicados binarios
 en la lógica de predicados. Por ejemplo, algunos de los arcos de la Figura 3.17
 se podrían representar en lógica como:
 
-**es\_un(León, Felino Salvaje) instancia(Julio, Leon) zoo(Julio, Luján)**
+**es\_un(León, Felino Salvaje) instancia(Julio, León) zoo(Julio, Luján)**
 
 Pero el conocimiento expresado en predicados de mayor aridad, también se puede
 expresar en redes semánticas. Ya se ha visto que muchos de los *predicados
@@ -5072,7 +5072,7 @@ y de este modo se ve que es mucho más fácil hacer la representación en una re
 semántica.
 
 Los predicados de *tres o más argumentos* también pueden convertirse a forma
-binaria creando un nuevo objeto que represente todo el predicado, y despues
+binaria creando un nuevo objeto que represente todo el predicado, y después
 introduciendo predicados binarios para describir la relación con este nuevo
 objeto de cada uno de los argumentos originales.
 
@@ -5081,7 +5081,7 @@ Supóngase que se sabe:
 Marcador(Rosario Central, Newells, 3-1)
 
 Esto se puede representar en una red semántica creando un nodo que represente el
-juego específico, y relacionar despues las tres partes de la información con
+juego específico, y relacionar después las tres partes de la información con
 dicho nodo. La Figura 3.18 muestra la red que surge al hacer esto.
 
 Newells
@@ -5094,7 +5094,7 @@ equipo-local Rosario Central
 
 Figura 3.18
 
-![Figura 3.18: red semantica de un partido semifinal](images/figura-3-18-red-semantica-partido-semifinal.png)
+![Figura 3.18: red semántica de un partido semifinal](images/figura-3-18-red-semántica-partido-semifinal.png)
 
 3.6.2. Marcos
 
@@ -5111,7 +5111,7 @@ puede ser a su vez otro marco.
 
 Felino
 
-es-un -----' prom-vel es-un Felino Salvaje
+es-un -----' promedio-vel es-un Felino Salvaje
 
 es-un 80 km/h
 
@@ -5119,17 +5119,17 @@ es-un 80 km/h
 
 rom-vel Guepardo
 
-instancia .--...\_-prom-vel Leon 70 km/h
+instancia .--...\_-promedio-vel León 70 km/h
 
 BsAs
 
-prom-vel 99 km/h
+promedio-vel 99 km/h
 
 piedra jaula
 
 Figura 3.19
 
-![Figura 3.19: red semantica de felinos](images/figura-3-19-red-semantica-felinos.png)
+![Figura 3.19: red semántica de felinos](images/figura-3-19-red-semántica-felinos.png)
 
 zoo Claudio
 
@@ -5137,13 +5137,13 @@ Julio
 
 instancia zoo Luján
 
-prom-vel 72 km/h
+promedio-vel 72 km/h
 
 jaula Natural
 
-**Los marcos como conjuntos e instancias** ', La ***teoria de conjuntos***
+**Los marcos como conjuntos e instancias** ', La ***teoría de conjuntos***
 proporciona una buena base para comprender los sistemas de marcos. Aunque no
-todos los sistemas de marcos se definen de este modo, aquf será así. Con este
+todos los sistemas de marcos se definen de este modo, aquí será así. Con este
 enfoque, ***cada marco representa, ya una clase (un conjunto), ya una instancia
 (un*** ***elemento de la clase).*** Para ver como funciona esto, se considerara
 el sistema de marcos • que se muestra en la Figura 3.20, basado en la red
@@ -5151,21 +5151,21 @@ semántica de la Figura 3.19.
 
 Figura 3.20
 
-![Figura 3.20: marcos de felino salvaje, leon y Julio](images/figura-3-20-marcos-felino-salvaje-leon-julio.png)
+![Figura 3.20: marcos de felino salvaje, león y Julio](images/figura-3-20-marcos-felino-salvaje-león-julio.png)
 
 Feline Salvaje
 
 es-un: cardinalidad:
 
-\*prom-vel:
+\*promedio-vel:
 
 **\*zoo:**
 
-Leon
+León
 
 es-un: cardinalidad:
 
-\*prom-vel:
+\*promedio-vel:
 
 **\*zoo:**
 
@@ -5179,13 +5179,13 @@ Felino Salvaje
 
 Julio
 
-instancia: prom-vel: zoo: jaula:
+instancia: promedio-vel: zoo: jaula:
 
-Leon
+León
 
 72 km/h Luján Natural
 
-En este ejemplo los marcos Feline Salvaje y Leon son todas las clases. El marco
+En este ejemplo los marcos Feline Salvaje y León son todas las clases. El marco
 Julio es una instancia.
 
 La ***relación es-un*** que se ha estado utilizando sin una definición precisa,
@@ -5204,33 +5204,33 @@ Tanto la ***relación es-un,*** como la ***relación instancia,*** tienen
 instancias.*** Realmente no tiene importancia escribirlos explícitamente en las
 instancias, a menos que sea necesario referirse a ellos. Se tendrá en cuenta que
 el sistema de marcos los mantiene automáticamente, bien de un modo explícito o
-bien calculandolos si es necesario.
+bien calculándolos si es necesario.
 
 Debido a que una clase representa un conjunto, existen dos clases de atributos
 que se pueden asociar con esta. Existen atributos acerca del conjunto en sí
 mismo, y también atributos para ser heredados por cada elemento del conjunto. Se
 indicara la diferencia entre estos dos tipos asociando al segundo un asterisco
 (\*). Por ejemplo, la clase de los Leones tiene como cardinal 25 (es decir, hay
-25 leones). El atributo prom-vel es heredado por los i.ndividuos pertenecientes
+25 leones). El atributo promedio-vel es heredado por los i.individuos pertenecientes
 a dicha clase, por lo tanto de esta manera se trasladan propiedades hereditarias
 desde las superclases hacia sus instancias. El atributo zoo no tiene valor
 ingresado por lo cuál se observa que mediante el sistema de marcos se pueden
-también delinir prototipos.
+también definir prototipos.
 
 ## Estructuras de ranura y relleno fuertes
 
-* 1. Estructuras de Ranura y R.elleno Fuertes
+* 1. Estructuras de Ranura y R.relleno Fuertes
 
 *Las redes semánticas y* los *sistemas de marcos implementan estructuras muy
 generales para representar el conocimiento.* La Dependencia Conceptual, los
-Guiones y los CYC, ***implementan poderosas teorias*** sobre la forma en que los
-programas de IA pueden representar y utilizar el conocimiento sobre situaciónes
-comúnes.
+Guiones y los CYC, ***implementan poderosas teorías*** sobre la forma en que los
+programas de IA pueden representar y utilizar el conocimiento sobre situaciones
+comunes.
 
 1. Dependencia Conceptual
 
-***La Dependencia Conceptual {DC)* es *una teoria sobre la representación del
-tipo de conocimiento sobre los everitos que normalmente aparecen en las frases
+***La Dependencia Conceptual {DC)* es *una teoría sobre la representación del
+tipo de conocimiento sobre los eventos que normalmente aparecen en las frases
 de lenguaje natural.*** El objetivo consiste en representar el conocimiento de
 alguna forma que:
 
@@ -5242,11 +5242,11 @@ Debido a estos dos requisitos, *la representación en DC de una frase no* se
 *construye con primitivas que se corresponden con las palabras que aparecen en
 la frase, sino* ***con primitivas*** *conceptuales que pueden combinarse para
 formar el significado de las palabras en cualquier lenguaje concreto.* Esta
-teoria la describió Shank (1973) y se ha implementado en varios programas que
+teoría la describió Shank (1973) y se ha implementado en varios programas que
 leen y comprenden texto en lenguaje natural.
 
 Al contrario que en las redes semánticas, que proporcionan solo una estructura
-en la que pueden sítuarse nodos que representan información a cualquier nivel,
+en la que pueden situarse nodos que representan información a cualquier nivel,
 ***la Dependencia Conceptual proporciona tanto una estructura como un conjunto
 especifico de primitivas, a un nivel concreto de granularidad,*** en las que
 puede construirse representaciones de trozos particulares de información.
@@ -5266,7 +5266,7 @@ libro donde los símbolos tienen los siguientes significados:
 
 * P indica tiempo pasado
 
-* ATRANS es una de las acciones primitivas utilizadas por la teoria. Indica
+* ATRANS es una de las acciones primitivas utilizadas por la teoría. Indica
 
 ![Acciones primitivas de dependencia conceptual](images/acciones-primitivas-dependencia-conceptual.png)
  transferencia de posesión
@@ -5286,38 +5286,38 @@ las distintas implementaciones de DC, un típico conjunto es el siguiente:
 
 **ATRANS PTRANS PROPEL MOVE GRASP INGEST EXPEL MTRANS MBUILD SPEAK ATTEND**
 
-Transíerencia de una relación abstracta (dar)
+Transferencia de una relación abstracta (dar)
 
-Transíerencia de una localizacion física de un objeto (ir)
+Transferencia de una localización física de un objeto (ir)
 
-Aplicacion de fuerza ffsica empujar)
+Aplicación de fuerza física empujar)
 
-Movimiento de una parte del cuerpo por su dueno (patear)
+Movimiento de una parte del cuerpo por su dueño (patear)
 
-Asímiento de un objeto por un actor (empunar)
+Asimiento de un objeto por un actor (empuñar)
 
-Ingestion de un objeto por parte de un animal (comer)
+Ingestión de un objeto por parte de un animal (comer)
 
-Expulsion de algo del cuerpo de un animal (llorar)
+Expulsión de algo del cuerpo de un animal (llorar)
 
-Transíerencia de información mental (decir)
+Transferencia de información mental (decir)
 
-Construccion de información nueva aparte de la vieja (decidir)
+Construcción de información nueva aparte de la vieja (decidir)
 
 Producción de sonidos (hablar)
 
-Concentracion de un organo sensorial hacia un estimulo (escuchar)
+Concentración de un órgano sensorial hacia un estimulo (escuchar)
 
 Un segundo conjunto de bloques construidos de DC es el conjunto de las
 ***dependencias*** ***permitidas entre las conceptualizaciones*** descritas en
-una frase. Existen cuatro categorias conceptuales primitivas a partir de las
+una frase. Existen cuatro categorías conceptuales primitivas a partir de las
 cuales pueden construirse estructuras de dependencias. Estas son:
 
-![Categorias primitivas de dependencia conceptual](images/categorias-primitivas-dependencia-conceptual.png)
+![Categorías primitivas de dependencia conceptual](images/categorías-primitivas-dependencia-conceptual.png)
 
-**ACT** Acciones **pp** Objetos (Productores de imagenes) **AA** Modificadores
-de acciones (asístentes de acciones) **PA** Modificadores de PP (asístentes de
-imagenes) Ademas, las estructu.ras de dependencia son en sí mismas
+**ACT** Acciones **pp** Objetos (Productores de imágenes) **AA** Modificadores
+de acciones (asistentes de acciones) **PA** Modificadores de PP (asistentes de
+imágenes) Ademas, las estructura.ras de dependencia son en sí mismas
 conceptualizaciones y pueden servir como componentes de estructuras de
 dependencias más grandes.
 
@@ -5326,7 +5326,7 @@ semánticas entre los conceptos subyacentes. La Figura 3.22 proporciona una list
 de algunas de ellas. (.
 
 La primera columna contiene las reglas; la segunda contiene ejemplos de su uso,
-y la tercera contiene una versión en espafiol de cada ejemplo.
+y la tercera contiene una versión en español de cada ejemplo.
 
 PP ACT
 
@@ -5350,17 +5350,17 @@ Juan PROPEL
 
 DC es un mecanismo para representar y razonar sobre eventos. Sin embargo, los
 eventos raramente ocurren por separado. En este apartado se presenta un
-mecanismo de *representación del conocimiento de secuencias comúnes de eventos.*
+mecanismo de *representación del conocimiento de secuencias comunes de eventos.*
 ***Un guión {script) es una estructura que describe una secuencia estereotipada
 de eventos en un contexto concreto.*** Un guion esta formado por un conjunto de
 ranuras. Asociada a cada ranura puede estar alguna información sobre que tipo de
-valores puede contener, así como un valor por delecto que puede usarse si no se
+valores puede contener, así como un valor por defecto que puede usarse si no se
 dispone de ninguna otra información. Hasta ahora la definición de un guion
 parece muy similar a la de marco. En este nivel de detalle las dos estructuras
-son identicas. Sin embargo, debido al papel especializado que juega un guion,
+son idénticas. Sin embargo, debido al papel especializado que juega un guion,
 podemos hacer algunas afirmaciones más precisas sobre su estructura.
 
-La Figura 3.23 muestra parte de un guion tfpico, el guion sobre un restaurante
+La Figura 3.23 muestra parte de un guion típico, el guion sobre un restaurante
 (tornado de Schank y Abelson, 1977). La figura ilustra los componentes
 importantes de un guion.
 
@@ -5368,22 +5368,22 @@ importantes de un guion.
 
 | --- | --- |
 
-| **Entry conditions** | Condiciones que, en general, deben satisfacerse antes de que puedan ocurrir los eventos aue se describen en el ouion. |
+| **Entry conditions** | Condiciones que, en general, deben satisfacerse antes de que puedan ocurrir los eventos aue se describen en el guion. |
 
-| **Result** | Condiciones que, en general, deberán ser ciertas despues de que ocurran los eventos aue se describen en el nuion. |
+| **Result** | Condiciones que, en general, deberán ser ciertas después de que ocurran los eventos aue se describen en el guion. |
 
 | **Props** | Ranuras que representan objetos que aparecen involucrados en los eventos descritos en el auion. |
 
 | **Roles** | Ranuras que representan a gente que aparece involucrada en los eventos descritos en el auion. |
 
-| **Track** | La variacion específica sobre un patron más general representado por este auion concreto. |
+| **Track** | La variación específica sobre un patrón más general representado por este auion concreto. |
 
-| **Scenes** | La secuencia de eventos qué ocurre. Los eventos se representan con un formalismo de dependencias conceotuales. |
+| **Scenes** | La secuencia de eventos qué ocurre. Los eventos se representan con un formalismo de dependencias conceptuales. |
 
 Los guiones resultan útiles porque en el mundo real aparecen *patrones en la
 ocurrencia de los eventos.* Estos patrones surgen debido a las relaciones de
 causalidad entre los eventos. Los agentes llevaran a cabo una acción de forma
-que entonces son capai::es de realizar otra. *Los eventos que se describen en un
+que entonces son capaz::es de realizar otra. *Los eventos que se describen en un
 guión forman una gigantesca cadena causal.* El comienzo de la cadena es el
 conjunto de condiciones de entrada, las cuales hacen que los primeros eventos
 del guion puedan ocurrir. El final de la cadena es el conjunto de resultados los
@@ -5395,7 +5395,7 @@ que los hacen posibles, como con eventos posteriores, a los cuales capacita.
 
 Guion: RESTAURANTE
 
-Track: Cafeterfa Props: Mesas
+Track: Cafetería Props: Mesas
 
 Menu
 
@@ -5431,7 +5431,7 @@ Escena 2: Pedir
 
 Menu en la mesa) (A trae el menú) (L pide el menú)
 
-L PTRANS menú a L L MTRANS sefia a A
+L PTRANS menú a L L MTRANS seña a A
 
 A PTRANS A a la mesa
 
@@ -5439,7 +5439,7 @@ L MTRANS 'necesito menú' a A A PTRANS A al menú
 
 \ A PTRANS A asa \ A TRANS menú a L L MTRANS A a la mesa
 
-\* L MBUILD elección de L MTRANS sefia a A
+\* L MBUILD elección de L MTRANS seña a A
 
 A PTRANS A a la mesa
 
@@ -5477,7 +5477,7 @@ Figura 3.23
 
 ![Figura 3.23: guion de restaurante](images/figura-3-23-guion-restaurante.png)
 
-A MOV' E (escI ribe la cuenta)
+A MOV' E (escI recibe la cuenta)
 
 A PTRANS Aa L
 
@@ -5498,11 +5498,11 @@ de capturar el conocimiento humano de sentido común.*** El objetivo de CYC es
 codificar el amplio cuerpo de conocimiento que es tan obvio que resulta fácil
 olvidar indicarlo explícitamente. Esta base de conocimiento podría combinarse
 con bases de conocimiento especializadas para producir sistemas que sean menos
-fragiles que la mayoría de los que se disponen en la actualidad.
+frágiles que la mayoría de los que se disponen en la actualidad.
 
-Como DC, *CYC representa una teorfa concreta para describir el mundo* y como DC,
+Como DC, *CYC representa una teoría concreta para describir el mundo* y como DC,
 puede usarse para tareas de IA tales como la *comprensión del lenguaje natural.*
-Sin embargo, CYC es más comprensible; mientras que DC proporciona una teoria
+Sin embargo, CYC es más comprensible; mientras que DC proporciona una teoría
 concreta para la representación de eventos, CYC contiene representaciones de
 eventos, objetos, actitudes y muchas otras. Ademas CYC se preocupa especialmente
 de aspectos de escala, esto es, qué ocurre cuando construimos bases de

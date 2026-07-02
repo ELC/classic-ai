@@ -1,6 +1,6 @@
-# Unidad Didactica 4 - Eje Conceptual
+# Unidad Didáctica 4 - Eje Conceptual
 
-Ingenieria del Conocimiento
+Ingeniería del Conocimiento
 
 **TEMAS**
 
@@ -32,7 +32,7 @@ Ingenieria del Conocimiento
 
 1. Composición de un programa. Clausulas. Predicados. Dominios 11
 
-4. **Ingenierfa del Conocimiento 16**
+4. **Ingeniería del Conocimiento 16**
 
 1. Organización de una Base de Conocimientos 16
 
@@ -54,17 +54,17 @@ Ventajas de la aplicación de Sistemas Expertos. 21
 
 Fases de la "inserción social" de los Sistemas Expertos 22
 
-* 1. **Sistemas Expertos miis conocidos 22**
+* 1. **Sistemas Expertos más conocidos 22**
 
-* 1. ll"RCllLOG (Programadón Lógica)
+* 1. ll"RCllLOG (Programación Lógica)
 
 **PROLOG** es un lenguaje de programación que se utiliza para resolver problemas
 en los que entran en juego objetos y relaciones entre objetos. Actualmente se ha
 convertido en el ***principal entorno de programación para inteligencia
 artificial (IA),*** una de las principales áreas de aplicación de las
-computadoras que esta emergiendo. Tambien se puede hacer virtualmente cualquier
+computadoras que esta emergiendo. También se puede hacer virtualmente cualquier
 cosa con el PROLOG como podría hacerlo con cualquier otro lenguaje de
-programación, incluyendo juegos, contabilidad, graficos y simulación. No es
+programación, incluyendo juegos, contabilidad, gráficos y simulación. No es
 siempre el lenguaje más practico o eficiente para algunas aplicaciones, pero
 pueden realizarse con el.
 
@@ -74,18 +74,18 @@ PASCAL y C.
 
 1., Una breve historia del Prolog
 
-PROLOG significa *"PROgramming LOGic",* es decir *programación basada en la
+PROLOG significa *"PRProgramming LOGic",* es decir *programación basada en la
 lógica* y es un lenguaje de programación de computadoras que fue inventado
 alrededor de 1970 por Alain Colmerauer y sus colegas de la Universidad de
-Marsella, Francia. Rapidamente el PROLOG se convirtió en el lenguaje principal
+Marsella, Francia. Rápidamente el PROLOG se convirtió en el lenguaje principal
 para IA en Europa, mientras que LISP (otro lenguaje de programación usado para
 IA) se usaba principalmente por los programadores de los Estados Unidos. A
-finales de los anos '70 comenzaron a aparecer versiónes de PROLOG para
+finales de los anos '70 comenzaron a aparecer versiones de PROLOG para
 microcomputadoras. Uno de los compiladores de PROLOG más populares fue el
 MICROPROLOG, pero este no ofrece la riqueza de predicados.
 
-No existió mucho interes por el PROLOG hasta que los cientificos japoneses
-lanzaron su famoso proyecto de la quinta generación con el objetivo de disenar
+No existió mucho interés por el PROLOG hasta que los científicos japoneses
+lanzaron su famoso proyecto de la quinta generación con el objetivo de diseñar
 nuevas computadoras y software. De repente, la gente comenzó a mirar de otra
 forma el PROLOG y sus posibilidades.
 
@@ -94,12 +94,12 @@ forma el PROLOG y sus posibilidades.
 Los lenguajes de computadoras son raramente buenos para todos los tipos de
 problemas.
 
-FORTRAN es usado principalmente por los cientificos y matemáticos, mientras que
+FORTRAN es usado principalmente por los científicos y matemáticos, mientras que
 COBOL, es usado principalmente en el mundo comercial. A las implementaciones del
-PROLOG le falta la habilidad para manejar problemas sobre "numeros" o
+PROLOG le falta la habilidad para manejar problemas sobre "números" o
 "procesamiento de texto".
 
-En su lugar, PROLOG esta disenado para manejar ***"problemas lógicos"*** (es
+En su lugar, PROLOG esta diseñado para manejar ***"problemas lógicos"*** (es
 decir, problemas en los que se necesitan tomar decisiones de una forma
 ordenada), intenta hacer que la computadora *"razone"* la forma de encontrar una
 solución. Es particularmente adecuado para diferentes tipos de problemas de
@@ -107,17 +107,17 @@ inteligencia artificial.
 
 ## Lenguaje procedural vs declarativo
 
-4.1.3, Lenguaje Procedural vs. Lenguaje Dedarativo La mayoria de los lenguajes
+4.1.3, Lenguaje Procedural vs. Lenguaje Declarativo La mayoría de los lenguajes
 de computadoras personales, BASIC, PASCAL, COBOL, etc., han sido
-***procedurales.*** *Tales /enguajes permiten al programador decirle a la
+***procedurales.*** *Tales /lenguajes permiten al programador decirle a la
 computadora lo que* *tiene que hacer, paso a paso, procedimiento por
 procedimiento, hasta alcanzar una conclusión.* El ***PROLOG*** no es procedural,
 es ***declarativo,*** *necesita que se declaren reglas y hechos sobre* *símbolos
-especfficos y luego se le pregunte sobre si un objetivo concreto se deduce*
+específicos y luego se le pregunte sobre si un objetivo concreto se deduce*
 *lógicamente a partir de* los *mismos.* Mientras que un lenguaje procedural le
 exige que introduzca el recipiente y los ingredientes, un lenguaje declarativo
 solo le pide los ingredientes y el objetivo. Se declara la situación con la que
-quiere trabajar y donde.quiere ir, ***el propio /enguaje realiza el trabajo de
+quiere trabajar y donde.quiere ir, ***el propio /lenguaje realiza el trabajo de
 decidir***
 
 ***como alcanzar dicho objetivo.***
@@ -131,7 +131,7 @@ otros lenguajes.
 
 ***determinado, se definen las relaciones que existen entre estos datos y
 finalmente se*** ***construyen preguntas* o *cuestionamientos sabre todo el
-paquete, quedandole al lenguaje la tarea de elaborar las conclusiones mediante
+paquete, quedándole al lenguaje la tarea de elaborar las conclusiones mediante
 un razonamiento lógico.*** 4.1,4. Inteligencia Artificial
 
 Determinar que es un programa inteligente implica que se conoce lo que significa
@@ -141,29 +141,29 @@ Determinar que es un programa inteligente implica que se conoce lo que significa
 *capacidad o habilidad para percibir hechos v proposiciones v sus relaciones v
 razonar sabre ellos. Esencialmente significa* **pensar.** Esta definición
 implica solamente inteligencia humana, *no* admite la posibilidad de que una
-máquina pueda pensar, ya que los programas no hacen la misma tarea de la niisma
-forma que una persona. ***Que un programa sea inteligente requiere que actue
+máquina pueda pensar, ya que los programas no hacen la misma tarea de la misma
+forma que una persona. ***Que un programa sea inteligente requiere que actúe
 inteligentemente, como un ser humano.*** ***Un programa inteligente exhibe un
-comportamfento similar al de un humano cuando* se *enfrenta a un problema
+comportamiento similar al de un humano cuando* se *enfrenta a un problema
 similar.*** • No es necesario que el programa resuelva concretamente o intente
 resolver el problema de la misma manera que un humano.
 
-Observese que ***el programa no necesita pensar como un humano,*** pero ***debe
+Obsérvese que ***el programa no necesita pensar como un humano,*** pero ***debe
 actuar como tal.*** Es difícil establecer una fecha de comienzo para lo que es
-com(mmente llamado IA. El primer paso se le atribuye a Alan Turing por su
+com(mente llamado IA. El primer paso se le atribuye a Alan Turing por su
 invención de la computadora de programas almacenados. Determinó que un programa
-podfa ser almacenado como. data en la memoria de la computadora y ejecutado más
-tarde, anteriormente las computadoras fueron máquinas dedicadas que debfan ser
-recableadas para diferentes problemas. El almacenamiento de programas permitia
+podía ser almacenado como. data en la memoria de la computadora y ejecutado más
+tarde, anteriormente las computadoras fueron máquinas dedicadas que debían ser
+recableadas para diferentes problemas. El almacenamiento de programas permitía
 entonces cambiar la función de la computadora fácil y rápidamente.
 
 El término inteligencia artificial se imputa a Marvin Minsky, investigador def
-MIT, quien.escribió un artfculo titulado *"Pasos de la Inteligencia Artificial"*
+MIT, quien.escribió un artículo titulado *"Pasos de la Inteligencia Artificial"*
 (Enero 1961), que explicaba la posibilidad de hacer pensar a las computadoras.
 
-Al final de los afios '70 se habia.n alcanzado varios exitos, tales como *el
-procesamiento de* *lenguaje natural, represehtación def conocimiento v
-resolución de*• *problemas eh áreas especfficas de la IA.* Los dos problemas más
+Al final de los años '70 se había.n alcanzado varios éxitos, tales como *el
+procesamiento de* *lenguaje natural, representación def conocimiento v
+resolución de*• *problemas eh áreas específicas de la IA.* Los dos problemas más
 significativos de IA son los ***sistemas expertos*** y el ***procesamiento de
 lenguaje natural.*** A saber:
 
@@ -181,7 +181,7 @@ creación de bases de conocimientos y un motor de inferencia.
 **Procesamiento de lenguaje natural**
 
 El procesamiento de lenguaje natural **es *la técnica que fuerza a las
-computadoras a entender el lenguaje humano.*** Los cientfficos que lo estudian
+computadoras a entender el lenguaje humano.*** Los científicos que lo estudian
 esperan crear un hardware y software que permita escribir *"llevar el archivo
 def prolog a la carpeta prolog"* y haga que la computadora siga dichas
 directrices.
@@ -213,7 +213,7 @@ sobre una relación.
 
 ***predicados o cálculo proposicional.***
 
-PROLOG ha.ce que la computadora maneje la parte de inferir, ***tiene un motorde
+PROLOG ha.ce que la computadora maneje la parte de inferir, ***tiene un motor de
 inferencia***
 
 ***incorporado que automáticamente busca los hechos y construye conclusiones
@@ -225,9 +225,9 @@ La programación de computadoras en PROLOG consiste en:
 
 * Definir algunas reglas sabre los objetos y sus relaciones.
 
-* H.acer preguntas sobre los objetos y sus relaciones.
+* H.hacer preguntas sobre los objetos y sus relaciones.
 
-Podemos considerar a PROLOG como un almacen de hechos y reglas, que utiliza
+Podemos considerar a PROLOG como un almacén de hechos y reglas, que utiliza
 estos para responder las preguntas, proporciona los medios para realizar
 inferencias de un hecho a otro.
 
@@ -244,22 +244,22 @@ hecho, la sintaxis de PROLOG es:
 Supongamos que queremos decir a PROLOG el hecho de que *"a Eduardo le gusta la
 PC",* en PROLOG debemos escribir:
 
-Observe que el objeto esta entre parentesis y la relación le precede, lo que
+Observe que el objeto esta entre paréntesis y la relación le precede, lo que
 quiere decir que este objeto tiene esa relación. La ***relación*** se conoce
 como el ***predicado*** y el ***objeto*** como el ***argumento.*** Los
 siguientes puntos son importantes:
 
 * Los nombres de todos.los objetos y relaciones deben comenzar con una letra
- minuscula.
+ minúscula.
 
-* Primero se escribe la relación y luego los objetos separandolos mediante comas
+* Primero se escribe la relación y luego los objetos separándolos mediante comas
  y
 
-encerrados entre parentesis.
+encerrados entre paréntesis.
 
-* Al final del hecho debe ir un punto (el caracter ".").
+* Al final del hecho debe ir un punto (el carácter ".").
 
-* El caracter "\_" en el nombre del predicado indica que todo es una única
+* El carácter "\_" en el nombre del predicado indica que todo es una única
  palabra para una relación.
 
 * Dos hechos coinciden si sus predicados son lo mismo (se escriben de igual
@@ -268,30 +268,30 @@ encerrados entre parentesis.
 cada uno de sus correspondientes argumentos son iguales entre si.
 
 Al definir relaciones entre objetos utilizando hechos, debemos prestar atención
-al orden en el que se escriben los objetos entre parentesis. De hecho, el orden
+al orden en el que se escriben los objetos entre paréntesis. De hecho, el orden
 es arbitrario, pero debemos ponernos de acuerdo en un orden determinado y ser
 luego consecuentes con este orden.
 
 Por ejemplo, en el hecho le\_gusta\_a (eduardo,pc) hemos puesto el "gusta" como
-el primero de los objetos entre parentesis y el objeto "es gustado" en segundo
+el primero de los objetos entre paréntesis y el objeto "es gustado" en segundo
 lugar. As[ el hecho le\_gusta\_a (eduardo,pc) no es lo mismo que le\_gusta\_a
 (pc,eduardo), mientras que el primero nos indica que a eduardo le gusta la PC,
 el segundo nos dice que a la PC le gusta eduardo.
 
 Los nombres de los objetos y relaciones son completamente arbitrarios. En vez de
-un término *coma* le\_gusta\_a (eduardo,pc) podrfamos representar lo mismo
+un término *coma* le\_gusta\_a (eduardo,pc) podríamos representar lo mismo
 simplemente con a(b,c) y recordar que a significa *le\_gusta\_a,* b significa
 *eduardo* y c significa *PC.* 4.2.2, Variables
 
 En PROLOG no solo se pueden nombrar determinados objetos, sino que también **se
 *pueden utilizar nombres como X que representen objetos a los que el mismo
-PROLOG* les *dara valor,*** este tipo de nombres es lo que se llama
+PROLOG* les *dará valor,*** este tipo de nombres es lo que se llama
 ***variables.*** Cuando el lenguaje PROLOG utiliza una determinada variable esta
 puede estar instanciada o no instanciada. El primer caso se da cuando existe un
 objeto determinado representado por la variable, en caso contrario, una variable
-no esta instanciada cuando, todavfa no se conoce lo que representa.
+no esta instanciada cuando, todavía no se conoce lo que representa.
 
-Las variables deben comenzar con una letra mayuscula.
+Las variables deben comenzar con una letra mayúscula.
 
 Cuando se intenta establecer una relación que contenga una variable, PROLOG
 efectuara una búsqueda recorriendo todos los hechos que el tiene almacenados
@@ -312,29 +312,29 @@ Podemos utilizar:
 
 Observación:
 
-Las variables pueden tener nombres más largos. Ej: Algoquelegustaaeduardo.
+Las variables pueden tener nombres más largos. Ej: Algo que le gusta a eduardo.
 
 A veces es necesario utilizar una variable aunque su nombre no se utilice nunca,
 supongamos que queremos averiguar Si. a alguien le gusta eduardo, pero no
-estamos interesados. e.n sab!"!r quien, entonces utilizambs la variable anónima.
-Esta variable es un único caracter 'de subrayado.
+estamos interesados. e.n sab!"!r quien, entonces utilizamos la variable anónima.
+Esta variable es un único carácter 'de subrayado.
 
-Se utiliza para evitar el tener que imaginar contfnuamente diferentes nombres de
+Se utiliza para evitar el tener que imaginar continuamente diferentes nombres de
 variables i cuando no se van a utilizar en ningún otro sitio de la cláusula.
 
 1. **Reglas**
 
 En PROLOG se usa una regla cuando se quiere significar que un hecho depende de
-un grupo de otrns hechos. Por ejemplo, si queremos afirmar que a eduardo le
-gustan todas las PCs del mercado, habria que escribir hechos por separado, asi:
+un grupo de otros hechos. Por ejemplo, si queremos afirmar que a eduardo le
+gustan todas las PCs del mercado, habría que escribir hechos por separado, asi:
 
 ![Hechos PROLOG: a Eduardo le gustan varias PCs](images/hechos-prolog-eduardo-pcs.png)
 
 le\_gusta\_a (eduardo, ibm).
 
-le\_gusta\_a {eduar.do, compaq).
+le\_gusta\_a {eduardo.do, compaq).
 
-le\_gusta\_a (eduardo, acer).
+le\_gusta\_a (eduardo, hacer).
 
 le\_gusta\_a (eduardo, falcon).
 
@@ -369,11 +369,11 @@ se *pueda buscar, a ser***
 
 Ejemplos de reglas:
 
-![Ejemplos de reglas PROLOG: Marco y pajaro](images/ejemplos-reglas-prolog-marco-pajaro.png)
+![Ejemplos de reglas PROLOG: Marco y pájaro](images/ejemplos-reglas-prolog-marco-pájaro.png)
 
 **Marco compra vino si es más barato que la cerveza.**
 
-**X es un pajaro si: (con uso de variables)**
+**X es un pájaro si: (con uso de variables)**
 
 **X es un animal y**
 
@@ -402,10 +402,10 @@ la regla:
 una persona puede robar una cosa si la persona es un ladrón y le gusta la cosa y
 la cosa es valiosa.
 
-En PROLOG serfa:
+En PROLOG sería:
 
 El predicado *puede\_robar* significa que alguna persona X puede robar alguna
-cosa Y. Esta cláusula depende de las cláusulas *ladron, le\_gusta\_a* y
+cosa Y. Esta cláusula depende de las cláusulas *ladrón, le\_gusta\_a* y
 *valiosa.*
 
 1. Preguntas
@@ -414,36 +414,36 @@ cosa Y. Esta cláusula depende de las cláusulas *ladron, le\_gusta\_a* y
 de ellos. En PROLOG una pregunta se representa igual que un hecho, salvo que
 delante se pone un símbolo especial:?- Por ejemplo:
 
-?- **tiene(eduardo,pc).** lo que podemos interpretar como *itiene eduardo una
-pc?.* ***Cuando se hac:e una pregunta PROLOG efectua una búsqueda por toda la
+?- **tiene(eduardo,pc).** lo que podemos interpretar como *tiene eduardo una
+pc?.* ***Cuando se hac:e una pregunta PROLOG efectúa una búsqueda por toda la
 base· de datos, localizando hechos que coincidan con el hecho en cuestión*** (Ya
 se explicó en ,, puntos importantes de los hechos, cuando dos hechos coinciden),
-Si se. encuentra uno..que coincida se respondera si (yes), por el contrario, si
+Si se. encuentra uno..que coincida se responderá si (yes), por el contrario, si
 no se encuentra, la respuesta sera no.
 
 En PROLOG la respuesta no se utiliza para determinar que no existe nada que
-oincida 'con la pregunta realizada.
+coincida 'con la pregunta realizada.
 
-## Razonamiento y busqueda en Prolog
+## Razonamiento y búsqueda en Prolog
 
 1. Conjunciones y Backtracking
 
 En el caso de que se quiera contestar preguntas sobre relaciones un poco más
-complejas, como *ise gustan Josey Marfa?,* primero se deberfa preguntar si Jose
-gusta de Marfa y luego, si la respuesta fue yes, si Marfa gusta de Jose. ***Esto
-represetita un problema con dos objetivos separados.* El *"y"*** expresa el
-interes de la ***conjunción*** de los dos objetivos: lo que se quiere hacer es
-satisfacer ambos, primero uno y luego el otro.. Esto en PROLOG serfa:
+complejas, como *ise gustan Josey María?,* primero se debería preguntar si Jose
+gusta de María y luego, si la respuesta fue yes, si María gusta de Jose. ***Esto
+representa un problema con dos objetivos separados.* El *"y"*** expresa el
+interés de la ***conjunción*** de los dos objetivos: lo que se quiere hacer es
+satisfacer ambos, primero uno y luego el otro.. Esto en PROLOG sería:
 
 La coma se lee "y" y separa los objetivos de una pregunta. Cuando PROLOG tiene
 que satisfacer objetivos, lo hará objetivo por orden, buscando los coincidentes
-en la ba.se de datos. Debera ser necesario que se cumplan todos, en orden.
+en la ba.se de datos. Deberá ser necesario que se cumplan todos, en orden.
 
 Combinando las conjunciones con el uso de variables se puede contestar por
 ejemplo:
 
-*i.Hay alga que le guste a Josey Marfa?* Lo que se haria seria buscar primero si
-hay algun A que le guste a Marfa y luego si ese A también le gusta a Jose. Que
+*i.Hay alga que le guste a Josey María?* Lo que se haría sería buscar primero si
+hay algún A que le guste a María y luego si ese A también le gusta a Jose. Que
 se expresa:
 
 PROLOG buscara el primer objetivo en la base, si lo encuentra marcara el lugar e
@@ -515,7 +515,7 @@ En este punto los objetivos se han satisfecho y la variable A contiene el valor
 * 1. Estructura de un Programa en Prolog
 
 1., Composición de un programa. Cláusulas. Predicados. Dominios La
-mayoria de los programas PROLOG estan organizados en 4 etapas:
+mayoría de los programas PROLOG están organizados en 4 etapas:
 
 - * Clausulas
 
@@ -542,14 +542,14 @@ programa vaya a usar un predicado particular en las cláusulas, necesita
 declararlo formalmente en la sección *"predicates".* Una típica declaración de
 predicados puede ser como esta:
 
-**nombrepredicado (argumento1, argumento2)**
+**nombre predicado (argumento1, argumento2)**
 
 Se pueden tener múltiples declaraciones de predicados, en donde el mismo
 predicado este definido más de una vez, cada vez con diferentes dominios de
 argumentos, como en:
 
-nombrepredicado (argumentol, argumento2) nombrepredicado (argumento3,
-argumento4, argumento5) podra utilizar los predicados de las dos formas. Los
+nombre predicado (argumento, argumento2) nombre predicado (argumento3,
+argumento4, argumento5) podrá utilizar los predicados de las dos formas. Los
 diferentes argumentos tampoco tienen que ser del mismo tipo de dominio.
 
 **Dominios**
@@ -558,47 +558,47 @@ El PROLOG necesita un nivel más de explicación antes de que un programa este
 completo.
 
 Necesita decirle los argumentos que van a usar los predicados. Para usar una
-mínima cantidad de memoria y hacer a los programas más faciles de depurar, el
+mínima cantidad de memoria y hacer a los programas más fáciles de depurar, el
 PROLOG tiene muchas *comprobaciones de tipo* con las que los programadores en
-Pascal estan familiarizados. Necesita conocer de antemano que *"tipo"* de cosas
+Pascal están familiarizados. Necesita conocer de antemano que *"tipo"* de cosas
 puede ser un argumento.
 
 Una vez que el PROLOG sabe que argumentos van con cada predicado, necesita saber
 con que dominio *(que tipo de datos)* trabajaran los argumentos. Los mismos
 argumentos pueden usarse con varios predicados. Por ejemplo:
 
-**Tipos de dominios estimdares Symbol**
+**Tipos de dominios estándares Symbol**
 
 Hay dos tipos de símbolos:
 
-1. Un grupo de caracteres consecutivos (letras, numeros y signos de subrayado)
- que comienzan con un caracter en minuscula. Por ejemplo:
+1. Un grupo de caracteres consecutivos (letras, números y signos de subrayado)
+ que comienzan con un carácter en minúscula. Por ejemplo:
 
 eduardo eduardo\_ coche la\_ clase\_ de\_ Eduardo
 
-1. Un grupo de caracteres consecutivos (letras y numeros) que comienzan y
+1. Un grupo de caracteres consecutivos (letras y números) que comienzan y
  terminan con una marca de dobles comillas ("")
 
 Los símbolos y cadenas parecen iguales, pero el PROLOG los interpreta
 diferentes. Los símbolos necesitan más memoria que las cadenas, pero se
 identifican más rápidamente cuando se ejecuta un programa. Por ejemplo:
 
-"Eduardo" "choque contra un arbol el coche de Eduardo"
+"Eduardo" "choque contra un árbol el coche de Eduardo"
 
 **String**
 
-Cualquier grupo de caracteres consecutivos (letras y numeros) que comienza y
+Cualquier grupo de caracteres consecutivos (letras y números) que comienza y
 termina con una marca de doble comilla ("). Esto es lo mismo que el segundo tipo
 de símbolos descrito anteriormente. Sin embargo, recuerde que los símbolos y
 cadenas no son tratados de la misma forma por Prolog. Por ejemplo:
 
 **"eduardo,r**
 
-"eduardo es un *@"a&&"?lil@"* "eduardo escucha Volcan"
+"eduardo es un *@"a&&"?lil@"* "eduardo escucha Volcán"
 
 **Integer**
 
-Cualquier número comprendido entre (e incluyendo) -32768 y 32767. El lfmite
+Cualquier número comprendido entre (e incluyendo) -32768 y 32767. El límite
 '!ie.ne impuesto porque los enteros se almacenan como valores de 16 bits. Quince
 de estos bits'representan el número y el otro bit representa el signo. Por
 ejemplo:.
@@ -609,17 +609,17 @@ ejemplo:.
 
 cualquier número real en el rango +/- 1 E-307 a +/-. 1 E+308. El formato incluye
 estas opciones: signo, número, punto decimal, fracción, E (para indicar el
-exponente), signo para el exponente, exponente. Los numeros reales pueden variar
+exponente), signo para el exponente, exponente. Los números reales pueden variar
 desde los muy sencillos hasta los muy complejos. Por ejemplo:
 
 -31615926525E-218
 
-Ambos numeros son reales, pero en muchos casos seria mejor hacer que el primero
+Ambos números son reales, pero en muchos casos sería mejor hacer que el primero
 fuera entero en vez de real. El entero necesita menos memoria)
 
 **Char**
 
-Cualquier caracter de la lista ASCII estandar, posicionado entre dos marcas de
+Cualquier carácter de la lista ASCII estándar, posicionado entre dos marcas de
 comillas sencilla (' '). Por ejemplo:
 
 **File**
@@ -629,10 +629,10 @@ simbólicos de los archivos que se usaran, Solo se puede tener una declaración 
 domino de archivo en un programa pero dicha declaración puede contener varios
 nombres de archivos simbólicos.
 
-Todos los nombres de archivos simbólicos deben comenzar con una letra minuscula.
+Todos los nombres de archivos simbólicos deben comenzar con una letra minúscula.
 Hay dos tipos de archives:
 
-1. *Archivos predefinidos:* son los archivos que estan siempre disponibles en
+1. *Archivos predefinidos:* son los archivos que están siempre disponibles en
  PROLOG. Por ejemplo:
 
 printer keyboard screen com 1
@@ -641,7 +641,7 @@ printer keyboard screen com 1
  nombres. Puede usarse cualquier nombre que no este reservado por PROLOG. Por
  ejemplo:
 
-estearchivo esearchivo el\_otro\_archivo
+este archivo ese archivo el\_otro\_archivo
 
 **Objetivos {goal)**
 
@@ -649,19 +649,19 @@ Esta es la sección que le dice al PROLOG lo que ha de encontrar o lo que desea
 que la computadora haga con la información que se le ha suministrado en las
 otras tres secciones.
 
-Normalmente un programa tendra al menos las secciones de predicados y cláusulas,
+Normalmente un programa tendrá al menos las secciones de predicados y cláusulas,
 pero no es posible tener un programa que tenga solo la sección objetivos.
 
 Un programa PROLOG puede tener dos tipos diferentes de goal: interno o externo.
 
-* Si un programa tiene un goal interno se ejecutara y automáticamente procedera
+* Si un programa tiene un goal interno se ejecutara y automáticamente procederá
  a
 
 aprobar o desaprobar el objetivo y le informara de lo obtenido.
 
 * Si en cambio el programa posee un goal externo comenzara a,ejecutarse y Juego
  esperara que se le introduzca un objetivo. Una vez que se verifica si se junta
- el objetivo,• el programa le pedira uno nuevo y así sucesivamente.
+ el objetivo,• el programa le pedirá uno nuevo y así sucesivamente.
 
 4.3.2, Ejemplos
 
@@ -690,9 +690,9 @@ veronica).
 
 ![Ejemplos PROLOG con goal interno](images/ejemplos-prolog-goal-interno.png)
 
-Este programa incluye una regla sin parametros, que imprime un cartel
+Este programa incluye una regla sin parámetros, que imprime un cartel
 
-Este programa pedira que se introduzca un goal en la ventana de diálogo para
+Este programa pedirá que se introduzca un goal en la ventana de diálogo para
 comenzar a ejecutarse. Por ejemplo:
 
 goal: observa(eduardo,tatiana) El resultado sera False Este programa posee un
@@ -703,7 +703,7 @@ Programa que incluye una regla por la cuál se define el concepto de hermana \*/
 La regla hermana (tatiana,german) determina si tatiana es hermana de german. La
 primer conjunción mujer(X), buscara una mujer con el nombre tatiana.
 
-La segunda, padres(X,M,P), devolvera las padres de tatiana si la/s conjuncionles
+La segunda, padres(X,M,P), devolverá las padres de tatiana si la/s conjuncionales
 anteriores fueron verdaderas, en este caso sera M=verónica *y* P=jorge.
 
 La siguiente buscara si existe una cláusula padres(Y,M,P) con valores Y=german,
@@ -711,7 +711,7 @@ M=verónica *y* P=jorge.
 
 Esto evaluara si las padres de tatiana son los mismos que las de german.
 
-Finalmente se evalua si las personas X e Y no son la misma.
+Finalmente se evalúa si las personas X e Y no son la misma.
 
 domains nombre = symbol predicates hombre (nombre) mujer (nombre) padres
 (nombre, nombre, nombre) hermana (nombre, nombre) clauses hombre (jorge). hombre
@@ -721,20 +721,20 @@ domains nombre = symbol predicates hombre (nombre) mujer (nombre) padres
 
 hermana (X,Y):- mujer (X), padres (X,M,P), padres (Y,M.P), X<>Y.
 
-Cada *vez* que se evalua una conjunción las conjunciones anteriores tuvieron que
+Cada *vez* que se evalúa una conjunción las conjunciones anteriores tuvieron que
 ser verdaderas. En caso contrario no se evaluaran las siguientes conjunciones.
 
-* 1. Ingenierna deD Conodmiento
+* 1. Ingeniería deD Conocimiento
 
-***La Ingenierfa clef Conocimiento es la clisciplina que trata de la forma***
+***La Ingeniería del Conocimiento es la disciplina que trata de la forma***
 *en* ***que se***
 
 ***organizan, construyen y verifican las bases de conocimiento.***
 
-***El Ingeniero de Conocimiento es el encargaclo de entrevistar a los expertos
-reales,*** ***para aprencler sabre lo que ellos saben, y pocler asf organizar la
-información obtenicla*** *('* ***para construir una Base de Conocimientos.***
-4.4,1. Organizacion de 1.una Base de Conocimientos
+***El Ingeniero de Conocimiento es el encargado de entrevistar a los expertos
+reales,*** ***para aprender sabre lo que ellos saben, y poder así organizar la
+información obtenida*** *('* ***para construir una Base de Conocimientos.***
+4.4,1. Organización de 1.una Base de Conocimientos
 
 Como creador de una base de conocimientos usted puede controlar la organización
 de la información dentro de la misma, lo que implica que *puede haber
@@ -749,27 +749,27 @@ aleatoriamente y dejar que sea usada un periodo corto mientras registra el
 número de veces que se selecciona cada objeto. Usando estas frecuencias, puede
 entonces reordenar la base de conocimientos.
 
-* Otra forma de organizar la información es ***situar cerca clef comienzo de la
- base de*** ***ponocimientos aquellos atributos que causan la pocla de la mayor
- parte clef "arbol''.*** Para bases de conocimientos grandes, de nuevo puede
+* Otra forma de organizar la información es ***situar cerca del comienzo de la
+ base de*** ***conocimientos aquellos atributos que causan la podía de la mayor
+ parte del "árbol''.*** Para bases de conocimientos grandes, de nuevo puede
  ser difícil determinar
 
 que atributos causan el mayor efecto.
 
-4.4.2. Em:ontrando ei Experto
+4.4.2. Em:encontrando ei Experto
 
 La única hipótesis que se ha hecho hasta ahora es que se puede encontrar un
-experto humano quien puede extraer facilmente el conocimiento del experto.
+experto humano quien puede extraer fácilmente el conocimiento del experto.
 Desafortunadamente, rara vez es este el caso. •
 
-* Primera, a menudo ***es clificil cleterminar quien es* o *no es un verclaclero
+* Primera, a menudo ***es difícil determinar quien es* o *no es un verdadero
  experto.***
 
 Este es un problema especialmente cuando se conoce poco sabre la materia.
 
-* Segundo, ***dos expertos cliferentes en la misma materia tienen a menudo***
+* Segundo, ***dos expertos diferentes en la misma materia tienen a menudo***
 
-***opciones contraclictorias,*** lo que hace difícil saber cuál usar.
+***opciones contradictorias,*** lo que hace difícil saber cuál usar.
 
 Cuando las opiniones de los expertos difieren, generalmente puede elegir entre 3
 opciones útiles.
@@ -779,7 +779,7 @@ opciones útiles.
  puede contener alguna información errónea. Pero la cantidad de información
  errónea no es más que la que el experto puede proporcionar.
 
-* *Una sequnda solución* es ***promecliar la información.*** Esto es, intentar
+* *Una segunda solución* es ***promediar la información.*** Esto es, intentar
  ***usar*** ***solo información que es común entre los expertos.*** Aunque esta
  opción no es tan fácil coma la primera, usted puede hacer el proceso
  ocasionalmente sin mucho problema. La desventaja es que la base de
@@ -788,40 +788,40 @@ opciones útiles.
 
 * *La solución final* es ***incluir el conocimiento de ambos expertos en el***
 
-***sistema y clejar al usuario cleciclir.*** Podrfa afiadir un factor de
-probabilidad para cada elemento. Aunque esto puede ser aceptable en alg1.rnas
-situaciones, para muchas aplicaciones, querra que el sistema experto sea la
-autoridad, y no querra forzar al usuario a decidir.
+***sistema y dejar al usuario decidir.*** Podría añadir un factor de
+probabilidad para cada elemento. Aunque esto puede ser aceptable en alg1.más
+situaciones, para muchas aplicaciones, querrá que el sistema experto sea la
+autoridad, y no querrá forzar al usuario a decidir.
 
-* Otro punto problematico es que ***la mayoria de los expertos humanos no saben
+* Otro punto problemático es que ***la mayoría de los expertos humanos no saben
  lo***
 
 ***que saben.*** Los humanos no pueden hacer un volcado de memoria de la misma
-forma que una computadora. En consecuencia, ***puecle ser clificil extraer tocla
+forma que una computadora. En consecuencia, ***puede ser difícil extraer toda
 la***
 
-* Ademas, ***algunos expertos estaran simplemente menos inclinados a perder
- tiempo*** diciendole todo lo que saben sobre la materia.
+* Ademas, ***algunos expertos estarán simplemente menos inclinados a perder
+ tiempo*** diciéndole todo lo que saben sobre la materia.
 
 4.4.3. Verificaciones de la BC
 
 Si supone que ha encontrado un experto que es cooperativo *y* que da una
-descripción completa de su materia de experto, todavfa se enfrenta con el
+descripción completa de su materia de experto, todavía se enfrenta con el
 problema de ***verificar que ha transcripto* e *introducido correctamente los
 conocimientos en la computadora.*** En esencia, esto significa que debe
 ***testear la base de conocimientos.*** La pregunta es: i.Cómo se testea una
 base de conocimientos?
 
 La búsqueda exhaustiva es imposible sobre algo que no sea un conjunto de datos
-extremadamente pequeno debido a la explosion combinatoria.
+extremadamente pequeño debido a la explosión combinatoria.
 
-Esto significa que *para la mayorfa de los sistemas expertos def mundo real no
+Esto significa que *para la mayoría de los sistemas expertos def mundo real no
 hay forma de verificar completamente que la base de conocimientos sea exacta.*
 
 * En consecuencia, la mejor solución es hacer suficiente testeo de forma que
  pueda confiar bastante en la base de conocimientos. ***Usando las técnicas de
- muestreo estadísticas, puede idear una serie de tests que produciran cualquier
- nivel de confian:ta que se desee.***
+ muestreo estadísticas, puede idear una serie de tests que producirán cualquier
+ nivel de confían:ta que se desee.***
 
 * En otro enfoque, tiene la ***autocomprobación def sistema por consistencia y
  ver que toda ia información de la base de conocimientos concuerda consigo
@@ -836,7 +836,7 @@ investigación.
 
 * 1. Definición de Sistema Experto
 
-Asumiendo el riesgo que comporta toda simplificación, podrfamos concretar en dos
+Asumiendo el riesgo que comporta toda simplificación, podríamos concretar en dos
 las *ideas claves que han conducido a la construcción de los llamados "sistemas
 expertos" y a su popularización.*
 
@@ -855,19 +855,19 @@ expertos" y a su popularización.*
 
 * Capacidad para justificar sus conclusiones.
 
-* Capacidad para explicar por que hacen sus preguntas cua.ndo estan intentando
+* Capacidad para explicar por que hacen sus preguntas cua.ndo están intentando
  resolver un problema.
 
 * Capacidad conversacional para todo ello.
 
-## Definicion funcional de sistema experto
+## Definición funcional de sistema experto
 
-4.!5.:1.. Definición f1.mcionai
+4.!5.:1.. Definición f1.nacional
 
-***Para que un sistema informatico pueda llamarse "experto",*** ha de satisfacer
+***Para que un sistema informático pueda llamarse "experto",*** ha de satisfacer
 un criterio similar al conocido *"test de Turing".* Es decir, que ***vista como
 una "caja negra", sea*** ***indistinguible por su comportamiento de un experto
-humano.*** El "comite de Sistemas Expertos" de la British Computer Society da la
+humano.*** El "comité de Sistemas Expertos" de la British Computer Society da la
 siguiente definición (cf. *("* Naylor, 1983):
 
 " se considera que un sistema experto es:
@@ -880,7 +880,7 @@ siguiente definición (cf. *("* Naylor, 1983):
 
 inteligentes...
 
-* Una caracteristica adicional deseable, y que para muchos es fundamental, es
+* Una característica adicional deseable, y que para muchos es fundamental, es
 
 que el sistema sea capaz, bajo demanda, de justificar su propia linea de
 razonamiento de una forma inmediatamente inteligible para el que lo usa".
@@ -889,38 +889,38 @@ Hayes Roth(1984a), sin dar exactamente una definición, concreta algo más, dand
 la siguiente relación de funciones que un sistema experto debe ser capaz de
 realizar:
 
-* Resolver problemas muy dificiles tan bien o mejor que un experto humano.
+* Resolver problemas muy difíciles tan bien o mejor que un experto humano.
 
-* Razonar heuristicamente, utilizando reglas que los expertos humanos consideran
+* Razonar heurísticamente, utilizando reglas que los expertos humanos consideran
 
 eficaces.
 
 * Interactuar eficazmente yen lenguaje natural con las personas.
 
-* Manipular descripciones simbóIicas y razonar sobre ellas.
+* Manipular descripciones simbólicas y razonar sobre ellas.
 
 * Funcionar con datos erróneos y reglas imprecisas.
 
-* Contemplar simultaneamente múltiples hipótesis alternativas.
+* Contemplar simultáneamente múltiples hipótesis alternativas.
 
 * Explicar por que plantean sus preguntas.
 
 * Justificar sus conclusiones.
 
-## Definicion estructural de sistema experto
+## Definición estructural de sistema experto
 
-4.!5.2. Definición estructurai
+4.!5.2. Definición estructural
 
-Habitualmente, cuando disefiamos un sistema informatico para resolver una clase
+Habitualmente, cuando diseñamos un sistema informático para resolver una clase
 de problemas, *mezclamos en el código,* de manera más.o menos desordenada, *las
 conocimientos* *concretos para abordar problemas de esa clase y las
 procedimientos que, actuando sabre esos* *conocimientos, permiten resolver cada
-problema especifico.* Ahora bien, puesto a disefiar un sistema con unas
+problema especifico.* Ahora bien, puesto a diseñar un sistema con unas
 especificaciones. funcionales que. satisfagan las características enunciadas
 anteriormente, es aconsejable ***separar claramente los dos*** ***componentes:
 conocimientos y procedimientos.*** De este modo sera más fácil conseguir.
 
-que el sistema posea dos características basicas:
+que el sistema posea dos características básicas:
 
 * Flexibilidad para adquirir y modificar sus conocimientos.
 
@@ -932,15 +932,15 @@ fases evolutivas:
 
 1. En un ***"sistema elemental", el programa contiene no solo el conocimiento y
  los procedimientos que hacen uso de el, sino también las informaciones sobre
- la forma de comúnicación con el usuario y las formas de acceder a los
+ la forma de comunicación con el usuario y las formas de acceder a los
  datos*** (Figura' 4.1). Esta concepción estructural plantea el doble.
  problema de que las posibles decisiones de modificar las estructuras de
- datos, por una parte, y el modo de comúnitación con el tJsuario, por otra,
- exigen cambios en el programa, Y *son bien conacidas las cansecuencias
+ datos, por una parte, y el modo de comunicación con el usuario, por otra,
+ exigen cambios en el programa, Y *son bien conocidas las consecuencias
  negativas que, par*
 
-*efectas laterales, pueden pravacar las "pequeflas cambias" en un pragrama
-campleja,* Usuario Programa
+*efectos laterales, pueden provocar las "pequeñas cambias" en un programa
+compleja,* Usuario Programa
 
 Archivos
 
@@ -953,7 +953,7 @@ Sistema "elemental"
 1. Las soluciones a esos problemas son bien conocidas. Por una parte, ***el
  programa se***
 
-***independiza de los formatos de comúnicación con el usuario*** gracias a la
+***independiza de los formatos de comunicación con el usuario*** gracias a la
 capa de entrada-salida del sistema operativo. Por otra, ***se independiza de las
 estructuras de datos*** ***mediante el uso de un sistema de gestión de bases de
 datos,*** como indica la Figura 4.2.
@@ -1022,9 +1022,9 @@ Por otra parte, tres son los ***tipos de personas que se relacionan con un
 sistema experto:*** El **usuario final,** que dialoga con el sistema para
 resolver problemas o para aprender.
 
-EL **experto humano,** que comúnica su conocimiento para construir el sistema.
+EL **experto humano,** que comunica su conocimiento para construir el sistema.
 
-El **ingeniero de conocimiento,** que disefia las estructuras de datos más
+El **ingeniero de conocimiento,** que diseña las estructuras de datos más
 adecuadas para la representación del conocimiento y que traduce a tales
 estructuras (bien directamente o construyendo herramientas adecuadas) los
 conocimientos del experto humano.
@@ -1033,9 +1033,9 @@ Hay que señalar que la idea de separar los conocimientos de los procedimientos
 de inferencia no es nueva: estaba ya presente en el GPS (General Problem Solver)
 de Newell et al. (1959).
 
-Lo que diferencia especificamente a la Hnea de trabajo actual sobre sistemas
-expertos de los trabajos *"clasicos"* sobre resolución automática de problemas
-son los dos puntos que señalabamos al principio:
+Lo que diferencia específicamente a la línea de trabajo actual sobre sistemas
+expertos de los trabajos *"clásicos"* sobre resolución automática de problemas
+son los dos puntos que señalábamos al principio:
 
 concentrarse en áreas muy especificas del saber y no en *"problemas generales"*
 y
@@ -1044,7 +1044,7 @@ y
  justificar sus conclusiones al usuario.
 
 Esto último obliga a considerar otro subsistema (Justificación y Explicación)
-para esas funciones, además de la interfaz para comúnicación en lenguaje próximo
+para esas funciones, además de la interfaz para comunicación en lenguaje próximo
 al natural. Puede, asimismo, construirse otra interfaz para que el experto
 humano transfiera su conocimiento o perfeccione el que ya tiene el sistema.
 Cuanto más elaborado sea este modulo menos C necesario sera la intervención del
@@ -1052,22 +1052,22 @@ ingeniero de conocimiento en esa fase de adquisición de conocimiento.
 
 Si bien las expresiones ***"Sistema Experto"*** y ***"Sistema basado en
 Conocimientos"*** suelen utilizarse indistintamente y de manera intercambiable,
-parece que la primera podrfa asociarse de manera más natural con la *"vision
-funcional",* mientras que la segunda haria referencia a la *"vision
+parece que la primera podría asociarse de manera más natural con la *"visión
+funcional",* mientras que la segunda haría referencia a la *"visión
 estructural".*
 
 ## Armazones de sistemas expertos
 
 * 1. Armazones de Sistemas Expertos
 
-En un principio, los sistemas expertos que se construian partieron de cero,
+En un principio, los sistemas expertos que se construían partieron de cero,
 generalmente en LISP. Pero tras haber creado varios sistemas de esta manera, se
-vio claro que, a menudo, *tenfan bastantes puntos en común.* En concreto, desde
+vio claro que, a menudo, *tenían bastantes puntos en común.* En concreto, desde
 que los sistemas se creaban como un conjunto de representaciones declarativas
 (reglas en su mayor parte) combinadas con un intérprete para esas declaraciones,
-*fue posible separar el intérprete y el conocimiento* *especffico def dominid,*
+*fue posible separar el intérprete y el conocimiento* *específico def dominid,*
 y as( ***se pudo crear un sistema capaz de construir nuevos*** ***sistemas
-expertos sin más que aiiadir nuevos conocimientos correspondientes al***
+expertos sin más que añadir nuevos conocimientos correspondientes al***
 ***dominio de/ nuevo problema.*** Los intérpretes resultantes se llaman
 ***armazones*** *(shells).*
 
@@ -1078,14 +1078,14 @@ En este momento hay disponibles comercialmente varios armazones que sirven como
 base para muchos de los sistemas expertos que actualmente se construyen. Estos
 armazones proporcionan mucha mayor flexibilidad a la hora de la representación
 del conocimiento y del razonamiento frente a la proporcionada por MYCIN.
-*Tfpicamente tienen coma base reglas, marcos, sistemas de mantenimiento de la
+*Típicamente tienen coma base reglas, marcos, sistemas de mantenimiento de la
 verdad y otros muchos mecanismos de razonamiento.*
 
 * Los primeros armazones de sistemas expertos proporcionaban mecanismos para la
 
 ***representación del conocimiento, el razonamiento y la explicación.***
 
-* Mas tarde, se ¿es afiadieron herramientas para la ***adquisición de/
+* Mas tarde, se ¿es añadieron herramientas para la ***adquisición de/
  conocimiento.***
 
 * Pero conforme aumenta la experiencia a la hora de utilizar estos sistemas para
@@ -1093,7 +1093,7 @@ verdad y otros muchos mecanismos de razonamiento.*
  sistemas expertos necesitaban, además, hacer algo más: necesitaban facilitar
  las cosas para ***integrar sistemas expertos con otros tipos de programas.***
 
-Los sistemas expertos no pueden actuar aislados, algo que sus hom61ogos humanos
+Los sistemas expertos no pueden actuar aislados, algo que sus homólogos humanos
 si pueden hacer. Los sistemas expertos necesitan acceder a bases de datos
 colectivas, y acceder a ellas supone ser controlados igual que lo son otros
 sistemas. A menudo son imbuidos dentro de programas de aplicación más grandes
@@ -1114,15 +1114,15 @@ La utilidad de un sistema experto se basa principalmente en la ***eficacia* y
 
 - 1. A diferencia de un experto humano que tiene que dormir, comer, descansar,
  tomarse vacaciones y otras cosas, el sistema experto esta accesible para
- usarse veinticuatro horas al dia. todos los dias del afio.
+ usarse veinticuatro horas al dia. todos los días del año.
 
 2. Ademas se pueden crear muchos sistemas expertos, mientras que el número de
  expertos humanos puede ser limitado, lo cuál hace virtualmente.imposible en
  muchas situaciones tener un experto disponible cuando se necesita.
 
 3. Ademas, a diferencia de los humanos, los expertos informatizados nunca
- mueren, llevandose el conocimiento con ellos. El conocimiento de un sistema
- experto puede copiarse y almacenarse facilmente siendo excepcional la perdida
+ mueren, llevándose el conocimiento con ellos. El conocimiento de un sistema
+ experto puede copiarse y almacenarse fácilmente siendo excepcional la perdida
  permanente del conocimiento del experto.
 
 4. Otra ventaja de un Sistema experto sobre los expertos humanos es que el
@@ -1130,19 +1130,19 @@ La utilidad de un sistema experto se basa principalmente en la ***eficacia* y
 
 informatizado esta siempre rindiendo al máximo. Cuando un experto humano se
 cansa, puede resentirse la fiabilidad del consejo del experto. Sin embargo el
-experto informatizado generara siempre la mejor opinion posible, dentro de las
+experto informatizado generara siempre la mejor opinión posible, dentro de las
 limitaciones de su conocimiento.
 
 5. Una desventaja menos importante de un sistema experto es su falta de
- personalidad. Probablemente se habra dado cuenta de que no todas las
+ personalidad. Probablemente se habrá dado cuenta de que no todas las
  personalidades son compatibles. Si no se lleva bien con un experto, puede
  tener reservas para utilizar el conocimiento de un experto. La situación
  contraria también es cierta: un experto humano a quien no le guste usted
  puede no ser capaz de proporcionarle información fiable.
 
-6. Una ventaja final de un sistema experto es que despues de tener un experto
+6. Una ventaja final de un sistema experto es que después de tener un experto
  informatizado. puede adquirir un nuevo experto simplemente copiando el
- programa de una m13quina a otra. Un humano necesita largci tiempo para
+ programa de una m13quina a otra. Un humano necesita largo tiempo para
  convertirse en un experto en ciertos campos, lo cuál hace difícil adquirir
  nuevos expertos humanos.
 
@@ -1162,7 +1162,7 @@ Ingeniero de
 
 **conocimiento**
 
-Diseno Recursos
+Diseño Recursos
 
 Escasez herramientas y especialistas
 
@@ -1180,7 +1180,7 @@ Industria y
 
 Figura 4.4
 
-![Figura 4.4: fases de insercion social de sistemas expertos](images/figura-4-4-fases-insercion-social-sistemas-expertos.png)
+![Figura 4.4: fases de inserción social de sistemas expertos](images/figura-4-4-fases-inserción-social-sistemas-expertos.png)
 
 * 1. Sistemas Expertos más conocidos
 
@@ -1195,27 +1195,27 @@ podemos distinguir cuatro etapas en la evolución histórica de los sistemas
 expertos:
 
 **Etapa de invención (1965-1970):** en la que se construyen sistemas que.hoy
-consideramos precursores, algunos de los cuales siguen utilizandose, por
+consideramos precursores, algunos de los cuales siguen utilizándose, por
 ejemplo: C **DENDRAL,** desarrollado en la Universidad de Stanford, deduce la
-estructura qufmica molecular de un compuesto organico a partir de su formula y
-de datos espectrograficos y de resonancia magnetica nuclear (Buchanan et al.,
-1969), y utilizado por varias empresas farmaceuticas americanas a través.de la
+estructura química molecular de un compuesto orgánico a partir de su formula y
+de datos espectrográficos y de resonancia magnética nuclear (Buchanan et al.,
+1969), y utilizado por varias empresas farmacéuticas americanas a través.de la
 red de información medica Sumex- Aim.
 
 **MACSYMA,** en el MIT, experto en cálculo diferencial e integral mediante
 manipulación simbólica de expresiones algebraicas (Martiny Fateman, 1972), y
 comercializado por Simbolics.
 
-**Etapa de prototipos (1970-1977):** en la que se disefian los sistemas expertos
+**Etapa de prototipos (1970-1977):** en la que se diseñan los sistemas expertos
 más conocidos actualmente, por ejemplo:
 
 **INTERNIST,** en la Universidad de Pittsburgh, para diagnóstico en medicina
 interna (Pople et al., 1975; Myers y Pople, 1977). Este sistema es, por cierto,
 una excepción, en el sentido de que abarca un campo de saber relativamente
 amplio: alrededor del 80% de la medicina interna, según sus autores. Una de las
-principales crfticas que ha recibido ha sido, precisamente, sobre la poca
-profundidad de sus conocimientos medicos; por ello, se han desarrollado
-versiónes posteriores (la última se llama **CADUCEUS,** cf. Myers et al., 1982)
+principales críticas que ha recibido ha sido, precisamente, sobre la poca
+profundidad de sus conocimientos médicos; por ello, se han desarrollado
+versiones posteriores (la última se llama **CADUCEUS,** cf. Myers et al., 1982)
 que trata de incluir posibilidades de razonamiento basadas en conocimientos
 anatómicos y fisiológicos.
 
@@ -1223,7 +1223,7 @@ anatómicos y fisiológicos.
 enfermedades infecciosas (Shortliffe, 1976).
 
 **CASNET,** en la Universidad de Rutgers, para diagnóstico y tratamiento en
-oftalmologfa (Weiss et al., 1978).
+oftalmología (Weiss et al., 1978).
 
 **PROSPECTOR,** en el Stanford Research Institute, para exploración geológica
 (Duda et al., 1976). Especialmente conocido desde que con su ayuda se descubrió
@@ -1235,22 +1235,22 @@ representación del conocimiento en los prototipos se van asentando, y aparecen
 los "sistemas esenciales" o "armazones", con los que se desarrollan rápidamente
 otros muchos sistemas expertos.
 
-*Un sistema esencial (también llamado "sistema vacio" o "shell") viene a ser el
+*Un sistema esencial (también llamado "sistema vacío" o "shell") viene a ser el
 resultado de "eliminar" el conocimiento de la base de conocimiento v conservar
-todos los demas módulos.* c;; Es asf una herramienta potente para construir
+todos los demás módulos.* c;; Es así una herramienta potente para construir
 sistemas expertos en otras áreas del saber distintas de la original, si bien
 presenta la eliminación de la representación del conocimiento ha de hacerse
 necesariamente en estructuras prefijadas.
 
 Asf, con **EMYCIN** (Esencial MYCIN, cf. Van Melle, 1980), se construyeron
 **PUFF** (para enfermedades pulmonares, ef. Kuntz et al., 1978), **CLOT(para**
-problemas de coagulacion cf. Bennet y Goldman, 1980), **HEAMED** (para
-psicofarmacologfa, cf. Heiser y Brooks, 1978),etc. Se dotó además, a EMYCIN de
-módulos de uso general para comúnicación, **BAOBAB** (Bonnet 1984), para
+problemas de coagulación cf. Bennet y Goldman, 1980), **HEAMED** (para
+psicofarmacología, cf. Heiser y Brooks, 1978),etc. Se dotó además, a EMYCIN de
+módulos de uso general para comunicación, **BAOBAB** (Bonnet 1984), para
 adquisición y modificación del conocimiento, **TEIRESIAS** (Davis, 1979) para
-explicación y funciones de tutorfa, **GUIDON** (Clancey, 1979). Sin embargo
-otros sistemas disenados en Stanford no pudieron hacer uso de EMYCIN debido a
-que el conocimiento exigfa la consideración de atributos con valores cambiantes
+explicación y funciones de tutoría, **GUIDON** (Clancey, 1979). Sin embargo
+otros sistemas diseñados en Stanford no pudieron hacer uso de EMYCIN debido a
+que el conocimiento exigía la consideración de atributos con valores cambiantes
 en el tiempo, **VM** (pc¥ra. cuidados intensivos, cf. Shortliffe et al., 1981).
 
 De manera similar, de PROSPECTOR se derivo **KAS** (Knowledge Acquisition
@@ -1264,15 +1264,15 @@ Teknowledge.
 En esta etapa diversas empresas establecidas (Fairchild, Xerox, Texas, etc.) se
 interesan por este nuevo campo y se crean otras nuevas dedicadas exclusivamente
 a el (Teknowledge, Syntelligence, Cognitive Systems, etc.) y en la que aparecen
-los primeros sistemas con interes comercial. (En particular, IBM, que anos atras
-habfa practicamente abandonado la inteligencia artificial, ahora adquiere y
+los primeros sistemas con interés comercial. (En particular, IBM, que anos atrás
+había prácticamente abandonado la inteligencia artificial, ahora adquiere y
 comercializa su primer producto: Intellec).
 
-Dos ejemplos bien conocidos son **R1** (luego llamado XCON), disenado en Digital
+Dos ejemplos bien conocidos son **R1** (luego llamado XCON), diseñado en Digital
 Equipment Corporation para configurar sistemas con PDP y VAX (con el que la
 propia empresa estima que ahorra unos diez millones de dolares anuales y
 **Drilling Advisor,** desarrollado por Teknowledge a través de su filial
-francesa, Framentec, por encargo de Elf-Aquitaine para detectar averfas en los
+francesa, Framentec, por encargo de Elf-Aquitaine para detectar averías en los
 equipos de sondeo. geológico.
 
 Y es también en 1981 cuando se presenta el conocido proyecto japones de la
@@ -1280,7 +1280,7 @@ Y es también en 1981 cuando se presenta el conocido proyecto japones de la
 Comercio Internacional) y 8 fabricantes, al que siguen otras iniciativas en los
 EEUU y en Europa. En todos ellos se concede un papel importante a la
 investigación sobre sistemas basados en conocimiento paralelamente a las
-tecnologfas de base y las arquitecturas.
+tecnologías de base y las arquitecturas.
 
 | --- | --- | --- |
 
