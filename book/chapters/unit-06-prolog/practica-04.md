@@ -16,23 +16,19 @@ PROLOG - Base de datos y Functores
    vez, deberá permitir ingresar el nombre de una de ellas e informar de todos
    sus gastos.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 1 acá.
-```
-
-### Consultas de prueba
-
-```prolog
 gastos_de(maria, Concepto, Monto)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 gasto(maria, luz, 1000).
 gasto(maria, alquiler, 50000).
 gasto(juan, agua, 2500).
@@ -47,15 +43,15 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 gastos_de(maria, Concepto, Monto)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 gasto(maria, luz, 1000).
 gasto(maria, alquiler, 50000).
 gasto(juan, agua, 2500).
@@ -72,23 +68,19 @@ gastos_de(maria, Concepto, Monto)?
    a quién corresponde, de lo contrario deberá solicitar ingresar un nombre y
    registrar entonces la persona en la BBDD.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 2 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+consultar_o_registrar(1, Nombre)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 :- dynamic personas/2.
 personas(1, ana).
 personas(2, luis).
@@ -106,15 +98,15 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+consultar_o_registrar(1, Nombre)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 :- dynamic personas/2.
 personas(1, ana).
 personas(2, luis).
@@ -123,7 +115,7 @@ consultar_o_registrar(Codigo, Nombre) :-
     \+ personas(Codigo, _),
     assertz(personas(Codigo, Nombre)).
 
-% Ejecutá consultas propias sobre la solución.
+consultar_o_registrar(1, Nombre)?
 ```
 
 ## Ejercicio 3
@@ -140,23 +132,19 @@ de datos. El programa, deberá permitir: a. Ingresar el nombre de un animal e
 informar de todos sus hábitos. b. Ingresar un hábito e informar todos los
 animales que lo tienen.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 3 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+habitos_de(leon, Habito)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 habito(leon, alimentacion(carne, mucha)).
 habito(leon, suenio(18)).
 habito(jirafa, alimentacion(hojas, mucha)).
@@ -172,22 +160,22 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+habitos_de(leon, Habito)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 habito(leon, alimentacion(carne, mucha)).
 habito(leon, suenio(18)).
 habito(jirafa, alimentacion(hojas, mucha)).
 habitos_de(Animal, Habito) :- habito(Animal, Habito).
 animal_con_habito(Animal, Habito) :- habito(Animal, Habito).
 
-% Ejecutá consultas propias sobre la solución.
+habitos_de(leon, Habito)?
 ```
 
 ## Ejercicio 4
@@ -201,23 +189,19 @@ dicho gasto. b. Informar las personas que tienen un consumo superior a los $150
 en un cierto gasto (dato de entrada). c. Calcular gasto promedio para una
 determinada persona (dato de entrada).
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 4 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+persona_con_gasto(maria, super)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 gasto(maria, super(coto, 500)).
 gasto(omar, tel(fijo, telecom, 150)).
 gasto(maria, tel(movil, personal, 100)).
@@ -242,15 +226,15 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+persona_con_gasto(maria, super)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 gasto(maria, super(coto, 500)).
 gasto(omar, tel(fijo, telecom, 150)).
 gasto(maria, tel(movil, personal, 100)).
@@ -266,7 +250,7 @@ promedio_persona(Persona, Promedio) :-
     sum_list(Montos, Suma), length(Montos, Cantidad), Cantidad > 0,
     Promedio is Suma / Cantidad.
 
-% Ejecutá consultas propias sobre la solución.
+persona_con_gasto(maria, super)?
 ```
 
 ## Ejercicio 5
@@ -283,23 +267,20 @@ promedio_persona(Persona, Promedio) :-
 La base datos debe guardarse en disco. Calcular además el precio promedio de los
 libros de un determinado autor.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 5 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+alta_libro(1, prolog, aquili, utn, 100)?
+consulta_libro(1, Titulo, Autor, Editorial, Precio)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 :- dynamic libro/5.
 alta_libro(Nro, Titulo, Autor, Editorial, Precio) :-
     assertz(libro(Nro, Titulo, Autor, Editorial, Precio)).
@@ -320,15 +301,16 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+alta_libro(1, prolog, aquili, utn, 100)?
+consulta_libro(1, Titulo, Autor, Editorial, Precio)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 :- dynamic libro/5.
 alta_libro(Nro, Titulo, Autor, Editorial, Precio) :-
     assertz(libro(Nro, Titulo, Autor, Editorial, Precio)).
@@ -340,7 +322,8 @@ promedio_autor(Autor, Promedio) :-
     sum_list(Precios, Suma), length(Precios, Cantidad), Cantidad > 0,
     Promedio is Suma / Cantidad.
 
-% Ejecutá consultas propias sobre la solución.
+alta_libro(1, prolog, aquili, utn, 100)?
+consulta_libro(1, Titulo, Autor, Editorial, Precio)?
 ```
 
 ## Ejercicio 6
@@ -356,23 +339,19 @@ promedio_autor(Autor, Promedio) :-
   para un ingrediente en particular y una cierta cantidad del mismo, determinar
   aquellas recetas que llevan ese ingrediente y superan dicha cantidad.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 6 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+recetas_con_ingredientes(Codigo, Nombre, tomate, lechuga)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 receta(1, ensalada, tomate, 2).
 receta(1, ensalada, lechuga, 1).
 receta(2, salsa, tomate, 5).
@@ -393,25 +372,10 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+recetas_con_ingredientes(Codigo, Nombre, tomate, lechuga)?
 ```
 
 ::::
-
-```{code-cell}
-:tags: [remove-cell]
-
-receta(1, ensalada, tomate, 2).
-receta(1, ensalada, lechuga, 1).
-receta(2, salsa, tomate, 5).
-recetas_con_ingredientes(Codigo, Nombre, I1, I2) :-
-    receta(Codigo, Nombre, I1, _),
-    receta(Codigo, Nombre, I2, _),
-    I1 \= I2.
-recetas_con_cantidad(Codigo, Nombre, Ingrediente, Minimo) :-
-    receta(Codigo, Nombre, Ingrediente, Cantidad),
-    Cantidad > Minimo.
-
-% Ejecutá consultas propias sobre la solución.
-```

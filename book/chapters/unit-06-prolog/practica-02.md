@@ -15,23 +15,19 @@ PROLOG - Listas
 
 1. Ingresar una lista de elementos y mostrarla por pantalla.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 1 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+mostrar([a, b, c])?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 mostrar(Lista) :- write(Lista).
 ```
 
@@ -43,41 +39,37 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+mostrar([a, b, c])?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 mostrar(Lista) :- write(Lista).
 
-% Ejecutá consultas propias sobre la solución.
+mostrar([a, b, c])?
 ```
 
 ## Ejercicio 2
 
 2. Ingresar una lista de elementos y mostrar su cabeza y su cola.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 2 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+cabeza_cola([a, b, c], Cabeza, Cola)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 cabeza_cola([Cabeza|Cola], Cabeza, Cola).
 ```
 
@@ -89,41 +81,37 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+cabeza_cola([a, b, c], Cabeza, Cola)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 cabeza_cola([Cabeza|Cola], Cabeza, Cola).
 
-% Ejecutá consultas propias sobre la solución.
+cabeza_cola([a, b, c], Cabeza, Cola)?
 ```
 
 ## Ejercicio 3
 
 3. Ingresar una lista de elementos y mostrar su primer elemento.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 3 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+primer_elemento([a, b, c], Primero)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 primer_elemento([Primero|_], Primero).
 ```
 
@@ -135,41 +123,37 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+primer_elemento([a, b, c], Primero)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 primer_elemento([Primero|_], Primero).
 
-% Ejecutá consultas propias sobre la solución.
+primer_elemento([a, b, c], Primero)?
 ```
 
 ## Ejercicio 4
 
 4. Ingresar una lista de elementos y mostrar sus dos primeros elementos.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 4 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+dos_primeros([a, b, c], Primero, Segundo)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 dos_primeros([Primero, Segundo|_], Primero, Segundo).
 ```
 
@@ -181,41 +165,37 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+dos_primeros([a, b, c], Primero, Segundo)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 dos_primeros([Primero, Segundo|_], Primero, Segundo).
 
-% Ejecutá consultas propias sobre la solución.
+dos_primeros([a, b, c], Primero, Segundo)?
 ```
 
 ## Ejercicio 5
 
 5. Ingresar una lista de elementos y mostrar su último elemento.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 5 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+ultimo([a, b, c], Ultimo)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 ultimo([Ultimo], Ultimo).
 ultimo([_|Cola], Ultimo) :- ultimo(Cola, Ultimo).
 ```
@@ -228,19 +208,19 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+ultimo([a, b, c], Ultimo)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 ultimo([Ultimo], Ultimo).
 ultimo([_|Cola], Ultimo) :- ultimo(Cola, Ultimo).
 
-% Ejecutá consultas propias sobre la solución.
+ultimo([a, b, c], Ultimo)?
 ```
 
 ## Ejercicio 6
@@ -248,23 +228,19 @@ ultimo([_|Cola], Ultimo) :- ultimo(Cola, Ultimo).
 6. Ingresar una lista de números enteros y calcular la diferencia entre el
    primero y el último de ellos.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 6 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+diferencia_primero_ultimo([10, 2, 4], Diferencia)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 diferencia_primero_ultimo([Primero|Cola], Diferencia) :-
     ultimo(Cola, Ultimo),
     Diferencia is Primero - Ultimo.
@@ -278,43 +254,39 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+diferencia_primero_ultimo([10, 2, 4], Diferencia)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 diferencia_primero_ultimo([Primero|Cola], Diferencia) :-
     ultimo(Cola, Ultimo),
     Diferencia is Primero - Ultimo.
 
-% Ejecutá consultas propias sobre la solución.
+diferencia_primero_ultimo([10, 2, 4], Diferencia)?
 ```
 
 ## Ejercicio 7
 
 7. Ingresar una lista de elementos e informar cuántos elementos tiene.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 7 acá.
-```
-
-### Consultas de prueba
-
-```prolog
 cantidad([a, b, c], Cantidad)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 cantidad([], 0).
 cantidad([_|Cola], N) :- cantidad(Cola, N1), N is N1 + 1.
 ```
@@ -327,15 +299,15 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 cantidad([a, b, c], Cantidad)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 cantidad([], 0).
 cantidad([_|Cola], N) :- cantidad(Cola, N1), N is N1 + 1.
 
@@ -347,23 +319,19 @@ cantidad([a, b, c], Cantidad)?
 8. Ingresar una lista de números enteros e informar cuánto da la sumatoria de
    ellos.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 8 acá.
-```
-
-### Consultas de prueba
-
-```prolog
 sumatoria([1, 2, 3], Suma)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 sumatoria([], 0).
 sumatoria([Cabeza|Cola], Suma) :-
     sumatoria(Cola, Parcial),
@@ -378,15 +346,15 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 sumatoria([1, 2, 3], Suma)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 sumatoria([], 0).
 sumatoria([Cabeza|Cola], Suma) :-
     sumatoria(Cola, Parcial),
@@ -401,23 +369,19 @@ sumatoria([1, 2, 3], Suma)?
    formato del predicado promedio(L,S,C) donde L es la lista ingresada, S la
    sumatoria y C el contador de los elementos de la lista.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 9 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+promedio([1, 2, 3], Suma, Cantidad)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 promedio(Lista, Suma, Cantidad) :-
     sumatoria(Lista, Suma),
     cantidad(Lista, Cantidad),
@@ -432,21 +396,21 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+promedio([1, 2, 3], Suma, Cantidad)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 promedio(Lista, Suma, Cantidad) :-
     sumatoria(Lista, Suma),
     cantidad(Lista, Cantidad),
     Cantidad > 0.
 
-% Ejecutá consultas propias sobre la solución.
+promedio([1, 2, 3], Suma, Cantidad)?
 ```
 
 ## Ejercicio 10
@@ -454,23 +418,19 @@ promedio(Lista, Suma, Cantidad) :-
 10. Ingresar una lista y un elemento e informar si ese elemento está en la
     lista.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 10 acá.
-```
-
-### Consultas de prueba
-
-```prolog
 pertenece(b, [a, b, c])?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 pertenece(Elemento, [Elemento|_]).
 pertenece(Elemento, [_|Cola]) :- pertenece(Elemento, Cola).
 ```
@@ -483,15 +443,15 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 pertenece(b, [a, b, c])?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 pertenece(Elemento, [Elemento|_]).
 pertenece(Elemento, [_|Cola]) :- pertenece(Elemento, Cola).
 
@@ -503,23 +463,19 @@ pertenece(b, [a, b, c])?
 11. Ingresar una lista de enteros e informar cuál es el mayor de todos los
     números.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 11 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+mayor([3, 8, 2], Mayor)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 mayor([X], X).
 mayor([Cabeza|Cola], Mayor) :-
     mayor(Cola, MayorCola),
@@ -534,21 +490,21 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+mayor([3, 8, 2], Mayor)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 mayor([X], X).
 mayor([Cabeza|Cola], Mayor) :-
     mayor(Cola, MayorCola),
     (Cabeza > MayorCola -> Mayor = Cabeza ; Mayor = MayorCola).
 
-% Ejecutá consultas propias sobre la solución.
+mayor([3, 8, 2], Mayor)?
 ```
 
 ## Ejercicio 12
@@ -556,23 +512,19 @@ mayor([Cabeza|Cola], Mayor) :-
 12. Ingresar una lista de enteros e informar cuál es el menor de todos los
     números.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 12 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+menor([3, 8, 2], Menor)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 menor([X], X).
 menor([Cabeza|Cola], Menor) :-
     menor(Cola, MenorCola),
@@ -587,21 +539,21 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+menor([3, 8, 2], Menor)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 menor([X], X).
 menor([Cabeza|Cola], Menor) :-
     menor(Cola, MenorCola),
     (Cabeza < MenorCola -> Menor = Cabeza ; Menor = MenorCola).
 
-% Ejecutá consultas propias sobre la solución.
+menor([3, 8, 2], Menor)?
 ```
 
 ## Ejercicio 13
@@ -609,23 +561,19 @@ menor([Cabeza|Cola], Menor) :-
 13. Ingresar dos listas de elementos, concatenarlas (los elementos deben ser
     asignados de a uno en la lista de salida) y mostrarlas en una tercera.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 13 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+concatenar([a, b], [c, d], Resultado)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 concatenar([], Lista, Lista).
 concatenar([Cabeza|Cola], Lista, [Cabeza|Resultado]) :-
     concatenar(Cola, Lista, Resultado).
@@ -639,43 +587,39 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+concatenar([a, b], [c, d], Resultado)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 concatenar([], Lista, Lista).
 concatenar([Cabeza|Cola], Lista, [Cabeza|Resultado]) :-
     concatenar(Cola, Lista, Resultado).
 
-% Ejecutá consultas propias sobre la solución.
+concatenar([a, b], [c, d], Resultado)?
 ```
 
 ## Ejercicio 14
 
 14. Ingresar una lista y determinar el primer elemento que se repite.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 14 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+primer_repetido([a, b, c, b], Repetido)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 primer_repetido([Cabeza|Cola], Cabeza) :- pertenece(Cabeza, Cola).
 primer_repetido([_|Cola], Repetido) :- primer_repetido(Cola, Repetido).
 ```
@@ -688,19 +632,19 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+primer_repetido([a, b, c, b], Repetido)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 primer_repetido([Cabeza|Cola], Cabeza) :- pertenece(Cabeza, Cola).
 primer_repetido([_|Cola], Repetido) :- primer_repetido(Cola, Repetido).
 
-% Ejecutá consultas propias sobre la solución.
+primer_repetido([a, b, c, b], Repetido)?
 ```
 
 ## Ejercicio 15
@@ -708,23 +652,19 @@ primer_repetido([_|Cola], Repetido) :- primer_repetido(Cola, Repetido).
 15. Ingresar una lista y determinar a través de una segunda lista todos los
     elementos que se repiten.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 15 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+repetidos([a, b, c, b, a], Resultado)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 repetidos([], []).
 repetidos([Cabeza|Cola], [Cabeza|Resultado]) :-
     pertenece(Cabeza, Cola),
@@ -742,15 +682,15 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+repetidos([a, b, c, b, a], Resultado)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 repetidos([], []).
 repetidos([Cabeza|Cola], [Cabeza|Resultado]) :-
     pertenece(Cabeza, Cola),
@@ -759,7 +699,7 @@ repetidos([Cabeza|Cola], Resultado) :-
     \+ pertenece(Cabeza, Cola),
     repetidos(Cola, Resultado).
 
-% Ejecutá consultas propias sobre la solución.
+repetidos([a, b, c, b, a], Resultado)?
 ```
 
 ## Ejercicio 16
@@ -767,23 +707,19 @@ repetidos([Cabeza|Cola], Resultado) :-
 16. Ingresar una lista y un elemento e informar cuántas veces está ese elemento
     en la lista.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 16 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+apariciones(a, [a, b, a, c], Cantidad)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 apariciones(_, [], 0).
 apariciones(Elemento, [Elemento|Cola], Cantidad) :-
     apariciones(Elemento, Cola, Parcial),
@@ -801,15 +737,15 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+apariciones(a, [a, b, a, c], Cantidad)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 apariciones(_, [], 0).
 apariciones(Elemento, [Elemento|Cola], Cantidad) :-
     apariciones(Elemento, Cola, Parcial),
@@ -818,7 +754,7 @@ apariciones(Elemento, [Otro|Cola], Cantidad) :-
     Elemento \= Otro,
     apariciones(Elemento, Cola, Cantidad).
 
-% Ejecutá consultas propias sobre la solución.
+apariciones(a, [a, b, a, c], Cantidad)?
 ```
 
 ## Ejercicio 17
@@ -828,23 +764,19 @@ apariciones(Elemento, [Otro|Cola], Cantidad) :-
     verificar si una persona visitó una determinada ciudad (datos de entrada:
     nombre persona y ciudad).
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 17 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+visito(ana, rosario)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 persona(ana, [rosario, cordoba, mendoza]).
 persona(luis, [salta, rosario]).
 visito(Persona, Ciudad) :-
@@ -860,20 +792,10 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+visito(ana, rosario)?
 ```
 
 ::::
-
-```{code-cell}
-:tags: [remove-cell]
-
-persona(ana, [rosario, cordoba, mendoza]).
-persona(luis, [salta, rosario]).
-visito(Persona, Ciudad) :-
-    persona(Persona, Ciudades),
-    pertenece(Ciudad, Ciudades).
-
-% Ejecutá consultas propias sobre la solución.
-```

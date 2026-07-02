@@ -126,8 +126,16 @@ project:
           title: Guía de preparación para examen
     - title: "Unidad 6: Prolog"
       children:
-        - file: chapters/unit-06-prolog/unit-06.md
-          title: "Unidad 6: Prolog"
+        - file: chapters/unit-06-prolog/01-capitulo-1-introduccion.md
+          title: "Capitulo 1. Introducción"
+        - file: chapters/unit-06-prolog/02-capitulo-2-relacion-con-la-logica.md
+          title: "Capitulo 2. Relación con la Lógica"
+        - file: chapters/unit-06-prolog/03-capitulo-3-manipulacion-de-datos.md
+          title: "Capitulo 3. Manipulación de datos"
+        - file: chapters/unit-06-prolog/04-capitulo-4-estructuras-de-datos.md
+          title: "Capitulo 4. Estructuras de datos"
+        - file: chapters/unit-06-prolog/05-capitulo-5-base-de-datos-y-functores.md
+          title: "Capitulo 5. Base de datos y Functores"
         - file: chapters/unit-06-prolog/practica-01.md
           title: Práctica 1
         - file: chapters/unit-06-prolog/practica-02.md
@@ -150,7 +158,7 @@ site:
     - title: Inicio
       url: /chapters/welcome
     - title: Prolog
-      url: /chapters/unit-06-prolog/unit-06
+      url: /chapters/unit-06-prolog/01-capitulo-1-introduccion
 
   options:
     folders: true

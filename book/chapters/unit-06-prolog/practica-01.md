@@ -19,24 +19,20 @@ Ejecutar las siguientes preguntas al Prolog y analizar la respuesta dada en cada
 caso. a. observa(maria,flavio). b. observa(maria,Quien). c. observa(maria,_). d.
 observa(Quien,flavio). e. observa(Quien1,Quien2). f. observa(_,\_).
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 1 acá.
-```
-
-### Consultas de prueba
-
-```prolog
 observa(maria, flavio)?
 observa(maria, Quien)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 observa(maria, omar).
 observa(laura, omar).
 observa(maria, flavio).
@@ -52,7 +48,9 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 observa(maria, flavio)?
 observa(maria, Quien)?
 ```
@@ -60,8 +58,6 @@ observa(maria, Quien)?
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 observa(maria, omar).
 observa(laura, omar).
 observa(maria, flavio).
@@ -80,23 +76,19 @@ observa(maria, Quien)?
    conoce(franco,italiano). conoce(marco,ingles). conoce(omar,ingles).
    conoce(maria,frances).
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 2 acá.
-```
-
-### Consultas de prueba
-
-```prolog
 habla_ingles_y_frances(Quien)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 conoce(franco, ingles).
 conoce(renzo, ingles).
 conoce(franco, frances).
@@ -119,15 +111,15 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 habla_ingles_y_frances(Quien)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 conoce(franco, ingles).
 conoce(renzo, ingles).
 conoce(franco, frances).
@@ -160,24 +152,20 @@ El programa debe ser capaz de responder a las siguientes consultas: a) ¿Son
 rivales Argentina y Brasil? b) ¿Cuáles son los rivales de un determinado equipo
 (por ejemplo Holanda)?
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 3 acá.
-```
-
-### Consultas de prueba
-
-```prolog
 rivales(argentina, brasil)?
 rivales(holanda, Rival)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 grupo(1, brasil).
 grupo(1, espania).
 grupo(1, jamaica).
@@ -201,7 +189,9 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 rivales(argentina, brasil)?
 rivales(holanda, Rival)?
 ```
@@ -209,8 +199,6 @@ rivales(holanda, Rival)?
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 grupo(1, brasil).
 grupo(1, espania).
 grupo(1, jamaica).
@@ -245,23 +233,19 @@ siguientes reglas:
   segunda instancia, valiéndose de alguna otra regla que pudieron haber definido
   previamente.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 4 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+nieto(lucia, maria)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 hombre(juan).
 hombre(pedro).
 hombre(carlos).
@@ -299,15 +283,15 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+nieto(lucia, maria)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 hombre(juan).
 hombre(pedro).
 hombre(carlos).
@@ -336,7 +320,7 @@ tia(A, B) :-
     hermana(A, Madre),
     padres(B, Madre, _).
 
-% Ejecutá consultas propias sobre la solución.
+nieto(lucia, maria)?
 ```
 
 ## Ejercicio 5
@@ -351,23 +335,19 @@ deuda(axk798,1000).
 Escriba una regla que permita determinar si una persona (dato entrada) tiene
 algún auto con deuda.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 5 acá.
-```
-
-### Consultas de prueba
-
-```prolog
 tiene_auto_con_deuda(pedro)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 auto(hti687, pedro).
 auto(jug144, juan).
 auto(gqm758, pedro).
@@ -392,15 +372,15 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 tiene_auto_con_deuda(pedro)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 auto(hti687, pedro).
 auto(jug144, juan).
 auto(gqm758, pedro).
@@ -440,23 +420,19 @@ Se dispone de la siguiente información:
 El programa debe responder si en una ciudad (dato de entrada), se puede o no
 formar una banda.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 6 acá.
-```
-
-### Consultas de prueba
-
-```prolog
 puede_formar_banda(rosario)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 guitarrista(carolina, rosario).
 guitarrista(jose, rosario).
 guitarrista(miguel, funes).
@@ -481,15 +457,15 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 puede_formar_banda(rosario)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 guitarrista(carolina, rosario).
 guitarrista(jose, rosario).
 guitarrista(miguel, funes).
@@ -514,23 +490,19 @@ puede_formar_banda(rosario)?
    matemáticas básicas (suma, resta, multiplicación y división) entre dos
    valores numéricos, informando el resultado.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 7 acá.
-```
-
-### Consultas de prueba
-
-```prolog
 calcular(suma, 2, 3, Resultado)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 calcular(suma, A, B, Resultado) :- Resultado is A + B.
 calcular(resta, A, B, Resultado) :- Resultado is A - B.
 calcular(multiplicacion, A, B, Resultado) :- Resultado is A * B.
@@ -547,15 +519,15 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 calcular(suma, 2, 3, Resultado)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 calcular(suma, A, B, Resultado) :- Resultado is A + B.
 calcular(resta, A, B, Resultado) :- Resultado is A - B.
 calcular(multiplicacion, A, B, Resultado) :- Resultado is A * B.
@@ -585,24 +557,20 @@ b. Ingresar una fecha (día y mes) y me informe de qué signo soy. Ejemplo:
 
 ## Recursividad
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 8 acá.
-```
-
-### Consultas de prueba
-
-```prolog
 signo(3, 5, tauro)?
 signo(16, 12, Signo)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 horoscopo(aries, 21, 3, 20, 4).
 horoscopo(tauro, 21, 4, 21, 5).
 horoscopo(geminis, 22, 5, 21, 6).
@@ -640,7 +608,9 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 signo(3, 5, tauro)?
 signo(16, 12, Signo)?
 ```
@@ -648,8 +618,6 @@ signo(16, 12, Signo)?
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 horoscopo(aries, 21, 3, 20, 4).
 horoscopo(tauro, 21, 4, 21, 5).
 horoscopo(geminis, 22, 5, 21, 6).
@@ -690,23 +658,19 @@ signo(16, 12, Signo)?
 Donde hijo(X,Y) indica que X es hijo de Y. Definir la regla descendiente(A,B),
 la cual permite determinar si A es descendiente de B.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 9 acá.
-```
-
-### Consultas de prueba
-
-```prolog
 descendiente(juan, carlos)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 hijo(juan, miguel).
 hijo(jose, miguel).
 hijo(miguel, roberto).
@@ -727,15 +691,15 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 descendiente(juan, carlos)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 hijo(juan, miguel).
 hijo(jose, miguel).
 hijo(miguel, roberto).
@@ -759,23 +723,19 @@ descendiente(juan, carlos)?
 Definir la regla requiere_de(X,Y), la cual permite saber si para la ejecución de
 la tarea Y se requiere tener finalizada la tarea X.
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 10 acá.
-```
-
-### Consultas de prueba
-
-```prolog
-% Ejecutá consultas propias sobre la solución.
+requiere_de(a, d)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 requiere_de(a, b).
 requiere_de(b, c).
 requiere_de(c, d).
@@ -800,15 +760,15 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
-% Ejecutá consultas propias sobre la solución.
+```{code-cell}
+:tags: [skip-execution]
+
+requiere_de(a, d)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 requiere_de(a, b).
 requiere_de(b, c).
 requiere_de(c, d).
@@ -824,7 +784,7 @@ requiere_de_directa(b, c).
 requiere_de_directa(c, d).
 requiere_de_directa(a, e).
 
-% Ejecutá consultas propias sobre la solución.
+requiere_de(a, d)?
 ```
 
 ## Ejercicio 11
@@ -835,23 +795,19 @@ requiere_de_directa(a, e).
 - N es el número ingresado (argumento de entrada).
 - Fact es el resultado calculado (argumento de salida).
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 11 acá.
-```
-
-### Consultas de prueba
-
-```prolog
 factorial(5, Resultado)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 factorial(0, 1).
 factorial(N, Fact) :-
     N > 0,
@@ -868,15 +824,15 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 factorial(5, Resultado)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 factorial(0, 1).
 factorial(N, Fact) :-
     N > 0,
@@ -897,23 +853,19 @@ factorial(5, Resultado)?
 - N es el número ingresado (argumento de entrada).
 - Sum es el resultado calculado (argumento de salida).
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 12 acá.
-```
-
-### Consultas de prueba
-
-```prolog
 suma(5, Resultado)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 suma(0, 0).
 suma(N, Sum) :-
     N > 0,
@@ -930,15 +882,15 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 suma(5, Resultado)?
 ```
 
 ::::
 
 ```{code-cell}
-:tags: [remove-cell]
-
 suma(0, 0).
 suma(N, Sum) :-
     N > 0,
@@ -959,23 +911,19 @@ suma(5, Resultado)?
 - SumPares es uno de los resultados calculados (argumento de salida).
 - SumImpares es uno de los resultados calculados (argumento de salida).
 
-### Tu solución
+### Consultas de prueba
 
 ```{code-cell}
 :tags: [skip-execution]
 
-% Escribí y ejecutá tu solución para el ejercicio 13 acá.
-```
-
-### Consultas de prueba
-
-```prolog
 suma(5, Pares, Impares)?
 ```
 
 ::::{dropdown} Solución
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 suma(0, 0, 0).
 suma(N, SumPares, SumImpares) :-
     N > 0,
@@ -998,27 +946,10 @@ Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
 unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
 respaldo.
 
-```prolog
+```{code-cell}
+:tags: [skip-execution]
+
 suma(5, Pares, Impares)?
 ```
 
 ::::
-
-```{code-cell}
-:tags: [remove-cell]
-
-suma(0, 0, 0).
-suma(N, SumPares, SumImpares) :-
-    N > 0,
-    N1 is N - 1,
-    suma(N1, Pares1, Impares1),
-    (0 is N mod 2 ->
-        SumPares is Pares1 + N,
-        SumImpares is Impares1
-    ;
-        SumPares is Pares1,
-        SumImpares is Impares1 + N
-    ).
-
-suma(5, Pares, Impares)?
-```
