@@ -1,0 +1,38 @@
+paciente(123, 'franco', 'uom').
+paciente(1234, 'nicolas', 'uom').
+paciente(12345, 'raquel', 'pami').
+paciente(123456, 'jorge', 'pami').
+paciente(654322, 'antonela', 'osde').
+paciente(656565, 'rosa', 'osde').
+paciente(646464, 'ana', 'osde').
+paciente(636363, 'simon', 'avalian').
+paciente(626262, 'mateo', 'avalian').
+paciente(616161, 'jimena', 'avalian').
+
+profesional(321, 'juan', 'odontologia', 'uom').
+profesional(4321, 'pedro', 'pediatria', 'uom').
+profesional(54321, 'esteban', 'traumatologia', 'pami').
+profesional(654321, 'joaquin', 'cardiologia', 'pami').
+profesional(111, 'lujan', 'oculista', 'osde').
+profesional(222, 'andres', 'neurologia', 'osde').
+profesional(333, 'lorena', 'kinesiolia', 'avalian').
+profesional(444, 'helena', 'psicologia', 'avalian').
+
+turno(1234, 321, 'odontologia', '01-01-2023', 'uom', 30000).
+turno(1234, 321, 'odontologia', '01-02-2023', 'uom', 20000).
+turno(1234, 321, 'odontologia', '01-03-2023', 'pami', 30000).
+turno(1234, 654321, 'cardiologia', '01-03-2023', 'pami', 30000).
+turno(1234, 654321, 'cardiologia', '01-04-2023', 'pami', 30000).
+turno(1234, 654321, 'cardiologia', '01-04-2022', 'pami', 30000).
+turno(1234, 54321, 'traumatologia', '01-05-2023', 'pami', 30000).
+turno(1234, 54321, 'traumatologia', '01-05-2022', 'pami', 30000).
+turno(654322, 222, 'neurologia', '02-04-2023', 'osde', 10000).
+turno(654322, 222, 'neurologia', '01-09-2023', 'osde', 15000).
+turno(654322, 111, 'oculista', '09-10-2023', 'osde', 13000).
+turno(636363, 333, 'kinesiologia', '10-03-2023', 'avalian', 16000).
+turno(636363, 333, 'kinesiologia', '25-03-2023', 'avalian', 16800).
+turno(636363, 444, 'psicologia', '16-04-2023', 'avalian', 12000).
+turno(616161, 444, 'psicologia', '17-08-2023', 'avalian', 12000).
+turno(616161, 444, 'psicologia', '27-08-2023', 'avalian', 12500).
+turno(616161, 444, 'psicologia', '05-09-2023', 'avalian', 12700).
+

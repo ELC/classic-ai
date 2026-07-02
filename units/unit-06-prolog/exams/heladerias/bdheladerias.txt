@@ -1,0 +1,10 @@
+heladeria(1,yomo,4444444).
+heladeria(2,smart,555555).
+heladeria(3,rio,666666).
+heladeria(4,tento,777777).
+
+locales(1,centro,['pellegrini 1200','pellegrini 1400','san juan 1800']).
+locales(1,sur,['pellegrini 5000','27 de febrero 4000']).
+locales(2,centro,['san luis 223','pellegrini 5000','27 de febrero 4000']).
+locales(3,centro,['san lorenzo 113']).
+locales(4,sur,['san martin 5000','27 de febrero 4000']).

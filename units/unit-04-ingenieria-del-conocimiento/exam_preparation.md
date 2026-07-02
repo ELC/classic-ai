@@ -1,0 +1,34 @@
+# Exam Preparation
+
+## Dated Oral Exam Prompts
+
+### Estructura basica de un sistema experto
+- Fecha: 2016-02-25
+- Frecuencia: 6 apariciones. Fechas: 2016-02-25, 2015-12-17, 2015-08-06, 2014-07-31, 2014-04-21, 2013-11-22
+- Fuente principal: [Definicion estructural de sistema experto](unit-04.md#definicion-estructural-de-sistema-experto)
+
+### Ventajas de un sistema experto
+- Fecha: 2015-12-17
+- Frecuencia: 5 apariciones. Fechas: 2015-12-17, 2015-08-06, 2014-04-21, 2014-02-27, 2013-12-20
+- Fuente principal: [Ventajas de sistemas expertos](unit-04.md#ventajas-de-sistemas-expertos)
+
+### Razonamiento y busqueda que usa Prolog
+- Fecha: 2015-08-06
+- Frecuencia: 3 apariciones. Fechas: 2015-08-06, 2014-07-31, 2014-02-13
+- Fuente principal: [Razonamiento y busqueda en Prolog](unit-04.md#razonamiento-y-busqueda-en-prolog)
+- Ver tambien: [Lenguaje procedural vs declarativo](unit-04.md#lenguaje-procedural-vs-declarativo)
+
+### Definicion funcional de sistema experto
+- Fecha: 2014-04-21
+- Frecuencia: 2 apariciones. Fechas: 2014-04-21, 2014-02-13
+- Fuente principal: [Definicion funcional de sistema experto](unit-04.md#definicion-funcional-de-sistema-experto)
+
+## Undated Frequent Questions
+
+### Armazones o shells
+- Fecha: desconocida
+- Fuente principal: [Armazones de sistemas expertos](unit-04.md#armazones-de-sistemas-expertos)
+
+### Lenguaje procedural vs declarativo
+- Fecha: desconocida
+- Fuente principal: [Lenguaje procedural vs declarativo](unit-04.md#lenguaje-procedural-vs-declarativo)

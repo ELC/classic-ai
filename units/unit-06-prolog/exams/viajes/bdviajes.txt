@@ -1,0 +1,16 @@
+:-dynamic unidades/3.
+:-dynamic viajes/2.
+
+unidades(1, 'Toyota', 'Camry'). 
+unidades(2, 'Honda', 'Civic').
+unidades(3, 'Ford', 'Focus').
+
+viajes(1, 100).  
+viajes(2, 100).
+viajes(3, 6500).
+viajes(1, 2500).
+viajes(2, 300).
+viajes(1, 100).
+viajes(3, 6000).
+viajes(1, 2000).
+viajes(3, 6300).

@@ -1,0 +1,25 @@
+:-dynamic vehiculos/5.
+:-dynamic caracteristicas/2.
+
+vehiculos('Ford', 10000, 'auto', 'nuevo', [1,2,3,4]).
+vehiculos('Ford', 15000, 'auto', 'nuevo', [1,2]).
+vehiculos('Ford', 25000, 'auto', 'nuevo', [1,2,4]).
+vehiculos('Ford', 13000, 'auto', 'usado', [1,4]).
+vehiculos('Ford', 8000, 'auto', 'usado', [1,3]).
+vehiculos('Ford', 9500, 'auto', 'usado', [1,4]).
+
+vehiculos('Toyota', 20000, 'auto', 'nuevo', [2,3,4]).
+vehiculos('Toyota', 28000, 'auto', 'nuevo', [1,2,3,4]).
+vehiculos('Toyota', 16000, 'auto', 'usado', [1,2]).
+
+vehiculos('Chevrolet', 40000, 'auto', 'nuevo', [2,3,4]).
+vehiculos('Chevrolet', 50000, 'auto', 'nuevo', [1,3]).
+vehiculos('Chevrolet', 10000, 'auto', 'nuevo', [2,3]).
+vehiculos('Chevrolet', 9100, 'auto', 'usado', [1,3]).
+
+caracteristicas(1, 'rojo').
+caracteristicas(2, 'aire acondicionado').
+caracteristicas(3, 'largo').
+caracteristicas(4, 'al piso').
+
+

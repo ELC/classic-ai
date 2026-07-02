@@ -1,0 +1,13 @@
+computadora(1,'dell',10000,210,['4gb ram','gris','nueva']).
+computadora(2,'samsung',9000,300,['4gb ram','gris','nueva']).
+computadora(3,'apple',15000,10,['8gb ram','blanca','nueva']).
+computadora(4,'apple',16000,100,['8gb ram','gris','nueva']).
+computadora(5,'lenovo',6000,160,['4gb ram','gris','usada']).
+computadora(6,'lenovo',7000,160,['6gb ram','gris','usada']).
+computadora(7,'hp',8000,160,['4gb ram','blanca','usada']).
+
+
+ventas(1,'2023-10-30', [1,1,3,4]).
+ventas(2,'2023-10-31', [2,5,7,5]).
+ventas(3,'2023-11-01', [6,5,7,1]).
+ventas(4,'2023-11-02', [5,1,3]).

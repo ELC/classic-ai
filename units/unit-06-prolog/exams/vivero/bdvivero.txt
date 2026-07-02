@@ -1,0 +1,16 @@
+vivero(1, 'Vivero A', [1, 2]).
+vivero(2, 'Vivero B', [3, 4]).
+
+plantas(1, 'otonio', 300, 1).
+plantas(2, 'invierno', 500, 1).
+plantas(3, 'primavera', 18000, 2).
+plantas(4, 'verano', 12000, 2).
+plantas(5, 'otonio', 3500, 3).
+plantas(6, 'primavera', 5500, 3).
+plantas(7, 'verano', 7500, 4).
+plantas(8, 'otonio', 11000, 4).
+plantas(9, 'otonio', 10000, 1).
+plantas(10, 'invierno', 15000, 2).
+plantas(11, 'primavera', 8, 3).
+plantas(12, 'verano', 12, 4).
+
