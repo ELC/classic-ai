@@ -3,6 +3,7 @@ title: Práctica 4
 kernelspec:
   name: calysto_prolog
   display_name: Calysto Prolog
+  language: prolog
 ---
 
 # Práctica 4
