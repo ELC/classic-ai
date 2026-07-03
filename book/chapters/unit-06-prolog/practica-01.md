@@ -80,9 +80,10 @@ Incluir en el programa la siguiente información:
 - El grupo 1 está formado por Brasil, España, Jamaica e Italia.
 - El grupo 2 está formado por Argentina, Nigeria, Holanda y Escocia.
 
-El programa debe ser capaz de responder a las siguientes consultas: a) ¿Son
-rivales Argentina y Brasil? b) ¿Cuáles son los rivales de un determinado equipo
-(por ejemplo Holanda)?
+El programa debe ser capaz de responder a las siguientes consultas:
+
+- ¿Son rivales Argentina y Brasil?
+- ¿Cuáles son los rivales de un determinado equipo (por ejemplo Holanda)?
 
 ### Solución
 
@@ -123,8 +124,9 @@ Dados los siguientes predicados:
 % padres(Persona, Madre, Padre).
 ```
 
-a. Construya una base de hechos con los miembros de su familia. b. Defina las
-siguientes reglas:
+- Construya una base de hechos con los miembros de su familia.
+
+- Defina las siguientes reglas:
 
 - hermana/2, donde significa que A es hermana de B.
 

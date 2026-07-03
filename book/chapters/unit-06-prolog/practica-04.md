@@ -82,9 +82,10 @@ Desarrollar un programa que permita definir los hábitos de:
 - horas de sueño
 
 de un conjunto de animales de un Zoo. Dicha información se guardará en una base
-de datos. El programa deberá permitir: a. Ingresar el nombre de un animal e
-informar de todos sus hábitos. b. Ingresar un hábito e informar todos los
-animales que lo tienen.
+de datos. El programa deberá permitir:
+
+- Ingresar el nombre de un animal e informar de todos sus hábitos.
+- Ingresar un hábito e informar todos los animales que lo tienen.
 
 ### Solución
 
@@ -119,10 +120,11 @@ gasto(omar, tel(fijo, telecom, 150)).
 gasto(maria, tel(movil, personal, 100)).
 ```
 
-a. Ingresar un gasto (por ej. super) e informar todas las personas que tienen
-dicho gasto. b. Informar las personas que tienen un consumo superior a los $150
-en un cierto gasto (dato de entrada). c. Calcular gasto promedio para una
-determinada persona (dato de entrada).
+- Ingresar un gasto (por ej. super) e informar todas las personas que tienen
+  dicho gasto.
+- Informar las personas que tienen un consumo superior a los $150 en un cierto
+  gasto (dato de entrada).
+- Calcular gasto promedio para una determinada persona (dato de entrada).
 
 ### Solución
 
