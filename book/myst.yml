@@ -21,6 +21,8 @@ project:
 
   jupyter:
     kernelName: prolog_kernel
+    binder:
+      repo: https://github.com/ELC/classic-ai
 
   plugins:
     - plugins/ethicalads.mjs

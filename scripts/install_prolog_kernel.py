@@ -50,6 +50,22 @@ update_variable_bindings(BindingsWithoutSingletons) :-
   jupyter_variable_bindings:store_var_bindings(BindingsWithoutSingletons).""",
     ),
 )
+QUERY_HANDLING_PATCHES = (
+    (
+        """file_name(stdout, '.server_stdout').
+file_name(message_output, '.message_output').
+file_name(output, '.server_output').
+file_name(test, 'test_definition.pl').""",
+        """file_name(stdout, FileName) :- process_file_name('.server_stdout', FileName).
+file_name(message_output, FileName) :- process_file_name('.message_output', FileName).
+file_name(output, FileName) :- process_file_name('.server_output', FileName).
+file_name(test, FileName) :- process_file_name('test_definition.pl', FileName).
+
+process_file_name(BaseName, FileName) :-
+  current_prolog_flag(pid, Pid),
+  atomic_list_concat([BaseName, '.', Pid], FileName).""",
+    ),
+)
 
 
 def remove_stale_kernels(manager: KernelSpecManager) -> None:
@@ -100,19 +116,20 @@ def prolog_kernel_package_directory() -> Path:
     return Path(spec.origin).resolve().parent
 
 
-def patch_prolog_server_sources() -> None:
-    term_handling_path = (
-        prolog_kernel_package_directory() / "prolog_server" / "jupyter_term_handling.pl"
-    )
-    text = term_handling_path.read_text(encoding="utf-8")
-    for old, new in TERM_HANDLING_PATCHES:
+def apply_patches(path: Path, patches: tuple[tuple[str, str], ...]) -> None:
+    text = path.read_text(encoding="utf-8")
+    for old, new in patches:
         if old in text:
             text = text.replace(old, new)
         elif new not in text:
-            raise RuntimeError(
-                f"Could not apply prolog-kernel compatibility patch to {term_handling_path}"
-            )
-    term_handling_path.write_text(text, encoding="utf-8")
+            raise RuntimeError(f"Could not apply prolog-kernel compatibility patch to {path}")
+    path.write_text(text, encoding="utf-8")
+
+
+def patch_prolog_server_sources() -> None:
+    prolog_server_path = prolog_kernel_package_directory() / "prolog_server"
+    apply_patches(prolog_server_path / "jupyter_term_handling.pl", TERM_HANDLING_PATCHES)
+    apply_patches(prolog_server_path / "jupyter_query_handling.pl", QUERY_HANDLING_PATCHES)
 
 
 def main() -> None:

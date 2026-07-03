@@ -28,7 +28,7 @@ cmd = "python scripts/install_prolog_kernel.py"
 
 [tool.poe.tasks._build-book]
 cwd = "book"
-cmd = "jupyter book build --html --execute --ci"
+cmd = "jupyter book build --html --execute --execute-parallel 1 --ci"
 
 [tool.poe.tasks.build-book]
 sequence = ["install-kernels", "_build-book"]
