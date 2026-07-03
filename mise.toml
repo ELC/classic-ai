@@ -1,0 +1,17 @@
+[env]
+_.path = ["C:\\Program Files\\swipl\\bin"]
+SWI_HOME_DIR = "C:\\Program Files\\swipl"
+
+[tasks."setup:windows-prolog"]
+description = "Install the SWI-Prolog version used by the Jupyter kernel on Windows."
+run = [
+  "winget install --exact --id SWI-Prolog.SWI-Prolog --version 8.4.3 --force --accept-package-agreements --accept-source-agreements",
+]
+
+[tasks."doctor:prolog"]
+description = "Check that SWI-Prolog is available for the Jupyter Prolog kernel."
+run = [
+  "swipl --version",
+  "uv run poe install-kernels",
+  "uv run jupyter kernelspec list",
+]

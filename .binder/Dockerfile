@@ -7,6 +7,12 @@ COPY --from=ghcr.io/astral-sh/uv:0.11.18 /uv /uvx /bin/
 
 WORKDIR /home/jovyan/
 
+USER root
+
+RUN apt-get update \
+    && apt-get install --yes --no-install-recommends swi-prolog \
+    && rm -rf /var/lib/apt/lists/*
+
 USER ${NB_UID}
 
 RUN --mount=type=bind,source=pyproject.toml,target=pyproject.toml \

@@ -1,8 +1,8 @@
 ---
 title: Práctica 1
 kernelspec:
-  name: calysto_prolog
-  display_name: Calysto Prolog
+  name: prolog_kernel
+  display_name: Prolog
   language: prolog
 ---
 
@@ -15,22 +15,11 @@ PROLOG - Conceptos básicos
 1. Teniendo la siguiente base de hechos...
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
 observa(maria, omar).
-```
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
 observa(laura, omar).
 observa(maria, flavio).
 observa(gabriela, flavio).
-```
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
 observa(maria, carlos).
 ```
 
@@ -38,60 +27,16 @@ Ejecutar las siguientes preguntas al Prolog y analizar la respuesta dada en cada
 
 caso.
 
-```{code-cell} prolog
-:tags: [skip-execution]
 
-observa(maria,flavio)?
-```
 
-```{code-cell} prolog
-:tags: [skip-execution]
 
-observa(maria, Quien)?
-```
 
-```{code-cell} prolog
-:tags: [skip-execution]
 
-observa(maria, _)?
-```
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-observa(Quien, flavio)?
-```
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-observa(Quien1, Quien2)?
-```
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-observa(_, _)?
-```
-
-### Consultas de prueba
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-observa(maria,flavio)?
-```
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-observa(maria,Quien)?
-```
 
 ### Solución
 
 ```{code-cell} prolog
-:tags: [skip-execution]
+:tags: [hide-cell]
 
 observa(maria, omar).
 observa(laura, omar).
@@ -102,38 +47,12 @@ observa(maria, carlos).
 
 ### Verificación
 
-Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
-unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
-respaldo.
-
 ```{code-cell} prolog
-:tags: [skip-execution]
-
-observa(maria,flavio)?
+?- observa(maria, flavio).
 ```
 
 ```{code-cell} prolog
-:tags: [skip-execution]
-
-observa(maria,Quien)?
-```
-
-### Resultado esperado
-
-```{code-cell} prolog
-observa(maria, omar).
-observa(laura, omar).
-observa(maria, flavio).
-observa(gabriela, flavio).
-observa(maria, carlos).
-```
-
-```{code-cell} prolog
-observa(maria,flavio)?
-```
-
-```{code-cell} prolog
-observa(maria,Quien)?
+?- observa(maria, Quien).
 ```
 
 ## Ejercicio 2
@@ -143,45 +62,21 @@ observa(maria,Quien)?
 determinar quienes hablan el idioma inglés y francés.
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
 conoce(franco, ingles).
-```
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
 conoce(renzo, ingles).
 conoce(franco, frances).
 conoce(renzo, frances).
-```
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
 conoce(franco, italiano).
 conoce(marco, ingles).
 conoce(omar, ingles).
-```
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
 conoce(maria, frances).
-```
-
-### Consultas de prueba
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-habla_ingles_y_frances(Quien)?
 ```
 
 ### Solución
 
 ```{code-cell} prolog
-:tags: [skip-execution]
+:tags: [hide-cell]
 
 conoce(franco, ingles).
 conoce(renzo, ingles).
@@ -198,34 +93,8 @@ habla_ingles_y_frances(Persona) :-
 
 ### Verificación
 
-Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
-unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
-respaldo.
-
 ```{code-cell} prolog
-:tags: [skip-execution]
-
-habla_ingles_y_frances(Quien)?
-```
-
-### Resultado esperado
-
-```{code-cell} prolog
-conoce(franco, ingles).
-conoce(renzo, ingles).
-conoce(franco, frances).
-conoce(renzo, frances).
-conoce(franco, italiano).
-conoce(marco, ingles).
-conoce(omar, ingles).
-conoce(maria, frances).
-
-habla_ingles_y_frances(Persona) :-
-    conoce(Persona, ingles), conoce(Persona, frances).
-```
-
-```{code-cell} prolog
-habla_ingles_y_frances(Quien)?
+?- habla_ingles_y_frances(Quien).
 ```
 
 ## Ejercicio 3
@@ -248,24 +117,10 @@ rivales Argentina y Brasil? b) ¿Cuáles son los rivales de un determinado equip
 
 (por ejemplo Holanda)?
 
-### Consultas de prueba
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-rivales(argentina,brasil)?
-```
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-rivales(holanda,Rival)?
-```
-
 ### Solución
 
 ```{code-cell} prolog
-:tags: [skip-execution]
+:tags: [hide-cell]
 
 grupo(1, brasil).
 grupo(1, espania).
@@ -282,44 +137,12 @@ rivales(Equipo, Rival) :-
 
 ### Verificación
 
-Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
-unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
-respaldo.
-
 ```{code-cell} prolog
-:tags: [skip-execution]
-
-rivales(argentina,brasil)?
+?- rivales(argentina, holanda).
 ```
 
 ```{code-cell} prolog
-:tags: [skip-execution]
-
-rivales(holanda,Rival)?
-```
-
-### Resultado esperado
-
-```{code-cell} prolog
-grupo(1, brasil).
-grupo(1, espania).
-grupo(1, jamaica).
-grupo(1, italia).
-grupo(2, argentina).
-grupo(2, nigeria).
-grupo(2, holanda).
-grupo(2, escocia).
-
-rivales(Equipo, Rival) :-
-    grupo(Grupo, Equipo), grupo(Grupo, Rival), Equipo \= Rival.
-```
-
-```{code-cell} prolog
-rivales(argentina,brasil)?
-```
-
-```{code-cell} prolog
-rivales(holanda,Rival)?
+?- rivales(holanda, Rival).
 ```
 
 ## Ejercicio 4
@@ -327,16 +150,14 @@ rivales(holanda,Rival)?
 4. Dados los siguientes predicados:
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
 hombre(unHombre).
 mujer(unaMujer).
 ```
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
-padres(persona, madre, padre).
+% padres(Persona, Madre, Padre).
 ```
 
 a. Construya una base de hechos con los miembros de su familia. b. Defina las
@@ -346,33 +167,29 @@ siguientes reglas:
 - hermana/2, donde significa que A es hermana de B.
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
-hermana(A, B).
+% hermana(A, B).
 ```
 
 - nieto/2, donde significa que A es el nieto de B.
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
-nieto(A, B).
+% nieto(A, B).
 ```
 
 - abuelo/2, donde significa que A es el abuelo de B.
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
-abuelo(A, B).
+% abuelo(A, B).
 ```
 
 - tia/2, donde significa que A es la tía de B. Esta regla definirla, en
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
-tia(A, B).
+% tia(A, B).
 ```
 
 una primera instancia, valiéndose sólo de los hechos disponibles. En una
@@ -381,18 +198,10 @@ segunda instancia, valiéndose de alguna otra regla que pudieron haber definido
 
 previamente.
 
-### Consultas de prueba
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-nieto(lucia,maria)?
-```
-
 ### Solución
 
 ```{code-cell} prolog
-:tags: [skip-execution]
+:tags: [hide-cell]
 
 hombre(juan).
 hombre(pedro).
@@ -419,44 +228,8 @@ tia(A, B) :-
 
 ### Verificación
 
-Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
-unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
-respaldo.
-
 ```{code-cell} prolog
-:tags: [skip-execution]
-
-nieto(lucia,maria)?
-```
-
-### Resultado esperado
-
-```{code-cell} prolog
-hombre(juan).
-hombre(pedro).
-hombre(carlos).
-mujer(maria).
-mujer(ana).
-mujer(lucia).
-padres(ana, maria, juan).
-padres(lucia, ana, pedro).
-
-hermana(A, B) :-
-    mujer(A), padres(A, Madre, Padre), padres(B, Madre, Padre), A \= B.
-
-nieto(A, B) :-
-    padres(A, Madre, Padre), (padres(Madre, B, _) ; padres(Madre, _, B) ;
-     padres(Padre, B, _) ; padres(Padre, _, B)).
-
-abuelo(A, B) :-
-    hombre(A), nieto(B, A).
-
-tia(A, B) :-
-    hermana(A, Madre), padres(B, Madre, _).
-```
-
-```{code-cell} prolog
-nieto(lucia,maria)?
+?- nieto(lucia, maria).
 ```
 
 ## Ejercicio 5
@@ -464,40 +237,21 @@ nieto(lucia,maria)?
 5. Dada la siguiente base de hechos: %
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
-auto(patente, propietario).
-```
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
+% auto(Patente, Propietario).
 auto(hti687, pedro).
 auto(jug144, juan).
 auto(gqm758, pedro).
 ```
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
+% deuda(Patente, MontoAdeudado).
 auto(lod445, carlos).
 auto(lfz569, miguel).
 auto(axk798, maria).
-```
-
-%
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-deuda(patente, monto adeudado).
 deuda(lfz569, 2000).
 deuda(gqm758, 15000).
-```
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
 deuda(axk798, 1000).
 ```
 
@@ -505,18 +259,10 @@ Escriba una regla que permita determinar si una persona (dato entrada) tiene
 
 algún auto con deuda.
 
-### Consultas de prueba
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-tiene_auto_con_deuda(pedro)?
-```
-
 ### Solución
 
 ```{code-cell} prolog
-:tags: [skip-execution]
+:tags: [hide-cell]
 
 auto(hti687, pedro).
 auto(jug144, juan).
@@ -535,36 +281,8 @@ tiene_auto_con_deuda(Persona) :-
 
 ### Verificación
 
-Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
-unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
-respaldo.
-
 ```{code-cell} prolog
-:tags: [skip-execution]
-
-tiene_auto_con_deuda(pedro)?
-```
-
-### Resultado esperado
-
-```{code-cell} prolog
-auto(hti687, pedro).
-auto(jug144, juan).
-auto(gqm758, pedro).
-auto(lod445, carlos).
-auto(lfz569, miguel).
-auto(axk798, maria).
-
-deuda(lfz569, 2000).
-deuda(gqm758, 15000).
-deuda(axk798, 1000).
-
-tiene_auto_con_deuda(Persona) :-
-    auto(Patente, Persona), deuda(Patente, _).
-```
-
-```{code-cell} prolog
-tiene_auto_con_deuda(pedro)?
+?- tiene_auto_con_deuda(pedro).
 ```
 
 ## Ejercicio 6
@@ -599,18 +317,10 @@ El programa debe responder si en una ciudad (dato de entrada), se puede o no
 
 formar una banda.
 
-### Consultas de prueba
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-puede_formar_banda(rosario)?
-```
-
 ### Solución
 
 ```{code-cell} prolog
-:tags: [skip-execution]
+:tags: [hide-cell]
 
 guitarrista(carolina, rosario).
 guitarrista(jose, rosario).
@@ -628,35 +338,8 @@ puede_formar_banda(Ciudad) :-
 
 ### Verificación
 
-Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
-unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
-respaldo.
-
 ```{code-cell} prolog
-:tags: [skip-execution]
-
-puede_formar_banda(rosario)?
-```
-
-### Resultado esperado
-
-```{code-cell} prolog
-guitarrista(carolina, rosario).
-guitarrista(jose, rosario).
-guitarrista(miguel, funes).
-cantante(mariano, rosario).
-cantante(silvia, funes).
-cantante(mauro, funes).
-baterista(eduardo, roldan).
-baterista(diego, casilda).
-baterista(laura, rosario).
-
-puede_formar_banda(Ciudad) :-
-    guitarrista(_, Ciudad), cantante(_, Ciudad), baterista(_, Ciudad).
-```
-
-```{code-cell} prolog
-puede_formar_banda(rosario)?
+?- puede_formar_banda(rosario).
 ```
 
 ## Ejercicio 7
@@ -667,18 +350,10 @@ puede_formar_banda(rosario)?
 
    valores numéricos, informando el resultado.
 
-### Consultas de prueba
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-calcular(suma,2,3,Resultado)?
-```
-
 ### Solución
 
 ```{code-cell} prolog
-:tags: [skip-execution]
+:tags: [hide-cell]
 
 calcular(suma, A, B, Resultado) :- Resultado is A + B.
 calcular(resta, A, B, Resultado) :- Resultado is A - B.
@@ -689,28 +364,8 @@ calcular(division, A, B, Resultado) :-
 
 ### Verificación
 
-Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
-unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
-respaldo.
-
 ```{code-cell} prolog
-:tags: [skip-execution]
-
-calcular(suma,2,3,Resultado)?
-```
-
-### Resultado esperado
-
-```{code-cell} prolog
-calcular(suma, A, B, Resultado) :- Resultado is A + B.
-calcular(resta, A, B, Resultado) :- Resultado is A - B.
-calcular(multiplicacion, A, B, Resultado) :- Resultado is A * B.
-calcular(division, A, B, Resultado) :-
-    B =\= 0, Resultado is A / B.
-```
-
-```{code-cell} prolog
-calcular(suma,2,3,Resultado)?
+?- calcular(suma, 2, 3, Resultado).
 ```
 
 ## Ejercicio 8
@@ -718,84 +373,42 @@ calcular(suma,2,3,Resultado)?
 8. Dada la siguiente estructura de hechos:
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
-horoscopo(Signo, DiaInicio, MesIni, DiaFin, MesFin).
+% horoscopo(Signo, DiaInicio, MesIni, DiaFin, MesFin).
 ```
 
 Por ejemplo:
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
 horoscopo(aries, 21, 3, 20, 4).
 horoscopo(tauro, 21, 4, 21, 5).
-```
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
 horoscopo(geminis, 22, 5, 21, 6).
 ```
 
 Definir una regla del estilo que permita:
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
-signo(Dia, Mes, Signo).
+% signo(Dia, Mes, Signo).
 ```
 
 a. Ingresar un signo, día y mes y me informe si es correcto ese signo para esa
 
 fecha. Ejemplo:
 
-```{code-cell} prolog
-:tags: [skip-execution]
 
-signo(3,5,tauro)?
-```
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-signo(23,4,aries)?
-```
 
 b. Ingresar una fecha (día y mes) y me informe de qué signo soy. Ejemplo:
 
-```{code-cell} prolog
-:tags: [skip-execution]
 
-signo(16,12,Signo)?
-```
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-signo(7,4,Signo)?
-```
 
 ## Recursividad
-
-### Consultas de prueba
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-signo(3,5,tauro)?
-```
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-signo(16,12,Signo)?
-```
 
 ### Solución
 
 ```{code-cell} prolog
-:tags: [skip-execution]
+:tags: [hide-cell]
 
 horoscopo(aries, 21, 3, 20, 4).
 horoscopo(tauro, 21, 4, 21, 5).
@@ -809,6 +422,10 @@ horoscopo(sagitario, 22, 11, 21, 12).
 horoscopo(capricornio, 22, 12, 20, 1).
 horoscopo(acuario, 21, 1, 19, 2).
 horoscopo(piscis, 20, 2, 20, 3).
+```
+
+```{code-cell} prolog
+:tags: [hide-cell]
 
 fecha_en_rango(Dia, Mes, DiaInicio, MesInicio, DiaFin, MesFin) :-
     (MesInicio = MesFin, Mes = MesInicio, Dia >= DiaInicio, Dia =< DiaFin);
@@ -818,6 +435,10 @@ fecha_en_rango(Dia, Mes, DiaInicio, MesInicio, DiaFin, MesFin) :-
     (MesInicio > MesFin, ((Mes = MesInicio, Dia >= DiaInicio);
          (Mes = MesFin, Dia =< DiaFin);
          (Mes > MesInicio; Mes < MesFin))).
+```
+
+```{code-cell} prolog
+:tags: [hide-cell]
 
 signo(Dia, Mes, Signo) :-
     horoscopo(Signo, DiaInicio, MesInicio, DiaFin, MesFin), fecha_en_rango(Dia, Mes, DiaInicio, MesInicio, DiaFin, MesFin).
@@ -825,57 +446,12 @@ signo(Dia, Mes, Signo) :-
 
 ### Verificación
 
-Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
-unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
-respaldo.
-
 ```{code-cell} prolog
-:tags: [skip-execution]
-
-signo(3,5,tauro)?
+?- signo(3, 5, tauro).
 ```
 
 ```{code-cell} prolog
-:tags: [skip-execution]
-
-signo(16,12,Signo)?
-```
-
-### Resultado esperado
-
-```{code-cell} prolog
-horoscopo(aries, 21, 3, 20, 4).
-horoscopo(tauro, 21, 4, 21, 5).
-horoscopo(geminis, 22, 5, 21, 6).
-horoscopo(cancer, 22, 6, 22, 7).
-horoscopo(leo, 23, 7, 22, 8).
-horoscopo(virgo, 23, 8, 22, 9).
-horoscopo(libra, 23, 9, 22, 10).
-horoscopo(escorpio, 23, 10, 21, 11).
-horoscopo(sagitario, 22, 11, 21, 12).
-horoscopo(capricornio, 22, 12, 20, 1).
-horoscopo(acuario, 21, 1, 19, 2).
-horoscopo(piscis, 20, 2, 20, 3).
-
-fecha_en_rango(Dia, Mes, DiaInicio, MesInicio, DiaFin, MesFin) :-
-    (MesInicio = MesFin, Mes = MesInicio, Dia >= DiaInicio, Dia =< DiaFin);
-    (MesInicio < MesFin, ((Mes = MesInicio, Dia >= DiaInicio);
-         (Mes = MesFin, Dia =< DiaFin);
-         (Mes > MesInicio, Mes < MesFin)));
-    (MesInicio > MesFin, ((Mes = MesInicio, Dia >= DiaInicio);
-         (Mes = MesFin, Dia =< DiaFin);
-         (Mes > MesInicio; Mes < MesFin))).
-
-signo(Dia, Mes, Signo) :-
-    horoscopo(Signo, DiaInicio, MesInicio, DiaFin, MesFin), fecha_en_rango(Dia, Mes, DiaInicio, MesInicio, DiaFin, MesFin).
-```
-
-```{code-cell} prolog
-signo(3,5,tauro)?
-```
-
-```{code-cell} prolog
-signo(16,12,Signo)?
+?- signo(16, 12, Signo).
 ```
 
 ## Ejercicio 9
@@ -883,14 +459,12 @@ signo(16,12,Signo)?
 9. Se tiene la siguiente base de hechos:
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
 hijo(juan, miguel).
 hijo(jose, miguel).
 ```
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
 hijo(miguel, roberto).
 hijo(julio, roberto).
@@ -900,7 +474,6 @@ hijo(roberto, carlos).
 Donde indica que X es hijo de Y. Definir la regla,
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
 hijo(X, Y).
 descendiente(A, B).
@@ -908,18 +481,10 @@ descendiente(A, B).
 
 la cual permite determinar si A es descendiente de B.
 
-### Consultas de prueba
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-descendiente(juan,carlos)?
-```
-
 ### Solución
 
 ```{code-cell} prolog
-:tags: [skip-execution]
+:tags: [hide-cell]
 
 hijo(juan, miguel).
 hijo(jose, miguel).
@@ -934,32 +499,8 @@ descendiente(A, B) :-
 
 ### Verificación
 
-Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
-unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
-respaldo.
-
 ```{code-cell} prolog
-:tags: [skip-execution]
-
-descendiente(juan,carlos)?
-```
-
-### Resultado esperado
-
-```{code-cell} prolog
-hijo(juan, miguel).
-hijo(jose, miguel).
-hijo(miguel, roberto).
-hijo(julio, roberto).
-hijo(roberto, carlos).
-
-descendiente(A, B) :- hijo(A, B).
-descendiente(A, B) :-
-    hijo(A, C), descendiente(C, B).
-```
-
-```{code-cell} prolog
-descendiente(juan,carlos)?
+?- descendiente(juan, carlos).
 ```
 
 ## Ejercicio 10
@@ -971,25 +512,16 @@ descendiente(juan,carlos)?
 Definir la regla, la cual permite saber si para la ejecución de
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
-requiere_de(X, Y).
+% requiere_de(X, Y).
 ```
 
 la tarea Y se requiere tener finalizada la tarea X.
 
-### Consultas de prueba
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-requiere_de(a,d)?
-```
-
 ### Solución
 
 ```{code-cell} prolog
-:tags: [skip-execution]
+:tags: [hide-cell]
 
 requiere_de(a, b).
 requiere_de(b, c).
@@ -1008,36 +540,8 @@ requiere_de_directa(a, e).
 
 ### Verificación
 
-Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
-unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
-respaldo.
-
 ```{code-cell} prolog
-:tags: [skip-execution]
-
-requiere_de(a,d)?
-```
-
-### Resultado esperado
-
-```{code-cell} prolog
-requiere_de(a, b).
-requiere_de(b, c).
-requiere_de(c, d).
-requiere_de(a, e).
-
-requiere_de(X, Y) :- requiere_de_directa(X, Y).
-requiere_de(X, Y) :-
-    requiere_de_directa(X, Z), requiere_de(Z, Y).
-
-requiere_de_directa(a, b).
-requiere_de_directa(b, c).
-requiere_de_directa(c, d).
-requiere_de_directa(a, e).
-```
-
-```{code-cell} prolog
-requiere_de(a,d)?
+?- requiere_de(a, d).
 ```
 
 ## Ejercicio 11
@@ -1045,27 +549,18 @@ requiere_de(a,d)?
 11. Hacer un programa para calcular el factorial de un número.
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
-factorial(N, Fact).
+% factorial(N, Fact).
 ```
 
 - N es el número ingresado (argumento de entrada).
 
 - Fact es el resultado calculado (argumento de salida).
 
-### Consultas de prueba
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-factorial(5,Resultado)?
-```
-
 ### Solución
 
 ```{code-cell} prolog
-:tags: [skip-execution]
+:tags: [hide-cell]
 
 factorial(0, 1).
 factorial(N, Fact) :-
@@ -1074,26 +569,8 @@ factorial(N, Fact) :-
 
 ### Verificación
 
-Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
-unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
-respaldo.
-
 ```{code-cell} prolog
-:tags: [skip-execution]
-
-factorial(5,Resultado)?
-```
-
-### Resultado esperado
-
-```{code-cell} prolog
-factorial(0, 1).
-factorial(N, Fact) :-
-    N > 0, N1 is N - 1, factorial(N1, Fact1), Fact is N * Fact1.
-```
-
-```{code-cell} prolog
-factorial(5,Resultado)?
+?- factorial(5, Resultado).
 ```
 
 ## Ejercicio 12
@@ -1107,27 +584,18 @@ factorial(5,Resultado)?
 sumatoria 5+4+3+2+1 e informar como resultado 15.
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
-suma(N, Sum).
+% suma(N, Sum).
 ```
 
 - N es el número ingresado (argumento de entrada).
 
 - Sum es el resultado calculado (argumento de salida).
 
-### Consultas de prueba
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-suma(5,Resultado)?
-```
-
 ### Solución
 
 ```{code-cell} prolog
-:tags: [skip-execution]
+:tags: [hide-cell]
 
 suma(0, 0).
 suma(N, Sum) :-
@@ -1136,26 +604,8 @@ suma(N, Sum) :-
 
 ### Verificación
 
-Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
-unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
-respaldo.
-
 ```{code-cell} prolog
-:tags: [skip-execution]
-
-suma(5,Resultado)?
-```
-
-### Resultado esperado
-
-```{code-cell} prolog
-suma(0, 0).
-suma(N, Sum) :-
-    N > 0, N1 is N - 1, suma(N1, Sum1), Sum is N + Sum1.
-```
-
-```{code-cell} prolog
-suma(5,Resultado)?
+?- suma(5, Resultado).
 ```
 
 ## Ejercicio 13
@@ -1167,9 +617,8 @@ suma(5,Resultado)?
 impares.
 
 ```{code-cell} prolog
-:tags: [skip-execution]
 
-suma(N, SumPares, SumImpares).
+% suma(N, SumPares, SumImpares).
 ```
 
 - N es el número ingresado (argumento de entrada).
@@ -1178,18 +627,10 @@ suma(N, SumPares, SumImpares).
 
 - SumImpares es uno de los resultados calculados (argumento de salida).
 
-### Consultas de prueba
-
-```{code-cell} prolog
-:tags: [skip-execution]
-
-suma(5,Pares,Impares)?
-```
-
 ### Solución
 
 ```{code-cell} prolog
-:tags: [skip-execution]
+:tags: [hide-cell]
 
 suma(0, 0, 0).
 suma(N, SumPares, SumImpares) :-
@@ -1202,14 +643,6 @@ suma(N, SumPares, SumImpares) :-
 
 ### Verificación
 
-Si el kernel soporta PlUnit, podés transformar estas consultas en pruebas
-unitarias. En Calysto Prolog usá las consultas ejecutables como verificación de
-respaldo.
-
-### Resultado esperado
-
 ```{code-cell} prolog
-:tags: [skip-execution]
-
-suma(5,Pares,Impares)?
+?- suma(5, Pares, Impares).
 ```

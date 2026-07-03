@@ -6,10 +6,9 @@ readme = "README.md"
 requires-python = ">=3.11,<3.12"
 dependencies = [
   "anywidget>=0.9",
-  "calysto-prolog>=0.8.4",
   "jupyter-book>=2,<3",
   "jupyterlab>=4.5",
-  "metakernel>=0.30",
+  "prolog-kernel>=0.0.9",
 ]
 
 [dependency-groups]
@@ -25,7 +24,7 @@ dev = [
 package = false
 
 [tool.poe.tasks.install-kernels]
-cmd = "python -m calysto_prolog install --user"
+cmd = "python scripts/install_prolog_kernel.py"
 
 [tool.poe.tasks._build-book]
 cwd = "book"
@@ -33,6 +32,12 @@ cmd = "jupyter book build --html --execute --ci"
 
 [tool.poe.tasks.build-book]
 sequence = ["install-kernels", "_build-book"]
+
+[tool.poe.tasks.check-prolog-cells]
+sequence = ["install-kernels", "_check-prolog-cells"]
+
+[tool.poe.tasks._check-prolog-cells]
+cmd = "python scripts/check_prolog_cells.py"
 
 [tool.poe.tasks.serve-book-preview]
 cwd = "book"
@@ -64,7 +69,7 @@ help = "Build the Binder Docker image."
 cmd = "docker build --no-cache --file .binder/Dockerfile --tag classic-ai:binder ."
 
 [tool.poe.tasks.ci]
-sequence = ["check", "build-book"]
+sequence = ["check", "check-prolog-cells", "build-book"]
 
 [tool.ruff]
 line-length = 100

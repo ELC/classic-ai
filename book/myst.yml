@@ -20,7 +20,7 @@ project:
     headings: true
 
   jupyter:
-    kernelName: calysto_prolog
+    kernelName: prolog_kernel
 
   plugins:
     - plugins/ethicalads.mjs

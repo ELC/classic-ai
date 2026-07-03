@@ -151,15 +151,6 @@ css = [
 ]
 
 [[package]]
-name = "calysto-prolog"
-version = "0.8.4"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "metakernel" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/60/6f/d81b08487091aa3d0a97ce04cf02c1d6f40b7d6a7df6ae40bd0e2970ed84/calysto_prolog-0.8.4.zip", hash = "sha256:ee7bd313aaf24f91934b65da45c0aa8cfee6e842c03c9d7ed91f473fe67694e1", size = 12588, upload-time = "2017-05-24T17:52:11.054Z" }
-
-[[package]]
 name = "certifi"
 version = "2026.6.17"
 source = { registry = "https://pypi.org/simple" }
@@ -223,10 +214,9 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "anywidget" },
-    { name = "calysto-prolog" },
     { name = "jupyter-book" },
     { name = "jupyterlab" },
-    { name = "metakernel" },
+    { name = "prolog-kernel" },
 ]
 
 [package.dev-dependencies]
@@ -241,10 +231,9 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "anywidget", specifier = ">=0.9" },
-    { name = "calysto-prolog", specifier = ">=0.8.4" },
     { name = "jupyter-book", specifier = ">=2,<3" },
     { name = "jupyterlab", specifier = ">=4.5" },
-    { name = "metakernel", specifier = ">=0.30" },
+    { name = "prolog-kernel", specifier = ">=0.0.9" },
 ]
 
 [package.metadata.requires-dev]
@@ -330,6 +319,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/30/3e/a80a8c077fd798951169626cde3e239adeba7dab75deb3555716415bd9b0/fqdn-1.5.1.tar.gz", hash = "sha256:105ed3677e767fb5ca086a0c1f4bb66ebc3c100be518f0e0d755d9eae164d89f", size = 6015, upload-time = "2021-03-11T07:16:29.08Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/cf/58/8acf1b3e91c58313ce5cb67df61001fc9dcd21be4fadb76c1a2d540e09ed/fqdn-1.5.1-py3-none-any.whl", hash = "sha256:3a179af3761e4df6eb2e026ff9e1a3033d3587bf980a0b1b2e1e5d08d7358014", size = 9121, upload-time = "2021-03-11T07:16:28.351Z" },
+]
+
+[[package]]
+name = "graphviz"
+version = "0.21"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f8/b3/3ac91e9be6b761a4b30d66ff165e54439dcd48b83f4e20d644867215f6ca/graphviz-0.21.tar.gz", hash = "sha256:20743e7183be82aaaa8ad6c93f8893c923bd6658a04c32ee115edb3c8a835f78", size = 200434, upload-time = "2025-06-15T09:35:05.824Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/91/4c/e0ce1ef95d4000ebc1c11801f9b944fa5910ecc15b5e351865763d8657f8/graphviz-0.21-py3-none-any.whl", hash = "sha256:54f33de9f4f911d7e84e4191749cac8cc5653f815b06738c54db9a15ab8b1e42", size = 47300, upload-time = "2025-06-15T09:35:04.433Z" },
 ]
 
 [[package]]
@@ -840,22 +838,6 @@ wheels = [
 ]
 
 [[package]]
-name = "metakernel"
-version = "1.0.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "comm" },
-    { name = "ipykernel" },
-    { name = "jedi" },
-    { name = "jupyter-core" },
-    { name = "pexpect" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/76/1e/8b236222e93a3cd4962314d094f6a4936567e8a0728461f9d3b07a4f0f8f/metakernel-1.0.0.tar.gz", hash = "sha256:76f2b8926cbad5a089deb6f727399c4e34e8915af97896a8bb7968ebe02da21c", size = 229742, upload-time = "2026-03-24T01:24:13.452Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/a5/2b/72e0cc706c2884549323976f1d6221b74e0700f22e827e60b8413204eebb/metakernel-1.0.0-py3-none-any.whl", hash = "sha256:9f90660ce583baffe0235316f3e1a0abf75bbf60039e811ccbedd68ef612fa44", size = 204586, upload-time = "2026-03-24T01:24:11.774Z" },
-]
-
-[[package]]
 name = "mistune"
 version = "3.3.2"
 source = { registry = "https://pypi.org/simple" }
@@ -1026,6 +1008,22 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/08/8c/6e866f2dd70aa3339fd3cdcd16648612a11726ddf0b803f0602885e16bd1/poethepoet-0.47.1.tar.gz", hash = "sha256:bb27f9fbba161c5be11878ad0a6f64ff29b8a68851d1861e4bd30255b753da2a", size = 145618, upload-time = "2026-07-01T07:36:20.922Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/45/8f/6518a009dd017ff4c281cb62207bc6741638c93738f08fd27b3caaa1e725/poethepoet-0.47.1-py3-none-any.whl", hash = "sha256:1738b9f6f1dc2c5d61b3e620aa4a2e7b8c20bccef815c8bfb312ebf87464d671", size = 183474, upload-time = "2026-07-01T07:36:19.333Z" },
+]
+
+[[package]]
+name = "prolog-kernel"
+version = "0.0.9"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "beautifulsoup4" },
+    { name = "graphviz" },
+    { name = "ipykernel" },
+    { name = "ipython" },
+    { name = "jupyter-client" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/2d/5f/1611bee537915841b30f634aa1ec26ca3677618c7c18a8a94ed3ba7424ca/prolog_kernel-0.0.9.tar.gz", hash = "sha256:be07d9cb9712f2ed296c4d196af9a6bbdc0ed40040e831123bad404b8b4ff508", size = 78277, upload-time = "2022-10-17T07:48:09.704Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/10/f6/4b1118a79f767a842bf05f63a301351e608aadd3d143199c0c13d8251bcd/prolog_kernel-0.0.9-py3-none-any.whl", hash = "sha256:5394c412e423ba56aabcb3058e4ac42fd070cd5315ad6051d71c9dfcdcb0aa2f", size = 83842, upload-time = "2022-10-17T07:48:07.959Z" },
 ]
 
 [[package]]
