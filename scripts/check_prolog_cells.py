@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import re
 import sys
+from dataclasses import dataclass
 from pathlib import Path
 
 from jupyter_client import KernelManager
@@ -8,16 +10,31 @@ from jupyter_client import KernelManager
 
 PRACTICE_GLOB = "book/chapters/unit-06-prolog/practica-0*.md"
 KERNEL_TIMEOUT_SECONDS = 60
+VERIFICATION_HEADINGS = {"### Verificación", "### Verificacion"}
+ASSERTION_PATTERN = re.compile(r"\bassertion\s*\(")
+FALSE_RESULT_PATTERN = re.compile(r"^\s*(false|no)\.?\s*$", re.IGNORECASE | re.MULTILINE)
 
 
-def prolog_cells(path: Path) -> list[tuple[int, str]]:
+@dataclass(frozen=True)
+class PrologCell:
+    line_number: int
+    code: str
+    is_verification: bool
+
+
+def prolog_cells(path: Path) -> list[PrologCell]:
     lines = path.read_text(encoding="utf-8").splitlines()
-    cells: list[tuple[int, str]] = []
+    cells: list[PrologCell] = []
     in_cell = False
+    in_verification_section = False
     start = 0
     body: list[str] = []
 
     for line_number, line in enumerate(lines, start=1):
+        stripped = line.strip()
+        if not in_cell and stripped.startswith("#"):
+            in_verification_section = stripped in VERIFICATION_HEADINGS
+
         if not in_cell and line.strip() == "```{code-cell} prolog":
             in_cell = True
             start = line_number
@@ -27,11 +44,11 @@ def prolog_cells(path: Path) -> list[tuple[int, str]]:
         if in_cell and line.strip() == "```":
             code = "\n".join(body).strip()
             if code and has_executable_prolog(code):
-                cells.append((start, code))
+                cells.append(PrologCell(start, code, in_verification_section))
             in_cell = False
             continue
 
-        if in_cell and not line.strip().startswith(":"):
+        if in_cell and not line.strip().startswith(":tags:"):
             body.append(line)
 
     return cells
@@ -39,6 +56,14 @@ def prolog_cells(path: Path) -> list[tuple[int, str]]:
 
 def has_executable_prolog(code: str) -> bool:
     return any(line.strip() and not line.strip().startswith("%") for line in code.splitlines())
+
+
+def has_assertion(code: str) -> bool:
+    return ASSERTION_PATTERN.search(code) is not None
+
+
+def has_false_result(output: str) -> bool:
+    return FALSE_RESULT_PATTERN.search(output) is not None
 
 
 def execute(client, code: str) -> tuple[str, str]:
@@ -68,20 +93,49 @@ def execute(client, code: str) -> tuple[str, str]:
     return reply["content"].get("status", "error"), "".join(outputs)
 
 
+def format_error(path: Path, line_number: int, message: str, code: str, output: str = "") -> str:
+    parts = [
+        f"{path}:{line_number} {message}",
+        "Code:",
+        code,
+    ]
+    if output:
+        parts.extend(["Output:", output.strip()])
+    return "\n".join(parts)
+
+
 def check_page(client, path: Path) -> list[str]:
     errors: list[str] = []
-    for line_number, code in prolog_cells(path):
-        status, output = execute(client, code)
+    for cell in prolog_cells(path):
+        if cell.is_verification and not has_assertion(cell.code):
+            errors.append(
+                format_error(
+                    path,
+                    cell.line_number,
+                    "verification cell must contain assertion/1",
+                    cell.code,
+                )
+            )
+
+        status, output = execute(client, cell.code)
         if status != "ok":
             errors.append(
-                "\n".join(
-                    [
-                        f"{path}:{line_number} failed with status {status}",
-                        "Code:",
-                        code,
-                        "Output:",
-                        output.strip(),
-                    ]
+                format_error(
+                    path,
+                    cell.line_number,
+                    f"failed with status {status}",
+                    cell.code,
+                    output,
+                )
+            )
+        elif has_false_result(output):
+            errors.append(
+                format_error(
+                    path,
+                    cell.line_number,
+                    "failed with false result",
+                    cell.code,
+                    output,
                 )
             )
 
@@ -90,17 +144,20 @@ def check_page(client, path: Path) -> list[str]:
 
 def main() -> int:
     paths = sorted(Path().glob(PRACTICE_GLOB))
-    kernel_manager = KernelManager(kernel_name="prolog_kernel")
-    kernel_manager.start_kernel()
-    client = kernel_manager.client()
-    client.start_channels()
+    errors: list[str] = []
 
-    try:
-        client.wait_for_ready(timeout=KERNEL_TIMEOUT_SECONDS)
-        errors = [error for path in paths for error in check_page(client, path)]
-    finally:
-        client.stop_channels()
-        kernel_manager.shutdown_kernel(now=True)
+    for path in paths:
+        kernel_manager = KernelManager(kernel_name="prolog_kernel")
+        kernel_manager.start_kernel()
+        client = kernel_manager.client()
+        client.start_channels()
+
+        try:
+            client.wait_for_ready(timeout=KERNEL_TIMEOUT_SECONDS)
+            errors.extend(check_page(client, path))
+        finally:
+            client.stop_channels()
+            kernel_manager.shutdown_kernel(now=True)
 
     if errors:
         print("\n\n".join(errors), file=sys.stderr)

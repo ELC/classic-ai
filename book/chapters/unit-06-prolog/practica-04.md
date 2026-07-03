@@ -12,13 +12,10 @@ PROLOG - Base de datos y Functores
 
 ## Ejercicio 1
 
-1. Hacer un programa que permita definir las cuentas a pagar del mes (luz, agua,
-
-   alquiler, teléfono, cable, supermercado, etc.) de un grupo de personas. A su
-
-   vez, deberá permitir ingresar el nombre de una de ellas e informar de todos
-
-   sus gastos.
+Hacer un programa que permita definir las cuentas a pagar del mes (luz, agua,
+alquiler, teléfono, cable, supermercado, etc.) de un grupo de personas. A su
+vez, deberá permitir ingresar el nombre de una de ellas e informar de todos sus
+gastos.
 
 ### Solución
 
@@ -34,31 +31,30 @@ gastos_de(Persona, Concepto, Monto) :- gasto(Persona, Concepto, Monto).
 ### Verificación
 
 ```{code-cell} prolog
-?- gastos_de(maria, Concepto, Monto).
+?- findall(Concepto-Monto, gastos_de(maria, Concepto, Monto), Gastos), assertion(Gastos == [luz-1000, alquiler-50000]).
 ```
 
 ## Ejercicio 2
 
-2. Hacer un programa que defina una Base de datos de personas de la siguiente
-
-forma: El programa debe permitir ingresar un código
+Hacer un programa que defina una Base de datos de personas de la siguiente
+forma:
 
 ```{code-cell} prolog
 
 % personas(Codigo, Nombre).
 ```
 
-y verificar si el mismo está definido en la BBDD. De estarlo deberá informar
-
-a quién corresponde, de lo contrario deberá solicitar ingresar un nombre y
-
-registrar entonces la persona en la BBDD.
+El programa debe permitir ingresar un código y verificar si el mismo está
+definido en la BBDD. De estarlo deberá informar a quién corresponde; de lo
+contrario deberá solicitar ingresar un nombre y registrar entonces la persona en
+la BBDD.
 
 ### Solución
 
 ```{code-cell} prolog
 :tags: [hide-cell]
 
+:- dynamic personas/2.
 personas(1, ana).
 personas(2, luis).
 consultar_o_registrar(Codigo, Nombre) :- personas(Codigo, Nombre).
@@ -69,27 +65,25 @@ consultar_o_registrar(Codigo, Nombre) :-
 ### Verificación
 
 ```{code-cell} prolog
-?- consultar_o_registrar(1, Nombre).
+?- consultar_o_registrar(1, Nombre), assertion(Nombre == ana).
+```
+
+```{code-cell} prolog
+?- retractall(personas(3, _)), consultar_o_registrar(3, carla), assertion(personas(3, carla)), retractall(personas(3, _)).
 ```
 
 ## Ejercicio 3
 
-3. Desarrollar un programa que permita definir los hábitos de:
+Desarrollar un programa que permita definir los hábitos de:
 
 - alimentación (comida, cantidad)
-
 - bebida (bebida, cantidad)
-
 - reproducción (época de reproducción, período de gestación)
-
 - horas de sueño
 
 de un conjunto de animales de un Zoo. Dicha información se guardará en una base
-
-de datos. El programa, deberá permitir: a. Ingresar el nombre de un animal e
-
+de datos. El programa deberá permitir: a. Ingresar el nombre de un animal e
 informar de todos sus hábitos. b. Ingresar un hábito e informar todos los
-
 animales que lo tienen.
 
 ### Solución
@@ -107,12 +101,16 @@ animal_con_habito(Animal, Habito) :- habito(Animal, Habito).
 ### Verificación
 
 ```{code-cell} prolog
-?- habitos_de(leon, Habito).
+?- findall(Habito, habitos_de(leon, Habito), Habitos), assertion(Habitos == [alimentacion(carne, mucha), suenio(18)]).
+```
+
+```{code-cell} prolog
+?- findall(Animal, animal_con_habito(Animal, alimentacion(hojas, mucha)), Animales), assertion(Animales == [jirafa]).
 ```
 
 ## Ejercicio 4
 
-4. Ampliar el ejercicio 1 a través del uso de functores. Por ejemplo:
+Ampliar el ejercicio 1 a través del uso de functores. Por ejemplo:
 
 ```{code-cell} prolog
 
@@ -122,11 +120,8 @@ gasto(maria, tel(movil, personal, 100)).
 ```
 
 a. Ingresar un gasto (por ej. super) e informar todas las personas que tienen
-
 dicho gasto. b. Informar las personas que tienen un consumo superior a los $150
-
 en un cierto gasto (dato de entrada). c. Calcular gasto promedio para una
-
 determinada persona (dato de entrada).
 
 ### Solución
@@ -134,9 +129,6 @@ determinada persona (dato de entrada).
 ```{code-cell} prolog
 :tags: [hide-cell]
 
-gasto(maria, super(coto, 500)).
-gasto(omar, tel(fijo, telecom, 150)).
-gasto(maria, tel(movil, personal, 100)).
 persona_con_gasto(Persona, Tipo) :-
     gasto(Persona, Gasto), functor(Gasto, Tipo, _).
 consumo_superior(Persona, Tipo, Minimo) :-
@@ -148,27 +140,29 @@ promedio_persona(Persona, Promedio) :-
 ### Verificación
 
 ```{code-cell} prolog
-?- persona_con_gasto(maria, super).
+?- findall(Persona, persona_con_gasto(Persona, super), Personas), assertion(Personas == [maria]).
+```
+
+```{code-cell} prolog
+?- findall(Persona, consumo_superior(Persona, tel, 99), Personas), assertion(Personas == [omar, maria]).
+```
+
+```{code-cell} prolog
+?- promedio_persona(maria, Promedio), assertion(Promedio =:= 300).
 ```
 
 ## Ejercicio 5
 
-5. Hacer un programa que permita realizar altas, bajas y consultas a la base de
-
-   datos de una librería. De cada libro se registran los siguientes datos:
+Hacer un programa que permita realizar altas, bajas y consultas a la base de
+datos de una librería. De cada libro se registran los siguientes datos:
 
 - Nro. de libro (auto numérico)
-
-- Titulo
-
+- Título
 - Autor
-
 - Editorial
-
 - Precio
 
 La base datos debe guardarse en disco. Calcular además el precio promedio de los
-
 libros de un determinado autor.
 
 ### Solución
@@ -176,6 +170,7 @@ libros de un determinado autor.
 ```{code-cell} prolog
 :tags: [hide-cell]
 
+:- dynamic libro/5.
 alta_libro(Nro, Titulo, Autor, Editorial, Precio) :-
     assertz(libro(Nro, Titulo, Autor, Editorial, Precio)).
 baja_libro(Nro) :- retractall(libro(Nro, _, _, _, _)).
@@ -188,32 +183,23 @@ promedio_autor(Autor, Promedio) :-
 ### Verificación
 
 ```{code-cell} prolog
-?- alta_libro(1, prolog, aquili, utn, 100).
-```
-
-```{code-cell} prolog
-?- consulta_libro(1, Titulo, Autor, Editorial, Precio).
+?- retractall(libro(_, _, _, _, _)), alta_libro(1, prolog, aquili, utn, 100), consulta_libro(1, Titulo, Autor, Editorial, Precio), assertion(Titulo == prolog), assertion(Autor == aquili), assertion(Editorial == utn), assertion(Precio =:= 100), promedio_autor(aquili, Promedio), assertion(Promedio =:= 100), baja_libro(1), assertion(\+ consulta_libro(1, _, _, _, _)).
 ```
 
 ## Ejercicio 6
 
-6. Hacer un programa que permita registrar en una Base de Datos recetas de
-
-   cocina. De cada receta se registran los siguientes datos:
+Hacer un programa que permita registrar en una Base de Datos recetas de cocina.
+De cada receta se registran los siguientes datos:
 
 - Código de receta
-
-- Nombre de la receta Y por cada ingrediente que contenga la receta:
-
+- Nombre de la receta
 - Nombre del ingrediente
+- Cantidad
 
-- Cantidad A su vez, permitir ingresar dos (2) ingredientes e informar de todas
-
-  las recetas (Código y Nombre) que poseen ambos ingredientes. Por otro lado,
-
-  para un ingrediente en particular y una cierta cantidad del mismo, determinar
-
-  aquellas recetas que llevan ese ingrediente y superan dicha cantidad.
+A su vez, permitir ingresar dos (2) ingredientes e informar de todas las recetas
+(Código y Nombre) que poseen ambos ingredientes. Por otro lado, para un
+ingrediente en particular y una cierta cantidad del mismo, determinar aquellas
+recetas que llevan ese ingrediente y superan dicha cantidad.
 
 ### Solución
 
@@ -232,5 +218,9 @@ recetas_con_cantidad(Codigo, Nombre, Ingrediente, Minimo) :-
 ### Verificación
 
 ```{code-cell} prolog
-?- recetas_con_ingredientes(Codigo, Nombre, tomate, lechuga).
+?- findall(Codigo-Nombre, recetas_con_ingredientes(Codigo, Nombre, tomate, lechuga), Recetas), assertion(Recetas == [1-ensalada]).
+```
+
+```{code-cell} prolog
+?- findall(Codigo-Nombre, recetas_con_cantidad(Codigo, Nombre, tomate, 2), Recetas), assertion(Recetas == [2-salsa]).
 ```

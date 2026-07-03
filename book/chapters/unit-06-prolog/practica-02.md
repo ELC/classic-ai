@@ -14,7 +14,7 @@ PROLOG - Listas
 
 ## Ejercicio 1
 
-1. Ingresar una lista de elementos y mostrarla por pantalla.
+Ingresar una lista de elementos y mostrarla por pantalla.
 
 ### Solución
 
@@ -27,12 +27,12 @@ mostrar(Lista) :- write(Lista).
 ### Verificación
 
 ```{code-cell} prolog
-?- mostrar([a, b, c]).
+?- with_output_to(atom(Salida), mostrar([a, b, c])), assertion(Salida == '[a,b,c]').
 ```
 
 ## Ejercicio 2
 
-2. Ingresar una lista de elementos y mostrar su cabeza y su cola.
+Ingresar una lista de elementos y mostrar su cabeza y su cola.
 
 ### Solución
 
@@ -45,12 +45,12 @@ cabeza_cola(Lista, Cabeza, Cola) :- Lista = [Cabeza|Cola].
 ### Verificación
 
 ```{code-cell} prolog
-?- cabeza_cola([a, b, c], Cabeza, Cola).
+?- cabeza_cola([a, b, c], Cabeza, Cola), assertion(Cabeza == a), assertion(Cola == [b, c]).
 ```
 
 ## Ejercicio 3
 
-3. Ingresar una lista de elementos y mostrar su primer elemento.
+Ingresar una lista de elementos y mostrar su primer elemento.
 
 ### Solución
 
@@ -63,12 +63,12 @@ primer_elemento(Lista, Primero) :- Lista = [Primero|_].
 ### Verificación
 
 ```{code-cell} prolog
-?- primer_elemento([a, b, c], Primero).
+?- primer_elemento([a, b, c], Primero), assertion(Primero == a).
 ```
 
 ## Ejercicio 4
 
-4. Ingresar una lista de elementos y mostrar sus dos primeros elementos.
+Ingresar una lista de elementos y mostrar sus dos primeros elementos.
 
 ### Solución
 
@@ -81,12 +81,12 @@ dos_primeros(Lista, Primero, Segundo) :- Lista = [Primero, Segundo|_].
 ### Verificación
 
 ```{code-cell} prolog
-?- dos_primeros([a, b, c], Primero, Segundo).
+?- dos_primeros([a, b, c], Primero, Segundo), assertion(Primero == a), assertion(Segundo == b).
 ```
 
 ## Ejercicio 5
 
-5. Ingresar una lista de elementos y mostrar su último elemento.
+Ingresar una lista de elementos y mostrar su último elemento.
 
 ### Solución
 
@@ -100,14 +100,13 @@ ultimo([_|Cola], Ultimo) :- ultimo(Cola, Ultimo).
 ### Verificación
 
 ```{code-cell} prolog
-?- ultimo([a, b, c], Ultimo).
+?- ultimo([a, b, c], Ultimo), assertion(Ultimo == c).
 ```
 
 ## Ejercicio 6
 
-6. Ingresar una lista de números enteros y calcular la diferencia entre el
-
-   primero y el último de ellos.
+Ingresar una lista de números enteros y calcular la diferencia entre el primero
+y el último de ellos.
 
 ### Solución
 
@@ -121,12 +120,12 @@ diferencia_primero_ultimo([Primero|Cola], Diferencia) :-
 ### Verificación
 
 ```{code-cell} prolog
-?- diferencia_primero_ultimo([10, 2, 4], Diferencia).
+?- diferencia_primero_ultimo([10, 2, 4], Diferencia), assertion(Diferencia =:= 6).
 ```
 
 ## Ejercicio 7
 
-7. Ingresar una lista de elementos e informar cuántos elementos tiene.
+Ingresar una lista de elementos e informar cuántos elementos tiene.
 
 ### Solución
 
@@ -140,14 +139,13 @@ cantidad([_|Cola], N) :- cantidad(Cola, N1), N is N1 + 1.
 ### Verificación
 
 ```{code-cell} prolog
-?- cantidad([a, b, c], Cantidad).
+?- cantidad([a, b, c], Cantidad), assertion(Cantidad =:= 3).
 ```
 
 ## Ejercicio 8
 
-8. Ingresar una lista de números enteros e informar cuánto da la sumatoria de
-
-   ellos.
+Ingresar una lista de números enteros e informar cuánto da la sumatoria de
+ellos.
 
 ### Solución
 
@@ -162,21 +160,19 @@ sumatoria([Cabeza|Cola], Suma) :-
 ### Verificación
 
 ```{code-cell} prolog
-?- sumatoria([1, 2, 3], Suma).
+?- sumatoria([1, 2, 3], Suma), assertion(Suma =:= 6).
 ```
 
 ## Ejercicio 9
 
-9. Ingresar una lista de números enteros y calcular su promedio. Respetar el
-
-formato del predicado donde L es la lista ingresada, S la
+Ingresar una lista de números enteros y calcular su promedio. Respetar el
+formato del predicado donde L es la lista ingresada, S la sumatoria y C el
+contador de los elementos de la lista.
 
 ```{code-cell} prolog
 
 % promedio(L, S, C).
 ```
-
-sumatoria y C el contador de los elementos de la lista.
 
 ### Solución
 
@@ -190,14 +186,12 @@ promedio(Lista, Suma, Cantidad) :-
 ### Verificación
 
 ```{code-cell} prolog
-?- promedio([1, 2, 3], Suma, Cantidad).
+?- promedio([1, 2, 3], Suma, Cantidad), assertion(Suma =:= 6), assertion(Cantidad =:= 3).
 ```
 
 ## Ejercicio 10
 
-10. Ingresar una lista y un elemento e informar si ese elemento está en la
-
-    lista.
+Ingresar una lista y un elemento e informar si ese elemento está en la lista.
 
 ### Solución
 
@@ -211,14 +205,12 @@ pertenece(Elemento, [_|Cola]) :- pertenece(Elemento, Cola).
 ### Verificación
 
 ```{code-cell} prolog
-?- pertenece(b, [a, b, c]).
+?- assertion(pertenece(b, [a, b, c])).
 ```
 
 ## Ejercicio 11
 
-11. Ingresar una lista de enteros e informar cuál es el mayor de todos los
-
-    números.
+Ingresar una lista de enteros e informar cuál es el mayor de todos los números.
 
 ### Solución
 
@@ -233,14 +225,12 @@ mayor([Cabeza|Cola], Mayor) :-
 ### Verificación
 
 ```{code-cell} prolog
-?- mayor([3, 8, 2], Mayor).
+?- mayor([3, 8, 2], Mayor), assertion(Mayor =:= 8).
 ```
 
 ## Ejercicio 12
 
-12. Ingresar una lista de enteros e informar cuál es el menor de todos los
-
-    números.
+Ingresar una lista de enteros e informar cuál es el menor de todos los números.
 
 ### Solución
 
@@ -255,14 +245,13 @@ menor([Cabeza|Cola], Menor) :-
 ### Verificación
 
 ```{code-cell} prolog
-?- menor([3, 8, 2], Menor).
+?- menor([3, 8, 2], Menor), assertion(Menor =:= 2).
 ```
 
 ## Ejercicio 13
 
-13. Ingresar dos listas de elementos, concatenarlas (los elementos deben ser
-
-    asignados de a uno en la lista de salida) y mostrarlas en una tercera.
+Ingresar dos listas de elementos, concatenarlas (los elementos deben ser
+asignados de a uno en la lista de salida) y mostrarlas en una tercera.
 
 ### Solución
 
@@ -277,12 +266,12 @@ concatenar([Cabeza|Cola], Lista, [Cabeza|Resultado]) :-
 ### Verificación
 
 ```{code-cell} prolog
-?- concatenar([a, b], [c, d], Resultado).
+?- concatenar([a, b], [c, d], Resultado), assertion(Resultado == [a, b, c, d]).
 ```
 
 ## Ejercicio 14
 
-14. Ingresar una lista y determinar el primer elemento que se repite.
+Ingresar una lista y determinar el primer elemento que se repite.
 
 ### Solución
 
@@ -296,14 +285,13 @@ primer_repetido([_|Cola], Repetido) :- primer_repetido(Cola, Repetido).
 ### Verificación
 
 ```{code-cell} prolog
-?- primer_repetido([a, b, c, b], Repetido).
+?- primer_repetido([a, b, c, b], Repetido), assertion(Repetido == b).
 ```
 
 ## Ejercicio 15
 
-15. Ingresar una lista y determinar a través de una segunda lista todos los
-
-    elementos que se repiten.
+Ingresar una lista y determinar a través de una segunda lista todos los
+elementos que se repiten.
 
 ### Solución
 
@@ -320,14 +308,13 @@ repetidos([Cabeza|Cola], Resultado) :-
 ### Verificación
 
 ```{code-cell} prolog
-?- repetidos([a, b, c, b, a], Resultado).
+?- repetidos([a, b, c, b, a], Resultado), assertion(Resultado == [a, b]).
 ```
 
 ## Ejercicio 16
 
-16. Ingresar una lista y un elemento e informar cuántas veces está ese elemento
-
-    en la lista.
+Ingresar una lista y un elemento e informar cuántas veces está ese elemento en
+la lista.
 
 ### Solución
 
@@ -344,24 +331,18 @@ apariciones(Elemento, [Otro|Cola], Cantidad) :-
 ### Verificación
 
 ```{code-cell} prolog
-?- apariciones(a, [a, b, a, c], Cantidad).
+?- apariciones(a, [a, b, a, c], Cantidad), assertion(Cantidad =:= 2).
 ```
 
 ## Ejercicio 17
 
-17. En una base de hechos hay un registro de personas y viajes realizados:
-
-Construir una regla que permita
+En una base de hechos hay un registro de personas y viajes realizados. Construir
+una regla que permita verificar si una persona visitó una determinada ciudad
+(datos de entrada: nombre persona y ciudad).
 
 ```{code-cell} prolog
 
 % persona(Nombre, [ListaCiudadesVisito]).
-```
-
-```
-verificar si una persona visitó una determinada ciudad (datos de entrada:
-
-nombre persona y ciudad).
 ```
 
 ### Solución
@@ -378,5 +359,5 @@ visito(Persona, Ciudad) :-
 ### Verificación
 
 ```{code-cell} prolog
-?- visito(ana, rosario).
+?- assertion(visito(ana, rosario)).
 ```
