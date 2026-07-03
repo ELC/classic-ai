@@ -21,7 +21,7 @@ PROLOG - Listas
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-mostrar([a, b, c])?
+mostrar([a,b,c])?
 ```
 
 ### Solución
@@ -41,15 +41,17 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-mostrar([a, b, c])?
+mostrar([a,b,c])?
 ```
 
 ### Resultado esperado
 
 ```{code-cell} prolog
 mostrar(Lista) :- write(Lista).
+```
 
-mostrar([a, b, c])?
+```{code-cell} prolog
+mostrar([a,b,c])?
 ```
 
 ## Ejercicio 2
@@ -61,7 +63,7 @@ mostrar([a, b, c])?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-cabeza_cola([a, b, c], Cabeza, Cola)?
+cabeza_cola([a,b,c],Cabeza,Cola)?
 ```
 
 ### Solución
@@ -81,15 +83,17 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-cabeza_cola([a, b, c], Cabeza, Cola)?
+cabeza_cola([a,b,c],Cabeza,Cola)?
 ```
 
 ### Resultado esperado
 
 ```{code-cell} prolog
 cabeza_cola([Cabeza|Cola], Cabeza, Cola).
+```
 
-cabeza_cola([a, b, c], Cabeza, Cola)?
+```{code-cell} prolog
+cabeza_cola([a,b,c],Cabeza,Cola)?
 ```
 
 ## Ejercicio 3
@@ -101,7 +105,7 @@ cabeza_cola([a, b, c], Cabeza, Cola)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-primer_elemento([a, b, c], Primero)?
+primer_elemento([a,b,c],Primero)?
 ```
 
 ### Solución
@@ -121,15 +125,17 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-primer_elemento([a, b, c], Primero)?
+primer_elemento([a,b,c],Primero)?
 ```
 
 ### Resultado esperado
 
 ```{code-cell} prolog
 primer_elemento([Primero|_], Primero).
+```
 
-primer_elemento([a, b, c], Primero)?
+```{code-cell} prolog
+primer_elemento([a,b,c],Primero)?
 ```
 
 ## Ejercicio 4
@@ -141,7 +147,7 @@ primer_elemento([a, b, c], Primero)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-dos_primeros([a, b, c], Primero, Segundo)?
+dos_primeros([a,b,c],Primero,Segundo)?
 ```
 
 ### Solución
@@ -161,15 +167,17 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-dos_primeros([a, b, c], Primero, Segundo)?
+dos_primeros([a,b,c],Primero,Segundo)?
 ```
 
 ### Resultado esperado
 
 ```{code-cell} prolog
 dos_primeros([Primero, Segundo|_], Primero, Segundo).
+```
 
-dos_primeros([a, b, c], Primero, Segundo)?
+```{code-cell} prolog
+dos_primeros([a,b,c],Primero,Segundo)?
 ```
 
 ## Ejercicio 5
@@ -181,7 +189,7 @@ dos_primeros([a, b, c], Primero, Segundo)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-ultimo([a, b, c], Ultimo)?
+ultimo([a,b,c],Ultimo)?
 ```
 
 ### Solución
@@ -202,7 +210,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-ultimo([a, b, c], Ultimo)?
+ultimo([a,b,c],Ultimo)?
 ```
 
 ### Resultado esperado
@@ -210,8 +218,10 @@ ultimo([a, b, c], Ultimo)?
 ```{code-cell} prolog
 ultimo([Ultimo], Ultimo).
 ultimo([_|Cola], Ultimo) :- ultimo(Cola, Ultimo).
+```
 
-ultimo([a, b, c], Ultimo)?
+```{code-cell} prolog
+ultimo([a,b,c],Ultimo)?
 ```
 
 ## Ejercicio 6
@@ -225,7 +235,7 @@ ultimo([a, b, c], Ultimo)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-diferencia_primero_ultimo([10, 2, 4], Diferencia)?
+diferencia_primero_ultimo([10,2,4],Diferencia)?
 ```
 
 ### Solución
@@ -234,8 +244,7 @@ diferencia_primero_ultimo([10, 2, 4], Diferencia)?
 :tags: [skip-execution]
 
 diferencia_primero_ultimo([Primero|Cola], Diferencia) :-
-    ultimo(Cola, Ultimo),
-    Diferencia is Primero - Ultimo.
+    ultimo(Cola, Ultimo), Diferencia is Primero - Ultimo.
 ```
 
 ### Verificación
@@ -247,17 +256,18 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-diferencia_primero_ultimo([10, 2, 4], Diferencia)?
+diferencia_primero_ultimo([10,2,4],Diferencia)?
 ```
 
 ### Resultado esperado
 
 ```{code-cell} prolog
 diferencia_primero_ultimo([Primero|Cola], Diferencia) :-
-    ultimo(Cola, Ultimo),
-    Diferencia is Primero - Ultimo.
+    ultimo(Cola, Ultimo), Diferencia is Primero - Ultimo.
+```
 
-diferencia_primero_ultimo([10, 2, 4], Diferencia)?
+```{code-cell} prolog
+diferencia_primero_ultimo([10,2,4],Diferencia)?
 ```
 
 ## Ejercicio 7
@@ -269,7 +279,7 @@ diferencia_primero_ultimo([10, 2, 4], Diferencia)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-cantidad([a, b, c], Cantidad)?
+cantidad([a,b,c],Cantidad)?
 ```
 
 ### Solución
@@ -290,7 +300,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-cantidad([a, b, c], Cantidad)?
+cantidad([a,b,c],Cantidad)?
 ```
 
 ### Resultado esperado
@@ -298,8 +308,10 @@ cantidad([a, b, c], Cantidad)?
 ```{code-cell} prolog
 cantidad([], 0).
 cantidad([_|Cola], N) :- cantidad(Cola, N1), N is N1 + 1.
+```
 
-cantidad([a, b, c], Cantidad)?
+```{code-cell} prolog
+cantidad([a,b,c],Cantidad)?
 ```
 
 ## Ejercicio 8
@@ -313,7 +325,7 @@ cantidad([a, b, c], Cantidad)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-sumatoria([1, 2, 3], Suma)?
+sumatoria([1,2,3],Suma)?
 ```
 
 ### Solución
@@ -323,8 +335,7 @@ sumatoria([1, 2, 3], Suma)?
 
 sumatoria([], 0).
 sumatoria([Cabeza|Cola], Suma) :-
-    sumatoria(Cola, Parcial),
-    Suma is Cabeza + Parcial.
+    sumatoria(Cola, Parcial), Suma is Cabeza + Parcial.
 ```
 
 ### Verificación
@@ -336,7 +347,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-sumatoria([1, 2, 3], Suma)?
+sumatoria([1,2,3],Suma)?
 ```
 
 ### Resultado esperado
@@ -344,10 +355,11 @@ sumatoria([1, 2, 3], Suma)?
 ```{code-cell} prolog
 sumatoria([], 0).
 sumatoria([Cabeza|Cola], Suma) :-
-    sumatoria(Cola, Parcial),
-    Suma is Cabeza + Parcial.
+    sumatoria(Cola, Parcial), Suma is Cabeza + Parcial.
+```
 
-sumatoria([1, 2, 3], Suma)?
+```{code-cell} prolog
+sumatoria([1,2,3],Suma)?
 ```
 
 ## Ejercicio 9
@@ -359,7 +371,7 @@ formato del predicado donde L es la lista ingresada, S la
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-promedio(L,S,C).
+promedio(L, S, C).
 ```
 
 sumatoria y C el contador de los elementos de la lista.
@@ -369,7 +381,7 @@ sumatoria y C el contador de los elementos de la lista.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-promedio([1, 2, 3], Suma, Cantidad)?
+promedio([1,2,3],Suma,Cantidad)?
 ```
 
 ### Solución
@@ -378,9 +390,7 @@ promedio([1, 2, 3], Suma, Cantidad)?
 :tags: [skip-execution]
 
 promedio(Lista, Suma, Cantidad) :-
-    sumatoria(Lista, Suma),
-    cantidad(Lista, Cantidad),
-    Cantidad > 0.
+    sumatoria(Lista, Suma), cantidad(Lista, Cantidad), Cantidad > 0.
 ```
 
 ### Verificación
@@ -392,18 +402,18 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-promedio([1, 2, 3], Suma, Cantidad)?
+promedio([1,2,3],Suma,Cantidad)?
 ```
 
 ### Resultado esperado
 
 ```{code-cell} prolog
 promedio(Lista, Suma, Cantidad) :-
-    sumatoria(Lista, Suma),
-    cantidad(Lista, Cantidad),
-    Cantidad > 0.
+    sumatoria(Lista, Suma), cantidad(Lista, Cantidad), Cantidad > 0.
+```
 
-promedio([1, 2, 3], Suma, Cantidad)?
+```{code-cell} prolog
+promedio([1,2,3],Suma,Cantidad)?
 ```
 
 ## Ejercicio 10
@@ -417,7 +427,7 @@ promedio([1, 2, 3], Suma, Cantidad)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-pertenece(b, [a, b, c])?
+pertenece(b,[a,b,c])?
 ```
 
 ### Solución
@@ -438,7 +448,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-pertenece(b, [a, b, c])?
+pertenece(b,[a,b,c])?
 ```
 
 ### Resultado esperado
@@ -446,8 +456,10 @@ pertenece(b, [a, b, c])?
 ```{code-cell} prolog
 pertenece(Elemento, [Elemento|_]).
 pertenece(Elemento, [_|Cola]) :- pertenece(Elemento, Cola).
+```
 
-pertenece(b, [a, b, c])?
+```{code-cell} prolog
+pertenece(b,[a,b,c])?
 ```
 
 ## Ejercicio 11
@@ -461,7 +473,7 @@ pertenece(b, [a, b, c])?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-mayor([3, 8, 2], Mayor)?
+mayor([3,8,2],Mayor)?
 ```
 
 ### Solución
@@ -471,8 +483,7 @@ mayor([3, 8, 2], Mayor)?
 
 mayor([X], X).
 mayor([Cabeza|Cola], Mayor) :-
-    mayor(Cola, MayorCola),
-    (Cabeza > MayorCola -> Mayor = Cabeza ; Mayor = MayorCola).
+    mayor(Cola, MayorCola), (Cabeza > MayorCola -> Mayor = Cabeza ; Mayor = MayorCola).
 ```
 
 ### Verificación
@@ -484,7 +495,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-mayor([3, 8, 2], Mayor)?
+mayor([3,8,2],Mayor)?
 ```
 
 ### Resultado esperado
@@ -492,10 +503,11 @@ mayor([3, 8, 2], Mayor)?
 ```{code-cell} prolog
 mayor([X], X).
 mayor([Cabeza|Cola], Mayor) :-
-    mayor(Cola, MayorCola),
-    (Cabeza > MayorCola -> Mayor = Cabeza ; Mayor = MayorCola).
+    mayor(Cola, MayorCola), (Cabeza > MayorCola -> Mayor = Cabeza ; Mayor = MayorCola).
+```
 
-mayor([3, 8, 2], Mayor)?
+```{code-cell} prolog
+mayor([3,8,2],Mayor)?
 ```
 
 ## Ejercicio 12
@@ -509,7 +521,7 @@ mayor([3, 8, 2], Mayor)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-menor([3, 8, 2], Menor)?
+menor([3,8,2],Menor)?
 ```
 
 ### Solución
@@ -519,8 +531,7 @@ menor([3, 8, 2], Menor)?
 
 menor([X], X).
 menor([Cabeza|Cola], Menor) :-
-    menor(Cola, MenorCola),
-    (Cabeza < MenorCola -> Menor = Cabeza ; Menor = MenorCola).
+    menor(Cola, MenorCola), (Cabeza < MenorCola -> Menor = Cabeza ; Menor = MenorCola).
 ```
 
 ### Verificación
@@ -532,7 +543,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-menor([3, 8, 2], Menor)?
+menor([3,8,2],Menor)?
 ```
 
 ### Resultado esperado
@@ -540,10 +551,11 @@ menor([3, 8, 2], Menor)?
 ```{code-cell} prolog
 menor([X], X).
 menor([Cabeza|Cola], Menor) :-
-    menor(Cola, MenorCola),
-    (Cabeza < MenorCola -> Menor = Cabeza ; Menor = MenorCola).
+    menor(Cola, MenorCola), (Cabeza < MenorCola -> Menor = Cabeza ; Menor = MenorCola).
+```
 
-menor([3, 8, 2], Menor)?
+```{code-cell} prolog
+menor([3,8,2],Menor)?
 ```
 
 ## Ejercicio 13
@@ -557,7 +569,7 @@ menor([3, 8, 2], Menor)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-concatenar([a, b], [c, d], Resultado)?
+concatenar([a,b],[c,d],Resultado)?
 ```
 
 ### Solución
@@ -579,7 +591,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-concatenar([a, b], [c, d], Resultado)?
+concatenar([a,b],[c,d],Resultado)?
 ```
 
 ### Resultado esperado
@@ -588,8 +600,10 @@ concatenar([a, b], [c, d], Resultado)?
 concatenar([], Lista, Lista).
 concatenar([Cabeza|Cola], Lista, [Cabeza|Resultado]) :-
     concatenar(Cola, Lista, Resultado).
+```
 
-concatenar([a, b], [c, d], Resultado)?
+```{code-cell} prolog
+concatenar([a,b],[c,d],Resultado)?
 ```
 
 ## Ejercicio 14
@@ -601,7 +615,7 @@ concatenar([a, b], [c, d], Resultado)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-primer_repetido([a, b, c, b], Repetido)?
+primer_repetido([a,b,c,b],Repetido)?
 ```
 
 ### Solución
@@ -622,7 +636,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-primer_repetido([a, b, c, b], Repetido)?
+primer_repetido([a,b,c,b],Repetido)?
 ```
 
 ### Resultado esperado
@@ -630,8 +644,10 @@ primer_repetido([a, b, c, b], Repetido)?
 ```{code-cell} prolog
 primer_repetido([Cabeza|Cola], Cabeza) :- pertenece(Cabeza, Cola).
 primer_repetido([_|Cola], Repetido) :- primer_repetido(Cola, Repetido).
+```
 
-primer_repetido([a, b, c, b], Repetido)?
+```{code-cell} prolog
+primer_repetido([a,b,c,b],Repetido)?
 ```
 
 ## Ejercicio 15
@@ -645,7 +661,7 @@ primer_repetido([a, b, c, b], Repetido)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-repetidos([a, b, c, b, a], Resultado)?
+repetidos([a,b,c,b,a],Resultado)?
 ```
 
 ### Solución
@@ -655,11 +671,9 @@ repetidos([a, b, c, b, a], Resultado)?
 
 repetidos([], []).
 repetidos([Cabeza|Cola], [Cabeza|Resultado]) :-
-    pertenece(Cabeza, Cola),
-    repetidos(Cola, Resultado).
+    pertenece(Cabeza, Cola), repetidos(Cola, Resultado).
 repetidos([Cabeza|Cola], Resultado) :-
-    \+ pertenece(Cabeza, Cola),
-    repetidos(Cola, Resultado).
+    \+ pertenece(Cabeza, Cola), repetidos(Cola, Resultado).
 ```
 
 ### Verificación
@@ -671,7 +685,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-repetidos([a, b, c, b, a], Resultado)?
+repetidos([a,b,c,b,a],Resultado)?
 ```
 
 ### Resultado esperado
@@ -679,13 +693,13 @@ repetidos([a, b, c, b, a], Resultado)?
 ```{code-cell} prolog
 repetidos([], []).
 repetidos([Cabeza|Cola], [Cabeza|Resultado]) :-
-    pertenece(Cabeza, Cola),
-    repetidos(Cola, Resultado).
+    pertenece(Cabeza, Cola), repetidos(Cola, Resultado).
 repetidos([Cabeza|Cola], Resultado) :-
-    \+ pertenece(Cabeza, Cola),
-    repetidos(Cola, Resultado).
+    \+ pertenece(Cabeza, Cola), repetidos(Cola, Resultado).
+```
 
-repetidos([a, b, c, b, a], Resultado)?
+```{code-cell} prolog
+repetidos([a,b,c,b,a],Resultado)?
 ```
 
 ## Ejercicio 16
@@ -699,7 +713,7 @@ repetidos([a, b, c, b, a], Resultado)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-apariciones(a, [a, b, a, c], Cantidad)?
+apariciones(a,[a,b,a,c],Cantidad)?
 ```
 
 ### Solución
@@ -709,11 +723,9 @@ apariciones(a, [a, b, a, c], Cantidad)?
 
 apariciones(_, [], 0).
 apariciones(Elemento, [Elemento|Cola], Cantidad) :-
-    apariciones(Elemento, Cola, Parcial),
-    Cantidad is Parcial + 1.
+    apariciones(Elemento, Cola, Parcial), Cantidad is Parcial + 1.
 apariciones(Elemento, [Otro|Cola], Cantidad) :-
-    Elemento \= Otro,
-    apariciones(Elemento, Cola, Cantidad).
+    Elemento \= Otro, apariciones(Elemento, Cola, Cantidad).
 ```
 
 ### Verificación
@@ -725,7 +737,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-apariciones(a, [a, b, a, c], Cantidad)?
+apariciones(a,[a,b,a,c],Cantidad)?
 ```
 
 ### Resultado esperado
@@ -733,13 +745,13 @@ apariciones(a, [a, b, a, c], Cantidad)?
 ```{code-cell} prolog
 apariciones(_, [], 0).
 apariciones(Elemento, [Elemento|Cola], Cantidad) :-
-    apariciones(Elemento, Cola, Parcial),
-    Cantidad is Parcial + 1.
+    apariciones(Elemento, Cola, Parcial), Cantidad is Parcial + 1.
 apariciones(Elemento, [Otro|Cola], Cantidad) :-
-    Elemento \= Otro,
-    apariciones(Elemento, Cola, Cantidad).
+    Elemento \= Otro, apariciones(Elemento, Cola, Cantidad).
+```
 
-apariciones(a, [a, b, a, c], Cantidad)?
+```{code-cell} prolog
+apariciones(a,[a,b,a,c],Cantidad)?
 ```
 
 ## Ejercicio 17
@@ -765,7 +777,7 @@ nombre persona y ciudad).
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-visito(ana, rosario)?
+visito(ana,rosario)?
 ```
 
 ### Solución
@@ -776,8 +788,7 @@ visito(ana, rosario)?
 persona(ana, [rosario, cordoba, mendoza]).
 persona(luis, [salta, rosario]).
 visito(Persona, Ciudad) :-
-    persona(Persona, Ciudades),
-    pertenece(Ciudad, Ciudades).
+    persona(Persona, Ciudades), pertenece(Ciudad, Ciudades).
 ```
 
 ### Verificación
@@ -791,5 +802,5 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-visito(ana, rosario)?
+visito(ana,rosario)?
 ```

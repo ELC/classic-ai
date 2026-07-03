@@ -19,7 +19,7 @@ PROLOG - Cadenas
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-primer_caracter(hola, Caracter)?
+primer_caracter(hola,Caracter)?
 ```
 
 ### Solución
@@ -39,15 +39,17 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-primer_caracter(hola, Caracter)?
+primer_caracter(hola,Caracter)?
 ```
 
 ### Resultado esperado
 
 ```{code-cell} prolog
 primer_caracter(Cadena, Caracter) :- sub_atom(Cadena, 0, 1, _, Caracter).
+```
 
-primer_caracter(hola, Caracter)?
+```{code-cell} prolog
+primer_caracter(hola,Caracter)?
 ```
 
 ## Ejercicio 2
@@ -59,7 +61,7 @@ primer_caracter(hola, Caracter)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-ultimo_caracter(hola, Caracter)?
+ultimo_caracter(hola,Caracter)?
 ```
 
 ### Solución
@@ -68,9 +70,7 @@ ultimo_caracter(hola, Caracter)?
 :tags: [skip-execution]
 
 ultimo_caracter(Cadena, Caracter) :-
-    atom_length(Cadena, Longitud),
-    Inicio is Longitud - 1,
-    sub_atom(Cadena, Inicio, 1, 0, Caracter).
+    atom_length(Cadena, Longitud), Inicio is Longitud - 1, sub_atom(Cadena, Inicio, 1, 0, Caracter).
 ```
 
 ### Verificación
@@ -82,18 +82,18 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-ultimo_caracter(hola, Caracter)?
+ultimo_caracter(hola,Caracter)?
 ```
 
 ### Resultado esperado
 
 ```{code-cell} prolog
 ultimo_caracter(Cadena, Caracter) :-
-    atom_length(Cadena, Longitud),
-    Inicio is Longitud - 1,
-    sub_atom(Cadena, Inicio, 1, 0, Caracter).
+    atom_length(Cadena, Longitud), Inicio is Longitud - 1, sub_atom(Cadena, Inicio, 1, 0, Caracter).
+```
 
-ultimo_caracter(hola, Caracter)?
+```{code-cell} prolog
+ultimo_caracter(hola,Caracter)?
 ```
 
 ## Ejercicio 3
@@ -109,7 +109,7 @@ ultimo_caracter(hola, Caracter)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-largo_atom(hola, Longitud)?
+largo_atom(hola,Longitud)?
 ```
 
 ### Solución
@@ -119,10 +119,7 @@ largo_atom(hola, Longitud)?
 
 largo_atom(Cadena, Longitud) :- atom_length(Cadena, Longitud).
 largo_recursivo(Cadena, Longitud) :-
-    sub_atom(Cadena, 0, 1, Resto, _),
-    sub_atom(Cadena, 1, Resto, 0, Cola),
-    largo_recursivo(Cola, Parcial),
-    Longitud is Parcial + 1.
+    sub_atom(Cadena, 0, 1, Resto, _), sub_atom(Cadena, 1, Resto, 0, Cola), largo_recursivo(Cola, Parcial), Longitud is Parcial + 1.
 largo_recursivo('', 0).
 ```
 
@@ -135,7 +132,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-largo_atom(hola, Longitud)?
+largo_atom(hola,Longitud)?
 ```
 
 ### Resultado esperado
@@ -143,13 +140,12 @@ largo_atom(hola, Longitud)?
 ```{code-cell} prolog
 largo_atom(Cadena, Longitud) :- atom_length(Cadena, Longitud).
 largo_recursivo(Cadena, Longitud) :-
-    sub_atom(Cadena, 0, 1, Resto, _),
-    sub_atom(Cadena, 1, Resto, 0, Cola),
-    largo_recursivo(Cola, Parcial),
-    Longitud is Parcial + 1.
+    sub_atom(Cadena, 0, 1, Resto, _), sub_atom(Cadena, 1, Resto, 0, Cola), largo_recursivo(Cola, Parcial), Longitud is Parcial + 1.
 largo_recursivo('', 0).
+```
 
-largo_atom(hola, Longitud)?
+```{code-cell} prolog
+largo_atom(hola,Longitud)?
 ```
 
 ## Ejercicio 4
@@ -161,7 +157,7 @@ largo_atom(hola, Longitud)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-cadena_a_caracteres(hola, Caracteres)?
+cadena_a_caracteres(hola,Caracteres)?
 ```
 
 ### Solución
@@ -181,15 +177,17 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-cadena_a_caracteres(hola, Caracteres)?
+cadena_a_caracteres(hola,Caracteres)?
 ```
 
 ### Resultado esperado
 
 ```{code-cell} prolog
 cadena_a_caracteres(Cadena, Caracteres) :- atom_chars(Cadena, Caracteres).
+```
 
-cadena_a_caracteres(hola, Caracteres)?
+```{code-cell} prolog
+cadena_a_caracteres(hola,Caracteres)?
 ```
 
 ## Ejercicio 5
@@ -203,7 +201,7 @@ cadena_a_caracteres(hola, Caracteres)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-cadena_a_palabras('hola mundo', Palabras)?
+cadena_a_palabras('hola mundo',Palabras)?
 ```
 
 ### Solución
@@ -223,15 +221,17 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-cadena_a_palabras('hola mundo', Palabras)?
+cadena_a_palabras('hola mundo',Palabras)?
 ```
 
 ### Resultado esperado
 
 ```{code-cell} prolog
 cadena_a_palabras(Cadena, Palabras) :- atomic_list_concat(Palabras, ' ', Cadena).
+```
 
-cadena_a_palabras('hola mundo', Palabras)?
+```{code-cell} prolog
+cadena_a_palabras('hola mundo',Palabras)?
 ```
 
 ## Ejercicio 6
@@ -243,7 +243,7 @@ cadena_a_palabras('hola mundo', Palabras)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-a_binario(5, Binario)?
+a_binario(5,Binario)?
 ```
 
 ### Solución
@@ -253,16 +253,10 @@ a_binario(5, Binario)?
 
 a_binario(0, '0').
 a_binario(N, Binario) :-
-    N > 0,
-    a_binario_lista(N, Lista),
-    atomic_list_concat(Lista, Binario).
+    N > 0, a_binario_lista(N, Lista), atomic_list_concat(Lista, Binario).
 a_binario_lista(0, []).
 a_binario_lista(N, Lista) :-
-    N > 0,
-    Bit is N mod 2,
-    Cociente is N // 2,
-    a_binario_lista(Cociente, Parcial),
-    append(Parcial, [Bit], Lista).
+    N > 0, Bit is N mod 2, Cociente is N // 2, a_binario_lista(Cociente, Parcial), append(Parcial, [Bit], Lista).
 ```
 
 ### Verificación
@@ -274,7 +268,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-a_binario(5, Binario)?
+a_binario(5,Binario)?
 ```
 
 ### Resultado esperado
@@ -282,18 +276,14 @@ a_binario(5, Binario)?
 ```{code-cell} prolog
 a_binario(0, '0').
 a_binario(N, Binario) :-
-    N > 0,
-    a_binario_lista(N, Lista),
-    atomic_list_concat(Lista, Binario).
+    N > 0, a_binario_lista(N, Lista), atomic_list_concat(Lista, Binario).
 a_binario_lista(0, []).
 a_binario_lista(N, Lista) :-
-    N > 0,
-    Bit is N mod 2,
-    Cociente is N // 2,
-    a_binario_lista(Cociente, Parcial),
-    append(Parcial, [Bit], Lista).
+    N > 0, Bit is N mod 2, Cociente is N // 2, a_binario_lista(Cociente, Parcial), append(Parcial, [Bit], Lista).
+```
 
-a_binario(5, Binario)?
+```{code-cell} prolog
+a_binario(5,Binario)?
 ```
 
 ## Ejercicio 7
@@ -336,7 +326,9 @@ anbn(aabb)?
 anbn(Palabra) :- atom_chars(Palabra, Caracteres), anbn_lista(Caracteres).
 anbn_lista([]).
 anbn_lista([a|Resto]) :- append(Medio, [b], Resto), anbn_lista(Medio).
+```
 
+```{code-cell} prolog
 anbn(aabb)?
 ```
 
@@ -351,7 +343,7 @@ anbn(aabb)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-cantidad_caracter(banana, a, Cantidad)?
+cantidad_caracter(banana,a,Cantidad)?
 ```
 
 ### Solución
@@ -360,8 +352,7 @@ cantidad_caracter(banana, a, Cantidad)?
 :tags: [skip-execution]
 
 cantidad_caracter(Cadena, Caracter, Cantidad) :-
-    atom_chars(Cadena, Caracteres),
-    apariciones(Caracter, Caracteres, Cantidad).
+    atom_chars(Cadena, Caracteres), apariciones(Caracter, Caracteres, Cantidad).
 ```
 
 ### Verificación
@@ -373,17 +364,18 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-cantidad_caracter(banana, a, Cantidad)?
+cantidad_caracter(banana,a,Cantidad)?
 ```
 
 ### Resultado esperado
 
 ```{code-cell} prolog
 cantidad_caracter(Cadena, Caracter, Cantidad) :-
-    atom_chars(Cadena, Caracteres),
-    apariciones(Caracter, Caracteres, Cantidad).
+    atom_chars(Cadena, Caracteres), apariciones(Caracter, Caracteres, Cantidad).
+```
 
-cantidad_caracter(banana, a, Cantidad)?
+```{code-cell} prolog
+cantidad_caracter(banana,a,Cantidad)?
 ```
 
 ## Ejercicio 9
@@ -399,7 +391,7 @@ cantidad_caracter(banana, a, Cantidad)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-contar_vocales(casa, A, E, I, O, U, Consonantes)?
+contar_vocales(casa,A,E,I,O,U,Consonantes)?
 ```
 
 ### Solución
@@ -413,15 +405,10 @@ vocal(i).
 vocal(o).
 vocal(u).
 contar_vocales(Cadena, A, E, I, O, U, Consonantes) :-
-    atom_chars(Cadena, Caracteres),
-    apariciones(a, Caracteres, A), apariciones(e, Caracteres, E),
-    apariciones(i, Caracteres, I), apariciones(o, Caracteres, O),
-    apariciones(u, Caracteres, U),
-    contar_consonantes(Caracteres, Consonantes).
+    atom_chars(Cadena, Caracteres), apariciones(a, Caracteres, A), apariciones(e, Caracteres, E), apariciones(i, Caracteres, I), apariciones(o, Caracteres, O), apariciones(u, Caracteres, U), contar_consonantes(Caracteres, Consonantes).
 contar_consonantes([], 0).
 contar_consonantes([C|Resto], Total) :-
-    contar_consonantes(Resto, Parcial),
-    (vocal(C) -> Total = Parcial ; Total is Parcial + 1).
+    contar_consonantes(Resto, Parcial), (vocal(C) -> Total = Parcial ; Total is Parcial + 1).
 ```
 
 ### Verificación
@@ -435,5 +422,5 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-contar_vocales(casa, A, E, I, O, U, Consonantes)?
+contar_vocales(casa,A,E,I,O,U,Consonantes)?
 ```

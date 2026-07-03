@@ -17,21 +17,21 @@ PROLOG - Conceptos básicos
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-observa(maria,omar).
+observa(maria, omar).
 ```
 
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-observa(laura,omar).
-observa(maria,flavio).
-observa(gabriela,flavio).
+observa(laura, omar).
+observa(maria, flavio).
+observa(gabriela, flavio).
 ```
 
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-observa(maria,carlos).
+observa(maria, carlos).
 ```
 
 Ejecutar las siguientes preguntas al Prolog y analizar la respuesta dada en cada
@@ -41,17 +41,37 @@ caso.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-observa(maria,flavio).
-observa(maria,Quien).
-observa(maria,_).
+observa(maria,flavio)?
 ```
 
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-observa(Quien,flavio).
-observa(Quien1,Quien2).
-observa(_,\_).
+observa(maria, Quien)?
+```
+
+```{code-cell} prolog
+:tags: [skip-execution]
+
+observa(maria, _)?
+```
+
+```{code-cell} prolog
+:tags: [skip-execution]
+
+observa(Quien, flavio)?
+```
+
+```{code-cell} prolog
+:tags: [skip-execution]
+
+observa(Quien1, Quien2)?
+```
+
+```{code-cell} prolog
+:tags: [skip-execution]
+
+observa(_, _)?
 ```
 
 ### Consultas de prueba
@@ -59,8 +79,13 @@ observa(_,\_).
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-observa(maria, flavio)?
-observa(maria, Quien)?
+observa(maria,flavio)?
+```
+
+```{code-cell} prolog
+:tags: [skip-execution]
+
+observa(maria,Quien)?
 ```
 
 ### Solución
@@ -84,8 +109,13 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-observa(maria, flavio)?
-observa(maria, Quien)?
+observa(maria,flavio)?
+```
+
+```{code-cell} prolog
+:tags: [skip-execution]
+
+observa(maria,Quien)?
 ```
 
 ### Resultado esperado
@@ -96,9 +126,14 @@ observa(laura, omar).
 observa(maria, flavio).
 observa(gabriela, flavio).
 observa(maria, carlos).
+```
 
-observa(maria, flavio)?
-observa(maria, Quien)?
+```{code-cell} prolog
+observa(maria,flavio)?
+```
+
+```{code-cell} prolog
+observa(maria,Quien)?
 ```
 
 ## Ejercicio 2
@@ -110,29 +145,29 @@ determinar quienes hablan el idioma inglés y francés.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-conoce(franco,ingles).
+conoce(franco, ingles).
 ```
 
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-conoce(renzo,ingles).
-conoce(franco,frances).
-conoce(renzo,frances).
+conoce(renzo, ingles).
+conoce(franco, frances).
+conoce(renzo, frances).
 ```
 
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-conoce(franco,italiano).
-conoce(marco,ingles).
-conoce(omar,ingles).
+conoce(franco, italiano).
+conoce(marco, ingles).
+conoce(omar, ingles).
 ```
 
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-conoce(maria,frances).
+conoce(maria, frances).
 ```
 
 ### Consultas de prueba
@@ -158,8 +193,7 @@ conoce(omar, ingles).
 conoce(maria, frances).
 
 habla_ingles_y_frances(Persona) :-
-    conoce(Persona, ingles),
-    conoce(Persona, frances).
+    conoce(Persona, ingles), conoce(Persona, frances).
 ```
 
 ### Verificación
@@ -187,9 +221,10 @@ conoce(omar, ingles).
 conoce(maria, frances).
 
 habla_ingles_y_frances(Persona) :-
-    conoce(Persona, ingles),
-    conoce(Persona, frances).
+    conoce(Persona, ingles), conoce(Persona, frances).
+```
 
+```{code-cell} prolog
 habla_ingles_y_frances(Quien)?
 ```
 
@@ -218,8 +253,13 @@ rivales Argentina y Brasil? b) ¿Cuáles son los rivales de un determinado equip
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-rivales(argentina, brasil)?
-rivales(holanda, Rival)?
+rivales(argentina,brasil)?
+```
+
+```{code-cell} prolog
+:tags: [skip-execution]
+
+rivales(holanda,Rival)?
 ```
 
 ### Solución
@@ -237,9 +277,7 @@ grupo(2, holanda).
 grupo(2, escocia).
 
 rivales(Equipo, Rival) :-
-    grupo(Grupo, Equipo),
-    grupo(Grupo, Rival),
-    Equipo \= Rival.
+    grupo(Grupo, Equipo), grupo(Grupo, Rival), Equipo \= Rival.
 ```
 
 ### Verificación
@@ -251,8 +289,13 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-rivales(argentina, brasil)?
-rivales(holanda, Rival)?
+rivales(argentina,brasil)?
+```
+
+```{code-cell} prolog
+:tags: [skip-execution]
+
+rivales(holanda,Rival)?
 ```
 
 ### Resultado esperado
@@ -268,12 +311,15 @@ grupo(2, holanda).
 grupo(2, escocia).
 
 rivales(Equipo, Rival) :-
-    grupo(Grupo, Equipo),
-    grupo(Grupo, Rival),
-    Equipo \= Rival.
+    grupo(Grupo, Equipo), grupo(Grupo, Rival), Equipo \= Rival.
+```
 
-rivales(argentina, brasil)?
-rivales(holanda, Rival)?
+```{code-cell} prolog
+rivales(argentina,brasil)?
+```
+
+```{code-cell} prolog
+rivales(holanda,Rival)?
 ```
 
 ## Ejercicio 4
@@ -302,7 +348,7 @@ siguientes reglas:
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-hermana(A,B).
+hermana(A, B).
 ```
 
 - nieto/2, donde significa que A es el nieto de B.
@@ -310,7 +356,7 @@ hermana(A,B).
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-nieto(A,B).
+nieto(A, B).
 ```
 
 - abuelo/2, donde significa que A es el abuelo de B.
@@ -318,7 +364,7 @@ nieto(A,B).
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-abuelo(A,B).
+abuelo(A, B).
 ```
 
 - tia/2, donde significa que A es la tía de B. Esta regla definirla, en
@@ -326,7 +372,7 @@ abuelo(A,B).
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-tia(A,B).
+tia(A, B).
 ```
 
 una primera instancia, valiéndose sólo de los hechos disponibles. En una
@@ -340,7 +386,7 @@ previamente.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-nieto(lucia, maria)?
+nieto(lucia,maria)?
 ```
 
 ### Solución
@@ -358,23 +404,17 @@ padres(ana, maria, juan).
 padres(lucia, ana, pedro).
 
 hermana(A, B) :-
-    mujer(A),
-    padres(A, Madre, Padre),
-    padres(B, Madre, Padre),
-    A \= B.
+    mujer(A), padres(A, Madre, Padre), padres(B, Madre, Padre), A \= B.
 
 nieto(A, B) :-
-    padres(A, Madre, Padre),
-    (padres(Madre, B, _) ; padres(Madre, _, B) ;
+    padres(A, Madre, Padre), (padres(Madre, B, _) ; padres(Madre, _, B) ;
      padres(Padre, B, _) ; padres(Padre, _, B)).
 
 abuelo(A, B) :-
-    hombre(A),
-    nieto(B, A).
+    hombre(A), nieto(B, A).
 
 tia(A, B) :-
-    hermana(A, Madre),
-    padres(B, Madre, _).
+    hermana(A, Madre), padres(B, Madre, _).
 ```
 
 ### Verificación
@@ -386,7 +426,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-nieto(lucia, maria)?
+nieto(lucia,maria)?
 ```
 
 ### Resultado esperado
@@ -402,25 +442,21 @@ padres(ana, maria, juan).
 padres(lucia, ana, pedro).
 
 hermana(A, B) :-
-    mujer(A),
-    padres(A, Madre, Padre),
-    padres(B, Madre, Padre),
-    A \= B.
+    mujer(A), padres(A, Madre, Padre), padres(B, Madre, Padre), A \= B.
 
 nieto(A, B) :-
-    padres(A, Madre, Padre),
-    (padres(Madre, B, _) ; padres(Madre, _, B) ;
+    padres(A, Madre, Padre), (padres(Madre, B, _) ; padres(Madre, _, B) ;
      padres(Padre, B, _) ; padres(Padre, _, B)).
 
 abuelo(A, B) :-
-    hombre(A),
-    nieto(B, A).
+    hombre(A), nieto(B, A).
 
 tia(A, B) :-
-    hermana(A, Madre),
-    padres(B, Madre, _).
+    hermana(A, Madre), padres(B, Madre, _).
+```
 
-nieto(lucia, maria)?
+```{code-cell} prolog
+nieto(lucia,maria)?
 ```
 
 ## Ejercicio 5
@@ -430,23 +466,23 @@ nieto(lucia, maria)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-auto(patente,propietario).
+auto(patente, propietario).
 ```
 
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-auto(hti687,pedro).
-auto(jug144,juan).
-auto(gqm758,pedro).
+auto(hti687, pedro).
+auto(jug144, juan).
+auto(gqm758, pedro).
 ```
 
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-auto(lod445,carlos).
-auto(lfz569,miguel).
-auto(axk798,maria).
+auto(lod445, carlos).
+auto(lfz569, miguel).
+auto(axk798, maria).
 ```
 
 %
@@ -455,14 +491,14 @@ auto(axk798,maria).
 :tags: [skip-execution]
 
 deuda(patente, monto adeudado).
-deuda(lfz569,2000).
-deuda(gqm758,15000).
+deuda(lfz569, 2000).
+deuda(gqm758, 15000).
 ```
 
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-deuda(axk798,1000).
+deuda(axk798, 1000).
 ```
 
 Escriba una regla que permita determinar si una persona (dato entrada) tiene
@@ -494,8 +530,7 @@ deuda(gqm758, 15000).
 deuda(axk798, 1000).
 
 tiene_auto_con_deuda(Persona) :-
-    auto(Patente, Persona),
-    deuda(Patente, _).
+    auto(Patente, Persona), deuda(Patente, _).
 ```
 
 ### Verificación
@@ -525,9 +560,10 @@ deuda(gqm758, 15000).
 deuda(axk798, 1000).
 
 tiene_auto_con_deuda(Persona) :-
-    auto(Patente, Persona),
-    deuda(Patente, _).
+    auto(Patente, Persona), deuda(Patente, _).
+```
 
+```{code-cell} prolog
 tiene_auto_con_deuda(pedro)?
 ```
 
@@ -587,9 +623,7 @@ baterista(diego, casilda).
 baterista(laura, rosario).
 
 puede_formar_banda(Ciudad) :-
-    guitarrista(_, Ciudad),
-    cantante(_, Ciudad),
-    baterista(_, Ciudad).
+    guitarrista(_, Ciudad), cantante(_, Ciudad), baterista(_, Ciudad).
 ```
 
 ### Verificación
@@ -618,10 +652,10 @@ baterista(diego, casilda).
 baterista(laura, rosario).
 
 puede_formar_banda(Ciudad) :-
-    guitarrista(_, Ciudad),
-    cantante(_, Ciudad),
-    baterista(_, Ciudad).
+    guitarrista(_, Ciudad), cantante(_, Ciudad), baterista(_, Ciudad).
+```
 
+```{code-cell} prolog
 puede_formar_banda(rosario)?
 ```
 
@@ -638,7 +672,7 @@ puede_formar_banda(rosario)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-calcular(suma, 2, 3, Resultado)?
+calcular(suma,2,3,Resultado)?
 ```
 
 ### Solución
@@ -650,8 +684,7 @@ calcular(suma, A, B, Resultado) :- Resultado is A + B.
 calcular(resta, A, B, Resultado) :- Resultado is A - B.
 calcular(multiplicacion, A, B, Resultado) :- Resultado is A * B.
 calcular(division, A, B, Resultado) :-
-    B =\= 0,
-    Resultado is A / B.
+    B =\= 0, Resultado is A / B.
 ```
 
 ### Verificación
@@ -663,7 +696,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-calcular(suma, 2, 3, Resultado)?
+calcular(suma,2,3,Resultado)?
 ```
 
 ### Resultado esperado
@@ -673,10 +706,11 @@ calcular(suma, A, B, Resultado) :- Resultado is A + B.
 calcular(resta, A, B, Resultado) :- Resultado is A - B.
 calcular(multiplicacion, A, B, Resultado) :- Resultado is A * B.
 calcular(division, A, B, Resultado) :-
-    B =\= 0,
-    Resultado is A / B.
+    B =\= 0, Resultado is A / B.
+```
 
-calcular(suma, 2, 3, Resultado)?
+```{code-cell} prolog
+calcular(suma,2,3,Resultado)?
 ```
 
 ## Ejercicio 8
@@ -686,7 +720,7 @@ calcular(suma, 2, 3, Resultado)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-horoscopo(Signo,DiaInicio,MesIni,DiaFin,MesFin).
+horoscopo(Signo, DiaInicio, MesIni, DiaFin, MesFin).
 ```
 
 Por ejemplo:
@@ -694,14 +728,14 @@ Por ejemplo:
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-horoscopo(aries,21,3,20,4).
-horoscopo(tauro,21,4,21,5).
+horoscopo(aries, 21, 3, 20, 4).
+horoscopo(tauro, 21, 4, 21, 5).
 ```
 
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-horoscopo(geminis,22,5,21,6).
+horoscopo(geminis, 22, 5, 21, 6).
 ```
 
 Definir una regla del estilo que permita:
@@ -720,6 +754,11 @@ fecha. Ejemplo:
 :tags: [skip-execution]
 
 signo(3,5,tauro)?
+```
+
+```{code-cell} prolog
+:tags: [skip-execution]
+
 signo(23,4,aries)?
 ```
 
@@ -729,6 +768,11 @@ b. Ingresar una fecha (día y mes) y me informe de qué signo soy. Ejemplo:
 :tags: [skip-execution]
 
 signo(16,12,Signo)?
+```
+
+```{code-cell} prolog
+:tags: [skip-execution]
+
 signo(7,4,Signo)?
 ```
 
@@ -739,8 +783,13 @@ signo(7,4,Signo)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-signo(3, 5, tauro)?
-signo(16, 12, Signo)?
+signo(3,5,tauro)?
+```
+
+```{code-cell} prolog
+:tags: [skip-execution]
+
+signo(16,12,Signo)?
 ```
 
 ### Solución
@@ -763,18 +812,15 @@ horoscopo(piscis, 20, 2, 20, 3).
 
 fecha_en_rango(Dia, Mes, DiaInicio, MesInicio, DiaFin, MesFin) :-
     (MesInicio = MesFin, Mes = MesInicio, Dia >= DiaInicio, Dia =< DiaFin);
-    (MesInicio < MesFin,
-        ((Mes = MesInicio, Dia >= DiaInicio);
+    (MesInicio < MesFin, ((Mes = MesInicio, Dia >= DiaInicio);
          (Mes = MesFin, Dia =< DiaFin);
          (Mes > MesInicio, Mes < MesFin)));
-    (MesInicio > MesFin,
-        ((Mes = MesInicio, Dia >= DiaInicio);
+    (MesInicio > MesFin, ((Mes = MesInicio, Dia >= DiaInicio);
          (Mes = MesFin, Dia =< DiaFin);
          (Mes > MesInicio; Mes < MesFin))).
 
 signo(Dia, Mes, Signo) :-
-    horoscopo(Signo, DiaInicio, MesInicio, DiaFin, MesFin),
-    fecha_en_rango(Dia, Mes, DiaInicio, MesInicio, DiaFin, MesFin).
+    horoscopo(Signo, DiaInicio, MesInicio, DiaFin, MesFin), fecha_en_rango(Dia, Mes, DiaInicio, MesInicio, DiaFin, MesFin).
 ```
 
 ### Verificación
@@ -786,8 +832,13 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-signo(3, 5, tauro)?
-signo(16, 12, Signo)?
+signo(3,5,tauro)?
+```
+
+```{code-cell} prolog
+:tags: [skip-execution]
+
+signo(16,12,Signo)?
 ```
 
 ### Resultado esperado
@@ -808,21 +859,23 @@ horoscopo(piscis, 20, 2, 20, 3).
 
 fecha_en_rango(Dia, Mes, DiaInicio, MesInicio, DiaFin, MesFin) :-
     (MesInicio = MesFin, Mes = MesInicio, Dia >= DiaInicio, Dia =< DiaFin);
-    (MesInicio < MesFin,
-        ((Mes = MesInicio, Dia >= DiaInicio);
+    (MesInicio < MesFin, ((Mes = MesInicio, Dia >= DiaInicio);
          (Mes = MesFin, Dia =< DiaFin);
          (Mes > MesInicio, Mes < MesFin)));
-    (MesInicio > MesFin,
-        ((Mes = MesInicio, Dia >= DiaInicio);
+    (MesInicio > MesFin, ((Mes = MesInicio, Dia >= DiaInicio);
          (Mes = MesFin, Dia =< DiaFin);
          (Mes > MesInicio; Mes < MesFin))).
 
 signo(Dia, Mes, Signo) :-
-    horoscopo(Signo, DiaInicio, MesInicio, DiaFin, MesFin),
-    fecha_en_rango(Dia, Mes, DiaInicio, MesInicio, DiaFin, MesFin).
+    horoscopo(Signo, DiaInicio, MesInicio, DiaFin, MesFin), fecha_en_rango(Dia, Mes, DiaInicio, MesInicio, DiaFin, MesFin).
+```
 
-signo(3, 5, tauro)?
-signo(16, 12, Signo)?
+```{code-cell} prolog
+signo(3,5,tauro)?
+```
+
+```{code-cell} prolog
+signo(16,12,Signo)?
 ```
 
 ## Ejercicio 9
@@ -832,16 +885,16 @@ signo(16, 12, Signo)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-hijo(juan,miguel).
-hijo(jose,miguel).
+hijo(juan, miguel).
+hijo(jose, miguel).
 ```
 
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-hijo(miguel,roberto).
-hijo(julio,roberto).
-hijo(roberto,carlos).
+hijo(miguel, roberto).
+hijo(julio, roberto).
+hijo(roberto, carlos).
 ```
 
 Donde indica que X es hijo de Y. Definir la regla,
@@ -849,8 +902,8 @@ Donde indica que X es hijo de Y. Definir la regla,
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-hijo(X,Y).
-descendiente(A,B).
+hijo(X, Y).
+descendiente(A, B).
 ```
 
 la cual permite determinar si A es descendiente de B.
@@ -860,7 +913,7 @@ la cual permite determinar si A es descendiente de B.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-descendiente(juan, carlos)?
+descendiente(juan,carlos)?
 ```
 
 ### Solución
@@ -876,8 +929,7 @@ hijo(roberto, carlos).
 
 descendiente(A, B) :- hijo(A, B).
 descendiente(A, B) :-
-    hijo(A, C),
-    descendiente(C, B).
+    hijo(A, C), descendiente(C, B).
 ```
 
 ### Verificación
@@ -889,7 +941,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-descendiente(juan, carlos)?
+descendiente(juan,carlos)?
 ```
 
 ### Resultado esperado
@@ -903,10 +955,11 @@ hijo(roberto, carlos).
 
 descendiente(A, B) :- hijo(A, B).
 descendiente(A, B) :-
-    hijo(A, C),
-    descendiente(C, B).
+    hijo(A, C), descendiente(C, B).
+```
 
-descendiente(juan, carlos)?
+```{code-cell} prolog
+descendiente(juan,carlos)?
 ```
 
 ## Ejercicio 10
@@ -920,7 +973,7 @@ Definir la regla, la cual permite saber si para la ejecución de
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-requiere_de(X,Y).
+requiere_de(X, Y).
 ```
 
 la tarea Y se requiere tener finalizada la tarea X.
@@ -930,7 +983,7 @@ la tarea Y se requiere tener finalizada la tarea X.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-requiere_de(a, d)?
+requiere_de(a,d)?
 ```
 
 ### Solución
@@ -945,8 +998,7 @@ requiere_de(a, e).
 
 requiere_de(X, Y) :- requiere_de_directa(X, Y).
 requiere_de(X, Y) :-
-    requiere_de_directa(X, Z),
-    requiere_de(Z, Y).
+    requiere_de_directa(X, Z), requiere_de(Z, Y).
 
 requiere_de_directa(a, b).
 requiere_de_directa(b, c).
@@ -963,7 +1015,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-requiere_de(a, d)?
+requiere_de(a,d)?
 ```
 
 ### Resultado esperado
@@ -976,15 +1028,16 @@ requiere_de(a, e).
 
 requiere_de(X, Y) :- requiere_de_directa(X, Y).
 requiere_de(X, Y) :-
-    requiere_de_directa(X, Z),
-    requiere_de(Z, Y).
+    requiere_de_directa(X, Z), requiere_de(Z, Y).
 
 requiere_de_directa(a, b).
 requiere_de_directa(b, c).
 requiere_de_directa(c, d).
 requiere_de_directa(a, e).
+```
 
-requiere_de(a, d)?
+```{code-cell} prolog
+requiere_de(a,d)?
 ```
 
 ## Ejercicio 11
@@ -994,7 +1047,7 @@ requiere_de(a, d)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-factorial(N,Fact).
+factorial(N, Fact).
 ```
 
 - N es el número ingresado (argumento de entrada).
@@ -1006,7 +1059,7 @@ factorial(N,Fact).
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-factorial(5, Resultado)?
+factorial(5,Resultado)?
 ```
 
 ### Solución
@@ -1016,10 +1069,7 @@ factorial(5, Resultado)?
 
 factorial(0, 1).
 factorial(N, Fact) :-
-    N > 0,
-    N1 is N - 1,
-    factorial(N1, Fact1),
-    Fact is N * Fact1.
+    N > 0, N1 is N - 1, factorial(N1, Fact1), Fact is N * Fact1.
 ```
 
 ### Verificación
@@ -1031,7 +1081,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-factorial(5, Resultado)?
+factorial(5,Resultado)?
 ```
 
 ### Resultado esperado
@@ -1039,12 +1089,11 @@ factorial(5, Resultado)?
 ```{code-cell} prolog
 factorial(0, 1).
 factorial(N, Fact) :-
-    N > 0,
-    N1 is N - 1,
-    factorial(N1, Fact1),
-    Fact is N * Fact1.
+    N > 0, N1 is N - 1, factorial(N1, Fact1), Fact is N * Fact1.
+```
 
-factorial(5, Resultado)?
+```{code-cell} prolog
+factorial(5,Resultado)?
 ```
 
 ## Ejercicio 12
@@ -1060,7 +1109,7 @@ sumatoria 5+4+3+2+1 e informar como resultado 15.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-suma(N,Sum).
+suma(N, Sum).
 ```
 
 - N es el número ingresado (argumento de entrada).
@@ -1072,7 +1121,7 @@ suma(N,Sum).
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-suma(5, Resultado)?
+suma(5,Resultado)?
 ```
 
 ### Solución
@@ -1082,10 +1131,7 @@ suma(5, Resultado)?
 
 suma(0, 0).
 suma(N, Sum) :-
-    N > 0,
-    N1 is N - 1,
-    suma(N1, Sum1),
-    Sum is N + Sum1.
+    N > 0, N1 is N - 1, suma(N1, Sum1), Sum is N + Sum1.
 ```
 
 ### Verificación
@@ -1097,7 +1143,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-suma(5, Resultado)?
+suma(5,Resultado)?
 ```
 
 ### Resultado esperado
@@ -1105,12 +1151,11 @@ suma(5, Resultado)?
 ```{code-cell} prolog
 suma(0, 0).
 suma(N, Sum) :-
-    N > 0,
-    N1 is N - 1,
-    suma(N1, Sum1),
-    Sum is N + Sum1.
+    N > 0, N1 is N - 1, suma(N1, Sum1), Sum is N + Sum1.
+```
 
-suma(5, Resultado)?
+```{code-cell} prolog
+suma(5,Resultado)?
 ```
 
 ## Ejercicio 13
@@ -1124,7 +1169,7 @@ impares.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-suma(N,SumPares,SumImpares).
+suma(N, SumPares, SumImpares).
 ```
 
 - N es el número ingresado (argumento de entrada).
@@ -1138,7 +1183,7 @@ suma(N,SumPares,SumImpares).
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-suma(5, Pares, Impares)?
+suma(5,Pares,Impares)?
 ```
 
 ### Solución
@@ -1148,15 +1193,10 @@ suma(5, Pares, Impares)?
 
 suma(0, 0, 0).
 suma(N, SumPares, SumImpares) :-
-    N > 0,
-    N1 is N - 1,
-    suma(N1, Pares1, Impares1),
-    (0 is N mod 2 ->
-        SumPares is Pares1 + N,
-        SumImpares is Impares1
+    N > 0, N1 is N - 1, suma(N1, Pares1, Impares1), (0 is N mod 2 ->
+        SumPares is Pares1 + N, SumImpares is Impares1
     ;
-        SumPares is Pares1,
-        SumImpares is Impares1 + N
+        SumPares is Pares1, SumImpares is Impares1 + N
     ).
 ```
 
@@ -1171,5 +1211,5 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-suma(5, Pares, Impares)?
+suma(5,Pares,Impares)?
 ```

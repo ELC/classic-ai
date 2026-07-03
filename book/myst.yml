@@ -19,7 +19,8 @@ project:
   numbering:
     headings: true
 
-  jupyter: true
+  jupyter:
+    kernelName: calysto_prolog
 
   plugins:
     - plugins/ethicalads.mjs

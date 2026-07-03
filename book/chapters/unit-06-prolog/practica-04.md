@@ -25,7 +25,7 @@ PROLOG - Base de datos y Functores
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-gastos_de(maria, Concepto, Monto)?
+gastos_de(maria,Concepto,Monto)?
 ```
 
 ### Solución
@@ -48,7 +48,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-gastos_de(maria, Concepto, Monto)?
+gastos_de(maria,Concepto,Monto)?
 ```
 
 ### Resultado esperado
@@ -58,8 +58,10 @@ gasto(maria, luz, 1000).
 gasto(maria, alquiler, 50000).
 gasto(juan, agua, 2500).
 gastos_de(Persona, Concepto, Monto) :- gasto(Persona, Concepto, Monto).
+```
 
-gastos_de(maria, Concepto, Monto)?
+```{code-cell} prolog
+gastos_de(maria,Concepto,Monto)?
 ```
 
 ## Ejercicio 2
@@ -71,7 +73,7 @@ forma: El programa debe permitir ingresar un código
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-personas(codigo,nombre).
+personas(codigo, nombre).
 ```
 
 y verificar si el mismo está definido en la BBDD. De estarlo deberá informar
@@ -85,7 +87,7 @@ registrar entonces la persona en la BBDD.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-consultar_o_registrar(1, Nombre)?
+consultar_o_registrar(1,Nombre)?
 ```
 
 ### Solución
@@ -98,8 +100,7 @@ personas(1, ana).
 personas(2, luis).
 consultar_o_registrar(Codigo, Nombre) :- personas(Codigo, Nombre).
 consultar_o_registrar(Codigo, Nombre) :-
-    \+ personas(Codigo, _),
-    assertz(personas(Codigo, Nombre)).
+    \+ personas(Codigo, _), assertz(personas(Codigo, Nombre)).
 ```
 
 ### Verificación
@@ -111,7 +112,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-consultar_o_registrar(1, Nombre)?
+consultar_o_registrar(1,Nombre)?
 ```
 
 ### Resultado esperado
@@ -122,10 +123,12 @@ personas(1, ana).
 personas(2, luis).
 consultar_o_registrar(Codigo, Nombre) :- personas(Codigo, Nombre).
 consultar_o_registrar(Codigo, Nombre) :-
-    \+ personas(Codigo, _),
-    assertz(personas(Codigo, Nombre)).
+    \+ personas(Codigo, _), assertz(personas(Codigo, Nombre)).
+```
 
-consultar_o_registrar(1, Nombre)?
+```{code-cell} prolog
+:- dynamic personas/2.
+consultar_o_registrar(1,Nombre)?
 ```
 
 ## Ejercicio 3
@@ -153,7 +156,7 @@ animales que lo tienen.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-habitos_de(leon, Habito)?
+habitos_de(leon,Habito)?
 ```
 
 ### Solución
@@ -177,7 +180,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-habitos_de(leon, Habito)?
+habitos_de(leon,Habito)?
 ```
 
 ### Resultado esperado
@@ -188,8 +191,10 @@ habito(leon, suenio(18)).
 habito(jirafa, alimentacion(hojas, mucha)).
 habitos_de(Animal, Habito) :- habito(Animal, Habito).
 animal_con_habito(Animal, Habito) :- habito(Animal, Habito).
+```
 
-habitos_de(leon, Habito)?
+```{code-cell} prolog
+habitos_de(leon,Habito)?
 ```
 
 ## Ejercicio 4
@@ -201,8 +206,8 @@ habitos_de(leon, Habito)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-gasto(maria, super(coto,500).
-gasto(omar, tel(fijo,telecom,150).
+gasto(maria, super(coto, 500).
+gasto(omar, tel(fijo, telecom, 150).
 ```
 
 ).
@@ -210,7 +215,7 @@ gasto(omar, tel(fijo,telecom,150).
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-gasto(maria,tel(movil,personal,100).
+gasto(maria, tel(movil, personal, 100).
 ```
 
 a. Ingresar un gasto (por ej. super) e informar todas las personas que tienen
@@ -226,7 +231,7 @@ determinada persona (dato de entrada).
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-persona_con_gasto(maria, super)?
+persona_con_gasto(maria,super)?
 ```
 
 ### Solución
@@ -238,16 +243,11 @@ gasto(maria, super(coto, 500)).
 gasto(omar, tel(fijo, telecom, 150)).
 gasto(maria, tel(movil, personal, 100)).
 persona_con_gasto(Persona, Tipo) :-
-    gasto(Persona, Gasto),
-    functor(Gasto, Tipo, _).
+    gasto(Persona, Gasto), functor(Gasto, Tipo, _).
 consumo_superior(Persona, Tipo, Minimo) :-
-    gasto(Persona, Gasto),
-    functor(Gasto, Tipo, _),
-    arg(_, Gasto, Monto), number(Monto), Monto > Minimo.
+    gasto(Persona, Gasto), functor(Gasto, Tipo, _), arg(_, Gasto, Monto), number(Monto), Monto > Minimo.
 promedio_persona(Persona, Promedio) :-
-    findall(Monto, (gasto(Persona, G), arg(_, G, Monto), number(Monto)), Montos),
-    sum_list(Montos, Suma), length(Montos, Cantidad), Cantidad > 0,
-    Promedio is Suma / Cantidad.
+    findall(Monto, (gasto(Persona, G), arg(_, G, Monto), number(Monto)), Montos), sum_list(Montos, Suma), length(Montos, Cantidad), Cantidad > 0, Promedio is Suma / Cantidad.
 ```
 
 ### Verificación
@@ -259,7 +259,7 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-persona_con_gasto(maria, super)?
+persona_con_gasto(maria,super)?
 ```
 
 ### Resultado esperado
@@ -269,18 +269,15 @@ gasto(maria, super(coto, 500)).
 gasto(omar, tel(fijo, telecom, 150)).
 gasto(maria, tel(movil, personal, 100)).
 persona_con_gasto(Persona, Tipo) :-
-    gasto(Persona, Gasto),
-    functor(Gasto, Tipo, _).
+    gasto(Persona, Gasto), functor(Gasto, Tipo, _).
 consumo_superior(Persona, Tipo, Minimo) :-
-    gasto(Persona, Gasto),
-    functor(Gasto, Tipo, _),
-    arg(_, Gasto, Monto), number(Monto), Monto > Minimo.
+    gasto(Persona, Gasto), functor(Gasto, Tipo, _), arg(_, Gasto, Monto), number(Monto), Monto > Minimo.
 promedio_persona(Persona, Promedio) :-
-    findall(Monto, (gasto(Persona, G), arg(_, G, Monto), number(Monto)), Montos),
-    sum_list(Montos, Suma), length(Montos, Cantidad), Cantidad > 0,
-    Promedio is Suma / Cantidad.
+    findall(Monto, (gasto(Persona, G), arg(_, G, Monto), number(Monto)), Montos), sum_list(Montos, Suma), length(Montos, Cantidad), Cantidad > 0, Promedio is Suma / Cantidad.
+```
 
-persona_con_gasto(maria, super)?
+```{code-cell} prolog
+persona_con_gasto(maria,super)?
 ```
 
 ## Ejercicio 5
@@ -308,8 +305,13 @@ libros de un determinado autor.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-alta_libro(1, prolog, aquili, utn, 100)?
-consulta_libro(1, Titulo, Autor, Editorial, Precio)?
+alta_libro(1,prolog,aquili,utn,100)?
+```
+
+```{code-cell} prolog
+:tags: [skip-execution]
+
+consulta_libro(1,Titulo,Autor,Editorial,Precio)?
 ```
 
 ### Solución
@@ -324,9 +326,7 @@ baja_libro(Nro) :- retractall(libro(Nro, _, _, _, _)).
 consulta_libro(Nro, Titulo, Autor, Editorial, Precio) :-
     libro(Nro, Titulo, Autor, Editorial, Precio).
 promedio_autor(Autor, Promedio) :-
-    findall(Precio, libro(_, _, Autor, _, Precio), Precios),
-    sum_list(Precios, Suma), length(Precios, Cantidad), Cantidad > 0,
-    Promedio is Suma / Cantidad.
+    findall(Precio, libro(_, _, Autor, _, Precio), Precios), sum_list(Precios, Suma), length(Precios, Cantidad), Cantidad > 0, Promedio is Suma / Cantidad.
 ```
 
 ### Verificación
@@ -338,8 +338,13 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-alta_libro(1, prolog, aquili, utn, 100)?
-consulta_libro(1, Titulo, Autor, Editorial, Precio)?
+alta_libro(1,prolog,aquili,utn,100)?
+```
+
+```{code-cell} prolog
+:tags: [skip-execution]
+
+consulta_libro(1,Titulo,Autor,Editorial,Precio)?
 ```
 
 ### Resultado esperado
@@ -352,12 +357,17 @@ baja_libro(Nro) :- retractall(libro(Nro, _, _, _, _)).
 consulta_libro(Nro, Titulo, Autor, Editorial, Precio) :-
     libro(Nro, Titulo, Autor, Editorial, Precio).
 promedio_autor(Autor, Promedio) :-
-    findall(Precio, libro(_, _, Autor, _, Precio), Precios),
-    sum_list(Precios, Suma), length(Precios, Cantidad), Cantidad > 0,
-    Promedio is Suma / Cantidad.
+    findall(Precio, libro(_, _, Autor, _, Precio), Precios), sum_list(Precios, Suma), length(Precios, Cantidad), Cantidad > 0, Promedio is Suma / Cantidad.
+```
 
-alta_libro(1, prolog, aquili, utn, 100)?
-consulta_libro(1, Titulo, Autor, Editorial, Precio)?
+```{code-cell} prolog
+:- dynamic libro/5.
+alta_libro(1,prolog,aquili,utn,100)?
+```
+
+```{code-cell} prolog
+:- dynamic libro/5.
+consulta_libro(1,Titulo,Autor,Editorial,Precio)?
 ```
 
 ## Ejercicio 6
@@ -385,7 +395,7 @@ consulta_libro(1, Titulo, Autor, Editorial, Precio)?
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-recetas_con_ingredientes(Codigo, Nombre, tomate, lechuga)?
+recetas_con_ingredientes(Codigo,Nombre,tomate,lechuga)?
 ```
 
 ### Solución
@@ -397,12 +407,9 @@ receta(1, ensalada, tomate, 2).
 receta(1, ensalada, lechuga, 1).
 receta(2, salsa, tomate, 5).
 recetas_con_ingredientes(Codigo, Nombre, I1, I2) :-
-    receta(Codigo, Nombre, I1, _),
-    receta(Codigo, Nombre, I2, _),
-    I1 \= I2.
+    receta(Codigo, Nombre, I1, _), receta(Codigo, Nombre, I2, _), I1 \= I2.
 recetas_con_cantidad(Codigo, Nombre, Ingrediente, Minimo) :-
-    receta(Codigo, Nombre, Ingrediente, Cantidad),
-    Cantidad > Minimo.
+    receta(Codigo, Nombre, Ingrediente, Cantidad), Cantidad > Minimo.
 ```
 
 ### Verificación
@@ -416,5 +423,5 @@ respaldo.
 ```{code-cell} prolog
 :tags: [skip-execution]
 
-recetas_con_ingredientes(Codigo, Nombre, tomate, lechuga)?
+recetas_con_ingredientes(Codigo,Nombre,tomate,lechuga)?
 ```
