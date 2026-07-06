@@ -1,4 +1,5 @@
 # Medicamentos, composición y síntomas
+
 - Fecha: 2013-08-29
 
 1. Ingresar una lista [] de síntomas que presenta un paciente e informar a

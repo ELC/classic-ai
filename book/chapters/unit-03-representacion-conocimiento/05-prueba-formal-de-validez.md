@@ -3,6 +3,7 @@ title: Prueba formal de validez
 ---
 
 # Prueba formal de validez
+
 | 3.2.3.1. Prueba Formal de Validez Cuando los argumentos contienen *más de dos
 a tres enunciados simples diferentes* como componentes, se hace *difícil y
 tedioso utilizar tablas de verdad para probar su validez.* | E | |

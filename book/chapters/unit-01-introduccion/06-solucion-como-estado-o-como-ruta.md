@@ -3,6 +3,7 @@ title: Solución como estado o como ruta
 ---
 
 # Solución como estado o como ruta
+
 ¿La solución es un estado o una ruta?
 
 Considere el problema de encontrar una interpretación consistente a la frase:

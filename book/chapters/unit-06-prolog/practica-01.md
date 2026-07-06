@@ -7,9 +7,11 @@ kernelspec:
 ---
 
 # Práctica 1
+
 PROLOG - Conceptos básicos
 
 ## Ejercicio 1
+
 Teniendo la siguiente base de hechos...
 
 ```{code-cell} prolog
@@ -25,6 +27,7 @@ Ejecutar las siguientes preguntas al Prolog y analizar la respuesta dada en cada
 caso.
 
 ### Verificación
+
 ```{code-cell} prolog
 ?- assertion(observa(maria, flavio)).
 ```
@@ -34,6 +37,7 @@ caso.
 ```
 
 ## Ejercicio 2
+
 Teniendo la siguiente base de hechos, definir una regla que permita determinar
 quiénes hablan el idioma inglés y francés.
 
@@ -50,6 +54,7 @@ conoce(maria, frances).
 ```
 
 ### Solución
+
 ```{code-cell} prolog
 :tags: [hide-cell]
 
@@ -58,11 +63,13 @@ habla_ingles_y_frances(Persona) :-
 ```
 
 ### Verificación
+
 ```{code-cell} prolog
 ?- findall(Quien, habla_ingles_y_frances(Quien), Quienes), assertion(Quienes == [franco, renzo]).
 ```
 
 ## Ejercicio 3
+
 Escribir un programa Prolog que responda consultas acerca de cuáles son los
 rivales de una determinada selección en un campeonato mundial.
 
@@ -79,6 +86,7 @@ El programa debe ser capaz de responder a las siguientes consultas:
 - ¿Cuáles son los rivales de un determinado equipo (por ejemplo Holanda)?
 
 ### Solución
+
 ```{code-cell} prolog
 :tags: [hide-cell]
 
@@ -96,6 +104,7 @@ rivales(Equipo, Rival) :-
 ```
 
 ### Verificación
+
 ```{code-cell} prolog
 ?- assertion(\+ rivales(argentina, brasil)).
 ```
@@ -105,6 +114,7 @@ rivales(Equipo, Rival) :-
 ```
 
 ## Ejercicio 4
+
 Dados los siguientes predicados:
 
 ```{code-cell} prolog
@@ -150,6 +160,7 @@ Dados los siguientes predicados:
 ```
 
 ### Solución
+
 ```{code-cell} prolog
 :tags: [hide-cell]
 
@@ -178,6 +189,7 @@ tia(A, B) :-
 ```
 
 ### Verificación
+
 ```{code-cell} prolog
 ?- assertion(nieto(lucia, maria)).
 ```
@@ -187,6 +199,7 @@ tia(A, B) :-
 ```
 
 ## Ejercicio 5
+
 Dada la siguiente base de hechos:
 
 ```{code-cell} prolog
@@ -209,6 +222,7 @@ Escriba una regla que permita determinar si una persona (dato entrada) tiene
 algún auto con deuda.
 
 ### Solución
+
 ```{code-cell} prolog
 :tags: [hide-cell]
 
@@ -217,6 +231,7 @@ tiene_auto_con_deuda(Persona) :-
 ```
 
 ### Verificación
+
 ```{code-cell} prolog
 ?- assertion(tiene_auto_con_deuda(pedro)).
 ```
@@ -226,6 +241,7 @@ tiene_auto_con_deuda(Persona) :-
 ```
 
 ## Ejercicio 6
+
 Escribir un programa Prolog que ayude a un organizador a armar un festival,
 considerando las diferentes bandas de música que se pueden formar en cada
 ciudad.
@@ -247,6 +263,7 @@ El programa debe responder si en una ciudad (dato de entrada), se puede o no
 formar una banda.
 
 ### Solución
+
 ```{code-cell} prolog
 :tags: [hide-cell]
 
@@ -265,6 +282,7 @@ puede_formar_banda(Ciudad) :-
 ```
 
 ### Verificación
+
 ```{code-cell} prolog
 ?- assertion(puede_formar_banda(rosario)).
 ```
@@ -274,11 +292,13 @@ puede_formar_banda(Ciudad) :-
 ```
 
 ## Ejercicio 7
+
 Escribir un programa que simule una calculadora para las operaciones matemáticas
 básicas (suma, resta, multiplicación y división) entre dos valores numéricos,
 informando el resultado.
 
 ### Solución
+
 ```{code-cell} prolog
 :tags: [hide-cell]
 
@@ -290,11 +310,13 @@ calcular(division, A, B, Resultado) :-
 ```
 
 ### Verificación
+
 ```{code-cell} prolog
 ?- calcular(suma, 2, 3, Resultado), assertion(Resultado =:= 5).
 ```
 
 ## Ejercicio 8
+
 Dada la siguiente estructura de hechos:
 
 ```{code-cell} prolog
@@ -323,7 +345,9 @@ fecha.
 b. Ingresar una fecha (día y mes) y me informe de qué signo soy.
 
 ## Recursividad
+
 ### Solución
+
 ```{code-cell} prolog
 :tags: [hide-cell]
 
@@ -362,6 +386,7 @@ signo(Dia, Mes, Signo) :-
 ```
 
 ### Verificación
+
 ```{code-cell} prolog
 ?- assertion(signo(3, 5, tauro)).
 ```
@@ -371,6 +396,7 @@ signo(Dia, Mes, Signo) :-
 ```
 
 ## Ejercicio 9
+
 Se tiene la siguiente base de hechos:
 
 ```{code-cell} prolog
@@ -392,6 +418,7 @@ Donde indica que X es hijo de Y. Definir la regla,
 la cual permite determinar si A es descendiente de B.
 
 ### Solución
+
 ```{code-cell} prolog
 :tags: [hide-cell]
 
@@ -401,11 +428,13 @@ descendiente(A, B) :-
 ```
 
 ### Verificación
+
 ```{code-cell} prolog
 ?- assertion(descendiente(juan, carlos)).
 ```
 
 ## Ejercicio 10
+
 Dada la siguiente red de tareas de un proyecto:
 
 ![Red de tareas de un proyecto](images/practica-01-red-tareas.png)
@@ -420,6 +449,7 @@ Definir la regla, la cual permite saber si para la ejecución de
 la tarea Y se requiere tener finalizada la tarea X.
 
 ### Solución
+
 ```{code-cell} prolog
 :tags: [hide-cell]
 
@@ -434,6 +464,7 @@ requiere_de(X, Y) :-
 ```
 
 ### Verificación
+
 ```{code-cell} prolog
 ?- assertion(requiere_de(a, d)).
 ```
@@ -443,6 +474,7 @@ requiere_de(X, Y) :-
 ```
 
 ## Ejercicio 11
+
 Hacer un programa para calcular el factorial de un número.
 
 ```{code-cell} prolog
@@ -454,6 +486,7 @@ Hacer un programa para calcular el factorial de un número.
 - Fact es el resultado calculado (argumento de salida).
 
 ### Solución
+
 ```{code-cell} prolog
 :tags: [hide-cell]
 
@@ -463,11 +496,13 @@ factorial(N, Fact) :-
 ```
 
 ### Verificación
+
 ```{code-cell} prolog
 ?- factorial(5, Resultado), assertion(Resultado =:= 120).
 ```
 
 ## Ejercicio 12
+
 Hacer un programa que permita ingresar un número y calcule su sumatoria, es
 decir, la suma de sus términos descontados en una unidad hasta llegar a cero.
 Por ejemplo, si el número ingresado fuera 5, se deberá calcular la sumatoria
@@ -482,6 +517,7 @@ Por ejemplo, si el número ingresado fuera 5, se deberá calcular la sumatoria
 - Sum es el resultado calculado (argumento de salida).
 
 ### Solución
+
 ```{code-cell} prolog
 :tags: [hide-cell]
 
@@ -491,11 +527,13 @@ sumatoria_hasta(N, Sum) :-
 ```
 
 ### Verificación
+
 ```{code-cell} prolog
 ?- sumatoria_hasta(5, Resultado), assertion(Resultado =:= 15).
 ```
 
 ## Ejercicio 13
+
 Hacer un programa que permita ingresar un número y calcule la sumatoria de sus
 términos descontados en una unidad (hasta llegar a cero) pares e impares.
 
@@ -509,6 +547,7 @@ términos descontados en una unidad (hasta llegar a cero) pares e impares.
 - SumImpares es uno de los resultados calculados (argumento de salida).
 
 ### Solución
+
 ```{code-cell} prolog
 :tags: [hide-cell]
 
@@ -522,6 +561,7 @@ sumas_pares_impares(N, SumPares, SumImpares) :-
 ```
 
 ### Verificación
+
 ```{code-cell} prolog
 ?- sumas_pares_impares(5, Pares, Impares), assertion(Pares =:= 6), assertion(Impares =:= 9).
 ```

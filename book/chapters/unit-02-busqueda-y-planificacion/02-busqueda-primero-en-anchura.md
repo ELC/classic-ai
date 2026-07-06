@@ -3,6 +3,7 @@ title: Búsqueda primero en anchura
 ---
 
 # Búsqueda primero en anchura
+
 La búsqueda primero en anchura es la opuesta a la búsqueda primero en
 profundidad. En este método *se evalúa cada nodo def mismo nivel antes de
 proceder al siguiente nivel más profundo.* He aquí este método de recorrido con

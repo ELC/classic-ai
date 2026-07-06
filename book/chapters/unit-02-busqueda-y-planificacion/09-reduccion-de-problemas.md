@@ -3,6 +3,7 @@ title: Reducción de problemas
 ---
 
 # Reducción de problemas
+
 Cuando se usa el método de reducción de problemas, por lo general se reconocen
 las metas y se las convierte en submetas apropiadas. Cuando se usa de ese modo,
 la reducción del problema se conoce a menudo y de manera equivalente como

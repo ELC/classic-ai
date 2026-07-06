@@ -3,6 +3,7 @@ title: Alfa beta
 ---
 
 # Alfa beta
+
 **Adición de la poda alfa-beta**
 
 Recuerde que el procedimiento **mínimax** es un proceso primero en profundidad.

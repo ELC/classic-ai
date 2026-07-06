@@ -1,4 +1,5 @@
 # Palabras y caracteres
+
 - Fecha: 2012-12-20
 
 Final Inteligencia Artificial 20/12/2012 Practica:

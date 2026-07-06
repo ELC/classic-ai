@@ -1,4 +1,5 @@
 # Órdenes, productos y stock
+
 - Fecha: 2013-11-22
 
 Dada una BBDD compuesta por hechos con la siguiente estructura:

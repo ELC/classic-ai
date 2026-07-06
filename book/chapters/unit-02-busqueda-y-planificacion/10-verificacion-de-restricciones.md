@@ -3,6 +3,7 @@ title: Verificación de restricciones
 ---
 
 # Verificación de restricciones
+
 Al contemplar un problema como una verificación de restricciones, es
 frecuentemente posible una reducción sustancial en la cantidad de búsquedas que
 se necesitan si se compara con un método que intente formar directamente

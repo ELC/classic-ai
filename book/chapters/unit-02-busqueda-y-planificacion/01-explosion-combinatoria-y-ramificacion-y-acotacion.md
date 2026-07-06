@@ -3,6 +3,7 @@ title: Explosión combinatoria y ramificación y acotación
 ---
 
 # Explosión combinatoria y ramificación y acotación
+
 ## Técnicas de búsqueda a ciegas
 
 Se ha visto que para poder resolver un problema, primero hay que reducirlo a una
@@ -112,6 +113,7 @@ visitar (entre 2 y 8) y muestre en pantalla todos los posibles circuitos que
 podría definir.
 
 ## Explosión combinatoria y ramificación y acotación
+
 ### Ramificación y acotación
 
 Considere el siguiente problema:

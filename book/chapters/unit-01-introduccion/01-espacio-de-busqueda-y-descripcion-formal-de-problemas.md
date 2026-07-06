@@ -3,6 +3,7 @@ title: Espacio de búsqueda y descripción formal de problemas
 ---
 
 # Espacio de búsqueda y descripción formal de problemas
+
 <!-- cspell:words Haemophilus influenzae Fleischmann Searle Weizenbaum Haugeland Maes Kaelbling Rosenschein Gelernter Gottfried Gottlieb Frege Begriffsschrift Cordell Kleene Penrose McCulloch Rosenblatt subsimbólico subsimbólica subsimbólicas multidimensionales axiomatización coeditaron cognología perceptrones -->
 
 ## ¿Qué es la Inteligencia Artificial?
@@ -995,6 +996,7 @@ realizar estas cuatro acciones:
   particular.
 
 ### Definición del problema mediante una búsqueda en espacio de estados
+
 Suponga que comenzamos por el problema de "Jugar al ajedrez". A pesar de que es
 previsible que la mayoría de la gente unicamente con esta sentencia actúe
 correctamente, la definición def problema tal y como esta, es incompleta. Para
@@ -1199,6 +1201,7 @@ Una solución al problema de las jarras de agua
 ![Solución al problema de las jarras de agua](images/solucion-problema-jarras-agua.png)
 
 ## Espacio de búsqueda y descripción formal de problemas
+
 Resumiendo lo dicho anteriormente, para poder producir una descripción formal de
 un problema debe hacerse lo siguiente:
 

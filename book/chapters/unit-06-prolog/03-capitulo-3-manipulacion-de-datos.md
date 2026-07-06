@@ -3,7 +3,9 @@ title: Manipulación de datos
 ---
 
 # Manipulación de datos
+
 ## Tipos de dominios estándares
+
 La jerarquía de los términos en Prolog es:
 
 ![Jerarquía de los términos en Prolog](images/jerarquia-terminos-prolog.png)
@@ -44,6 +46,7 @@ number(1+3). => No ?- X is 1+3, number(X). => X=4 Yes ?- compound(1+2). => Yes
 atomic(f(1,2)). => No
 
 ## Entrada y salida de datos
+
 A continuación se describirán los principales predicados del lenguaje Prolog
 utilizados para la entrada y salida de datos. Estos nos permitirán leer
 caracteres y términos. A continuación resumiremos brevemente cada uno de ellos.
@@ -73,6 +76,7 @@ Este predicado indica nueva línea. Hace que el cursor se mueva a la siguiente
 línea. No tiene argumentos.
 
 ## Predicados predefinidos
+
 Existen algunos predicados predefinidos en el sistema y que están disponibles en
 todo momento. El más importante es la igualdad: =/2 . Este predicado tiene éxito
 si sus dos argumentos unifican entre sí, falla en caso contrario. Por ejemplo,
@@ -95,6 +99,7 @@ Operadores Significado relacionales < Menor que
 > Mayor que = Igual que =< Menor o igual que = Mayor o igual que = Distinto de
 
 ## Evaluación de expresiones aritméticas
+
 En Prolog es fácil construir expresiones aritméticas y se hace med mediante el
 predicado is/2. Por ejemplo, vamos a sumar dos números cualquiera: 1 ?- X is 2 +
 5\. X = 7 yes
@@ -121,6 +126,7 @@ constante PI X is 2*pi. sin/1 seno en radianes X is sin(0). cos/1 coseno en
 radianes X is cos(pi). tan/1 tangente en radianes X is tan(pi/2).
 
 ## Recursividad
+
 La recursividad es un concepto importante en Prolog. Se utiliza para describir
 operaciones que se llaman a sí mismas como parte de un proceso. La recursividad
 por sí misma manda el control de la búsqueda hacia atrás. En Prolog, no existen
@@ -141,4 +147,3 @@ recursiva del factorial.
 
 inicio:-write('Ingrese un número: '),read(N),factorial(N,Z),write(Z).
 factorial(0,1). factorial(N,Z):-X is N-1,factorial(X,R),Z is R\*N.
-

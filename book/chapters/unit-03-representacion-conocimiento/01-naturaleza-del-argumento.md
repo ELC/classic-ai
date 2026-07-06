@@ -3,6 +3,7 @@ title: Naturaleza del argumento
 ---
 
 # Naturaleza del argumento
+
 ## El problema de la representación del conocimiento
 
 ### Correspondencia entre conocimiento y representación del conocimiento
@@ -408,11 +409,10 @@ Figura 3.5
 
 ### Problemas de la representación del conocimiento
 
-Antes de embarcarnos en la
-   discusión de los mecanismos específicos que se utilizan para la
-   representación de los distintos tipos de conocimiento acerca del mundo real,
-   es necesario señalar brevemente una serie de cuestiones presentes en todos
-   ellos:
+Antes de embarcarnos en la discusión de los mecanismos específicos que se
+utilizan para la representación de los distintos tipos de conocimiento acerca
+del mundo real, es necesario señalar brevemente una serie de cuestiones
+presentes en todos ellos:
 
 #### Atributos importantes
 
@@ -743,6 +743,7 @@ objeto de aclarar la distinción. El lógico se interesa en todo razonamiento, s
 atender al contenido mismo, sino solo desde este punto de vista especial.
 
 ## Naturaleza del argumento
+
 **3.2.1.2, Naturaleza del Argumento**
 
 La *inferencia* es una actividad en la que se afirma una proposición sobre la

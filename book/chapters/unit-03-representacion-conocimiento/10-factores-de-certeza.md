@@ -3,6 +3,7 @@ title: Factores de certeza
 ---
 
 # Factores de certeza
+
 ## Factores de certeza y sistemas basados en reglas
 
 En esta sección se describe una forma practica de compromiso sobre un sistema

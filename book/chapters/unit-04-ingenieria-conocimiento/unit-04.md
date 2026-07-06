@@ -3,6 +3,7 @@ title: "Unidad 4: Ingeniería del conocimiento"
 ---
 
 # Unidad 4: Ingeniería del conocimiento
+
 ## PROLOG (Programación lógica)
 
 **PROLOG** es un lenguaje de programación que se utiliza para resolver problemas
@@ -53,6 +54,7 @@ solución. Es particularmente adecuado para diferentes tipos de problemas de
 inteligencia artificial.
 
 ### Lenguaje procedural vs. lenguaje declarativo
+
 4.1.3, Lenguaje Procedural vs. Lenguaje Declarativo La mayoría de los lenguajes
 de computadoras personales, BASIC, PASCAL, COBOL, etc., han sido
 ***procedurales.*** *Tales /lenguajes permiten al programador decirle a la
@@ -116,6 +118,7 @@ significativos de IA son los ***sistemas expertos*** y el ***procesamiento de
 lenguaje natural.*** A saber:
 
 ## Sistema experto
+
 ***Es un programa de computadora que contiene conocimientos acerca de un
 determinado campo y cuando* es *interrogado responde como un experto humano.***
 Contiene información *(una base de conocimientos)* y una herramienta para
@@ -366,6 +369,7 @@ Si se. encuentra uno..que coincida se responderá si (yes), por el contrario, si
 no se encuentra, la respuesta sera no.
 
 (razonamiento-y-busqueda-en-prolog)=
+
 ## Razonamiento y búsqueda en Prolog
 
 En el caso de que se quiera contestar preguntas sobre relaciones un poco más
@@ -675,6 +679,7 @@ ser verdaderas. En caso contrario no se evaluaran las siguientes conjunciones.
 ***El Ingeniero de Conocimiento es el encargado de entrevistar a los expertos
 reales,*** ***para aprender sobre lo que ellos saben, y poder así organizar la
 información obtenida*** *('* ***para construir una Base de Conocimientos.***
+
 ### Organización de una base de conocimientos
 
 Como creador de una base de conocimientos usted puede controlar la organización
@@ -802,7 +807,9 @@ expertos" y a su popularización.*
 - Capacidad conversacional para todo ello.
 
 (definicion-funcional-de-sistema-experto)=
+
 ## Definición funcional de sistema experto
+
 4.!5.:1.. Definición f1.nacional
 
 ***Para que un sistema informático pueda llamarse "experto",*** ha de satisfacer
@@ -849,7 +856,9 @@ eficaces.
 - Justificar sus conclusiones.
 
 (definicion-estructural-de-sistema-experto)=
+
 ## Definición estructural de sistema experto
+
 4.!5.2. Definición estructural
 
 Habitualmente, cuando diseñamos un sistema informático para resolver una clase
@@ -904,6 +913,7 @@ Usuario **0**
 j Programa I
 
 #### LJ LJ
+
 Descriptores de formato
 
 Descriptores de la BD
@@ -933,6 +943,7 @@ SGBD
 I • ► LJ BD
 
 #### LJ LJ
+
 Descriptores Descriptores
 
 de formato Base de de la BD Conocimiento

@@ -3,6 +3,7 @@ title: Problemas solitarios y conversacionales
 ---
 
 # Problemas solitarios y conversacionales
+
 ¿Necesita la tarea interaccionar con una persona?
 
 Algunas veces resulta provechoso programar las computadoras para resolver

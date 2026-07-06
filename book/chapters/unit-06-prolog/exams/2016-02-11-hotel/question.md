@@ -1,4 +1,5 @@
 # Hotel: habitaciones disponibles y habitaciones premium ocupadas
+
 - Fecha: 2016-02-11
 
 Un Hotel cuenta con la siguiente base de hechos:

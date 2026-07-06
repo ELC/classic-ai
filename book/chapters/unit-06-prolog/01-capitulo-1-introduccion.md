@@ -3,6 +3,7 @@ title: Introducción
 ---
 
 # Introducción
+
 Prolog es un lenguaje de programación que se utiliza para resolver problemas en
 los que entran en juego objetos y relaciones entre objetos. Actualmente se ha
 convertido en el principal entorno de programación para Inteligencia Artificial
@@ -16,6 +17,7 @@ método diferente de trabajo al empleado por los lenguajes más familiares, tale
 como Basic, Cobol, Pascal y C.
 
 ## Una breve historia del Prolog
+
 Prolog significa “PRProgramming LOGic”, es decir programación basada en la
 lógica y es un lenguaje de programación de computadoras que fue inventado
 alrededor de 1970 por Alain Colmenauer y sus colegas de la Universidad de
@@ -30,6 +32,7 @@ generación con el objetivo de diseñar nuevas computadoras y software. De
 repente, la gente comenzó a mirar de otra forma el Prolog y sus posibilidades.
 
 ## ¿Para qué sirve Prolog?
+
 Los lenguajes de computadoras son raramente buenos para todos los tipos de
 problemas. Fortran fue usado principalmente por los científicos y matemáticos,
 mientras que Cobol fue usado principalmente en el mundo comercial. A las
@@ -41,6 +44,7 @@ forma de encontrar una solución. Es particularmente adecuado para diferentes
 tipos de problemas de inteligencia artificial.
 
 ## Lenguaje Procedural vs. Lenguaje Declarativo
+
 La mayoría de los lenguajes de computadoras personales –Basic, Pascal, Cobol,
 etc- han sido procedurales. Tales lenguajes permiten al programador decirle a la
 computadora lo que tiene que hacer, paso a paso, procedimiento por
@@ -63,6 +67,7 @@ todo el paquete, quedándole al lenguaje la tarea de elaborar las conclusiones
 mediante un razonamiento lógico.
 
 ## Inteligencia Artificial (IA): Visión General
+
 Determinar qué es un programa inteligente implica que se conoce lo que significa
 inteligencia: capacidad o habilidad para percibir hechos y proposiciones y sus
 relaciones y razonar sobre ellos. Esencialmente significa pensar. Esta
@@ -90,6 +95,7 @@ en áreas específicas de la IA. Los dos problemas más significativos de IA son
 los sistemas expertos y el procesamiento de lenguaje natural. A saber:
 
 ### Sistema Experto
+
 Es un programa de computadora que contiene conocimientos acerca de un
 determinado campo y cuando es interrogado responde como un experto humano.
 Contiene información (una base de conocimientos) y una herramienta para
@@ -98,6 +104,7 @@ comprender las preguntas y responder la respuesta correcta examinando la base
 creación de bases de conocimientos y un motor de inferencia.
 
 ### Procesamiento de Lenguaje Natural
+
 El Procesamiento de lenguaje natural es la técnica que fuerza a las computadoras
 a entender el lenguaje humano. Los científicos que estudian el Procesamiento de
 lenguaje natural esperan crear un hardware y software que permita escribir por
@@ -108,6 +115,7 @@ diferentes partes y relaciones y así intentar comprender su significado
 detectando palabras claves.
 
 ### Áreas más importantes de la Inteligencia Artificial
+
 El campo de la IA se compone de varias áreas de estudio:
 
 - Búsqueda (de soluciones).
@@ -115,4 +123,3 @@ El campo de la IA se compone de varias áreas de estudio:
 - Procesamiento del lenguaje natural.
 - Robótica
 - Lógica.
-

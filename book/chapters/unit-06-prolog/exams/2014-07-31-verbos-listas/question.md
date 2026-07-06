@@ -1,4 +1,5 @@
 # Verbos, raíces y transformación de listas
+
 - Fecha: 2014-07-31
 
 A. Ingrese una lista de verbos, sacar las raíces y almacenarlos en la base de

@@ -1,4 +1,5 @@
 # Enunciado
+
 Final A 1 ingreser dos cadenas y mostrar la unión en una lista.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% , COMENTADA
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% inicio A 2 Recetas de Cocinas.

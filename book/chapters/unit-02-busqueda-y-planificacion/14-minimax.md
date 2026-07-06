@@ -3,6 +3,7 @@ title: Minimax
 ---
 
 # Minimax
+
 2.3.2. El procedimiento minimax
 
 *El procedimiento de búsqueda mínimax* es *un procedimiento de búsqueda en

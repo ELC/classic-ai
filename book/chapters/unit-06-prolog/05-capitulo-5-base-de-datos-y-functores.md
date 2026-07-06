@@ -3,7 +3,9 @@ title: Base de datos y functores
 ---
 
 # Base de datos y functores
+
 ## Base de datos
+
 Una base de datos es un conjunto de cláusulas (hechos y reglas) que hemos
 definido antes de iniciar la ejecución del programa. Prolog tiene un motor
 incorporado para buscar en dicha base.
@@ -125,6 +127,7 @@ Objetivo ?.- listado.
 Respuesta jose luis alberto
 
 ## Functores
+
 En muchas aplicaciones se necesita emplear tipos de datos más complejos que los
 que se han usado hasta este momento. Cuando un argumento es a s vez un
 predicado, se llama functor y los argumentos de un functor se llaman

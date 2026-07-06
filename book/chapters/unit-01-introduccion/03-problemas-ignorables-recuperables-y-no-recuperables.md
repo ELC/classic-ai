@@ -3,6 +3,7 @@ title: Problemas ignorables, recuperables y no recuperables
 ---
 
 # Problemas ignorables, recuperables y no recuperables
+
 tl"pueden deshacerse o ignorarse pasos hacia una solución?
 
 Suponga que se intenta probar un teorema matemático. En primer lugar se prueba

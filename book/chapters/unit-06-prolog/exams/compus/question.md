@@ -1,4 +1,5 @@
 # Enunciado
+
 % % fecha es aaaa-mm-dd ingresar un año y mes ("2023-10") y mostrar el monto
 total recaudado ese mes (una venta puede tener varias veces la misma pc, hay que
 hacer dos sumadores) ingresar una lista de características y devolver otra lista

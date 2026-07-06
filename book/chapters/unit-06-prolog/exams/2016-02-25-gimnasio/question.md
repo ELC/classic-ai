@@ -1,4 +1,5 @@
 # Gimnasio: socios, ejercicios, asistencias y niveles
+
 - Fecha: 2016-02-25
 
 Socio(dni, apellido, sexo, edad) Ejercicio(cod, descripcion, cod.nivel,

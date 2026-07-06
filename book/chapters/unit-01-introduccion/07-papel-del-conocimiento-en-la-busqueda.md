@@ -3,6 +3,7 @@ title: Papel del conocimiento en la búsqueda
 ---
 
 # Papel del conocimiento en la búsqueda
+
 ¿Cuál es el papel del conocimiento?
 
 Considere de nuevo el problema del ajedrez. Suponga que se dispone de una

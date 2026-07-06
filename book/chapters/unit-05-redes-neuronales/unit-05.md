@@ -3,6 +3,7 @@ title: "Unidad 5: Redes neuronales"
 ---
 
 # Unidad 5: Redes neuronales
+
 ## Modelos conexionistas
 
 El cerebro es un procesador de información con unas características muy
@@ -133,6 +134,7 @@ la memoria o estado de conocimiento de la red.
 ## Redes neuronales artificiales
 
 (definicion-de-red-neuronal)=
+
 ### Definición de red neuronal
 
 Darpa (1988), define una **red neuronal** como:
@@ -318,6 +320,7 @@ sigmoidal.
 describir en* *términos lógicos o matemáticos convencionales.*
 
 (comparacion-entre-redes-biologicas-y-artificiales)=
+
 ### Comparación entre redes biológicas y artificiales
 
 ![Tabla comparativa entre redes biológicas y artificiales](images/tabla-comparacion-redes-biologicas-artificiales.png)
@@ -334,6 +337,7 @@ Efecto combinado de las sinapsis Función de propagación o de red
 Activación ➔ tasa de disparo Función de activación ➔ salida
 
 (formas-de-interconexion-de-las-rna)=
+
 ### Formas de interconexión de las RNA
 
 Para diseñar una red debemos establecer como estarán conectadas unas unidades
@@ -400,6 +404,7 @@ Las ***conexiones*** entre una capa y otra pueden ser:
 memoria.
 
 (caracteristicas-de-las-rna)=
+
 ### Características de las RNA
 
 1. **Aprendizaje inductivo:** no se le indican las reglas para dar una solución,
@@ -501,8 +506,8 @@ Las redes neuronales emplean su capacidad de aprendizaje adaptativo para
 autoorganizar la información que reciben durante el aprendizaje y/o la
 operación.
 
-*Mientras que el aprendizaje* es *la modificación de cada elemento procesal,
-la autoorganización consiste en la modificación de la red neuronal completa para
+*Mientras que el aprendizaje* es *la modificación de cada elemento procesal, la
+autoorganización consiste en la modificación de la red neuronal completa para
 1/llevar a cabo un objetivo específico.* • Cuando las redes neuronales se usan
 para reconocer ciertas clases de patrones, ellas autoorganizan la información
 usada. Por ejemplo, la red llamada backpropagation, creara su propia
@@ -811,13 +816,15 @@ unidades de salida estará completamente inactivo. Este tipo de inhibición mutu
 se denomina: comportamiento de el ganador se lleva todo.
 
 (el-perceptron)=
+
 ## El perceptrón
-El perceptrón, inventado por Rosenblatt (1962), *fue uno
-de* los *primeros modelos de redes neuronales.* Consiste *en* pesos *entrenables
-multiplicativos, un sumador y una función umbral.* *Un perceptrón imita una
-neurona tomando la suma ponderada de* sus *entradas y enviando a la salida un 1*
-si *la suma* es *más grande que algún valor umbral ajustable, y enviando un O
-en* caso *contrario.*
+
+El perceptrón, inventado por Rosenblatt (1962), *fue uno de* los *primeros
+modelos de redes neuronales.* Consiste *en* pesos *entrenables multiplicativos,
+un sumador y una función umbral.* *Un perceptrón imita una neurona tomando la
+suma ponderada de* sus *entradas y enviando a la salida un 1* si *la suma* es
+*más grande que algún valor umbral ajustable, y enviando un O en* caso
+*contrario.*
 
 **Un perceptrón es una representación, o sea, una red neuronal en la que:**
 
@@ -933,6 +940,7 @@ producen 1 es lo mismo que sumar el vector de salida de caja lógica al vector
 peso, según la siguiente descripción:
 
 ### Aprendizaje del perceptrón
+
 #### Para entrenar a un perceptrón
 
 - - Hasta que el perceptrón produzca el resultado correcto para cada muestra de
@@ -1107,6 +1115,7 @@ conocimiento.*
   solucionar el problema.
 
 ## Redes de Hopfield, recurrentes y de Jordan
+
 ### Redes de Hopfield
 
 La historia de la IA es curiosa. Los primeros problemas con los que se
