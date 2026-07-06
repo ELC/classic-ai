@@ -130,15 +130,15 @@ project:
     - title: "Unidad 6: Prolog"
       children:
         - file: chapters/unit-06-prolog/01-capitulo-1-introduccion.md
-          title: "Capitulo 1. Introducción"
+          title: Introducción
         - file: chapters/unit-06-prolog/02-capitulo-2-relacion-con-la-logica.md
-          title: "Capitulo 2. Relación con la Lógica"
+          title: Relación con la lógica
         - file: chapters/unit-06-prolog/03-capitulo-3-manipulacion-de-datos.md
-          title: "Capitulo 3. Manipulación de datos"
+          title: Manipulación de datos
         - file: chapters/unit-06-prolog/04-capitulo-4-estructuras-de-datos.md
-          title: "Capitulo 4. Estructuras de datos"
+          title: Estructuras de datos
         - file: chapters/unit-06-prolog/05-capitulo-5-base-de-datos-y-functores.md
-          title: "Capitulo 5. Base de datos y Functores"
+          title: Base de datos y functores
         - file: chapters/unit-06-prolog/practica-01.md
           title: Práctica 1
         - file: chapters/unit-06-prolog/practica-02.md
