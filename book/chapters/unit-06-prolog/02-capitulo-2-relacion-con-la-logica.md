@@ -1,9 +1,8 @@
 ---
-title: "Capitulo 2. Relación con la Lógica"
+title: Relación con la lógica
 ---
 
-## Capitulo 2. Relación con la Lógica
-
+# Relación con la lógica
 Como su nombre lo indica, el Prolog se basa en manipulaciones lógicas;
 posibilita al programador especificar sus problemas en forma lógica, en lugar de
 en términos de construcciones convencionales de programación sobre lo que debe
@@ -33,8 +32,7 @@ inferencias de un hecho a otro. Se puede considerar a Prolog como un lenguaje
 coloquial, lo cual significa que el programador y la computadora sostienen una
 especie de conversación.
 
-### 2.1 Hechos
-
+## Hechos
 La primera forma de combinar un objeto y una relación es usarlas para definir un
 hecho, la sintaxis de Prolog es:
 
@@ -61,8 +59,7 @@ Los siguientes puntos son importantes:
 - Dos hechos coinciden si sus predicados son lo mismo (se escriben de igual
   forma) y si cada uno de los correspondientes argumentos son iguales entre sí.
 
-### 2.2 Variables
-
+## Variables
 En Prolog no sólo se pueden nombrar determinados objetos, sino que también se
 pueden utilizar nombres como X que representen objetos a los que el mismo Prolog
 les dará ese valor, este tipo de nombres es o que se llama variables. Cuando el
@@ -101,8 +98,7 @@ le_gusta_a(\_,eduardo).
 Se utiliza para evitar el tener que imaginar continuamente diferentes nombres de
 variables cuando no se van a utilizar en ningún otro sitio de la cláusula.
 
-### 2.3 Reglas
-
+## Reglas
 En Prolog se usa una regla cuando se quiere significar que un hecho depende de
 otros hechos. Por ejemplo, si queremos afirmar que a Eduardo le gustan todas las
 pc’s del mercado, habría que escribir hechos por separado, así:
@@ -150,8 +146,7 @@ El ejemplo anterior se escribe en Prolog de la siguiente forma:
 
 le_gusta_a(marco, X):- le_gusta_a(X, vino).
 
-### 2.4 Cláusulas
-
+## Cláusulas
 Utilizaremos la palabra cláusula siempre que nos refiramos a un hecho o a una
 regla. Existen dos formas de dar información a Prolog sobre un predicado dado,
 como le_gusta_a. Podemos darle tanto hechos como reglas. En general, un
@@ -166,8 +161,7 @@ En Prolog sería: puede_robar(X,Y):- ladrón(X), le_gusta_a(X,Y), valiosa(Y).
 El predicado puede_robar significa que alguna persona X puede robar alguna cosa
 Y. Esta cláusula depende de las cláusulas le_gusta_a y valiosa.
 
-### 2.5 Preguntas
-
+## Preguntas
 Una vez que tengamos algunos hechos podemos hacer alguna pregunta acerca de
 ellos. En Prolog una pregunta se representa igual que un hecho Cuando se hace
 una pregunta Prolog efectúa una búsqueda por toda la base de datos, localizando
@@ -175,8 +169,7 @@ hechos que coincidan con el hecho en cuestión. Si se encuentra uno que coincida
 se responderá sí (Yes/True), por el contrario si no se encuentra, la respuesta
 será no (No/False).
 
-### 2.6 Predicados y Objetivos
-
+## Predicados y Objetivos
 Los predicados son las relaciones, los elementos ejecutables en Prolog. Una
 llamada concreta a un predicado, con unos argumentos concretos, se denomina
 objetivo (en inglés, goal). Todos los objetivos tienen un resultado de éxito o
@@ -195,8 +188,7 @@ tener varias variables libres: son_hermanos(Y,Z). En este caso obtenemos todas
 las combinaciones para las variables que hacen cierto el objetivo. Por ejemplo,
 Y ='Juan' y Z ='Maria' es una solución. Y ='Juan' y Z ='Luis' es otra solución.
 
-### 2.7 Secuencia de objetivos
-
+## Secuencia de objetivos
 Hasta ahora hemos visto como ejecutar objetivos simples, pero esto no resulta
 demasiado útil. En Prolog los objetivos se pueden combinar mediante conectivas
 propias de la lógica de primer orden: la conjunción, la disyunción y la
@@ -252,8 +244,7 @@ feliz(X):- not(observa(X,felicia)).
   original y finalmente el Prolog nos informará que el objetivo original falla o
   no se cumple.
 
-### 2.8 Backtracking
-
+## Backtracking
 El mecanismo empleado por PROLOG para satisfacer las cuestiones que se le
 plantean, es el de razonamiento hacia atrás (backward) complementado con la
 búsqueda en profundidad (depth first) y la vuelta atrás o reevaluación
@@ -319,8 +310,7 @@ Aunque pueda parecer algo ilógico, es una buena estrategia puesto que garantiza
 el proceso de todas las posibilidades. Es útil para el programador conocer dicho
 mecanismo a la hora de depurar y optimizar los programas.
 
-### 2.9 Ejemplos
-
+## Ejemplos
 Supongamos entonces la siguiente base de conocimientos:
 
 edad(juan,25). edad(franco,10). edad(luis,32). edad(renzo,38). edad(marco,7).
@@ -381,4 +371,3 @@ Recordar que cada vez que se evalúa una conjunción la/s anterior/es tuvieron q
 ser verdadera/s, en caso contrario no se evaluarán la/s siguiente/s
 conjunción/es.
 
-(sec-unit-06-prolog-capitulo-3-manipulacion-de-datos)=

@@ -2,10 +2,7 @@
 title: Problemas con consecuencia cierta e incierta
 ---
 
-(sec-unit-01-introduccion-problemas-con-consecuencia-cierta-e-incierta)=
-
-## Problemas con consecuencia cierta e incierta
-
+# Problemas con consecuencia cierta e incierta
 ,Es predecible el universo?
 
 Suponga nuevamente que estamos jugando al 8-puzzle. Cada vez que se hace un

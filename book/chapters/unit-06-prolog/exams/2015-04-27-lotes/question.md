@@ -1,5 +1,4 @@
-# Lotes y lineas de credito
-
+# Lotes y líneas de crédito
 - Fecha: 2015-04-27
 
 Una persona puede tener mas de un lote. Cada linea de crédito puede pagarse en u

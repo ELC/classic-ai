@@ -1,5 +1,4 @@
-# Cantantes, albumes y temas
-
+# Cantantes, álbumes y temas
 - Fecha: 2013-12-05
 
 Dada una BD con:

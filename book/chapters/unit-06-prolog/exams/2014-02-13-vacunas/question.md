@@ -1,5 +1,4 @@
 # Vacunas por edad y enfermedades
-
 - Fecha: 2014-02-13
 
 Dada una BD con los siguientes hechos:

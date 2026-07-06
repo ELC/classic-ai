@@ -2,11 +2,8 @@
 title: Factores de certeza
 ---
 
-(sec-unit-03-representacion-conocimiento-factores-de-certeza)=
-
-## Factores de certeza
-
-- - 1. Factores de certeza y sistemas basados en reglas
+# Factores de certeza
+## Factores de certeza y sistemas basados en reglas
 
 En esta sección se describe una forma practica de compromiso sobre un sistema
 bayesiano puro.
@@ -199,7 +196,7 @@ Como en MYCIN los factores de certeza iniciales son estimaciones que
 proporcionan los expertos que escriben las reglas, no es realmente necesario dar
 una definición más precisa del significado de FC aparte de la ya mencionada.
 
-- 1. Redes Bayesianas
+## Redes bayesianas
 
 Los Factores de Certeza representan un mecanismo de reducción de la complejidad
 de los sistemas de razonamiento bayesiano mediante la realización de algunas
@@ -220,7 +217,7 @@ se necesitan calcular todas las probabilidades).
 
 ***describen grupos de sucesos que interactúen.***
 
-- 1. Teoría de Dempster-Shafer
+## Teoría de Dempster-Shafer
 
 Hasta ahora se han descrito diversas técnicas de forma que en todas ellas se
 consideraban proposiciones individuales y se asignaba a cada una de ellas una
@@ -284,14 +281,14 @@ alguna cosa en particular.
 El hallar la representación apropiada es una parte fundamental de la resolución
 de un problema. Considere, por ejemplo, el siguiente problema para niños:
 
-**El granjero, la zorra, el polio y el grano**
+### El granjero, la zorra, el pollo y el grano
 
-Un granjero quiere cruzar un rio llevando consigo una zorra silvestre, un polio
+Un granjero quiere cruzar un rio llevando consigo una zorra silvestre, un pollo
 gordo y un saco de granos de trigo. Por desgracia, su bote es tan pequeño que
 solo puede transportar una de sus pertenencias en cada viaje. Peor aun, la
-zorra, si no se le vigila, se come al polio, y el polio, si no se lo cuida, se
+zorra, si no se le vigila, se come al pollo, y el pollo, si no se lo cuida, se
 come el trigo; de modo que el granjero no debe dejar a la zorra sola con el
-polio o al polio solo con el trigo. LQue se puede hacer? C Descrito en español,
+pollo o al pollo solo con el trigo. LQue se puede hacer? C Descrito en español,
 la resolución del problema se lleva unos cuantos minutos porque es preciso
 separar las restricciones relevantes de los detalles irrelevantes. El español no
 es una buena representación.
@@ -309,8 +306,8 @@ el granjero y sus tres pertenencias pueden ocupar los dos margenes del rio.
 Debido a que el granjero y sus pertenencias pueden encontrarse, cada uno, en
 cualquier lado del rfo, existen 21+3 = 16 arreglos, diez de los cuales son
 seguros en el sentido de que nadie es comido. Los seis arreglos no seguros
-colocan a la zorra, el polio y el trigo en uno u otro lado, o al polio y al
-trigo en uno y otro lado, o a la zorra y al polio en uno y otro lado.
+colocan a la zorra, el pollo y el trigo en uno u otro lado, o al pollo y al
+trigo en uno y otro lado, o a la zorra y al pollo en uno y otro lado.
 
 El segundo y último paso es dibujar un enlace para cada viaje permitido. Por
 cada par ordenado de arreglos existe un enlace que los conecta si y solo si los

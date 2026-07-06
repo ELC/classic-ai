@@ -2,11 +2,7 @@
 title: Estructuras de ranura y relleno fuertes
 ---
 
-(sec-unit-03-representacion-conocimiento-estructuras-de-ranura-y-relleno-fuertes)=
-
-## Estructuras de ranura y relleno fuertes
-
-- 1. Estructuras de Ranura y R.relleno Fuertes
+# Estructuras de ranura y relleno fuertes
 
 *Las redes semánticas y* los *sistemas de marcos implementan estructuras muy
 generales para representar el conocimiento.* La Dependencia Conceptual, los
@@ -14,7 +10,7 @@ Guiones y los CYC, ***implementan poderosas teorías*** sobre la forma en que lo
 programas de IA pueden representar y utilizar el conocimiento sobre situaciones
 comunes.
 
-1. Dependencia Conceptual
+## Dependencia conceptual
 
 ***La Dependencia Conceptual {DC)* es *una teoría sobre la representación del
 tipo de conocimiento sobre los eventos que normalmente aparecen en las frases de
@@ -133,7 +129,7 @@ Juan PROPEL
 
 +---- carrito Juan empujó el carrito
 
-1. **Guiones**
+## Guiones
 
 DC es un mecanismo para representar y razonar sobre eventos. Sin embargo, los
 eventos raramente ocurren por separado. En este apartado se presenta un
@@ -284,7 +280,7 @@ L ATRANS dinero a J
 
 Camino de no pagar ) L PTRANS L fuera del restaurante
 
-3.7.3. eve
+## Guiones
 
 ***CYC* es *un proyecto de una gran base de conocimiento cuyo propósito* es *el
 de capturar el conocimiento humano de sentido común.*** El objetivo de CYC es

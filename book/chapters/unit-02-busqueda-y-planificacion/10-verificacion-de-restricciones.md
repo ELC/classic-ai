@@ -2,10 +2,7 @@
 title: Verificación de restricciones
 ---
 
-(sec-unit-02-busqueda-y-planificacion-verificacion-de-restricciones)=
-
-## Verificación de restricciones
-
+# Verificación de restricciones
 Al contemplar un problema como una verificación de restricciones, es
 frecuentemente posible una reducción sustancial en la cantidad de búsquedas que
 se necesitan si se compara con un método que intente formar directamente
@@ -209,7 +206,7 @@ Ejercicio
 
 Desarrollar un programa que resuelva el problema criptoaritmético planteado.
 
-1. Análisis de medias y fines
+## Análisis de medios y fines
 
 Hasta ahora, se. ha presentado una colección de estrategias de búsqueda que
 pueden razonar tanto hacia delante como hacia atrás, pero para un problema dado,

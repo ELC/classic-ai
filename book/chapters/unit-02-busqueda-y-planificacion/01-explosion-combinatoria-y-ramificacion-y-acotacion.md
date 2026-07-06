@@ -2,71 +2,8 @@
 title: Explosión combinatoria y ramificación y acotación
 ---
 
-# Unidad Didáctica 2 - Eje Conceptual
-
-Búsqueda y Planificación
-
-**TEMAS**
-
-**2=1- Técnicas de búsqueda a ciegas. 4**
-
-1. Explosión Combinatoria. 4
-
-1. Ramificación y acotación 5
-
-1. Búsqueda primero en anchura 6
-
-1. Búsqueda primero en profundidad. 7
-
-1. **Técnicas de búsqueda heurística 10**
-
-1. Generación y Prueba 12
-
-1. Escalada o Remonte de colinas 13
-
-1. Búsqueda El primero mejor 17
-
-1. Reducción de problemas 24
-
-1. Verificación de restricciones. 28
-
-1. Análisis de medias y fines. 31
-
-1. **Búsqueda en Problemas de juegos 34**
-
-1. Juegos de dos jugadores. 34
-
-1. El procedimiento mínimax. 35
-
-1. El procedimiento alfa-beta. 37
-
-1. **Búsqueda con Sistemas evolutivos 39**
-
-1. Conceptos de Genética 39
-
-1. Algoritmos Genéticos. 43
-
-1. Poblaciones 45
-
-1. Operadores genéticos. 46
-
-1. Función de evaluación 47
-
-1. **Planificación 52**
-
-1. Introducción 52
-
-1. Componentes de un sistema de planificación 53
-
-1. Planificación mediante una pila de objetivos 58
-
-1. Planificación no lineal mediante fijación de restricciones. 63
-
-1. Planificación jerárquica 64
-
-1. Sistemas reactivos 65
-
-- 1. Técnicas de búsqueda a ciegas
+# Explosión combinatoria y ramificación y acotación
+## Técnicas de búsqueda a ciegas
 
 Se ha visto que para poder resolver un problema, primero hay que reducirlo a una
 forma en la que pueda darse una definición precisa. Esto puede lograrse mediante
@@ -78,7 +15,7 @@ resolución del problema puede modelarse como un sistema de producción y entonc
 se debe elegir la estructura de control apropiada para el sistema de producción
 con el fin de que el proceso de búsqueda sea lo más eficiente posible.
 
-**Estrategia de control**
+### Estrategia de control
 
 Hasta ahora se ha ignorado por completo la cuestión de cómo se decide que regla
 hay que aplicar durante el proceso de búsqueda de la solución de un problema.
@@ -109,7 +46,7 @@ de control sea sistemática se corresponde con una necesidad de cambio global (e
 el curso de varios pasos) tanto como de cambio local (en el curso de un paso
 sencillo).
 
-1. Explosión Combinatoria
+### Explosión combinatoria
 
 Se puede pensar que buscar una solución es tan simple como empezar en el
 principio y recorrer su camino hasta la conclusión. Sin embargo, en·la mayoría
@@ -174,11 +111,8 @@ Desarrollar un programa que permita ingresar un número variable de sitios a
 visitar (entre 2 y 8) y muestre en pantalla todos los posibles circuitos que
 podría definir.
 
-(sec-unit-02-busqueda-y-planificacion-explosion-combinatoria-y-ramificacion-y-acotacion)=
-
 ## Explosión combinatoria y ramificación y acotación
-
-1. **Ramificación y acotación**
+### Ramificación y acotación
 
 Considere el siguiente problema:
 

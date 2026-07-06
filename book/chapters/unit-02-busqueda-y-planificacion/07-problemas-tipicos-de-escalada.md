@@ -2,10 +2,7 @@
 title: Problemas típicos de escalada
 ---
 
-(sec-unit-02-busqueda-y-planificacion-problemas-tipicos-de-escalada)=
-
-## Problemas típicos de escalada
-
+# Problemas típicos de escalada
 Tanto la *escalada básica* como la de *máxima pendiente* pueden no encontrar una
 solución. Cualquiera de los dos algoritmos puede acabar sin encontrar un estado
 objetivo, y en cambio encontrar un estado del que no sea posible generar nuevos

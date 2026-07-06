@@ -1,5 +1,4 @@
-# Peliculas, directores, actores y estrenos
-
+# Películas, directores, actores y estrenos
 - Fecha: 2014-04-21
 
 Se tienen hechos definidos como película (nombre, genero, [directores],

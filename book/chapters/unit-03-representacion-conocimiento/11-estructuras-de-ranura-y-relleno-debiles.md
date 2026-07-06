@@ -2,11 +2,7 @@
 title: Estructuras de ranura y relleno débiles
 ---
 
-(sec-unit-03-representacion-conocimiento-estructuras-de-ranura-y-relleno-debiles)=
-
-## Estructuras de ranura y relleno débiles
-
-- 1. Estructuras de Ranum y Relleno Debiles
+# Estructuras de ranura y relleno débiles
 
 Recuérdese que estas estructuras se introdujeron en un principio como un
 dispositivo para soportar adecuadamente la herencia a lo largo de los enlaces
@@ -37,7 +33,7 @@ A estas estructuras de "conocimiento pobre" se ¿es denominaran *"débiles".* En
 las estructuras de ranura y relleno *"fuertes"* se establecen mayores
 compromisos en relación con el contenido de las representaciones.
 
-3,6.1. Redes Semánticas
+## Redes semánticas
 
 La idea principal que hay debajo de las redes semánticas es que la
 ***información contenida***
@@ -73,7 +69,7 @@ relación adicional:
 
 **tiene(Julio, Garras)**
 
-**Búsqueda de intersección**
+### Búsqueda de intersección
 
 Una de las primeras formas de usar las redes semánticas antiguas fue para
 *encontrar* *relaciones entre objetos,* dividiendo la activación a partir de
@@ -92,7 +88,7 @@ redes con una estructuración más alta. En los siguientes apartados se ampliara
 refinara nuestra noción de red para que estas puedan soportar un razonamiento
 más sofisticado.
 
-**Representación de predicados no binarios**
+### Representación de predicados no binarios
 
 Las redes semánticas se pueden considerar como un modo natural de representar
 las relaciones que podrían aparecer como instancias de los *predicados binarios*
@@ -135,7 +131,7 @@ Figura 3.18
 
 ![Figura 3.18: red semántica de un partido semifinal](images/figura-3-18-red-semantica-partido-semifinal.png)
 
-3.6.2. Marcos
+## Marcos
 
 ***Un marco (frame)*** es ***una colección de atributos, normalmente llamados
 ranuras (slots), con valores asociados*** *(y posibles restricciones entre los

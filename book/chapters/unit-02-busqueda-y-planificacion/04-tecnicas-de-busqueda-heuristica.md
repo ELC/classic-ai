@@ -2,11 +2,7 @@
 title: Técnicas de búsqueda heurística
 ---
 
-(sec-unit-02-busqueda-y-planificacion-tecnicas-de-busqueda-heuristica)=
-
-## Técnicas de búsqueda heurística
-
-- 1. Técnicas de búsqueda heurística
+# Técnicas de búsqueda heurística
 
 Con el fin de resolver problemas complicados con eficiencia, con frecuencia es
 necesario comprometer los requisitos de movilidad y sistematicidad, y construir

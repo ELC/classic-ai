@@ -2,10 +2,7 @@
 title: Reducción de problemas
 ---
 
-(sec-unit-02-busqueda-y-planificacion-reduccion-de-problemas)=
-
-## Reducción de problemas
-
+# Reducción de problemas
 Cuando se usa el método de reducción de problemas, por lo general se reconocen
 las metas y se las convierte en submetas apropiadas. Cuando se usa de ese modo,
 la reducción del problema se conoce a menudo y de manera equivalente como
@@ -222,7 +219,7 @@ es una Y, usted da a conocer todas las submetas inmediatas. Si la meta es una 0,
 menciona la submeta inmediata que se logró. Para tratar con preguntas de
 ***"i.Por que?'*** usted identifica la meta y notifica la supermeta inmediata.
 
-1. Verificación de restricciones
+## Verificación de restricciones
 
 Muchos de los problemas de IA pueden contemplarse como problemas de
 *verificación de* *restricciones (constraint satisfaction)* donde el objetivo

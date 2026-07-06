@@ -2,26 +2,8 @@
 title: "Unidad 5: Redes neuronales"
 ---
 
-# Unidad Didáctica 5 - Eje Conceptual
-
-Redes Neuronales
-
-TEMAS 5.1. Modelos Conexionistas 4 5.1.1. Origen del paradigma de computación
-conexionista 4 5.2. Redes Neuronales Biológicas 5 5.3. Redes Neuronales
-Artificiales 6 5.3.1. Definición de Red Neuronal 6 5.3.2. Estructura de las
-Redes Neuronales 6 5.3.3. Comparación entre RNB y RNA 10 5.3.4. Formas de
-interconexión de las RNA 10 5.3.5. Características de las RNA 12 5.4. Ventajas y
-Desventajas de las Redes Neuronales 12 5.4.1. Ventajas que ofrecen las RNA 12
-5.4.2. Desventajas que ofrecen las RNA 14 5.5. Mecanismos de Aprendizaje 14
-5.5.1. Aprendizaje Supervisado 15 5.5.2. Aprendizaje No Supervisado 16 5.6. El
-Perceptrón 18 5.6.1. Aprendizaje del perceptrón 20 5.6.2. La separación lineal y
-el problema del XOR 22
-
-5. 7. Redes de Hopfield 24
-
-5.8. Máquinas de Boltzmann 27 5.9. Redes Recurrentes 28
-
-- 1. Modelos Conexionistas
+# Unidad 5: Redes neuronales
+## Modelos conexionistas
 
 El cerebro es un procesador de información con unas características muy
 notables: es capaz de procesar a gran velocidad grandes cantidades de
@@ -43,7 +25,7 @@ neuronales, en muchos casos de dudosa plausibilidad neurofisiológica, pero que
 sin embargo resultan interesantes cuanto menos por sus capacidades de
 aprendizaje.
 
-1. Origen del paradigma die computación conexionista
+### Origen del paradigma de computación conexionista
 
 La Inteligencia Artificial, entendida muy ampliamente como el modelado y la
 simulación de las actividades cognitivas complejas *(percepción, memoria,
@@ -91,7 +73,7 @@ memorizan información, y se plasman sintéticamente en la famosa ***Regla de
 aprendizaje de Hebb.*** ***Esta regla indica que las conexiones. entre dos
 neuronas se refuerzan si ambas son*** ***activadas.*** •
 
-\*\* **5.2. Redes Neuronales Biológicas**
+## Redes neuronales biológicas
 
 A grandes rasgos, recordemos que el cerebro humano se compone de decenas de
 billones de neuronas interconectadas entre si formando circuitos o redes que
@@ -148,13 +130,10 @@ neuronas ejercen sobre otras, de aquí se deduce que la arquitectura, el tipo y
 la efectividad de las conexiones en un momento dado, representan en cierto modo
 la memoria o estado de conocimiento de la red.
 
-- 1. Redes Neuronales Artificiales
+## Redes neuronales artificiales
 
-(sec-unit-05-redes-neuronales-definicion-de-red-neuronal)=
-
-## Definición de red neuronal
-
-1. Definición de RedNeuronal C,
+(definicion-de-red-neuronal)=
+### Definición de red neuronal
 
 Darpa (1988), define una **red neuronal** como:
 
@@ -172,11 +151,7 @@ Según Haykin (1994), una red neuronal es:
 para el* *almacenamiento de conocimiento obtenido de la experiencia para luego
 hacerlo* *utilizable.*
 
-(sec-unit-05-redes-neuronales-estructura-de-una-red-neuronal)=
-
-## Estructura de una red neuronal
-
-1. Estructura de las Redes Neuronales
+### Estructura de una red neuronal
 
 Las neuronas se modelan mediante ***unidades de proceso.***
 
@@ -240,14 +215,16 @@ identidad,* y se toma como salida el valor de activación.
 *El valor de salida cumpliría la función de la tasa de disparo en las neuronas
 biológicas.*
 
-**Función de Red o de Propagación**
+#### Función de red o de propagación
 
 Como ya hemos comentado, se encarga de calcular la entrada total de la neurona
 como combinación de todas las entradas.
 
 Podemos citar entre las más importantes:
 
-1. **Función lineal de base (FLB):** es la más utilizada.
+#### Función lineal de base (FLB)
+
+Es la más utilizada.
 
 ![Función lineal de base: sumatoria ponderada](images/funcion-lineal-base-sumatoria-ponderada.png)
 
@@ -264,7 +241,7 @@ conexiones correspondientes, esta función quedaría asi:
 Al representar los pesos utilizamos dos subíndices para indicar que conectan dos
 unidades, i y j, donde j se refiere a la unidad actual.
 
-1. **Función radial de base (FRB):**
+#### Función radial de base (FRB)
 
 ![Función radial de base: distancia al patrón](images/funcion-radial-base-distancia-patron.png)
 
@@ -277,11 +254,11 @@ I *(Xi*
 
 *net 1* *X*, *W 1* ) =
 
-**Función de Activación**
+#### Función de activación
 
 Podemos distinguir entre:
 
-- 1. **Funciones lineales**
+#### Funciones lineales
 
 ![Función de activación lineal](images/funcion-activacion-lineal.png)
 
@@ -289,7 +266,7 @@ En las que *la salida es proporcional a la entrada*
 
 *f neta)* = *neta*
 
-- 1. **Funciones de umbral**
+#### Funciones de umbral
 
 En las cuales *la salida es un valor discreto (típicamente binario O o 1)* que
 depende *de* si la estimulación total supera o no un determinado valor de
@@ -306,21 +283,21 @@ valor crítico (umbra!) y 1, por encima.
 *neta* \<'= 0
 
 *f(neta)=* { *neta* < 0 Después se comprobó que las neuronas emitían impulsos de
-actividad eléctrica con una frecuencia variable, dependiendo de fa intensidad de
-fa estimulación recibida, y que tenían cierta actividad hasta en reposo, con
+actividad eléctrica con una frecuencia variable, dependiendo de la intensidad de
+la estimulación recibida, y que tenían cierta actividad hasta en reposo, con
 estimulación nula. Estos descubrimientos llevaron al uso de funciones no
 lineales con esas características, como la función sigmoidal, con un perfil
 parecido al escalón de una función de umbra!, pero continua.
 
-- 1. **Funciones no lineales**
+#### Funciones no lineales
 
 *No proporcionales a la entrada.*
 
-**Función sigmoidal o logística**
+#### Función sigmoidal o logística
 
 ![Formula de la función sigmoidal logística](images/formula-funcion-sigmoidal-logistica.png)
 
-Es probablemente la función de activación más empleada en fa actualidad Se trata
+Es probablemente la función de activación más empleada en la actualidad Se trata
 de una función continua no lineal con bastante plausibilidad fisiológica. La
 función sigmoidal posee un rango comprendido entre O y 1. Esto, aplicado a las
 unidades de proceso de una red neuronal artificial significa que, sea cuál sea
@@ -340,11 +317,8 @@ sigmoidal.
 *El problema de. trabajar con modelos no lineales radica en que son difíciles de
 describir en* *términos lógicos o matemáticos convencionales.*
 
-(sec-unit-05-redes-neuronales-comparacion-entre-redes-biologicas-y-artificiales)=
-
-## Comparación entre redes biológicas y artificiales
-
-1. Comparación entre Fl.NIB y RNA
+(comparacion-entre-redes-biologicas-y-artificiales)=
+### Comparación entre redes biológicas y artificiales
 
 ![Tabla comparativa entre redes biológicas y artificiales](images/tabla-comparacion-redes-biologicas-artificiales.png)
 
@@ -359,11 +333,8 @@ Efecto combinado de las sinapsis Función de propagación o de red
 
 Activación ➔ tasa de disparo Función de activación ➔ salida
 
-(sec-unit-05-redes-neuronales-formas-de-interconexion-de-las-rna)=
-
-## Formas de interconexion de las RNA
-
-1. Formas de interconexión de las RNA
+(formas-de-interconexion-de-las-rna)=
+### Formas de interconexión de las RNA
 
 Para diseñar una red debemos establecer como estarán conectadas unas unidades
 con otras y determinar adecuadamente los pesos de las conexiones.
@@ -428,11 +399,8 @@ Las ***conexiones*** entre una capa y otra pueden ser:
 
 memoria.
 
-(sec-unit-05-redes-neuronales-caracteristicas-de-las-rna)=
-
-## Características de las RNA
-
-1. Características de las RNA
+(caracteristicas-de-las-rna)=
+### Características de las RNA
 
 1. **Aprendizaje inductivo:** no se le indican las reglas para dar una solución,
    sino que *extrae* sus *propias reglas a partir de los*• *ejemplos de
@@ -472,17 +440,9 @@ se *ha/la distribuida* *por toda la red,* sin embargo en un programa tradicional
 un pequeño fallo en cualquier punto puede invalidarlo todo y dar un resultado
 absurdo o no dar ningún resultado.
 
-(sec-unit-05-redes-neuronales-ventajas-y-desventajas-de-las-redes-neuronales)=
-
 ## Ventajas y desventajas de las redes neuronales
 
-- 1. Ventajas y Desventajas de las Redes NeuronaHes
-
-(sec-unit-05-redes-neuronales-ventajas-de-las-rna)=
-
-## Ventajas de las RNA
-
-1. Ventajas que ofrecen las RNA
+### Ventajas de las RNA
 
 1. **Aprendizaje adaptativo:** capacidad de aprender a realizar tareas basadas
    en un entrenamiento o en una experiencia inicial.
@@ -535,13 +495,13 @@ Sin embargo, si es necesario que desarrolle un buen algoritmo de aprendizaje que
 le proporcione a la red la capacidad de discriminar, mediante un entrenamiento
 con patrones.
 
-**Auto-organización**
+#### Autoorganización
 
 Las redes neuronales emplean su capacidad de aprendizaje adaptativo para
 autoorganizar la información que reciben durante el aprendizaje y/o la
 operación.
 
-*Mientras que el aprendizaje* es *la modificación de cada e/elemento procesal,
+*Mientras que el aprendizaje* es *la modificación de cada elemento procesal,
 la autoorganización consiste en la modificación de la red neuronal completa para
 1/llevar a cabo un objetivo específico.* • Cuando las redes neuronales se usan
 para reconocer ciertas clases de patrones, ellas autoorganizan la información
@@ -557,13 +517,13 @@ importante cuando se tiene que solucionar problemas en los cuales la informació
 de entrada no es muy clara. Ademas permite que el Sistema de una solución,
 inclLiso cuando la información de entrada esta especificada de forma incompleta.
 
-**Tolerancia a fallos**
+#### Tolerancia a fallos
 
 Las redes neuronales fueron los primeros métodos computacionales con la
 capacidad inherente de tolerancia a fallos. Comparados con los sistemas
 computacionales tradicionales, los cuales pierden su funcionalidad cuando sufren
 un pequeño error de . memoria,, *en las redes neuronales, si se produce un fa/lo
-en un número no muy grande de neuronas y aunque el comportamiento def sistema se
+en un número no muy grande de neuronas y aunque el comportamiento del sistema se
 ve influenciado, no sufre una caída repentina.* Hay dos aspectos distintos
 respecto a la tolerancia a fallos:
 
@@ -577,11 +537,11 @@ conexiones entre neuronas, existiendo cierto grado. de redundancia en este tipo
 de a/almacenamiento.* La mayoría de los ordenadores algorítmicos y sistemas de
 recuperación de datos almacenan cada pieza de información en un espacio único,
 localizado y direccionable. En cambio, las redes neuronales almacenan
-información no localizada. Por lo tanto, la mayoría de las interconexiones entre
+información no localizada. Por lo tanto, la mayoría de las interconexiónes entre
 los nodos de la red tendrán sus valores en función de los estímulos recibidos, y
 se generara un patrón de salida que represente la información almacenada.
 
-**Operación en tiempo real**
+#### Operación en tiempo real
 
 Una de las mayores prioridades, casi en la totalidad de las áreas de aplicación,
 es la necesidad de realizar procesos con datos de forma muy rápida.
@@ -590,7 +550,7 @@ Las redes neuronales se adaptan bien a esto debido a su implementación paralela
 Para que la mayoría de las redes puedan operar en un entorno de tiempo real, la
 necesidad de cambio en los pesos de las conexiones o entrenamiento es mínimo.
 
-**Fácil inserción dentro de la tecnología existente**
+#### Fácil inserción dentro de la tecnología existente
 
 Una red individual puede ser entrenada para desarrollar una (mica y bien
 definida tarea tareas complejas, que hagan múltiples selecciones de patrones
@@ -605,13 +565,9 @@ existentes. De esta manera, las redes neuronales se pueden utilizar para mejorar
 sistemas en forma incremental y cada paso puede ser evaluado antes de acometer
 un desarrollo más amplio.
 
-(sec-unit-05-redes-neuronales-desventajas-de-las-rna)=
+### Desventajas de las RNA
 
-## Desventajas de las RNA
-
-1. Desventajas que ofrecen las RNA
-
-1. **Definición de muchos parámetros:**
+#### Definición de muchos parámetros
 
 Una de las desventajas de las redes neuronales es que ***requieren definición
 de***
@@ -619,7 +575,7 @@ de***
 ***muchos parámetros antes de poder aplicar la metodología.***
 
 Por ejemplo hay que decidir la arquitectura más apropiada, el número de capas
-ocultas, el número de nodos por capa, las interconexiones, la función de
+ocultas, el número de nodos por capa, las interconexiónes, la función de
 transformación, etc. Las técnicas estadísticas convencionales, sin embargo, solo
 requieren la extracción y normalización de una muestra de datos. Es un argumento
 erróneo sostener que el tiempo de desarrollo para los modelos basados en una red
@@ -628,7 +584,7 @@ una tabla de puntuación basada en una regresión multiple. Los estudios donde s
 ha constatado un tiempo de desarrollo más corto no han tenido en cuenta la
 preparación de datos que requiere una red neuronal.
 
-1. **Caja negra:**
+#### Caja negra
 
 Otra desventaja es que *no ofrecen una interpretación fácil* como hace, por
 ejemplo, un algoritmo de scoring. ***En lugar de ser un sistema de apoyo a la
@@ -637,11 +593,7 @@ decisión.*** Puede ocurrir que un director de riesgo deniegue un credito solo
 porque lo dice la caja negra, sin que el pueda argumentar esta decisión ya que
 no entiende el funcionamiento de la red neuronal.
 
-(sec-unit-05-redes-neuronales-mecanismos-de-aprendizaje)=
-
 ## Mecanismos de aprendizaje
-
-- 1. Mecanismos de Aprendizaje
 
 ***El aprendizaje* es *el proceso por el cuál una red neuronal modifica sus
 pesos en respuesta a una información de entrada.*** Los cambios que se producen
@@ -687,11 +639,7 @@ permanecen fijos después que termina la etapa de entrenamiento de la red.
 *Debido, precisamente a su carácter estático, estos sistemas no presentan
 problemas de estabilidad en su funcionamiento.*
 
-(sec-unit-05-redes-neuronales-aprendizaje-supervisado)=
-
-## Aprendizaje supervisado
-
-1. Aprendizaje Supervisado
+### Aprendizaje supervisado
 
 ***El aprendizaje supervisado* se *caracteriza porque el proceso de aprendizaje*
 se *realiza mediante un entrenamiento controlado por un agente externo
@@ -710,7 +658,7 @@ llevarlo a cabo, que dan lugar a los siguientes aprendizajes supervisados:
 
 * Aprendizaje estocástico.
 
-1. **Aprendizaje por corrección de error**
+#### Aprendizaje por corrección de error
 
 Consiste en *ajustar* los *pesos de las conexiones de la red en función de la
 diferencia* *entre los valores deseados v los obtenidos a la salida de la red,*
@@ -722,10 +670,10 @@ Un ejemplo de este tipo de algoritmos lo constituye la *regla de aprendizaje de/
 Perceptrón,* utilizada en el entrenamiento de la red del mismo nombre que
 desarrolló Rosenblatt en 1958. Esta es una regla muy simple: para cada neurona,
 en la capa de salida se le calcula la desviación a la salida objetivo coma el
-error, o, el cuál luego se utiliza para cambiar los pesos sabre la conexión de
+error, o, el cuál luego se utiliza para cambiar los pesos sobre la conexión de
 la neurona precedente.
 
-1. **Aprendizaje por refuerzo**
+#### Aprendizaje por refuerzo
 
 Se trata de un aprendizaje supervisado, *más lento que el anterior,* que se basa
 en la idea de no disponer de un ejemplo completo del comportamiento deseado, es
@@ -737,11 +685,11 @@ mediante* *una señal de refuerzo si la salida obtenida en la red se ajusta a la
 deseada (éxito* - +*1* o *fracaso* - *-1* ), *v en función de ello se ajustan
 los pesos basándose en un mecanismo* *de probabilidades.* Se podría decir que en
 este tipo de aprendizaje la función del ***supervisor*** se asemeja más a la de
-un ***crítico*** (que opina sabre la respuesta de la red) que a la de un maestro
+un ***crítico*** (que opina sobre la respuesta de la red) que a la de un maestro
 (que indica a la red la respuesta concreta que debe generar), coma ocurriría en
 el caso de supervisión por corrección del error.
 
-**c. Aprendizaje estocástico**
+#### Aprendizaje estocástico
 
 Consiste básicamente en *realizar cambios aleatorios en los valores de* los
 *pesos de las* *conexiones de la red v evaluar su efecto a partir de/ objetivo
@@ -760,11 +708,7 @@ deseado, se acepta el cambio. Si, por el contrario, la energía no es menor, se
 aceptaría el cambio en función de una determinada y preestablecida distribución
 de probabilidades.
 
-(sec-unit-05-redes-neuronales-aprendizaje-no-supervisado)=
-
-## Aprendizaje no supervisado
-
-5,5.2. Aprendizaje No Supervisado.
+### Aprendizaje no supervisado
 
 ***Las redes con aprendizaje no supervisado (también conocido como
 autosupervisado)*** ***no requieren influencia externa para ajustar los pesos de
@@ -796,7 +740,7 @@ Aprendizaje hebbiano
 
 - Aprendizaje competitivo y comparativo
 
-1. **Aprendizaje hebbiano**
+#### Aprendizaje hebbiano
 
 Los sistemas neuronales biológicos no nacen preprogramados con todo el
 conocimiento y las capacidades que llegaran a tener eventualmente.
@@ -842,7 +786,7 @@ que B sigue disparando, A participa ahora en la excitación de B, aun cuando por
 sí sola A no sería suficiente para dar lugar a que B disparase.
 
 *En esta situación, la suposición de Hebb determina que* se *produce algún
-cambio entre A y B, de tal modo que la influencia de A sabre B* se *ve
+cambio entre A y B, de tal modo que la influencia de A sobre B* se *ve
 incrementada. Si el experimento* se *repite con frecuencia suficiente, A sera
 capaz de lograr, eventualmente, que* se *dispare B incluso en ausencia de la
 estimulación visual procedente de* C.
@@ -850,11 +794,11 @@ estimulación visual procedente de* C.
 ***Llevado esto al terreno de las RNA, significa que el peso de la conexión
 entre ambas neuronas se ve incrementado.***
 
-1. **Aprendizaje competitivo y comparativo**
+#### Aprendizaje competitivo y comparativo
 
 ***El aprendizaje competitivo se orienta a la clasificación de los datos de
 entrada. En este tipo de aprendizaje, las unidades de salida luchan por el
-control sobre porciones def espacio de entrada.*** Las unidades *de* entrada se
+control sobre porciones del espacio de entrada.*** Las unidades *de* entrada se
 conectan directamente a las unidades de salida, pero estas también se conectan
 entre sí con conexiones precableadas negativas o inhibitorias.
 
@@ -866,11 +810,9 @@ demás unidades de salida se hace cada vez mayor. Pronto, el resto de las
 unidades de salida estará completamente inactivo. Este tipo de inhibición mutua
 se denomina: comportamiento de el ganador se lleva todo.
 
-(sec-unit-05-redes-neuronales-el-perceptron)=
-
-## El perceptron
-
-¿Si.6. El i>perceptrón El Perceptrón, inventado por Rosenblatt (1962), *fue uno
+(el-perceptron)=
+## El perceptrón
+El perceptrón, inventado por Rosenblatt (1962), *fue uno
 de* los *primeros modelos de redes neuronales.* Consiste *en* pesos *entrenables
 multiplicativos, un sumador y una función umbral.* *Un perceptrón imita una
 neurona tomando la suma ponderada de* sus *entradas y enviando a la salida un 1*
@@ -902,13 +844,13 @@ caso, se dice que el perceptrón dice NO, no se ha reconocido una clase.
 
 Figura 5.7
 
-![Figura 5.7: modelo de perceptron con cajas lógicas](images/figura-5-7-modelo-perceptron-cajas-logicas.png)
+![Figura 5.7: modelo de perceptrón con cajas lógicas](images/figura-5-7-modelo-perceptron-cajas-logicas.png)
 
 Para expresar la situación en notación matemática, suponga que la salida de la
 i-ésima caja lógica es I;, el i-ésimo peso es w;, y que finalmente, el umbral es
 T. Entonces la salida del perceptrón completo, P, esta dada par la siguiente
 
-![Formula de salida del perceptron completo](images/formula-salida-perceptron-completo.png)
+![Formula de salida del perceptrón completo](images/formula-salida-perceptron-completo.png)
 formula:
 
 1 Si *L W;* x *l;* > *T*
@@ -943,9 +885,9 @@ cajas lógicas, como se ilustra en la Figura 5.8.
 
 Figura 5.8
 
-![Figura 5.8: perceptron directo](images/figura-5-8-perceptron-directo.png)
+![Figura 5.8: perceptrón directo](images/figura-5-8-perceptron-directo.png)
 
-1. Aprendizaje del perceptrón
+### Aprendizaje del perceptrón
 
 Es importante hacer notar que *existe un procedimiento que descubre un buen
 conjunto de* *pesos para un perceptrón,* dado que tal conjunto exista. \\
@@ -990,11 +932,8 @@ w2,... Wn). Sumar uno a cada uno de los pesos asignados a cajas lógicas que
 producen 1 es lo mismo que sumar el vector de salida de caja lógica al vector
 peso, según la siguiente descripción:
 
-(sec-unit-05-redes-neuronales-aprendizaje-del-perceptron)=
-
-## Aprendizaje del perceptron
-
-**Para entrenar a un perceptron:**
+### Aprendizaje del perceptrón
+#### Para entrenar a un perceptrón
 
 - - Hasta que el perceptrón produzca el resultado correcto para cada muestra de
     entrenamiento, para cada muestra:
@@ -1011,7 +950,7 @@ peso.
 
 Figura 5.9
 
-![Figura 5.9: perceptron directo con pesos iniciales](images/figura-5-9-perceptron-directo-pesos-iniciales.png)
+![Figura 5.9: perceptrón directo con pesos iniciales](images/figura-5-9-perceptron-directo-pesos-iniciales.png)
 
 Por ejemplo, considere el ***perceptrón directo*** que se muestra en la Figura
 5.9 y suponga que desea entrenarlo para que efectúe una ***función lógica OR,***
@@ -1022,7 +961,7 @@ es el mismo que el vector de entrada, **(x, x,x).** Por tanto, las muestras de
 entrada y las correspondientes salidas de caja lógica, para una OR lógica, son
 las siguientes:
 
-![Tabla de muestras OR para el perceptron](images/tabla-muestras-or-perceptron.png)
+![Tabla de muestras OR para el perceptrón](images/tabla-muestras-or-perceptron.png)
 
 Muestra
 
@@ -1062,7 +1001,7 @@ lo que produce un nuevo vector peso, (1 1 1).
 
 1. A continuación, la primera muestra produce de nuevo un error durante el
 
-![Aprendizaje del perceptron: ajuste de pesos para OR](images/aprendizaje-perceptron-ajuste-pesos-or.png)
+![Aprendizaje del perceptrón: ajuste de pesos para OR](images/aprendizaje-perceptron-ajuste-pesos-or.png)
 tercer paso. El resultado debe ser 0, pero es 1. Al restar el vector de entrada,
 (0 0 1), del vector peso, (1 1 1), se produce un nuevo vector peso, (1 1 0), que
 posteriormente funciona
@@ -1100,7 +1039,7 @@ Vector de entradas 0 0 1
 
 1 1 0
 
-1. **La separación lineal y el problema dei XOR**
+### La separación lineal y el problema del XOR
 
 El ***teorema de convergencia del perceptrón*** de Rosenblatt (1962),
 ***garantiza que el perceptrón encontrara un estado solución,*** es *decir,*
@@ -1119,13 +1058,13 @@ Figura 5.10
 
 ![Figura 5.10: separación lineal de OR](images/figura-5-10-separacion-lineal-or.png)
 
-La introducción de los perceptrones a finales de la década de los cincuenta
+La introducción de los perceptrónes a finales de la década de los cincuenta
 causó un gran entusiasmo. Suponía un dispositivo que se asemejaba mucho a una
 neurona y para el que había disponibles algoritmos de aprendizaje bien
 definidos. Hubo mucha especulación acerca de cómo podrían formarse sistemas
-inteligentes a partir de bloques construidos con , • perceptrones.
+inteligentes a partir de bloques construidos con , • perceptrónes.
 
-En su libro Perceptrones, Minsky y Papert (1969) pusieron fin a dicha
+En su libro Perceptrónes, Minsky y Papert (1969) pusieron fin a dicha
 especulación analizando las capacidades de cálculo de dicho sistema. Elles
 advirtieron que mientras el teorema de convergencia garantizaba una correcta
 clasificación de la información linealmente independiente, la mayoría de los
@@ -1148,18 +1087,18 @@ Figura 5.11
 
 ![Figura 5.11: problema XOR](images/figura-5-11-problema-xor.png)
 
-*El perceptron no puede aprender a crear una superficie lineal de decisión que
+*El perceptrón no puede aprender a crear una superficie lineal de decisión que
 separe estas diferentes salidas, porque dicha superficie de decisión no existe.*
 ***No hay una única recta que pueda separar las salidas 1 de las salidas* 0.**
 Minsky y Papert proporcionaron varies problemas con estas propiedades.
 
 Démonos cuenta que aquí *la deficiencia* no está en el algoritmo de aprendizaje
-del perceptrón, sino en *el modo en el que el perceptron representa el
+del perceptrón, sino en *el modo en el que el perceptrón representa el
 conocimiento.*
 
 - SI se pudiera dibujar una ***superficie de decisión elíptica*** se podrían
   englobar las dos salidas "l" en el espacio XOR. ***Sin embargo, los
-  perceptrones son incapaces de modelar dichas superficies.***
+  perceptrónes son incapaces de modelar dichas superficies.***
 
 - Otra idea puede ser la de emplear dos escenarios diferentes para el dibujo de
   líneas. Se podría dibujar una linea para aislar el punto (x1 = 1, x2 = 1) y
@@ -1167,11 +1106,8 @@ conocimiento.*
   Utilizando esta idea se podría ***construir un perceptrón "multicapa"*** para
   solucionar el problema.
 
-(sec-unit-05-redes-neuronales-redes-de-hopfield-recurrentes-y-jordan)=
-
-## Redes de Hopfield recurrentes y Jordan
-
-- 1. Redes de Hopfield
+## Redes de Hopfield, recurrentes y de Jordan
+### Redes de Hopfield
 
 La historia de la IA es curiosa. Los primeros problemas con los que se
 enfrentaron los investigadores de la IA fueron problemas como el *ajedrez* o la
@@ -1190,7 +1126,7 @@ tecnología u.salida por el cerebro.
 Ademas de estas tareas de percepción, la IA esta empezando a tratar ahora los
 principales problemas referentes a la *memoria y al razonamiento de sentido
 común.* Ya es conocida la ' falta de sentido común de las computadoras. Mucha
-gente cree que el sentido común es una consecuencia def almacenamiento masivo de
+gente cree que el sentido común es una consecuencia del almacenamiento masivo de
 conocimiento, y aún más importante, de nuestra capacidad de acceder a
 conocimientos relevantes rápidamente, sin esfuerzos y a su debido tiempo.
 
@@ -1209,7 +1145,7 @@ siguientes importantes características:
    pueden estar superpuestas una sobre otra. Las diferentes memorias se
    representan por diferentes
 
-patrones sabre el mismo conjunto de elementos de proceso.
+patrones sobre el mismo conjunto de elementos de proceso.
 
 1. **Control asíncrono y distribuido:** cada elemento de proceso toma decisiones
    basadas unicamente en su propia situación local. Todas estas situaciones
@@ -1227,7 +1163,7 @@ próximo.
 
 esta todavía funcionara adecuadamente.
 
-**i.Cómo se alcanzan estas características?**
+#### ¿Cómo se alcanzan estas características?
 
 En la Figura 5.12 se muestra una sencilla red de Hopfield. Los elementos de
 proceso, también llamados ***unidades,*** siempre se encuentran en uno de dos
@@ -1243,7 +1179,7 @@ Figura 5.12
 
 ![Figura 5.12: red de Hopfield](images/figura-5-12-red-hopfield.png)
 
-La red funciona def siguiente modo.
+La red funciona del siguiente modo.
 
 Se elige una unidad ***aleatoriamente.*** Si alguna de sus vecinas esta
 activada, la unidad calcula la suma de los pesos en las conexiones de esas
@@ -1290,7 +1226,7 @@ Figura 5.14
 *La relajación para/eta no consiste más que en una búsqueda.* *Resulta útil
 pensar en los diferentes estados de una red* como *formando un espacio de
 búsqueda como se muestra en la Figura 5.15.* *Un estado que se haya e/elegido
-aleatoriamente se transformara a sí mismo en uno def tipo de mínimo local que es
+aleatoriamente se transformara a sí mismo en uno del tipo de mínimo local que es
 el estado estable más cercano. Esta* es *la forma de obtener un comportamiento
 direccionable por contenido.* *También tenemos un comportamiento corrector de
 errores.* Supóngase que se tiene la descripción "gris, grande, pez, que come
@@ -1315,7 +1251,7 @@ Figura 5.15
 
 ![Figura 5.15: tolerancia al fallo en una red de Hopfield](images/figura-5-15-tolerancia-fallo-hopfield.png)
 
-- 1. Máquinas de Boltzmann
+### Máquinas de Boltzmann
 
 Una ***máquina de Boltzmann*** es una variación de una red de Hopfield.
 
@@ -1375,7 +1311,7 @@ el valle B, esta podría saltar al valle A.
   la sacudida es más swive, sera incapaz de escapar de el. Esto es justo lo que
   queremos.
 
-**,Como se implementa esta idea en una reel neuronal?**
+#### ¿Cómo se implementa esta idea en una red neuronal?
 
 *Las unidades de las máquinas de Boltzmann actualizan sus estados binarios
 individuales mediante una regla estocástica, en lugar de una determinista.* La
@@ -1404,7 +1340,7 @@ finales de entrenamiento.
 podrían evitar las mínimos locales y aprender a ca/cu/ar cualquier función
 calculable de entradas y salidas de tamaño fijo.*
 
-- 1. Redes Recurrentes
+### Redes recurrentes
 
 Una clara deficiencia de los modelos de redes neuronales en comparación con los
 m.modelos simbólicos, es la *dificultad en conseguir modelos de redes neuronales

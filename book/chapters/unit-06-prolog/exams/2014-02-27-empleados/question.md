@@ -1,5 +1,4 @@
 # Empleados, empresas y sueldos
-
 - Fecha: 2014-02-27
 
 ```prolog

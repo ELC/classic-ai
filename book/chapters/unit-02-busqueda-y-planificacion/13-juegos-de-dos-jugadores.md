@@ -2,10 +2,7 @@
 title: Juegos de dos jugadores
 ---
 
-(sec-unit-02-busqueda-y-planificacion-juegos-de-dos-jugadores)=
-
-## Juegos de dos jugadores
-
+# Juegos de dos jugadores
 2.3.:1.. J111egos de dos jugadores
 
 **Visión de conjunto**

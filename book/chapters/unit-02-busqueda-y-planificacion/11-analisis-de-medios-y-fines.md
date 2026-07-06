@@ -2,10 +2,7 @@
 title: Análisis de medios y fines
 ---
 
-(sec-unit-02-busqueda-y-planificacion-analisis-de-medios-y-fines)=
-
-## Análisis de medios y fines
-
+# Análisis de medios y fines
 El proceso de análisis de medios y fines puede entonces aplicarse
 recursivamente. Para centrar la atención del sistema en los problemas grandes, a
 las diferencias se ¿es asignan niveles de prioridad. Las diferencias de

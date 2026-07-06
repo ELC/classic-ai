@@ -2,45 +2,10 @@
 title: Espacio de búsqueda y descripción formal de problemas
 ---
 
-# Unidad Didáctica 1 - Eje Conceptual
-
+# Espacio de búsqueda y descripción formal de problemas
 <!-- cspell:words Haemophilus influenzae Fleischmann Searle Weizenbaum Haugeland Maes Kaelbling Rosenschein Gelernter Gottfried Gottlieb Frege Begriffsschrift Cordell Kleene Penrose McCulloch Rosenblatt subsimbólico subsimbólica subsimbólicas multidimensionales axiomatización coeditaron cognología perceptrones -->
 
-Introducción a la Inteligencia Artificial
-
-**TEMAS**
-
-- 1. **¿Qué es la Inteligencia Artificial? 4**
-
-1. Pueden 4
-
-1. Máquinas 4
-
-1. Pensar 6
-
-1. **Aproximaciones a la IA 7**
-
-1. Basadas en procesamiento de símbolos 7
-
-1. Aproximaciones subsimbólicas 8
-
-1. **Breve historia de la IA 8**
-
-1. **Mundo especial para agentes con IA. 11**
-
-1. **Sistemas que resuelven problemas de la IA. 13**
-
-1. Acciones que debe llevar a cabo el sistema 19
-
-1. Definición mediante búsqueda en espacio de estados 19
-
-1. Sistemas de producción 22
-
-1. Análisis del problema. 23
-
-1. Características de los Sistemas de producción 30
-
-- 1. *¿Qué* es la Inteligencia Artificial?
+## ¿Qué es la Inteligencia Artificial?
 
 La Inteligencia Artificial (IA), en una definición amplia y un tanto circular,
 tiene por objeto el estudio del comportamiento inteligente en las máquinas. A su
@@ -72,7 +37,7 @@ máquinas? depende de cómo definamos las palabras *máquinas* y *pensar.* Turin
 podría haber añadido que la respuesta depende también de cómo se defina la
 palabra *pueden.*
 
-1. Pueden
+### Pueden
 
 Consideremos primero la palabra *pueden,* ¿Queremos decir que las máquinas
 pueden pensar ya ahora, o que algún día podrán pensar? ¿Queremos decir que las
@@ -98,17 +63,17 @@ climáticos con todo detalle. De forma similar, la *inteligencia de nivel
 humano,* a escala real, podría ser *demasiado compleja,* o al menos demasiado
 dependiente de la fisiología humana, para existir fuera de su encarnación en
 seres humanos inmersos en su entorno. La cuestión de si alguna vez seremos
-capaces, o no, de construir máquinas pensantes de nivel humano no admite aun una
+capaces, o no, de construir máquinas pensantes de nivel humano no admite aún una
 respuesta definitiva. El progreso de la IA hacia esta meta ha sido constante,
 aunque más lento de lo que algunos pioneros del tema habían predicho.
 Personalmente, soy optimista sobre nuestro eventual éxito en esta empresa.
 
-1. Máquinas
+### Máquinas
 
 Consideremos ahora la palabra *máquina.* Para mucha gente, una máquina es
 todavía un artefacto más bien estúpido. La palabra evoca imágenes de engranajes
 rechinando, de chorros de vapor siseando y de piezas de acero martilleando.
-i.Cómo podría llegar a pensar una cosa como esa? Sin embargo, hoy en dia, los
+¿Cómo podría llegar a pensar una cosa como esa? Sin embargo, hoy en día, los
 ordenadores han ampliado en gran medida nuestra noción de lo que una máquina
 puede ser, y nuestra creciente comprensión de los mecanismos biológicos esta
 expandiéndose incluso más aun. • *Consideremos,* por ejemplo, *un virus simple,*
@@ -120,8 +85,8 @@ copias de cada una de las piezas del virus. Después, las piezas se ensamblan
 automáticamente ellas mismas, formando nuevos virus que salen de la bacteria
 para repetir el proceso. El ensamblaje completo se parece mucho al de una
 máquina, por lo que podríamos, con toda propiedad, decir que se trata de una
-máquina - *una máquina hecha de proteínas.* Pero ¿que ocurre con otros procesos
-y organismos biológicos?.El genoma completo de la bacteria Haemophilus
+máquina - *una máquina hecha de proteínas.* Pero ¿qué ocurre con otros procesos
+y organismos biológicos? El genoma completo de la bacteria Haemophilus
 influenzae Rd ha sido secuenciado recientemente (Fleischmann, 1995).• Este
 genoma consta de 1.830.137 pares de bases (identificadas con las letras A, G, Cy
 T).
@@ -145,7 +110,7 @@ ratones, delfines, humanos - como máquinas? ¿Si los humanos fuesen máquinas,
 entonces es que las máquinas pueden pensar!
 
 \*\* Tendríamos una demostración de su existencia. Lo que ocurre, "simplemente",
-es· que *no conocemos aun coma funciona la máquina humana,* Sin embargo, aunque
+es· que *no conocemos aún coma funciona la máquina humana,* Sin embargo, aunque
 estuviésemos de acuerdo acerca de lo que es una máquina, este último I argumento
 es rebatible. Aunque una máquina hecha de proteínas puede pensar, quizá una
 hecha de silicio no sería capaz de hacerlo. Un conocido filósofo, John Searle,
@@ -200,7 +165,7 @@ Quizá es aún demasiado pronto para que se alcance un consenso en el campo de l
 IA sobre el tipo de maquinaria requerida, aunque muchos investigadores aceptan
 ya la hipótesis del sistema físico de símbolos.
 
-1.1.3. Pensar
+### Pensar
 
 Finalmente, llegamos a la palabra más difícil: *pensar.* En lugar de intentar
 definir esta palabra, Turing propuso un test, el llamado *Test de Turing,*
@@ -254,11 +219,11 @@ gradualmente más y más inteligentes conforme se incrementa su complejidad?
 Personalmente, lo creo así, pero existen indudablemente opiniones para todos los
 gustos.
 
-- 1. Aproximaciones a la IA
+## Aproximaciones a la IA
 
 Aun aceptando que la IA ya ha sido capaz de producir algunos sistemas prácticos
 muy útiles, la creencia general es que el objetivo último de alcanzar una
-inteligencia de nivel humano esta aun muy distante. Siendo esto así, todavía hay
+inteligencia de nivel humano esta aún muy distante. Siendo esto así, todavía hay
 un gran debate sobre cuáles son las *mejores aproximaciones hacia la IA* -
 mejores en el sentido de sentar los fundamentos centrales para conseguir las
 metas planteadas a largo plazo, así como mejores en el sentido de producir
@@ -271,12 +236,12 @@ cada investigador cree, a menudo, que la suya es la metodología avanzada que
 merece especial atención. Los principales paradigmas pueden ser clasificados en
 dos grupos.
 
-1. Basadas en procesamiento de símbolos
+### Basadas en procesamiento de símbolos
 
 El primer grupo incluye lo que llamaríamos las **aproximaciones basadas en
 procesamiento de símbolos.** Se sustentan sobre la hipótesis del **sistema
 físico. de símbolos de Newell y Simon,** y aunque esta hipótesis no puede
-considerarse aun como universalmente aceptada, en ella se basa mucho de lo que
+considerarse aún como universalmente aceptada, en ella se basa mucho de lo que
 podríamos llamar *IA "clásica"* (lo que el filósofo John Haugeland llama "IA al
 viejo estilo"). Un miembro destacado de esta familia de aproximaciones es el que
 se basa en la. aplicación de operaciones lógicas sobre bases de conocimiento
@@ -315,7 +280,7 @@ procesamiento de símbolos utilizan una metodología de diseño "descendente"; s
 comienza en el nivel de conocimiento **y** se procede hacia abajo a través de
 los niveles simbólico y de implementación.
 
-1. Aproximaciones subsimbólicas
+### Aproximaciones subsimbólicas
 
 El segundo grupo de aproximaciones hacia la IA incluye lo que se denominan
 **aproximaciones subsimbólicas.** Estas siguen usualmente un estilo de *diseño
@@ -377,7 +342,7 @@ para especificar, en un alto nivel de abstracción, el comportamiento deseado en
 un agente, así como un compilador para crear la circuitería necesaria a partir
 de los programas escritos en este lenguaje.
 
-- 1. Breve historia de la IA t
+## Breve historia de la IA
 
 Cuando empezaron a desarrollarse los primeros ordenadores durante las décadas de
 los arios 40 y 50, algunos investigadores escribieron programas que podían
@@ -404,7 +369,7 @@ El primer paso hacia la inteligencia artificial fue dado mucho tiempo atrás por
 Aristóteles (384-322 a. C.), cuando comenzó a explicar y a codificar ciertos
 estilos de razonamiento deductivo que el llamó *silogismos.* Algunos de los
 esfuerzos tempranos para automatizar la inteligencia nos parecerían quijotescos
-hoy en dia. Ramón LLull (1235-1316), un místico y poeta catalán, construyó una
+hoy en día. Ramón LLull (1235-1316), un místico y poeta catalán, construyó una
 *máquina de engranajes,* llamada *Ars Magna,* que supuestamente era capaz de
 responder a todas las preguntas. Pero hubieron también científicos y matemáticos
 que perseguían la automatización del razonamiento. Martin Gardner (Gardner,
@@ -488,7 +453,7 @@ inclusión de mucho más conocimiento sobre el dominio de aplicación. Los últi
 años de la década de los 70 y los primeros de la década de los 80 vieron el
 desarrollo de programas más realistas, que contenían el conocimiento necesario
 para mimetizar el comportamiento de los expertos humanos en tareas tales como el
-C diagnostico, el diseño y el análisis. Fueron explorados y desarrollados varios
+diagnóstico, el diseño y el análisis. Fueron explorados y desarrollados varios
 métodos para la representación de conocimiento específico del problema. El
 programa al que se atribuye el merito de ser el primero que demostró la
 importancia de recoger grandes cantidades de conocimiento específico del dominio
@@ -553,7 +518,7 @@ interés para sus usuarios. La Constante presión ejercida para mejorar las
 capacidades de los robots y de los agentes software motivara y guiara la
 investigación en inteligencia artificial durante muchos años.
 
-- 1. Mundo especial para agentes con IA
+## Mundo especial para agentes con IA
 
 La investigación en IA ha conducido al desarrollo de numerosas ideas y técnicas
 relevantes dirigidas al objetivo de automatizar la inteligencia. Estas ideas y
@@ -599,9 +564,9 @@ tiempo. Muchas de las técnicas de la IA que describiremos se aplican a mundos
 discretos y requerirían un cierto procesamiento subsimbólico para operar en
 mundos continuos.
 
-1.5. Sistemas que resuelven problemas de la IA
+## Sistemas que resuelven problemas de la IA
 
-**,Que es la Inteligencia Artificial?**
+### ¿Qué es la Inteligencia Artificial?
 
 La Inteligencia Artificial (IA) estudia como lograr que las máquinas realicen
 tareas que, por el momento, son realizadas mejor por los seres humanos. Esta
@@ -610,7 +575,7 @@ actual de la informática. Ademas falla al no incluir algunas áreas que
 potencialmente tienen un gran impacto, tales como aquellos problemas que no
 pueden ser resueltos adecuadamente ni por las máquinas ni por los hombres.
 
-**Los problemas de la Inteligencia Artificial**
+### Los problemas de la Inteligencia Artificial
 
 ¿Cuáles son entonces los problemas de los que se ocupa la IA? La mayoría de los
 primeros trabajos en este campo hicieron gran hincapié en las tareas formatos,
@@ -653,7 +618,7 @@ quizá el aspecto más importante que separa a los humanos del resto de los
 animales. La comprensión del lenguaje hablado es un problema de percepción
 difícil de resolver por las razones ya explicadas. Es posible, sin embargo,
 restringir el problema al lenguaje escrito. Este problema, normalmente
-denominado comprensión del lenguaje natural, es aun extremadamente difícil. Para
+denominado comprensión del lenguaje natural, es aún extremadamente difícil. Para
 poder comprender frases sobre un cierto tema, es necesario no solo poseer un \
 conocimiento amplio sobre el propio lenguaje (vocabulario y gramática), sino
 también manejar el suficiente conocimiento sobre dicho tema para reconocer las
@@ -684,7 +649,7 @@ Algunas aplicaciones de la Inteligencia Artificial
 
 ![Algunas aplicaciones de la Inteligencia Artificial](images/aplicaciones-inteligencia-artificial.png)
 
-**Tareas formales**
+#### Tareas formales
 
 Juegos
 
@@ -702,7 +667,7 @@ Juegos
 
 - Calculo integral
 
-**Tareas de la vida diaria**
+#### Tareas de la vida diaria
 
 Percepción
 
@@ -716,7 +681,7 @@ Percepción
 
 - Traducción sentido común Control de un robot
 
-**Tareas de los expertos**
+#### Tareas de los expertos
 
 Ingeniería
 
@@ -736,13 +701,13 @@ Análisis financiero
 
 .:Que tipo de técnicas son las más adecuadas para resolver los problemas de IA?
 
-.:A que nivel de detalle, si es que no es por completo, se puede intentar
+.:A qué nivel de detalle, si es que no es por completo, se puede intentar
 modelar la inteligencia humana?
 
-.:Como se puede saber cuando se ha tenido éxito en la construcción de un
+.:Cómo se puede saber cuando se ha tenido éxito en la construcción de un
 programa inteligente?
 
-**Las suposiciones subyacentes**
+### Las suposiciones subyacentes
 
 En el centro de las investigaciones sobre inteligencia artificial aparece lo que
 Newell y Simon (1976) llaman la hipótesis del sistema de símbolos físicos. Ellos
@@ -796,7 +761,7 @@ gran interés para los psicólogos. Esto también forma la base de. la creencia 
 que es posible construir programas J que lleven a cabo las tareas inteligentes
 que son ahora realizadas por la gente.
 
-**¿Qué es una técnica de IA?**
+### ¿Qué es una técnica de IA?
 
 I Los problemas abordados por la inteligencia artificial configuran un amplio
 espectro. Tienen muy poco en común excepto que todos ellos son complicados.
@@ -845,7 +810,7 @@ haciéndolo siempre en términos que ellos comprenden.
 
 en nuestra visión del mundo.
 
-- Puede usarse en gran cantidad de situaciones aun cuando no sea totalmente
+- Puede usarse en gran cantidad de situaciones aún cuando no sea totalmente
   preciso o
 
 completo.
@@ -873,7 +838,7 @@ perturbación en la entrada. El conocimiento del programa es comprendido
 fácilmente por la gente. Y estas técnicas pueden trabajar con facilidad en
 grandes problemas en.donde los métodos directos fallan.
 
-**El nivel del modelo**
+### El nivel del modelo
 
 Antes de ponerse en tarea, es una buena idea decidir que es exactamente lo que
 se intenta lograr.. Podemos preguntarnos i.Que pretendemos al construir
@@ -1011,7 +976,7 @@ Ejercicio
 
 Desarrollar un programa que enseñe a un niño a restar.
 
-1.5.1. Acciones'que debe llevar'a cabo el sistema
+### Acciones que debe llevar a cabo el sistema
 
 Para construir un sistema que resuelva un problema específico, es necesario
 realizar estas cuatro acciones:
@@ -1029,7 +994,7 @@ realizar estas cuatro acciones:
 - Elegir la mejor técnica que resuelva el problema y aplicarla al problema
   particular.
 
-1.5.2. Definición del problema mediante una búsqueda en espacio de estados
+### Definición del problema mediante una búsqueda en espacio de estados
 Suponga que comenzamos por el problema de "Jugar al ajedrez". A pesar de que es
 previsible que la mayoría de la gente unicamente con esta sentencia actúe
 correctamente, la definición def problema tal y como esta, es incompleta. Para
@@ -1073,7 +1038,7 @@ se podría evitar la aparición de errores.
 
 - Ning(m programa puede manipular todas estas reglas. Podría usarse un sistema
   de hashing para poder encontrar más rápidamente las reglas más relevantes pero
-  aun así, almacenar tantas reglas crea muchas dificultades.
+  aún así, almacenar tantas reglas crea muchas dificultades.
 
 Con el fin de minimizar estos problemas, se debe buscar la forma de escribir las
 reglas que describen los movimientos legales de la forma más general posible.
@@ -1233,10 +1198,7 @@ Una solución al problema de las jarras de agua
 
 ![Solución al problema de las jarras de agua](images/solucion-problema-jarras-agua.png)
 
-(sec-unit-01-introduccion-espacio-de-busqueda-y-descripcion-formal-de-problemas)=
-
 ## Espacio de búsqueda y descripción formal de problemas
-
 Resumiendo lo dicho anteriormente, para poder producir una descripción formal de
 un problema debe hacerse lo siguiente:
 

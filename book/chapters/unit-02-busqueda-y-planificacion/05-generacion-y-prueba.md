@@ -2,10 +2,7 @@
 title: Generación y prueba
 ---
 
-(sec-unit-02-busqueda-y-planificacion-generacion-y-prueba)=
-
-## Generación y prueba
-
+# Generación y prueba
 1. Generación y Prueba
 
 La estrategia de generación y prueba es la más simple de todas las que se van a

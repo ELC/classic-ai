@@ -2,10 +2,7 @@
 title: Problemas solitarios y conversacionales
 ---
 
-(sec-unit-01-introduccion-problemas-solitarios-y-conversacionales)=
-
-## Problemas solitarios y conversacionales
-
+# Problemas solitarios y conversacionales
 ¿Necesita la tarea interaccionar con una persona?
 
 Algunas veces resulta provechoso programar las computadoras para resolver
@@ -47,7 +44,7 @@ una aplicación en particular, se necesitan sistemas de uno u otro tipo, y esta
 decisión tiene gran importancia a la hora de elegir el método de resolución del
 problema.
 
-1.5.5. Características de los Sistemas de producción
+## Características de los sistemas de producción
 
 Se ha examinado una serie de características que distinguen varios tipos de
 problemas. También se ha argumentado que los sistemas de producción representan

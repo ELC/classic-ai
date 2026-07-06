@@ -2,131 +2,10 @@
 title: Naturaleza del argumento
 ---
 
-# Unidad Didáctica 3 - Eje Conceptual
+# Naturaleza del argumento
+## El problema de la representación del conocimiento
 
-Representación del Conocimiento y Razonamiento
-
-**TEMAS**
-
-- 1. **El problema de la Representación del Conocimiento s**
-
-1. Correspondencia entre Conocimiento y RC. 5
-
-1. Propiedades de un buen sistema de RC :. 6
-
-1. Modelos de Representación del Conocimiento 6
-
-1. Conocimiento relacional simple. 7
-
-1. Conocimiento heredable 8
-
-1. Conocimiento deductivo 9
-
-1. Conocimiento procedimental 10
-
-1. Problemas de la Representación del Conocimiento. 10
-
-1. El problema del Marco 13
-
-1. **Lógica Simbólica. 15**
-
-1. La Lógica y el Lenguaje. 15
-
-1 3.2.1.1. Introducción 15
-
-- 1. Naturaleza del Argumento 15
-
-2. Verdad y Validez 17
-
-1. Lógica Simbólica. 18
-
-1. Argumentos que contienen Enunciados Compuestos 20
-
-1. Enunciados Simples y Compuestos 20
-
-\\ 3.2.2.2. Enunciados Condicionales 24
-
-1. Formas de Argumentos y Tablas de Verdad 26
-
-1. Formas Sentenciales 30
-
-1. El Método de Deducción 34
-
-1. Prueba Formal de Validez 34
-
-1. La Regla de Reemplazo 36
-
-1. Demostración de la Invalidez 39
-
-1. **Lógica de Predicados 41**
-
-1. Introducción y concepto de Semidecidible 41
-
-1. Representación de hechos simples en lógica 42
-
-1. La Representación de las relaciones instancia y es-un 46
-
-3.3.4. Representación de Funciones calculables y Predicados computables 47
-
-1. Método de Resolución 50
-
-1. Conversión a forma clausal. 50
-
-3.3.7. Las bases de la resolución 53
-
-1. Resolución en lógica proposicional 53
-
-1. El algoritmo de unificación 55
-
-1. Resolución en lógica de predicados 56
-
-**3.4. Representación del conocimiento mediante Reglas 59**
-
-1. Comparación entre conocimiento procedimental
-
-y conocimiento declarativo. 59
-
-1. Programación Lógica 61
-
-1. Diferencia entre Razonamientos hacia delante y hacia atrás 63
-
-1. Sistemas de reglas encadenadas hacia atrás. 63
-
-1. Sistemas de reglas encadenadas hacia delante. 64
-
-1. Combinación del razonamiento hacia adelante y hacia atrás 64
-
-1. **Razonamiento simbólico bajo incertidumbre 65**
-
-1. Razonamiento No Monótono 65
-
-1. Razonamiento por defecto 65
-
-1. Lógica no monótona 66
-
-1. Lógica por defecto 66
-
-1. Razonamiento minimalista 67
-
-1. La suposición de un mundo cerrado 67
-
-1. Circunscripción,. 68
-
-1. Cuestiones sobre la implementación 68
-
-1. Implementación búsqueda primero en profundidad 69
-
-3.5.1.3.2. Implementación búsqueda primero en anchura
-
-1. Marcos 82
-
-1. **Estructuras de Ranura y Relleno Fuertes 83**
-
-1. Dependencia Conceptual 83
-
-- 1. El problema de la Representación del Conocimiento
-
-1. Correspondencia entre Conocimiento y RC
+### Correspondencia entre conocimiento y representación del conocimiento
 
 Para resolver los complejos problemas con los que se enfrenta •la Inteligencia
 Artificial, es necesario disponer tanto de una *gran cantidad de conocimiento*
@@ -189,7 +68,7 @@ muchos a muchos.
 En algunas ocasiones, el uso de una buena representación hace que el mecanismo
 de razonamiento de un programa sea no solo correcto sino también trivial.
 
-1. Propiedades de un buen sistema de RC
+### Propiedades de un buen sistema de representación del conocimiento
 
 Un buen sistema de representación del conocimiento en un dominio particular debe
 poseer las siguientes propiedades: ('
@@ -223,7 +102,7 @@ capítulos se describirán con detalle las más importantes de estas técnicas,
 pero, a modo de introducción, en este apartado se pasa revista a las principales
 ideas.
 
-1. Modelos de Representación del Conocimiento
+### Modelos de representación del conocimiento
 
 **Espectro Sintáctico-Semántico de la Representación**
 
@@ -509,7 +388,7 @@ las conclusiones buscadas hasta los hechos de partida. Entre los más utilizados
 de estos procedimientos se encuentra el de ***resolución*** que utiliza una
 estrategia de prueba por contradicción.
 
-3.1.3.4. Com::conocimiento procedimental
+### Conocimiento procedimental
 
 Hasta ahora los ejemplos sobre la base de conocimiento acerca de los felinos
 salvajes se han centrado en hechos declarativos relativamente estáticos. Pero
@@ -527,13 +406,15 @@ Figura 3.5
 
 ![Figura 3.5: regla PROLOG para comer](images/figura-3-5-regla-prolog-come-felino.png)
 
-1. Problemas de la Representación del Conocimiento Antes de embarcarnos en la
+### Problemas de la representación del conocimiento
+
+Antes de embarcarnos en la
    discusión de los mecanismos específicos que se utilizan para la
    representación de los distintos tipos de conocimiento acerca del mundo real,
    es necesario señalar brevemente una serie de cuestiones presentes en todos
    ellos:
 
-1. **Atributos importantes**
+#### Atributos importantes
 
 **iExisten atributos tan genéricos que aparezcan en prácticamente todos los
 dominios**
@@ -548,7 +429,7 @@ el nombre es lo de menos, lo importante es que dichos atributos representan la
 *pertenencia a* *una clase* y la *inclusión de una clase en otra,* y que *la
 inclusión de clases es transitiva.*
 
-1. **Relaciones entre atributos**
+#### Relaciones entre atributos
 
 **iSe pueden establecer relaciones relevantes entre los atributos de los
 objetos?** Los atributos que se utilizan para describir a los objetos pueden ser
@@ -672,7 +553,7 @@ almacenamiento, puesto que muchas inferencias se representarán muchas veces.
 
 **D. La representación de conjuntos de objetos**
 
-1. **Como se deben representar los conjuntos de objetos?**
+### ¿Cómo se deben representar los conjuntos de objetos?
 
 La posibilidad de representar conjuntos de objetos es importante por varias
 razones.
@@ -744,7 +625,7 @@ objeto delante que impida ver la cuarta pata.
 ascender por la jerarquía hasta encontrar una estructura lo bastante general.
 como para no entrar en contradicción con la situación en curso.
 
-1. **El problema del Marco**
+### El problema del marco
 
 En este capítulo se han descrito diversos métodos de representación del
 conocimiento que permiten la construcción de descripciones de estados complejos
@@ -805,11 +686,11 @@ cambio explícito. Esta idea de circunscribir el conjunto de cosas inusuales es
 muy potente; se puede utilizar como una solución parcial al problema estructural
 y como un modo de razonamiento con conocimiento incompleto.
 
-- 1. Lógica Simbólica
+## Lógica simbólica
 
-1. La Lógica y el Lenguaje
+### La lógica y el lenguaje
 
-1. Introducción
+### Introducción
 
 **¿Qué es la Lógica?**
 
@@ -861,10 +742,7 @@ Los métodos y técnicas del lógico se han desarrollado primordialmente con el
 objeto de aclarar la distinción. El lógico se interesa en todo razonamiento, sin
 atender al contenido mismo, sino solo desde este punto de vista especial.
 
-(sec-unit-03-representacion-conocimiento-naturaleza-del-argumento)=
-
 ## Naturaleza del argumento
-
 **3.2.1.2, Naturaleza del Argumento**
 
 La *inferencia* es una actividad en la que se afirma una proposición sobre la

@@ -2,13 +2,9 @@
 title: Razonamiento bajo incertidumbre
 ---
 
-(sec-unit-03-representacion-conocimiento-razonamiento-bajo-incertidumbre)=
+# Razonamiento bajo incertidumbre
 
-## Razonamiento bajo incertidumbre
-
-- 1. Razonamiento simbólico bajo incertidumbre
-
-3.5.1. Razonamiento No Monótono
+## Razonamiento no monótono
 
 *Hasta ahora, se han descrito técnicas de razonamiento para un modelo del mundo
 completa, consistente e inalterable.* *Desafortunadamente, en muchos dominios de
@@ -53,7 +49,7 @@ convencional son inadecuados.
 puedan resolver problemas en las que quizá no aparezca alguna de estas
 propiedades.*
 
-- 1. **Razonamiento por defecto**
+### Razonamiento por defecto
 
 Se quiere usar el *razonamiento no monótono* para llevar a cabo lo que
 comúnmente se denomina ***razonamiento por defecto.*** **Se *pretende llegar a
@@ -152,7 +148,7 @@ El razonamiento no monótono se utiliza con mucha frecuencia en·la herencia de
 los valores de los atributos desde la descripción prototipo de una clase hacia
 las entidades individuales que pertenecen a la clase.
 
-- 1. Razonamiento minimalista
+### Razonamiento minimalista
 
 Hasta ahora se ha hablado sobre métodos generales que proporcionan formas de
 describir cosas que son ciertas en general. Ahora se muestran métodos para

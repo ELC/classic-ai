@@ -7,18 +7,15 @@ kernelspec:
 ---
 
 # Práctica 4
-
 PROLOG - Base de datos y Functores
 
 ## Ejercicio 1
-
 Hacer un programa que permita definir las cuentas a pagar del mes (luz, agua,
 alquiler, teléfono, cable, supermercado, etc.) de un grupo de personas. A su
 vez, deberá permitir ingresar el nombre de una de ellas e informar de todos sus
 gastos.
 
 ### Solución
-
 ```{code-cell} prolog
 :tags: [hide-cell]
 
@@ -29,13 +26,11 @@ gastos_de(Persona, Concepto, Monto) :- gasto(Persona, Concepto, Monto).
 ```
 
 ### Verificación
-
 ```{code-cell} prolog
 ?- findall(Concepto-Monto, gastos_de(maria, Concepto, Monto), Gastos), assertion(Gastos == [luz-1000, alquiler-50000]).
 ```
 
 ## Ejercicio 2
-
 Hacer un programa que defina una Base de datos de personas de la siguiente
 forma:
 
@@ -50,7 +45,6 @@ contrario deberá solicitar ingresar un nombre y registrar entonces la persona e
 la BBDD.
 
 ### Solución
-
 ```{code-cell} prolog
 :tags: [hide-cell]
 
@@ -63,7 +57,6 @@ consultar_o_registrar(Codigo, Nombre) :-
 ```
 
 ### Verificación
-
 ```{code-cell} prolog
 ?- consultar_o_registrar(1, Nombre), assertion(Nombre == ana).
 ```
@@ -73,7 +66,6 @@ consultar_o_registrar(Codigo, Nombre) :-
 ```
 
 ## Ejercicio 3
-
 Desarrollar un programa que permita definir los hábitos de:
 
 - alimentación (comida, cantidad)
@@ -88,7 +80,6 @@ de datos. El programa deberá permitir:
 - Ingresar un hábito e informar todos los animales que lo tienen.
 
 ### Solución
-
 ```{code-cell} prolog
 :tags: [hide-cell]
 
@@ -100,7 +91,6 @@ animal_con_habito(Animal, Habito) :- habito(Animal, Habito).
 ```
 
 ### Verificación
-
 ```{code-cell} prolog
 ?- findall(Habito, habitos_de(leon, Habito), Habitos), assertion(Habitos == [alimentacion(carne, mucha), suenio(18)]).
 ```
@@ -110,7 +100,6 @@ animal_con_habito(Animal, Habito) :- habito(Animal, Habito).
 ```
 
 ## Ejercicio 4
-
 Ampliar el ejercicio 1 a través del uso de functores. Por ejemplo:
 
 ```{code-cell} prolog
@@ -127,7 +116,6 @@ gasto(maria, tel(movil, personal, 100)).
 - Calcular gasto promedio para una determinada persona (dato de entrada).
 
 ### Solución
-
 ```{code-cell} prolog
 :tags: [hide-cell]
 
@@ -140,7 +128,6 @@ promedio_persona(Persona, Promedio) :-
 ```
 
 ### Verificación
-
 ```{code-cell} prolog
 ?- findall(Persona, persona_con_gasto(Persona, super), Personas), assertion(Personas == [maria]).
 ```
@@ -154,7 +141,6 @@ promedio_persona(Persona, Promedio) :-
 ```
 
 ## Ejercicio 5
-
 Hacer un programa que permita realizar altas, bajas y consultas a la base de
 datos de una librería. De cada libro se registran los siguientes datos:
 
@@ -168,7 +154,6 @@ La base datos debe guardarse en disco. Calcular además el precio promedio de lo
 libros de un determinado autor.
 
 ### Solución
-
 ```{code-cell} prolog
 :tags: [hide-cell]
 
@@ -183,13 +168,11 @@ promedio_autor(Autor, Promedio) :-
 ```
 
 ### Verificación
-
 ```{code-cell} prolog
 ?- retractall(libro(_, _, _, _, _)), alta_libro(1, prolog, aquili, utn, 100), consulta_libro(1, Titulo, Autor, Editorial, Precio), assertion(Titulo == prolog), assertion(Autor == aquili), assertion(Editorial == utn), assertion(Precio =:= 100), promedio_autor(aquili, Promedio), assertion(Promedio =:= 100), baja_libro(1), assertion(\+ consulta_libro(1, _, _, _, _)).
 ```
 
 ## Ejercicio 6
-
 Hacer un programa que permita registrar en una Base de Datos recetas de cocina.
 De cada receta se registran los siguientes datos:
 
@@ -204,7 +187,6 @@ ingrediente en particular y una cierta cantidad del mismo, determinar aquellas
 recetas que llevan ese ingrediente y superan dicha cantidad.
 
 ### Solución
-
 ```{code-cell} prolog
 :tags: [hide-cell]
 
@@ -218,7 +200,6 @@ recetas_con_cantidad(Codigo, Nombre, Ingrediente, Minimo) :-
 ```
 
 ### Verificación
-
 ```{code-cell} prolog
 ?- findall(Codigo-Nombre, recetas_con_ingredientes(Codigo, Nombre, tomate, lechuga), Recetas), assertion(Recetas == [1-ensalada]).
 ```

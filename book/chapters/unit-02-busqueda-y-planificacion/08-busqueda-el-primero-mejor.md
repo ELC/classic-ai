@@ -2,11 +2,7 @@
 title: Búsqueda el primero mejor
 ---
 
-(sec-unit-02-busqueda-y-planificacion-busqueda-el-primero-mejor)=
-
-## Búsqueda el primero mejor
-
-- 1..3. Búsqueda El primero mejor
+# Búsqueda el primero mejor
 
 Hasta este momento, solo se han explicado realmente dos estrategias de control
 sistemáticas, la búsqueda primero en anchura y la búsqueda primero en
@@ -298,7 +294,7 @@ resulta extremadamente complicada desde el punto de vista matemático. Los.
 matemáticos amantes de la complicación han producido una copiosa bibliografía
 sobre la materia.
 
-1. Reducción de problemas
+## Reducción de problemas
 
 Algunas veces es posible convertir metas difíciles en una o más submetas más
 fáciles de lograr. Cada submeta, a su vez, puede dividirse aún más finamente en

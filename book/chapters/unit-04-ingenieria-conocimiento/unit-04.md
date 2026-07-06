@@ -2,64 +2,8 @@
 title: "Unidad 4: Ingeniería del conocimiento"
 ---
 
-# Unidad Didáctica 4 - Eje Conceptual
-
-Ingeniería del Conocimiento
-
-**TEMAS**
-
-- 1. **PROLOG (Programación Lógica) 4**
-
-1. Una breve historia del Prolog 4
-
-1. ¿Para que sirve Prolog?. 4
-
-1. Lenguaje Procedural vs. Lenguaje Declarativo 4
-
-1. Inteligencia Artificial. 5
-
-1. **Relación con la Lógica 6**
-
-1. Hechos 6
-
-1. Variables. 7
-
-1. Reglas 7
-
-1. Clausulas 9
-
-1. Preguntas 9
-
-1. Conjunciones y Backtracking 9
-
-1. **Estructura de un Programa en Prolog. 11**
-
-1. Composición de un programa. Clausulas. Predicados. Dominios 11
-
-1. **Ingeniería del Conocimiento 16**
-
-1. Organización de una Base de Conocimientos 16
-
-1. Encontrando el Experto. 16
-
-1. Verificaciones de la BC. 17
-
-1. **Definición de Sistema Experto. 17**
-
-1. Definición funcional 18
-
-1. Definición estructural. 18
-
-1. **Armazones de Sistemas Expertos. 20**
-
-1. **Aplicaciones de los Sistemas Expertos 21**
-
-Ventajas de la aplicación de Sistemas Expertos. 21
-
-Fases de la "inserción social" de los Sistemas Expertos 22
-
-- 1. **Sistemas Expertos más conocidos 22**
-- 1. ll"RCllLOG (Programación Lógica)
+# Unidad 4: Ingeniería del conocimiento
+## PROLOG (Programación lógica)
 
 **PROLOG** es un lenguaje de programación que se utiliza para resolver problemas
 en los que entran en juego objetos y relaciones entre objetos. Actualmente se ha
@@ -75,7 +19,7 @@ Para los programadores que investigan en IA, el PROLOG ofrece un método
 diferente al empleado por los lenguajes más familiares, tales como BASIC, COBOL,
 PASCAL y C.
 
-1., Una breve historia del Prolog
+### Una breve historia del Prolog
 
 PROLOG significa *"PRProgramming LOGic",* es decir *programación basada en la
 lógica* y es un lenguaje de programación de computadoras que fue inventado
@@ -92,7 +36,7 @@ lanzaron su famoso proyecto de la quinta generación con el objetivo de diseñar
 nuevas computadoras y software. De repente, la gente comenzó a mirar de otra
 forma el PROLOG y sus posibilidades.
 
-4.1.2.,i.Para que sirve Prolog?
+### ¿Para qué sirve Prolog?
 
 Los lenguajes de computadoras son raramente buenos para todos los tipos de
 problemas.
@@ -108,10 +52,7 @@ ordenada), intenta hacer que la computadora *"razone"* la forma de encontrar una
 solución. Es particularmente adecuado para diferentes tipos de problemas de
 inteligencia artificial.
 
-(sec-unit-04-ingenieria-conocimiento-lenguaje-procedural-vs-declarativo)=
-
-## Lenguaje procedural vs declarativo
-
+### Lenguaje procedural vs. lenguaje declarativo
 4.1.3, Lenguaje Procedural vs. Lenguaje Declarativo La mayoría de los lenguajes
 de computadoras personales, BASIC, PASCAL, COBOL, etc., han sido
 ***procedurales.*** *Tales /lenguajes permiten al programador decirle a la
@@ -132,19 +73,21 @@ la que la implementación de un lenguaje como PROLOG es una herramienta tan buen
 para desarrollar aplicaciones en IA, especialmente cuando se lo compara con
 otros lenguajes.
 
-***Al trabajar con un lenguaje declarativo se da información sabre un tema***
+***Al trabajar con un lenguaje declarativo se da información sobre un tema***
 
 ***determinado, se definen las relaciones que existen entre estos datos y
-finalmente se*** ***construyen preguntas* o *cuestionamientos sabre todo el
+finalmente se*** ***construyen preguntas* o *cuestionamientos sobre todo el
 paquete, quedándole al lenguaje la tarea de elaborar las conclusiones mediante
-un razonamiento lógico.*** 4.1,4. Inteligencia Artificial
+un razonamiento lógico.***
+
+### Inteligencia artificial
 
 Determinar que es un programa inteligente implica que se conoce lo que significa
 
 ***inteligencia:***
 
 *capacidad o habilidad para percibir hechos v proposiciones v sus relaciones v
-razonar sabre ellos. Esencialmente significa* **pensar.** Esta definición
+razonar sobre ellos. Esencialmente significa* **pensar.** Esta definición
 implica solamente inteligencia humana, *no* admite la posibilidad de que una
 máquina pueda pensar, ya que los programas no hacen la misma tarea de la misma
 forma que una persona. ***Que un programa sea inteligente requiere que actúe
@@ -167,17 +110,12 @@ MIT, quien.escribió un artículo titulado *"Pasos de la Inteligencia Artificial
 (Enero 1961), que explicaba la posibilidad de hacer pensar a las computadoras.
 
 Al final de los años '70 se había.n alcanzado varios éxitos, tales como *el
-procesamiento de* *lenguaje natural, representación def conocimiento v
+procesamiento de* *lenguaje natural, representación del conocimiento v
 resolución de*• *problemas eh áreas específicas de la IA.* Los dos problemas más
 significativos de IA son los ***sistemas expertos*** y el ***procesamiento de
 lenguaje natural.*** A saber:
 
-(sec-unit-04-ingenieria-conocimiento-sistema-experto)=
-
 ## Sistema experto
-
-**Sistema Experto**
-
 ***Es un programa de computadora que contiene conocimientos acerca de un
 determinado campo y cuando* es *interrogado responde como un experto humano.***
 Contiene información *(una base de conocimientos)* y una herramienta para
@@ -185,19 +123,19 @@ comprender las preguntas y responder la respuesta correcta examinando la base
 *(un motor.de inferencia).* El PROLOG tiene incorporado estructuras para la
 creación de bases de conocimientos y un motor de inferencia.
 
-**Procesamiento de lenguaje natural**
+### Procesamiento de lenguaje natural
 
 El procesamiento de lenguaje natural **es *la técnica que fuerza a las
 computadoras a entender el lenguaje humano.*** Los científicos que lo estudian
 esperan crear un hardware y software que permita escribir *"llevar el archivo
-def prolog a la carpeta prolog"* y haga que la computadora siga dichas
+del prolog a la carpeta prolog"* y haga que la computadora siga dichas
 directrices.
 
 El PROLOG puede usar la idea de una base de conocimientos y un motor de
 inferencias para dividir el lenguaje humano en diferentes partes y relaciones y
 así intentar comprender su significado detectando *palabras clave.*
 
-- 1. Relación con la.Lógica
+## Relación con la lógica
 
 Como su nombre lo indica, el ***PROLOG* se *basa en manipulaciones lógicas,
 posibilita al*** ***programador especificar sus problemas en forma lógica,*** en
@@ -228,9 +166,9 @@ lógicas.***
 
 La programación de computadoras en PROLOG consiste en:
 
-- Declarar algunos hechos sabre los objetos y sus relaciones.
+- Declarar algunos hechos sobre los objetos y sus relaciones.
 
-- Definir algunas reglas sabre los objetos y sus relaciones.
+- Definir algunas reglas sobre los objetos y sus relaciones.
 
 - H.hacer preguntas sobre los objetos y sus relaciones.
 
@@ -241,7 +179,7 @@ inferencias de un hecho a otro.
 Se puede considerar a PROLOG como un lenguaje coloquial, lo cuál significa que
 el programador y la computadora sostienen una especie de conversación.
 
-1. 2.1. Hechos
+### Hechos
 
 La primera forma de combinar un objeto y una relación es usarlos para definir un
 hecho, la sintaxis de PROLOG es:
@@ -329,7 +267,7 @@ Esta variable es un único carácter 'de subrayado.
 Se utiliza para evitar el tener que imaginar continuamente diferentes nombres de
 variables i cuando no se van a utilizar en ningún otro sitio de la cláusula.
 
-1. **Reglas**
+### Reglas
 
 En PROLOG se usa una regla cuando se quiere significar que un hecho depende de
 un grupo de otros hechos. Por ejemplo, si queremos afirmar que a eduardo le
@@ -397,7 +335,7 @@ gusta X si a X le gusta el vino.
 
 El ejemplo anterior se escribe en PROLOG de la forma siguiente:
 
-1. Clausulas
+### Cláusulas
 
 Utilizaremos la palabra ***cláusula*** siempre que nos refiramos a ***un hecho*
 o *a una regla.*** Existen dos formas de dar información a PROLOG sobre un
@@ -414,7 +352,7 @@ En PROLOG sería:
 El predicado *puede_robar* significa que alguna persona X puede robar alguna
 cosa Y. Esta cláusula depende de las cláusulas *ladrón, le_gusta_a* y *valiosa.*
 
-1. Preguntas
+### Preguntas
 
 , 1 Una vez que tengamos algunos hechos podemos hacer algunas preguntas acerca
 de ellos. En PROLOG una pregunta se representa igual que un hecho, salvo que
@@ -427,14 +365,8 @@ se explicó en ,, puntos importantes de los hechos, cuando dos hechos coinciden)
 Si se. encuentra uno..que coincida se responderá si (yes), por el contrario, si
 no se encuentra, la respuesta sera no.
 
-En PROLOG la respuesta no se utiliza para determinar que no existe nada que
-coincida 'con la pregunta realizada.
-
-(sec-unit-04-ingenieria-conocimiento-razonamiento-y-busqueda-en-prolog)=
-
+(razonamiento-y-busqueda-en-prolog)=
 ## Razonamiento y búsqueda en Prolog
-
-1. Conjunciones y Backtracking
 
 En el caso de que se quiera contestar preguntas sobre relaciones un poco más
 complejas, como *ise gustan Josey María?,* primero se debería preguntar si Jose
@@ -443,7 +375,7 @@ representa un problema con dos objetivos separados.* El *"y"*** expresa el
 interés de la ***conjunción*** de los dos objetivos: lo que se quiere hacer es
 satisfacer ambos, primero uno y luego el otro.. Esto en PROLOG sería:
 
-La coma se lee "y" y separa los objetivos de una pregunta. Cuando PROLOG tiene
+La como se lee "y" y separa los objetivos de una pregunta. Cuando PROLOG tiene
 que satisfacer objetivos, lo hará objetivo por orden, buscando los coincidentes
 en la ba.se de datos. Deberá ser necesario que se cumplan todos, en orden.
 
@@ -520,12 +452,12 @@ En este punto los objetivos se han satisfecho y la variable A contiene el valor
 *vino.* El primer objetivo tiene una marca en la base en la posición del hecho
 *le_gusta_a(maria,vino),* y el segundo en el hecho *le_gusta_a(jose,vino).*
 
-- 1. Estructura de un Programa en Prolog
+## Estructura de un programa en Prolog
 
 1., Composición de un programa. Cláusulas. Predicados. Dominios La mayoría de
 los programas PROLOG están organizados en 4 etapas:
 
-- - Clausulas
+- - Cláusulas
 
 * Predicados
 
@@ -542,7 +474,7 @@ Los hechos que construyó con los objetivos y las relaciones se listan en la
 sección de cláusulas (clauses). La sección puede también contener reglas y otras
 construcciones que se estudiaran más adelante.
 
-**Predicados**
+#### Predicados
 
 Los *predicados* son las relaciones. El término *"predicado"* viene.de la lógica
 formal, la cuál es uno de los fundamentos iniciales de PROLOG. Siempre que su
@@ -560,7 +492,7 @@ nombre predicado (argumento, argumento2) nombre predicado (argumento3,
 argumento4, argumento5) podrá utilizar los predicados de las dos formas. Los
 diferentes argumentos tampoco tienen que ser del mismo tipo de dominio.
 
-**Dominios**
+#### Dominios
 
 El PROLOG necesita un nivel más de explicación antes de que un programa este
 completo.
@@ -593,7 +525,7 @@ identifican más rápidamente cuando se ejecuta un programa. Por ejemplo:
 
 "Eduardo" "choque contra un árbol el coche de Eduardo"
 
-**String**
+#### String
 
 Cualquier grupo de caracteres consecutivos (letras y números) que comienza y
 termina con una marca de doble comilla ("). Esto es lo mismo que el segundo tipo
@@ -604,7 +536,7 @@ cadenas no son tratados de la misma forma por Prolog. Por ejemplo:
 
 "eduardo es un *@"a&&"?lil@"* "eduardo escucha Volcán"
 
-**Integer**
+#### Integer
 
 Cualquier número comprendido entre (e incluyendo) -32768 y 32767. El límite
 '!ie.ne impuesto porque los enteros se almacenan como valores de 16 bits. Quince
@@ -613,7 +545,7 @@ ejemplo:.
 
 21444
 
-**Real**
+#### Real
 
 cualquier número real en el rango +/- 1 E-307 a +/-. 1 E+308. El formato incluye
 estas opciones: signo, número, punto decimal, fracción, E (para indicar el
@@ -625,12 +557,12 @@ desde los muy sencillos hasta los muy complejos. Por ejemplo:
 Ambos números son reales, pero en muchos casos sería mejor hacer que el primero
 fuera entero en vez de real. El entero necesita menos memoria)
 
-**Char**
+#### Char
 
 Cualquier carácter de la lista ASCII estándar, posicionado entre dos marcas de
 comillas sencilla (' '). Por ejemplo:
 
-**File**
+#### File
 
 Para declarar un domino de archivo, se debe declarar los nombres de archivos
 simbólicos de los archivos que se usaran, Solo se puede tener una declaración de
@@ -651,7 +583,7 @@ printer keyboard screen com 1
 
 este archivo ese archivo el_otro_archivo
 
-**Objetivos {goal)**
+#### Objetivos (goal)
 
 Esta es la sección que le dice al PROLOG lo que ha de encontrar o lo que desea
 que la computadora haga con la información que se le ha suministrado en las
@@ -671,7 +603,7 @@ aprobar o desaprobar el objetivo y le informara de lo obtenido.
   esperara que se le introduzca un objetivo. Una vez que se verifica si se junta
   el objetivo,• el programa le pedirá uno nuevo y así sucesivamente.
 
-4.3.2, Ejemplos
+### Ejemplos
 
 ![Ejemplos PROLOG con goal externo](images/ejemplos-prolog-goal-externo.png)
 
@@ -733,7 +665,7 @@ hermana (X,Y):- mujer (X), padres (X,M,P), padres (Y,M.P), X\<>Y.
 Cada *vez* que se evalúa una conjunción las conjunciones anteriores tuvieron que
 ser verdaderas. En caso contrario no se evaluaran las siguientes conjunciones.
 
-- 1. Ingeniería deD Conocimiento
+## Ingeniería del conocimiento
 
 ***La Ingeniería del Conocimiento es la disciplina que trata de la forma*** *en*
 ***que se***
@@ -741,9 +673,9 @@ ser verdaderas. En caso contrario no se evaluaran las siguientes conjunciones.
 ***organizan, construyen y verifican las bases de conocimiento.***
 
 ***El Ingeniero de Conocimiento es el encargado de entrevistar a los expertos
-reales,*** ***para aprender sabre lo que ellos saben, y poder así organizar la
+reales,*** ***para aprender sobre lo que ellos saben, y poder así organizar la
 información obtenida*** *('* ***para construir una Base de Conocimientos.***
-4.4,1. Organización de 1.una Base de Conocimientos
+### Organización de una base de conocimientos
 
 Como creador de una base de conocimientos usted puede controlar la organización
 de la información dentro de la misma, lo que implica que *puede haber
@@ -765,7 +697,7 @@ entonces reordenar la base de conocimientos.
 
 que atributos causan el mayor efecto.
 
-4.4.2. Em:encontrando ei Experto
+### Encontrando el experto
 
 La única hipótesis que se ha hecho hasta ahora es que se puede encontrar un
 experto humano quien puede extraer fácilmente el conocimiento del experto.
@@ -774,7 +706,7 @@ Desafortunadamente, rara vez es este el caso. •
 - Primera, a menudo ***es difícil determinar quien es* o *no es un verdadero
   experto.***
 
-Este es un problema especialmente cuando se conoce poco sabre la materia.
+Este es un problema especialmente cuando se conoce poco sobre la materia.
 
 - Segundo, ***dos expertos diferentes en la misma materia tienen a menudo***
 
@@ -790,7 +722,7 @@ opciones útiles.
 
 - *Una segunda solución* es ***promediar la información.*** Esto es, intentar
   ***usar*** ***solo información que es común entre los expertos.*** Aunque esta
-  opción no es tan fácil coma la primera, usted puede hacer el proceso
+  opción no es tan fácil como la primera, usted puede hacer el proceso
   ocasionalmente sin mucho problema. La desventaja es que la base de
   conocimientos este "revuelta" y no refleje el conocimiento pleno de ningún
   experto.
@@ -812,7 +744,7 @@ la***
 - Ademas, ***algunos expertos estarán simplemente menos inclinados a perder
   tiempo*** diciéndole todo lo que saben sobre la materia.
 
-4.4.3. Verificaciones de la BC
+### Verificaciones de la base de conocimientos
 
 Si supone que ha encontrado un experto que es cooperativo *y* que da una
 descripción completa de su materia de experto, todavía se enfrenta con el
@@ -824,7 +756,7 @@ base de conocimientos?
 La búsqueda exhaustiva es imposible sobre algo que no sea un conjunto de datos
 extremadamente pequeño debido a la explosión combinatoria.
 
-Esto significa que *para la mayoría de los sistemas expertos def mundo real no
+Esto significa que *para la mayoría de los sistemas expertos del mundo real no
 hay forma de verificar completamente que la base de conocimientos sea exacta.*
 
 - En consecuencia, la mejor solución es hacer suficiente testeo de forma que
@@ -832,7 +764,7 @@ hay forma de verificar completamente que la base de conocimientos sea exacta.*
   muestreo estadísticas, puede idear una serie de tests que producirán cualquier
   nivel de confían:ta que se desee.***
 
-- En otro enfoque, tiene la ***autocomprobación def sistema por consistencia y
+- En otro enfoque, tiene la ***autocomprobación del sistema por consistencia y
   ver que toda ia información de la base de conocimientos concuerda consigo
   misma.*** Aunque esta no encontrara todos los problemas, encontrara algunos:
   Sin embargo, dependiendo de cómo este implementada la autocomprobación, en
@@ -843,7 +775,7 @@ De este modo, según crece el uso de los sistemas expertos, la verificación de
 las bases de conocimientos sera una de las más importantes áreas de
 investigación.
 
-- 1. Definición de Sistema Experto
+## Definición de sistema experto
 
 Asumiendo el riesgo que comporta toda simplificación, podríamos concretar en dos
 las *ideas claves que han conducido a la construcción de los llamados "sistemas
@@ -869,10 +801,8 @@ expertos" y a su popularización.*
 
 - Capacidad conversacional para todo ello.
 
-(sec-unit-04-ingenieria-conocimiento-definicion-funcional-de-sistema-experto)=
-
+(definicion-funcional-de-sistema-experto)=
 ## Definición funcional de sistema experto
-
 4.!5.:1.. Definición f1.nacional
 
 ***Para que un sistema informático pueda llamarse "experto",*** ha de satisfacer
@@ -918,16 +848,14 @@ eficaces.
 
 - Justificar sus conclusiones.
 
-(sec-unit-04-ingenieria-conocimiento-definicion-estructural-de-sistema-experto)=
-
+(definicion-estructural-de-sistema-experto)=
 ## Definición estructural de sistema experto
-
 4.!5.2. Definición estructural
 
 Habitualmente, cuando diseñamos un sistema informático para resolver una clase
 de problemas, *mezclamos en el código,* de manera más.o menos desordenada, *las
 conocimientos* *concretos para abordar problemas de esa clase y las
-procedimientos que, actuando sabre esos* *conocimientos, permiten resolver cada
+procedimientos que, actuando sobre esos* *conocimientos, permiten resolver cada
 problema especifico.* Ahora bien, puesto a diseñar un sistema con unas
 especificaciones. funcionales que. satisfagan las características enunciadas
 anteriormente, es aconsejable ***separar claramente los dos*** ***componentes:
@@ -976,7 +904,6 @@ Usuario **0**
 j Programa I
 
 #### LJ LJ
-
 Descriptores de formato
 
 Descriptores de la BD
@@ -1006,7 +933,6 @@ SGBD
 I • ► LJ BD
 
 #### LJ LJ
-
 Descriptores Descriptores
 
 de formato Base de de la BD Conocimiento
@@ -1069,18 +995,14 @@ parece que la primera podría asociarse de manera más natural con la *"visión
 funcional",* mientras que la segunda haría referencia a la *"visión
 estructural".*
 
-(sec-unit-04-ingenieria-conocimiento-armazones-de-sistemas-expertos)=
-
 ## Armazones de sistemas expertos
-
-- 1. Armazones de Sistemas Expertos
 
 En un principio, los sistemas expertos que se construían partieron de cero,
 generalmente en LISP. Pero tras haber creado varios sistemas de esta manera, se
 vio claro que, a menudo, *tenían bastantes puntos en común.* En concreto, desde
 que los sistemas se creaban como un conjunto de representaciones declarativas
 (reglas en su mayor parte) combinadas con un intérprete para esas declaraciones,
-*fue posible separar el intérprete y el conocimiento* *específico def dominid,*
+*fue posible separar el intérprete y el conocimiento* *específico del dominid,*
 y as( ***se pudo crear un sistema capaz de construir nuevos*** ***sistemas
 expertos sin más que añadir nuevos conocimientos correspondientes al***
 ***dominio de/ nuevo problema.*** Los intérpretes resultantes se llaman
@@ -1093,7 +1015,7 @@ En este momento hay disponibles comercialmente varios armazones que sirven como
 base para muchos de los sistemas expertos que actualmente se construyen. Estos
 armazones proporcionan mucha mayor flexibilidad a la hora de la representación
 del conocimiento y del razonamiento frente a la proporcionada por MYCIN.
-*Típicamente tienen coma base reglas, marcos, sistemas de mantenimiento de la
+*Típicamente tienen como base reglas, marcos, sistemas de mantenimiento de la
 verdad y otros muchos mecanismos de razonamiento.*
 
 - Los primeros armazones de sistemas expertos proporcionaban mecanismos para la
@@ -1118,13 +1040,9 @@ que usan técnicas de programación convencionales principalmente.
 un interfaz fácil-de-usar entre un sistema experto escrito con el armazón y un
 gran entorno de programación, que probablemente sera más convencional.*
 
-- 1. Aplicaciones de ios Sistemas Expertos
+## Aplicaciones de los sistemas expertos
 
-(sec-unit-04-ingenieria-conocimiento-ventajas-de-sistemas-expertos)=
-
-## Ventajas de sistemas expertos
-
-1. Ventajas de la aplicación de Sistemas Expertos
+### Ventajas de los sistemas expertos
 
 La utilidad de un sistema experto se basa principalmente en la ***eficacia* y
 *conveniencia.***
@@ -1163,7 +1081,7 @@ limitaciones de su conocimiento.
    convertirse en un experto en ciertos campos, lo cuál hace difícil adquirir
    nuevos expertos humanos.
 
-1. Fases de la "inserción social"·de los Sistemas Expertos
+### Fases de inserción social de los sistemas expertos
 
 Hayes-Roth (1983) esquematiza en la Figura 4.4 la secuencia de ideas,
 actividades y problemas que se suceden desde que se concibe la posibilidad de la
@@ -1199,7 +1117,7 @@ Figura 4.4
 
 ![Figura 4.4: fases de inserción social de sistemas expertos](images/figura-4-4-fases-insercion-social-sistemas-expertos.png)
 
-- 1. Sistemas Expertos más conocidos
+## Sistemas expertos más conocidos
 
 **Evolución de los sistemas expertos,**
 
@@ -1274,7 +1192,7 @@ De manera similar, de PROSPECTOR se derivo **KAS** (Knowledge Acquisition
 System, Duda et . J al., 1978) y de CASNET, **EXPERT** (Weiss y
 Kulikowski,1979).
 
-**Etapa de industrialización (desde 1981):** ano en que se fundó la primera
+**Etapa de industrialización (desde 1981):** año en que se fundó la primera
 empresa dedicada a sistemas expertos y herramientas para su desarrollo,
 Teknowledge.
 

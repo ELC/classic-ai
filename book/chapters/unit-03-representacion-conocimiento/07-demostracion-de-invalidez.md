@@ -2,10 +2,7 @@
 title: Demostración de invalidez
 ---
 
-(sec-unit-03-representacion-conocimiento-demostracion-de-invalidez)=
-
-## Demostración de invalidez
-
+# Demostración de invalidez
 3.2.3.3. Demostración de la Invalidez
 
 **No Completud de las Diecinueve Reglas**

@@ -2,13 +2,9 @@
 title: Lógica de predicados
 ---
 
-(sec-unit-03-representacion-conocimiento-logica-de-predicados)=
+# Lógica de predicados
 
-## Lógica de predicados
-
-- 1. Lógica de Predicados
-
-1. Introducción y concepto de Semidecidible
+## Introducción y concepto de semidecidible
 
 *El aspecto más atractivo del formalismo lógico es que proporciona de manera
 inmediata un método muy potente para la obtención de nuevo conocimiento a partir
@@ -73,7 +69,7 @@ casos cuando de lo que se trate sea de resolver problemas del mundo real.
 puede resultar útil como medio de representación y manipulación*• *de ciertos
 tipos de conocimiento que pueden ser necesarios en un sistema de IA.*
 
-1. Representación de hechos simples en lógica
+## Representación de hechos simples en lógica
 
 En primer lugar exploraremos el uso de la ***lógica proposicional*** como medio
 de representación del tipo de conocimiento acerca del mundo que puede ser
@@ -329,7 +325,7 @@ leal(Marco, Cesar) teal(Marco, Cesar)
 falsedad de la contraria y utilizar la información obtenida en cada proceso como
 ayuda en el otro. \\
 
-1. La Representación de las relaciones instancia y es-un
+## La representación de las relaciones instancia y es-un
 
 Los atributos ***instancia*** y ***es-un*** juegan un papel importante en el
 modelo de razonamiento guiado por la herencia de propiedades. Si se revisa la
@@ -619,7 +615,7 @@ hasta llegar a alguno de las axiomas. La explicación del mecanismo de resoluci�
 será más directa una vez que se haya descrito la forma estándar en que se
 representan las proposiciones, y par lo tanto, la posponemos hasta entonces.
 
-1. Conversión *a* forma clausal
+## Conversión a forma clausal
 
 Supongamos que sabemos que todos los romanos que conocen a Marco o bien odian a
 
@@ -810,7 +806,7 @@ procedimiento***
 
 ***de resolución para generar demostraciones.***
 
-1. las bases de la resolución
+## Las bases de la resolución
 
 ***El procedimiento de resolución* es *un proceso iterativo simple en el cuál,
 en cada paso, se comparan (resuelven) dos cláusulas llamadas cláusulas padres,
@@ -930,7 +926,7 @@ las cláusulas originates. Surge una contradicción cuando una cláusula se vuel
 tan restringida que no hay forma de hacerla verdadera. Esto se indica con la
 generación de la cláusula vacía.
 
-3.3.9. El algoritmo de unificación
+## El algoritmo de unificación
 
 En lógica proposicional es fácil determinar que dos literales no pueden ser
 ciertos al mismo tiempo. Basta con buscar L y,L.
@@ -1025,7 +1021,7 @@ Puesto que la sustitución final producida por el proceso de unificación será
 usada por el procedimiento de resolución, sería conveniente generar el
 unificador más general posible.
 
-3.3.10. Reso!11c:i6111 ien lógica de predicados
+## Resolución en lógica de predicados
 
 Ahora disponemos de una forma sencilla para determinar si dos literales son
 ***contradictorios***
@@ -1165,7 +1161,7 @@ Figura 3.13
 
 Demostración por Resolución
 
-- 1. Representación del conocimiento mediante Reglas
+## Representación del conocimiento mediante reglas
 
 Hablaremos del uso de reglas para codificar el conocimiento. Esto representa un
 campo de estudio verdaderamente importante, ya que los sistemas de razonamiento
@@ -1182,7 +1178,7 @@ conjunto de reglas para representar* ***tanto el conocimiento acerca de las
 relaciones en el mundo, como el conocimiento para resolver problemas utilizando
 el contenido de las reglas.***
 
-1. Comparación entre conocimiento procedimental y conocimiento declarativo
+## Comparación entre conocimiento procedimental y conocimiento declarativo
 
 Ya que el estudio de la representación del conocimiento se ha centrado hasta
 ahora en el uso de aserciones lógicas, se utilizara la lógica como punto de
@@ -1285,7 +1281,7 @@ menudo muy confusa. En lugar de intentar responder cuál de los dos enfoques es
 mejor, lo que se intentará es describir. el modo en que los formalismos de
 reglas y los intérpretes se pueden combinar para solucionar problemas.
 
-1. Programación Lógica
+## Programación lógica
 
 *La* ***programación lógica*** es *un* ***paradigma de* los *lenguajes de
 programación,*** en el cuál ***las aserciones lógicas* se *consideran como
@@ -1413,7 +1409,7 @@ estas aparecen en el programa. Si el objetivo tiene más de una parte de
 conjuntiva, comprueba las partes en el orden en que estas aparecen, propagando
 los enlaces de las variables que determinó la unificación.
 
-1. Diferencia entre Razonamientos hacia delante y hacia atrás
+## Diferencia entre razonamientos hacia delante y hacia atrás
 
 El objeto de un procedimiento de búsqueda es descubrir un camino a través de un
 espacio problema partiendo de un estado inicial y finalizando en un estado
@@ -1449,7 +1445,7 @@ Se continuara hasta que se genere un nodo que se empareja con el estado inicial.
 Este método de razonamiento hacia atrás, a partir del estado final deseado, se
 denomina algunas veces ***razonamiento dirigido al objetivo.***
 
-- 1. Sistemas de reglas encadenadas hacia atrás
+## Sistemas de reglas encadenadas hacia atrás
 
 Los sistemas de reglas encadenadas hacia atrás, de los cuales el PROLOG es un
 ejemplo, resultan muy eficaces para la ***resolución de problemas dirigidos al
@@ -1470,7 +1466,7 @@ MYCIN, por ejemplo, las reglas pueden ser aumentadas con factores de certeza
 probabilísticos para reflejar el hecho de que unas reglas son más fiables que
 otras.
 
-- 1. Sistemas de regias encadenadas hacia cleDurante
+## Sistemas de reglas encadenadas hacia adelante
 
 En lugar de dirigirse por objetivos, algunas veces se desea ser ***dirigido por
 la información*** ***que se va incorporando.*** Por ejemplo, supóngase que
@@ -1484,7 +1480,7 @@ los lados izquierdos de las reglas se emparejan con la descripción del estado.
 Las reglas que se emparejan vuelcan sus aserciones de su parte derecha en el
 estado, y así el proceso se repite sucesivamente.
 
-- 1. Combinación del razonamiento hacia adelante y hacia atrás
+## Combinación del razonamiento hacia adelante y hacia atrás
 
 A veces, determinados aspectos de un problema se manejan más fácilmente
 utilizando el encadenamiento hacia adelante, mientras que otros se solucionan de

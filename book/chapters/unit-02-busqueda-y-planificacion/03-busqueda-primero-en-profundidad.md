@@ -2,10 +2,7 @@
 title: Búsqueda primero en profundidad
 ---
 
-(sec-unit-02-busqueda-y-planificacion-busqueda-primero-en-profundidad)=
-
-## Búsqueda primero en profundidad
-
+# Búsqueda primero en profundidad
 **2.1.4. Búsqueda primero en profundidad**
 
 Una búsqueda primero en profundidad significa que se explora cada camino posible

@@ -2,11 +2,7 @@
 title: Análisis del problema
 ---
 
-(sec-unit-01-introduccion-analisis-del-problema)=
-
-## Análisis del problema
-
-1. Análisis del problema
+# Análisis del problema
 
 La búsqueda heurística es un método muy general que se puede aplicar a una gran
 clase de problemas. Incluye gran variedad de técnicas específicas, cada una de

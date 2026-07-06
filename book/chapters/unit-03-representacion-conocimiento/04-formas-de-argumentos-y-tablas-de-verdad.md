@@ -2,11 +2,7 @@
 title: Formas de argumentos y tablas de verdad
 ---
 
-(sec-unit-03-representacion-conocimiento-formas-de-argumentos-y-tablas-de-verdad)=
-
-## Formas de argumentos y tablas de verdad
-
-- 1. Formas de Argumentos y Tablas de Verdad
+# Formas de argumentos y tablas de verdad
 
 En esta sección desarrollamos un ***método puramente mecánico*** para probar la
 ***validez de*** ***argumentos que contienen enunciados compuestos de función de
@@ -285,7 +281,7 @@ tener instancias de sustitución válidas tanto come inválidas. Así que para
 demostrar que un argumento dado es inválido hay que demostrar que la forma
 específica de ese argumento es inválida.
 
-1. 2. 2.4. Formas Sentenciales
+## Formas sentenciales
 
 La introducción de variables sentenciales en la sección precedente nos permitió
 definir las formas argumentales en general y la forma específica de un argumento

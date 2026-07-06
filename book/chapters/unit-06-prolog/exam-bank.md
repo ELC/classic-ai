@@ -2,14 +2,13 @@
 title: Banco de exámenes Prolog
 ---
 
+# Banco de exámenes Prolog
+
 Este apéndice conserva los enunciados y soluciones existentes como material
 estático. La conversión completa a ejercicios ejecutables queda diferida para un
 pase posterior.
 
 ## Palabras y caracteres
-
-### Palabras y caracteres
-
 - Fecha: 2012-12-20
 
 Final Inteligencia Artificial 20/12/2012 Practica:
@@ -48,7 +47,6 @@ write('INGRESE CARACTER:'),read(C),nl,
 contar(L,C,Cantidad),
 buscarBC(L,C,Cantidad).
 
-
 leer([H|T]):-read(H),atom(H),H\=[],leer(T).
 leer([]).
 
@@ -62,10 +60,8 @@ sub_atom(H,1,RH,_,SubCad2),aparece(SubCad2,C,C1),Cont is C1+1.
 aparece(H,C,Cont):-sub_atom(H,0,1,RH,SubCad1),SubCad1\=C,
 sub_atom(H,1,RH,_,SubCad2),aparece(SubCad2,C,Cont).
 
-
 buscarBC(L,C,Cantidad):-palabras(L,C,Cantidad),write('YA EXISTE'),nl,nl.
 buscarBC(L,C,Cantidad):-assert(palabras(L,C,Cantidad)),grabar,write('GRABACION EXITOSA'),nl,nl.
-
 
 % PUNTO 2
 punto2:- cargar, write('INGRESE CARACTER:'),read(C),nl,
@@ -79,10 +75,7 @@ calcular(_,0,0).
 
 ::::
 
-## Medicamentos, composicion y sintomas
-
-### Medicamentos, composicion y sintomas
-
+## Medicamentos, composición y síntomas
 - Fecha: 2013-08-29
 
 1. Ingresar una lista [] de síntomas que presenta un paciente e informar a
@@ -109,10 +102,7 @@ composición(nombre,componente,cantidad).
 
 ::::
 
-## Ordenes, productos y stock
-
-### Ordenes, productos y stock
-
+## Órdenes, productos y stock
 - Fecha: 2013-11-22
 
 Dada una BBDD compuesta por hechos con la siguiente estructura:
@@ -148,10 +138,7 @@ Nota:
 
 ::::
 
-## Cantantes, albumes y temas
-
-### Cantantes, albumes y temas
-
+## Cantantes, álbumes y temas
 - Fecha: 2013-12-05
 
 Dada una BD con:
@@ -181,9 +168,6 @@ album(nombre_album,nombre_cantante,[lista_temas])
 ::::
 
 ## Vacunas por edad y enfermedades
-
-### Vacunas por edad y enfermedades
-
 - Fecha: 2014-02-13
 
 Dada una BD con los siguientes hechos:
@@ -210,9 +194,6 @@ vacuna_aplicacion(edadDesde,edadHasta,[vacunas_a_aplicar]).
 ::::
 
 ## Empleados, empresas y sueldos
-
-### Empleados, empresas y sueldos
-
 - Fecha: 2014-02-27
 
 ```prolog
@@ -240,10 +221,7 @@ empresa(nombre_empresa, ciudad)
 
 ::::
 
-## Peliculas, directores, actores y estrenos
-
-### Peliculas, directores, actores y estrenos
-
+## Películas, directores, actores y estrenos
 - Fecha: 2014-04-21
 
 Se tienen hechos definidos como película (nombre, genero, [directores],
@@ -263,10 +241,7 @@ Se tienen hechos definidos como película (nombre, genero, [directores],
 
 ::::
 
-## Verbos, raices y transformacion de listas
-
-### Verbos, raices y transformacion de listas
-
+## Verbos, raíces y transformación de listas
 - Fecha: 2014-07-31
 
 A. Ingrese una lista de verbos, sacar las raíces y almacenarlos en la base de
@@ -287,10 +262,7 @@ de esa lista por uno. Mostrar la lista.
 
 ::::
 
-## Lotes y lineas de credito
-
-### Lotes y lineas de credito
-
+## Lotes y líneas de crédito
 - Fecha: 2015-04-27
 
 Una persona puede tener mas de un lote. Cada linea de crédito puede pagarse en u
@@ -316,9 +288,6 @@ lineaCredito(codLinea, descripcion, superficieDesde, SuperficieHasta, monto,[cuo
 ::::
 
 ## Gimnasio: socios, ejercicios, asistencias y niveles
-
-### Gimnasio: socios, ejercicios, asistencias y niveles
-
 - Fecha: 2015-08-06
 
 Socio(dni, apellido, sexo, edad) Ejercicio(cod, descripcion, cod.nivel,
@@ -345,10 +314,7 @@ extremo(de tanto a tanto)
 
 ::::
 
-## Canciones favoritas por invitados y genero vals
-
-### Canciones favoritas por invitados y genero vals
-
+## Canciones favoritas por invitados y género vals
 - Fecha: 2015-12-17
 
 La base de hechos estaba formada por:
@@ -377,9 +343,6 @@ invitados(Nombre, [IdCanciones que gusta])
 ::::
 
 ## Hotel: habitaciones disponibles y habitaciones premium ocupadas
-
-### Hotel: habitaciones disponibles y habitaciones premium ocupadas
-
 - Fecha: 2016-02-11
 
 Un Hotel cuenta con la siguiente base de hechos:
@@ -411,9 +374,6 @@ característica(código,descripción)
 ::::
 
 ## Gimnasio: socios, ejercicios, asistencias y niveles
-
-### Gimnasio: socios, ejercicios, asistencias y niveles
-
 - Fecha: 2016-02-25
 
 Socio(dni, apellido, sexo, edad) Ejercicio(cod, descripcion, cod.nivel,
@@ -441,9 +401,6 @@ extremo(de tanto a tanto)
 ::::
 
 ## Enunciado
-
-### Enunciado
-
 Final A 1 ingreser dos cadenas y mostrar la unión en una lista.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% , COMENTADA
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% inicio A 2 Recetas de Cocinas.
@@ -484,8 +441,6 @@ esta(H,B):-atom_length(B,NB), NB > 0,
 NB1 is NB-1,
 sub_atom(B,1,NB1,_,B1),
 esta(H,B1).
-
-
 
 inicio:- dynamic(cod/1), dynamic(receta/2), dynamic(ingrediente/3),consult('recetas1.txt'), menu.
 
@@ -533,9 +488,6 @@ listaingr(_,_):- nl, menu.
 ::::
 
 ## Enunciado
-
-### Enunciado
-
 Final Agosto 2010
 
 1. Agregar lista de palabras agudas y graves.
@@ -584,9 +536,6 @@ litarAgudas:- aguda(P,V), nl, write(P), write(V), fail.
 ::::
 
 ## Enunciado
-
-### Enunciado
-
 % % fecha es aaaa-mm-dd ingresar un año y mes ("2023-10") y mostrar el monto
 total recaudado ese mes (una venta puede tener varias veces la misma pc, hay que
 hacer dos sumadores) ingresar una lista de características y devolver otra lista
@@ -742,7 +691,6 @@ computadora(5,'lenovo',6000,160,['4gb ram','gris','usada']).
 computadora(6,'lenovo',7000,160,['6gb ram','gris','usada']).
 computadora(7,'hp',8000,160,['4gb ram','blanca','usada']).
 
-
 ventas(1,'2023-10-30', [1,1,3,4]).
 ventas(2,'2023-10-31', [2,5,7,5]).
 ventas(3,'2023-11-01', [6,5,7,1]).
@@ -752,9 +700,6 @@ ventas(4,'2023-11-02', [5,1,3]).
 ::::
 
 ## Enunciado
-
-### Enunciado
-
 Revisar enunciado: no habia enunciado confiable en el archivo original. Inferido
 a partir de la solucion del dominio `heladerias` y sus predicados principales:
 opcion, leer, sucursal_centro, buscar_heladerias2, perteneceCalle, pertenece,
@@ -803,7 +748,6 @@ mostrar_hela_centro([H|T]):- retract(locales(H,Zona,_)),
                             mostrar_hela_centro(T).
 mostrar_hela_centro([_|T]):-mostrar_hela_centro(T).
 
-
 mostrar_calle_hela(Calle,SinRep):-retract(locales(Id,_,ListaSucursales)),
                                     validar_lista(Calle,ListaSucursales),
                                     not(pertenece(Id,SinRep)),
@@ -827,12 +771,9 @@ pertenece(H,[_|T]):-pertenece(H,T).
 :-dynamic(heladeria/3).
 :-dynamic(locales/3).
 
-
 inicio:-retractall(heladeria(_,_,_)),retractall(locales(_,_,_)),abrir_base,menu.
 
-
 abrir_base:-consult('bdheladerias.txt').
-
 
 menu:-writeln('INGRESE OPCION'),
         writeln('OPCION 0 - SALIR'),
@@ -844,9 +785,7 @@ menu:-writeln('INGRESE OPCION'),
         opcion(Op),
         menu.
 
-
 menu:-writeln('Gracias por usar el sistema experto!').
-
 
 opcion(1):- writeln('Ingrese lista e codigos de heladerias'),
             leer(ListaHela),
@@ -854,15 +793,12 @@ opcion(1):- writeln('Ingrese lista e codigos de heladerias'),
             writeln('Las heladerias con AL MENOS una sucursal en el centro son '),
             writeln(ListaCentro).
 
-
 opcion(2):-writeln('Ingresar calle'),
             read(Calle),
             buscar_heladerias2(Calle).
 
-
 leer([H|T]):-read(H),H\=[],leer(T).
 leer([]).
-
 
 sucursal_centro([],[]).
 sucursal_centro([H|Heladerias],[H|Centro]):- locales(H,Zona,_),
@@ -870,7 +806,6 @@ sucursal_centro([H|Heladerias],[H|Centro]):- locales(H,Zona,_),
                                                 Zona = 'centro',
                                                 sucursal_centro(Heladerias,Centro).
 sucursal_centro([_|Hel],Centro):-sucursal_centro(Hel,Centro).
-
 
 buscar_heladerias2(Calle):- retract(heladeria(Cod,Nom,_)),
                             locales_calle(Calle,Cod),
@@ -881,10 +816,8 @@ buscar_heladerias2(_).
 perteneceCalle(Calle,[H|_]):- sub_atom(H,0,_,_,Calle).
 perteneceCalle(Calle,[_|T]):- perteneceCalle(Calle,T).
 
-
 pertenece(H,[H|_]).
 pertenece(H,[_|T]):-pertenece(H,T).
-
 
 locales_calle(Calle,Cod):- retract(locales(Cod,_,ListaSucu)),
                             perteneceCalle(Calle,ListaSucu).
@@ -910,9 +843,6 @@ locales(4,sur,['san martin 5000','27 de febrero 4000']).
 ::::
 
 ## Enunciado
-
-### Enunciado
-
 Final Julia Ejercicio
 
 1.
@@ -941,7 +871,6 @@ similitud([],[],0).
 similitud([H|T1],[H|T2],N):- similitud(T1,T2,N1), N is N1 + 1.
 similitud([_|T1],[_|T2],N):- similitud(T1,T2,N).
 
-
 clasifica(N):- N = 1, write('Identicas') .
 clasifica(N):- N>=(0.75), write('Muy Parecidas') .
 clasifica(N):- N>=(0.25), write('Parecidas') .
@@ -955,9 +884,6 @@ leer([]).
 ::::
 
 ## Enunciado
-
-### Enunciado
-
 Final Julia Ejercicio
 
 2.
@@ -984,9 +910,6 @@ limpiezaLista([],[],_,0).
 ::::
 
 ## Enunciado
-
-### Enunciado
-
 Final Mesa 09/10/2008. Ingresar una cadena e Identificar Digtongos/Hiatos.
 Ejemplo Digtongo: puerto, Hiato: aeroplano.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1027,9 +950,6 @@ esCerrada('u').
 ::::
 
 ## Enunciado
-
-### Enunciado
-
 Final Mesa julio 2010 Empleado( Cod, Nom, Ape ) Trabajo( Cod, Descripcion,
 Precio ) ABM empleados y trabajos de los empleados Determinar para cada empleado
 el total trabajado %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1088,9 +1008,6 @@ told.
 ::::
 
 ## Enunciado
-
-### Enunciado
-
 Final Mesa Marzo 2008 ejercicio
 
 1.
@@ -1127,9 +1044,6 @@ ultimo([U|[]],U).
 ::::
 
 ## Enunciado
-
-### Enunciado
-
 Final Mesa Marzo 2008 ejercicio
 
 2.
@@ -1150,9 +1064,6 @@ suma_hasta(A,S):-A1 is A - 1, suma_hasta( A1,S1 ), S is S1 + A.
 ::::
 
 ## Enunciado
-
-### Enunciado
-
 Final Mesa Mayo 2008 ejercicio
 
 1.
@@ -1177,9 +1088,6 @@ N is N1 + N2.
 ::::
 
 ## Enunciado
-
-### Enunciado
-
 Final Mesa Mayo 2008 ejercicio
 
 2.
@@ -1207,9 +1115,6 @@ leer([]).
 ::::
 
 ## Enunciado
-
-### Enunciado
-
 Revisar enunciado: no habia enunciado confiable en el archivo original. Inferido
 a partir de la solucion del dominio `pacientes` y sus predicados principales:
 opcion, buscar_especialidades, pertenece, listar_especialidades,
@@ -1313,7 +1218,6 @@ opcion(1):- writeln('Ingrese nombre del paciente'),
 opcion(2):- listar_profesionales.
 
 opcion(_).
-
 
 buscar_especialidades(Dni,Anio,ListaSinRepetir,[Espe|T]):- turno(Dni,_,Espe,Fecha,_,_),
                                                     retract(turno(Dni,_,Espe,Fecha,_,_)),
@@ -1436,9 +1340,6 @@ turno(616161, 444, 'psicologia', '05-09-2023', 'avalian', 12700).
 ::::
 
 ## Enunciado
-
-### Enunciado
-
 Revisar enunciado: no habia enunciado confiable en el archivo original. Inferido
 a partir de la solucion del dominio `vehiculos` y sus predicados principales:
 operaciones, leer, convertir_desc_a_id, buscar_autos, pertenece, existe, contar.
@@ -1659,9 +1560,6 @@ caracteristicas(4, 'al piso').
 ::::
 
 ## Enunciado
-
-### Enunciado
-
 Revisar enunciado: no habia enunciado confiable en el archivo original. Inferido
 a partir de la solucion del dominio `ventas` y sus predicados principales:
 opcion, validar, calcular_consumo, validar_suma_y_cont, mostrar_promedio,
@@ -1734,7 +1632,6 @@ listar_compradores(Prod,Lista):- retract(venta(Dni,Prod,Fecha,_)),
                             listar_compradores(Prod,[Dni|Lista]).
 listar_compradores(_,_).
 
-
 pertenece(H,[H|_]).
 pertenece(H,[_|T]):-pertenece(H,T).
 
@@ -1801,7 +1698,6 @@ calcular_consumo(_,_,0,0).
 validar_suma_y_cont(_,0):- writeln('Para el año ingresado no se encontraron registros de consumo').
 validar_suma_y_cont(S,C):- P is S/C, mostrar_promedio(P).
 
-
 mostrar_promedio(P):-writeln('El consumo promedio para el dni y el año ingresado es '),writeln(P).
 
 buscar_compradores(Prod):- venta(Dni,Prod,Fecha,_),
@@ -1837,9 +1733,6 @@ venta(1234, 'peluche', '10-05-2023', 200).
 ::::
 
 ## Enunciado
-
-### Enunciado
-
 Revisar enunciado: no habia enunciado confiable en el archivo original. Inferido
 a partir de la solucion del dominio `viajes` y sus predicados principales:
 opcion, total_viajes_x_unidad, leer, mayores, ver_montos_viajes.
@@ -1933,9 +1826,6 @@ viajes(3, 6300).
 ::::
 
 ## Enunciado
-
-### Enunciado
-
 Revisar enunciado: no habia enunciado confiable en el archivo original. Inferido
 a partir de la solucion del dominio `vivero` y sus predicados principales:
 opcion, leer, dividir_por_estacion, listar_por_estacion,

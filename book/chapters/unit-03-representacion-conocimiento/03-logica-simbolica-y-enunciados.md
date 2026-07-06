@@ -2,11 +2,7 @@
 title: Lógica simbólica y enunciados
 ---
 
-(sec-unit-03-representacion-conocimiento-logica-simbolica-y-enunciados)=
-
-## Lógica simbólica y enunciados
-
-- 1. Lógica Simbólica
+# Lógica simbólica y enunciados
 
 Se ha explicado que a la lógica le conciernen los argumentos y que estos
 contienen proposiciones o enunciados como sus premisas **y** conclusiones. Estas
@@ -70,9 +66,9 @@ numerales romanos, tratándose de la computación. Es fácil multiplicar 148 por
 semejante, la obtención de inferencias y la evaluación de los argumentos se ve
 grandemente facilitada con la adopción de una notación lógica especial.
 
-1. Argumentos que contienen Enunciados Compuestos.compuestos
+## Argumentos que contienen enunciados compuestos
 
-1. Em.enunciados Simples y Compuestos
+## Enunciados simples y compuestos
 
 Todos los ***enunciados*** pueden dividirse en dos clases: ***simples*** y
 ***compuestos.***
@@ -358,7 +354,7 @@ paso, iniciado en las componentes (más) internas nos permite, siempre,
 determinar el valor de verdad de un enunciado compuesto función de verdad
 partiendo de los valores de verdad de sus enunciados simples componentes.
 
-- 1. Em.enunciados Condicionales
+## Enunciados condicionales
 
 El enunciado compuesto *"Si el tren se retrasa entonces perderemos nuestro
 transbordo"* es un ***condicional*** *(o un hipotético, una implicación* o *un

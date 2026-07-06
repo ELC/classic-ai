@@ -2,10 +2,7 @@
 title: Alfa beta
 ---
 
-(sec-unit-02-busqueda-y-planificacion-alfa-beta)=
-
-## Alfa beta
-
+# Alfa beta
 **Adición de la poda alfa-beta**
 
 Recuerde que el procedimiento **mínimax** es un proceso primero en profundidad.
@@ -110,9 +107,9 @@ Figura 2.30 Podas alfa y beta
 
 Minimización de la capa
 
-- 1. **Búsqueda con Sistemas evolutivos**
+## Búsqueda con sistemas evolutivos
 
-1. **Conceptos de Genética Que son los genes**
+### Conceptos de genética: qué son los genes
 
 El descubrimiento de la naturaleza del material hereditario representaba un hito
 importante en el desarrollo de la *Genética.* Sin embargo, el estudio de la
@@ -372,7 +369,7 @@ Cuando dos o más poblaciones interactúan de manera tan intima que cada una de
 ellas ejerce una potente fuerza selectiva sobre la otra, ocurren ajustes
 simultáneos que producen coevolución.
 
-1. **Algoritmos Genéticos**
+### Algoritmos genéticos
 
 Los ***Algoritmos Genéticos (AG)*** son métodos adaptativos que pueden ser
 utilizados para implementar búsquedas y problemas de optimización. Ellos están
@@ -504,7 +501,7 @@ auxiliar.
 
 I • Utilizan reglas de transición probabilísticas, y no determinísticas.
 
-2.4.3. Poblaciones
+### Poblaciones
 
 **Codificación**
 
@@ -553,7 +550,7 @@ requiere al menos 11 bits, pero estos codifican un total de 2048 posibilidades,
 dar un valor cero de adaptación, ser substituidos por un valor real, o eliminar
 el cromosoma.
 
-2.4.4. Operadores genéticos
+### Operadores genéticos
 
 Los Operadores genéticos son las distintas funciones que se aplican a las
 poblaciones, las cuales permiten obtener poblaciones nuevas:
@@ -863,9 +860,9 @@ El programa debe mostrar finalmente el Cromosoma correspondiente al valor máxim
 obtenido y gráficas, usando EXCEL, de Max, Min y Promedio de la función objetivo
 por cada generación.
 
-- 1. Planificación
+## Planificación
 
-1. Introducción
+### Introducción
 
 **Un ejemplo de dominio: El mundo de los bloques**
 
@@ -930,7 +927,7 @@ bloque.
 Por último, la tercera especifica que cualquier bloque sin otros situados sobre
 el, esta despejado.
 
-2.5.2. Componentes de un sistema de planificación
+### Componentes de un sistema de planificación
 
 En los sistemas de resolución de problemas basados en técnicas elementales, era
 necesario llevar a cabo las siguientes funciones:
@@ -1198,7 +1195,7 @@ de que si el brazo esta agarrando algo, entonces no esta libre).
 
 descripción del estado derivado de la aplicación de los operadores.
 
-1. **Detección de callejones sin salida**
+#### Detección de callejones sin salida
 
 Cuando un sistema de planificación esta buscando una secuencia de operadores que
 resuelva un problema concreto, debe ser capaz de detectar si esta explorando un
@@ -1288,7 +1285,7 @@ SOBRELAMESA(A) A
 
 SOBRELAMESA(D)
 
-2.5.3. Planificación mediante 1.ma pila de objetivos
+### Planificación mediante una pila de objetivos
 
 Una de las primeras técnicas que surgieron para componer objetivos que pueden
 interactuar, fue el uso de una ***pi/a de objetivos.*** Esto fue lo que se usó
@@ -1768,7 +1765,7 @@ lo hacen los sistemas de planificación no jerárquicos. Sin embargo, no se
 malgastaran esfuerzos en eliminar los detalles de planes que no estén cercanos a
 la resolución del problema.
 
-2.5.6. Sistemas reactivos
+### Sistemas reactivos
 
 Hasta ahora, se ha descrito un proceso de planificación deliberativo, en donde
 *el plan que resuelve una tarea completa se construye antes de actuar.* Sin

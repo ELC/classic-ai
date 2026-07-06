@@ -2,11 +2,7 @@
 title: Verdad y validez de argumentos
 ---
 
-(sec-unit-03-representacion-conocimiento-verdad-y-validez-de-argumentos)=
-
-## Verdad y validez de argumentos
-
-- 1. Verdad y Validez
+# Verdad y validez de argumentos
 
 *La* ***verdad y falsedad*** *caracterizan las proposiciones o los enunciados, y
 puede decirse, en sentido derivado, que caracterizan las oraciones declarativas

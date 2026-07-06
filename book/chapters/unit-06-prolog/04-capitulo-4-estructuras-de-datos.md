@@ -1,9 +1,8 @@
 ---
-title: "Capitulo 4. Estructuras de datos"
+title: Estructuras de datos
 ---
 
-## Capitulo 4. Estructuras de datos
-
+# Estructuras de datos
 En la mayoría de las aplicaciones se necesita emplear tipos de datos más
 complejos que los que se han utilizado hasta el momento. La habilidad de crear
 estructuras de datos es fundamental para cualquier tipo de cálculo práctico.
@@ -11,8 +10,7 @@ Prolog no sólo permite argumentos más complejos, sino que también tiene varia
 características incorporadas para manipular listas de datos. Incluso tiene
 predicados incorporados para operar con cadenas como si fueran listas.
 
-### 4.1 Listas
-
+## Listas
 La lista es una secuencia ordenada de elementos que puede tener cualquier
 longitud. Ordenada significa que el orden de los elementos en la secuencia es
 significativo. Los elementos pueden ser cualquier término (constantes,
@@ -29,8 +27,7 @@ Ejemplos:
 
 - Lista vacía [ ]
 
-#### 4.1.1 Identificación de la cabeza y la cola
-
+### Identificación de la cabeza y la cola
 El Prolog trabaja sobre una lista dividiéndola en cabeza y cola. La cabeza de
 una lista es el primer elemento de la izquierda. La cola es el resto de la
 lista, es decir, es a su vez una lista que contiene todos los elementos menos el
@@ -47,8 +44,7 @@ Debido a que una lista es solo otro tipo de objeto, debe encerrarse entre
 paréntesis cuando se utilice en una cláusula, como se muestra aquí:
 predicado([lista]) He aquí otro ejemplo: predicado([Cabeza|Cola])
 
-#### 4.1.2 Recursividad en listas
-
+### Recursividad en listas
 Muchas de las manipulaciones que se ejecutan sobre listas se escriben fácilmente
 como operaciones recursivas - operaciones que se llaman a sí mismas -. Un
 ejemplo sencillo es comprobar si un objeto particular es un elemento de una
@@ -97,8 +93,7 @@ leer([H|T]):-read(H),H=[],leer(T). leer([]). buscar(_,[]):-write(‘No se encont
 el elemento’). buscar(H,\[H|_\]):-write('Se encontró el elemento’).
 buscar(X,[\_|T]):-buscar(X,T).
 
-### 4.2 Cadenas
-
+## Cadenas
 Prolog tiene varios predicados incorporados para manejar cadenas. Las cadenas
 son secuencias de caracteres. A continuación se explican algunos predicados del
 Prolog para el manejo de cadenas.
@@ -126,4 +121,3 @@ variable (cadena o numero integer o float) el valor correspondiente. ?-
 atom_number(‘123’,N),X is N+2. N = 123 X = 125 ?- atom_number('123.2',N),X is
 N+2. N = 123.2 X = 125.2 ?- atom_number(R,123). R = ‘123’
 
-(sec-unit-06-prolog-capitulo-5-base-de-datos-y-functores)=

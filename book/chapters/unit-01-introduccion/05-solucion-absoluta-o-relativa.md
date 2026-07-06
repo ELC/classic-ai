@@ -2,10 +2,7 @@
 title: Solución absoluta o relativa
 ---
 
-(sec-unit-01-introduccion-solucion-absoluta-o-relativa)=
-
-## Solución absoluta o relativa
-
+# Solución absoluta o relativa
 **Una solución adecuada *¿es* absoluta o relativa?**
 
 Considere el problema de responder a preguntas basadas en una base de datos de

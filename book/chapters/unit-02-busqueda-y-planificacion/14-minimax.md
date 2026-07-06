@@ -2,10 +2,7 @@
 title: Minimax
 ---
 
-(sec-unit-02-busqueda-y-planificacion-minimax)=
-
-## Minimax
-
+# Minimax
 2.3.2. El procedimiento minimax
 
 *El procedimiento de búsqueda mínimax* es *un procedimiento de búsqueda en
