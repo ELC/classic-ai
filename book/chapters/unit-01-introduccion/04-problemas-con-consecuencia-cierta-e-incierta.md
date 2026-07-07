@@ -2,6 +2,8 @@
 title: Problemas con consecuencia cierta e incierta
 ---
 
+(problemas-con-consecuencia-cierta-e-incierta)=
+
 # Problemas con consecuencia cierta e incierta
 
 ,Es predecible el universo?

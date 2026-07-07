@@ -2,6 +2,8 @@
 title: Lógica simbólica y enunciados
 ---
 
+(logica-simbolica-y-enunciados)=
+
 # Lógica simbólica y enunciados
 
 Se ha explicado que a la lógica le conciernen los argumentos y que estos
@@ -66,7 +68,11 @@ numerales romanos, tratándose de la computación. Es fácil multiplicar 148 por
 semejante, la obtención de inferencias y la evaluación de los argumentos se ve
 grandemente facilitada con la adopción de una notación lógica especial.
 
+(argumentos-que-contienen-enunciados-compuestos)=
+
 ## Argumentos que contienen enunciados compuestos
+
+(enunciados-simples-y-compuestos)=
 
 ## Enunciados simples y compuestos
 
@@ -353,6 +359,8 @@ negación que es el enunciado original; es. falsa. Este procedimiento paso a
 paso, iniciado en las componentes (más) internas nos permite, siempre,
 determinar el valor de verdad de un enunciado compuesto función de verdad
 partiendo de los valores de verdad de sus enunciados simples componentes.
+
+(enunciados-condicionales)=
 
 ## Enunciados condicionales
 

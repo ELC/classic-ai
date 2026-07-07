@@ -2,7 +2,11 @@
 title: Razonamiento bajo incertidumbre
 ---
 
+(razonamiento-bajo-incertidumbre)=
+
 # Razonamiento bajo incertidumbre
+
+(razonamiento-no-monotono)=
 
 ## Razonamiento no monótono
 
@@ -48,6 +52,8 @@ convencional son inadecuados.
 *Los sistemas de razonamiento no monótono, par otro lado, se diseñan para que
 puedan resolver problemas en las que quizá no aparezca alguna de estas
 propiedades.*
+
+(razonamiento-por-defecto)=
 
 ### Razonamiento por defecto
 
@@ -147,6 +153,8 @@ cualquiera de ellas.
 El razonamiento no monótono se utiliza con mucha frecuencia en·la herencia de
 los valores de los atributos desde la descripción prototipo de una clase hacia
 las entidades individuales que pertenecen a la clase.
+
+(razonamiento-minimalista)=
 
 ### Razonamiento minimalista
 

@@ -2,6 +2,8 @@
 title: Solución como estado o como ruta
 ---
 
+(solucion-como-estado-o-como-ruta)=
+
 # Solución como estado o como ruta
 
 ¿La solución es un estado o una ruta?

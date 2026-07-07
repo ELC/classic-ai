@@ -2,7 +2,11 @@
 title: Factores de certeza
 ---
 
+(factores-de-certeza)=
+
 # Factores de certeza
+
+(factores-de-certeza-y-sistemas-basados-en-reglas)=
 
 ## Factores de certeza y sistemas basados en reglas
 
@@ -197,6 +201,8 @@ Como en MYCIN los factores de certeza iniciales son estimaciones que
 proporcionan los expertos que escriben las reglas, no es realmente necesario dar
 una definición más precisa del significado de FC aparte de la ya mencionada.
 
+(redes-bayesianas)=
+
 ## Redes bayesianas
 
 Los Factores de Certeza representan un mecanismo de reducción de la complejidad
@@ -217,6 +223,8 @@ se necesitan calcular todas las probabilidades).
 **En lugar de esto, se *puede usar una representación más local en donde* se**
 
 ***describen grupos de sucesos que interactúen.***
+
+(teoria-de-dempster-shafer)=
 
 ## Teoría de Dempster-Shafer
 
@@ -281,6 +289,8 @@ alguna cosa en particular.
 
 El hallar la representación apropiada es una parte fundamental de la resolución
 de un problema. Considere, por ejemplo, el siguiente problema para niños:
+
+(el-granjero-la-zorra-el-pollo-y-el-grano)=
 
 ### El granjero, la zorra, el pollo y el grano
 

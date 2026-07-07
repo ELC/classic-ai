@@ -2,6 +2,8 @@
 title: Estructuras de ranura y relleno fuertes
 ---
 
+(estructuras-de-ranura-y-relleno-fuertes)=
+
 # Estructuras de ranura y relleno fuertes
 
 *Las redes semánticas y* los *sistemas de marcos implementan estructuras muy
@@ -9,6 +11,8 @@ generales para representar el conocimiento.* La Dependencia Conceptual, los
 Guiones y los CYC, ***implementan poderosas teorías*** sobre la forma en que los
 programas de IA pueden representar y utilizar el conocimiento sobre situaciones
 comunes.
+
+(dependencia-conceptual)=
 
 ## Dependencia conceptual
 
@@ -128,6 +132,8 @@ Figura 3.22
 Juan PROPEL
 
 +---- carrito Juan empujó el carrito
+
+(guiones)=
 
 ## Guiones
 
@@ -279,6 +285,8 @@ L PTRANS La J
 L ATRANS dinero a J
 
 Camino de no pagar ) L PTRANS L fuera del restaurante
+
+(guiones-2)=
 
 ## Guiones
 

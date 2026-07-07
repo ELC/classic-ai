@@ -2,6 +2,8 @@
 title: Problemas solitarios y conversacionales
 ---
 
+(problemas-solitarios-y-conversacionales)=
+
 # Problemas solitarios y conversacionales
 
 ¿Necesita la tarea interaccionar con una persona?
@@ -44,6 +46,8 @@ teoremas matemáticos podría ser tanto de un tipo como de otro. Sin embargo, pa
 una aplicación en particular, se necesitan sistemas de uno u otro tipo, y esta
 decisión tiene gran importancia a la hora de elegir el método de resolución del
 problema.
+
+(caracteristicas-de-los-sistemas-de-produccion)=
 
 ## Características de los sistemas de producción
 

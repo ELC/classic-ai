@@ -1,3 +1,5 @@
+(ordenes-productos-y-stock-2)=
+
 # Órdenes, productos y stock
 
 - Fecha: 2013-11-22

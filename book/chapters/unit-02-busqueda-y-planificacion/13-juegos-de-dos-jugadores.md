@@ -2,6 +2,8 @@
 title: Juegos de dos jugadores
 ---
 
+(juegos-de-dos-jugadores)=
+
 # Juegos de dos jugadores
 
 2.3.:1.. J111egos de dos jugadores

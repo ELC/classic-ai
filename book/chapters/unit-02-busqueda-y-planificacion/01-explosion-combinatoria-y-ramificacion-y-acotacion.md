@@ -2,7 +2,11 @@
 title: Explosión combinatoria y ramificación y acotación
 ---
 
+(explosion-combinatoria-y-ramificacion-y-acotacion)=
+
 # Explosión combinatoria y ramificación y acotación
+
+(tecnicas-de-busqueda-a-ciegas)=
 
 ## Técnicas de búsqueda a ciegas
 
@@ -15,6 +19,8 @@ espacio que una un estado inicial con un estado objetivo.* El proceso de
 resolución del problema puede modelarse como un sistema de producción y entonces
 se debe elegir la estructura de control apropiada para el sistema de producción
 con el fin de que el proceso de búsqueda sea lo más eficiente posible.
+
+(estrategia-de-control)=
 
 ### Estrategia de control
 
@@ -46,6 +52,8 @@ veces hasta encontrar finalmente la solución. El requisito de que una estrategi
 de control sea sistemática se corresponde con una necesidad de cambio global (en
 el curso de varios pasos) tanto como de cambio local (en el curso de un paso
 sencillo).
+
+(explosion-combinatoria)=
 
 ### Explosión combinatoria
 
@@ -112,7 +120,11 @@ Desarrollar un programa que permita ingresar un número variable de sitios a
 visitar (entre 2 y 8) y muestre en pantalla todos los posibles circuitos que
 podría definir.
 
+(explosion-combinatoria-y-ramificacion-y-acotacion-2)=
+
 ## Explosión combinatoria y ramificación y acotación
+
+(ramificacion-y-acotacion)=
 
 ### Ramificación y acotación
 

@@ -6,9 +6,13 @@ kernelspec:
   language: prolog
 ---
 
+(practica-1)=
+
 # Práctica 1
 
 PROLOG - Conceptos básicos
+
+(ejercicio-1)=
 
 ## Ejercicio 1
 
@@ -26,6 +30,8 @@ observa(maria, carlos).
 Ejecutar las siguientes preguntas al Prolog y analizar la respuesta dada en cada
 caso.
 
+(verificacion)=
+
 ### Verificación
 
 ```{code-cell} prolog
@@ -35,6 +41,8 @@ caso.
 ```{code-cell} prolog
 ?- findall(Quien, observa(maria, Quien), Quienes), assertion(Quienes == [omar, flavio, carlos]).
 ```
+
+(ejercicio-2)=
 
 ## Ejercicio 2
 
@@ -53,6 +61,8 @@ conoce(omar, ingles).
 conoce(maria, frances).
 ```
 
+(solucion)=
+
 ### Solución
 
 ```{code-cell} prolog
@@ -62,11 +72,15 @@ habla_ingles_y_frances(Persona) :-
     conoce(Persona, ingles), conoce(Persona, frances).
 ```
 
+(verificacion-2)=
+
 ### Verificación
 
 ```{code-cell} prolog
 ?- findall(Quien, habla_ingles_y_frances(Quien), Quienes), assertion(Quienes == [franco, renzo]).
 ```
+
+(ejercicio-3)=
 
 ## Ejercicio 3
 
@@ -84,6 +98,8 @@ El programa debe ser capaz de responder a las siguientes consultas:
 
 - ¿Son rivales Argentina y Brasil?
 - ¿Cuáles son los rivales de un determinado equipo (por ejemplo Holanda)?
+
+(solucion-2)=
 
 ### Solución
 
@@ -103,6 +119,8 @@ rivales(Equipo, Rival) :-
     grupo(Grupo, Equipo), grupo(Grupo, Rival), Equipo \= Rival.
 ```
 
+(verificacion-3)=
+
 ### Verificación
 
 ```{code-cell} prolog
@@ -112,6 +130,8 @@ rivales(Equipo, Rival) :-
 ```{code-cell} prolog
 ?- findall(Rival, rivales(holanda, Rival), Rivales), assertion(Rivales == [argentina, nigeria, escocia]).
 ```
+
+(ejercicio-4)=
 
 ## Ejercicio 4
 
@@ -159,6 +179,8 @@ Dados los siguientes predicados:
 % tia(A, B).
 ```
 
+(solucion-3)=
+
 ### Solución
 
 ```{code-cell} prolog
@@ -188,6 +210,8 @@ tia(A, B) :-
     hermana(A, Madre), padres(B, Madre, _).
 ```
 
+(verificacion-4)=
+
 ### Verificación
 
 ```{code-cell} prolog
@@ -197,6 +221,8 @@ tia(A, B) :-
 ```{code-cell} prolog
 ?- assertion(hermana(ana, carlos)).
 ```
+
+(ejercicio-5)=
 
 ## Ejercicio 5
 
@@ -221,6 +247,8 @@ deuda(axk798, 1000).
 Escriba una regla que permita determinar si una persona (dato entrada) tiene
 algún auto con deuda.
 
+(solucion-4)=
+
 ### Solución
 
 ```{code-cell} prolog
@@ -229,6 +257,8 @@ algún auto con deuda.
 tiene_auto_con_deuda(Persona) :-
     auto(Patente, Persona), deuda(Patente, _).
 ```
+
+(verificacion-5)=
 
 ### Verificación
 
@@ -239,6 +269,8 @@ tiene_auto_con_deuda(Persona) :-
 ```{code-cell} prolog
 ?- assertion(\+ tiene_auto_con_deuda(juan)).
 ```
+
+(ejercicio-6)=
 
 ## Ejercicio 6
 
@@ -262,6 +294,8 @@ Se dispone de la siguiente información:
 El programa debe responder si en una ciudad (dato de entrada), se puede o no
 formar una banda.
 
+(solucion-5)=
+
 ### Solución
 
 ```{code-cell} prolog
@@ -281,6 +315,8 @@ puede_formar_banda(Ciudad) :-
     guitarrista(_, Ciudad), cantante(_, Ciudad), baterista(_, Ciudad).
 ```
 
+(verificacion-6)=
+
 ### Verificación
 
 ```{code-cell} prolog
@@ -291,11 +327,15 @@ puede_formar_banda(Ciudad) :-
 ?- assertion(\+ puede_formar_banda(funes)).
 ```
 
+(ejercicio-7)=
+
 ## Ejercicio 7
 
 Escribir un programa que simule una calculadora para las operaciones matemáticas
 básicas (suma, resta, multiplicación y división) entre dos valores numéricos,
 informando el resultado.
+
+(solucion-6)=
 
 ### Solución
 
@@ -309,11 +349,15 @@ calcular(division, A, B, Resultado) :-
     B =\= 0, Resultado is A / B.
 ```
 
+(verificacion-7)=
+
 ### Verificación
 
 ```{code-cell} prolog
 ?- calcular(suma, 2, 3, Resultado), assertion(Resultado =:= 5).
 ```
+
+(ejercicio-8)=
 
 ## Ejercicio 8
 
@@ -344,7 +388,11 @@ fecha.
 
 b. Ingresar una fecha (día y mes) y me informe de qué signo soy.
 
+(recursividad-2)=
+
 ## Recursividad
+
+(solucion-7)=
 
 ### Solución
 
@@ -385,6 +433,8 @@ signo(Dia, Mes, Signo) :-
     horoscopo(Signo, DiaInicio, MesInicio, DiaFin, MesFin), fecha_en_rango(Dia, Mes, DiaInicio, MesInicio, DiaFin, MesFin).
 ```
 
+(verificacion-8)=
+
 ### Verificación
 
 ```{code-cell} prolog
@@ -394,6 +444,8 @@ signo(Dia, Mes, Signo) :-
 ```{code-cell} prolog
 ?- signo(16, 12, Signo), assertion(Signo == sagitario).
 ```
+
+(ejercicio-9)=
 
 ## Ejercicio 9
 
@@ -417,6 +469,8 @@ Donde indica que X es hijo de Y. Definir la regla,
 
 la cual permite determinar si A es descendiente de B.
 
+(solucion-8)=
+
 ### Solución
 
 ```{code-cell} prolog
@@ -427,11 +481,15 @@ descendiente(A, B) :-
     hijo(A, C), descendiente(C, B).
 ```
 
+(verificacion-9)=
+
 ### Verificación
 
 ```{code-cell} prolog
 ?- assertion(descendiente(juan, carlos)).
 ```
+
+(ejercicio-10)=
 
 ## Ejercicio 10
 
@@ -448,6 +506,8 @@ Definir la regla, la cual permite saber si para la ejecución de
 
 la tarea Y se requiere tener finalizada la tarea X.
 
+(solucion-9)=
+
 ### Solución
 
 ```{code-cell} prolog
@@ -463,6 +523,8 @@ requiere_de(X, Y) :-
     requiere_de_directa(X, Z), requiere_de(Z, Y).
 ```
 
+(verificacion-10)=
+
 ### Verificación
 
 ```{code-cell} prolog
@@ -472,6 +534,8 @@ requiere_de(X, Y) :-
 ```{code-cell} prolog
 ?- assertion(\+ requiere_de(e, a)).
 ```
+
+(ejercicio-11)=
 
 ## Ejercicio 11
 
@@ -485,6 +549,8 @@ Hacer un programa para calcular el factorial de un número.
 - N es el número ingresado (argumento de entrada).
 - Fact es el resultado calculado (argumento de salida).
 
+(solucion-10)=
+
 ### Solución
 
 ```{code-cell} prolog
@@ -495,11 +561,15 @@ factorial(N, Fact) :-
     N > 0, N1 is N - 1, factorial(N1, Fact1), Fact is N * Fact1.
 ```
 
+(verificacion-11)=
+
 ### Verificación
 
 ```{code-cell} prolog
 ?- factorial(5, Resultado), assertion(Resultado =:= 120).
 ```
+
+(ejercicio-12)=
 
 ## Ejercicio 12
 
@@ -516,6 +586,8 @@ Por ejemplo, si el número ingresado fuera 5, se deberá calcular la sumatoria
 - N es el número ingresado (argumento de entrada).
 - Sum es el resultado calculado (argumento de salida).
 
+(solucion-11)=
+
 ### Solución
 
 ```{code-cell} prolog
@@ -526,11 +598,15 @@ sumatoria_hasta(N, Sum) :-
     N > 0, N1 is N - 1, sumatoria_hasta(N1, Sum1), Sum is N + Sum1.
 ```
 
+(verificacion-12)=
+
 ### Verificación
 
 ```{code-cell} prolog
 ?- sumatoria_hasta(5, Resultado), assertion(Resultado =:= 15).
 ```
+
+(ejercicio-13)=
 
 ## Ejercicio 13
 
@@ -546,6 +622,8 @@ términos descontados en una unidad (hasta llegar a cero) pares e impares.
 - SumPares es uno de los resultados calculados (argumento de salida).
 - SumImpares es uno de los resultados calculados (argumento de salida).
 
+(solucion-12)=
+
 ### Solución
 
 ```{code-cell} prolog
@@ -559,6 +637,8 @@ sumas_pares_impares(N, SumPares, SumImpares) :-
         SumPares is Pares1, SumImpares is Impares1 + N
     ).
 ```
+
+(verificacion-13)=
 
 ### Verificación
 

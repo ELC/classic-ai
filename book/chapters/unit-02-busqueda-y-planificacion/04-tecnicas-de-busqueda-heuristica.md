@@ -2,6 +2,8 @@
 title: Técnicas de búsqueda heurística
 ---
 
+(tecnicas-de-busqueda-heuristica)=
+
 # Técnicas de búsqueda heurística
 
 Con el fin de resolver problemas complicados con eficiencia, con frecuencia es

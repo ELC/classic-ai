@@ -1,3 +1,5 @@
+(enunciado-31)=
+
 # Enunciado
 
 Revisar enunciado: no habia enunciado confiable en el archivo original. Inferido

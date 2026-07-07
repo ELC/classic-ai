@@ -2,9 +2,13 @@
 title: Espacio de búsqueda y descripción formal de problemas
 ---
 
+(espacio-de-busqueda-y-descripcion-formal-de-problemas)=
+
 # Espacio de búsqueda y descripción formal de problemas
 
 <!-- cspell:words Haemophilus influenzae Fleischmann Searle Weizenbaum Haugeland Maes Kaelbling Rosenschein Gelernter Gottfried Gottlieb Frege Begriffsschrift Cordell Kleene Penrose McCulloch Rosenblatt subsimbólico subsimbólica subsimbólicas multidimensionales axiomatización coeditaron cognología perceptrones -->
+
+(que-es-la-inteligencia-artificial)=
 
 ## ¿Qué es la Inteligencia Artificial?
 
@@ -38,6 +42,8 @@ máquinas? depende de cómo definamos las palabras *máquinas* y *pensar.* Turin
 podría haber añadido que la respuesta depende también de cómo se defina la
 palabra *pueden.*
 
+(pueden)=
+
 ### Pueden
 
 Consideremos primero la palabra *pueden,* ¿Queremos decir que las máquinas
@@ -68,6 +74,8 @@ capaces, o no, de construir máquinas pensantes de nivel humano no admite aún u
 respuesta definitiva. El progreso de la IA hacia esta meta ha sido constante,
 aunque más lento de lo que algunos pioneros del tema habían predicho.
 Personalmente, soy optimista sobre nuestro eventual éxito en esta empresa.
+
+(maquinas)=
 
 ### Máquinas
 
@@ -166,6 +174,8 @@ Quizá es aún demasiado pronto para que se alcance un consenso en el campo de l
 IA sobre el tipo de maquinaria requerida, aunque muchos investigadores aceptan
 ya la hipótesis del sistema físico de símbolos.
 
+(pensar)=
+
 ### Pensar
 
 Finalmente, llegamos a la palabra más difícil: *pensar.* En lugar de intentar
@@ -220,6 +230,8 @@ gradualmente más y más inteligentes conforme se incrementa su complejidad?
 Personalmente, lo creo así, pero existen indudablemente opiniones para todos los
 gustos.
 
+(aproximaciones-a-la-ia)=
+
 ## Aproximaciones a la IA
 
 Aun aceptando que la IA ya ha sido capaz de producir algunos sistemas prácticos
@@ -236,6 +248,8 @@ una combinación apropiada de estas aproximaciones diferentes. En cualquier caso
 cada investigador cree, a menudo, que la suya es la metodología avanzada que
 merece especial atención. Los principales paradigmas pueden ser clasificados en
 dos grupos.
+
+(basadas-en-procesamiento-de-simbolos)=
 
 ### Basadas en procesamiento de símbolos
 
@@ -280,6 +294,8 @@ las *operaciones de procesamiento de símbolos.* Muchas aproximaciones basadas e
 procesamiento de símbolos utilizan una metodología de diseño "descendente"; se
 comienza en el nivel de conocimiento **y** se procede hacia abajo a través de
 los niveles simbólico y de implementación.
+
+(aproximaciones-subsimbolicas)=
 
 ### Aproximaciones subsimbólicas
 
@@ -342,6 +358,8 @@ Rosenschein, 1990). Kaelbling y Rosenschein proponen un lenguaje de programació
 para especificar, en un alto nivel de abstracción, el comportamiento deseado en
 un agente, así como un compilador para crear la circuitería necesaria a partir
 de los programas escritos en este lenguaje.
+
+(breve-historia-de-la-ia)=
 
 ## Breve historia de la IA
 
@@ -519,6 +537,8 @@ interés para sus usuarios. La Constante presión ejercida para mejorar las
 capacidades de los robots y de los agentes software motivara y guiara la
 investigación en inteligencia artificial durante muchos años.
 
+(mundo-especial-para-agentes-con-ia)=
+
 ## Mundo especial para agentes con IA
 
 La investigación en IA ha conducido al desarrollo de numerosas ideas y técnicas
@@ -565,7 +585,11 @@ tiempo. Muchas de las técnicas de la IA que describiremos se aplican a mundos
 discretos y requerirían un cierto procesamiento subsimbólico para operar en
 mundos continuos.
 
+(sistemas-que-resuelven-problemas-de-la-ia)=
+
 ## Sistemas que resuelven problemas de la IA
+
+(que-es-la-inteligencia-artificial-2)=
 
 ### ¿Qué es la Inteligencia Artificial?
 
@@ -575,6 +599,8 @@ definición es, por supuesto, bastante efímera ya que hace referencia al estado
 actual de la informática. Ademas falla al no incluir algunas áreas que
 potencialmente tienen un gran impacto, tales como aquellos problemas que no
 pueden ser resueltos adecuadamente ni por las máquinas ni por los hombres.
+
+(los-problemas-de-la-inteligencia-artificial)=
 
 ### Los problemas de la Inteligencia Artificial
 
@@ -650,6 +676,8 @@ Algunas aplicaciones de la Inteligencia Artificial
 
 ![Algunas aplicaciones de la Inteligencia Artificial](images/aplicaciones-inteligencia-artificial.png)
 
+(tareas-formales)=
+
 #### Tareas formales
 
 Juegos
@@ -668,6 +696,8 @@ Juegos
 
 - Calculo integral
 
+(tareas-de-la-vida-diaria)=
+
 #### Tareas de la vida diaria
 
 Percepción
@@ -681,6 +711,8 @@ Percepción
 - Generación
 
 - Traducción sentido común Control de un robot
+
+(tareas-de-los-expertos)=
 
 #### Tareas de los expertos
 
@@ -707,6 +739,8 @@ modelar la inteligencia humana?
 
 .:Cómo se puede saber cuando se ha tenido éxito en la construcción de un
 programa inteligente?
+
+(las-suposiciones-subyacentes)=
 
 ### Las suposiciones subyacentes
 
@@ -761,6 +795,8 @@ teoría significativa de la naturaleza de la inteligencia humana y también es d
 gran interés para los psicólogos. Esto también forma la base de. la creencia de
 que es posible construir programas J que lleven a cabo las tareas inteligentes
 que son ahora realizadas por la gente.
+
+(que-es-una-tecnica-de-ia)=
 
 ### ¿Qué es una técnica de IA?
 
@@ -838,6 +874,8 @@ mucho menos frágiles, no se despistaran totalmente· debido a una pequeña
 perturbación en la entrada. El conocimiento del programa es comprendido
 fácilmente por la gente. Y estas técnicas pueden trabajar con facilidad en
 grandes problemas en.donde los métodos directos fallan.
+
+(el-nivel-del-modelo)=
 
 ### El nivel del modelo
 
@@ -977,6 +1015,8 @@ Ejercicio
 
 Desarrollar un programa que enseñe a un niño a restar.
 
+(acciones-que-debe-llevar-a-cabo-el-sistema)=
+
 ### Acciones que debe llevar a cabo el sistema
 
 Para construir un sistema que resuelva un problema específico, es necesario
@@ -994,6 +1034,8 @@ realizar estas cuatro acciones:
 
 - Elegir la mejor técnica que resuelva el problema y aplicarla al problema
   particular.
+
+(definicion-del-problema-mediante-una-busqueda-en-espacio-de-estados)=
 
 ### Definición del problema mediante una búsqueda en espacio de estados
 
@@ -1199,6 +1241,8 @@ aplicada |
 Una solución al problema de las jarras de agua
 
 ![Solución al problema de las jarras de agua](images/solucion-problema-jarras-agua.png)
+
+(espacio-de-busqueda-y-descripcion-formal-de-problemas-2)=
 
 ## Espacio de búsqueda y descripción formal de problemas
 

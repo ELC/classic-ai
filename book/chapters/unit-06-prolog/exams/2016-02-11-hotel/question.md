@@ -1,3 +1,5 @@
+(hotel-habitaciones-disponibles-y-habitaciones-premium-ocupadas-2)=
+
 # Hotel: habitaciones disponibles y habitaciones premium ocupadas
 
 - Fecha: 2016-02-11

@@ -2,6 +2,8 @@
 title: Verdad y validez de argumentos
 ---
 
+(verdad-y-validez-de-argumentos)=
+
 # Verdad y validez de argumentos
 
 *La* ***verdad y falsedad*** *caracterizan las proposiciones o los enunciados, y

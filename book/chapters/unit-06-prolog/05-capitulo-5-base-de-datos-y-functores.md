@@ -2,7 +2,11 @@
 title: Base de datos y functores
 ---
 
+(base-de-datos-y-functores)=
+
 # Base de datos y functores
+
+(base-de-datos)=
 
 ## Base de datos
 
@@ -125,6 +129,8 @@ listado:-padre(juan,X), write(X), nl, fail.
 Objetivo ?.- listado.
 
 Respuesta jose luis alberto
+
+(functores)=
 
 ## Functores
 

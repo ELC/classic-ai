@@ -2,6 +2,8 @@
 title: Alfa beta
 ---
 
+(alfa-beta)=
+
 # Alfa beta
 
 **Adición de la poda alfa-beta**
@@ -108,7 +110,11 @@ Figura 2.30 Podas alfa y beta
 
 Minimización de la capa
 
+(busqueda-con-sistemas-evolutivos)=
+
 ## Búsqueda con sistemas evolutivos
+
+(conceptos-de-genetica-que-son-los-genes)=
 
 ### Conceptos de genética: qué son los genes
 
@@ -370,6 +376,8 @@ Cuando dos o más poblaciones interactúan de manera tan intima que cada una de
 ellas ejerce una potente fuerza selectiva sobre la otra, ocurren ajustes
 simultáneos que producen coevolución.
 
+(algoritmos-geneticos)=
+
 ### Algoritmos genéticos
 
 Los ***Algoritmos Genéticos (AG)*** son métodos adaptativos que pueden ser
@@ -502,6 +510,8 @@ auxiliar.
 
 I • Utilizan reglas de transición probabilísticas, y no determinísticas.
 
+(poblaciones)=
+
 ### Poblaciones
 
 **Codificación**
@@ -550,6 +560,8 @@ requiere al menos 11 bits, pero estos codifican un total de 2048 posibilidades,
 *"sobrando"* 848 patrones de bits no necesarios. A estos patrones se ¿es puede
 dar un valor cero de adaptación, ser substituidos por un valor real, o eliminar
 el cromosoma.
+
+(operadores-geneticos)=
 
 ### Operadores genéticos
 
@@ -861,7 +873,11 @@ El programa debe mostrar finalmente el Cromosoma correspondiente al valor máxim
 obtenido y gráficas, usando EXCEL, de Max, Min y Promedio de la función objetivo
 por cada generación.
 
+(planificacion)=
+
 ## Planificación
+
+(introduccion)=
 
 ### Introducción
 
@@ -927,6 +943,8 @@ bloque.
 
 Por último, la tercera especifica que cualquier bloque sin otros situados sobre
 el, esta despejado.
+
+(componentes-de-un-sistema-de-planificacion)=
 
 ### Componentes de un sistema de planificación
 
@@ -1196,6 +1214,8 @@ de que si el brazo esta agarrando algo, entonces no esta libre).
 
 descripción del estado derivado de la aplicación de los operadores.
 
+(deteccion-de-callejones-sin-salida)=
+
 #### Detección de callejones sin salida
 
 Cuando un sistema de planificación esta buscando una secuencia de operadores que
@@ -1285,6 +1305,8 @@ objetivo: SOBRE(C,A) A SOBRE(B,D) A
 SOBRELAMESA(A) A
 
 SOBRELAMESA(D)
+
+(planificacion-mediante-una-pila-de-objetivos)=
 
 ### Planificación mediante una pila de objetivos
 
@@ -1765,6 +1787,8 @@ valores, el proceso básico puede trabajar en gran parte de la misma forma en qu
 lo hacen los sistemas de planificación no jerárquicos. Sin embargo, no se
 malgastaran esfuerzos en eliminar los detalles de planes que no estén cercanos a
 la resolución del problema.
+
+(sistemas-reactivos)=
 
 ### Sistemas reactivos
 

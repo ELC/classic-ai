@@ -2,7 +2,11 @@
 title: "Unidad 5: Redes neuronales"
 ---
 
+(unidad-5-redes-neuronales)=
+
 # Unidad 5: Redes neuronales
+
+(modelos-conexionistas)=
 
 ## Modelos conexionistas
 
@@ -25,6 +29,8 @@ obvio decir que estos modelos son idealizaciones burdas de las autenticas redes
 neuronales, en muchos casos de dudosa plausibilidad neurofisiológica, pero que
 sin embargo resultan interesantes cuanto menos por sus capacidades de
 aprendizaje.
+
+(origen-del-paradigma-de-computacion-conexionista)=
 
 ### Origen del paradigma de computación conexionista
 
@@ -73,6 +79,8 @@ Las hipótesis de Hebb presentan de manera intuitiva el modo en que las neuronas
 memorizan información, y se plasman sintéticamente en la famosa ***Regla de
 aprendizaje de Hebb.*** ***Esta regla indica que las conexiones. entre dos
 neuronas se refuerzan si ambas son*** ***activadas.*** •
+
+(redes-neuronales-biologicas)=
 
 ## Redes neuronales biológicas
 
@@ -131,6 +139,8 @@ neuronas ejercen sobre otras, de aquí se deduce que la arquitectura, el tipo y
 la efectividad de las conexiones en un momento dado, representan en cierto modo
 la memoria o estado de conocimiento de la red.
 
+(redes-neuronales-artificiales)=
+
 ## Redes neuronales artificiales
 
 (definicion-de-red-neuronal)=
@@ -152,6 +162,8 @@ Según Haykin (1994), una red neuronal es:
 *un procesador paralelo masivamente distribuido que tiene una facilidad natural
 para el* *almacenamiento de conocimiento obtenido de la experiencia para luego
 hacerlo* *utilizable.*
+
+(estructura-de-una-red-neuronal)=
 
 ### Estructura de una red neuronal
 
@@ -217,12 +229,16 @@ identidad,* y se toma como salida el valor de activación.
 *El valor de salida cumpliría la función de la tasa de disparo en las neuronas
 biológicas.*
 
+(funcion-de-red-o-de-propagacion)=
+
 #### Función de red o de propagación
 
 Como ya hemos comentado, se encarga de calcular la entrada total de la neurona
 como combinación de todas las entradas.
 
 Podemos citar entre las más importantes:
+
+(funcion-lineal-de-base-flb)=
 
 #### Función lineal de base (FLB)
 
@@ -243,6 +259,8 @@ conexiones correspondientes, esta función quedaría asi:
 Al representar los pesos utilizamos dos subíndices para indicar que conectan dos
 unidades, i y j, donde j se refiere a la unidad actual.
 
+(funcion-radial-de-base-frb)=
+
 #### Función radial de base (FRB)
 
 ![Función radial de base: distancia al patrón](images/funcion-radial-base-distancia-patron.png)
@@ -256,9 +274,13 @@ I *(Xi*
 
 *net 1* *X*, *W 1* ) =
 
+(funcion-de-activacion)=
+
 #### Función de activación
 
 Podemos distinguir entre:
+
+(funciones-lineales)=
 
 #### Funciones lineales
 
@@ -267,6 +289,8 @@ Podemos distinguir entre:
 En las que *la salida es proporcional a la entrada*
 
 *f neta)* = *neta*
+
+(funciones-de-umbral)=
 
 #### Funciones de umbral
 
@@ -291,9 +315,13 @@ estimulación nula. Estos descubrimientos llevaron al uso de funciones no
 lineales con esas características, como la función sigmoidal, con un perfil
 parecido al escalón de una función de umbra!, pero continua.
 
+(funciones-no-lineales)=
+
 #### Funciones no lineales
 
 *No proporcionales a la entrada.*
+
+(funcion-sigmoidal-o-logistica)=
 
 #### Función sigmoidal o logística
 
@@ -445,7 +473,11 @@ se *ha/la distribuida* *por toda la red,* sin embargo en un programa tradicional
 un pequeño fallo en cualquier punto puede invalidarlo todo y dar un resultado
 absurdo o no dar ningún resultado.
 
+(ventajas-y-desventajas-de-las-redes-neuronales)=
+
 ## Ventajas y desventajas de las redes neuronales
+
+(ventajas-de-las-rna)=
 
 ### Ventajas de las RNA
 
@@ -500,6 +532,8 @@ Sin embargo, si es necesario que desarrolle un buen algoritmo de aprendizaje que
 le proporcione a la red la capacidad de discriminar, mediante un entrenamiento
 con patrones.
 
+(autoorganizacion)=
+
 #### Autoorganización
 
 Las redes neuronales emplean su capacidad de aprendizaje adaptativo para
@@ -521,6 +555,8 @@ generalizar la entrada para obtener una respuesta. Esta característica es muy
 importante cuando se tiene que solucionar problemas en los cuales la información
 de entrada no es muy clara. Ademas permite que el Sistema de una solución,
 inclLiso cuando la información de entrada esta especificada de forma incompleta.
+
+(tolerancia-a-fallos)=
 
 #### Tolerancia a fallos
 
@@ -546,6 +582,8 @@ información no localizada. Por lo tanto, la mayoría de las interconexiónes en
 los nodos de la red tendrán sus valores en función de los estímulos recibidos, y
 se generara un patrón de salida que represente la información almacenada.
 
+(operacion-en-tiempo-real)=
+
 #### Operación en tiempo real
 
 Una de las mayores prioridades, casi en la totalidad de las áreas de aplicación,
@@ -554,6 +592,8 @@ es la necesidad de realizar procesos con datos de forma muy rápida.
 Las redes neuronales se adaptan bien a esto debido a su implementación paralela.
 Para que la mayoría de las redes puedan operar en un entorno de tiempo real, la
 necesidad de cambio en los pesos de las conexiones o entrenamiento es mínimo.
+
+(facil-insercion-dentro-de-la-tecnologia-existente)=
 
 #### Fácil inserción dentro de la tecnología existente
 
@@ -570,7 +610,11 @@ existentes. De esta manera, las redes neuronales se pueden utilizar para mejorar
 sistemas en forma incremental y cada paso puede ser evaluado antes de acometer
 un desarrollo más amplio.
 
+(desventajas-de-las-rna)=
+
 ### Desventajas de las RNA
+
+(definicion-de-muchos-parametros)=
 
 #### Definición de muchos parámetros
 
@@ -589,6 +633,8 @@ una tabla de puntuación basada en una regresión multiple. Los estudios donde s
 ha constatado un tiempo de desarrollo más corto no han tenido en cuenta la
 preparación de datos que requiere una red neuronal.
 
+(caja-negra)=
+
 #### Caja negra
 
 Otra desventaja es que *no ofrecen una interpretación fácil* como hace, por
@@ -597,6 +643,8 @@ decisión, la caja*** ***negra* se *puede convertir en el "tomador" de la
 decisión.*** Puede ocurrir que un director de riesgo deniegue un credito solo
 porque lo dice la caja negra, sin que el pueda argumentar esta decisión ya que
 no entiende el funcionamiento de la red neuronal.
+
+(mecanismos-de-aprendizaje)=
 
 ## Mecanismos de aprendizaje
 
@@ -644,6 +692,8 @@ permanecen fijos después que termina la etapa de entrenamiento de la red.
 *Debido, precisamente a su carácter estático, estos sistemas no presentan
 problemas de estabilidad en su funcionamiento.*
 
+(aprendizaje-supervisado)=
+
 ### Aprendizaje supervisado
 
 ***El aprendizaje supervisado* se *caracteriza porque el proceso de aprendizaje*
@@ -663,6 +713,8 @@ llevarlo a cabo, que dan lugar a los siguientes aprendizajes supervisados:
 
 * Aprendizaje estocástico.
 
+(aprendizaje-por-correccion-de-error)=
+
 #### Aprendizaje por corrección de error
 
 Consiste en *ajustar* los *pesos de las conexiones de la red en función de la
@@ -677,6 +729,8 @@ desarrolló Rosenblatt en 1958. Esta es una regla muy simple: para cada neurona,
 en la capa de salida se le calcula la desviación a la salida objetivo coma el
 error, o, el cuál luego se utiliza para cambiar los pesos sobre la conexión de
 la neurona precedente.
+
+(aprendizaje-por-refuerzo)=
 
 #### Aprendizaje por refuerzo
 
@@ -693,6 +747,8 @@ este tipo de aprendizaje la función del ***supervisor*** se asemeja más a la d
 un ***crítico*** (que opina sobre la respuesta de la red) que a la de un maestro
 (que indica a la red la respuesta concreta que debe generar), coma ocurriría en
 el caso de supervisión por corrección del error.
+
+(aprendizaje-estocastico)=
 
 #### Aprendizaje estocástico
 
@@ -712,6 +768,8 @@ menor después del cambio, es decir, si el comportamiento de la red se acerca al
 deseado, se acepta el cambio. Si, por el contrario, la energía no es menor, se
 aceptaría el cambio en función de una determinada y preestablecida distribución
 de probabilidades.
+
+(aprendizaje-no-supervisado)=
 
 ### Aprendizaje no supervisado
 
@@ -744,6 +802,8 @@ considerar dos tipos, que dan lugar a los siguientes aprendizajes:
 Aprendizaje hebbiano
 
 - Aprendizaje competitivo y comparativo
+
+(aprendizaje-hebbiano)=
 
 #### Aprendizaje hebbiano
 
@@ -798,6 +858,8 @@ estimulación visual procedente de* C.
 
 ***Llevado esto al terreno de las RNA, significa que el peso de la conexión
 entre ambas neuronas se ve incrementado.***
+
+(aprendizaje-competitivo-y-comparativo)=
 
 #### Aprendizaje competitivo y comparativo
 
@@ -894,6 +956,8 @@ Figura 5.8
 
 ![Figura 5.8: perceptrón directo](images/figura-5-8-perceptron-directo.png)
 
+(aprendizaje-del-perceptron)=
+
 ### Aprendizaje del perceptrón
 
 Es importante hacer notar que *existe un procedimiento que descubre un buen
@@ -939,7 +1003,11 @@ w2,... Wn). Sumar uno a cada uno de los pesos asignados a cajas lógicas que
 producen 1 es lo mismo que sumar el vector de salida de caja lógica al vector
 peso, según la siguiente descripción:
 
+(aprendizaje-del-perceptron-2)=
+
 ### Aprendizaje del perceptrón
+
+(para-entrenar-a-un-perceptron)=
 
 #### Para entrenar a un perceptrón
 
@@ -1047,6 +1115,8 @@ Vector de entradas 0 0 1
 
 1 1 0
 
+(la-separacion-lineal-y-el-problema-del-xor)=
+
 ### La separación lineal y el problema del XOR
 
 El ***teorema de convergencia del perceptrón*** de Rosenblatt (1962),
@@ -1114,7 +1184,11 @@ conocimiento.*
   Utilizando esta idea se podría ***construir un perceptrón "multicapa"*** para
   solucionar el problema.
 
+(redes-de-hopfield-recurrentes-y-de-jordan)=
+
 ## Redes de Hopfield, recurrentes y de Jordan
+
+(redes-de-hopfield)=
 
 ### Redes de Hopfield
 
@@ -1171,6 +1245,8 @@ próximo.
    red fallasen,
 
 esta todavía funcionara adecuadamente.
+
+(como-se-alcanzan-estas-caracteristicas)=
 
 #### ¿Cómo se alcanzan estas características?
 
@@ -1260,6 +1336,8 @@ Figura 5.15
 
 ![Figura 5.15: tolerancia al fallo en una red de Hopfield](images/figura-5-15-tolerancia-fallo-hopfield.png)
 
+(maquinas-de-boltzmann)=
+
 ### Máquinas de Boltzmann
 
 Una ***máquina de Boltzmann*** es una variación de una red de Hopfield.
@@ -1320,6 +1398,8 @@ el valle B, esta podría saltar al valle A.
   la sacudida es más swive, sera incapaz de escapar de el. Esto es justo lo que
   queremos.
 
+(como-se-implementa-esta-idea-en-una-red-neuronal)=
+
 #### ¿Cómo se implementa esta idea en una red neuronal?
 
 *Las unidades de las máquinas de Boltzmann actualizan sus estados binarios
@@ -1348,6 +1428,8 @@ finales de entrenamiento.
 *Si el enfriamiento* se *produce de forma adecuada, las máquinas de Boltzmann
 podrían evitar las mínimos locales y aprender a ca/cu/ar cualquier función
 calculable de entradas y salidas de tamaño fijo.*
+
+(redes-recurrentes)=
 
 ### Redes recurrentes
 

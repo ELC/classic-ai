@@ -2,7 +2,11 @@
 title: "Unidad 4: Ingeniería del conocimiento"
 ---
 
+(unidad-4-ingenieria-del-conocimiento)=
+
 # Unidad 4: Ingeniería del conocimiento
+
+(prolog-programacion-logica)=
 
 ## PROLOG (Programación lógica)
 
@@ -19,6 +23,8 @@ pueden realizarse con el.
 Para los programadores que investigan en IA, el PROLOG ofrece un método
 diferente al empleado por los lenguajes más familiares, tales como BASIC, COBOL,
 PASCAL y C.
+
+(una-breve-historia-del-prolog)=
 
 ### Una breve historia del Prolog
 
@@ -37,6 +43,8 @@ lanzaron su famoso proyecto de la quinta generación con el objetivo de diseñar
 nuevas computadoras y software. De repente, la gente comenzó a mirar de otra
 forma el PROLOG y sus posibilidades.
 
+(para-que-sirve-prolog)=
+
 ### ¿Para qué sirve Prolog?
 
 Los lenguajes de computadoras son raramente buenos para todos los tipos de
@@ -52,6 +60,8 @@ decir, problemas en los que se necesitan tomar decisiones de una forma
 ordenada), intenta hacer que la computadora *"razone"* la forma de encontrar una
 solución. Es particularmente adecuado para diferentes tipos de problemas de
 inteligencia artificial.
+
+(lenguaje-procedural-vs-lenguaje-declarativo)=
 
 ### Lenguaje procedural vs. lenguaje declarativo
 
@@ -81,6 +91,8 @@ otros lenguajes.
 finalmente se*** ***construyen preguntas* o *cuestionamientos sobre todo el
 paquete, quedándole al lenguaje la tarea de elaborar las conclusiones mediante
 un razonamiento lógico.***
+
+(inteligencia-artificial)=
 
 ### Inteligencia artificial
 
@@ -117,6 +129,8 @@ resolución de*• *problemas eh áreas específicas de la IA.* Los dos problema
 significativos de IA son los ***sistemas expertos*** y el ***procesamiento de
 lenguaje natural.*** A saber:
 
+(sistema-experto)=
+
 ## Sistema experto
 
 ***Es un programa de computadora que contiene conocimientos acerca de un
@@ -125,6 +139,8 @@ Contiene información *(una base de conocimientos)* y una herramienta para
 comprender las preguntas y responder la respuesta correcta examinando la base
 *(un motor.de inferencia).* El PROLOG tiene incorporado estructuras para la
 creación de bases de conocimientos y un motor de inferencia.
+
+(procesamiento-de-lenguaje-natural)=
 
 ### Procesamiento de lenguaje natural
 
@@ -137,6 +153,8 @@ directrices.
 El PROLOG puede usar la idea de una base de conocimientos y un motor de
 inferencias para dividir el lenguaje humano en diferentes partes y relaciones y
 así intentar comprender su significado detectando *palabras clave.*
+
+(relacion-con-la-logica)=
 
 ## Relación con la lógica
 
@@ -181,6 +199,8 @@ inferencias de un hecho a otro.
 
 Se puede considerar a PROLOG como un lenguaje coloquial, lo cuál significa que
 el programador y la computadora sostienen una especie de conversación.
+
+(hechos)=
 
 ### Hechos
 
@@ -270,6 +290,8 @@ Esta variable es un único carácter 'de subrayado.
 Se utiliza para evitar el tener que imaginar continuamente diferentes nombres de
 variables i cuando no se van a utilizar en ningún otro sitio de la cláusula.
 
+(reglas)=
+
 ### Reglas
 
 En PROLOG se usa una regla cuando se quiere significar que un hecho depende de
@@ -338,6 +360,8 @@ gusta X si a X le gusta el vino.
 
 El ejemplo anterior se escribe en PROLOG de la forma siguiente:
 
+(clausulas)=
+
 ### Cláusulas
 
 Utilizaremos la palabra ***cláusula*** siempre que nos refiramos a ***un hecho*
@@ -354,6 +378,8 @@ En PROLOG sería:
 
 El predicado *puede_robar* significa que alguna persona X puede robar alguna
 cosa Y. Esta cláusula depende de las cláusulas *ladrón, le_gusta_a* y *valiosa.*
+
+(preguntas)=
 
 ### Preguntas
 
@@ -456,6 +482,8 @@ En este punto los objetivos se han satisfecho y la variable A contiene el valor
 *vino.* El primer objetivo tiene una marca en la base en la posición del hecho
 *le_gusta_a(maria,vino),* y el segundo en el hecho *le_gusta_a(jose,vino).*
 
+(estructura-de-un-programa-en-prolog)=
+
 ## Estructura de un programa en Prolog
 
 1., Composición de un programa. Cláusulas. Predicados. Dominios La mayoría de
@@ -478,6 +506,8 @@ Los hechos que construyó con los objetivos y las relaciones se listan en la
 sección de cláusulas (clauses). La sección puede también contener reglas y otras
 construcciones que se estudiaran más adelante.
 
+(predicados)=
+
 #### Predicados
 
 Los *predicados* son las relaciones. El término *"predicado"* viene.de la lógica
@@ -495,6 +525,8 @@ argumentos, como en:
 nombre predicado (argumento, argumento2) nombre predicado (argumento3,
 argumento4, argumento5) podrá utilizar los predicados de las dos formas. Los
 diferentes argumentos tampoco tienen que ser del mismo tipo de dominio.
+
+(dominios)=
 
 #### Dominios
 
@@ -529,6 +561,8 @@ identifican más rápidamente cuando se ejecuta un programa. Por ejemplo:
 
 "Eduardo" "choque contra un árbol el coche de Eduardo"
 
+(string)=
+
 #### String
 
 Cualquier grupo de caracteres consecutivos (letras y números) que comienza y
@@ -540,6 +574,8 @@ cadenas no son tratados de la misma forma por Prolog. Por ejemplo:
 
 "eduardo es un *@"a&&"?lil@"* "eduardo escucha Volcán"
 
+(integer)=
+
 #### Integer
 
 Cualquier número comprendido entre (e incluyendo) -32768 y 32767. El límite
@@ -548,6 +584,8 @@ de estos bits'representan el número y el otro bit representa el signo. Por
 ejemplo:.
 
 21444
+
+(real)=
 
 #### Real
 
@@ -561,10 +599,14 @@ desde los muy sencillos hasta los muy complejos. Por ejemplo:
 Ambos números son reales, pero en muchos casos sería mejor hacer que el primero
 fuera entero en vez de real. El entero necesita menos memoria)
 
+(char)=
+
 #### Char
 
 Cualquier carácter de la lista ASCII estándar, posicionado entre dos marcas de
 comillas sencilla (' '). Por ejemplo:
+
+(file)=
 
 #### File
 
@@ -587,6 +629,8 @@ printer keyboard screen com 1
 
 este archivo ese archivo el_otro_archivo
 
+(objetivos-goal)=
+
 #### Objetivos (goal)
 
 Esta es la sección que le dice al PROLOG lo que ha de encontrar o lo que desea
@@ -606,6 +650,8 @@ aprobar o desaprobar el objetivo y le informara de lo obtenido.
 - Si en cambio el programa posee un goal externo comenzara a,ejecutarse y Juego
   esperara que se le introduzca un objetivo. Una vez que se verifica si se junta
   el objetivo,• el programa le pedirá uno nuevo y así sucesivamente.
+
+(ejemplos)=
 
 ### Ejemplos
 
@@ -669,6 +715,8 @@ hermana (X,Y):- mujer (X), padres (X,M,P), padres (Y,M.P), X\<>Y.
 Cada *vez* que se evalúa una conjunción las conjunciones anteriores tuvieron que
 ser verdaderas. En caso contrario no se evaluaran las siguientes conjunciones.
 
+(ingenieria-del-conocimiento)=
+
 ## Ingeniería del conocimiento
 
 ***La Ingeniería del Conocimiento es la disciplina que trata de la forma*** *en*
@@ -679,6 +727,8 @@ ser verdaderas. En caso contrario no se evaluaran las siguientes conjunciones.
 ***El Ingeniero de Conocimiento es el encargado de entrevistar a los expertos
 reales,*** ***para aprender sobre lo que ellos saben, y poder así organizar la
 información obtenida*** *('* ***para construir una Base de Conocimientos.***
+
+(organizacion-de-una-base-de-conocimientos)=
 
 ### Organización de una base de conocimientos
 
@@ -701,6 +751,8 @@ entonces reordenar la base de conocimientos.
   difícil determinar
 
 que atributos causan el mayor efecto.
+
+(encontrando-el-experto)=
 
 ### Encontrando el experto
 
@@ -749,6 +801,8 @@ la***
 - Ademas, ***algunos expertos estarán simplemente menos inclinados a perder
   tiempo*** diciéndole todo lo que saben sobre la materia.
 
+(verificaciones-de-la-base-de-conocimientos)=
+
 ### Verificaciones de la base de conocimientos
 
 Si supone que ha encontrado un experto que es cooperativo *y* que da una
@@ -779,6 +833,8 @@ hay forma de verificar completamente que la base de conocimientos sea exacta.*
 De este modo, según crece el uso de los sistemas expertos, la verificación de
 las bases de conocimientos sera una de las más importantes áreas de
 investigación.
+
+(definicion-de-sistema-experto)=
 
 ## Definición de sistema experto
 
@@ -912,6 +968,8 @@ Usuario **0**
 
 j Programa I
 
+(lj-lj)=
+
 #### LJ LJ
 
 Descriptores de formato
@@ -941,6 +999,8 @@ Motor de Inferencia
 SGBD
 
 I • ► LJ BD
+
+(lj-lj-2)=
 
 #### LJ LJ
 
@@ -1006,6 +1066,8 @@ parece que la primera podría asociarse de manera más natural con la *"visión
 funcional",* mientras que la segunda haría referencia a la *"visión
 estructural".*
 
+(armazones-de-sistemas-expertos)=
+
 ## Armazones de sistemas expertos
 
 En un principio, los sistemas expertos que se construían partieron de cero,
@@ -1051,7 +1113,11 @@ que usan técnicas de programación convencionales principalmente.
 un interfaz fácil-de-usar entre un sistema experto escrito con el armazón y un
 gran entorno de programación, que probablemente sera más convencional.*
 
+(aplicaciones-de-los-sistemas-expertos)=
+
 ## Aplicaciones de los sistemas expertos
+
+(ventajas-de-los-sistemas-expertos)=
 
 ### Ventajas de los sistemas expertos
 
@@ -1092,6 +1158,8 @@ limitaciones de su conocimiento.
    convertirse en un experto en ciertos campos, lo cuál hace difícil adquirir
    nuevos expertos humanos.
 
+(fases-de-insercion-social-de-los-sistemas-expertos)=
+
 ### Fases de inserción social de los sistemas expertos
 
 Hayes-Roth (1983) esquematiza en la Figura 4.4 la secuencia de ideas,
@@ -1127,6 +1195,8 @@ Industria y
 Figura 4.4
 
 ![Figura 4.4: fases de inserción social de sistemas expertos](images/figura-4-4-fases-insercion-social-sistemas-expertos.png)
+
+(sistemas-expertos-mas-conocidos)=
 
 ## Sistemas expertos más conocidos
 

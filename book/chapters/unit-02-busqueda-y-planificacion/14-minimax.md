@@ -2,6 +2,8 @@
 title: Minimax
 ---
 
+(minimax)=
+
 # Minimax
 
 2.3.2. El procedimiento minimax

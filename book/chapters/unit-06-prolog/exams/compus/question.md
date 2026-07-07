@@ -1,3 +1,5 @@
+(enunciado-20)=
+
 # Enunciado
 
 % % fecha es aaaa-mm-dd ingresar un año y mes ("2023-10") y mostrar el monto

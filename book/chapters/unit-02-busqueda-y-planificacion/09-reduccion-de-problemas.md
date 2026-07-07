@@ -2,6 +2,8 @@
 title: Reducción de problemas
 ---
 
+(reduccion-de-problemas-2)=
+
 # Reducción de problemas
 
 Cuando se usa el método de reducción de problemas, por lo general se reconocen
@@ -219,6 +221,8 @@ Estos ejemplos ilustran estrategias generales. Para tratar con preguntas de
 es una Y, usted da a conocer todas las submetas inmediatas. Si la meta es una 0,
 menciona la submeta inmediata que se logró. Para tratar con preguntas de
 ***"i.Por que?'*** usted identifica la meta y notifica la supermeta inmediata.
+
+(verificacion-de-restricciones)=
 
 ## Verificación de restricciones
 

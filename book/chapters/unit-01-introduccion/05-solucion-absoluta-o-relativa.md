@@ -2,6 +2,8 @@
 title: Solución absoluta o relativa
 ---
 
+(solucion-absoluta-o-relativa)=
+
 # Solución absoluta o relativa
 
 **Una solución adecuada *¿es* absoluta o relativa?**

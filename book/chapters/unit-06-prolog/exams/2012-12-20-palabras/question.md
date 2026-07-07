@@ -1,3 +1,5 @@
+(palabras-y-caracteres-2)=
+
 # Palabras y caracteres
 
 - Fecha: 2012-12-20

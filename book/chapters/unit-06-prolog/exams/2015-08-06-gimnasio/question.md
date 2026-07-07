@@ -1,3 +1,5 @@
+(gimnasio-socios-ejercicios-asistencias-y-niveles-3)=
+
 # Gimnasio: socios, ejercicios, asistencias y niveles
 
 - Fecha: 2015-08-06

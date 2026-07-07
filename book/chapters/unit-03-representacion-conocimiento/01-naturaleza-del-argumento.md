@@ -2,9 +2,15 @@
 title: Naturaleza del argumento
 ---
 
+(naturaleza-del-argumento)=
+
 # Naturaleza del argumento
 
+(el-problema-de-la-representacion-del-conocimiento)=
+
 ## El problema de la representación del conocimiento
+
+(correspondencia-entre-conocimiento-y-representacion-del-conocimiento)=
 
 ### Correspondencia entre conocimiento y representación del conocimiento
 
@@ -69,6 +75,8 @@ muchos a muchos.
 En algunas ocasiones, el uso de una buena representación hace que el mecanismo
 de razonamiento de un programa sea no solo correcto sino también trivial.
 
+(propiedades-de-un-buen-sistema-de-representacion-del-conocimiento)=
+
 ### Propiedades de un buen sistema de representación del conocimiento
 
 Un buen sistema de representación del conocimiento en un dominio particular debe
@@ -102,6 +110,8 @@ conocimiento.* Muchos programas utilizan más de una técnica. En los próximos
 capítulos se describirán con detalle las más importantes de estas técnicas,
 pero, a modo de introducción, en este apartado se pasa revista a las principales
 ideas.
+
+(modelos-de-representacion-del-conocimiento)=
 
 ### Modelos de representación del conocimiento
 
@@ -389,6 +399,8 @@ las conclusiones buscadas hasta los hechos de partida. Entre los más utilizados
 de estos procedimientos se encuentra el de ***resolución*** que utiliza una
 estrategia de prueba por contradicción.
 
+(conocimiento-procedimental)=
+
 ### Conocimiento procedimental
 
 Hasta ahora los ejemplos sobre la base de conocimiento acerca de los felinos
@@ -407,12 +419,16 @@ Figura 3.5
 
 ![Figura 3.5: regla PROLOG para comer](images/figura-3-5-regla-prolog-come-felino.png)
 
+(problemas-de-la-representacion-del-conocimiento)=
+
 ### Problemas de la representación del conocimiento
 
 Antes de embarcarnos en la discusión de los mecanismos específicos que se
 utilizan para la representación de los distintos tipos de conocimiento acerca
 del mundo real, es necesario señalar brevemente una serie de cuestiones
 presentes en todos ellos:
+
+(atributos-importantes)=
 
 #### Atributos importantes
 
@@ -428,6 +444,8 @@ herencia de propiedades. Reciben diferentes nombres en los sistemas de IA, pero
 el nombre es lo de menos, lo importante es que dichos atributos representan la
 *pertenencia a* *una clase* y la *inclusión de una clase en otra,* y que *la
 inclusión de clases es transitiva.*
+
+(relaciones-entre-atributos)=
 
 #### Relaciones entre atributos
 
@@ -553,6 +571,8 @@ almacenamiento, puesto que muchas inferencias se representarán muchas veces.
 
 **D. La representación de conjuntos de objetos**
 
+(como-se-deben-representar-los-conjuntos-de-objetos)=
+
 ### ¿Cómo se deben representar los conjuntos de objetos?
 
 La posibilidad de representar conjuntos de objetos es importante por varias
@@ -625,6 +645,8 @@ objeto delante que impida ver la cuarta pata.
 ascender por la jerarquía hasta encontrar una estructura lo bastante general.
 como para no entrar en contradicción con la situación en curso.
 
+(el-problema-del-marco)=
+
 ### El problema del marco
 
 En este capítulo se han descrito diversos métodos de representación del
@@ -686,9 +708,15 @@ cambio explícito. Esta idea de circunscribir el conjunto de cosas inusuales es
 muy potente; se puede utilizar como una solución parcial al problema estructural
 y como un modo de razonamiento con conocimiento incompleto.
 
+(logica-simbolica)=
+
 ## Lógica simbólica
 
+(la-logica-y-el-lenguaje)=
+
 ### La lógica y el lenguaje
+
+(introduccion-2)=
 
 ### Introducción
 
@@ -741,6 +769,8 @@ entonces el razonamiento es correcto. De otra manera es incorrecto.
 Los métodos y técnicas del lógico se han desarrollado primordialmente con el
 objeto de aclarar la distinción. El lógico se interesa en todo razonamiento, sin
 atender al contenido mismo, sino solo desde este punto de vista especial.
+
+(naturaleza-del-argumento-2)=
 
 ## Naturaleza del argumento
 

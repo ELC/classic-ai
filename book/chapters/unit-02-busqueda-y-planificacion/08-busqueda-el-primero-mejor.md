@@ -2,6 +2,8 @@
 title: Búsqueda el primero mejor
 ---
 
+(busqueda-el-primero-mejor)=
+
 # Búsqueda el primero mejor
 
 Hasta este momento, solo se han explicado realmente dos estrategias de control
@@ -293,6 +295,8 @@ en lugar de dos, la construcción de un espacio de configuraciones adecuado
 resulta extremadamente complicada desde el punto de vista matemático. Los.
 matemáticos amantes de la complicación han producido una copiosa bibliografía
 sobre la materia.
+
+(reduccion-de-problemas)=
 
 ## Reducción de problemas
 

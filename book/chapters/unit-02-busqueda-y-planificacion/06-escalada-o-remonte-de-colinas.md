@@ -2,6 +2,8 @@
 title: Escalada o remonte de colinas
 ---
 
+(escalada-o-remonte-de-colinas)=
+
 # Escalada o remonte de colinas
 
 **Escalada**

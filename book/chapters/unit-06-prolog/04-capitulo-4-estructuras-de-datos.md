@@ -2,6 +2,8 @@
 title: Estructuras de datos
 ---
 
+(estructuras-de-datos)=
+
 # Estructuras de datos
 
 En la mayoría de las aplicaciones se necesita emplear tipos de datos más
@@ -10,6 +12,8 @@ estructuras de datos es fundamental para cualquier tipo de cálculo práctico.
 Prolog no sólo permite argumentos más complejos, sino que también tiene varias
 características incorporadas para manipular listas de datos. Incluso tiene
 predicados incorporados para operar con cadenas como si fueran listas.
+
+(listas)=
 
 ## Listas
 
@@ -29,6 +33,8 @@ Ejemplos:
 
 - Lista vacía [ ]
 
+(identificacion-de-la-cabeza-y-la-cola)=
+
 ### Identificación de la cabeza y la cola
 
 El Prolog trabaja sobre una lista dividiéndola en cabeza y cola. La cabeza de
@@ -46,6 +52,8 @@ variables. Por ejemplo, [X|Y] representa una lista con cabeza “X” y cola “
 Debido a que una lista es solo otro tipo de objeto, debe encerrarse entre
 paréntesis cuando se utilice en una cláusula, como se muestra aquí:
 predicado([lista]) He aquí otro ejemplo: predicado([Cabeza|Cola])
+
+(recursividad-en-listas)=
 
 ### Recursividad en listas
 
@@ -96,6 +104,8 @@ ingresada previamente. inicio:- write('Ingrese una lista de elementos:
 leer([H|T]):-read(H),H=[],leer(T). leer([]). buscar(_,[]):-write(‘No se encontró
 el elemento’). buscar(H,\[H|_\]):-write('Se encontró el elemento’).
 buscar(X,[\_|T]):-buscar(X,T).
+
+(cadenas)=
 
 ## Cadenas
 

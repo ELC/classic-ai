@@ -2,6 +2,8 @@
 title: Relación con la lógica
 ---
 
+(relacion-con-la-logica-2)=
+
 # Relación con la lógica
 
 Como su nombre lo indica, el Prolog se basa en manipulaciones lógicas;
@@ -33,6 +35,8 @@ inferencias de un hecho a otro. Se puede considerar a Prolog como un lenguaje
 coloquial, lo cual significa que el programador y la computadora sostienen una
 especie de conversación.
 
+(hechos-2)=
+
 ## Hechos
 
 La primera forma de combinar un objeto y una relación es usarlas para definir un
@@ -60,6 +64,8 @@ Los siguientes puntos son importantes:
   palabra para una relación.
 - Dos hechos coinciden si sus predicados son lo mismo (se escriben de igual
   forma) y si cada uno de los correspondientes argumentos son iguales entre sí.
+
+(variables)=
 
 ## Variables
 
@@ -100,6 +106,8 @@ le_gusta_a(\_,eduardo).
 
 Se utiliza para evitar el tener que imaginar continuamente diferentes nombres de
 variables cuando no se van a utilizar en ningún otro sitio de la cláusula.
+
+(reglas-2)=
 
 ## Reglas
 
@@ -150,6 +158,8 @@ El ejemplo anterior se escribe en Prolog de la siguiente forma:
 
 le_gusta_a(marco, X):- le_gusta_a(X, vino).
 
+(clausulas-2)=
+
 ## Cláusulas
 
 Utilizaremos la palabra cláusula siempre que nos refiramos a un hecho o a una
@@ -166,6 +176,8 @@ En Prolog sería: puede_robar(X,Y):- ladrón(X), le_gusta_a(X,Y), valiosa(Y).
 El predicado puede_robar significa que alguna persona X puede robar alguna cosa
 Y. Esta cláusula depende de las cláusulas le_gusta_a y valiosa.
 
+(preguntas-2)=
+
 ## Preguntas
 
 Una vez que tengamos algunos hechos podemos hacer alguna pregunta acerca de
@@ -174,6 +186,8 @@ una pregunta Prolog efectúa una búsqueda por toda la base de datos, localizand
 hechos que coincidan con el hecho en cuestión. Si se encuentra uno que coincida
 se responderá sí (Yes/True), por el contrario si no se encuentra, la respuesta
 será no (No/False).
+
+(predicados-y-objetivos)=
 
 ## Predicados y Objetivos
 
@@ -194,6 +208,8 @@ objetivo. Por ejemplo para X ='Maria', y para X ='Luis'. También es posible
 tener varias variables libres: son_hermanos(Y,Z). En este caso obtenemos todas
 las combinaciones para las variables que hacen cierto el objetivo. Por ejemplo,
 Y ='Juan' y Z ='Maria' es una solución. Y ='Juan' y Z ='Luis' es otra solución.
+
+(secuencia-de-objetivos)=
 
 ## Secuencia de objetivos
 
@@ -251,6 +267,8 @@ feliz(X):- not(observa(X,felicia)).
   luego la parte izquierda fallará como posible cumplimiento del objetivo
   original y finalmente el Prolog nos informará que el objetivo original falla o
   no se cumple.
+
+(backtracking)=
 
 ## Backtracking
 
@@ -318,6 +336,8 @@ PROLOG utiliza un mecanismo de búsqueda independiente de la base de datos.
 Aunque pueda parecer algo ilógico, es una buena estrategia puesto que garantiza
 el proceso de todas las posibilidades. Es útil para el programador conocer dicho
 mecanismo a la hora de depurar y optimizar los programas.
+
+(ejemplos-2)=
 
 ## Ejemplos
 

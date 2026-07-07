@@ -6,9 +6,13 @@ kernelspec:
   language: prolog
 ---
 
+(practica-4)=
+
 # Práctica 4
 
 PROLOG - Base de datos y Functores
+
+(ejercicio-1-4)=
 
 ## Ejercicio 1
 
@@ -16,6 +20,8 @@ Hacer un programa que permita definir las cuentas a pagar del mes (luz, agua,
 alquiler, teléfono, cable, supermercado, etc.) de un grupo de personas. A su
 vez, deberá permitir ingresar el nombre de una de ellas e informar de todos sus
 gastos.
+
+(solucion-39)=
 
 ### Solución
 
@@ -28,11 +34,15 @@ gasto(juan, agua, 2500).
 gastos_de(Persona, Concepto, Monto) :- gasto(Persona, Concepto, Monto).
 ```
 
+(verificacion-40)=
+
 ### Verificación
 
 ```{code-cell} prolog
 ?- findall(Concepto-Monto, gastos_de(maria, Concepto, Monto), Gastos), assertion(Gastos == [luz-1000, alquiler-50000]).
 ```
+
+(ejercicio-2-4)=
 
 ## Ejercicio 2
 
@@ -49,6 +59,8 @@ definido en la BBDD. De estarlo deberá informar a quién corresponde; de lo
 contrario deberá solicitar ingresar un nombre y registrar entonces la persona en
 la BBDD.
 
+(solucion-40)=
+
 ### Solución
 
 ```{code-cell} prolog
@@ -62,6 +74,8 @@ consultar_o_registrar(Codigo, Nombre) :-
     \+ personas(Codigo, _), assertz(personas(Codigo, Nombre)).
 ```
 
+(verificacion-41)=
+
 ### Verificación
 
 ```{code-cell} prolog
@@ -71,6 +85,8 @@ consultar_o_registrar(Codigo, Nombre) :-
 ```{code-cell} prolog
 ?- retractall(personas(3, _)), consultar_o_registrar(3, carla), assertion(personas(3, carla)), retractall(personas(3, _)).
 ```
+
+(ejercicio-3-4)=
 
 ## Ejercicio 3
 
@@ -87,6 +103,8 @@ de datos. El programa deberá permitir:
 - Ingresar el nombre de un animal e informar de todos sus hábitos.
 - Ingresar un hábito e informar todos los animales que lo tienen.
 
+(solucion-41)=
+
 ### Solución
 
 ```{code-cell} prolog
@@ -99,6 +117,8 @@ habitos_de(Animal, Habito) :- habito(Animal, Habito).
 animal_con_habito(Animal, Habito) :- habito(Animal, Habito).
 ```
 
+(verificacion-42)=
+
 ### Verificación
 
 ```{code-cell} prolog
@@ -108,6 +128,8 @@ animal_con_habito(Animal, Habito) :- habito(Animal, Habito).
 ```{code-cell} prolog
 ?- findall(Animal, animal_con_habito(Animal, alimentacion(hojas, mucha)), Animales), assertion(Animales == [jirafa]).
 ```
+
+(ejercicio-4-4)=
 
 ## Ejercicio 4
 
@@ -126,6 +148,8 @@ gasto(maria, tel(movil, personal, 100)).
   gasto (dato de entrada).
 - Calcular gasto promedio para una determinada persona (dato de entrada).
 
+(solucion-42)=
+
 ### Solución
 
 ```{code-cell} prolog
@@ -138,6 +162,8 @@ consumo_superior(Persona, Tipo, Minimo) :-
 promedio_persona(Persona, Promedio) :-
     findall(Monto, (gasto(Persona, G), arg(_, G, Monto), number(Monto)), Montos), sum_list(Montos, Suma), length(Montos, Cantidad), Cantidad > 0, Promedio is Suma / Cantidad.
 ```
+
+(verificacion-43)=
 
 ### Verificación
 
@@ -153,6 +179,8 @@ promedio_persona(Persona, Promedio) :-
 ?- promedio_persona(maria, Promedio), assertion(Promedio =:= 300).
 ```
 
+(ejercicio-5-4)=
+
 ## Ejercicio 5
 
 Hacer un programa que permita realizar altas, bajas y consultas a la base de
@@ -166,6 +194,8 @@ datos de una librería. De cada libro se registran los siguientes datos:
 
 La base datos debe guardarse en disco. Calcular además el precio promedio de los
 libros de un determinado autor.
+
+(solucion-43)=
 
 ### Solución
 
@@ -182,11 +212,15 @@ promedio_autor(Autor, Promedio) :-
     findall(Precio, libro(_, _, Autor, _, Precio), Precios), sum_list(Precios, Suma), length(Precios, Cantidad), Cantidad > 0, Promedio is Suma / Cantidad.
 ```
 
+(verificacion-44)=
+
 ### Verificación
 
 ```{code-cell} prolog
 ?- retractall(libro(_, _, _, _, _)), alta_libro(1, prolog, aquili, utn, 100), consulta_libro(1, Titulo, Autor, Editorial, Precio), assertion(Titulo == prolog), assertion(Autor == aquili), assertion(Editorial == utn), assertion(Precio =:= 100), promedio_autor(aquili, Promedio), assertion(Promedio =:= 100), baja_libro(1), assertion(\+ consulta_libro(1, _, _, _, _)).
 ```
+
+(ejercicio-6-4)=
 
 ## Ejercicio 6
 
@@ -203,6 +237,8 @@ A su vez, permitir ingresar dos (2) ingredientes e informar de todas las recetas
 ingrediente en particular y una cierta cantidad del mismo, determinar aquellas
 recetas que llevan ese ingrediente y superan dicha cantidad.
 
+(solucion-44)=
+
 ### Solución
 
 ```{code-cell} prolog
@@ -216,6 +252,8 @@ recetas_con_ingredientes(Codigo, Nombre, I1, I2) :-
 recetas_con_cantidad(Codigo, Nombre, Ingrediente, Minimo) :-
     receta(Codigo, Nombre, Ingrediente, Cantidad), Cantidad > Minimo.
 ```
+
+(verificacion-45)=
 
 ### Verificación
 

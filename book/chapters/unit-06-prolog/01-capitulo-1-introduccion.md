@@ -2,6 +2,8 @@
 title: Introducción
 ---
 
+(introduccion-3)=
+
 # Introducción
 
 Prolog es un lenguaje de programación que se utiliza para resolver problemas en
@@ -15,6 +17,8 @@ práctico o eficiente para algunas aplicaciones, pero pueden igualmente
 realizarse con él. Para los programadores que investigan IA, el Prolog ofrece un
 método diferente de trabajo al empleado por los lenguajes más familiares, tales
 como Basic, Cobol, Pascal y C.
+
+(una-breve-historia-del-prolog-2)=
 
 ## Una breve historia del Prolog
 
@@ -31,6 +35,8 @@ hasta que los científicos japoneses lanzaron su famoso proyecto de la quinta
 generación con el objetivo de diseñar nuevas computadoras y software. De
 repente, la gente comenzó a mirar de otra forma el Prolog y sus posibilidades.
 
+(para-que-sirve-prolog-2)=
+
 ## ¿Para qué sirve Prolog?
 
 Los lenguajes de computadoras son raramente buenos para todos los tipos de
@@ -42,6 +48,8 @@ manejar “problemas lógicos” ( es decir, problemas en los que se necesitan t
 decisiones en forma ordenada). Intenta hacer que la computadora “razone” la
 forma de encontrar una solución. Es particularmente adecuado para diferentes
 tipos de problemas de inteligencia artificial.
+
+(lenguaje-procedural-vs-lenguaje-declarativo-2)=
 
 ## Lenguaje Procedural vs. Lenguaje Declarativo
 
@@ -65,6 +73,8 @@ cuestionamientos sobre
 
 todo el paquete, quedándole al lenguaje la tarea de elaborar las conclusiones
 mediante un razonamiento lógico.
+
+(inteligencia-artificial-ia-vision-general)=
 
 ## Inteligencia Artificial (IA): Visión General
 
@@ -94,6 +104,8 @@ de lenguaje natural, representación del conocimiento y resolución de problemas
 en áreas específicas de la IA. Los dos problemas más significativos de IA son
 los sistemas expertos y el procesamiento de lenguaje natural. A saber:
 
+(sistema-experto-2)=
+
 ### Sistema Experto
 
 Es un programa de computadora que contiene conocimientos acerca de un
@@ -102,6 +114,8 @@ Contiene información (una base de conocimientos) y una herramienta para
 comprender las preguntas y responder la respuesta correcta examinando la base
 (esto es, motor de inferencia). El Prolog tiene incorporado estructuras para la
 creación de bases de conocimientos y un motor de inferencia.
+
+(procesamiento-de-lenguaje-natural-2)=
 
 ### Procesamiento de Lenguaje Natural
 
@@ -113,6 +127,8 @@ la computadora siga dichas directrices. El Prolog puede usar la idea de una base
 de conocimientos y un motor de inferencias para dividir el lenguaje humano en
 diferentes partes y relaciones y así intentar comprender su significado
 detectando palabras claves.
+
+(areas-mas-importantes-de-la-inteligencia-artificial)=
 
 ### Áreas más importantes de la Inteligencia Artificial
 

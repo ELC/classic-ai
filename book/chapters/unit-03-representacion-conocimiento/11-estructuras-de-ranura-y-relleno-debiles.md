@@ -2,6 +2,8 @@
 title: Estructuras de ranura y relleno débiles
 ---
 
+(estructuras-de-ranura-y-relleno-debiles)=
+
 # Estructuras de ranura y relleno débiles
 
 Recuérdese que estas estructuras se introdujeron en un principio como un
@@ -32,6 +34,8 @@ conocimiento específico que deben contener estas estructuras.!
 A estas estructuras de "conocimiento pobre" se ¿es denominaran *"débiles".* En
 las estructuras de ranura y relleno *"fuertes"* se establecen mayores
 compromisos en relación con el contenido de las representaciones.
+
+(redes-semanticas)=
 
 ## Redes semánticas
 
@@ -69,6 +73,8 @@ relación adicional:
 
 **tiene(Julio, Garras)**
 
+(busqueda-de-interseccion)=
+
 ### Búsqueda de intersección
 
 Una de las primeras formas de usar las redes semánticas antiguas fue para
@@ -87,6 +93,8 @@ Sin embargo, para poder contestar a preguntas más estructuradas son necesarias
 redes con una estructuración más alta. En los siguientes apartados se ampliara y
 refinara nuestra noción de red para que estas puedan soportar un razonamiento
 más sofisticado.
+
+(representacion-de-predicados-no-binarios)=
 
 ### Representación de predicados no binarios
 
@@ -130,6 +138,8 @@ equipo-local Rosario Central
 Figura 3.18
 
 ![Figura 3.18: red semántica de un partido semifinal](images/figura-3-18-red-semantica-partido-semifinal.png)
+
+(marcos)=
 
 ## Marcos
 

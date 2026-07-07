@@ -10,6 +10,7 @@ dependencies = [
   "jupyterlab>=4.5",
   "prolog-kernel>=0.0.9",
   "pydantic>=2.13.4",
+  "selectolax>=0.4.10",
 ]
 
 [dependency-groups]
@@ -32,6 +33,12 @@ cmd = "python scripts/generate_repaso_flashcards.py"
 
 [tool.poe.tasks.check-repaso-flashcards]
 cmd = "python scripts/generate_repaso_flashcards.py --check"
+
+[tool.poe.tasks.check-chapter-links-source]
+cmd = "python scripts/check_chapter_links.py source"
+
+[tool.poe.tasks.check-chapter-links-html]
+cmd = "python scripts/check_chapter_links.py html"
 
 [tool.poe.tasks._build-book]
 cwd = "book"
@@ -69,14 +76,14 @@ cmd = "ruff check ."
 sequence = ["format-md", "format-py"]
 
 [tool.poe.tasks.check]
-sequence = ["check-md", "lint", "check-repaso-flashcards"]
+sequence = ["check-md", "lint", "check-repaso-flashcards", "check-chapter-links-source"]
 
 [tool.poe.tasks.build-docker]
 help = "Build the Binder Docker image."
 cmd = "docker build --no-cache --file .binder/Dockerfile --tag classic-ai:binder ."
 
 [tool.poe.tasks.ci]
-sequence = ["check", "check-prolog-cells", "build-book"]
+sequence = ["check", "check-prolog-cells", "build-book", "check-chapter-links-html"]
 
 [tool.ruff]
 line-length = 100

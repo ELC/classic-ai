@@ -39,6 +39,13 @@ UNIT_TITLES: Mapping[str, str] = {
     "04": "Unidad 4: Ingeniería del conocimiento",
     "05": "Unidad 5: Redes neuronales",
 }
+REPASO_TARGET_LABELS: Mapping[str, str] = {
+    "01": "repaso",
+    "02": "repaso-2",
+    "03": "repaso-3",
+    "04": "repaso-4",
+    "05": "repaso-5",
+}
 REQUIRED_HEADERS: AbstractSet[str] = frozenset(
     {
         "#separator:tab",
@@ -55,6 +62,8 @@ HREF_PATTERN = re.compile(r"(<a\b[^>]*?\bhref=)([\"'])([^\"']+)([\"'])", re.IGNO
 REPASO_PAGE_TEMPLATE = """---
 title: Repaso
 ---
+
+({target_label})=
 
 # Repaso
 
@@ -117,8 +126,7 @@ class RawCard(FrozenModel):
         answers = [row[4].strip(), row[5].strip(), row[6].strip(), row[7].strip()]
         if any(not answer for answer in answers):
             raise ValueError(
-                f"{path}:{line_number} selected card {row[0]!r} must include all four "
-                "answer fields"
+                f"{path}:{line_number} selected card {row[0]!r} must include all four answer fields"
             )
 
         question = row[3].strip()
@@ -192,11 +200,13 @@ class NormalizedHtml(FrozenModel):
             if not media_path.is_file():
                 missing_media.add(filename)
             return (
-                f'{prefix}{quote}/assets/flashcards/{filename}{quote} '
+                f"{prefix}{quote}/assets/flashcards/{filename}{quote} "
                 f'data-flashcard-media="{filename}"'
             )
 
-        return cls(html=IMAGE_SRC_PATTERN.sub(replace, html), missing_media=frozenset(missing_media))
+        return cls(
+            html=IMAGE_SRC_PATTERN.sub(replace, html), missing_media=frozenset(missing_media)
+        )
 
 
 class CardAnswer(FrozenModel):
@@ -343,7 +353,11 @@ class FlashcardsData(FrozenModel):
 
     @staticmethod
     def generated_page(unit: str, card_count: int) -> str:
-        return REPASO_PAGE_TEMPLATE.format(card_count=card_count, unit=unit)
+        return REPASO_PAGE_TEMPLATE.format(
+            card_count=card_count,
+            target_label=REPASO_TARGET_LABELS[unit],
+            unit=unit,
+        )
 
     def to_json(self) -> str:
         return self.model_dump_json(by_alias=True, indent=2) + "\n"

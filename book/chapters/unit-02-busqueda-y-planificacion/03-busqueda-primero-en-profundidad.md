@@ -2,6 +2,8 @@
 title: Búsqueda primero en profundidad
 ---
 
+(busqueda-primero-en-profundidad)=
+
 # Búsqueda primero en profundidad
 
 **2.1.4. Búsqueda primero en profundidad**

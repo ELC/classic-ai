@@ -2,6 +2,8 @@
 title: Búsqueda primero en anchura
 ---
 
+(busqueda-primero-en-anchura)=
+
 # Búsqueda primero en anchura
 
 La búsqueda primero en anchura es la opuesta a la búsqueda primero en

@@ -2,6 +2,8 @@
 title: Formas de argumentos y tablas de verdad
 ---
 
+(formas-de-argumentos-y-tablas-de-verdad)=
+
 # Formas de argumentos y tablas de verdad
 
 En esta sección desarrollamos un ***método puramente mecánico*** para probar la
@@ -280,6 +282,8 @@ válidos come instancias de sustitución, una forma de argumento inválida puede
 tener instancias de sustitución válidas tanto come inválidas. Así que para
 demostrar que un argumento dado es inválido hay que demostrar que la forma
 específica de ese argumento es inválida.
+
+(formas-sentenciales)=
 
 ## Formas sentenciales
 

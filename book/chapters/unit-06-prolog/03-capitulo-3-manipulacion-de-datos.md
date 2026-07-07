@@ -2,7 +2,11 @@
 title: Manipulación de datos
 ---
 
+(manipulacion-de-datos)=
+
 # Manipulación de datos
+
+(tipos-de-dominios-estandares)=
 
 ## Tipos de dominios estándares
 
@@ -45,6 +49,8 @@ number(1+3). => No ?- X is 1+3, number(X). => X=4 Yes ?- compound(1+2). => Yes
 ?- atomic(átomo). => Yes ?- atomic(123). => Yes ?- atomic(X). => No ?-
 atomic(f(1,2)). => No
 
+(entrada-y-salida-de-datos)=
+
 ## Entrada y salida de datos
 
 A continuación se describirán los principales predicados del lenguaje Prolog
@@ -75,6 +81,8 @@ nl
 Este predicado indica nueva línea. Hace que el cursor se mueva a la siguiente
 línea. No tiene argumentos.
 
+(predicados-predefinidos)=
+
 ## Predicados predefinidos
 
 Existen algunos predicados predefinidos en el sistema y que están disponibles en
@@ -97,6 +105,8 @@ no funcionan con cualquier término como argumento. Solamente sirven para númer
 Operadores Significado relacionales < Menor que
 
 > Mayor que = Igual que =< Menor o igual que = Mayor o igual que = Distinto de
+
+(evaluacion-de-expresiones-aritmeticas)=
 
 ## Evaluación de expresiones aritméticas
 
@@ -124,6 +134,8 @@ is -Z. '//'/2 División entera X is 7 // 2. mod/2 Resto de la división entera X
 is 7 mod 2. '^'/2 Potencia X is 2^3. abs/1 Valor absoluto X is abs(-3). pi/0 La
 constante PI X is 2*pi. sin/1 seno en radianes X is sin(0). cos/1 coseno en
 radianes X is cos(pi). tan/1 tangente en radianes X is tan(pi/2).
+
+(recursividad)=
 
 ## Recursividad
 

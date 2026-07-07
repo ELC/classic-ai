@@ -1,3 +1,5 @@
+(medicamentos-composicion-y-sintomas-2)=
+
 # Medicamentos, composición y síntomas
 
 - Fecha: 2013-08-29

@@ -2,7 +2,11 @@
 title: Lógica de predicados
 ---
 
+(logica-de-predicados)=
+
 # Lógica de predicados
+
+(introduccion-y-concepto-de-semidecidible)=
 
 ## Introducción y concepto de semidecidible
 
@@ -68,6 +72,8 @@ casos cuando de lo que se trate sea de resolver problemas del mundo real.
 *Por lo tanto, la lógica de predicados, a pesar de su indecidibilidad teórica,
 puede resultar útil como medio de representación y manipulación*• *de ciertos
 tipos de conocimiento que pueden ser necesarios en un sistema de IA.*
+
+(representacion-de-hechos-simples-en-logica)=
 
 ## Representación de hechos simples en lógica
 
@@ -324,6 +330,8 @@ leal(Marco, Cesar) teal(Marco, Cesar)
 
 falsedad de la contraria y utilizar la información obtenida en cada proceso como
 ayuda en el otro. \\
+
+(la-representacion-de-las-relaciones-instancia-y-es-un)=
 
 ## La representación de las relaciones instancia y es-un
 
@@ -615,6 +623,8 @@ hasta llegar a alguno de las axiomas. La explicación del mecanismo de resoluci�
 será más directa una vez que se haya descrito la forma estándar en que se
 representan las proposiciones, y par lo tanto, la posponemos hasta entonces.
 
+(conversion-a-forma-clausal)=
+
 ## Conversión a forma clausal
 
 Supongamos que sabemos que todos los romanos que conocen a Marco o bien odian a
@@ -806,6 +816,8 @@ procedimiento***
 
 ***de resolución para generar demostraciones.***
 
+(las-bases-de-la-resolucion)=
+
 ## Las bases de la resolución
 
 ***El procedimiento de resolución* es *un proceso iterativo simple en el cuál,
@@ -926,6 +938,8 @@ las cláusulas originates. Surge una contradicción cuando una cláusula se vuel
 tan restringida que no hay forma de hacerla verdadera. Esto se indica con la
 generación de la cláusula vacía.
 
+(el-algoritmo-de-unificacion)=
+
 ## El algoritmo de unificación
 
 En lógica proposicional es fácil determinar que dos literales no pueden ser
@@ -1020,6 +1034,8 @@ el emparejamiento.
 Puesto que la sustitución final producida por el proceso de unificación será
 usada por el procedimiento de resolución, sería conveniente generar el
 unificador más general posible.
+
+(resolucion-en-logica-de-predicados)=
 
 ## Resolución en lógica de predicados
 
@@ -1161,6 +1177,8 @@ Figura 3.13
 
 Demostración por Resolución
 
+(representacion-del-conocimiento-mediante-reglas)=
+
 ## Representación del conocimiento mediante reglas
 
 Hablaremos del uso de reglas para codificar el conocimiento. Esto representa un
@@ -1177,6 +1195,8 @@ Esto no se seguirá considerando así, ya que a partir de ahora se *considerara 
 conjunto de reglas para representar* ***tanto el conocimiento acerca de las
 relaciones en el mundo, como el conocimiento para resolver problemas utilizando
 el contenido de las reglas.***
+
+(comparacion-entre-conocimiento-procedimental-y-conocimiento-declarativo)=
 
 ## Comparación entre conocimiento procedimental y conocimiento declarativo
 
@@ -1280,6 +1300,8 @@ observa en el estudio que se ha hecho, la distinción entre las dos formas es a
 menudo muy confusa. En lugar de intentar responder cuál de los dos enfoques es
 mejor, lo que se intentará es describir. el modo en que los formalismos de
 reglas y los intérpretes se pueden combinar para solucionar problemas.
+
+(programacion-logica)=
 
 ## Programación lógica
 
@@ -1409,6 +1431,8 @@ estas aparecen en el programa. Si el objetivo tiene más de una parte de
 conjuntiva, comprueba las partes en el orden en que estas aparecen, propagando
 los enlaces de las variables que determinó la unificación.
 
+(diferencia-entre-razonamientos-hacia-delante-y-hacia-atras)=
+
 ## Diferencia entre razonamientos hacia delante y hacia atrás
 
 El objeto de un procedimiento de búsqueda es descubrir un camino a través de un
@@ -1445,6 +1469,8 @@ Se continuara hasta que se genere un nodo que se empareja con el estado inicial.
 Este método de razonamiento hacia atrás, a partir del estado final deseado, se
 denomina algunas veces ***razonamiento dirigido al objetivo.***
 
+(sistemas-de-reglas-encadenadas-hacia-atras)=
+
 ## Sistemas de reglas encadenadas hacia atrás
 
 Los sistemas de reglas encadenadas hacia atrás, de los cuales el PROLOG es un
@@ -1466,6 +1492,8 @@ MYCIN, por ejemplo, las reglas pueden ser aumentadas con factores de certeza
 probabilísticos para reflejar el hecho de que unas reglas son más fiables que
 otras.
 
+(sistemas-de-reglas-encadenadas-hacia-adelante)=
+
 ## Sistemas de reglas encadenadas hacia adelante
 
 En lugar de dirigirse por objetivos, algunas veces se desea ser ***dirigido por
@@ -1479,6 +1507,8 @@ los sistemas de reglas encadenadas hacia adelante. En algunos de estos sistemas,
 los lados izquierdos de las reglas se emparejan con la descripción del estado.
 Las reglas que se emparejan vuelcan sus aserciones de su parte derecha en el
 estado, y así el proceso se repite sucesivamente.
+
+(combinacion-del-razonamiento-hacia-adelante-y-hacia-atras)=
 
 ## Combinación del razonamiento hacia adelante y hacia atrás
 

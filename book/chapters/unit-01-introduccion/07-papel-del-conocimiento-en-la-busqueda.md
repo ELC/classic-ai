@@ -2,6 +2,8 @@
 title: Papel del conocimiento en la búsqueda
 ---
 
+(papel-del-conocimiento-en-la-busqueda)=
+
 # Papel del conocimiento en la búsqueda
 
 ¿Cuál es el papel del conocimiento?

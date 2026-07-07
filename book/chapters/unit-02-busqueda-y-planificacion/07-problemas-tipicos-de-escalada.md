@@ -2,6 +2,8 @@
 title: Problemas típicos de escalada
 ---
 
+(problemas-tipicos-de-escalada)=
+
 # Problemas típicos de escalada
 
 Tanto la *escalada básica* como la de *máxima pendiente* pueden no encontrar una

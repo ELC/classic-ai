@@ -2,6 +2,8 @@
 title: Prueba formal de validez
 ---
 
+(prueba-formal-de-validez)=
+
 # Prueba formal de validez
 
 | 3.2.3.1. Prueba Formal de Validez Cuando los argumentos contienen *más de dos

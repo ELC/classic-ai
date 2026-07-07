@@ -1,3 +1,5 @@
+(enunciado-18)=
+
 # Enunciado
 
 Final A 1 ingreser dos cadenas y mostrar la unión en una lista.

@@ -2,11 +2,15 @@
 title: Banco de exámenes Prolog
 ---
 
+(banco-de-examenes-prolog)=
+
 # Banco de exámenes Prolog
 
 Este apéndice conserva los enunciados y soluciones existentes como material
 estático. La conversión completa a ejercicios ejecutables queda diferida para un
 pase posterior.
+
+(palabras-y-caracteres)=
 
 ## Palabras y caracteres
 
@@ -76,6 +80,8 @@ calcular(_,0,0).
 
 ::::
 
+(medicamentos-composicion-y-sintomas)=
+
 ## Medicamentos, composición y síntomas
 
 - Fecha: 2013-08-29
@@ -103,6 +109,8 @@ composición(nombre,componente,cantidad).
 ```
 
 ::::
+
+(ordenes-productos-y-stock)=
 
 ## Órdenes, productos y stock
 
@@ -141,6 +149,8 @@ Nota:
 
 ::::
 
+(cantantes-albumes-y-temas)=
+
 ## Cantantes, álbumes y temas
 
 - Fecha: 2013-12-05
@@ -171,6 +181,8 @@ album(nombre_album,nombre_cantante,[lista_temas])
 
 ::::
 
+(vacunas-por-edad-y-enfermedades)=
+
 ## Vacunas por edad y enfermedades
 
 - Fecha: 2014-02-13
@@ -197,6 +209,8 @@ vacuna_aplicacion(edadDesde,edadHasta,[vacunas_a_aplicar]).
 ```
 
 ::::
+
+(empleados-empresas-y-sueldos)=
 
 ## Empleados, empresas y sueldos
 
@@ -227,6 +241,8 @@ empresa(nombre_empresa, ciudad)
 
 ::::
 
+(peliculas-directores-actores-y-estrenos)=
+
 ## Películas, directores, actores y estrenos
 
 - Fecha: 2014-04-21
@@ -247,6 +263,8 @@ Se tienen hechos definidos como película (nombre, genero, [directores],
 ```
 
 ::::
+
+(verbos-raices-y-transformacion-de-listas)=
 
 ## Verbos, raíces y transformación de listas
 
@@ -269,6 +287,8 @@ de esa lista por uno. Mostrar la lista.
 ```
 
 ::::
+
+(lotes-y-lineas-de-credito)=
 
 ## Lotes y líneas de crédito
 
@@ -295,6 +315,8 @@ lineaCredito(codLinea, descripcion, superficieDesde, SuperficieHasta, monto,[cuo
 ```
 
 ::::
+
+(gimnasio-socios-ejercicios-asistencias-y-niveles)=
 
 ## Gimnasio: socios, ejercicios, asistencias y niveles
 
@@ -324,6 +346,8 @@ extremo(de tanto a tanto)
 
 ::::
 
+(canciones-favoritas-por-invitados-y-genero-vals)=
+
 ## Canciones favoritas por invitados y género vals
 
 - Fecha: 2015-12-17
@@ -352,6 +376,8 @@ invitados(Nombre, [IdCanciones que gusta])
 ```
 
 ::::
+
+(hotel-habitaciones-disponibles-y-habitaciones-premium-ocupadas)=
 
 ## Hotel: habitaciones disponibles y habitaciones premium ocupadas
 
@@ -385,6 +411,8 @@ característica(código,descripción)
 
 ::::
 
+(gimnasio-socios-ejercicios-asistencias-y-niveles-2)=
+
 ## Gimnasio: socios, ejercicios, asistencias y niveles
 
 - Fecha: 2016-02-25
@@ -412,6 +440,8 @@ extremo(de tanto a tanto)
 ```
 
 ::::
+
+(enunciado)=
 
 ## Enunciado
 
@@ -501,6 +531,8 @@ listaingr(_,_):- nl, menu.
 
 ::::
 
+(enunciado-2)=
+
 ## Enunciado
 
 Final Agosto 2010
@@ -549,6 +581,8 @@ litarAgudas:- aguda(P,V), nl, write(P), write(V), fail.
 ```
 
 ::::
+
+(enunciado-3)=
 
 ## Enunciado
 
@@ -715,6 +749,8 @@ ventas(4,'2023-11-02', [5,1,3]).
 
 ::::
 
+(enunciado-4)=
+
 ## Enunciado
 
 Revisar enunciado: no habia enunciado confiable en el archivo original. Inferido
@@ -859,6 +895,8 @@ locales(4,sur,['san martin 5000','27 de febrero 4000']).
 
 ::::
 
+(enunciado-5)=
+
 ## Enunciado
 
 Final Julia Ejercicio
@@ -901,6 +939,8 @@ leer([]).
 
 ::::
 
+(enunciado-6)=
+
 ## Enunciado
 
 Final Julia Ejercicio
@@ -927,6 +967,8 @@ limpiezaLista([],[],_,0).
 ```
 
 ::::
+
+(enunciado-7)=
 
 ## Enunciado
 
@@ -968,6 +1010,8 @@ esCerrada('u').
 ```
 
 ::::
+
+(enunciado-8)=
 
 ## Enunciado
 
@@ -1028,6 +1072,8 @@ told.
 
 ::::
 
+(enunciado-9)=
+
 ## Enunciado
 
 Final Mesa Marzo 2008 ejercicio
@@ -1065,6 +1111,8 @@ ultimo([U|[]],U).
 
 ::::
 
+(enunciado-10)=
+
 ## Enunciado
 
 Final Mesa Marzo 2008 ejercicio
@@ -1085,6 +1133,8 @@ suma_hasta(A,S):-A1 is A - 1, suma_hasta( A1,S1 ), S is S1 + A.
 ```
 
 ::::
+
+(enunciado-11)=
 
 ## Enunciado
 
@@ -1110,6 +1160,8 @@ N is N1 + N2.
 ```
 
 ::::
+
+(enunciado-12)=
 
 ## Enunciado
 
@@ -1138,6 +1190,8 @@ leer([]).
 ```
 
 ::::
+
+(enunciado-13)=
 
 ## Enunciado
 
@@ -1365,6 +1419,8 @@ turno(616161, 444, 'psicologia', '05-09-2023', 'avalian', 12700).
 
 ::::
 
+(enunciado-14)=
+
 ## Enunciado
 
 Revisar enunciado: no habia enunciado confiable en el archivo original. Inferido
@@ -1586,6 +1642,8 @@ caracteristicas(4, 'al piso').
 
 ::::
 
+(enunciado-15)=
+
 ## Enunciado
 
 Revisar enunciado: no habia enunciado confiable en el archivo original. Inferido
@@ -1760,6 +1818,8 @@ venta(1234, 'peluche', '10-05-2023', 200).
 
 ::::
 
+(enunciado-16)=
+
 ## Enunciado
 
 Revisar enunciado: no habia enunciado confiable en el archivo original. Inferido
@@ -1853,6 +1913,8 @@ viajes(3, 6300).
 ```
 
 ::::
+
+(enunciado-17)=
 
 ## Enunciado
 

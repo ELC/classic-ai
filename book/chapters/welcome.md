@@ -2,6 +2,8 @@
 title: Inicio
 ---
 
+(inicio)=
+
 # Inicio
 
 Este libro publica material clásico de Inteligencia Artificial a partir de los
@@ -12,6 +14,8 @@ Prolog.
 
 [Abrir en Binder](https://mybinder.org/v2/gh/ELC/classic-ai/master)
 
+(unidades)=
+
 ## Unidades
 
 - Unidad 1: Introducción a la inteligencia artificial
@@ -21,14 +25,20 @@ Prolog.
 - Unidad 5: Redes neuronales
 - Unidad 6: Prolog
 
+(fuente-mantenida)=
+
 ## Fuente mantenida
 
 A partir de esta migración, `book/chapters/` es la fuente mantenida del libro.
+
+(licencia)=
 
 ## Licencia
 
 El contenido se publica bajo Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
+
+(trabajo-futuro)=
 
 ## Trabajo futuro
 

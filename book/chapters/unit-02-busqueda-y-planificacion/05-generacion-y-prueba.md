@@ -2,6 +2,8 @@
 title: Generación y prueba
 ---
 
+(generacion-y-prueba)=
+
 # Generación y prueba
 
 1. Generación y Prueba

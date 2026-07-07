@@ -6,13 +6,19 @@ kernelspec:
   language: prolog
 ---
 
+(practica-3)=
+
 # Práctica 3
 
 PROLOG - Cadenas
 
+(ejercicio-1-3)=
+
 ## Ejercicio 1
 
 Ingresar una cadena de texto y obtener el primer carácter de la misma.
+
+(solucion-30)=
 
 ### Solución
 
@@ -22,15 +28,21 @@ Ingresar una cadena de texto y obtener el primer carácter de la misma.
 primer_caracter(Cadena, Caracter) :- sub_atom(Cadena, 0, 1, _, Caracter).
 ```
 
+(verificacion-31)=
+
 ### Verificación
 
 ```{code-cell} prolog
 ?- primer_caracter(hola, Caracter), assertion(Caracter == h).
 ```
 
+(ejercicio-2-3)=
+
 ## Ejercicio 2
 
 Ingresar una cadena de texto y obtener el último carácter de la misma.
+
+(solucion-31)=
 
 ### Solución
 
@@ -41,17 +53,23 @@ ultimo_caracter(Cadena, Caracter) :-
     atom_length(Cadena, Longitud), Inicio is Longitud - 1, sub_atom(Cadena, Inicio, 1, 0, Caracter).
 ```
 
+(verificacion-32)=
+
 ### Verificación
 
 ```{code-cell} prolog
 ?- ultimo_caracter(hola, Caracter), assertion(Caracter == a).
 ```
 
+(ejercicio-3-3)=
+
 ## Ejercicio 3
 
 Ingresar una cadena de texto e informar cuántos caracteres tiene. En primer
 lugar haciendo uso del predicado atom_length/2 y en una segunda instancia
 utilizando sub_atom/5 de forma recursiva.
+
+(solucion-32)=
 
 ### Solución
 
@@ -64,15 +82,21 @@ largo_recursivo(Cadena, Longitud) :-
 largo_recursivo('', 0).
 ```
 
+(verificacion-33)=
+
 ### Verificación
 
 ```{code-cell} prolog
 ?- largo_atom(hola, LongitudAtom), largo_recursivo(hola, LongitudRecursiva), assertion(LongitudAtom =:= 4), assertion(LongitudRecursiva =:= 4).
 ```
 
+(ejercicio-4-3)=
+
 ## Ejercicio 4
 
 Transformar una cadena en una lista de caracteres.
+
+(solucion-33)=
 
 ### Solución
 
@@ -82,16 +106,22 @@ Transformar una cadena en una lista de caracteres.
 cadena_a_caracteres(Cadena, Caracteres) :- atom_chars(Cadena, Caracteres).
 ```
 
+(verificacion-34)=
+
 ### Verificación
 
 ```{code-cell} prolog
 ?- cadena_a_caracteres(hola, Caracteres), assertion(Caracteres == [h, o, l, a]).
 ```
 
+(ejercicio-5-3)=
+
 ## Ejercicio 5
 
 Transformar una cadena de texto en una lista de palabras, tomando como divisor
 el espacio.
+
+(solucion-34)=
 
 ### Solución
 
@@ -101,15 +131,21 @@ el espacio.
 cadena_a_palabras(Cadena, Palabras) :- atomic_list_concat(Palabras, ' ', Cadena).
 ```
 
+(verificacion-35)=
+
 ### Verificación
 
 ```{code-cell} prolog
 ?- cadena_a_palabras('hola mundo', Palabras), assertion(Palabras == [hola, mundo]).
 ```
 
+(ejercicio-6-3)=
+
 ## Ejercicio 6
 
 Hacer un programa que transforme un número entero a binario.
+
+(solucion-35)=
 
 ### Solución
 
@@ -124,15 +160,21 @@ a_binario_lista(N, Lista) :-
     N > 0, Bit is N mod 2, Cociente is N // 2, a_binario_lista(Cociente, Parcial), append(Parcial, [Bit], Lista).
 ```
 
+(verificacion-36)=
+
 ### Verificación
 
 ```{code-cell} prolog
 ?- a_binario(5, Binario), assertion(Binario == '101').
 ```
 
+(ejercicio-7-3)=
+
 ## Ejercicio 7
 
 Hacer un reconocedor de palabras de la forma anbn.
+
+(solucion-36)=
 
 ### Solución
 
@@ -144,6 +186,8 @@ anbn_lista([]).
 anbn_lista([a|Resto]) :- append(Medio, [b], Resto), anbn_lista(Medio).
 ```
 
+(verificacion-37)=
+
 ### Verificación
 
 ```{code-cell} prolog
@@ -154,10 +198,14 @@ anbn_lista([a|Resto]) :- append(Medio, [b], Resto), anbn_lista(Medio).
 ?- assertion(\+ anbn(aaab)).
 ```
 
+(ejercicio-8-3)=
+
 ## Ejercicio 8
 
 Ingresar una cadena y un carácter, luego informar la cantidad de veces que
 aparece dicho carácter en la cadena.
+
+(solucion-37)=
 
 ### Solución
 
@@ -172,17 +220,23 @@ apariciones_caracter(Elemento, [Elemento|Resto], Cantidad) :-
 apariciones_caracter(Elemento, [_|Resto], Cantidad) :- apariciones_caracter(Elemento, Resto, Cantidad).
 ```
 
+(verificacion-38)=
+
 ### Verificación
 
 ```{code-cell} prolog
 ?- cantidad_caracter(banana, a, Cantidad), assertion(Cantidad =:= 3).
 ```
 
+(ejercicio-9-3)=
+
 ## Ejercicio 9
 
 Ingresar una cadena, contar e informar el número de veces que aparece cada una
 de las vocales (a, e, i, o, u) y la cantidad de veces que aparece cualquier
 consonante.
+
+(solucion-38)=
 
 ### Solución
 
@@ -204,6 +258,8 @@ contar_consonantes([], 0).
 contar_consonantes([C|Resto], Total) :-
     contar_consonantes(Resto, Parcial), (vocal(C) -> Total = Parcial ; Total is Parcial + 1).
 ```
+
+(verificacion-39)=
 
 ### Verificación
 

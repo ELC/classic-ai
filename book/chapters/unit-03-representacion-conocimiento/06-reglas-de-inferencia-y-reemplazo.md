@@ -2,6 +2,8 @@
 title: Reglas de inferencia y reemplazo
 ---
 
+(reglas-de-inferencia-y-reemplazo)=
+
 # Reglas de inferencia y reemplazo
 
 3.2.3.2. La Regla de Reemplazo

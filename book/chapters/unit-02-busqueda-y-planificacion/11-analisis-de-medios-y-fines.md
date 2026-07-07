@@ -2,6 +2,8 @@
 title: Análisis de medios y fines
 ---
 
+(analisis-de-medios-y-fines-2)=
+
 # Análisis de medios y fines
 
 El proceso de análisis de medios y fines puede entonces aplicarse

@@ -2,6 +2,8 @@
 title: Verificación de restricciones
 ---
 
+(verificacion-de-restricciones-2)=
+
 # Verificación de restricciones
 
 Al contemplar un problema como una verificación de restricciones, es
@@ -206,6 +208,8 @@ Conflicto
 Ejercicio
 
 Desarrollar un programa que resuelva el problema criptoaritmético planteado.
+
+(analisis-de-medios-y-fines)=
 
 ## Análisis de medios y fines
 

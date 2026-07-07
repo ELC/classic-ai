@@ -1,3 +1,5 @@
+(enunciado-25)=
+
 # Enunciado
 
 Final Mesa julio 2010 Empleado( Cod, Nom, Ape ) Trabajo( Cod, Descripcion,
