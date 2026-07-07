@@ -9,6 +9,7 @@ dependencies = [
   "jupyter-book>=2,<3",
   "jupyterlab>=4.5",
   "prolog-kernel>=0.0.9",
+  "pydantic>=2.13.4",
 ]
 
 [dependency-groups]
@@ -26,12 +27,18 @@ package = false
 [tool.poe.tasks.install-kernels]
 cmd = "python scripts/install_prolog_kernel.py"
 
+[tool.poe.tasks.generate-repaso-flashcards]
+cmd = "python scripts/generate_repaso_flashcards.py"
+
+[tool.poe.tasks.check-repaso-flashcards]
+cmd = "python scripts/generate_repaso_flashcards.py --check"
+
 [tool.poe.tasks._build-book]
 cwd = "book"
 cmd = "jupyter book build --html --execute --execute-parallel 1 --ci"
 
 [tool.poe.tasks.build-book]
-sequence = ["install-kernels", "_build-book"]
+sequence = ["generate-repaso-flashcards", "install-kernels", "_build-book"]
 
 [tool.poe.tasks.check-prolog-cells]
 sequence = ["install-kernels", "_check-prolog-cells"]
@@ -62,7 +69,7 @@ cmd = "ruff check ."
 sequence = ["format-md", "format-py"]
 
 [tool.poe.tasks.check]
-sequence = ["check-md", "lint"]
+sequence = ["check-md", "lint", "check-repaso-flashcards"]
 
 [tool.poe.tasks.build-docker]
 help = "Build the Binder Docker image."

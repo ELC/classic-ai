@@ -23,9 +23,13 @@ project:
     kernelName: prolog_kernel
     binder:
       repo: https://github.com/ELC/classic-ai
+    server:
+      url: http://localhost:8888
+      token: "abc"
 
   plugins:
     - plugins/ethicalads.mjs
+    - plugins/flashcards.mjs
 
   toc:
     - file: chapters/welcome.md
@@ -49,6 +53,8 @@ project:
           title: Problemas solitarios y conversacionales
         - file: chapters/unit-01-introduccion/09-busqueda-y.md
           title: Búsqueda y
+        - file: chapters/unit-01-introduccion/repaso.md
+          title: Repaso
         - file: chapters/unit-01-introduccion/exam-preparation.md
           title: Guía de preparación para examen
     - title: "Unidad 2: Búsqueda y planificación"
@@ -85,6 +91,8 @@ project:
           title: Alfa beta
         - file: chapters/unit-02-busqueda-y-planificacion/16-representacion-del-conocimiento.md
           title: Representación del Conocimiento
+        - file: chapters/unit-02-busqueda-y-planificacion/repaso.md
+          title: Repaso
         - file: chapters/unit-02-busqueda-y-planificacion/exam-preparation.md
           title: Guía de preparación para examen
     - title: "Unidad 3: Representación del conocimiento y razonamiento"
@@ -113,18 +121,24 @@ project:
           title: Estructuras de ranura y relleno débiles
         - file: chapters/unit-03-representacion-conocimiento/12-estructuras-de-ranura-y-relleno-fuertes.md
           title: Estructuras de ranura y relleno fuertes
+        - file: chapters/unit-03-representacion-conocimiento/repaso.md
+          title: Repaso
         - file: chapters/unit-03-representacion-conocimiento/exam-preparation.md
           title: Guía de preparación para examen
     - title: "Unidad 4: Ingeniería del conocimiento"
       children:
         - file: chapters/unit-04-ingenieria-conocimiento/unit-04.md
           title: "Unidad 4: Ingeniería del conocimiento"
+        - file: chapters/unit-04-ingenieria-conocimiento/repaso.md
+          title: Repaso
         - file: chapters/unit-04-ingenieria-conocimiento/exam-preparation.md
           title: Guía de preparación para examen
     - title: "Unidad 5: Redes neuronales"
       children:
         - file: chapters/unit-05-redes-neuronales/unit-05.md
           title: "Unidad 5: Redes neuronales"
+        - file: chapters/unit-05-redes-neuronales/repaso.md
+          title: Repaso
         - file: chapters/unit-05-redes-neuronales/exam-preparation.md
           title: Guía de preparación para examen
     - title: "Unidad 6: Prolog"
