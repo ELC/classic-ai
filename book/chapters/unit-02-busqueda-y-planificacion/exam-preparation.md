@@ -80,7 +80,8 @@ title: Guía de preparación para examen
 
 - Fecha: 2014-07-31
 - Frecuencia: 1 apariciones. Fechas: 2014-07-31
-- Fuente principal: [Minimax](/classic-ai/chapters/unit-02-busqueda-y-planificacion/minimax/#minimax)
+- Fuente principal:
+  [Minimax](/classic-ai/chapters/unit-02-busqueda-y-planificacion/minimax/#minimax)
 
 ### Ramificacion y acotacion
 
@@ -118,4 +119,5 @@ title: Guía de preparación para examen
 ### Alfa beta
 
 - Fecha: desconocida
-- Fuente principal: [Alfa beta](/classic-ai/chapters/unit-02-busqueda-y-planificacion/alfa-beta/#alfa-beta)
+- Fuente principal:
+  [Alfa beta](/classic-ai/chapters/unit-02-busqueda-y-planificacion/alfa-beta/#alfa-beta)

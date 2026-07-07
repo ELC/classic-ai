@@ -18,7 +18,8 @@ title: Guía de preparación para examen
 - Fecha: 2016-02-25
 - Frecuencia: 4 apariciones. Fechas: 2016-02-25, 2015-12-17, 2014-04-21,
   2013-12-05
-- Fuente principal: [Desventajas de las RNA](/classic-ai/chapters/unit-05-redes-neuronales/unit-05/#desventajas-de-las-rna)
+- Fuente principal:
+  [Desventajas de las RNA](/classic-ai/chapters/unit-05-redes-neuronales/unit-05/#desventajas-de-las-rna)
 
 ### Metodos de aprendizaje de las redes neuronales
 
@@ -26,7 +27,8 @@ title: Guía de preparación para examen
 - Frecuencia: 3 apariciones. Fechas: 2016-02-25, 2015-12-17, 2014-02-13
 - Fuente principal:
   [Mecanismos de aprendizaje](/classic-ai/chapters/unit-05-redes-neuronales/unit-05/#mecanismos-de-aprendizaje)
-- Ver tambien: [Aprendizaje supervisado](/classic-ai/chapters/unit-05-redes-neuronales/unit-05/#aprendizaje-supervisado);
+- Ver tambien:
+  [Aprendizaje supervisado](/classic-ai/chapters/unit-05-redes-neuronales/unit-05/#aprendizaje-supervisado);
   [Aprendizaje no supervisado](/classic-ai/chapters/unit-05-redes-neuronales/unit-05/#aprendizaje-no-supervisado)
 
 ### Ventajas de las redes neuronales
@@ -34,7 +36,8 @@ title: Guía de preparación para examen
 - Fecha: 2015-08-06
 - Frecuencia: 4 apariciones. Fechas: 2015-08-06, 2014-04-21, 2014-02-27,
   2013-12-05
-- Fuente principal: [Ventajas de las RNA](/classic-ai/chapters/unit-05-redes-neuronales/unit-05/#ventajas-de-las-rna)
+- Fuente principal:
+  [Ventajas de las RNA](/classic-ai/chapters/unit-05-redes-neuronales/unit-05/#ventajas-de-las-rna)
 
 ### Caracteristicas de las redes neuronales artificiales
 
@@ -63,7 +66,8 @@ title: Guía de preparación para examen
 
 - Fecha: 2013-11-22
 - Frecuencia: 2 apariciones. Fechas: 2013-11-22, 2013-08-29
-- Fuente principal: [El perceptron](/classic-ai/chapters/unit-05-redes-neuronales/unit-05/#el-perceptron)
+- Fuente principal:
+  [El perceptron](/classic-ai/chapters/unit-05-redes-neuronales/unit-05/#el-perceptron)
 
 ## Undated Frequent Questions
 
