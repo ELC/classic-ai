@@ -11,6 +11,7 @@ dependencies = [
   "prolog-kernel>=0.0.9",
   "pydantic>=2.13.4",
   "selectolax>=0.4.10",
+  "typer>=0.26.8",
 ]
 
 [dependency-groups]
@@ -29,10 +30,10 @@ package = false
 cmd = "python scripts/install_prolog_kernel.py"
 
 [tool.poe.tasks.generate-repaso-flashcards]
-cmd = "python scripts/generate_repaso_flashcards.py"
+cmd = "python -m scripts.generate_repaso_flashcards generate"
 
 [tool.poe.tasks.check-repaso-flashcards]
-cmd = "python scripts/generate_repaso_flashcards.py --check"
+cmd = "python -m scripts.generate_repaso_flashcards check"
 
 [tool.poe.tasks.check-chapter-links-source]
 cmd = "python scripts/check_chapter_links.py source"
