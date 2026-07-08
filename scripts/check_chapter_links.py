@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
 import unicodedata
@@ -16,10 +17,15 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 BOOK_ROOT = REPO_ROOT / "book"
 CHAPTERS_ROOT = BOOK_ROOT / "chapters"
 HTML_ROOT = BOOK_ROOT / "_build" / "html"
+CARD_DATA_PATH = BOOK_ROOT / "data" / "flashcards.json"
 MYST_CONFIG = BOOK_ROOT / "myst.yml"
 SAME_BOOK_URL_PREFIX = "https://elc.github.io/classic-ai/"
 SAME_BOOK_BASE_PATH = "/classic-ai"
 MAX_ROUTE_SEGMENT_LENGTH = 50
+FLASHCARD_SYNC_MESSAGE = (
+    "Re-sync Anki with the canonical chapter links, then run "
+    "`uv run poe generate-repaso-flashcards`."
+)
 
 TOC_FILE_PATTERN = re.compile(r"^\s*-\s+file:\s+(chapters/[^\s#]+\.md)\s*$")
 TARGET_PATTERN = re.compile(r"^\(([^)]+)\)=\s*$")
@@ -458,8 +464,6 @@ def collect_json_ids(path: Path, page: ChapterPage | None) -> set[str]:
     if not json_path.is_file():
         return ids
 
-    import json
-
     data = cast(dict[str, Any], json.loads(json_path.read_text(encoding="utf-8")))
     mdast = data.get("mdast", {})
     if isinstance(mdast, dict):
@@ -483,6 +487,98 @@ def collect_json_ids(path: Path, page: ChapterPage | None) -> set[str]:
         if isinstance(node_children, list):
             stack.extend(cast(list[Any], node_children))
     return ids
+
+
+def flashcard_units(data: dict[str, Any]) -> dict[str, Any]:
+    units = data.get("units", {})
+    if isinstance(units, dict):
+        return cast(dict[str, Any], units)
+    return {}
+
+
+def validate_flashcard_source_href(
+    card_id: str,
+    href: str,
+    routes: dict[str, ChapterPage],
+) -> list[str]:
+    errors: list[str] = []
+    if "%" in href:
+        errors.append(
+            f"{CARD_DATA_PATH}: flashcard {card_id}: {href}: "
+            f"percent-encoded chapter URLs are not allowed. {FLASHCARD_SYNC_MESSAGE}"
+        )
+
+    normalized = normalize_same_book_url(href)
+    path_part, fragment = urldefrag(normalized)
+    if not path_part.startswith("/chapters/"):
+        errors.append(
+            f"{CARD_DATA_PATH}: flashcard {card_id}: {href}: "
+            f"flashcard source links must point to /chapters. {FLASHCARD_SYNC_MESSAGE}"
+        )
+        return errors
+    if not fragment:
+        errors.append(
+            f"{CARD_DATA_PATH}: flashcard {card_id}: {href}: "
+            f"flashcard source links must include a section fragment. {FLASHCARD_SYNC_MESSAGE}"
+        )
+        return errors
+
+    target_page = routes.get(path_part.strip("/").rstrip("/"))
+    if target_page is None:
+        errors.append(
+            f"{CARD_DATA_PATH}: flashcard {card_id}: {href}: "
+            f"target chapter page does not exist. {FLASHCARD_SYNC_MESSAGE}"
+        )
+        return errors
+    if fragment not in target_page.labels:
+        errors.append(
+            f"{CARD_DATA_PATH}: flashcard {card_id}: {href}: "
+            f"target id #{fragment} does not match a chapter heading. "
+            f"{FLASHCARD_SYNC_MESSAGE}"
+        )
+    return errors
+
+
+def validate_flashcard_sources(routes: dict[str, ChapterPage]) -> list[str]:
+    if not CARD_DATA_PATH.is_file():
+        return [
+            f"{CARD_DATA_PATH} does not exist. "
+            "`uv run poe generate-repaso-flashcards` must run after syncing Anki."
+        ]
+
+    data = cast(dict[str, Any], json.loads(CARD_DATA_PATH.read_text(encoding="utf-8")))
+    errors: list[str] = []
+    for unit_key, unit_data in flashcard_units(data).items():
+        if not isinstance(unit_data, dict):
+            continue
+        typed_unit = cast(dict[str, Any], unit_data)
+        raw_cards = typed_unit.get("cards", [])
+        cards: list[Any] = cast(list[Any], raw_cards) if isinstance(raw_cards, list) else []
+        for card in cards:
+            if not isinstance(card, dict):
+                continue
+            typed_card = cast(dict[str, Any], card)
+            card_id = typed_card.get("id", f"unit {unit_key}")
+            source_html = typed_card.get("sourceHtml", "")
+            if not isinstance(source_html, str) or not source_html:
+                errors.append(
+                    f"{CARD_DATA_PATH}: flashcard {card_id}: missing sourceHtml. "
+                    f"{FLASHCARD_SYNC_MESSAGE}"
+                )
+                continue
+            tree = LexborHTMLParser(source_html)
+            href_nodes = tree.css("a[href]")
+            if not href_nodes:
+                errors.append(
+                    f"{CARD_DATA_PATH}: flashcard {card_id}: sourceHtml has no link. "
+                    f"{FLASHCARD_SYNC_MESSAGE}"
+                )
+                continue
+            for node in href_nodes:
+                href = node.attributes.get("href", "")
+                if href:
+                    errors.extend(validate_flashcard_source_href(str(card_id), href, routes))
+    return errors
 
 
 def validate_generated_html(routes: dict[str, ChapterPage]) -> list[str]:
@@ -530,6 +626,7 @@ def check_source_links(
         if did_change:
             changed.append(path)
         errors.extend(page_errors)
+    errors.extend(validate_flashcard_sources(routes))
     return changed, errors
 
 
